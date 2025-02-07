@@ -16,7 +16,7 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1738880504928
+  logout: 1738919036429
   login: 1738918726362
   kits:
     diplomático: 1736312712451
@@ -32,10 +32,10 @@ lastlocation:
   yaw: -89.39620971679688
   pitch: 11.699966430664062
 logoutlocation:
-  world: 365ca687-c4ed-4138-b4bd-0783e6768f03
-  world-name: world
-  x: 884.6999999880791
-  y: 63.0
-  z: 53.598800312225215
-  yaw: 22.80168342590332
-  pitch: 16.80014991760254
+  world: 0c1d2703-d3f1-42d4-8750-4bc43b8d8e22
+  world-name: lobby
+  x: 34.28680858670334
+  y: -36.0
+  z: 33.69999998807907
+  yaw: -12.30001163482666
+  pitch: 36.29997634887695

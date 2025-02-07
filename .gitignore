@@ -1,6 +1,7 @@
 # Minecraft world data
 world/
 world_nether/
+witp/
 libraries/
 cache/
 logs/
@@ -53,3 +54,5 @@ plugins/DiscordSRV/config.yml
 purpur-1.21.4-2388.jar
 plugins/SkinsRestorer/recommendations.json
 plugins/CMILib/Translations/Locale_EN.yml
+plugins/GadgetsMenu/database.db
+plugins/AnimatedScoreboard/playerdata-sqlite.db
