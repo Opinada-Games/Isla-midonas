@@ -2,6 +2,11 @@
 world/
 world_nether/
 world_the_end/
+libraries/
+cache/
+logs/
+versions/
+plugins/.paper-remapped
 
 # Server properties and configurations (if you want to exclude them)
 banned-players.json
@@ -27,7 +32,6 @@ crash-reports/
 
 # Java-related files (if running a custom Java setup)
 *.class
-*.jar
 *.war
 *.ear
 
@@ -46,3 +50,4 @@ Thumbs.db
 backups/
 plugins/DiscordSRV/config.yml
 plugins/DiscordSRV/config.yml
+purpur-1.21.4-2388.jar
