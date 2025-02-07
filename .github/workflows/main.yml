@@ -13,15 +13,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Deploy to VPS
+      - name: Deploy to VPS via SSH
         uses: appleboy/ssh-action@v0.1.6
         with:
           host: 82.180.136.100
-          username: root
+          username: minecraft
           key: ${{ secrets.SSH_PRIVATE_KEY }}
+          passphrase: ${{ secrets.SSH_PASSPHRASE }}
           script: |
             cd /home/minecraft/minecraft-server
             git pull origin main
-            # Restart the Minecraft server
             screen -S minecraft -X quit
             screen -dmS minecraft java -Xmx14G -Xms14G -jar purpur.jar nogui
