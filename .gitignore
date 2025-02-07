@@ -7,6 +7,7 @@ cache/
 logs/
 versions/
 plugins/.paper-remapped
+**/cache/
 
 # Server properties and configurations (if you want to exclude them)
 banned-players.json
@@ -51,3 +52,5 @@ backups/
 plugins/DiscordSRV/config.yml
 plugins/DiscordSRV/config.yml
 purpur-1.21.4-2388.jar
+plugins/SkinsRestorer/recommendations.json
+plugins/CMILib/Translations/Locale_EN.yml

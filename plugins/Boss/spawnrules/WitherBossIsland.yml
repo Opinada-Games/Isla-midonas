@@ -25,18 +25,18 @@ Delay: 6 minutes
 Days:
 - MONDAY
 Months:
-- FEBRUARY
-- JANUARY
-- SEPTEMBER
-- DECEMBER
-- MARCH
 - OCTOBER
-- AUGUST
-- NOVEMBER
 - JUNE
-- APRIL
+- DECEMBER
+- SEPTEMBER
+- JANUARY
 - MAY
+- APRIL
+- FEBRUARY
+- MARCH
+- NOVEMBER
 - JULY
+- AUGUST
 Rain: false
 Thunder: false
 Chance: 1.0
