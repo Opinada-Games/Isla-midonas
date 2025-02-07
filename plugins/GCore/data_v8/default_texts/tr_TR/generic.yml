@@ -1,0 +1,96 @@
+# -------------------- Miscellaneous --------------------
+
+messageNoPermission: |
+  &7Bunu yapmak için izniniz yok.
+
+messageInvalidPlayer: |
+  &7Oyuncu &c{value} &7geçersizdir (çevrimiçi olmalı).
+
+messageInvalidOfflinePlayer: |
+  &7Oyuncu &c{value} &7geçersizdir.
+
+messageCC: '&d (cc. of {og})'
+messageSilentCC: '&d (cc. of {og}, silent)'
+
+textCancel: cancel
+
+# -------------------- Command --------------------
+
+commandParameterUsageTarget: Oyuncu
+commandParameterUsageReset: Sıfırla
+commandParameterUsageOperation: İşlem
+commandParameterUsageAmount: Miktar
+commandParameterUsageSpecificEditor: editör
+messageCommandNotPlayer: |
+  &7Bu komutu konsoldan yürütemezsiniz.
+
+messageCommandMissingArgument: |
+  &7Eksik argüman &c{argument}&7. ve &d? &7yardım için bir komuttan sonra.
+
+messageCommandMissingArgumentFound: |
+  &7Eksik argüman &c{argument} &7(found {found}). Add &d? &7yardım için bir komuttan sonra.
+
+messageCommandUnnecessaryArguments: |
+  &7gereksiz argümanlar : &c{unnecessary}&7. Add &d? &7yardım için bir komuttan sonra.
+
+messageCommandIncompatibleArguments: |
+  &c{argument1} &7ile kullanılamaz &c{argument2}&7. Add &d? &7yardım için bir komuttan sonra.
+
+messageCommandDependentArguments: |
+  &c{argument1} &7olmadan kullanılamaz &c{argument2}&7. Add &d? &7yardım için bir komuttan sonra.
+
+messageCommandUnknown: |
+  &7Alt komut bulunamadı &c{subcommand}&7. Add &d? &7yardım için bir komuttan sonra.
+
+messageCommandHelpElementPrefix: '&6'
+messageCommandHelpElement: '{usage}&6: &f{description}'
+messageCommandHelpColorArgumentOptional: '&e&o'
+messageCommandHelpColorArgumentRequired: '&e'
+
+messageCommandHelpPageOutsideBounds: |
+  &7Bu yardım menüsünde yalnızca {pages} sayfa{plural}.
+
+messageCommandHelpHeader: '&6&l{prefix} &6Yardım ({page}/{pages})'
+
+# -------------------- Numbers --------------------
+
+numberMillion: million
+numberBillion: billion
+numberTrillion: trillion
+
+durationFormatS: '{seconds}s'
+durationFormatMS: '{minutes}m{seconds}s'
+durationFormatHMS: '{hours}h{minutes}m{seconds}s'
+durationFormatDHMS: '{days}d{hours}h{minutes}m{seconds}s'
+
+# -------------------- Cost --------------------
+
+messageMustHaveCurrency: |
+  &7ihtiyacın var &c{money} &7bunun için, ama sadece &c{balance}&7.
+
+messageMustHaveMoreItem: |
+  &7ihtiyacın var &c{item} &7bunun için, ancak yalnızca &c{has_amount}&7'niz var.
+
+messageMustHaveItem: |
+  &7İhtiyacın var &c{item} &7bunun için.
+
+# -------------------- Item --------------------
+
+# Placeholders for this : {amount}, {type}, {durability}, {custom_model_data}, {enchantments}, {name}, {lore}
+
+textDescribeItem: |
+  {amount}x {type}
+  {name}
+  {lore}
+  {enchantments}
+
+textDescribeItemNameIfHas: '{name}'
+textDescribeItemLoreIfHas: '- {lore}'
+textDescribeItemEnchantmentsIfHas: '> {enchantments}'
+textDescribeItemEnchantmentsLine: '{enchant} {level}'
+textDescribeItemSingleLine: '{amount}x {type} {name}'
+
+# -------------------- Format --------------------
+
+# For date format characters, see https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
+dateTimeFormat: "MMM d yyyy 'at' h:mm a"

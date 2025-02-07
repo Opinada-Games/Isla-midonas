@@ -1,0 +1,66 @@
+# Configuración del Menú de Trabajos para zMenu
+size: 27
+name: "&8> &6&lMenú de Trabajos"
+
+items:
+  # Botón para Estadísticas de Trabajos
+  jobs_stats:
+    slot: 11
+    item:
+      material: PAPER
+      name: "&bEstadísticas de Trabajos"
+      lore:
+        - "&7Consulta tus estadísticas actuales de trabajos."
+        - "&eHaz clic para verlas."
+        - "&8Command: &b/jobs stats"
+        - ""
+    commands:
+      - "jobs stats"
+    closeInventory: true
+
+  # Botón para Explorar Trabajos
+  jobs_browse:
+    slot: 13
+    item:
+      material: BOOK
+      name: "&aExplorar Trabajos"
+      lore:
+        - "&7Únete o renuncia de algún trabajo"
+        - "&eHaz clic para abrir la lista."
+        - "&8Command: &b/jobs browse"
+        - ""
+    commands:
+      - "jobs browse"
+    closeInventory: true
+
+  # Botón para Salir de un Trabajo
+  jobs_leave:
+    slot: 15
+    item:
+      material: RED_BANNER
+      name: "&cSalir de un Trabajo"
+      lore:
+        - "&7Deja un trabajo que ya no deseas."
+        - "&7Escribe en el chat: &6/jobs leave &b<nombre_del_trabajo>"
+        - ""
+    commands:
+      - tellraw %player_name% {"text":"Da ","color":"white","extra":[{"text":"[Click aquí]","color":"gray","bold":true,"clickEvent":{"action":"suggest_command","value":"/jobs leave "}},{"text":" para completar el comando ","color":"white"},{"text":"/jobs leave","color":"aqua","bold":true}]}
+    closeInventory: true
+
+  # Botón para Volver al Menú Principal
+  volver:
+    slot: 26
+    item:
+      material: ARROW
+      name: "&cVolver al Menú Principal"
+      lore:
+        - "&7Regresa al menú principal."
+        - "&eHaz clic para volver."
+    commands:
+      - "zm open main_inventory"
+    closeInventory: true
+
+# Relleno de espacios vacíos con panel de vidrio teñido
+fillItem:
+  material: GRAY_STAINED_GLASS_PANE
+  name: " "

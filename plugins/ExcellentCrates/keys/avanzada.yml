@@ -1,0 +1,7 @@
+Name: Llave Avanzada
+Virtual: false
+Item:
+  Material: TRIPWIRE_HOOK
+  Name: '&bLlave avanzada'
+  Lore:
+  - '&7¡Buenas noticias! Una buena llave.'

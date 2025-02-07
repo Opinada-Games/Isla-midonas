@@ -1,0 +1,18 @@
+{
+  "render-threads-enabled": true,
+  "maps": {
+    "cementerio": {
+      "update-enabled": true
+    },
+    "lobby": {
+      "update-enabled": true
+    },
+    "world": {
+      "update-enabled": true
+    },
+    "world_nether": {
+      "update-enabled": true
+    }
+  },
+  "hidden-players": []
+}

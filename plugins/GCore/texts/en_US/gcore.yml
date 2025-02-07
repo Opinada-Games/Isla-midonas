@@ -1,0 +1,47 @@
+# -------------------- Plugin --------------------
+
+messagePluginUnknown: |
+  &7Plugin &7{plugin} &7does not exist.
+
+messagePluginReloaded: |
+  &7Plugin &a{plugin} &7was reloaded.
+
+messagePluginManipulateError: |
+  &7Action on plugin &7{plugin} &7couldn't be processed.
+
+messagePluginInternalState: |
+  &7&m            &r &7{plugin} &7&m            &r
+  &7Version : &a{version}
+  &7Lifecycle reference : &a{lifecycle_reference}
+  &7Registered data boards : &a{data_boards}
+  &7Registered loggers : &a{loggers}
+  &7Registered integrations : &a{integrations}
+  &7Registered bossbars : &a{bossbars}
+  &7Registered GUIs : &a{guis}
+  &7Registered tasks : &a{tasks}
+  &7Registered listeners : &a{listeners}
+
+messagePluginList: |
+  &7There are &a{count} &7plugins, &a{active} &7are active, &7{inactive} &7are inactive : {plugins}
+
+messageGcoreExportFile: |
+  &7Your data and configuration files for &a{plugins} &7were exported to &a{file}&7. Please share it with the developer.
+
+messageGcoreExportCouldnt: |
+  &7File &c{file} &7couldn't be exported.
+
+# -------------------- Commands --------------------
+
+commandDescriptionGcore: main command for GCore
+commandDescriptionGcorePlugins: list GCore's dependant plugins
+commandDescriptionGcoreExport: export GCore-dependant plugins data
+commandDescriptionGcoreItemRead: read item to configuration
+commandDescriptionGcoreItemReadChat: read item to chat
+commandDescriptionGcoreItemReadClick: read items from inventory clicks
+commandDescriptionGcoreItemSetNBTString: set a NBT string for the item in your hand
+
+messageItemReadNull: |
+  &cThis item can't be exported to configuration. Please hold an item in your hand.
+
+messageItemReadExported: |
+  &7This item was exported to &a{file} &7at path &a{path}&7.

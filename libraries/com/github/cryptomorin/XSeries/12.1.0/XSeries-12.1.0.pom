@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.cryptomorin</groupId>
+    <artifactId>XSeries</artifactId>
+    <version>12.1.0</version>
+
+    <name>XSeries</name>
+    <description>A set of utilities for Minecraft plugins</description>
+    <url>https://www.spigotmc.org/threads/378136/</url>
+
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>https://github.com/CryptoMorin/XSeries/issues</url>
+    </issueManagement>
+
+    <inceptionYear>2019</inceptionYear>
+
+    <developers>
+        <developer>
+            <id>CryptoMorin</id>
+            <name>Crypto Morin</name>
+            <roles>
+                <role>Owner</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>9</version>
+    </parent>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <!-- https://repo1.maven.org/maven2/com/github/cryptomorin/XSeries/ -->
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>nms-repo</id>
+            <url>https://repo.codemc.org/repository/nms/</url>
+        </repository>
+        <repository>
+            <!-- Sometimes codemc's snapshots don't have the mojang packages. -->
+            <!-- https://libraries.minecraft.net/com/mojang/authlib/VERSION/authlib-VERSION.jar -->
+            <id>minecraft-libraries</id>
+            <name>Minecraft Libraries</name>
+            <url>https://libraries.minecraft.net/</url>
+        </repository>
+    </repositories>
+
+    <properties>
+        <!-- Latest version -->
+        <!-- https://repo.codemc.io/service/rest/repository/browse/nms/org/spigotmc/spigot/ -->
+        <!-- 1.8.8-R0.1-SNAPSHOT -->
+        <!-- 1.9.4-R0.1-SNAPSHOT -->
+        <!-- 1.10.2-R0.1-SNAPSHOT -->
+        <!-- 1.11.2-R0.1-SNAPSHOT -->
+        <!-- 1.12.2-R0.1-SNAPSHOT -->
+        <!-- 1.13.2-R0.1-SNAPSHOT -->
+        <!-- 1.14.4-R0.1-SNAPSHOT -->
+        <!-- 1.15.2-R0.1-SNAPSHOT -->
+        <!-- 1.16.5-R0.1-SNAPSHOT -->
+        <!-- 1.17.1-R0.1-SNAPSHOT -->
+        <!-- 1.18.2-R0.1-SNAPSHOT -->
+        <!-- 1.19.4-R0.1-SNAPSHOT -->
+        <!-- 1.20.6-R0.1-SNAPSHOT -->
+        <!-- 1.21.1-R0.1-SNAPSHOT -->
+        <!-- 1.21.3-R0.1-SNAPSHOT -->
+        <!-- 1.21.4-R0.1-SNAPSHOT -->
+        <!-- mvn install:install-file "-Dfile=server.jar" -DgroupId=org.spigotmc -DartifactId=spigot -Dversion=1.21.4-R0.1-EXPR -Dpackaging=jar -DgeneratePom=true -->
+        <!-- <spigotVersion>1.21.4-R0.1-EXPR</spigotVersion> -->
+        <spigotVersion>1.21.4-R0.1-SNAPSHOT</spigotVersion>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <jopt>5.0.4</jopt>
+        <testVer/>
+        <testJavaPath/>
+        <testJava>11</testJava>
+    </properties>
+
+    <dependencies>
+        <!--        <dependency>-->
+        <!--            <groupId>com.mojang</groupId>-->
+        <!--            <artifactId>authlib</artifactId>-->
+        <!--            <version>6.0.55</version>-->
+        <!--            <scope>provided</scope>-->
+        <!--        </dependency>-->
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot</artifactId>
+            <version>${spigotVersion}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <!-- https://mvnrepository.com/artifact/org.jetbrains/annotations -->
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>26.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.11.3</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-toolchains-plugin</artifactId>
+                <version>3.2.0</version>
+                <executions>
+                    <execution>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>toolchain</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <toolchains>
+                        <jdk>
+                            <version>[${testJava}]</version>
+                        </jdk>
+                    </toolchains>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.3.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.7.0</version>
+                <configuration>
+                    <!--all,-missing-->
+                    <doclint>none</doclint>
+                    <release>8</release>
+                    <excludePackageNames>com.cryptomorin.xseries.unused:com.cryptomorin.xseries.particles
+                    </excludePackageNames>
+                    <!-- Apparently this is needed because it's a bug with maven JavaDoc plugin not being able to find the exe by itself. -->
+                    <javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>3.2.4</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>1.7.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <serverId>ossrh</serverId>
+                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <proc>none</proc>
+                    <source>8</source>
+                    <target>8</target>
+                    <compilerArgs>
+                        <!-- Fails to build the JAR if one of the excluded classes are being used inside an included class. -->
+                        <arg>-sourcepath</arg>
+                        <arg>doesnotexist</arg>
+                    </compilerArgs>
+                    <excludes>
+                        <exclude>com/cryptomorin/xseries/unused/</exclude>
+                        <exclude>com/cryptomorin/xseries/SkullCacheListener.java</exclude>
+                    </excludes>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>default-testCompile</id>
+                        <phase>test-compile</phase>
+                        <goals>
+                            <goal>testCompile</goal>
+                        </goals>
+                        <configuration>
+                            <skip>true</skip>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.5.2</version>
+                <configuration>
+                    <!--<failIfNoTests>true</failIfNoTests>-->
+                    <!-- <skipTests>true</skipTests>-->
+                    <trimStackTrace>false</trimStackTrace>
+                    <workingDirectory>${basedir}/target/tests</workingDirectory>
+                    <!--                    <dependenciesToScan>-->
+                    <!--                        <dependency>*:spigot:*:*:1.16.5-R0.1-SNAPSHOT</dependency>-->
+                    <!--                    </dependenciesToScan>-->
+                    <includes>
+                        <include>**/*.java</include>
+                    </includes>
+                    <!-- Any way to do this without exposing the path and without using a toolchain? -->
+                    <!-- https://maven.apache.org/surefire/maven-surefire-plugin/examples/toolchains.html -->
+                    <!-- <jvm>${testJavaPath}</jvm>-->
+                    <!-- You can also use the following argument from the cmd line: -->
+                    <!-- <dash><dash>toolchains "\.m2\toolchains.xml" -->
+                    <jdkToolchain>
+                        <version>[${testJava}]</version>
+                    </jdkToolchain>
+                </configuration>
+            </plugin>
+            <plugin>
+                <!-- mvn exec:exec@compile exec:exec@test -->
+                <!-- Doesn't work... Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.5.0:exec (default-cli) on project XSeries: Command execution failed.: Cannot run program "mvn" (in directory): CreateProcess error=2, The system cannot find the file specified(default-cli) on project XSeries: Command execution failed.: Cannot run program "mvn" (in directory): CreateProcess error=2, The system cannot find the file specified -->
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.5.0</version>
+                <configuration>
+                    <!-- <executable>IntelliJ\plugins\maven\lib\maven3\bin\mvn.cmd</executable>-->
+                    <executable>mvn</executable>
+                </configuration>
+
+                <executions>
+                    <execution>
+                        <id>compile</id>
+                        <phase>none</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>
+                                <argument>compiler:compile</argument>
+                                <argument>compiler:testCompile</argument>
+                            </arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>test</id>
+                        <phase>none</phase>
+                        <!-- Configuring the correct phase here, which would be 'test' causes this to get run twice. -->
+                        <!-- https://stackoverflow.com/questions/4253700/maven-phase-executing-twice -->
+
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>
+                                <argument>test</argument>
+                                <argument>-Ptester,${testVer}</argument>
+                            </arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <!-- This won't properly set the propery for some reason: -->
+                        <!-- mvn exec:exec@everything -DtestVer=8 -->
+                        <id>everything</id>
+                        <phase>none</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>
+                                <argument>exec:exec@compile</argument>
+                                <argument>exec:exec@test</argument>
+                            </arguments>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+
+        <testSourceDirectory>src/test</testSourceDirectory>
+        <testResources>
+            <testResource>
+                <directory>src/test/resources</directory>
+                <filtering>true</filtering>
+            </testResource>
+        </testResources>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>tester</id>
+            <dependencies>
+                <dependency>
+                    <groupId>org.spigotmc</groupId>
+                    <artifactId>spigot</artifactId>
+                    <version>${spigotVersion}</version>
+                    <scope>provided</scope>
+                </dependency>
+            </dependencies>
+            <build>
+                <plugins>
+                    <!--                    <plugin>-->
+                    <!--                        &lt;!&ndash; For cleaning the tests folder that the server files are generated in &ndash;&gt;-->
+                    <!--                        <artifactId>maven-clean-plugin</artifactId>-->
+                    <!--                        <version>3.4.0</version>-->
+                    <!--                        <executions>-->
+                    <!--                            <execution>-->
+                    <!--                                <id>auto-clean</id>-->
+                    <!--                                <phase>initialize</phase>-->
+                    <!--                                <goals>-->
+                    <!--                                    <goal>clean</goal>-->
+                    <!--                                </goals>-->
+                    <!--                                <configuration>-->
+                    <!--                                    <excludeDefaultDirectories>true</excludeDefaultDirectories>-->
+                    <!--                                    <filesets>-->
+                    <!--                                        <fileset>-->
+                    <!--                                            <directory>target/tests</directory>-->
+                    <!--                                        </fileset>-->
+                    <!--                                    </filesets>-->
+                    <!--                                </configuration>-->
+                    <!--                            </execution>-->
+                    <!--                        </executions>-->
+                    <!--                    </plugin>-->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <version>3.13.0</version>
+                        <configuration>
+                            <encoding>UTF-8</encoding>
+                            <proc>none</proc>
+                            <source>1.8</source>
+                            <target>1.8</target>
+                            <testSource>1.8</testSource>
+                            <testTarget>1.8</testTarget>
+                            <useIncrementalCompilation>false</useIncrementalCompilation>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>default-testCompile</id>
+                                <phase>test-compile</phase>
+                                <goals>
+                                    <goal>testCompile</goal>
+                                </goals>
+                                <configuration>
+                                    <skip>false</skip>
+                                    <testIncludes>
+                                        <include>**/*.java</include>
+                                    </testIncludes>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>latest</id>
+            <properties>
+                <nms>21_R0</nms>
+                <testJava>21</testJava>
+            </properties>
+        </profile>
+        <profile>
+            <id>21</id>
+            <properties>
+                <nms>21_R0</nms>
+                <spigotVersion>1.21.1-R0.1-SNAPSHOT</spigotVersion>
+                <testJava>21</testJava>
+            </properties>
+        </profile>
+        <profile>
+            <id>20</id>
+            <properties>
+                <nms>20_R0</nms>
+                <spigotVersion>1.20.6-R0.1-SNAPSHOT</spigotVersion>
+                <testJava>21</testJava>
+            </properties>
+        </profile>
+        <profile>
+            <id>19</id>
+            <properties>
+                <nms>19_R1</nms>
+                <spigotVersion>1.19.4-R0.1-SNAPSHOT</spigotVersion>
+                <testJava>21</testJava>
+            </properties>
+        </profile>
+        <profile>
+            <id>18</id>
+            <properties>
+                <nms>18_R1</nms>
+                <spigotVersion>1.18.2-R0.1-SNAPSHOT</spigotVersion>
+                <testJava>17</testJava>
+            </properties>
+        </profile>
+        <profile>
+            <id>17</id>
+            <properties>
+                <nms>17_R1</nms>
+                <spigotVersion>1.17.1-R0.1-SNAPSHOT</spigotVersion>
+                <testJava>17</testJava>
+            </properties>
+        </profile>
+        <profile>
+            <!-- Doens't seem to work. I can't find a way to compile with one dependency and test with another -->
+            <id>16</id>
+            <properties>
+                <nms>16_R3</nms>
+                <spigotVersion>1.16.5-R0.1-SNAPSHOT</spigotVersion>
+                <testJava>11</testJava>
+            </properties>
+        </profile>
+        <profile>
+            <id>15</id>
+            <properties>
+                <nms>15_R3</nms>
+                <spigotVersion>1.15.2-R0.1-SNAPSHOT</spigotVersion>
+                <testJava>11</testJava>
+            </properties>
+        </profile>
+        <profile>
+            <id>14</id>
+            <properties>
+                <nms>15_R3</nms>
+                <spigotVersion>1.14.4-R0.1-SNAPSHOT</spigotVersion>
+                <testJava>11</testJava>
+            </properties>
+        </profile>
+        <profile>
+            <id>13</id>
+            <properties>
+                <nms>15_R3</nms>
+                <spigotVersion>1.13.2-R0.1-SNAPSHOT</spigotVersion>
+                <testJava>11</testJava>
+            </properties>
+        </profile>
+        <profile>
+            <id>12</id>
+            <properties>
+                <nms>12_R3</nms>
+                <spigotVersion>1.12.2-R0.1-SNAPSHOT</spigotVersion>
+                <testJava>1.8</testJava>
+            </properties>
+            <dependencies>
+                <dependency>
+                    <groupId>net.sf.jopt-simple</groupId>
+                    <artifactId>jopt-simple</artifactId>
+                    <version>${jopt}</version>
+                </dependency>
+            </dependencies>
+        </profile>
+        <profile>
+            <id>8</id>
+            <properties>
+                <nms>8_R3</nms>
+                <spigotVersion>1.8.8-R0.1-SNAPSHOT</spigotVersion>
+                <testJava>1.8</testJava>
+            </properties>
+            <dependencies>
+                <dependency>
+                    <groupId>net.sf.jopt-simple</groupId>
+                    <artifactId>jopt-simple</artifactId>
+                    <version>${jopt}</version>
+                </dependency>
+            </dependencies>
+        </profile>
+    </profiles>
+</project>

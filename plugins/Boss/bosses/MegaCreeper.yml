@@ -1,0 +1,145 @@
+#  -------------------------------------------------------------------------------------------------
+#  The main Boss configuration file. Send it to friends or publish online, we'll load it automatically.
+#  We recommend AGAINST editing it here. Use /boss menu instead. MineAcademy.org is not responsible
+#  for data loss, hair loss, your ego or thermonuclear war from mistakes in your edit.
+#  -------------------------------------------------------------------------------------------------
+
+Type: CREEPER
+Health: 250.0
+Equipment: {}
+Random_Equipment_On_Empty_Slots: false
+Potion_Effects: {}
+Riding:
+  Vanilla: []
+  Boss: []
+  Remove_On_Death: false
+Commands: []
+Commands_Stop_After_First: false
+Attributes:
+  SCALE: 1.6
+  ATTACK_DAMAGE: 100.0
+  MOVEMENT_SPEED: 0.35
+Lightning:
+  Death: false
+  Spawn: false
+Reinforcements: []
+Custom_Settings:
+  Powered_Creeper: true
+Skills:
+  Bomb:
+    Delay: "45 seconds"
+    Commands: []
+    Messages:
+    - ¡Has sido <red>bombardeado <gray>por el jefe!
+    - ¡El {boss} ha <red>generado un TnT <gray>en ti!
+    - Por favor no te muevas, ¡hay un regalo para ti!
+    Stop_More_Skills: true
+    Settings:
+      Fuse_Time: "3 seconds"
+      Spawn_Height: 7
+      Power: 4.0
+      Destroy_Blocks: false
+Drops:
+  Vanilla: false
+  General:
+  - Key:
+      ==: "org.bukkit.inventory.ItemStack"
+      v: 4189
+      type: "TRIPWIRE_HOOK"
+      meta:
+        ==: "ItemMeta"
+        meta-type: "UNSPECIFIC"
+        display-name: "{\"text\":\"\",\"extra\":[{\"text\":\"Llave avanzada\",\"italic\":false,\"color\":\"white\"}]}"
+        enchants:
+          minecraft:looting: 1
+        PublicBukkitValues: "{\n    \"excellentcrates:crate_key.id\": \"avanzada\"\n}"
+    Value: 0.7000000000000001
+  - Key:
+      ==: "org.bukkit.inventory.ItemStack"
+      v: 4189
+      type: "GUNPOWDER"
+      amount: 64
+    Value: 1.0
+  - Key:
+      ==: "org.bukkit.inventory.ItemStack"
+      v: 4189
+      type: "GUNPOWDER"
+      amount: 64
+    Value: 1.0
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  Player:
+  - {}
+  Player_Time_Threshold: 15 seconds
+  Player_Commands:
+  - eco give {killer} 200
+Limit_Reasons:
+- SPAWN_RULE
+Limit:
+  Nearby_Bosses:
+    Key: 100
+    Value: 20.0
+  Worlds:
+    world: 2
+    lobby: 0
+    world_nether: 0
+    witp: 0
+Citizens:
+  Enabled: false
+  Speed: 5.0
+  Skin: null
+  Sound_Death: null
+  Sound_Hurt: null
+  Sound_Ambient: null
+  Goal_Target_Enabled: false
+  Goal_Target_Aggressive: false
+  Goal_Target_Radius: 24
+  Goal_Target_Entities: []
+  Goal_Wander_Enabled: false
+  Goal_Wander_Radius: 18
+Keep_In_Spawn_Region: false
+Egg:
+  Lore: []
+Last_Death_From_Spawn_Rule:
+  MegaCreeper: 1737487071815
+Dropped_Exp: 500 - 500

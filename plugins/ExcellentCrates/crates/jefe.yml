@@ -1,0 +1,478 @@
+Name: Cofre de Jefe
+Permission_Required: false
+Opening:
+  Cooldown: 10
+Key:
+  # Sets whether or not keys are required to open this crate.
+  Required: true
+  Ids:
+  - jefe
+  - llave_maestra
+Block:
+  Positions:
+  - 234,224,32,world
+  Pushback:
+    Enabled: true
+  Hologram:
+    Enabled: true
+    Template: default
+    Y_Offset: 0.0
+  Effect:
+    Model: HELIX
+    Particle:
+      Name: DRAGON_BREATH
+Milestones:
+  Repeatable: true
+  List:
+    '0':
+      Reward_Id: llave_de_loteria
+      Openings: 5
+Rewards:
+  List:
+    '30000':
+      Name: $30000
+      Weight: 25.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: a0000k00acdnmqs3fdpimst3j1001arb9dpim6sj1cpq3korledq6uravdpgmqp8010h28cpg60o308g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Commands:
+      - eco give %player_name% 0
+      Items:
+      - a0000k00acdnmqs3fdpimst3j1001arb9dpim6sj1cpq3korledq6uravdpgmqp8010h28cpg60o308g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Ignored_For_Permissions: []
+    smithing_template:
+      Name: Smithing Template
+      Weight: 25.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: k0000c00aorfeln780000020g002d5i00bbdd5n6aoric5j78ejeclq6gpbid5q6anrle1jn4ob4clfn6rb9ehk6irj7btq6arbgdhgn8p80
+      Commands: []
+      Items:
+      - k0000c00aorfeln780000020g002d5i00bbdd5n6aoric5j78ejeclq6gpbid5q6anrle1jn4ob4clfn6rb9ehk6irj7btq6arbgdhgn8p80
+      Ignored_For_Permissions: []
+    pechera_de_armando:
+      Name: Pechera de Armando
+      Weight: 25.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: k0001800korfdlo6urj5dpq762g02pmmirj5cdp62pjk79imsor8c5n78rb5dpq762g00pm6atj5dhpg600hdlkmspb3e9gmct1qdlimsp39dpjg00000k1g04jdd5n6aoric5j78ejicljn4rrnehk000000k1g043dd5n6aoric5j78ejkd1nn4rjj0000018300a6qqbeclhn4ob6egt7arj2e9im2qr9dpjg0000180002002lmmirj5cdp62pjk79hnasrkdtmlurj1dlig0512a1im6q35e9gi0p35410n4rb1dpi6u8g00c00aorfeln78000000gg002d5i007jdd5n6aoric5j78ejeclq6gpbid5q6anr3d1in6t3gdhgn8p80
+      Commands: []
+      Items:
+      - k0001800korfdlo6urj5dpq762g02pmmirj5cdp62pjk79imsor8c5n78rb5dpq762g00pm6atj5dhpg600hdlkmspb3e9gmct1qdlimsp39dpjg00000k1g04jdd5n6aoric5j78ejicljn4rrnehk000000k1g043dd5n6aoric5j78ejkd1nn4rjj0000018300a6qqbeclhn4ob6egt7arj2e9im2qr9dpjg0000180002002lmmirj5cdp62pjk79hnasrkdtmlurj1dlig0512a1im6q35e9gi0p35410n4rb1dpi6u8g00c00aorfeln78000000gg002d5i007jdd5n6aoric5j78ejeclq6gpbid5q6anr3d1in6t3gdhgn8p80
+      Ignored_For_Permissions: []
+    botas_de_adrian:
+      Name: Botas de Adrian
+      Weight: 25.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 2g0005002j3dtmn0rrecln78soa00b6qqbeclhn4ob6egt6arj3d1gmst3dcln78soa0036opbmclm760o025mmirj5cdp62pjk79mmarj4d5n6e000002g600mdlkmspb3e9gmct1qcpm62rb5btrm2r3bclp000000k1g04rdd5n6aoric5j78ej2eln6suavd1nn0000002g600kdlkmspb3e9gmct1qeln64sj5c5lmirj7000002g0004005bdd5n6aoric5j78ej3elpn8rrdbtn62rb5008i4gjfehgn6834ckg42p3id5gms8g00c00aorfeln78000000gg002d5i006bdd5n6aoric5j78ejeclq6gpbid5q6anr2dtnn8so0
+      Commands: []
+      Items:
+      - 2g0005002j3dtmn0rrecln78soa00b6qqbeclhn4ob6egt6arj3d1gmst3dcln78soa0036opbmclm760o025mmirj5cdp62pjk79mmarj4d5n6e000002g600mdlkmspb3e9gmct1qcpm62rb5btrm2r3bclp000000k1g04rdd5n6aoric5j78ej2eln6suavd1nn0000002g600kdlkmspb3e9gmct1qeln64sj5c5lmirj7000002g0004005bdd5n6aoric5j78ej3elpn8rrdbtn62rb5008i4gjfehgn6834ckg42p3id5gms8g00c00aorfeln78000000gg002d5i006bdd5n6aoric5j78ejeclq6gpbid5q6anr2dtnn8so0
+      Ignored_For_Permissions: []
+    netherite_pickaxe:
+      Name: Netherite Pickaxe
+      Weight: 25.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 50000a00566rrde1nmspbeehpgk00mdlkmspb3e9gmct1qcln66q31dpq6qpbeehpgk006dhincpbcec1g04bdd5n6aoric5j78ejdcln68qbecs0000050c010rb9dpim6sj1cpq3kt3ldpn6ar00000060o02hmmirj5cdp62pjk79imcpj9cdkmarj3f400000a0c01arb9dpim6sj1cpq3kr3lcdlninrdd5n6asg00000a0o02hmmirj5cdp62pjk79qmsojiclgmmqbecs00000a000000o00lhmutbeeg00000110004qb400dmqqbeclhn4ob6egt6spbkd1in4qbkclfn0qb3ddgngp80
+      Commands: []
+      Items:
+      - 50000a00566rrde1nmspbeehpgk00mdlkmspb3e9gmct1qcln66q31dpq6qpbeehpgk006dhincpbcec1g04bdd5n6aoric5j78ejdcln68qbecs0000050c010rb9dpim6sj1cpq3kt3ldpn6ar00000060o02hmmirj5cdp62pjk79imcpj9cdkmarj3f400000a0c01arb9dpim6sj1cpq3kr3lcdlninrdd5n6asg00000a0o02hmmirj5cdp62pjk79qmsojiclgmmqbecs00000a000000o00lhmutbeeg00000110004qb400dmqqbeclhn4ob6egt6spbkd1in4qbkclfn0qb3ddgngp80
+      Ignored_For_Permissions: []
+    netherite_sword:
+      Name: Netherite Sword
+      Weight: 25.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 50000a00566rrde1nmspbeehpgk00mdlkmspb3e9gmct1qcln66q31dpq6qpbeehpgk006dhincpbcec1g04bdd5n6aoric5j78ejdcln68qbecs0000050c016rb9dpim6sj1cpq3ksr8c5p70rj5edpg00000o1g053dd5n6aoric5j78ejldph74pb1ddkmspo00000k0o025mmirj5cdp62pjk79r62rbgd5p6a000002g00000c00aorfeln78000000gg002d5i006bdd5n6aoric5j78ejeclq6gpbid5q6anrjetnn4p00
+      Commands: []
+      Items:
+      - 50000a00566rrde1nmspbeehpgk00mdlkmspb3e9gmct1qcln66q31dpq6qpbeehpgk006dhincpbcec1g04bdd5n6aoric5j78ejdcln68qbecs0000050c016rb9dpim6sj1cpq3ksr8c5p70rj5edpg00000o1g053dd5n6aoric5j78ejldph74pb1ddkmspo00000k0o025mmirj5cdp62pjk79r62rbgd5p6a000002g00000c00aorfeln78000000gg002d5i006bdd5n6aoric5j78ejeclq6gpbid5q6anrjetnn4p00
+      Ignored_For_Permissions: []
+    casco_del_opinada:
+      Name: Casco del Opinada
+      Weight: 25.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 50000a00566rrde1nmspbeehpgk00mdlkmspb3e9gmct1qcln66q31dpq6qpbeehpgk006dhincpbcec1g04bdd5n6aoric5j78ejdcln68qbecs0000050c018rb9dpim6sj1cpq3ktbec9p6aobbd5n6e0000050600mdlkmspb3e9gmct1qdpkmeq3kbtr6isr9dtn000000k0002002lmmirj5cdp62pjk79hnasrkdtmlurj1dlig04p28dgn6orf41i6ar109to6irj1chgi4003002m6rrldpq00000044000j9cg01krb9dpim6sj1cpq3krj5ehk6asj9ehiluq35dhmmat00
+      Commands: []
+      Items:
+      - 50000a00566rrde1nmspbeehpgk00mdlkmspb3e9gmct1qcln66q31dpq6qpbeehpgk006dhincpbcec1g04bdd5n6aoric5j78ejdcln68qbecs0000050c018rb9dpim6sj1cpq3ktbec9p6aobbd5n6e0000050600mdlkmspb3e9gmct1qdpkmeq3kbtr6isr9dtn000000k0002002lmmirj5cdp62pjk79hnasrkdtmlurj1dlig04p28dgn6orf41i6ar109to6irj1chgi4003002m6rrldpq00000044000j9cg01krb9dpim6sj1cpq3krj5ehk6asj9ehiluq35dhmmat00
+      Ignored_For_Permissions: []
+    tipped_arrow:
+      Name: Tipped Arrow
+      Weight: 25.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 2g0005002j3dtmn0rrecln78soa00cmqqbeclhn4ob6egt70rrkd5nmsnr3dtn78pbeehpgg006e1nn8qbfdo01erb9dpim6sj1cpq3ksrke9nmspqve1nmisrfdo0000o00lhmutbeeg00002010004qb400b6qqbeclhn4ob6egt78qbge1im8nr1e9p6uto0
+      Commands: []
+      Items:
+      - 2g0005002j3dtmn0rrecln78soa00cmqqbeclhn4ob6egt70rrkd5nmsnr3dtn78pbeehpgg006e1nn8qbfdo01erb9dpim6sj1cpq3ksrke9nmspqve1nmisrfdo0000o00lhmutbeeg00002010004qb400b6qqbeclhn4ob6egt78qbge1im8nr1e9p6uto0
+      Ignored_For_Permissions: []
+    alas_de_mai:
+      Name: Alas de Mai
+      Weight: 25.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 50000a00566rrde1nmspbeehpgk00mdlkmspb3e9gmct1qcln66q31dpq6qpbeehpgk006dhincpbcec1g04bdd5n6aoric5j78ejdcln68qbecs0000050c018rb9dpim6sj1cpq3ktbec9p6aobbd5n6e0000050000800amqqbeclhn4ob6egt66tbjehnmqnrec5mma00d490moobj41i6a82dc5ki4003002m6rrldpq00000044000j9cg010rb9dpim6sj1cpq3kpbcf5q74o80
+      Commands: []
+      Items:
+      - 50000a00566rrde1nmspbeehpgk00mdlkmspb3e9gmct1qcln66q31dpq6qpbeehpgk006dhincpbcec1g04bdd5n6aoric5j78ejdcln68qbecs0000050c018rb9dpim6sj1cpq3ktbec9p6aobbd5n6e0000050000800amqqbeclhn4ob6egt66tbjehnmqnrec5mma00d490moobj41i6a82dc5ki4003002m6rrldpq00000044000j9cg010rb9dpim6sj1cpq3kpbcf5q74o80
+      Ignored_For_Permissions: []
+    block_of_netherite:
+      Name: Block of Netherite
+      Weight: 25.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: k0000c00aorfeln780000010g002d5i006bdd5n6aoric5j78ejeclq6gpbid5q6anr2dhnm6qo0
+      Commands: []
+      Items:
+      - k0000c00aorfeln780000010g002d5i006bdd5n6aoric5j78ejeclq6gpbid5q6anr2dhnm6qo0
+      Ignored_For_Permissions: []
+    enchanted_golden_apple:
+      Name: Enchanted Golden Apple
+      Weight: 25.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 180000o00lhmutbeeg00002010004qb400g6qqbeclhn4ob6egt6arj3d1gmst35chfmerrcchimsnr1e1o6op80
+      Commands: []
+      Items:
+      - 180000o00lhmutbeeg00002010004qb400g6qqbeclhn4ob6egt6arj3d1gmst35chfmerrcchimsnr1e1o6op80
+      Ignored_For_Permissions: []
+    nether_star:
+      Name: Nether Star
+      Weight: 25.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 500003002m6rrldpq00000104000j9cg01arb9dpim6sj1cpq3krj5ehk6asivedq62sg0
+      Commands: []
+      Items:
+      - 500003002m6rrldpq00000104000j9cg01arb9dpim6sj1cpq3krj5ehk6asivedq62sg0
+      Ignored_For_Permissions: []
+    netherite_leggings:
+      Name: Netherite Leggings
+      Weight: 25.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 180002g019hmurbgdtn6arjkec5005jdd5n6aoric5j78ej5dphmgobeehmmarjkec5001jcclr6ar3j0c012rb9dpim6sj1cpq3krb5dpi6irj70000018300f6qqbeclhn4ob6egt6ar35dlimst31dhfn0sjfehim6t39dtn000000k1g063dd5n6aoric5j78ejjehnn0s39dpjlupjfe9hma000002g600kdlkmspb3e9gmct1qeln64sj5c5lmirj7000002g000006005cdnnarjk000000880016ip003hmmirj5cdp62pjk79n6at38clp6it35btm6apr7d5n6eso0
+      Commands: []
+      Items:
+      - 180002g019hmurbgdtn6arjkec5005jdd5n6aoric5j78ej5dphmgobeehmmarjkec5001jcclr6ar3j0c012rb9dpim6sj1cpq3krb5dpi6irj70000018300f6qqbeclhn4ob6egt6ar35dlimst31dhfn0sjfehim6t39dtn000000k1g063dd5n6aoric5j78ejjehnn0s39dpjlupjfe9hma000002g600kdlkmspb3e9gmct1qeln64sj5c5lmirj7000002g000006005cdnnarjk000000880016ip003hmmirj5cdp62pjk79n6at38clp6it35btm6apr7d5n6eso0
+      Ignored_For_Permissions: []
+    arco_del_elmo:
+      Name: Arco del Elmo
+      Weight: 25.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: k0001800korfdlo6urj5dpq762002lmmirj5cdp62pjk79hnasrkdtmlurj1dlig03p285p66rp0chimo825dhmmu8ga00b6qqbeclhn4ob6egt6arj3d1gmst3dcln78soa0036opbmclm760o025mmirj5cdp62pjk79mmarj4d5n6e000002g600idlkmspb3e9gmct1qe1kmasj3d5n6e0000020600sdlkmspb3e9gmct1qclm6aorke9kmcqb5chfm2sjidtrn6000002g600kdlkmspb3e9gmct1qeln64sj5c5lmirj7000002g000006005cdnnarjk000000880016ip0029mmirj5cdp62pjk79hn4rrjedh6uto0
+      Commands: []
+      Items:
+      - k0001800korfdlo6urj5dpq762002lmmirj5cdp62pjk79hnasrkdtmlurj1dlig03p285p66rp0chimo825dhmmu8ga00b6qqbeclhn4ob6egt6arj3d1gmst3dcln78soa0036opbmclm760o025mmirj5cdp62pjk79mmarj4d5n6e000002g600idlkmspb3e9gmct1qe1kmasj3d5n6e0000020600sdlkmspb3e9gmct1qclm6aorke9kmcqb5chfm2sjidtrn6000002g600kdlkmspb3e9gmct1qeln64sj5c5lmirj7000002g000006005cdnnarjk000000880016ip0029mmirj5cdp62pjk79hn4rrjedh6uto0
+      Ignored_For_Permissions: []
+    smithing_template1:
+      Name: Smithing Template
+      Weight: 25.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: k0000c00aorfeln780000020g002d5i00bbdd5n6aoric5j78ejeclq6gpbid5q6anrle1jn4ob4clfn6rb9ehk6irj7btq6arbgdhgn8p80
+      Commands: []
+      Items:
+      - k0000c00aorfeln780000020g002d5i00bbdd5n6aoric5j78ejeclq6gpbid5q6anrle1jn4ob4clfn6rb9ehk6irj7btq6arbgdhgn8p80
+      Ignored_For_Permissions: []
+    totem_de_la_pulga:
+      Name: Totem de la Pulga
+      Weight: 25.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 180002g019hmurbgdtn6arjkec4005bdd5n6aoric5j78ej3elpn8rrdbtn62rb500knm8j5f1q74o9279di4l3fehimq834ckg6oo90a1qmopr149eio8jkcls788hq48h7q003002m6rrldpq000000g4000j9cg01krb9dpim6sj1cpq3kt3fehimqnrfcpfnarj4f5kmspo0
+      Commands: []
+      Items:
+      - 180002g019hmurbgdtn6arjkec4005bdd5n6aoric5j78ej3elpn8rrdbtn62rb500knm8j5f1q74o9279di4l3fehimq834ckg6oo90a1qmopr149eio8jkcls788hq48h7q003002m6rrldpq000000g4000j9cg01krb9dpim6sj1cpq3kt3fehimqnrfcpfnarj4f5kmspo0
+      Ignored_For_Permissions: []
+    billete_de_loteria:
+      Name: '&2Billete de Loteria'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 180002g019hmurbgdtn6arjkec4g03jdd5n6aoric5j78ejcdtp6a2000000205lfch6au3ke9gi4eirfch64rrccgh3kpj1dhpmab12cdnmorri48t24pric5si4b12d5q62r39cch3kpj1dhpmab12dth6ctbjcdgn8pb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49q6au3k48t24kr5eb1qqo90c9qmarj141km8pb141o74rr2c5p20srlclp78p90cln20r3fecg66rr6e9in68hc49qmsp35e9m6irj5cgh3kpj1dhpmavat5gh78pboegh3k8h2fk4005bdd5n6aoric5j78ej3elpn8rrdbtn62rb502g7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh66rrcdtp24eh2chgn4qqvctp6apbe48m24qbkc5m6iop279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh76t3id5lmat38e9nnapr848t6cobcediio8jkcls788hq4916ir3cclq6a834ckg4orrkclp6io925gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ugk00ldlkmspb3e9gmct1qcdqn6t3fdlfm8obkc45004igelh6oqb389qmmqr9ehb62r3lclpgg00scls66pbcdhimst33e9gn8pbj79hn4obkclfmmpbp5pkm8007dhnn8pbid5gg00000c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Commands: []
+      Items:
+      - 180002g019hmurbgdtn6arjkec4g03jdd5n6aoric5j78ejcdtp6a2000000205lfch6au3ke9gi4eirfch64rrccgh3kpj1dhpmab12cdnmorri48t24pric5si4b12d5q62r39cch3kpj1dhpmab12dth6ctbjcdgn8pb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49q6au3k48t24kr5eb1qqo90c9qmarj141km8pb141o74rr2c5p20srlclp78p90cln20r3fecg66rr6e9in68hc49qmsp35e9m6irj5cgh3kpj1dhpmavat5gh78pboegh3k8h2fk4005bdd5n6aoric5j78ej3elpn8rrdbtn62rb502g7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh66rrcdtp24eh2chgn4qqvctp6apbe48m24qbkc5m6iop279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh76t3id5lmat38e9nnapr848t6cobcediio8jkcls788hq4916ir3cclq6a834ckg4orrkclp6io925gh7arj4clp6oqbecli24ej6c5m76pbtbkm24t35f1q24eh249ugk00ldlkmspb3e9gmct1qcdqn6t3fdlfm8obkc45004igelh6oqb389qmmqr9ehb62r3lclpgg00scls66pbcdhimst33e9gn8pbj79hn4obkclfmmpbp5pkm8007dhnn8pbid5gg00000c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Ignored_For_Permissions: []
+    tipped_arrow1:
+      Name: Tipped Arrow
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: k0001800korfdlo6urj5dpq762g035mmirj5cdp62pjk79o6ut39dtn5uorfdpq6arjkec4001jgdtq6irre00c6qqbeclhn4ob6egt76t3idtn6enr8c5p6qqbecs0000o00lhmutbeeg00002010004qb400b6qqbeclhn4ob6egt78qbge1im8nr1e9p6uto0
+      Commands: []
+      Items:
+      - k0001800korfdlo6urj5dpq762g035mmirj5cdp62pjk79o6ut39dtn5uorfdpq6arjkec4001jgdtq6irre00c6qqbeclhn4ob6egt76t3idtn6enr8c5p6qqbecs0000o00lhmutbeeg00002010004qb400b6qqbeclhn4ob6egt78qbge1im8nr1e9p6uto0
+      Ignored_For_Permissions: []
+    diamond:
+      Name: Diamond
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 180000o00lhmutbeeg00001010004qb4008mqqbeclhn4ob6egt68qb1dlnmsp00
+      Commands: []
+      Items:
+      - 180000o00lhmutbeeg00001010004qb4008mqqbeclhn4ob6egt68qb1dlnmsp00
+      Ignored_For_Permissions: []
+    shulker_box:
+      Name: Shulker Box
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 500003002m6rrldpq00000044000j9cg01arb9dpim6sj1cpq3ksr8elm6mpbibth6uu00
+      Commands: []
+      Items:
+      - 500003002m6rrldpq00000044000j9cg01arb9dpim6sj1cpq3ksr8elm6mpbibth6uu00
+      Ignored_For_Permissions: []
+Animation_Config: chests_mini
+Last_Opener: AdrianLegaspi
+Last_Reward: Botas de Adrian
+Preview_Config: default
+Item:
+  Material: ENDER_CHEST

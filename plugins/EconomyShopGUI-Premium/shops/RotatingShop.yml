@@ -1,0 +1,142 @@
+items:
+  # Enchanted Books
+  SILK_TOUCH:
+    material: ENCHANTED_BOOK
+    buy: 200
+    sell: 50
+    enchantments:
+      - SILK_TOUCH:1
+  SHARPNESS:
+    material: ENCHANTED_BOOK
+    buy: 972.41
+    sell: 243.11
+    enchantments:
+      - DAMAGE_ALL:5
+  EFFICIENCY:
+    material: ENCHANTED_BOOK
+    buy: 972.41
+    sell: 243.11
+    enchantments:
+      - DIG_SPEED:5
+  UNBREAKING:
+    material: ENCHANTED_BOOK
+    buy: 441
+    sell: 110.25
+    enchantments:
+      - DURABILITY:3
+
+  # Spawners
+  SPAWNER_1:
+    material: SPAWNER
+    spawnertype: COW
+    name: "&c[&bCow Spawner&c]"
+    buy: 75000
+  SPAWNER_2:
+    material: SPAWNER
+    spawnertype: ZOMBIE
+    name: "&c[&bZombie Spawner&c]"
+    buy: 108000
+  SPAWNER_3:
+    material: SPAWNER
+    spawnertype: IRON_GOLEM
+    name: "&c[&bIron Golem Spawner&c]"
+    buy: 875000
+
+  # Logs (Stacks of Each Type)
+  OAK_LOGS:
+    material: OAK_LOG
+    buy: 200
+    sell: -1
+    stack-size: 64
+  SPRUCE_LOGS:
+    material: SPRUCE_LOG
+    buy: 200
+    sell: -1
+    stack-size: 64
+  BIRCH_LOGS:
+    material: BIRCH_LOG
+    buy: 200
+    sell: -1
+    stack-size: 64
+  JUNGLE_LOGS:
+    material: JUNGLE_LOG
+    buy: 200
+    sell: -1
+    stack-size: 64
+  ACACIA_LOGS:
+    material: ACACIA_LOG
+    buy: 200
+    sell: -1
+    stack-size: 64
+  DARK_OAK_LOGS:
+    material: DARK_OAK_LOG
+    buy: 200
+    sell: -1
+    stack-size: 64
+  BAMBOO_BLOCK:
+    material: BAMBOO_BLOCK
+    buy: 200
+    sell: -1
+    stack-size: 64
+
+  # Potions
+  POTION_FIRE_RESISTANCE:
+    material: POTION
+    buy: 500
+    sell: -1
+    potiontypes:
+      - fire_resistance
+  POTION_STRENGTH:
+    material: POTION
+    buy: 700
+    sell: -1
+    potiontypes:
+      - strength
+  POTION_REGENERATION:
+    material: POTION
+    buy: 1000
+    sell: -1
+    potiontypes:
+      - regeneration
+  POTION_SWIFTNESS:
+    material: POTION
+    buy: 450
+    sell: -1
+    potiontypes:
+      - swiftness
+
+  # Netherite Ingot (Stack of 16)
+  NETHERITE_INGOTS:
+    material: NETHERITE_INGOT
+    buy: 18400
+    sell: -1
+    stack-size: 18
+    displayname: "&6Pila de Lingotes de Netherite"
+    display-lore:
+      - "&7¡Un tesoro invaluable para los aventureros!"
+      - "&7Exclusivo de la tienda mágica."
+
+  # Netherite Upgrade Template
+  NETHERITE_UPGRADE_TEMPLATE:
+    material: NETHERITE_UPGRADE_SMITHING_TEMPLATE
+    buy: 5000
+    sell: -1
+    displayname: "&6Plantilla de Mejora de Netherite"
+    display-lore:
+      - "&7Transforma tu equipo de diamante"
+      - "&7en poderosas herramientas de Netherite."
+  "22":
+    material: SHULKER_BOX
+    buy: 1200.0
+    sell: -1.0
+  "3":
+    material: ENCHANTED_BOOK
+    buy: 1300.0
+    sell: -1.0
+    enchantments:
+      - excellentenchants:tunnel:3
+  "23":
+    material: ENCHANTED_GOLDEN_APPLE
+    buy: 12000.0
+    sell: 12000
+    stack-size: 32

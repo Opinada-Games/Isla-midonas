@@ -1,0 +1,95 @@
+title: '&9&lAuction House &8> &3New Listing'
+
+lang:
+  create:
+    icon: EMERALD
+    model-data: 0
+    name: '&aClick to create listing!'
+    lore:
+      - '&cClicking this button will immediately post'
+      - '&cyour item on the auction house for &a${0}'
+  time:
+    icon: CLOCK
+    model-data: 0
+    name: '&aTime for listing to be active'
+    lore:
+      - '&fCurrent: &6{0}'
+      - '&7Left Click to Add 1 Hour'
+      - '&7Right Click to Remove 1 Hour'
+      - '&7Shift Left Click to Add 30 Minutes'
+      - '&7Shift Right Click to Remove 30 Minutes'
+  advert:
+    icon: OAK_SIGN
+    model-data: 0
+    name: "&eAdvertise Listing"
+    lore:
+      - '&fAdvert Price: &a${0}'
+      - '&7Click To Toggle'
+      - '&8-------------------------'
+      - '{1}'
+      - '{2}'
+      - '&8-------------------------'
+    options:
+      selected: '&8> &e{0}'
+      not-selected: '&f{0}'
+  currency:
+    icon: GOLD_INGOT
+    model-data: 0
+    name: '&aCurrency'
+    lore:
+      - '&7Left Click to cycle up'
+      - '&7Right Click to cycle down'
+      - '&8-------------------------'
+      - '&f{0}'
+      - '&8> &e{1}'
+      - '&f{2}'
+      - '&8-------------------------'
+  mode: # Future Feature
+    icon: HOPPER
+    model-data: 0
+    name: '&bAuction Mode'
+    lore:
+      - '&7Click To Toggle'
+      - '&8-------------------------'
+      - '{0}'
+      - '{1}'
+      - '&8-------------------------'
+    options:
+      selected: '&8> &e{0}'
+      not-selected: '&f{0}'
+
+size: 6
+
+layout:
+  '0': "FILLER"
+  '1': "FILLER"
+  '2': "FILLER"
+  '3': "FILLER"
+  '4': "FILLER"
+  '5': "FILLER"
+  '6': "FILLER"
+  '7': "FILLER"
+  '8': "FILLER"
+  '9': "FILLER"
+  '13': "LISTING_ITEM"
+  '17': "FILLER"
+  '18': "FILLER"
+  '26': "FILLER"
+  '27': "FILLER"
+  '31': "LISTING_START"
+  '35': "FILLER"
+  '36': "FILLER"
+  #'38': "MODE"
+  '39': "CURRENCY"
+  '41': "LISTING_TIME"
+  '42': "LISTING_ADVERT"
+  '44': "FILLER"
+  '45': "FILLER"
+  '46': "FILLER"
+  '47': "FILLER"
+  '48': "FILLER"
+  '49': "CLOSE"
+  '50': "FILLER"
+  '51': "FILLER"
+  '52': "FILLER"
+  '53': "FILLER"

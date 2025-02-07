@@ -1,0 +1,7 @@
+Name: Llave normal
+Virtual: false
+Item:
+  Material: TRIPWIRE_HOOK
+  Name: '&eLlave Normal'
+  Lore:
+  - '&7No abre muchas cosas'

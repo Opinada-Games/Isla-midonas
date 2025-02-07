@@ -1,0 +1,8 @@
+Mystery-Vaults:
+  Cosmeticos:
+    BlockFace: SOUTH
+    Location:
+      world: world
+      x: 230.0
+      y: 224.0
+      z: 32.0

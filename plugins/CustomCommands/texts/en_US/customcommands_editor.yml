@@ -1,0 +1,184 @@
+# -------------------- Custom commands --------------------
+
+descriptionCustomCommandAliases: |
+  &7The aliases for this command
+
+descriptionCustomCommandPatterns: |
+  &7The different patterns possible for this command
+
+descriptionCustomCommandPatternPattern: |
+  &7The pattern for this command
+  &7See documentation for explanations about this
+
+descriptionCustomCommandPatternDescription: |
+  &7The description of this pattern, an explanation of what it is meant to do
+
+descriptionCustomCommandPatternPermission: |
+  &7The permission required to use this command pattern
+
+descriptionCustomCommandPatternPermissionErrorMessage: |
+  &7A custom permission error message
+
+descriptionCustomCommandPatternWorlds: |
+  &7The world restriction for usage of this command
+
+descriptionCustomCommandPatternCooldown: |
+  &7The time to wait before performing this command pattern again
+
+descriptionCustomCommandPatternCurrencyCost: |
+  &7The currencies cost required to perform this command pattern
+
+descriptionCustomCommandPatternConditions: |
+  &7The conditions required to perform this command pattern
+
+descriptionCustomCommandPatternToggleMode: |
+  &7If enabled, this will make it so every other execution will be considered as 'toggling on' or 'toggling off' the pattern
+  &7Actions with &6on_toggle_on &7will be performed when toggling on, and actions without will be performed when toggling off
+
+descriptionCustomCommandPatternActions: |
+  &7The actions executed when using this command pattern
+
+# -------------------- Actions --------------------
+
+descriptionActionOnToggleOn: |
+  &7If the pattern containing this action is on toggle mode, this decides when to perform the action (when toggling on or off)
+
+descriptionActionType: |
+  &7The type of action to execute
+
+descriptionActionTypeTarget: |
+  &7The target to execute this command for
+  &7You can use placeholders or &eeveryone &7to target all online players
+
+descriptionActionChangeGamemodeGamemode: |
+  &7The new game mode
+
+descriptionActionExecuteCommmandsCommands: |
+  &7The commands to be executed
+
+descriptionActionExecuteCommmandsAsPlayer: |
+  &7True if the commands should be executed as the player
+
+descriptionActionGiveItemItem: |
+  &7The item to be given to the player
+
+descriptionActionNotifyNotify: |
+  &7The notification to send to the player
+
+descriptionActionTeleportLocation: |
+  &7The location to teleport the player to
+
+descriptionActionWaitDuration: |
+  &7The amount of time to wait for this action
+
+
+# -------------------- Conditions --------------------
+
+descriptionConditionsConditions: |
+  &7List of conditions to check
+
+descriptionConditionsMatchAmount: |
+  &7The minimum amount of conditions that must match
+  &7If this is greater than the amount of available conditions, this one will be used
+
+descriptionConditionsNoMatchAmount: |
+  &7The minimum amount of conditions that mustn't match
+  &7If this is greater than the amount of available conditions, this one will be used
+
+descriptionConditionsErrorMessage: |
+  &7Error message to display when no working match was found
+
+# -------------------- Condition : common --------------------
+
+descriptionConditionType: |
+  &7Type of condition
+
+descriptionConditionErrorMessage: |
+  &7Error message to send when the condition isn't respected
+
+descriptionConditionGameTimeStartTicks: |
+  &7The starting ticks
+
+descriptionConditionGameTimeEndTicks: |
+  &7The ending ticks
+
+descriptionConditionInventoryFreeForItemsItems: |
+  &7The items that the player must have enough free space for in their inventory
+
+descriptionConditionItemsItems: |
+  &7A list of items
+
+descriptionConditionGenericLogicLogic: |
+  &7The logic string to parse
+  &7You can use comparison types (=, !=, <, <=, >, >=), for example &6{placeholder} * 4 >= 10 * 20 &7or &6{placeholder} = my_value
+  &7You can combine multiple comparison types, for example &610 <= {placeholder} <= 100
+  &7You can use the 'in' operator (|in|), for example &6{placeholder} |in| value1 | value2 | value3
+  &7You can use the 'and' operator (&&), for example &6{placeholder} > 50 && {placeholder} < 100
+  &7You can use the 'or' operator (||), for example &6{placeholder} <= 50 || {placeholder} >= 100
+  &7You can merge conditions with [], for example &6[{placeholder} >= 10 || {placeholder}] && [{variable:test2} < 10 || {variable:test2} > 50]
+
+descriptionConditionGenericLogicLogicPlaceholder: |
+  &r
+  &7Placeholders specific to this condition : {placeholders}
+
+descriptionConditionGenericLogicOnlineGoal: |
+  &7The number of online players required to match the logic string
+
+descriptionConditionLogicMoneyCurrency: |
+  &7The currency to check
+
+descriptionConditionPermissionPermission: |
+  &7The permission
+
+descriptionConditionPermissionOnlineGoal: |
+  &7The number of online players required to have this permission
+
+descriptionConditionPositionPosition: |
+  &7The position
+
+descriptionConditionScoreboardTagTagName: |
+  &7The scoreboard tag name
+
+descriptionConditionScoreboardTagMustHave: |
+  &7If the player must have the tag, or not
+
+descriptionConditionLogicScoreboardValueObjectiveName: |
+  &7The scoreboard objective name
+
+descriptionConditionLogicScoreboardValueScoreName: |
+  &7The scoreboard score name
+
+descriptionConditionScoreboardValueValue: |
+  &7The value to compare to
+
+descriptionConditionScoreboardValueComparison: |
+  &7The comparison to make
+
+descriptionConditionDayTimeStart: |
+  &7The start time in day
+
+descriptionConditionDayTimeEnd: |
+  &7The end time in day (can be after start to go across days)
+
+descriptionConditionWeekTimeStart: |
+  &7The start time in week
+
+descriptionConditionWeekTimeEnd: |
+  &7The end time in week (can be after start to go across weeks)
+
+descriptionConditionMonthTimeStart: |
+  &7The start time in month
+
+descriptionConditionMonthTimeEnd: |
+  &7The end time in month (can be after start to go across months)
+
+descriptionConditionYearTimeStart: |
+  &7The start time in year
+
+descriptionConditionYearTimeEnd: |
+  &7The end time in year (can be after start to go across years)
+
+# -------------------- Condition --------------------
+
+descriptionConditionMustTake: |
+  &7To take the condition (if supported) after checks

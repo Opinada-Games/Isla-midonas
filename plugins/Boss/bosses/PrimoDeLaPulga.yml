@@ -1,0 +1,165 @@
+#  -------------------------------------------------------------------------------------------------
+#  The main Boss configuration file. Send it to friends or publish online, we'll load it automatically.
+#  We recommend AGAINST editing it here. Use /boss menu instead. MineAcademy.org is not responsible
+#  for data loss, hair loss, your ego or thermonuclear war from mistakes in your edit.
+#  -------------------------------------------------------------------------------------------------
+
+Type: BOGGED
+Health: 1000.0
+Equipment:
+  OFF_HAND:
+    Key:
+      ==: "org.bukkit.inventory.ItemStack"
+      v: 4189
+      type: "BOW"
+      meta:
+        ==: "ItemMeta"
+        meta-type: "UNSPECIFIC"
+        enchants:
+          minecraft:knockback: 5
+          minecraft:power: 10
+    Value: 5.551115123125783E-17
+Random_Equipment_On_Empty_Slots: false
+Potion_Effects: {}
+Riding:
+  Vanilla: []
+  Boss: []
+  Remove_On_Death: false
+Commands: []
+Commands_Stop_After_First: false
+Attributes:
+  ATTACK_DAMAGE: 20.0
+  SCALE: 2.0
+  FOLLOW_RANGE: 35.0
+  JUMP_STRENGTH: 1.0
+  STEP_HEIGHT: 10.0
+  ARMOR: 10.0
+Lightning:
+  Death: true
+  Spawn: true
+Reinforcements: []
+Custom_Settings: {}
+Skills:
+  Disarm:
+    Delay: "30 seconds"
+    Commands: []
+    Messages:
+    - ¡Eres <red>demasiado débil <gray>para sostener este objeto!
+    - Tu objeto en mano se <red>cayó<gray>, ¡adivina quién hizo eso!
+    - ¡El {boss} te ha <red>desarmado<gray>!
+    Stop_More_Skills: true
+    Settings: {}
+  Confuse:
+    Delay: "5 seconds"
+    Commands: []
+    Messages:
+    - ¡Has sido <red>confundido <gray>por el jefe!
+    - ¡Dios mío! ¿Qué está pasando?
+    - ¡Fuiste teletransportado a un mundo maravilloso! Es broma.
+    Stop_More_Skills: true
+    Settings: {}
+Drops:
+  Vanilla: true
+  General:
+  - Key:
+      ==: "org.bukkit.inventory.ItemStack"
+      v: 4189
+      type: "TRIAL_KEY"
+      meta:
+        ==: "ItemMeta"
+        meta-type: "UNSPECIFIC"
+        display-name: "{\"text\":\"\",\"extra\":[{\"text\":\"Llave de Jefe\",\"strikethrough\":false,\"obfuscated\":false,\"bold\":false,\"italic\":false,\"underlined\":false,\"color\":\"dark_red\"}]}"
+        lore:
+        - '{"text":"","extra":[{"text":"Más allá de solo un trofeo","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gray"}]}'
+        PublicBukkitValues: "{\n    \"excellentcrates:crate_key.id\": \"jefe\"\n}"
+    Value: 1.0
+  - Key:
+      ==: "org.bukkit.inventory.ItemStack"
+      v: 4189
+      type: "TIPPED_ARROW"
+      amount: 32
+      meta:
+        ==: "ItemMeta"
+        meta-type: "POTION"
+        potion-type: "minecraft:strong_poison"
+    Value: 1.0
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  Player:
+  - {}
+  Player_Time_Threshold: 15 seconds
+  Player_Commands:
+  - eco give {killer} 5000
+Limit_Reasons:
+- SPAWN_RULE
+Limit:
+  Nearby_Bosses:
+    Key: 100
+    Value: 20.0
+  Worlds:
+    lobby: 0
+    world: 1
+    world_nether: 0
+    witp: 0
+Citizens:
+  Enabled: false
+  Speed: 5.0
+  Skin: null
+  Sound_Death: null
+  Sound_Hurt: null
+  Sound_Ambient: null
+  Goal_Target_Enabled: false
+  Goal_Target_Aggressive: false
+  Goal_Target_Radius: 24
+  Goal_Target_Entities: []
+  Goal_Wander_Enabled: false
+  Goal_Wander_Radius: 18
+Keep_In_Spawn_Region: true
+Egg:
+  Lore: []
+Last_Death_From_Spawn_Rule:
+  PrimoDeLaPulgaBossIsland: 1737953148475
+  PrimoDeLaPulgaSpawn: 1738390948951
+Alias: Primo de la Pulga
+Dropped_Exp: 500 - 500

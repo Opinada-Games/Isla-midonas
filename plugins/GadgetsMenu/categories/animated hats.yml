@@ -1,0 +1,81 @@
+Animated-Hats:
+  Siren:
+    Name: '&9Sombrero Animado de Sirena'
+    Mystery Dust: 20
+    Rarity: Raro
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Traffic Light:
+    Name: '&9Sombrero Animado de Semáforo'
+    Mystery Dust: 22
+    Rarity: Raro
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Sammy The Cookie:
+    Name: '&9Sombrero Animado de Sammy la Galleta'
+    Mystery Dust: 25
+    Rarity: Raro
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Chroma Slime:
+    Name: '&9Sombrero Animado de Baba Cromática'
+    Mystery Dust: 28
+    Rarity: Raro
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Color Block:
+    Name: '&9Sombrero Animado de Bloque de Color'
+    Mystery Dust: 28
+    Rarity: Raro
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Joe the Penguin:
+    Name: '&9Sombrero Animado de Joe el Pingüino'
+    Mystery Dust: 25
+    Rarity: Raro
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Comet the Reindeer:
+    Name: '&9Sombrero Animado de Cometa el Reno'
+    Mystery Dust: 28
+    Rarity: Raro
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Broken TV:
+    Name: '&5Sombrero Animado de TV Rota'
+    Mystery Dust: 35
+    Rarity: Épico
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''

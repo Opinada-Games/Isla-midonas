@@ -1,0 +1,51 @@
+# ----------------------------------------------------------------------------------------------------
+# Configuration file for CustomCommands
+# More information can be found in the documentation
+# ----------------------------------------------------------------------------------------------------
+
+# Aliases for the command
+# Our command can be used with /complex
+aliases: [complex]
+
+# Patterns for the command
+patterns:
+
+  - pattern: 'say [player-online]%player [phrase]%message'  # the full command to type is /complex say <player> <message> (multiple words)
+    description: send a message to a player
+    actions:
+      - type: NOTIFY
+        notify:
+          message: '&d[to {player}]: &f{args:3}'
+      - type: NOTIFY
+        target: '{arg:2}'
+        notify:
+          message: '&d[from {player}]: &f{args:3}'
+
+  - pattern: 'poke [player-online]%target_player [string]$defaultpoke%poke_message'  # the full command to type is /complex poke <player> [poke] (single word, optional)
+    description: poke a player
+    permission: myserver.permission.poke
+    permission_error_message: '&7You don''t have the permission to poke people.'
+    actions:
+      - type: NOTIFY
+        notify:
+          message: '&d[poke to {player}]: &f{args:3}'
+      - type: NOTIFY
+        target: '{arg:2}'
+        notify:
+          message: '&d[poke from {player}]: &f{arg:3}'
+
+  - pattern: 'toggle test'  # the full command to type is /complex poke <player> [poke] (single word, optional)
+    description: test the toggle feature
+    permission: myserver.permission.toggletest
+    toggle_mode: true
+    actions:
+      # actions performed when toggling on
+      - on_toggle_on: true
+        type: NOTIFY
+        notify:
+          message: '&aThe command was toggled on.'
+      # actions performed when toggling off
+      - on_toggle_on: false
+        type: NOTIFY
+        notify:
+          message: '&cThe command was toggled off.'

@@ -1,0 +1,40 @@
+# -------------------- Commands --------------------
+
+commandDescriptionCustomcommandsEdit: éditer les commandes en jeu
+
+# -------------------- Inputs --------------------
+
+messageInvalidInputInteger: |
+  &7Vous avez entré un nombre invalide.
+
+messageInvalidInputDouble: |
+  &7Vous avez entré un nombre décimal invalide.
+
+messageInvalidInputOfflinePlayer: |
+  &7Vous avez entré un joueur invalide.
+
+messageInvalidInputPlayer: |
+  &7Vous avez entré un joueur invalide (il doit être en ligne).
+
+messageInvalidInputStringSize: |
+  &7Vous avez entré un mot de taille invalide.
+
+messageInvalidInputPhrase: |
+  &7Vous devez entrer au moins un mot.
+
+# -------------------- Misc --------------------
+
+messageNoHelp: |
+  &7Il n'y a rien à voir ici.
+
+messageCooldown: |
+  &7Merci d'attendre &c{time} &7avant de pouvoir utiliser cette commande à nouveau.
+
+messageUnauthorizedWorld: |
+  &7Vous ne pouvez pas utiliser cette commande ici.
+
+messageUnknownCommand: |
+  &7Commande inconnue.
+
+messageUnknownCommandClosest: |
+  &7Commande inconnue. Peut-être vouliez-vous dire &c{closest} &7?

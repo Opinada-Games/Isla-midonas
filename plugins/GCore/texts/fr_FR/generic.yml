@@ -1,0 +1,103 @@
+# -------------------- Miscellaneous --------------------
+
+messageNoPermission: |
+  &7Vous n'avez pas la permission de faire cela.
+
+messageInvalidPlayer: |
+  &7Le joueur &c{value} &7est invalide (il doit être connecté).
+
+messageInvalidOfflinePlayer: |
+  &7Le joueur &c{value} &7est invalide.
+
+messageCC: '&d (copie de {og})'
+messageSilentCC: '&d (copie de {og}, silencieuse)'
+
+textCancel: cancel
+
+# -------------------- Command --------------------
+
+commandParameterUsageTarget: joueur
+commandParameterUsageReset: réinitialiser
+commandParameterUsageOperation: opération
+commandParameterUsageAmount: montant
+commandParameterUsageSpecificEditor: éditeur
+commandParameterUsageTarget: player
+commandDescriptionGenericReload: redémarrer le plugin
+commandDescriptionGenericPluginState: informations sur l'état interne du plugin
+commandDescriptionGenericMigrate: relancer une migration
+messageCommandNotPlayer: |
+  &7Vous ne pouvez pas exécuter cette commande depuis la console.
+
+messageCommandMissingArgument: |
+  &7Il manque l'argument &c{argument}&7. Ajoutez &d? &7après une commande pour obtenir de l'aide.
+
+messageCommandMissingArgumentFound: |
+  &7Il manque l'argument &c{argument} &7(trouvés : {found}). Ajoutez &d? &7après une commande pour obtenir de l'aide.
+
+messageCommandUnnecessaryArguments: |
+  &7Arguments en trop : &c{unnecessary}&7. Ajoutez &d? &7après une commande pour obtenir de l'aide.
+
+messageCommandIncompatibleArguments: |
+  &c{argument1} &7ne peut pas être utilisé avec &c{argument2}&7. Ajoutez &d? &7après une commande pour obtenir de l'aide.
+
+messageCommandDependentArguments: |
+  &c{argument1} &7ne peut pas être utilisé sans &c{argument2}&7. Ajoutez &d? &7après une commande pour obtenir de l'aide.
+
+messageCommandUnknown: |
+  &7Impossible de trouver la sous-commande &c{subcommand}&7. Ajoutez &d? &7après une commande pour obtenir de l'aide.
+
+messageCommandHelpElementPrefix: '&6'
+messageCommandHelpElement: '{usage}&6: &f{description}'
+messageCommandHelpColorArgumentOptional: '&e&o'
+messageCommandHelpColorArgumentRequired: '&e'
+
+messageCommandHelpPageOutsideBounds: |
+  &7Ce menu d'aide a seulement {pages} page{plural}.
+
+messageCommandHelpHeader: '&6&l{prefix} &6help ({page}/{pages})'
+
+# -------------------- Numbers --------------------
+
+numberMillion: million
+numberBillion: milliard
+numberTrillion: billion
+
+durationFormatS: '{seconds}s'
+durationFormatMS: '{minutes}m{seconds}s'
+durationFormatHMS: '{hours}h{minutes}m{seconds}s'
+durationFormatDHMS: '{days}d{hours}h{minutes}m{seconds}s'
+
+# -------------------- Cost --------------------
+
+messageMustHaveCurrency: |
+  &7Vous avez besoin de &c{money} &7pour ceci, mais vous n'avez que &c{balance}&7.
+
+messageMustHaveMoreItem: |
+  &7Vous avez besoin de &c{item} &7pour ceci, mais vous n'avez que &c{has_amount}&7.
+
+messageMustHaveItem: |
+  &7Vous avez besoin de &c{item} &7pour ceci.
+
+messageMustHaveItemNoDetail: |
+  &7Vous n'avez pas les items requis pour ceci.
+
+# -------------------- Item --------------------
+
+# Placeholders for this : {amount}, {type}, {durability}, {custom_model_data}, {enchantments}, {name}, {lore}
+
+textDescribeItem: |
+  {amount}x {type}
+  {name}
+  {lore}
+  {enchantments}
+
+textDescribeItemNameIfHas: '{name}'
+textDescribeItemLoreIfHas: '- {lore}'
+textDescribeItemEnchantmentsIfHas: '> {enchantments}'
+textDescribeItemEnchantmentsLine: '{enchant} {level}'
+textDescribeItemSingleLine: '{amount}x {type} {name}'
+
+# -------------------- Format --------------------
+
+# For date format characters, see https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
+dateTimeFormat: "d MMM yyyy 'à' HH:mm"

@@ -1,0 +1,71 @@
+Command:
+  List:
+    Desc: Lista de todos los encantamientos personalizados.
+    DoneOthers: <lgray>Opened enchantments GUI for <lyellow>%player_name%</lyellow>.</lgray>
+  Enchant:
+    Usage: <enchant> <level>
+    Desc: Encanta el item de tu mano.
+    Done:
+      Self: <lgray><lyellow>%item%</lyellow> enchanted with <lyellow>%enchant% %level%</lyellow>!</lgray>
+      Others: <lgray><lyellow>%player_display_name%</lyellow>'s <lyellow>%item%</lyellow> enchanted with <lyellow>%enchant% %level%</lyellow>!</lgray>
+    Error:
+      NoItem: <lred>There is no item to enchant!</lred>
+  Book:
+    Usage: <player> <enchant> <level>
+    Desc: Da un libro encantado personalizado.
+    Done: Se ha dado un libro encantado de &6%enchant%&7 a &6%player%&7.
+  TierBook:
+    Usage: <player> <tier> <level>
+    Desc: Da un libro encantado.
+    Error: '&c¡Rareza inválida!'
+    Done: Se ha dado un libro encantado &6%tier%&7 a &6%player%&7.
+  Argument:
+    Name:
+      Level: level
+      Slot: slot
+      Rarity: rarity
+  Disenchant:
+    Desc: Disenchant item in specific slot.
+    Done:
+      Self: <lgray><lyellow>%item%</lyellow> disenchanted from <lyellow>%enchant%</lyellow>!</lgray>
+      Others: <lgray><lyellow>%player_display_name%</lyellow>'s <lyellow>%item%</lyellow> disenchanted from <lyellow>%enchant%</lyellow>!</lgray>
+  RarityBook:
+    Desc: Give a book with enchantment of specific rarity.
+    Done: <lgray>Given <lyellow>%name%</lyellow> enchanted book to <lyellow>%player_display_name%</lyellow>.</lgray>
+    Error:
+      Empty: <lgray>There is no enchantments with the <lred>%name%</lred> rarity!</lgray>
+  GetFuel:
+    Desc: Get enchantment fuel item.
+    Done: <lgray>You got <lyellow>x%amount% %name%</lyellow>.</lgray>
+    Error:
+      NoCharges: <lgray>Enchantment <lred>%name%</lred> don't have charges.</lgray>
+Error:
+  NoEnchant: '&cNo hay tal encanto.'
+  Command:
+    Argument:
+      InvalidRarity: <lgray><lred>%value%</lred> is not a valid rarity!</lgray>
+      InvalidSlot: <lgray><lred>%value%</lred> is not a valid slot!</lgray>
+ItemCategory:
+  Helmet: Helmet
+  Chestplate: Chestplate
+  Leggings: Leggings
+  Boots: Boots
+  Elytra: Elytra
+  Sword: Sword
+  Axe: Axe
+  Hoe: Hoe
+  Pickaxe: Pickaxe
+  Shovel: Shovel
+  Trident: Trident
+  Bow: Bow
+  Crossbow: Crossbow
+  FishingRod: FishingRod
+  Shield: Shield
+  Breakable: Breakable
+  Armor: Armor
+  Tool: Tool
+  Weapon: Sword/Axe
+  Bows: Bow/Crossbow
+  Torso: Chestplate/Elytra
+  AllWeapon: All Weapon
+  MiningTools: Mining Tools

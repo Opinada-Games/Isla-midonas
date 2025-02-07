@@ -1,0 +1,64 @@
+pages:
+  page1:
+    items:
+      "2":
+        material: SHIELD
+        name: "&7&lEscudo Coloreado"
+        buy: 150
+        sell: -1
+        enchantments:
+          - UNBREAKING:3
+        lore:
+          - "&fEste escudo tiene un color base"
+          - "&fde negro con un degradado rojo"
+          - "&fen el medio, un"
+          - "&fcargo de creeper gris claro."
+        NBTData: '{BlockEntityTag:{Base:15,Patterns:[{Pattern:"gra",Color:14},{Pattern:"cre",Color:7}]}}'
+        components: '{"minecraft:base_color":"black","minecraft:banner_patterns":[{color:"orange",pattern:"minecraft:gradient"},{color:"light_gray",pattern:"minecraft:creeper"}],"minecraft:block_entity_data":{components:{"minecraft:base_color":"black"},x:0,y:0,z:0,id:"minecraft:banner"}}'
+      "3":
+        material: NETHERITE_PICKAXE
+        name: "&6&lPico de Netherite irrompible"
+        lore:
+          - "&aEste pico también tiene eficiencia 15."
+        buy: 11000
+        sell: 4100
+        enchantments:
+          - EFFICIENCY:15
+        NBTData: "{Unbreakable:1b}"
+        components: '{"minecraft:unbreakable":{}}'
+      "4":
+        material: DIAMOND_SWORD
+        name: "&9&lEspada de Diamante del Guardián"
+        lore:
+          - "&bEsta espada otorga fuerza y resistencia al portador."
+        buy: 8500
+        sell: 2500
+        enchantments:
+          - SHARPNESS:5
+          - UNBREAKING:3
+        NBTData: '{CustomAttributes:[{AttributeName:"generic.attackDamage",Amount:12,Operation:0,UUID:[I;1,0,0,1]}]}'
+        components: '{"minecraft:custom_attributes":[{attribute:"generic.attack_damage",value:12,operation:0}]}'
+      "5":
+        material: ELYTRA
+        name: "&e&lElytra de Alas Ardientes"
+        lore:
+          - "&6Estas alas dejan una estela de fuego."
+        buy: 150000
+        sell: 7500
+        enchantments:
+          - UNBREAKING:3
+          - MENDING:1
+        NBTData: '{CustomModelData:1,Display:{Name:"Elytra de Alas Ardientes"}}'
+        components: '{"minecraft:elytra_effect":"fire"}'
+      "6":
+        material: NETHERITE_HELMET
+        name: "&c&lCasco de Netherite con Visión Nocturna"
+        lore:
+          - "&dEste casco otorga visión nocturna al portador."
+        buy: 50000
+        sell: 10000
+        enchantments:
+          - PROTECTION:4
+          - UNBREAKING:3
+        NBTData: "{CustomPotionEffects:[{Id:16,Duration:999999}],Unbreakable:1b}"
+        components: '{"minecraft:potion_effects":[{effect:"minecraft:night_vision",duration:999999}]}'

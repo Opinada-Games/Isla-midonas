@@ -1,0 +1,69 @@
+# -= Parkour generation settings =-
+# Settings for parkour generation
+generation:
+  
+  # -= Jump type =-
+  # The chance of each type of jump. Can be above 100%.
+  type:
+    
+    # -= Normal jump chances =-
+    normal: 85
+    special: 10
+    schematic: 5
+  normal:
+    distance:
+      '1': 10
+      '2': 55
+      '3': 34
+      '4': 1
+    height:
+      '1': 20
+      '0': 65
+      '-1': 10
+      '-2': 5
+  special:
+    ice: 50
+    slab: 30
+    pane: 10
+    fence: 10
+  settings:
+    min-y: 100
+    max-y: 200
+
+# -= Advanced settings =-
+# Don't modify these if you don't know what you're doing!
+advanced:
+  
+  # -= Spawn island options =-
+  # Options for the spawn island
+  island:
+    spawn:
+      
+      # -= Player block =-
+      # The material of the block that the player will spawn on.
+      # This block will be set to air once the schematic has been pasted.
+      player-block: diamond_block
+      
+      # -= Spawn yaw/pitch =-
+      yaw: -90
+      pitch: 0
+    
+    parkour:
+      
+      # -= Begin block =-
+      # The block from which the parkour begins
+      # This block will be set to air once the schematic has been pasted
+      begin-block: emerald_block
+      
+      # -= Directional heading =-
+      # The directional heading of the parkour
+      # Possible options: north, south, west and east.
+      heading: east
+  
+  # -= Border size =-
+  # The diameter of the playing area of a person in the single mode.
+  border-size: 10000
+  
+  # -= Schematic cooldown =-
+  # The amount of blocks that provide a cooldown for the schematics.
+  schematic-cooldown: 20

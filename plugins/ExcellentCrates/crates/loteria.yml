@@ -1,0 +1,400 @@
+Name: Loteria
+Preview_Config: default
+Permission_Required: false
+Opening:
+  Cooldown: 0
+Key:
+  # Sets whether or not keys are required to open this crate.
+  Required: true
+  Ids:
+  - loteria
+  - llave_maestra
+Block:
+  Positions:
+  - 226,224,54,world
+  Pushback:
+    Enabled: true
+  Hologram:
+    Enabled: true
+    Template: default
+    Y_Offset: 0.0
+  Effect:
+    Model: HELIX
+    Particle:
+      Name: GLOW
+Milestones:
+  Repeatable: false
+Animation_Config: chests_full
+Rewards:
+  List:
+    '0':
+      Name: $0
+      Weight: 25.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: true
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 2g0005002j3dtmn0rrecln78so800amqqbeclhn4ob6egt66tbjehnmqnrec5mma00448i308g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Commands:
+      - eco give %player_name% 0
+      Items:
+      - 2g0005002j3dtmn0rrecln78so800amqqbeclhn4ob6egt66tbjehnmqnrec5mma00448i308g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Ignored_For_Permissions: []
+    '1':
+      Name: $1
+      Weight: 25.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: true
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 2g0005002j3dtmn0rrecln78so800amqqbeclhn4ob6egt66tbjehnmqnrec5mma00448i328g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Commands:
+      - eco give %player_name% 1
+      Items:
+      - 2g0005002j3dtmn0rrecln78so800amqqbeclhn4ob6egt66tbjehnmqnrec5mma00448i328g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Ignored_For_Permissions: []
+    '10':
+      Name: $10
+      Weight: 25.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: true
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: k0001800korfdlo6urj5dpq762002lmmirj5cdp62pjk79hnasrkdtmlurj1dlig01924goj08g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Commands:
+      - eco give %player_name% 10
+      Items:
+      - k0001800korfdlo6urj5dpq762002lmmirj5cdp62pjk79hnasrkdtmlurj1dlig01924goj08g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Ignored_For_Permissions: []
+    '30':
+      Name: $30
+      Weight: 25.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: true
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: k0001800korfdlo6urj5dpq762002lmmirj5cdp62pjk79hnasrkdtmlurj1dlig01924gpj08g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Commands:
+      - eco give %player_name% 30
+      Items:
+      - k0001800korfdlo6urj5dpq762002lmmirj5cdp62pjk79hnasrkdtmlurj1dlig01924gpj08g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Ignored_For_Permissions: []
+    '50':
+      Name: $50
+      Weight: 25.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: true
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: k0001800korfdlo6urj5dpq762002lmmirj5cdp62pjk79hnasrkdtmlurj1dlig01924gqj08g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Commands:
+      - eco give %player_name% 50
+      Items:
+      - k0001800korfdlo6urj5dpq762002lmmirj5cdp62pjk79hnasrkdtmlurj1dlig01924gqj08g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Ignored_For_Permissions: []
+    '100':
+      Name: $100
+      Weight: 25.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: true
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 50000a00566rrde1nmspbeehpgg00ldlkmspb3e9gmct1qcdqn6t3fdlfmsobdck00c8h464o308g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Commands:
+      - eco give %player_name% 100
+      Items:
+      - 50000a00566rrde1nmspbeehpgg00ldlkmspb3e9gmct1qcdqn6t3fdlfmsobdck00c8h464o308g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Ignored_For_Permissions: []
+    '200':
+      Name: $200
+      Weight: 25.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: true
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 50000a00566rrde1nmspbeehpgg00ldlkmspb3e9gmct1qcdqn6t3fdlfmsobdck00c8h468o308g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Commands:
+      - eco give %player_name% 200
+      Items:
+      - 50000a00566rrde1nmspbeehpgg00ldlkmspb3e9gmct1qcdqn6t3fdlfmsobdck00c8h468o308g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Ignored_For_Permissions: []
+    '400':
+      Name: $400
+      Weight: 25.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: true
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 50000a00566rrde1nmspbeehpgg00ldlkmspb3e9gmct1qcdqn6t3fdlfmsobdck00c8h46go308g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Commands:
+      - eco give %player_name% 400
+      Items:
+      - 50000a00566rrde1nmspbeehpgg00ldlkmspb3e9gmct1qcdqn6t3fdlfmsobdck00c8h46go308g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Ignored_For_Permissions: []
+    '500':
+      Name: $500
+      Weight: 25.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: true
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 50000a00566rrde1nmspbeehpgg00ldlkmspb3e9gmct1qcdqn6t3fdlfmsobdck00c8h46ko308g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Commands:
+      - eco give %player_name% 500
+      Items:
+      - 50000a00566rrde1nmspbeehpgg00ldlkmspb3e9gmct1qcdqn6t3fdlfmsobdck00c8h46ko308g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Ignored_For_Permissions: []
+    '600':
+      Name: $600
+      Weight: 25.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: true
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 50000a00566rrde1nmspbeehpgg00ldlkmspb3e9gmct1qcdqn6t3fdlfmsobdck00c8h46oo308g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Commands:
+      - eco give %player_name% 600
+      Items:
+      - 50000a00566rrde1nmspbeehpgg00ldlkmspb3e9gmct1qcdqn6t3fdlfmsobdck00c8h46oo308g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Ignored_For_Permissions: []
+    '750':
+      Name: $750
+      Weight: 25.0
+      Rarity: uncommon
+      Broadcast: true
+      Placeholder_Apply: true
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 50000a00566rrde1nmspbeehpgg00ldlkmspb3e9gmct1qcdqn6t3fdlfmsobdck00c8h46sqj08g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Commands:
+      - eco give %player_name% 750
+      Items:
+      - 50000a00566rrde1nmspbeehpgg00ldlkmspb3e9gmct1qcdqn6t3fdlfmsobdck00c8h46sqj08g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Ignored_For_Permissions: []
+    '1000':
+      Name: $1000
+      Weight: 25.0
+      Rarity: uncommon
+      Broadcast: true
+      Placeholder_Apply: true
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 180002g019hmurbgdtn6arjkec4005bdd5n6aoric5j78ej3elpn8rrdbtn62rb5003i491h60o308g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Commands:
+      - eco give %player_name% 1000
+      Items: []
+      Ignored_For_Permissions: []
+    '2500':
+      Name: $2500
+      Weight: 25.0
+      Rarity: rare
+      Broadcast: true
+      Placeholder_Apply: true
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 180002g019hmurbgdtn6arjkec4005bdd5n6aoric5j78ej3elpn8rrdbtn62rb5003i491i6ko308g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Commands:
+      - eco give %player_name% 2500
+      Items:
+      - 180002g019hmurbgdtn6arjkec4005bdd5n6aoric5j78ej3elpn8rrdbtn62rb5003i491i6ko308g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Ignored_For_Permissions: []
+    '5000':
+      Name: $5000
+      Weight: 25.0
+      Rarity: rare
+      Broadcast: true
+      Placeholder_Apply: true
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 180002g019hmurbgdtn6arjkec4005bdd5n6aoric5j78ej3elpn8rrdbtn62rb5003i491l60o308g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Commands:
+      - eco give %player_name% 5000
+      Items:
+      - 180002g019hmurbgdtn6arjkec4005bdd5n6aoric5j78ej3elpn8rrdbtn62rb5003i491l60o308g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Ignored_For_Permissions: []
+    '10000':
+      Name: $10000
+      Weight: 25.0
+      Rarity: rare
+      Broadcast: true
+      Placeholder_Apply: true
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: a0000k00acdnmqs3fdpimst3j1001arb9dpim6sj1cpq3korledq6uravdpgmqp8010h28c9g60o308g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Commands:
+      - eco give %player_name% 10000
+      Items:
+      - a0000k00acdnmqs3fdpimst3j1001arb9dpim6sj1cpq3korledq6uravdpgmqp8010h28c9g60o308g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Ignored_For_Permissions: []
+    '100000':
+      Name: $100000
+      Weight: 25.0
+      Rarity: legendary
+      Broadcast: true
+      Placeholder_Apply: true
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 2g0005002j3dtmn0rrecln78so800amqqbeclhn4ob6egt66tbjehnmqnrec5mma00948i32c1g60o308g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Commands:
+      - eco give %player_name% 100000
+      Items:
+      - 2g0005002j3dtmn0rrecln78so800amqqbeclhn4ob6egt66tbjehnmqnrec5mma00948i32c1g60o308g00c00aorfeln78000000gg002d5i003rdd5n6aoric5j78ejgc5o6asg0
+      Ignored_For_Permissions: []
+Last_Opener: AdrianLegaspi
+Last_Reward: $1000
+Item:
+  Material: YELLOW_SHULKER_BOX

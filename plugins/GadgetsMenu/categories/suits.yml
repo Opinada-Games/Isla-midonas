@@ -1,0 +1,829 @@
+Suits:
+  Frog:
+    Name: "&6Traje de Rana"
+    Material: head:cc3c601e4ba3064bec98a51552473aa7a5646e60fddc18d187c09b4a351d2
+    GUI-Name: Traje de Rana
+    Enabled: true
+    Enabled-Ability: true
+    Lore:
+      - ""
+      - "&7Uno de los trajes más raros que existen."
+      - "&7Navega memes geniales desde las alturas"
+      - "&7cuando te equipas este Traje de Rana."
+      - ""
+      - "&7Habilidad del Set Completo: Salto súper alto."
+    Equipments:
+      Frog Helmet:
+        Name: "&6Casco del Traje de Rana"
+        Mystery Dust: 80
+        Rarity: Legendario
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Frog Chestplate:
+        Name: "&5Peto del Traje de Rana"
+        Mystery Dust: 32
+        Rarity: Épico
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Frog Leggings:
+        Name: "&9Grebas del Traje de Rana"
+        Mystery Dust: 18
+        Rarity: Raro
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Frog Boots:
+        Name: "&aBotas del Traje de Rana"
+        Mystery Dust: 7
+        Rarity: Común
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+  Ninja:
+    Name: "&6Traje de Ninja"
+    Material: head:e96616bb48ac61a153a9f5c35979f3523c24c366c621d6bacaed10f822b68b
+    GUI-Name: Traje de Ninja
+    Enabled: true
+    Cooldown: 0
+    Enabled-Ability: true
+    Lore:
+      - ""
+      - "&7Silencioso pero mortal, merodea por"
+      - "&7tu lobby favorito con este"
+      - "&7Traje de Ninja."
+      - ""
+      - "&7Habilidad del Set Completo: Haz clic para lanzar"
+      - "&7un Shuriken de Ninja."
+    Equipments:
+      Ninja Helmet:
+        Name: "&6Casco del Traje de Ninja"
+        Mystery Dust: 80
+        Rarity: Legendario
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Ninja Chestplate:
+        Name: "&5Peto del Traje de Ninja"
+        Mystery Dust: 35
+        Rarity: Épico
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Ninja Leggings:
+        Name: "&9Grebas del Traje de Ninja"
+        Mystery Dust: 20
+        Rarity: Raro
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Ninja Boots:
+        Name: "&aBotas del Traje de Ninja"
+        Mystery Dust: 10
+        Rarity: Común
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+  Speedster:
+    Name: "&6Traje de Velocista"
+    Material: head:5138ccdee2eb7cf60d5489d388f210629b2e787bb530e65bd1a73126d01067
+    GUI-Name: Traje de Velocista
+    Enabled: true
+    Enabled-Ability: true
+    Lore:
+      - ""
+      - "&7Nada se mueve más rápido que la"
+      - "&7velocidad de la luz... excepto tú"
+      - "&7cuando llevas este"
+      - "&7Traje de Velocista."
+      - ""
+      - "&7Habilidad del Set Completo: Corre extremadamente rápido."
+    Equipments:
+      Speedster Helmet:
+        Name: "&6Casco del Traje de Velocista"
+        Mystery Dust: 80
+        Rarity: Legendario
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Speedster Chestplate:
+        Name: "&5Peto del Traje de Velocista"
+        Mystery Dust: 25
+        Rarity: Épico
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Speedster Leggings:
+        Name: "&9Grebas del Traje de Velocista"
+        Mystery Dust: 13
+        Rarity: Raro
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Speedster Boots:
+        Name: "&aBotas del Traje de Velocista"
+        Mystery Dust: 5
+        Rarity: Común
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+  Ghostly:
+    Name: "&6Traje de Esqueleto Fantasmal"
+    Material: SKELETON_SKULL
+    GUI-Name: Traje de Esqueleto Fantasmal
+    Enabled: true
+    Enabled-Ability: true
+    Lore:
+      - ""
+      - "&7¿Te sientes espeluznante? Entonces"
+      - "&7equipa este espeluznante Traje de"
+      - "&7Esqueleto Fantasmal."
+      - ""
+      - "&7Habilidad del Set Completo: Hace que el"
+      - "&7usuario sea invisible bajo el traje."
+    Equipments:
+      Ghostly Helmet:
+        Name: "&6Casco del Traje de Esqueleto Fantasmal"
+        Mystery Dust: 80
+        Rarity: Legendario
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Ghostly Chestplate:
+        Name: "&5Peto del Traje de Esqueleto Fantasmal"
+        Mystery Dust: 25
+        Rarity: Épico
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Ghostly Leggings:
+        Name: "&9Grebas del Traje de Esqueleto Fantasmal"
+        Mystery Dust: 13
+        Rarity: Raro
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Ghostly Boots:
+        Name: "&aBotas del Traje de Esqueleto Fantasmal"
+        Mystery Dust: 5
+        Rarity: Común
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+  Disco:
+    Name: "&6Traje de Disco"
+    Material: LEATHER_HELMET:#FF0000
+    GUI-Name: Traje de Disco
+    Enabled: true
+    Enabled-Ability: true
+    Lore:
+      - ""
+      - "&7Era el movimiento de baile favorito"
+      - "&7de tu papá. ¡Vuelve a bailar con"
+      - "&7este Traje de Disco!"
+      - ""
+      - "&7Habilidad del Set Completo: Cambia de color"
+      - "&7cuando está equipado."
+    Equipments:
+      Disco Helmet:
+        Name: "&6Casco del Traje de Disco"
+        Mystery Dust: 80
+        Rarity: Legendario
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Disco Chestplate:
+        Name: "&5Peto del Traje de Disco"
+        Mystery Dust: 25
+        Rarity: Épico
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Disco Leggings:
+        Name: "&9Grebas del Traje de Disco"
+        Mystery Dust: 13
+        Rarity: Raro
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Disco Boots:
+        Name: "&aBotas del Traje de Disco"
+        Mystery Dust: 5
+        Rarity: Común
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+  Mermaid:
+    Name: "&6Traje de Sirena"
+    Material: head:aa36d682f9152a98e53cbf3d583b59df8f024e184531c97c2ea25816d1288f
+    GUI-Name: Traje de Sirena
+    Enabled: true
+    Enabled-Ability: true
+    Lore:
+      - ""
+      - "&7Todo es mejor bajo el agua."
+      - "&7¡Sumérgete en el mar con este"
+      - "&7Traje de Sirena!"
+      - ""
+      - "&7Habilidad del Set Completo: Transfórmate en"
+      - "&7un hermoso calamar cuando estés"
+      - "&7bajo el agua."
+    Equipments:
+      Mermaid Helmet:
+        Name: "&6Casco del Traje de Sirena"
+        Mystery Dust: 70
+        Rarity: Legendario
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Mermaid Chestplate:
+        Name: "&5Peto del Traje de Sirena"
+        Mystery Dust: 30
+        Rarity: Épico
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Mermaid Leggings:
+        Name: "&9Grebas del Traje de Sirena"
+        Mystery Dust: 16
+        Rarity: Raro
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Mermaid Boots:
+        Name: "&aBotas del Traje de Sirena"
+        Mystery Dust: 6
+        Rarity: Común
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+  Spooderman:
+    Name: "&6Traje de Spooderman"
+    Material: head:9f2f7ebd9e263c939f54f939c9e2bcb18d4431f5577c389d6cbcf1371b11d
+    GUI-Name: Traje de Spooderman
+    Enabled: true
+    Cooldown: 0
+    Enabled-Ability: true
+    Lore:
+      - ""
+      - "&7Con gran poder viene una gran"
+      - "&7responsabilidad. Salva el día con"
+      - "&7este Traje de Spooderman."
+      - ""
+      - "&7Habilidad del Set Completo: Haz clic para"
+      - "&7balancearte por los lobbies."
+    Equipments:
+      Spooderman Helmet:
+        Name: "&6Casco del Traje de Spooderman"
+        Mystery Dust: 75
+        Rarity: Legendario
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Spooderman Chestplate:
+        Name: "&5Peto del Traje de Spooderman"
+        Mystery Dust: 33
+        Rarity: Épico
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Spooderman Leggings:
+        Name: "&9Grebas del Traje de Spooderman"
+        Mystery Dust: 17
+        Rarity: Raro
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Spooderman Boots:
+        Name: "&aBotas del Traje de Spooderman"
+        Mystery Dust: 8
+        Rarity: Común
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+  Warrior:
+    Name: "&6Traje de Guerrero"
+    Material: head:38f56b7f7ac16046a9816e57c2c3296420ccddb7cc51b1c0de8075a816b747d9
+    GUI-Name: Traje de Guerrero
+    Enabled: true
+    Cooldown: 0
+    Enabled-Ability: true
+    Lore:
+      - ""
+      - "&7El camino del Guerrero es de"
+      - "&7honor, resistencia y habilidades"
+      - "&7especiales para patear traseros."
+      - ""
+      - "&7Habilidad del Set Completo: Haz clic izquierdo y"
+      - "&7mira hacia abajo para Golpear el Suelo, o"
+      - "&7mira hacia adelante para Ola Sísmica."
+    Equipments:
+      Warrior Helmet:
+        Name: "&6Casco del Traje de Guerrero"
+        Mystery Dust: 75
+        Rarity: Legendario
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Warrior Chestplate:
+        Name: "&5Peto del Traje de Guerrero"
+        Mystery Dust: 30
+        Rarity: Épico
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Warrior Leggings:
+        Name: "&9Grebas del Traje de Guerrero"
+        Mystery Dust: 16
+        Rarity: Raro
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Warrior Boots:
+        Name: "&aBotas del Traje de Guerrero"
+        Mystery Dust: 6
+        Rarity: Común
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+  Necromancer:
+    Name: "&6Traje de Nigromante"
+    Material: head:9ddbd0bb9622ce124dabb6ba3baa9a9ea71430f870fec15b3ea81f1961a412b2
+    GUI-Name: Traje de Nigromante
+    Enabled: true
+    Cooldown: 0
+    Enabled-Ability: true
+    Lore:
+      - ""
+      - "&7Pon el RAVE en el cementerio y"
+      - "&7revive a los muertos con este"
+      - "&7Traje de Nigromante."
+      - ""
+      - "&7Habilidad del Set Completo: Haz clic para"
+      - "&7resucitar a los muertos."
+    Equipments:
+      Necromancer Helmet:
+        Name: "&6Casco del Traje de Nigromante"
+        Mystery Dust: 80
+        Rarity: Legendario
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Necromancer Chestplate:
+        Name: "&5Peto del Traje de Nigromante"
+        Mystery Dust: 35
+        Rarity: Épico
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Necromancer Leggings:
+        Name: "&9Grebas del Traje de Nigromante"
+        Mystery Dust: 20
+        Rarity: Raro
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Necromancer Boots:
+        Name: "&aBotas del Traje de Nigromante"
+        Mystery Dust: 10
+        Rarity: Común
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+  Thor:
+    Name: "&6Traje de Thor"
+    Material: head:2a9f83329a2e475a75335b3949aa4d054f9de413bfb28aa60de2e5259ecaad1
+    GUI-Name: Traje de Thor
+    Enabled: true
+    Cooldown: 0
+    Enabled-Ability: true
+    Lore:
+      - ""
+      - '&7"Me gusta este traje. ¡OTRO!"'
+      - "&7Usa el poder del Dios del Trueno"
+      - "&7con este Traje de Thor."
+      - ""
+      - "&7Habilidad del Set Completo: Haz clic para"
+      - "&7lanzar un rayo."
+    Equipments:
+      Thor Helmet:
+        Name: "&6Casco del Traje de Thor"
+        Mystery Dust: 70
+        Rarity: Legendario
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Thor Chestplate:
+        Name: "&5Peto del Traje de Thor"
+        Mystery Dust: 25
+        Rarity: Épico
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Thor Leggings:
+        Name: "&9Grebas del Traje de Thor"
+        Mystery Dust: 13
+        Rarity: Raro
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Thor Boots:
+        Name: "&aBotas del Traje de Thor"
+        Mystery Dust: 5
+        Rarity: Común
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+  Baker:
+    Name: "&6Traje de Panadero"
+    Material: head:b8dea622fb0fbbd2639384c1604f5f1a3c111aa993447319fbac494bff4477
+    GUI-Name: Traje de Panadero
+    Enabled: true
+    Cooldown: 0
+    Enabled-Ability: true
+    Lore:
+      - ""
+      - "&7¿Qué es mejor que una galleta? Un"
+      - "&7hombre que puede hornear un millón"
+      - "&7de galletas."
+      - ""
+      - "&7Habilidad del Set Completo: Haz clic para"
+      - "&7entregar productos horneados por el"
+      - "&7lobby."
+    Equipments:
+      Baker Helmet:
+        Name: "&6Casco del Traje de Panadero"
+        Mystery Dust: 70
+        Rarity: Legendario
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Baker Chestplate:
+        Name: "&5Peto del Traje de Panadero"
+        Mystery Dust: 25
+        Rarity: Épico
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Baker Leggings:
+        Name: "&9Grebas del Traje de Panadero"
+        Mystery Dust: 13
+        Rarity: Raro
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Baker Boots:
+        Name: "&aBotas del Traje de Panadero"
+        Mystery Dust: 5
+        Rarity: Común
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+  Bumblebee:
+    Name: "&6Traje de Abejorro"
+    Material: head:bf92d3f385cc16c77675a46de3e833ac17c74ada3e1946ef7021ecdbf9f1ba
+    GUI-Name: Traje de Abejorro
+    Enabled: true
+    Cooldown: 0
+    Enabled-Ability: true
+    Lore:
+      - ""
+      - "&7No estamos seguros de qué tanto"
+      - "&7ruido hay sobre este traje."
+      - ""
+      - "&7Habilidad del Set Completo: Este traje"
+      - "&7reproducirá una canción clásica cuando"
+      - "&7vueles o hagas clic izquierdo."
+    Equipments:
+      Bumblebee Helmet:
+        Name: "&6Casco del Traje de Abejorro"
+        Mystery Dust: 70
+        Rarity: Legendario
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Bumblebee Chestplate:
+        Name: "&5Peto del Traje de Abejorro"
+        Mystery Dust: 25
+        Rarity: Épico
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Bumblebee Leggings:
+        Name: "&9Grebas del Traje de Abejorro"
+        Mystery Dust: 13
+        Rarity: Raro
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Bumblebee Boots:
+        Name: "&aBotas del Traje de Abejorro"
+        Mystery Dust: 5
+        Rarity: Común
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+  Firefighter:
+    Name: "&6Traje de Bombero"
+    Material: head:7e9b8d13ae2b8e24b8a06fc982b2628a8131d1b16d6deb9cf31fb633f8ca2e
+    GUI-Name: Traje de Bombero
+    Enabled: true
+    Cooldown: 0
+    Enabled-Ability: true
+    Lore:
+      - ""
+      - "&7Conviértete en un héroe cotidiano"
+      - "&7cuando te equipas este Traje de Bombero."
+      - ""
+      - "&7Habilidad del Set Completo: Haz clic para"
+      - "&7rociar agua."
+    Equipments:
+      Firefighter Helmet:
+        Name: "&6Casco del Traje de Bombero"
+        Mystery Dust: 80
+        Rarity: Legendario
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Firefighter Chestplate:
+        Name: "&5Peto del Traje de Bombero"
+        Mystery Dust: 34
+        Rarity: Épico
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Firefighter Leggings:
+        Name: "&9Grebas del Traje de Bombero"
+        Mystery Dust: 19
+        Rarity: Raro
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Firefighter Boots:
+        Name: "&aBotas del Traje de Bombero"
+        Mystery Dust: 9
+        Rarity: Común
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+  Plumber:
+    Name: "&6Traje de Fontanero"
+    Material: head:6f7eb75e5542cc4937aaad5bb8657393eaf0265006eac1dc96691f32e16437
+    GUI-Name: Traje de Fontanero
+    Enabled: true
+    Cooldown: 0
+    Enabled-Ability: true
+    Lore:
+      - ""
+      - "&7Lo sentimos, tu Princesa está en"
+      - "&7otro lobby."
+      - ""
+      - "&7Habilidad del Set Completo: Haz clic para"
+      - "&7lanzar bolas de fuego."
+    Equipments:
+      Plumber Helmet:
+        Name: "&6Casco del Traje de Fontanero"
+        Mystery Dust: 73
+        Rarity: Legendario
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Plumber Chestplate:
+        Name: "&5Peto del Traje de Fontanero"
+        Mystery Dust: 32
+        Rarity: Épico
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Plumber Leggings:
+        Name: "&9Grebas del Traje de Fontanero"
+        Mystery Dust: 18
+        Rarity: Raro
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Plumber Boots:
+        Name: "&aBotas del Traje de Fontanero"
+        Mystery Dust: 7
+        Rarity: Común
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+  Ice Walker:
+    Name: "&6Traje de Caminante de Hielo"
+    Material: head:371c7c94da4f86a8fe6ea3a5b2f7dad24731ac420ef47ca4c1c766dea60accc
+    GUI-Name: Traje de Caminante de Hielo
+    Enabled: true
+    Enabled-Ability: true
+    Lore:
+      - ""
+      - "&7No, ella no quiere construir un"
+      - "&7muñeco de nieve... y no le digas"
+      - '&7"¡Déjalo ir!".'
+      - ""
+      - "&7Habilidad del Set Completo: Absorbe calor"
+      - "&7y enfría el mundo a tu alrededor"
+      - "&7al caminar."
+    Equipments:
+      Ice Walker Helmet:
+        Name: "&6Casco del Traje de Caminante de Hielo"
+        Mystery Dust: 70
+        Rarity: Legendario
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Ice Walker Chestplate:
+        Name: "&5Peto del Traje de Caminante de Hielo"
+        Mystery Dust: 25
+        Rarity: Épico
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Ice Walker Leggings:
+        Name: "&9Grebas del Traje de Caminante de Hielo"
+        Mystery Dust: 13
+        Rarity: Raro
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Ice Walker Boots:
+        Name: "&aBotas del Traje de Caminante de Hielo"
+        Mystery Dust: 5
+        Rarity: Común
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+  Vampire:
+    Name: "&6Traje de Vampiro"
+    Material: head:8d44756e0b4ece8d746296a3d5e297e1415f4ba17647ffe228385383d161a9
+    GUI-Name: Traje de Vampiro
+    Enabled: true
+    Enabled-Ability: true
+    Lore:
+      - ""
+      - "&7Como un murciélago salido del infierno,"
+      - "&7conviértete en un villano sediento de"
+      - "&7sangre con este Traje de Vampiro."
+      - ""
+      - "&7Habilidad del Set Completo: Transfórmate en"
+      - "&7un murciélago cuando vueles."
+    Equipments:
+      Vampire Helmet:
+        Name: "&6Casco del Traje de Vampiro"
+        Mystery Dust: 74
+        Rarity: Legendario
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Vampire Chestplate:
+        Name: "&5Peto del Traje de Vampiro"
+        Mystery Dust: 34
+        Rarity: Épico
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Vampire Leggings:
+        Name: "&9Grebas del Traje de Vampiro"
+        Mystery Dust: 18
+        Rarity: Raro
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+      Vampire Boots:
+        Name: "&aBotas del Traje de Vampiro"
+        Mystery Dust: 7
+        Rarity: Común
+        CanBeFound: true
+        Purchasable: true
+        Lore:
+          Locked: ""
+          Unlocked: ""
+Settings:
+  Disable-Usage-If-Cannot-Break-Block: false

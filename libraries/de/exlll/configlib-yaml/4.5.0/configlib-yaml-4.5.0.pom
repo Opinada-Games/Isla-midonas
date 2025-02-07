@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- This module was also published with a richer model, Gradle metadata,  -->
+  <!-- which should be used instead. Do not delete the following line which  -->
+  <!-- is to indicate to Gradle or any Gradle module metadata file consumer  -->
+  <!-- that they should prefer consuming it instead. -->
+  <!-- do_not_remove: published-with-gradle-metadata -->
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>de.exlll</groupId>
+  <artifactId>configlib-yaml</artifactId>
+  <version>4.5.0</version>
+  <name>ConfigLib Yaml</name>
+  <description>A Minecraft library for saving, loading, updating, and commenting YAML configuration files.</description>
+  <url>https://github.com/Exlll/ConfigLib</url>
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://opensource.org/license/mit</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>Exlll</name>
+      <email>exlll321@gmail.com</email>
+      <url>https://github.com/Exlll</url>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git://github.com/Exlll/ConfigLib.git</connection>
+    <developerConnection>scm:git:ssh://github.com:Exlll/ConfigLib.git</developerConnection>
+    <url>https://github.com/Exlll/ConfigLib/tree/master</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>de.exlll</groupId>
+      <artifactId>configlib-core</artifactId>
+      <version>4.5.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.snakeyaml</groupId>
+      <artifactId>snakeyaml-engine</artifactId>
+      <version>2.7</version>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+</project>

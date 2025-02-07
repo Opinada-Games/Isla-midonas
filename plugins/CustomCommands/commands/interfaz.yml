@@ -1,0 +1,17 @@
+# Configuration for the /menu command
+
+# Aliases for the command
+aliases: [interfaz]
+
+# Patterns for the command
+patterns:
+  - pattern: "" # The command is just /menu
+    description: Activa/Deactiva la interfaz en la pantalla
+    actions:
+      - type: EXECUTE_COMMANDS
+        commands: |
+          animatedsb toggle
+        as_player: true
+      - type: NOTIFY
+        notify:
+          message: "&aLa interfaz se actualizo"

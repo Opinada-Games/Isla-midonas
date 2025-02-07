@@ -1,0 +1,25 @@
+# -------------------- Plugin --------------------
+
+messagePluginUnknown: |
+  &7El plugin &7{plugin} &7no existe.
+
+messagePluginReloaded: |
+  &7El plugin &a{plugin} &7se ha recargado.
+
+messagePluginManipulateError: |
+  &7No se ha podido procesar la acción para el plugin &7{plugin}&7.
+
+messagePluginList: |
+  &7Hay &a{count} &7plugins, &a{active} &7están activos y &7{inactive} &7están inactivos: {plugins}
+
+messageGcoreExportFile: |
+  &7Tus datos y archivos de configuración para &a{plugins} &7han sido exportados a &a{file}&7. Compártelos con el desarrollador.
+
+messageGcoreExportCouldnt: |
+  &7El archivo &c{file} &7no ha podido ser exportado.
+
+# -------------------- Commands --------------------
+
+commandDescriptionGcore: comando principal para GCore
+commandDescriptionGcorePlugins: enumerar los plugins dependientes de GCore
+commandDescriptionGcoreExport: exportar los datos de los plugins dependientes de GCore

@@ -1,0 +1,44 @@
+#  -------------------------------------------------------------------------------------------------
+#  This is a spawn rule configuration file. We strongly recommend only editing it using our GUI.
+#  MineAcademy.org is not responsible for data loss or thermonuclear war from mistakes in your edit.
+#  -------------------------------------------------------------------------------------------------
+
+Locations:
+- plain_rock
+Regions_Enabled: true
+Regions_2:
+  BOSS:
+    boss_island: 0.0
+    plain_arena: 1.0
+    mushroom: 0.0
+  RESIDENCE: {}
+  FACTIONS: {}
+  TOWNY: {}
+  LANDS: {}
+  WORLDGUARD: {}
+Regions_Whitelist: true
+Type: REGION_ENTER
+Enabled: true
+Bosses:
+- GiantZombi
+Delay: 6 minutes
+Days:
+- TUESDAY
+Months:
+- FEBRUARY
+- JANUARY
+- SEPTEMBER
+- DECEMBER
+- MARCH
+- OCTOBER
+- AUGUST
+- NOVEMBER
+- JUNE
+- APRIL
+- MAY
+- JULY
+Rain: false
+Thunder: false
+Chance: 1.0
+Last_Executed: 1738044049072
+Max_Bosses_In_Region: 1

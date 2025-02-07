@@ -1,0 +1,10 @@
+# This is the config.yml, do /lobby reload in the server to load these configurations.
+# Also help me on improving my plugins by rating on SpigotMC, I really appreciate your help :')
+
+lobby:
+  world: lobby
+  x: 34.28680858670334
+  y: -36.0
+  z: 33.69999998807907
+  pitch: 36.299976
+  yaw: -12.300012

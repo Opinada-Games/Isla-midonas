@@ -1,0 +1,40 @@
+# -------------------- Commands --------------------
+
+commandDescriptionCustomcommandsEdit: edit commands in-game
+
+# -------------------- Inputs --------------------
+
+messageInvalidInputInteger: |
+  &7You entered an invalid number.
+
+messageInvalidInputDouble: |
+  &7You entered an invalid decimal number.
+
+messageInvalidInputOfflinePlayer: |
+  &7You entered an invalid player.
+
+messageInvalidInputPlayer: |
+  &7You entered an invalid player (they must be online).
+
+messageInvalidInputStringSize: |
+  &7You entered a string of invalid size.
+
+messageInvalidInputPhrase: |
+  &7You need to add at least one word.
+
+# -------------------- Misc --------------------
+
+messageNoHelp: |
+  &7There's nothing to see here.
+
+messageCooldown: |
+  &7Please wait &c{time} &7before using this command again.
+
+messageUnauthorizedWorld: |
+  &7You can't use this command here.
+
+messageUnknownCommand: |
+  &7Unknown command.
+
+messageUnknownCommandClosest: |
+  &7Unknown command. Maybe you meant &c{closest} &7?

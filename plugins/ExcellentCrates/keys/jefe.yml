@@ -1,0 +1,7 @@
+Name: Llave de Jefe
+Virtual: false
+Item:
+  Material: TRIAL_KEY
+  Name: '&4Llave de Jefe'
+  Lore:
+  - '&7Más allá de solo un trofeo'

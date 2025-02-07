@@ -1,0 +1,1020 @@
+Prefix: '&3GadgetsMenu &6» &r'
+GUI-Menus:
+  Main: Menú Principal
+  Hats: Sombreros
+  Animated Hats: Sombreros Animados
+  Particles: Partículas
+  Suits: Trajes
+  Gadgets: Artilugios
+  Pets: Mascotas
+  Miniatures: Miniaturas
+  Morphs: Transformaciones
+  Banners: Banderas
+  Emotes: Gestos
+  Cloaks: Capas
+  Purchase-Menu:
+    GUI-Name: Confirmar Compra
+    Items:
+      Confirm:
+        Name: '&aConfirmar'
+        Material: LIME_TERRACOTTA
+        Slot: 11
+        Lore: ''
+      Cancel:
+        Name: '&cCancelar'
+        Material: RED_TERRACOTTA
+        Slot: 15
+        Lore: ''
+  Confirm-Open-Mystery-Box-Menu:
+    GUI-Name: Confirmar Apertura
+    Items:
+      Open:
+        Name: '&aAbrir'
+        Material: GREEN_WOOL
+        Slot: 29
+        Lore:
+        - '&7Abre la Caja Misteriosa.'
+        - ''
+        - '&7¡Esto no se puede deshacer!'
+      Cancel:
+        Name: '&cCancelar'
+        Material: RED_WOOL
+        Slot: 33
+        Lore:
+        - '&7Te regresa a la'
+        - '&7lista de Cajas Misteriosas.'
+  Mystery-Vault-Menu:
+    GUI-Name: Bóveda Misteriosa
+    Items:
+      Error:
+        Name: '&c¡ERROR!'
+        Material: RED_STAINED_GLASS_PANE
+        Slot: 22
+        Lore:
+        - '&7¡No tienes ninguna &bCaja Misteriosa&7!'
+      Loading-Mystery-Boxes:
+        Name: '&cCargando...'
+        Material: RED_STAINED_GLASS_PANE
+        Slot: 22
+        Lore:
+        - '&7Cargando tus cajas misteriosas.'
+        - '&7Por favor, vuelve a abrir el menú de la bóveda misteriosa.'
+      Mystery-Box-Information:
+        Name: '&aInformación de la Caja Misteriosa'
+        Material: BOOK
+        Slot: 49
+        Loot-Contain-Rarity: true
+        Lore:
+        - '&bCajas Misteriosas &7contienen casi'
+        - '&7cualquier objeto cosmético. Para conseguir'
+        - '&bCajas Misteriosas&7, solo tienes que'
+        - '&7jugar en el servidor!'
+        - ''
+        - '&eTus 5 objetos más recientes que encontraste son:'
+        - '&71. {RECENT_LOOT_1}'
+        - '&72. {RECENT_LOOT_2}'
+        - '&73. {RECENT_LOOT_3}'
+        - '&74. {RECENT_LOOT_4}'
+        - '&75. {RECENT_LOOT_5}'
+        - ''
+        - '&7Tienes: &b{MYSTERY_BOXES} Cajas Misteriosas'
+      Craft-Mystery-Boxes:
+        Name: '&aCrear Cajas Misteriosas'
+        Material: ANVIL
+        Show: true
+        Slot: 50
+        Lore:
+        - '&7Cada vez que encuentres objetos que ya'
+        - '&7tengas, recibirás &bPolvo Misterioso &7en su lugar.'
+        - '&7Puedes usar ese polvo para crear'
+        - '&7Cajas Misteriosas y obtener nuevas recompensas.'
+        - ''
+        - '&7Tienes: &b{MYSTERY_DUST} Polvo Misterioso'
+        - '&eHaz clic para abrir el menú de crafteo.'
+      Gift-Inventory:
+        Name: '&aInventario de Regalos'
+        Material: head:d2ac1c51807e261c12c4f2adbad36b8b2c497c277f7223ec244cb4608c59c
+        Show: true
+        Slot: 48
+        Lore:
+        - '&7Envía regalos a tus amigos y'
+        - '&7fortalece su amistad a cambio.'
+        - ''
+        - '&7Los paquetes de regalo que compres se'
+        - '&7almacenarán aquí.'
+        - ''
+        - '&7Regalos enviados: &e{GIFT_SENT}'
+        - '&7Regalos recibidos: &e{GIFT_RECEIVED}'
+        - ''
+        - '&eHaz clic para ver tu inventario de regalos.'
+      Animations:
+        Name: '&aAnimaciones'
+        Material: REDSTONE
+        Show: true
+        Slot: 53
+        Lore:
+        - '&7Selecciona tu Bóveda Misteriosa'
+        - '&7y sus animaciones cuando abras'
+        - '&7cajas misteriosas.'
+      Open-Multiple-Boxes:
+        Name: '&cAbrir Múltiples Cajas'
+        Material: NETHER_STAR
+        Show: true
+        Slot: 51
+        Lore:
+        - '&7Abre varias cajas a la'
+        - '&7vez.'
+  Mystery-Box-Crafting-Menu:
+    GUI-Name: Menú de Creación de Cajas Misteriosas
+    Items:
+      1-Star:
+        Name: '&bCaja Misteriosa #1'
+        Material: ENDER_CHEST
+        Show: true
+        Slot: 9
+        Price: 100
+        Lore:
+        - '&7Esta Caja Misteriosa contiene:'
+        - ''
+        - '&aObjetos Comunes&7: &b4'
+        - '&9Objetos Raros&7: &b1'
+        - '&5Objetos Épicos&7: &b1'
+        - '&6Objetos Legendarios&7: &b1'
+        - ''
+        - '&7Calidad: &e✰&7✰✰✰✰'
+      2-Star:
+        Name: '&bCaja Misteriosa #2'
+        Material: ENDER_CHEST
+        Show: true
+        Slot: 11
+        Price: 200
+        Lore:
+        - '&7Esta Caja Misteriosa contiene:'
+        - ''
+        - '&aObjetos Comunes&7: &b3'
+        - '&9Objetos Raros&7: &b2'
+        - '&5Objetos Épicos&7: &b1'
+        - '&6Objetos Legendarios&7: &b1'
+        - ''
+        - '&7Calidad: &e✰✰&7✰✰✰'
+      3-Star:
+        Name: '&bCaja Misteriosa #3'
+        Material: ENDER_CHEST
+        Show: true
+        Slot: 13
+        Price: 300
+        Lore:
+        - '&7Esta Caja Misteriosa contiene:'
+        - ''
+        - '&aObjetos Comunes&7: &b2'
+        - '&9Objetos Raros&7: &b2'
+        - '&5Objetos Épicos&7: &b2'
+        - '&6Objetos Legendarios&7: &b1'
+        - ''
+        - '&7Calidad: &e✰✰✰&7✰✰'
+      4-Star:
+        Name: '&bCaja Misteriosa #4'
+        Material: ENDER_CHEST
+        Show: true
+        Slot: 15
+        Price: 400
+        Lore:
+        - '&7Esta Caja Misteriosa contiene:'
+        - ''
+        - '&aObjetos Comunes&7: &b1'
+        - '&9Objetos Raros&7: &b1'
+        - '&5Objetos Épicos&7: &b2'
+        - '&6Objetos Legendarios&7: &b3'
+        - ''
+        - '&7Calidad: &e✰✰✰✰&7✰'
+      5-Star:
+        Name: '&bCaja Misteriosa #5'
+        Material: ENDER_CHEST
+        Show: true
+        Slot: 17
+        Price: 550
+        Lore:
+        - '&7Esta Caja Misteriosa contiene:'
+        - ''
+        - '&aObjetos Comunes&7: &b0'
+        - '&9Objetos Raros&7: &b1'
+        - '&5Objetos Épicos&7: &b2'
+        - '&6Objetos Legendarios&7: &b4'
+        - ''
+        - '&7Calidad: &e✰✰✰✰✰'
+  Gift-Inventory-Menu:
+    GUI-Name: Inventario de Regalos
+    Items:
+      Mystery-Gift:
+        Name: '&aRegalo Misterioso (Paquete de 5)'
+        Material: ENDER_CHEST
+        Lore:
+        - '&7Este paquete de regalo contiene &a5'
+        - '&bCajas Misteriosas&7.'
+        - ''
+        - '&eHaz clic para enviar a un jugador.'
+      Error:
+        Name: '&c¡ERROR!'
+        Material: RED_STAINED_GLASS_PANE
+        Slot: 22
+        Lore:
+        - '&7¡No tienes ningún &bPaquete de Regalo&7!'
+  Send-Gift-Menu:
+    GUI-Name: Jugadores en línea
+    Items:
+      Mystery-Gift:
+        Name: '&aRegalo Misterioso (Paquete de 5)'
+        Material: ENDER_CHEST
+        Slot: 4
+        Lore:
+        - '&7Este paquete de regalo contiene &a5'
+        - '&bCajas Misteriosas&7.'
+        - ''
+        - '&b¡Elige a quién enviar este paquete!'
+      Player:
+        Lore:
+        - ''
+        - '&aHaz clic para enviar el regalo!'
+  Confirm-Send-Gift-Menu:
+    GUI-Name: Confirmar Envío de Regalo
+    Items:
+      Player:
+        Name: '&7{PLAYER}'
+        Slot: 12
+        Lore: ''
+      Mystery-Gift:
+        Name: '&aRegalo Misterioso (Paquete de 5)'
+        Material: ENDER_CHEST
+        Slot: 14
+        Lore:
+        - '&7Este paquete de regalo contiene &a5'
+        - '&bCajas Misteriosas&7.'
+      Confirm:
+        Name: '&aConfirmar'
+        Material: LIME_TERRACOTTA
+        Slot: 29
+        Lore: ''
+      Cancel:
+        Name: '&cCancelar'
+        Material: RED_TERRACOTTA
+        Slot: 33
+        Lore: ''
+  Settings-Menu:
+    GUI-Name: Menú de Configuración
+    Items:
+      Ignore-Cooldown:
+        Name: '&aIgnorar Tiempo de Espera'
+        Material: BARRIER
+        Show: true
+        Slot: 20
+        Lore: ''
+      Self-Morph-View:
+        Name: '&aVista de Transformación Propia'
+        Material: ENDER_EYE
+        Show: true
+        Slot: 24
+        Lore: ''
+      Enabled:
+        Name: '&aActivado'
+        Material: LIME_WOOL
+        Lore: ''
+      Disabled:
+        Name: '&cDesactivado'
+        Material: RED_WOOL
+        Lore: ''
+  Mystery-Vault-Animations-Menu:
+    GUI-Name: Menú de Animaciones de Bóveda Misteriosa
+    Items:
+      Random-Mystery-Vault-Animation:
+        Name: '&eAnimación Aleatoria'
+        Material: ENDER_PEARL
+        Show: true
+        Slot: 40
+        Lore:
+        - '&7Deja que elijamos la animación'
+        - '&7por ti.'
+        - ''
+        - '&bEstado: {STATUS}'
+        - ''
+  Open-Multiple-Boxes-Menu:
+    GUI-Name: Abrir Múltiples Cajas
+    Items:
+      Open-Multiple-Boxes-Type-1:
+        Name: '&aAbrir 20 Cajas'
+        Material: NETHER_STAR
+        Slot: 19
+        Number-Of-Boxes: 20
+        Lore:
+        - '&7Abre hasta 20 cajas a la'
+        - '&7vez.'
+      Open-Multiple-Boxes-Type-2:
+        Name: '&aAbrir 50 Cajas'
+        Material: NETHER_STAR
+        Slot: 22
+        Number-Of-Boxes: 50
+        Lore:
+        - '&7Abre hasta 50 cajas a la'
+        - '&7vez.'
+      Open-Multiple-Boxes-Type-3:
+        Name: '&aAbrir 250 Cajas'
+        Material: NETHER_STAR
+        Slot: 25
+        Number-Of-Boxes: 250
+        Lore:
+        - '&7Abre hasta 250 cajas a la'
+        - '&7vez.'
+  Confirm-Open-Multiple-Boxes-Menu:
+    GUI-Name: Confirmar Apertura de Múltiples Cajas
+    Items:
+      Confirm:
+        Name: '&aConfirmar'
+        Material: LIME_TERRACOTTA
+        Slot: 11
+        Lore: ''
+      Cancel:
+        Name: '&cCancelar'
+        Material: RED_TERRACOTTA
+        Slot: 15
+        Lore: ''
+  Pet-Items-Menu:
+    GUI-Name: Consumibles de Mascota
+    Items:
+      Your-Pet:
+        Name: '&eTu Mascota'
+        Show: true
+        Slot: 50
+      Zero-Item-Remain:
+        Show-Custom-Item: true
+        Material: GRAY_DYE
+        Play-Sound:
+          Enabled: true
+          Sound: ENTITY_ENDERMAN_TELEPORT
+Items:
+  Go-Back:
+    Name: '&aRegresar'
+    Material: ARROW
+    Show: true
+    Slot: 39
+    Lore: ''
+  Previous-Page:
+    Name: '&aPágina Anterior'
+    Material: ARROW
+    Slot: 39
+    Lore:
+    - '&ePágina {PAGE}'
+  Next-Page:
+    Name: '&aPágina Siguiente'
+    Material: ARROW
+    Slot: 41
+    Lore:
+    - '&ePágina {PAGE}'
+  
+  Already-Selected:
+    Show-In-Lore: true
+    Lore:
+    - ''
+    - '&7Ya seleccionado'
+  Click-To-Select:
+    Show-In-Lore: true
+    Lore:
+    - ''
+    - '&eHaz clic para seleccionar'
+  Unlocked:
+    Show-In-Lore: true
+    Lore:
+    - ''
+    - '&7Desbloqueado: &c{UNLOCKED_ITEMS}/{SIZE} &8({PERCENTAGE}%)'
+    - ''
+    - '&eHaz clic para explorar'
+  Settings:
+    Name: '&eConfiguraciones'
+    Material: COMPARATOR
+    Show: true
+    Slot: 53
+    Lore:
+    - '&7Te permite editar y controlar'
+    - '&7varias configuraciones personales.'
+  MainMenu-Item:
+    Name: '&aMenú Principal'
+    Material: TRAPPED_CHEST
+    Show: true
+    Slot: 49
+    Lore:
+    - '&7Polvo Misterioso: &b{MYSTERY_DUST}'
+    - '&7Cajas Misteriosas: &b{MYSTERY_BOXES}'
+    - ''
+    - '&7Disfruta características cosméticas divertidas.'
+    - '&7Se agregarán más cosas con el tiempo,'
+    - '&7asegúrate de revisar nuestros foros de actualizaciones.'
+    - '&7Gracias por apoyar nuestro servidor.'
+  Morph-Slimeball:
+    Name: '&aActivar Habilidad de Transformación'
+  Self-Morph-View:
+    Name: '&eVista de Transformación Propia'
+    Material: ENDER_EYE
+    Show: true
+    Slot: 50
+    Lore:
+    - '&7Estado: {STATUS}'
+    - ''
+    - '&eHaz clic para alternar la vista de tu propia transformación.'
+  Rename-Pet:
+    Name: '&eNombra a Tu Mascota'
+    Material: NAME_TAG
+    Show: true
+    Slot: 53
+    Lore:
+    - '&7Renombra a tu mascota escribiendo el nuevo nombre en el chat.'
+  Send-Pet-On-Mission:
+    Name: '&aEnviar Mascotas a una Misión'
+    Material: OAK_BOAT
+    Show: true
+    Slot: 45
+    Lore:
+    - '&7Envía a todas tus mascotas &2Felices, &aMuy'
+    - '&aFelices&7 y &bSúper Felices &7'
+    - '&7en una misión secreta'
+    - '&7para obtener EXP de Mascota.'
+    - ''
+    - '&7La cantidad de EXP obtenida'
+    - '&7aumenta mientras más feliz'
+    - '&7esté tu mascota.'
+  Pages:
+    Name: ' &r(Página {CURRENT_PAGE}/{MAX_PAGES})'
+  Enough-Mystery-Dust:
+    Lore:
+    - ''
+    - '&eHaz clic para crear con &b{COST} &ePolvo Misterioso'
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Not-Enough-Mystery-Dust:
+    Lore:
+    - ''
+    - '&cHaz clic para crear con &b{COST} &cPolvo Misterioso'
+    - '&cNecesitas &b{COST_LEFT} &cmás polvo misterioso.'
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_ENDERMAN_TELEPORT
+  Enough-Mystery-Dust-To-Craft-Mystery-Box:
+    Lore:
+    - ''
+    - '&7Costo: &a{COST} &7Polvo Misterioso'
+    - '&aHaz clic para crear'
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Not-Enough-Mystery-Dust-To-Craft-Mystery-Box:
+    Lore:
+    - ''
+    - '&7Costo: &a{COST} &7Polvo Misterioso'
+    - '&cNo tienes suficiente Polvo Misterioso.'
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_ENDERMAN_TELEPORT
+  Item-Unpurchasable:
+    Lore:
+    - ''
+    - '&cNo se puede crear con polvo misterioso.'
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_ENDERMAN_TELEPORT
+  Failed-To-Purchase:
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_ENDERMAN_TELEPORT
+  Failed-To-Deduct-Mystery-Dust:
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_ENDERMAN_TELEPORT
+  Multiple-Boxes-Loot-Book:
+  - '       &1&lCAJA MISTERIOSA'
+  - ''
+  - '&0Encontraste el siguiente botín'
+  - '&0en tus Cajas Misteriosas:'
+  - '&9&l+{MYSTERY_DUST} Polvo Misterioso'
+  - '&a&l+{PET_ITEMS} Objetos de Mascota'
+  - ''
+  - '&9&l{MYSTERY_BOXES_OPENED} &0Cajas Misteriosas abiertas'
+  - ''
+  - ''
+  - '&0Ve a la siguiente página para'
+  - '&0ver todos los objetos'
+  Settings-Status:
+  - '&e&l{SETTING}'
+  - ''
+  - '  &bEstado: {STATUS}'
+  - ''
+  Current-Spawned-Pet:
+    Name: '&eMascota Actual'
+    Show: true
+    Slot: 4
+  Provide-Care-For-Pet:
+    Name: '&aProveer Cuidado'
+    Material: GLISTERING_MELON_SLICE
+    Show: true
+    Slot: 5
+    Lore:
+    - '&7Brinda cuidado a tu mascota'
+    - '&7actualmente invocada.'
+  Equip-Entire-Suit:
+    Name: '&aEquipar Traje Completo'
+    Material: LEATHER
+    Show: true
+    Slot: 41
+    Lore:
+    - '&7Equipa todas las piezas del traje'
+    - '&7que has desbloqueado.'
+Reset-Buttons:
+  Reset-Cosmetics:
+    Name: '&cReiniciar Cosméticos'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Slot: 50
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Hat:
+    Name: '&cReiniciar Sombrero'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Slot: 40
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Animated-Hat:
+    Name: '&cReiniciar Sombrero Animado'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Slot: 40
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Particle:
+    Name: '&cReiniciar Partícula'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Slot: 40
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Suit:
+    Name: '&cReiniciar Traje'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Slot: 40
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Gadget:
+    Name: '&cReiniciar Artilugio'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Slot: 40
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Pet:
+    Name: '&cReiniciar Mascota'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Slot: 40
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Miniature:
+    Name: '&cReiniciar Miniatura'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Slot: 40
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Morph:
+    Name: '&cReiniciar Transformación'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Slot: 40
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Banner:
+    Name: '&cReiniciar Bandera'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Slot: 40
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Emote:
+    Name: '&cReiniciar Gesto'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Slot: 40
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  Reset-Cloak:
+    Name: '&cReiniciar Capa'
+    Material: RED_STAINED_GLASS
+    Show: true
+    Slot: 40
+    Lore: ''
+    Play-Sound:
+      Enabled: true
+      Sound: ENTITY_EXPERIENCE_ORB_PICKUP
+Cooldown-In-Action-Bar:
+  Enabled: true
+  Cooldown-Block:
+    Remain: '&c|'
+    Retain: '&a|'
+    Amount-Of-Blocks: 100
+  Cooldown-Message: '{NAME} &f{COOLDOWN_BLOCK} &f{TIME_LEFT}s'
+Item-Purchase-Messages:
+  Purchase-Hat: '{PREFIX}&eHas comprado {ITEM}&e.'
+  Purchase-Animated-Hat: '{PREFIX}&eHas comprado {ITEM}&e.'
+  Purchase-Particle: '{PREFIX}&eHas comprado {ITEM}&e.'
+  Purchase-Suit: '{PREFIX}&eHas comprado {ITEM}&e.'
+  Purchase-Gadget: '{PREFIX}&eHas comprado {ITEM}&e.'
+  Purchase-Pet: '{PREFIX}&eHas comprado {ITEM}&e.'
+  Purchase-Miniature: '{PREFIX}&eHas comprado {ITEM}&e.'
+  Purchase-Morph: '{PREFIX}&eHas comprado {ITEM}&e.'
+  Purchase-Banner: '{PREFIX}&eHas comprado {ITEM}&e.'
+  Purchase-Emote: '{PREFIX}&eHas comprado {ITEM}&e.'
+  Purchase-Cloak: '{PREFIX}&eHas comprado {ITEM}&e.'
+
+Checking-For-Update: '{PREFIX}&rRevisando actualizaciones...'
+Cooldown: '{PREFIX}&c¡Debes esperar &b{COOLDOWN}s &cantes de usar esto!'
+Error: '{PREFIX}&c¡Ocurrió un error al realizar esta operación!'
+No-Permission: '{PREFIX}&c¡No tienes el permiso requerido {PERMISSION}!'
+Player-Receive-Menu-Item: '{PREFIX}&e¡Se ha añadido un selector de menú a tu inventario!'
+World-Disabled: '{PREFIX}&c¡No tienes permiso para hacer eso en este mundo!'
+Target-Player-No-Permission: '{PREFIX}&c¡{PLAYER} no tiene los permisos requeridos
+  para equipar este cosmético!'
+Banners-Are-Disabled: '{PREFIX}&c¡Las banderas cosméticas están deshabilitadas!'
+Cloaks-Are-Disabled: '{PREFIX}&c¡Las capas cosméticas están deshabilitadas!'
+Emotes-Are-Disabled: '{PREFIX}&c¡Los gestos cosméticos están deshabilitados!'
+Gadgets-Are-Disabled: '{PREFIX}&c¡Los artilugios cosméticos están deshabilitados!'
+Hats-Are-Disabled: '{PREFIX}&c¡Los sombreros cosméticos están deshabilitados!'
+Animated-Hats-Are-Disabled: '{PREFIX}&c¡Los sombreros animados cosméticos están deshabilitados!'
+Morphs-Are-Disabled: '{PREFIX}&c¡Las transformaciones cosméticas están deshabilitadas!'
+Particles-Are-Disabled: '{PREFIX}&c¡Las partículas cosméticas están deshabilitadas!'
+Pets-Are-Disabled: '{PREFIX}&c¡Las mascotas cosméticas están deshabilitadas!'
+Miniatures-Are-Disabled: '{PREFIX}&c¡Las miniaturas cosméticas están deshabilitadas!'
+Suits-Are-Disabled: '{PREFIX}&c¡Los trajes cosméticos están deshabilitados!'
+Equip-Animated-Hat-For-Player: '&eHas equipado {ANIMATED_HAT} para &b{PLAYER}&e.'
+Equip-Banner-For-Player: '&eHas equipado {BANNER} para &b{PLAYER}&e.'
+Equip-Cloak-For-Player: '&eHas equipado {CLOAK} para &b{PLAYER}&e.'
+Equip-Emote-For-Player: '&eHas equipado {EMOTE} para &b{PLAYER}&e.'
+Equip-Gadget-For-Player: '&eHas equipado {GADGET} para &b{PLAYER}&e.'
+Equip-Hat-For-Player: '&eHas equipado {HAT} para &b{PLAYER}&e.'
+Equip-Miniature-For-Player: '&eInvocaste {MINIATURE} para &b{PLAYER}.'
+Equip-Morph-For-Player: '&eTe transformaste para &b{PLAYER} &ecomo {MORPH}&e.'
+Equip-Particle-For-Player: '&eHas equipado {PARTICLE} para &b{PLAYER}&e.'
+Equip-Pet-For-Player: '&eInvocaste la mascota {PET} para &b{PLAYER}.'
+Equip-Suit-For-Player: '&eHas equipado {SUIT} para &b{PLAYER}&e.'
+Select-Animated-Hat: '&aHas seleccionado &e{ANIMATED_HAT}&a.'
+Select-Banner: '&aHas seleccionado &e{BANNER}&a.'
+Select-Cloak: '&aHas seleccionado &e{CLOAK}&a.'
+Select-Emote: '&aHas seleccionado &e{EMOTE}&a.'
+Select-Gadget: '&aHas seleccionado &e{GADGET}&a.'
+Select-Hat: '&aHas seleccionado &e{HAT}&a.'
+Select-Miniature: '&aHas invocado tu &e{MINIATURE}&a.'
+Select-Morph: '&aAhora estás transformado en &e{MORPH}&a.'
+Select-Particle: '&aHas seleccionado &e{PARTICLE}&a.'
+Select-Pet: '&aHas invocado tu mascota &e{PET}&a.'
+Select-Suit: '&aHas seleccionado &e{SUIT}&a.'
+Select-Entire-Suit: '&aHas equipado {PIECES} pieza(s) del &e{SUIT}&a.'
+No-Suit-Pieces-To-Equip: '&c¡No tienes ninguna pieza de traje para equipar!'
+Reset-Cosmetics: '&aHas reiniciado los cosméticos activos.'
+Reset-Animated-Hat: '&aHas reiniciado tu sombrero animado.'
+Reset-Banner: '&aHas reiniciado tu bandera.'
+Reset-Cloak: '&aHas reiniciado tu capa.'
+Reset-Emote: '&aHas reiniciado tu gesto.'
+Reset-Gadget: '&aHas reiniciado tu artilugio.'
+Reset-Hat: '&aHas reiniciado tu sombrero.'
+Reset-Miniature: '&aHas desaparecido tu miniatura.'
+Reset-Morph: '&aHas reiniciado tu transformación.'
+Reset-Particle: '&aHas reiniciado tu partícula.'
+Reset-Pet: '&aHas desaparecido tu mascota.'
+Reset-Suit: '&aHas reiniciado tu traje.'
+Reset-Suit-Helmet: '&aHas reiniciado tu casco.'
+Reset-Suit-Chestplate: '&aHas reiniciado tu pechera.'
+Reset-Suit-Leggings: '&aHas reiniciado tus pantalones.'
+Reset-Suit-Boots: '&aHas reiniciado tus botas.'
+Cosmetic-Reset-Completed: '&aReinicio de cosméticos completado.'
+Granted-Access-To-Animated-Hat: '&eSe te ha otorgado permiso para equipar {ANIMATED_HAT}&e.'
+Granted-Access-To-Banner: '&eSe te ha otorgado permiso para equipar {BANNER}&e.'
+Granted-Access-To-Cloak: '&eSe te ha otorgado permiso para equipar {CLOAK}&e.'
+Granted-Access-To-Emote: '&eSe te ha otorgado permiso para equipar {EMOTE}&e.'
+Granted-Access-To-Gadget: '&eSe te ha otorgado permiso para equipar {GADGET}&e.'
+Granted-Access-To-Hat: '&eSe te ha otorgado permiso para equipar {HAT}&e.'
+Granted-Access-To-Miniature: '&eSe te ha otorgado permiso para equipar {MINIATURE}&e.'
+Granted-Access-To-Morph: '&eSe te ha otorgado permiso para equipar {MORPH}&e.'
+Granted-Access-To-Particle: '&eSe te ha otorgado permiso para equipar {PARTICLE}&e.'
+Granted-Access-To-Pet: '&eSe te ha otorgado permiso para equipar {PET}&e.'
+Granted-Access-To-Suit: '&eSe te ha otorgado permiso para equipar {SUIT}&e.'
+Granted-Access-To-Animated-Hat-For-Player: '&e{PLAYER} ahora tiene permiso para usar
+  {ANIMATED_HAT}&e.'
+Granted-Access-To-Banner-For-Player: '&e{PLAYER} ahora tiene permiso para usar {BANNER}&e.'
+Granted-Access-To-Cloak-For-Player: '&e{PLAYER} ahora tiene permiso para usar {CLOAK}&e.'
+Granted-Access-To-Emote-For-Player: '&e{PLAYER} ahora tiene permiso para usar {EMOTE}&e.'
+Granted-Access-To-Gadget-For-Player: '&e{PLAYER} ahora tiene permiso para usar {GADGET}&e.'
+Granted-Access-To-Hat-For-Player: '&e{PLAYER} ahora tiene permiso para usar {HAT}&e.'
+Granted-Access-To-Miniature-For-Player: '&e{PLAYER} ahora tiene permiso para usar
+  {MINIATURE}&e.'
+Granted-Access-To-Morph-For-Player: '&e{PLAYER} ahora tiene permiso para usar {MORPH}&e.'
+Granted-Access-To-Particle-For-Player: '&e{PLAYER} ahora tiene permiso para usar {PARTICLE}&e.'
+Granted-Access-To-Pet-For-Player: '&e{PLAYER} ahora tiene permiso para usar {PET}&e.'
+Granted-Access-To-Suit-For-Player: '&e{PLAYER} ahora tiene permiso para usar {SUIT}&e.'
+No-Longer-Have-Access-To-Animated-Hat: '&eYa no tienes acceso a {ANIMATED_HAT}&e.'
+No-Longer-Have-Access-To-Banner: '&eYa no tienes acceso a {BANNER}&e.'
+No-Longer-Have-Access-To-Cloak: '&eYa no tienes acceso a {CLOAK}&e.'
+No-Longer-Have-Access-To-Emote: '&eYa no tienes acceso a {EMOTE}&e.'
+No-Longer-Have-Access-To-Gadget: '&eYa no tienes acceso a {GADGET}&e.'
+No-Longer-Have-Access-To-Hat: '&eYa no tienes acceso a {HAT}&e.'
+No-Longer-Have-Access-To-Miniature: '&eYa no tienes acceso a {MINIATURE}&e.'
+No-Longer-Have-Access-To-Morph: '&eYa no tienes acceso a {MORPH}&e.'
+No-Longer-Have-Access-To-Particle: '&eYa no tienes acceso a {PARTICLE}&e.'
+No-Longer-Have-Access-To-Pet: '&eYa no tienes acceso a {PET}&e.'
+No-Longer-Have-Access-To-Suit: '&eYa no tienes acceso a {SUIT}&e.'
+Already-Has-Permission: '&c{PLAYER} ya tiene este permiso.'
+Successful-Remove-Permission: '&eSe ha eliminado con éxito el permiso para acceder
+  a &c{TYPE} &ede {PLAYER}&e.'
+Characters-Too-Long: '{PREFIX}&c¡El nombre de la mascota no puede tener más de {CHARACTERS}
+  caracteres!'
+Does-Not-Support-Characters: '{PREFIX}&c¡Solo puedes usar el alfabeto inglés para
+  el nombre!'
+No-Player-Nearby: '{PREFIX}&c¡No hay ningún jugador cerca!'
+Not-Allowed-From-Console: '{PREFIX}&c¡No puedes usar este comando desde la consola!'
+Not-Allow-Cosmetics-In-This-Location: '{PREFIX}&c¡No tienes permitido usar cosméticos
+  en esta ubicación!'
+Not-Allow-Teleport-To-That-Location: '{PREFIX}&c¡No tienes permitido teletransportarte
+  a esa ubicación!'
+Not-Allow-Due-To-Entity-Nearby: '{PREFIX}&cAsegúrate de que no haya entidades/jugadores
+  cercanos antes de activar este cosmético.'
+Not-Enough-Space: '{PREFIX}&c¡No hay suficiente espacio a tu alrededor o encima de
+  ti para usar este artilugio!'
+Not-Enough-Space-For-Target-Block: '{PREFIX}&c¡No hay suficiente espacio para usar
+  este artilugio en el bloque que apuntaste!'
+Not-On-Ground: '{PREFIX}&c¡Debes estar en el suelo para usar esto!'
+Not-On-Flat-Ground: '{PREFIX}&c¡Debes estar en una superficie plana para usar esto!'
+Stand-On-Two-Blocks-High: '{PREFIX}&c¡Debes estar sobre más de dos bloques de altura
+  de un bloque sólido!'
+Player-Not-Found: '{PREFIX}&c¡Jugador no encontrado!'
+Player-Is-Offline: '{PREFIX}&c¡Este jugador está desconectado actualmente!'
+Plugin-Reloaded: '{PREFIX}&3El plugin GadgetsMenu se ha recargado.'
+Reloading-Plugin: '{PREFIX}&3Recargando el plugin...'
+Failed-To-Reload-Plugin: '{PREFIX}&cNo se pudo recargar el plugin GadgetsMenu. El
+  plugin ha sido deshabilitado. Necesitas reiniciar el servidor para volver a habilitarlo.'
+Required-Number-Format: '{PREFIX}&c¡Se requiere un número!'
+Required-Positive-Number: '{PREFIX}&c¡Se requiere un número positivo!'
+Target-A-Block: '{PREFIX}&c¡Debes apuntar a un bloque!'
+Target-A-Player: '{PREFIX}&c¡Debes apuntar a un jugador!'
+Remove-Item-From-Slot-To-Equip-Gadget: '{PREFIX}&c¡Debes quitar el objeto de tu ranura
+  {SLOT}(&b{ITEM}&c) para equipar el artilugio!'
+Remove-Item-From-Slot-To-Equip-Morph: '{PREFIX}&c¡Debes quitar el objeto de tu ranura
+  {SLOT}(&b{ITEM}&c) para equipar la transformación!'
+Remove-Item-From-Slot-To-Equip-Emote: '{PREFIX}&c¡Debes quitar el objeto de tu ranura
+  {SLOT}(&b{ITEM}&c) para equipar el gesto!'
+Remove-Helmet-To-Equip-Hat: '{PREFIX}&c¡Debes quitar tu casco para equipar un sombrero!'
+Remove-Helmet-To-Equip-Animated-Hat: '{PREFIX}&c¡Debes quitar tu casco para equipar
+  un sombrero animado!'
+Remove-Helmet-To-Equip-Banner: '{PREFIX}&c¡Debes quitar tu casco para equipar una
+  bandera!'
+Remove-Helmet-To-Equip-Emote: '{PREFIX}&c¡Debes quitar tu casco para equipar un gesto!'
+Remove-Armor-To-Equip-Suit: '{PREFIX}&c¡Debes quitar tu armadura para equipar un traje!'
+Reset-Pet-Name: '&eHas reiniciado el nombre de la mascota con éxito.'
+Reset-Pet-Name-For-Player: '&eHas reiniciado exitosamente el nombre de la mascota
+  {TYPE} de {PLAYER}.'
+Failed-To-Purchase: '&c¡Error al obtener tu objeto comprado!'
+Item-Unpurchasable: '{PREFIX}&c¡No puedes comprar este objeto!'
+Player-Not-Enough-MysteryDust: '{PREFIX}&c¡Solo tienes &b{MYSTERY_DUST} &cde polvo
+  misterioso!'
+Added-MysteryDust: '{PREFIX}&eHas añadido correctamente &b{MYSTERY_DUST} &ede polvo
+  misterioso a &b{PLAYER}&e.'
+Added-MysteryDust-To-All-Players: '{PREFIX}&eHas añadido correctamente &b{MYSTERY_DUST}
+  &ede polvo misterioso a &b{ONLINE} &ejugador(es).'
+Check-MysteryDust: '&e{PLAYER} tiene &b{MYSTERY_DUST} &ede Polvo Misterioso.'
+Received-MysteryDust: '{PREFIX}&eHas recibido &b{MYSTERY_DUST} &ede polvo misterioso
+  de &b{PLAYER}&e.'
+Removed-MysteryDust: '{PREFIX}&eHas quitado &b{MYSTERY_DUST} &ede polvo misterioso
+  a &b{PLAYER}&e.'
+Removed-MysteryDust-From-Player: '{PREFIX}&b{MYSTERY_DUST} &ede polvo misterioso ha
+  sido eliminado de tu cuenta.'
+Set-MysteryDust: '{PREFIX}&eHas establecido &b{MYSTERY_DUST} &ede polvo misterioso
+  para &b{PLAYER}&e.'
+Set-Player-MysteryDust: '{PREFIX}&eTu polvo misterioso se ha establecido a &b{MYSTERY_DUST}&e.'
+Not-Enough-MysteryDust-To-Purchase: '{PREFIX}&c¡Lo siento, no tienes suficiente polvo
+  misterioso para comprar este objeto!'
+Pay-MysteryDust-To-Self: '{PREFIX}&c¡No puedes pagarte polvo misterioso a ti mismo!'
+Failed-To-Deduct-Mystery-Dust: '{PREFIX}&cNo se pudo descontar tu polvo misterioso.
+  Por favor, inténtalo de nuevo.'
+Gave-Mystery-Boxes: '{PREFIX}&eHas dado correctamente &b{MYSTERY_BOXES} &ecajas misteriosas
+  a &b{PLAYER}&e.'
+Gave-Mystery-Boxes-To-All-Players: '{PREFIX}&eHas dado correctamente &b{MYSTERY_BOXES}
+  &ecajas misteriosas a &b{ONLINE} &ejugador(es).'
+Received-Mystery-Boxes: '{PREFIX}&eHas recibido &b{MYSTERY_BOXES} &ecajas misteriosas
+  de &b{PLAYER}&e.'
+Added-Mystery-Vault: '{PREFIX}&aBóveda Misteriosa creada exitosamente con el nombre
+  &f''{NAME}''&a.'
+Redefined-Mystery-Vault: '{PREFIX}&aLa ubicación de la bóveda misteriosa &f''{NAME}''
+  &aha sido redefinida.'
+Mystery-Vault-Same-Location: '{PREFIX}&c¡Ya has creado una bóveda misteriosa en esta
+  ubicación!'
+Mystery-Vault-Is-Exists: '{PREFIX}&c¡Ya existe una Bóveda Misteriosa con ese nombre!'
+Do-Not-Have-Any-Mystery-Vault: '{PREFIX}&c¡No tienes ninguna Bóveda Misteriosa creada!'
+No-Mystery-Vault-Nearby: '{PREFIX}&c¡No hay ninguna Bóveda Misteriosa en el radio
+  especificado!'
+Removed-Mystery-Vault: '{PREFIX}&aSe ha eliminado la Bóveda Misteriosa &f''{NAME}''&a
+  con éxito.'
+Mystery-Vault-Not-Found: '{PREFIX}&c¡No se pudo encontrar ninguna Bóveda Misteriosa
+  en esta ubicación!'
+Mystery-Vault-Not-Found-With-Name: '{PREFIX}&c¡No se pudo encontrar ninguna Bóveda
+  Misteriosa con el nombre &f''{NAME}''&c!'
+Teleport-To-Mystery-Vault: '{PREFIX}&eHas sido teletransportado a la Bóveda Misteriosa
+  llamada &f''{NAME}''&e.'
+Open-Mystery-Vault-At-A-Time: '{PREFIX}&c¡Solo un jugador puede usar la Bóveda Misteriosa
+  a la vez!'
+Can-Only-Open-One-Mystery-Box: '{PREFIX}&c¡Espera a que termine de abrirse esta caja
+  primero!'
+Purchase-Cancelled: '{PREFIX}&c¡Compra cancelada!'
+Mystery-Boxes-Are-Disabled: '{PREFIX}&c¡Las Cajas Misteriosas están deshabilitadas!'
+Crafted-Mystery-Box: '&aHas creado &b{NAME}&a.'
+Gave-Mystery-Gifts: '{PREFIX}&eHas dado exitosamente &b{GIFTS} &epaquetes de regalos
+  misteriosos a &r{PLAYER}&e.'
+Received-Mystery-Gifts: '{PREFIX}&eHas recibido &b{GIFTS} &epaquetes de regalos misteriosos
+  de &r{PLAYER}&e.'
+Send-A-Gift-To-Player: '&aHas enviado un regalo que contiene &b5 Cajas Misteriosas
+  &aa &r{PLAYER}&a!'
+Received-Gift: '&aHas recibido un regalo de &r{PLAYER}&a! ¡Visita una &bBóveda Misteriosa
+  &apara abrirlo!'
+Mystery-Box-Was-Expired: '{PREFIX}&cEsta caja misteriosa ha expirado. ¡Por favor,
+  ábrela antes de que expire!'
+Check-Mystery-Boxes: '&e{PLAYER} tiene &b{MYSTERY_BOXES} &eCajas Misteriosas.'
+Select-Mystery-Vault-Animation: '&eHas seleccionado &b{ANIMATION} &epara la animación
+  de tu bóveda misteriosa.'
+Not-Enough-Mystery-Boxes: '&cNo tienes suficientes cajas misteriosas para abrir.'
+Counting-Mystery-Boxes: '&cContando Cajas Misteriosas...'
+No-Permission-To-Open-One-Star-Box: '{PREFIX}&c¡No tienes el permiso requerido para
+  abrir esta caja!'
+No-Permission-To-Open-Two-Star-Box: '{PREFIX}&c¡No tienes el permiso requerido para
+  abrir esta caja!'
+No-Permission-To-Open-Three-Star-Box: '{PREFIX}&c¡No tienes el permiso requerido para
+  abrir esta caja!'
+No-Permission-To-Open-Four-Star-Box: '{PREFIX}&c¡No tienes el permiso requerido para
+  abrir esta caja!'
+No-Permission-To-Open-Five-Star-Box: '{PREFIX}&c¡No tienes el permiso requerido para
+  abrir esta caja!'
+Emote-Is-Activated: '{PREFIX}&c¡El gesto ya está activo!'
+Gadget-Is-Activated: '{PREFIX}&c¡{GADGET} ya está activo!'
+Morph-Skill-Is-Activated: '{PREFIX}&c¡La habilidad {MORPH} ya está activa!'
+Suit-Ability-Is-Activated: '{PREFIX}&c¡La habilidad del {SUIT} ya está activa!'
+Morph-Ability-Is-Disabled: '{PREFIX}&c¡La habilidad de {MORPH} está deshabilitada
+  actualmente!'
+Is-Not-Morphed: '&c¡No estás transformado actualmente!'
+No-Pet-Spawned: '{PREFIX}&c¡No tienes ninguna mascota invocada actualmente!'
+Unlock-Pet-Before-Rename: '&c{PLAYER} necesita desbloquear la mascota {TYPE} antes
+  de poder renombrarla.'
+Pet-Name-In-Blacklist: '&cNo tienes permitido asignar este nombre a la mascota, ya
+  que contiene texto indecente.'
+Rename-Pet: '&eSe ha establecido el nombre de tu mascota {TYPE} a &a{NAME}&e.'
+Rename-Pet-For-Player: '&eEl nombre de la mascota {TYPE} de {PLAYER} se ha establecido
+  a &a{NAME}&e.'
+Rename-Pet-In-Chat: |-
+  &eTienes &c20 &esegundos para escribir el nombre de tu mascota, por favor escríbelo en el chat.
+  &eEscribe &2Cancel &epara cancelar el cambio de nombre de tu mascota.
+No-Permission-To-Ride-Pet: '&c¡No tienes permiso para montar mascotas!'
+Not-Allowed-To-Ride-Other-Pet: '&c¡No puedes montar las mascotas de otros jugadores!'
+Timed-Out: '&cSe acabó el tiempo para renombrar la mascota, no cambiaste el nombre
+  de tu mascota!'
+Cancel-Rename-Pet: '&cSe ha cancelado el cambio de nombre de tu mascota.'
+Request-Pet-With-Happy-Status: '&c¡Debes tener al menos una mascota con estado Feliz
+  para hacer eso!'
+Click-To-Increase-Happiness: '&bHaz clic derecho &ea tus mascotas dentro del Menú
+  de Mascotas para alimentarlas y aumentar su felicidad.'
+Pet-Earn-EXP: '&eTu {LEVEL}{PET_NAME} &eha ganado &b{EXP} EXP &ede la misión de mascotas!'
+Pet-Level-Up: '&eTu {LEVEL}{PET_NAME} &eha ganado &b{EXP} EXP &ede la misión de mascotas.
+  ¡Subió de nivel!'
+Send-Pet-For-Mission-Is-On-Cooldown: '&cEsto está en enfriamiento. Por favor espera
+  {COOLDOWN_MINUTES} minutos más.'
+No-Permission-To-Spawn-Pet: '&c¡No tienes permiso para invocar tus mascotas!'
+Pet-Stat-Fulled: '&c¡El {STAT} de tu {PET_NAME} ya está al máximo!'
+Zero-Pet-Item-Remain: '&cEste objeto se puede encontrar a través de la &bBóveda Misteriosa&c!'
+Ate-Food-And-Dont-Like-It: '&eTu {PET_NAME} &ese comió un(a) &a{ITEM}&e. No le agradó
+  mucho. (&a+{INCREMENT} &bHambre&e)'
+Ate-Food-And-Like-It: '&eTu {PET_NAME} &ese comió un(a) &a{ITEM}&e. ¡Le gustó! (&a+{INCREMENT}
+  &bHambre&e)'
+Ate-Food-And-Really-Like-It: '&eTu {PET_NAME} &ese comió un(a) &a{ITEM}&e. ¡Le encantó!
+  (&a+{INCREMENT} &bHambre&e)'
+Ate-Favourite-Food: '&eTu {PET_NAME} &ese comió un(a) &a{ITEM}&e. ¡Es su comida favorita!
+  (&a+{INCREMENT} &bHambre&e)'
+Drank-Drink-And-Dont-Like-It: '&eTu {PET_NAME} &ebebió un(a) &a{ITEM}&e. No le agradó
+  mucho. (&a+{INCREMENT} &bSed&e)'
+Drank-Drink-And-Like-It: '&eTu {PET_NAME} &ebebió un(a) &a{ITEM}&e. ¡Le gustó! (&a+{INCREMENT}
+  &bSed&e)'
+Drank-Drink-And-Really-Like-It: '&eTu {PET_NAME} &ebebió un(a) &a{ITEM}&e. ¡Le encantó!
+  (&a+{INCREMENT} &bSed&e)'
+Drank-Favourite-Drink: '&eTu {PET_NAME} &ebebió un(a) &a{ITEM}&e. ¡Es su bebida favorita!
+  (&a+{INCREMENT} &bSed&e)'
+Played-Toy-And-Dont-Like-It: '&eTu {PET_NAME} &ejugó con un(a) &a{ITEM}&e. No le agradó
+  mucho. (&a+{INCREMENT} &bEjercicio&e)'
+Played-Toy-And-Like-It: '&eTu {PET_NAME} &ejugó con un(a) &a{ITEM}&e. ¡Le gustó! (&a+{INCREMENT}
+  &bEjercicio&e)'
+Played-Toy-And-Really-Like-It: '&eTu {PET_NAME} &ejugó con un(a) &a{ITEM}&e. ¡Le encantó!
+  (&a+{INCREMENT} &bEjercicio&e)'
+Played-Favourite-Toy: '&eTu {PET_NAME} &ejugó con un(a) &a{ITEM}&e. ¡Es su juguete
+  favorito! (&a+{INCREMENT} &bEjercicio&e)'
+Added-Pet-Item: '{PREFIX}&eHas añadido correctamente &b{AMOUNT} &e{PET_ITEM} &e(objeto
+  de mascota) a &b{PLAYER}&e.'
+Received-Pet-Item: '{PREFIX}&eHas recibido &b{AMOUNT} &e{PET_ITEM} &e(objeto de mascota)
+  de &b{PLAYER}&e.'
+Removed-Pet-Item: '{PREFIX}&eHas quitado &b{AMOUNT} &e{PET_ITEM} &e(objeto de mascota)
+  a &b{PLAYER}&e.'
+Removed-Pet-Item-From-Player: '{PREFIX}&b{AMOUNT} &e{PET_ITEM} &e(objeto de mascota)
+  se ha eliminado de tus objetos de mascota.'
+Set-Pet-Item: '{PREFIX}&eHas establecido &b{AMOUNT} &e{PET_ITEM} &e(objeto de mascota)
+  para &b{PLAYER}&e.'
+Set-Player-Pet-Item: '{PREFIX}&eTu &e{PET_ITEM} &e(objeto de mascota) se ha establecido
+  a &b{AMOUNT}&e.'
+Rocket-Countdown: '&c&l¡LANZAMIENTO DE COHETE EN {TIMER} {SECOND}!'
+Rocket-Lift-Off: '&a&l¡DESPEGAMOS!'
+Enabled-Self-Morph-View: '{PREFIX}&e¡Has habilitado la vista propia para transformaciones!'
+Disabled-Self-Morph-View: '{PREFIX}&e¡Has deshabilitado la vista propia para transformaciones!'
+Enabled-Bypass-Cooldown: '{PREFIX}&eHas habilitado la omisión del tiempo de reutilización.'
+Disabled-Bypass-Cooldown: '{PREFIX}&eHas deshabilitado la omisión del tiempo de reutilización.'
+Enabled-Random-Mystery-Vault-Animation: '{PREFIX}&eHas &aactivado &bla Animación Aleatoria
+  &epara la animación de tu bóveda misteriosa.'
+Disabled-Random-Mystery-Vault-Animation: '{PREFIX}&eHas &cdesactivado &bla Animación
+  Aleatoria &epara la animación de tu bóveda misteriosa.'
+Disabled-Command-While-Cosmetics-Activated: '{PREFIX}&c¡No puedes usar este comando
+  mientras haya cosméticos activados!'
+Invalid-Type: '{PREFIX}&c¡Este {TYPE} que ingresaste es inválido!'
+Type-Is-Not-Enabled: '{PREFIX}&c¡Este {TYPE} no está habilitado!'
+Turn-Off-Bumblebee-Song: '{PREFIX}&c¡La canción Bumblebee se ha desactivado!'
+Playing-Song: '{RANDOM_COLOR}Reproduciendo ahora: {SONG}'
+Only-Boolean-Value-Can-Be-Accepted: '&c¡Solo se acepta un valor booleano!'
+Required-Time-Format: '{PREFIX}&c¡Por favor, usa el formato de tiempo correcto! (''h''
+  para horas, ''d'' para días, ''m'' para meses).'
+Required-Full-Data: '{PREFIX}&c¡Asegúrate de que tus datos estén completos!'
+Already-Activate-One: '{PREFIX}&c¡Ya hay un {GADGET} activado! Por favor, inténtalo
+  más tarde.'
+Gadget-Activated-In-Same-Area: '{PREFIX}&c¡Hay un artilugio activado en esta área!
+  Por favor, inténtalo en otra.'
+Enabled: '&aHabilitado'
+Disabled: '&cDeshabilitado'
+Cooldown-Bypass: Omitir Cooldown
+Self-Morph-View: Vista de Transformación Propia
+Unequip-Cosmetics-Due-To-Low-TPS: '{PREFIX}&cSe han desequipado tus cosméticos debido
+  al lag del servidor.'
+Disable-Usage-Of-Cosmetics: '{PREFIX}&cLo sentimos, todos los cosméticos han sido
+  deshabilitados debido al lag del servidor.'
+Not-Allow-Cosmetics-In-Region: '{PREFIX}&c¡No tienes permitido equipar cosméticos
+  en esta región!'
+Not-Allow-Hat-In-Region: '{PREFIX}&c¡No tienes permitido equipar sombrero en esta
+  región!'
+Not-Allow-Animated-Hat-In-Region: '{PREFIX}&c¡No tienes permitido equipar un sombrero
+  animado en esta región!'
+Not-Allow-Particle-In-Region: '{PREFIX}&c¡No tienes permitido equipar partículas en
+  esta región!'
+Not-Allow-Suit-In-Region: '{PREFIX}&c¡No tienes permitido equipar un traje en esta
+  región!'
+Not-Allow-Gadget-In-Region: '{PREFIX}&c¡No tienes permitido equipar artilugio en esta
+  región!'
+Not-Allow-Pet-In-Region: '{PREFIX}&c¡No tienes permitido equipar mascota en esta región!'
+Not-Allow-Miniature-In-Region: '{PREFIX}&c¡No tienes permitido equipar miniaturas
+  en esta región!'
+Not-Allow-Morph-In-Region: '{PREFIX}&c¡No tienes permitido transformarte en esta región!'
+Not-Allow-Banner-In-Region: '{PREFIX}&c¡No tienes permitido equipar bandera en esta
+  región!'
+Not-Allow-Emote-In-Region: '{PREFIX}&c¡No tienes permitido equipar un gesto en esta
+  región!'
+Not-Allow-Cloak-In-Region: '{PREFIX}&c¡No tienes permitido equipar una capa en esta
+  región!'
+Not-Allow-Pet-Riding-In-Region: '{PREFIX}&c¡No tienes permitido montar tu mascota
+  en esta región!'
+Second: Segundo
+Seconds: Segundos
+Minute: minuto
+Minutes: minutos
+Hour: hora
+Hours: horas
+Day: día
+Days: días
+No-Cosmetic-Equipped: ninguno
+No-Recent-Loot-Found: ninguno
+Invalid: Inválido
+Loading: '&cCargando...'
+Sent-MysteryDust: '{PREFIX}&eYou''ve sent &b{MYSTERY_DUST} &emystery dust to &b{PLAYER}&e.'
+Only-Have-MysteryDust: '{PREFIX}&b{PLAYER} &chas only &b{MYSTERY_DUST} &cmystery dust!'

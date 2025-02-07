@@ -1,0 +1,176 @@
+# This is an example section file which is only a reference for how section configs should be created in /sections/<shopName>.yml
+
+# The file name defines the shop internal name and needs to match the filename for the section inside the shops folder
+# Example:
+# /sections/Food.yml -> /shops/Food.yml
+# /sections/Workstations.yml -> /shops/Workstations.yml
+#
+# If this does not match, an example section will be created with name '<shopName>.yml', so make sure it matches!
+
+# Defines whether this section should be loaded at all
+enable: true
+
+# The slot of the section item inside the main shop screen
+slot: 5
+# This is a required option
+
+# The title of the shop, different from the shop name
+title: "&c&lExample_Shop"
+# Defaults to the item name if empty
+
+# Whether this shop section can be seen and accessed via the main shop
+# If a section is hidden, it will be only accessible through the direct shop command (/shop <shopName>)
+hidden: false
+
+# Whether this shop is a subsection,
+# subsections will be hidden from the main menu and cannot be opened via commands
+sub-section: false
+
+# Makes this section a simple display item to decorate the main shop GUI
+# Display items won't have a section linked and nothing will happen when a player clicks it inside the main shop GUI,
+# neither will this section be accessible via /shop <shopName>
+display-item: true
+
+# The economy used within this section, this is the same format as the config.yml uses
+# See a list of all available economy types here: https://wiki.gpplugins.com/economyshopgui/file-configuration/config.yml#economy-provider
+economy: "ITEM:material:EMERALD name:&a&lGems"
+
+# If click commands are used within this section, should we close the shop after the click commands have been executed?
+# If disabled with click commands, the shop will open like normal while click commands are being executed in the background.
+close-menu: false
+
+# Click commands are triggered upon every time a player clicks the section item to enter the shop
+click-commands:
+  - "/eco give %player% 1"
+  - "minecraft:give %player% gold_nugget 3"
+
+# When global DynamicPricing is enabled inside the config.yml these options can be used
+dynamic-pricing:
+  # Can be used to disable DP in this section
+  # Note that global DP needs to be enabled to disable this, it is not possible to enable DP for this section alone
+  enabled: false
+  # The same as the DP max stock setting inside the config.yml, but instead this will strictly define the rate at which prices change
+  # when players buy items IN THIS SECTION instead of having a difficulty setting based on the item's price.
+  # This is known to be more precise, lower difficulty values mean faster price changes compared to higher difficulty values
+  max-stock: 50000
+
+# The section fill item
+# This item will be added to every empty slot inside the section
+fill-item:
+  material: "GRAY_STAINED_GLASS_PANE"
+  name: ' '
+  lore:
+    - "&8I'm a fill item"
+
+# Assign custom click actions when clicking a shop item
+# Possible actions: BUY, SELL, SELL_ALL, GUI_EDITOR
+# Possible click types: LEFT, SHIFT_LEFT, RIGHT, SHIFT_RIGHT, NONE
+click-mappings:
+  BUY: LEFT
+  SELL: RIGHT
+  SELL_ALL: SHIFT_RIGHT
+  GUI_EDITOR: SHIFT_LEFT
+
+# The navigation bar which defaults to this section
+# Leave empty to make this section inherit its navigation bar from the fall-back nav bar at the config.yml
+nav-bar:
+  # There are currently 3 navigation bar modes:
+  # SELF = The section will have its own navigation bar separate from the default one inside the config.yml
+  # DISABLED = No navigation bar will be used across this section
+  # INHERIT = The same as leaving these options blank, in other words, the default will be used
+  mode: "SELF"
+  # The fill item for this navigation bar which will fill blank spots
+  fill-item:
+    material: "GRAY_STAINED_GLASS_PANE"
+    name: ' '
+  # The items containing this navigation bar, the last 9 slots of the inventory
+  items:
+    1:
+      material: "RED_WOOL"
+      name: '%translations-previous-page%'
+      action: PAGE_BACK
+      # When pagination for this item is enabled, this item will only show when the shop has more than 1 page.
+      paginated:
+        enabled: true
+        # The below item will show as a placeholder for the actual navigation bar item only when the shop has one page.
+        orElse:
+          material: AIR
+      slot: 4
+    2:
+      material: "NETHER_STAR"
+      name: '%translations-current-page%'
+      slot: 5
+    3:
+      material: "GREEN_WOOL"
+      name: '%translations-next-page%'
+      action: PAGE_NEXT
+      paginated:
+        enabled: true
+        orElse:
+          material: AIR
+      slot: 6
+
+# Options to configure the section item inside the main shop GUI
+item:
+  # The material of the item
+  material: "BEACON"
+  # The name of the item
+  # If no shop title has been set, this will be used as a fallback
+  name: "&cClick to enter the Example_Shop"
+  # The lore of the item
+  lore:
+    - "&aThis section contains"
+    - "&aa ton of different cool items."
+  # Item enchantments
+  enchantments:
+    - "KNOCKBACK:10"
+    - "SHARPNESS:10"
+    - "MENDING"
+    - "excellentenchants:BLAST_MINING:3"
+  # Whether this item should have an enchantment glow affect
+  enchantment-glint: true
+  # The skull owner for this item
+  skullowner: "Notch"
+  # The skull texture of the item
+  skull-texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjUzMGQ5YjAwZDA3NjEyNWRmOWE1YjE3ZjQzN
+    jcwOTg0NDQyY2U1NzM5ZGViZGJkM2M1MzA0MDkyNjA1MmNhNiJ9fX0="
+  # Custom armor color for leather armor
+  armorcolor: "#0022FF"
+  # The stack-size of the item
+  stack-size: 16
+  # Custom NBT data of the item
+  NBTData: "{CustomModelData:40}"
+
+# The shop type requires to be set for rotating shops,
+# or defaults to a shop category
+shop-type: ROTATING
+
+# Settings for rotating shops
+rotating-shop-settings:
+  # Specifies the period for how frequently this rotating shop
+  # changes its display items
+  interval: 12h 30m 15s
+  # Enables or disables randomly displayed items
+  # Disabling this will make sure every item only displays once randomly
+  # but without a specific display chance
+  can-repeat: true
+  # Whether to send a broadcast message into chat when a new interval gets loaded
+  broadcast: true
+  # The different pages inside this section
+  pages:
+    page1:
+      # Similar to the options in shop configs,
+      # this option allows to specify the page size in rows
+      gui-rows: 3
+      # where this option allows to specify the per page title
+      title:
+      # Creates displayable slots for items
+      # These slots will display a new set of items each rotation
+      display-slots:
+      - 12
+      - 16
+    page2:
+      gui-rows: 3
+      display-slots:
+      - 10
+      - 14

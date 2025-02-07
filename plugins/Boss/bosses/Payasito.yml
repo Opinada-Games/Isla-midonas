@@ -1,0 +1,226 @@
+#  -------------------------------------------------------------------------------------------------
+#  The main Boss configuration file. Send it to friends or publish online, we'll load it automatically.
+#  We recommend AGAINST editing it here. Use /boss menu instead. MineAcademy.org is not responsible
+#  for data loss, hair loss, your ego or thermonuclear war from mistakes in your edit.
+#  -------------------------------------------------------------------------------------------------
+
+Type: ZOMBIE
+Health: 1200.0
+Equipment:
+  HEAD:
+    Key:
+      ==: "org.bukkit.inventory.ItemStack"
+      v: 4189
+      type: "PLAYER_HEAD"
+      meta:
+        ==: "ItemMeta"
+        meta-type: "SKULL"
+        display-name: "{\"text\":\"\",\"extra\":[\"Payasito\"]}"
+        skull-owner:
+          ==: "PlayerProfile"
+          uniqueId: "ffffffff-e229-5306-ffff-ffffeab377b0"
+          name: "aaaaa"
+          properties:
+          - name: "textures"
+            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWM1MDhhMGI1YTQ3YTlmY2U4MWRiNTFjOTdkYWNmODI1YTFkMWIzYjM0ZDkzZmFmNDQ4OGE5ZTZlYzkyYTk2NiJ9fX0="
+    Value: 0.01
+  CHEST:
+    Key:
+      ==: "org.bukkit.inventory.ItemStack"
+      v: 4189
+      type: "LEATHER_CHESTPLATE"
+      meta:
+        ==: "ItemMeta"
+        meta-type: "COLORABLE_ARMOR"
+        color:
+          ==: "Color"
+          ALPHA: 255
+          RED: 249
+          BLUE: 254
+          GREEN: 255
+    Value: 5.551115123125783E-17
+  LEGS:
+    Key:
+      ==: "org.bukkit.inventory.ItemStack"
+      v: 4189
+      type: "LEATHER_LEGGINGS"
+      meta:
+        ==: "ItemMeta"
+        meta-type: "COLORABLE_ARMOR"
+        color:
+          ==: "Color"
+          ALPHA: 255
+          RED: 249
+          BLUE: 254
+          GREEN: 255
+    Value: 5.551115123125783E-17
+  FEET:
+    Key:
+      ==: "org.bukkit.inventory.ItemStack"
+      v: 4189
+      type: "LEATHER_BOOTS"
+      meta:
+        ==: "ItemMeta"
+        meta-type: "COLORABLE_ARMOR"
+        color:
+          ==: "Color"
+          ALPHA: 255
+          RED: 176
+          BLUE: 38
+          GREEN: 46
+    Value: 5.551115123125783E-17
+  OFF_HAND:
+    Key:
+      ==: "org.bukkit.inventory.ItemStack"
+      v: 4189
+      type: "PLAYER_HEAD"
+      meta:
+        ==: "ItemMeta"
+        meta-type: "SKULL"
+        display-name: "{\"text\":\"\",\"extra\":[\"Pelota de Payaso\"]}"
+        skull-owner:
+          ==: "PlayerProfile"
+          uniqueId: "00000000-12ca-81e8-ffff-ffffe02cc6eb"
+          name: "aaaaa"
+          properties:
+          - name: "textures"
+            value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2U2MjMyMTFiZGE1ZGQ1YWI5ZTc2MDMwZjg2YjFjNDczMGI5ODg3MjZlZWY2YTNhYjI4YWExYzFmN2Q4NTAifX19"
+    Value: 0.01
+Random_Equipment_On_Empty_Slots: false
+Potion_Effects: {}
+Riding:
+  Vanilla: []
+  Boss: []
+  Remove_On_Death: false
+Commands: []
+Commands_Stop_After_First: false
+Attributes:
+  ATTACK_DAMAGE: 40.0
+  SCALE: 1.2
+  STEP_HEIGHT: 20.0
+  FOLLOW_RANGE: 100.0
+  ZOMBIE_SPAWN_REINFORCEMENTS: 10.0
+  WATER_MOVEMENT_EFFICIENCY: 0.4
+  MOVEMENT_SPEED: 0.4
+  SAFE_FALL_DISTANCE: 20.0
+  ARMOR: 6.0
+Lightning:
+  Death: false
+  Spawn: false
+Reinforcements: []
+Custom_Settings: {}
+Skills:
+  Confuse:
+    Delay: "10 seconds"
+    Commands: []
+    Messages:
+    - ¡Has sido <red>confundido <gray>por el jefe!
+    - ¡Dios mío! ¿Qué está pasando?
+    - ¡Fuiste teletransportado a un mundo maravilloso! Es broma.
+    Stop_More_Skills: true
+    Settings: {}
+  Freeze:
+    Delay: "20 seconds"
+    Commands: []
+    Messages:
+    - El Jefe te ha puesto en un estado meditativo. No te muevas.
+    - ¡Ahora estás inmovilizado! ¡El {boss} se acerca a ti!
+    - ¡Estás jugando muy rápido! ¡Baja la velocidad por favor!
+    Stop_More_Skills: true
+    Settings:
+      Duration: "2 seconds"
+      Cobweb: false
+Drops:
+  Vanilla: true
+  General:
+  - Key:
+      ==: "org.bukkit.inventory.ItemStack"
+      v: 4189
+      type: "TRIAL_KEY"
+      meta:
+        ==: "ItemMeta"
+        meta-type: "UNSPECIFIC"
+        display-name: "{\"text\":\"\",\"extra\":[{\"text\":\"Llave de Jefe\",\"strikethrough\":false,\"obfuscated\":false,\"bold\":false,\"italic\":false,\"underlined\":false,\"color\":\"dark_red\"}]}"
+        lore:
+        - '{"text":"","extra":[{"text":"Más allá de solo un trofeo","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gray"}]}'
+        PublicBukkitValues: "{\n    \"excellentcrates:crate_key.id\": \"jefe\"\n}"
+    Value: 1.0
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  Player:
+  - {}
+  Player_Time_Threshold: 15 seconds
+  Player_Commands:
+  - eco give {killer} 5000
+Limit_Reasons:
+- SPAWN_RULE
+Limit:
+  Nearby_Bosses:
+    Key: 100
+    Value: 20.0
+  Worlds:
+    lobby: 0
+    world: 1
+    world_nether: 0
+    witp: 0
+Citizens:
+  Enabled: false
+  Speed: 5.0
+  Skin: null
+  Sound_Death: null
+  Sound_Hurt: null
+  Sound_Ambient: null
+  Goal_Target_Enabled: false
+  Goal_Target_Aggressive: false
+  Goal_Target_Radius: 24
+  Goal_Target_Entities: []
+  Goal_Wander_Enabled: false
+  Goal_Wander_Radius: 18
+Keep_In_Spawn_Region: true
+Egg:
+  Lore: []
+Last_Death_From_Spawn_Rule:
+  PayasitoBossIsland: 1737741571405
+Dropped_Exp: 500 - 500

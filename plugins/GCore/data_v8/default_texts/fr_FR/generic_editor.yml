@@ -1,0 +1,611 @@
+# -------------------- Element --------------------
+
+guiSelectTitle: Sélectionner
+guiSearchName: |
+  &dChercher une valeur (dans le chat)
+
+elementTypeMandatory: |
+  &cCeci est un {type} obligatoire
+
+elementTypeOptional: |
+  &aCeci est un {type} optionnel
+
+elementCurrentValueNone: |
+  &9Valeur actuelle :
+  &7none
+
+elementCurrentValueNoneDefault: |
+  &9Valeur actuelle (par défaut) :
+  &7none
+
+elementCurrentValueSingle: |
+  &9Valeur actuelle :
+  &b{value}
+
+elementCurrentValueSingleDefault: |
+  &9Valeur actuelle (par défaut) :
+  &b{value}
+
+elementCurrentValueList: |
+  &9Valeur actuelle :
+  {value}
+
+elementCurrentValueListDefault: |
+  &9Valeur actuelle (par défaut) :
+  {value}
+
+elementCurrentValueListLine: |
+  &9- &b{line}
+
+elementDescription: |
+  &9Description :
+  &7{description}
+
+elementElementCountSingle: |
+  &b1 élément
+
+elementElementCountPlural: |
+  &b{count} éléments
+
+elementListElement: |
+  &b{element}
+
+# -------------------- Controls --------------------
+
+controlEdit: |
+  &dClic gauche pour éditer
+
+controlClear: |
+  &dControl + drop pour vider la valeur
+
+controlDelete: |
+  &dControl + drop pour supprimer
+
+controlToggle: |
+  &dClic droit pour basculer rapidement
+
+controlSelect: |
+  &dClic droit pour sélectionner rapidement
+
+controlImport: |
+  &dShift + clic droit pour importer rapidement
+
+controlLinearSelectType: |
+  &dShift + clic gauche pour sélectionner le type rapidement
+
+controlLinearEditParameters: |
+  &dClic droit pour éditer les paramètres
+
+controlListInsert: |
+  &dShift + clic droit pour insérer un élément ici
+
+controlListSwap: |
+  &dTouche numérique pour échanger avec un autre élément
+
+controlAddElementName: |
+  &6Ajouter un élément
+
+controlAddGlobalElementName: |
+  &6Ajouter un élément global
+
+controlAddElementWithQuick: |
+  &dClic gauche pour ajouter rapidement un élément
+  &dClic droit pour ajouter un élément avec un id spécifique
+
+controlAddElementWithDefault: |
+  &dClic gauche pour ajouter un élément avec un id spécifique
+  &dClic droit pour ajouter l'élément par défaut
+
+controlTextSetRandom: |
+  &6Marquer comme aléatoire
+
+# -------------------- Item --------------------
+
+descriptionItemType: |
+  &7Type d'item
+
+descriptionItemTypeHDB: |
+  &7ID HeadDatabase
+
+descriptionItemDurability: |
+  &7Durabilité de l'item
+
+descriptionItemAmount: |
+  &7Montant de l'item
+
+descriptionItemUnbreakable: |
+  &7Tag unbreakable pour l'item
+
+descriptionItemCustomModelData: |
+  &7Custom model data de l'item
+
+descriptionItemEnchantments: |
+  &7Enchantements de l'item
+
+descriptionItemFlags: |
+  &7Flags de l'item
+
+descriptionItemName: |
+  &7Nom de l'item
+
+descriptionItemLore: |
+  &7Description de l'item
+
+descriptionItemNbt: |
+  &7NBT tags
+  &7Ceci ne peut pas être édité en jeu, mais sera sauvegardé si vous importez un item.
+
+descriptionItemBannerBaseColor: |
+  &7Couleur de base de la bannière
+
+descriptionItemBannerPatterns: |
+  &7Patterns de la bannière
+
+descriptionItemBookAuthor: |
+  &7Auteur du livre
+
+descriptionItemBookTitle: |
+  &7Titre du livre
+
+descriptionItemBookGeneration: |
+  &7Géneration du livre
+
+descriptionItemBookPages: |
+  &7Contenu du livre
+
+descriptionItemCrossbowChargedProjectiles: |
+  &7Projectiles déjà chargés dans l'arbalète
+
+descriptionItemStoredEnchantments: |
+  &7Enchantements stockés dans l'item
+
+descriptionItemFireworkEffect: |
+  &7Effet de firework de cet item
+
+descriptionItemFireworkEffects: |
+  &77Effets de firework de cet item
+
+descriptionItemKnowledgeBookRecipes: |
+  &7Recettes stockées dans ce livre de connaissance
+
+descriptionItemLeatherArmorColor: |
+  &7Couleur de l'armure
+
+descriptionItemPotionType: |
+  &7Type de potion
+
+descriptionItemPotionExtra: |
+  &7Pour rendre cette potion extended/upgraded
+
+descriptionItemPotionColor: |
+  &7Couleur de cette potion
+
+descriptionItemPotionCustomEffects: |
+  &7Effets personnalisés appliqués à la potions
+
+descriptionItemSkullId: |
+  &7Propriétaire de la tête (UUID)
+
+descriptionItemSkullName: |
+  &7Propriétaire de la tête (nom)
+
+descriptionItemSkullData: |
+  &7Données du skin
+
+descriptionItemSkullSignature: |
+  &7Signature du skin
+
+descriptionItemSpawnEggType: |
+  &7Le type d'entité spawné
+
+descriptionItemSuspiciousStewCustomEffects: |
+  &7Effets personnalisés appliqués à l'item
+
+descriptionItemTropicalFishBodyColor: |
+  &7La couleur du corps du poisson
+
+descriptionItemTropicalFishPatternColor: |
+  &7La couleur du pattern du poisson
+
+descriptionItemTropicalFishPattern: |
+  &7Le pattern du poisson
+
+# -------------------- Item condition --------------------
+
+descriptionItemMatchItem: |
+  &7L'item requis
+
+descriptionItemMatchGoal: |
+  &7Le montant de l'item qui sera requis
+
+descriptionItemMatchCheck: |
+  &7La vérification à effectuer
+
+descriptionItemsNeededItems: |
+  &7Les items que le joueur devra avoir
+
+descriptionItemsNeededInHand: |
+  &7Pour demander au joueur d'avoir l'un des items dans sa main
+  &7Si ceci est activé, le paramètre &6count &7sera ignoré
+
+descriptionItemsNeededInHandSlot: |
+  &7Pour demander au joueur d'avoir l'un des items dans sa main à un slot spécifique
+  &7Ceci sera ignoré si &6in_hand &7n'est pas activé
+
+descriptionItemsNeededCount: |
+  &7Le nombre d'items de la liste d'items que le joueur doit avoir
+  &7Si ceci est 0, le joueur ne devra avoir aucun des items listés
+
+descriptionItemsNeededTake: |
+  &7Pour supprimer les items correspondants de l'inventaire du joueur après coup
+  &7Ceci sera ignoré si &6count &7est 0
+
+descriptionItemsNeededErrorMessage: |
+  &7Un message envoyé si le joueur n'a pas les items requis
+
+# -------------------- GUI --------------------
+
+descriptionGuiName: |
+  &7Le nom de ce GUI
+
+descriptionGuiType: |
+  &7Le type de ce GUI
+
+descriptionGuiContents: |
+  &7Le contenu de ce GUI
+
+descriptionGuiItemType: |
+  &7Type d'item
+
+descriptionGuiItemIcon: |
+  &7L'icône à afficher (si le type sélectionné n'en génère pas un automatiquement)
+
+descriptionGuiItemLocations: |
+  &7Les emplacements de cet item
+  &7Chaque élément doit être formatté comme &epage,slot &7ou bien juste &eslot &7(la première page libre sera prise)
+  &7Si cet item est persistant, les numéros de pages ne sont pas nécessaires et seront ignorés
+
+descriptionGuiItemPersistent: |
+  &7Pour rendre cet item persistant (présent sur toutes les pages aux mêmes endroits)
+
+descriptionGuiItemClickSound: |
+  &7Pour jouer un son quand le joueur clique sur cet item
+
+descriptionGuiItemOverrideClicks: |
+  &7Pour spécifier des types de clic qui auront des effets différents que ceux initialement prévus par le type de l'objet
+
+descriptionGuiItemDynamicBorderLinearOnCount: |
+  &7Le nombre d'items qui devraient être actifs au même moment.
+
+descriptionGuiItemDynamicBorderLinearIconOn: |
+  &7L'icône pour les items actifs.
+
+descriptionGuiItemDynamicBorderLinearIconOff: |
+  &7L'icône pour les items inactifs.
+
+descriptionGuiItemDynamicBorderLinearRefreshTicks: |
+  &7La vitesse de rafraichissement (en ticks)
+
+# -------------------- Position --------------------
+
+descriptionPositionType: |
+  &7Le type de position
+
+descriptionPositionTypeClosestEntityTypes: |
+  &7Les types d'entités autorisés
+  &7Laisser vide pour tout autoriser
+
+descriptionPositionTypeClosestEntityNames: |
+  &7Les noms d'entités autorisés
+  &7Laisser vide pour tout autoriser
+
+descriptionPositionTypeClosestEntityColors: |
+  &7Les couleurs d'entités autorisées
+  &7Laisser vide pour tout autoriser
+
+descriptionPositionTypeCitizensNPCRelative: |
+  &7Le NPC auquel il faut se rapporter
+
+descriptionPositionTypeCitizensNPCRelativeName: |
+  &7Le NPC auquel il faut se rapporter, par noms
+  &7Utiliser uniquement si plusieurs NPCs ont le même nom pour prendre le plus proche avec l'un des noms
+
+descriptionPositionTypeClosestMythicMobMobs: |
+  &7Les mobs MythicMobs autorisés
+  &7Laisser vide pour tout autoriser
+
+descriptionPositionTypeWorld: |
+  &0Le Monde
+
+descriptionPositionTypeBiomes: |
+  &7Les biomes acceptés
+
+descriptionPositionTypeSingleLocation: |
+  &7La location unique
+
+descriptionPositionTypeSingleRandomLocations: |
+  &7Une liste de locations dans laquelle la location unique sera sélectionnée
+
+descriptionPositionTypeRelativeSingleLocation: |
+  &7La location unique relative
+
+descriptionPositionTypePointTolerance: |
+  &7La tolérance à appliquer
+
+descriptionPositionTypeBound1: |
+  &7La première limite
+
+descriptionPositionTypeBound2: |
+  &7La deuxième limite
+
+descriptionPositionTypeRelativeBound1: |
+  &7La première limite relative
+
+descriptionPositionTypeRelativeBound2: |
+  &7La deuxième limite relative
+
+descriptionPositionTypeWorldguardRegionWorld: |
+  &7The world containing the region
+
+descriptionPositionTypeWorldguardRegionRegion: |
+  &7L'id de la région WorldGuard
+
+descriptionPositionTypeSphereCenter: |
+  &7Le centre de la sphère
+
+descriptionPositionTypeSphereRadius: |
+  &7Le rayon de la sphère
+
+descriptionPositionTypeCylinderCenter: |
+  &7Le centre du cylindre (la coordonnée Y est ignorée)
+
+descriptionPositionTypeCylinderRadius: |
+  &7Le rayon du cylindre
+
+# -------------------- Relative location --------------------
+
+descriptionRelativeLocationHorizontalAngle: |
+  &7L'angle horizontal
+
+descriptionRelativeLocationVerticalOffset: |
+  &7La différence verticale
+
+descriptionRelativeLocationDistance: |
+  &7La distance de l'emplacement de base
+
+# -------------------- World restriction --------------------
+
+descriptionWorldRestrictionWhitelist: |
+  &7Pour définir une liste fixe de mondes autorisés
+
+descriptionWorldRestrictionBlacklist: |
+  &7Une liste de mondes qui seront toujours interdits
+
+# -------------------- Command restriction --------------------
+
+descriptionCommandRestrictionWhitelist: |
+  &7Pour définir une liste fixe de commandes autorisées
+
+descriptionCommandRestrictionBlacklist: |
+  &7Une liste de commandes qui seront toujours interdites
+
+# -------------------- Dynmap marker --------------------
+
+descriptionDynmapMarkerLocation: |
+  &7Emplacement du marqueur
+
+descriptionDynmapMarkerText: |
+  &7Texte du marqueur
+
+# -------------------- Potion effect --------------------
+
+descriptionPotionEffectType: |
+  &7Type de l'effet
+
+descriptionPotionEffectDuration: |
+  &7Durée de l'effet
+
+descriptionPotionEffectAmplifier: |
+  &7Amplificateur de l'effet
+
+descriptionPotionEffectAmbient: |
+  &7Pour rendre l'effet ambiant
+
+descriptionPotionEffectParticles: |
+  &7Pour définir des particules
+
+descriptionPotionEffectIcon: |
+  &7Pour définir l'icône
+
+# -------------------- Firework effect --------------------
+
+descriptionFireworkEffectType: |
+  &7Type de l'effet
+
+descriptionFireworkEffectColors: |
+  &7Couleurs (rouge,vert,bleu) de cet effet
+
+descriptionFireworkEffectFadeColors: |
+  &7Couleurs de fade (rouge,vert,bleu) de cet effet
+
+descriptionFireworkEffectFlicker: |
+  &7Pour faire clignoter cet effet
+
+descriptionFireworkEffectTrail: |
+  &7Pour faire en sorte que cet effet laisse une traînée
+
+# -------------------- Time --------------------
+
+descriptionElementTimeMonth: |
+  &7Le mois
+
+descriptionElementTimeDayOfMonth: |
+  &7Le jour du mois
+
+descriptionElementTimeDayOfWeek: |
+  &7Le jour de la semaine
+
+descriptionElementTimeHour: |
+  &7L'heure
+
+descriptionElementTimeMinute: |
+  &7La minute
+
+# -------------------- Time limit --------------------
+
+descriptionTimeLimitDuration: |
+  &7La limite de temps
+
+descriptionTimeLimitReminder: |
+  &7Pour envoyer un rappel avec le temps restant
+
+# -------------------- Duration --------------------
+
+descriptionDurationTime: |
+  &7Le montant de temps
+
+descriptionDurationUnit: |
+  &7L'unité de mesure temporelle
+
+# -------------------- Comparison --------------------
+
+descriptionComparisonType: |
+  &7Le type de comparaison
+
+# -------------------- Notify --------------------
+
+descriptionNotifyMessage: |
+  &7Pour envoyer un message
+
+descriptionNotifyActionbar: |
+  &7Pour envoyer une actionbar
+
+descriptionNotifyActionbarDuration: |
+  &7La durée de l'actionbar
+
+descriptionNotifyBossbar: |
+  &7Pour envoyer une bossbar
+
+descriptionNotifyBossbarColor: |
+  &7La couleur de la bossbar (si appliquable)
+
+descriptionNotifyBossbarStyle: |
+  &7Le style de la bossbar (si appliquable)
+
+descriptionNotifyBossbarFlags: |
+  &7Les flags de la bossbar (si appliquable)
+
+descriptionNotifyBossbarDuration: |
+  &7La durée de la bossbar
+
+descriptionNotifyTitle: |
+  &7Pour envoyer un titre
+
+descriptionNotifyTitleSubtitle: |
+  &7Pour envoyer un sous-titre
+
+descriptionNotifyTitleFadeIn: |
+  &7Le temps d'apparition du titre (en ticks)
+
+descriptionNotifyTitleDuration: |
+  &7Le temps d'affichage du titre (en ticks)
+
+descriptionNotifyTitleFadeOut: |
+  &7Le temps de disparition du titre (en ticks)
+
+descriptionNotifySound: |
+  &7Pour jouer un son
+
+descriptionNotifySoundVolume: |
+  &7Volume du son
+
+descriptionNotifySoundPitch: |
+  &7Pitch du son
+
+# -------------------- Time frame --------------------
+
+descriptionTimeFrameType: |
+  &7Type de plage de temps
+
+descriptionTimeFrameInDayStart: |
+  &7Temps de début dans la journée
+
+descriptionTimeFrameInDayEnd: |
+  &7Temps de fin dans la journée (peut être avant le temps de début pour passer d'un jour à l'autre)
+
+descriptionTimeFrameInWeekStart: |
+  &7Temps de début dans la semaine
+
+descriptionTimeFrameInWeekEnd: |
+  &7Temps de fin dans la semaine (peut être avant le temps de départ pour passer d'une semaine à l'autre)
+
+descriptionTimeFrameInMonthStart: |
+  &7Temps de début dans le mois
+
+descriptionTimeFrameInMonthEnd: |
+  &7Temps de fin dans le mois (peut être avant le temps de départ pour passer d'un mois à l'autre)
+
+descriptionTimeFrameInYearStart: |
+  &7Temps de début dans l'année
+
+descriptionTimeFrameInYearEnd: |
+  &7Temps de fin dans l'année (peut être avant le temps de départ pour passer d'une année à l'autre)
+
+descriptionTimeFrameLimitedStart: |
+  &7Temps de début
+
+descriptionTimeFrameLimitedEnd: |
+  &7Temps de fin
+
+descriptionTimeFrameRepeatPeriodDuration: |
+  &7La durée de la période
+
+# -------------------- Messages --------------------
+
+messageElementBasicEdit: |
+  &7Entrez la nouvelle valeur dans le chat, ou &c{cancel} &7pour annuler.
+
+messageElementBasicEditSuggestCurrent: |
+  &7Entrez la nouvelle valeur dans le chat, ou &c{cancel} &7pour annuler. Cliquez sur ce message pour entrer la valeur actuelle.
+
+messageElementBasicEditSearch: |
+  &7Entrez une recherche dans le chat, ou &c{cancel} &7pour annuler. Si une seule valeur correspond à la valeur que vous avez entrée, elle sera sélectionnée.
+
+messageElementBasicEditSearchNoMatch: |
+  &7Aucun résultat trouvé pour &c{value}&7.
+
+messageElementBasicEditSearchTooManyMatches: |
+  &7Trop de résultats trouvés pour &c{value}&7. Essayez une valeur plus précise.
+
+messageElementBasicEditSearchMatch: |
+  &7Valeur trouvée et sélectionnée : &a{value}&7.
+
+messageElementBasicListLineEdit: |
+  &7Entrez la nouvelle valeur dans le chat, ou &c{cancel} &7pour annuler. Cliquez sur ce message pour entrer la valeur actuelle.
+
+messageElementBasicListSwap: |
+  &7Cliquez sur une autre valeur avec une touche numérique pour l'échanger, ou bien tout autre type de clic pour annuler.
+
+messageElementBasicListSwapped: |
+  &7Les valeurs ont été échangées.
+
+messageElementBasicImportLocation: |
+  &7Sneak pour importer la nouvelle value, ou entrez &c{cancel} &7dans le chat pour annuler.
+
+messageElementBasicImportNPC: |
+  &7Interact with the new NPC to import, ou entrez &c{cancel} &7dans le chat pour annuler.
+
+messageElementContainerImportItem: |
+  &7Drop the new item to import it, ou entrez &c{cancel} &7dans le chat pour annuler.
+
+messageElementCreateEnterId: |
+  &7Entrez l'id de la nouvelle valeur dans le chat, ou &c{cancel} &7pour annuler.
+
+messageElementCreateInvalidId: |
+  &7L'id &c{value} &7n'est pas valide : uniquement des lettres, des nombres ou le caractère &c_ &7sont autorisés.
+
+messageElementCreateAlreadyExists: |
+  &7L'élément &c{value} &7existe déjà.
+
+messageCantImportValue: |
+  &cCette valeur ne peut pas être utilisée : {error}

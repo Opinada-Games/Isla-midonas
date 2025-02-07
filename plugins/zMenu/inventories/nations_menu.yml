@@ -1,0 +1,89 @@
+# Nations Menu Configuration for zMenu
+size: 27
+name: "&8> &6&lMenú de Naciones"
+
+items:
+  create_nation:
+    slot: 11
+    type: INPUT
+    item:
+      material: GRASS_BLOCK
+      name: "&aInstituir una Nación"
+      lore:
+        - "&7Una nación se constituye a partir de varios Estados"
+        - "&7Crea tu propia Nación y rige tu voluntad a través de los Estados."
+        - "&7Cobra impuestos a los Estados, declara guerras o alianzas"
+        - "&7Haz clic y luego escribe en el chat el nombre de tu nueva nación."
+        - "&eEscribe en el chat: &6/nations create &b<nombre>"
+        - ""
+        - "&6[NOTA] Asegurate de haber reclamado tierras primero"
+        - ""
+    # Aceptará cualquier texto. Si deseas restringirlo, puedes añadir 'conditions: { regex: "..."}'.
+    inputType: TEXT
+
+    # Si la entrada se completa sin errores, se ejecutará este comando como el jugador.
+    success_actions:
+      - type: player_command
+        commands:
+          - "nations create %input%"
+
+    # Si el jugador cancela (ESC) o no se detecta una entrada válida, se envía un mensaje de error.
+    error_actions:
+      - type: message
+        messages:
+          - "&cNo se pudo crear la nación. Asegúrate de escribir un nombre válido."
+
+    # Acciones que suceden en cuanto se hace clic en el ítem.
+    actions:
+      - type: message
+        messages:
+          - "&7Por favor, &eingresa en el chat el nombre de tu nueva nación&7:"
+      - type: close
+
+  explore_nations:
+    slot: 12
+    item:
+      material: COMPASS
+      name: "&aExplorar Territorios"
+      lore:
+        - "&7Busca territorios cercanos que puedas visitar o reclamar."
+        - "&eHaz clic para explorar."
+        - "&8Command: &b/nations list"
+        - ""
+    commands:
+      - "nations list"
+    closeInventory: true
+
+  delete_nation:
+    slot: 15
+    item:
+      material: TNT
+      name: "&cEliminar nación"
+      lore:
+        - "&7Estas a punto de borrar la institución de tu nación."
+        - "&7Esta acción no eliminara tus estados ni territorios."
+        - ""
+        - "&c[PRECAUCIÓN] Esta acción no se puede deshacer"
+        - ""
+        - "&eHaz click para borrar tu nación"
+        - "&8Command: &b/nations delete confirm"
+        - ""
+    commands:
+      - "nations delete confirm"
+    closeInventory: true
+
+  volver:
+    slot: 26
+    item:
+      material: ARROW
+      name: "&cVolver al Menú Principal"
+      lore:
+        - "&7Regresa al menú principal."
+        - "&eHaz clic para volver."
+    commands:
+      - "zm open main_inventory"
+    closeInventory: true
+
+fillItem:
+  material: GRAY_STAINED_GLASS_PANE
+  name: " "

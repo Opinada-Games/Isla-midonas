@@ -1,0 +1,259 @@
+Settings:
+  # GUI title.
+  Title: <black>Opening %crate_name%</black>
+  # GUI size. Must be multiply of 9.
+  # Useful for 'CHEST' Inventory Type only.
+  Size: 54
+  # GUI type.
+  # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/inventory/InventoryType.html
+  Inventory_Type: CHEST
+  # Sets GUI auto-refresh interval (in seconds). Set this to 0 to disable.
+  Auto_Refresh: 0
+  Mode: NORMAL
+  WinSlots: 10,16,37,43
+  ScriptRunner:
+    OnOpen:
+    - '[run_animation] id:"glitch_intro" name:"glitch_intro" delay:"0" mode:"independent" chance:"100.0" slots:"0,1,2,3,4,5,6,7,8,9,11,12,13,14,15,17,18,19,20,21,23,24,25,26,27,28,29,30,31,32,33,34,35,36,38,39,40,41,42,44,45,46,47,48,49,50,51,52,53"'
+    - '[run_animation] id:"sound_intro" name:"sound_intro" delay:"0" mode:"independent" chance:"100.0" slots:"-1"'
+    OnStart:
+    - '[stop_animation] name:"glitch_intro"'
+    - '[stop_animation] name:"sound_intro"'
+    - ''
+    - '[run_animation] id:"pre_error" name:"pre_error1" delay:"0" slots:"10" mode:"independent" chance:"100.0"'
+    - '[run_animation] id:"error" name:"error1" delay:"31" slots:"10" mode:"independent" chance:"100.0"'
+    - '[run_reward] id:"default" name:"reward1" delay:"31" slots:"10" mode:"independent" chance:"10.0"'
+    - ''
+    - '[run_animation] id:"pre_error" name:"pre_error2" delay:"20" slots:"16" mode:"independent" chance:"100.0"'
+    - '[run_animation] id:"error" name:"error2" delay:"51" slots:"16" mode:"independent" chance:"100.0"'
+    - '[run_reward] id:"default" name:"reward2" delay:"51" slots:"16" mode:"independent" chance:"10.0"'
+    - ''
+    - '[run_animation] id:"pre_error" name:"pre_error3" delay:"40" slots:"37" mode:"independent" chance:"100.0"'
+    - '[run_animation] id:"error" name:"error3" delay:"71" slots:"37" mode:"independent" chance:"100.0"'
+    - '[run_reward] id:"default" name:"reward3" delay:"71" slots:"37" mode:"independent" chance:"10.0"'
+    - ''
+    - '[run_animation] id:"pre_error" name:"pre_error4" delay:"60" slots:"43" mode:"independent" chance:"100.0"'
+    - '[run_animation] id:"error" name:"error4" delay:"91" slots:"43" mode:"independent" chance:"100.0"'
+    - '[run_reward] id:"default" name:"reward4" delay:"91" slots:"43" mode:"independent" chance:"10.0"'
+    - ''
+    - '[run_animation] id:"glitch" name:"glitch" delay:"0" mode:"random" chance:"100.0" slots:"0,1,2,3,4,5,6,7,8,9,11,12,13,14,15,17,18,19,20,21,23,24,25,26,27,28,29,30,31,32,33,34,35,36,38,39,40,41,42,44,45,46,47,48,49,50,51,52,53"'
+  Selection:
+    Amount: 1
+    SelectedIcon:
+      Material: ENDER_CHEST
+    AutoRun: false
+  PlaceholderAPI:
+    # Sets whether PlaceholderAPI placeholders will be applied on all items from the 'Content' section of this GUI.
+    # [*] Disable if you don't use any PlaceholderAPI placeholders on your items to improve GUI performance.
+    Enabled: false
+  # Sets max. amount of the opening ticks while players can skip the opening animation.
+  # Set to -1 to disable (no skip).
+  Max_Ticks_To_Skip: 40
+# ==================== GUI CONTENT ====================
+# You can freely edit items in this section as you wish (add, remove, modify items).
+# The following values are available as button Types:
+# CLOSE
+# SELECT
+# START
+# ==================== ITEM OPTIONS ====================
+# > Item: Item to display. Please check: https://github.com/nulli0n/nightcore-spigot/wiki/ItemStack-Options
+# > Priority: Button priority. Better values will override other item(s) in the same slot(s).
+# > Slots: Button slots. From [0] to [Size - 1]. Split with commas.
+# > Click_Commands: Execute custom commands on click. PlaceholderAPI available here.
+#     Available click types: LEFT, RIGHT, SHIFT_LEFT, SHIFT_RIGHT, DROP_KEY, SWAP_KEY, NUMBER_1, NUMBER_2, NUMBER_3, NUMBER_4, NUMBER_5, NUMBER_6, NUMBER_7, NUMBER_8, NUMBER_9
+#     Use prefix 'player:' to run command by a player.
+#     Click_Commands:
+#       LEFT:
+#       - say Hello
+#       - give %player_name% diamond 1
+#       - player: menu open shops
+# ==================================================
+Content:
+  dummy_chest:
+    Slots: 10,16,37,43
+    Item:
+      Material: PLAYER_HEAD
+      SkinURL: 87acb8b99d478ba35053e9f212acb5c55cc144840468fd0242b39f5bd75acb41
+      Name: <green><b>[X] L<o>o</o>ck<o>e</o>d R<o>e</o>wa<o>r</o>d</b></green>
+      Display_Name: <green><b>[X] L<o>o</o>ck<o>e</o>d R<o>e</o>wa<o>r</o>d</b></green>
+  
+  background:
+    Slots: 0,1,2,3,4,5,6,7,8,9,11,12,13,14,15,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,38,39,40,41,42,44,45,46,47,48,49,50,51,52,53
+    Item:
+      Material: BLACK_STAINED_GLASS_PANE
+      Name: <green><o>..............................</o></green>
+      Display_Name: <green><o>..............................</o></green>
+  
+  start:
+    Slots: 22
+    Priority: 10
+    Item:
+      Material: PLAYER_HEAD
+      SkinURL: 6189a6e0f4d8963044e72e7e8531ad44b2ce6293a7090f3e027c82285fdfb68c
+      Name: <light_green><b>Start Hacking!</b></light_green>
+      Lore:
+      - <light_gray>This crate control panel can</light_gray>
+      - <light_gray>unlock up to <light_green>4 rewards</light_green>!</light_gray>
+      - ''
+      - <light_gray>Would you be able to open all them?</light_gray>
+      Display_Name: <light_green><b>Start Hacking!</b></light_green>
+    Type: start
+
+Rewards:
+  default:
+    Rarities:
+    - '*'
+    Spin_Times: 1
+    Spin_Interval: 1
+    Spin_Slowdown:
+      Step: 5
+      Amount: 1
+    Spin_Sound:
+      # Sound name. You can use Spigot sound names, or ones from your resource pack.
+      # Spigot Sounds: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+      Name: ENTITY_PLAYER_LEVELUP
+      # Sound volume. From 0.0 to 1.0.
+      Volume: 0.8
+      # Sound speed. From 0.5 to 2.0
+      Pitch: 1.0
+
+Animations:
+  pre_error:
+    Spin_Times: 30
+    Spin_Interval: 1
+    Spin_Slowdown:
+      Step: 0
+      Amount: 0
+    Items:
+      s1:
+        Chance: 50.0
+        Material: WHITE_STAINED_GLASS_PANE
+      s2:
+        Chance: 50.0
+        Material: LIGHT_GRAY_STAINED_GLASS_PANE
+      s3:
+        Chance: 50.0
+        Material: GRAY_STAINED_GLASS_PANE
+      s4:
+        Chance: 50.0
+        Material: BLACK_STAINED_GLASS_PANE
+      s5:
+        Chance: 50.0
+        Material: BROWN_STAINED_GLASS_PANE
+      s6:
+        Chance: 50.0
+        Material: RED_STAINED_GLASS_PANE
+      s7:
+        Chance: 50.0
+        Material: ORANGE_STAINED_GLASS_PANE
+      s8:
+        Chance: 50.0
+        Material: YELLOW_STAINED_GLASS_PANE
+      s9:
+        Chance: 50.0
+        Material: LIME_STAINED_GLASS_PANE
+      s10:
+        Chance: 50.0
+        Material: GREEN_STAINED_GLASS_PANE
+      s11:
+        Chance: 50.0
+        Material: CYAN_STAINED_GLASS_PANE
+      s12:
+        Chance: 50.0
+        Material: LIGHT_BLUE_STAINED_GLASS_PANE
+      s13:
+        Chance: 50.0
+        Material: BLUE_STAINED_GLASS_PANE
+      s14:
+        Chance: 50.0
+        Material: PURPLE_STAINED_GLASS_PANE
+      s15:
+        Chance: 50.0
+        Material: MAGENTA_STAINED_GLASS_PANE
+      s16:
+        Chance: 50.0
+        Material: PINK_STAINED_GLASS_PANE
+  
+  error:
+    Spin_Times: 1
+    Spin_Interval: 1
+    Spin_Slowdown:
+      Step: 0
+      Amount: 0
+    Spin_Sound:
+      # Sound name. You can use Spigot sound names, or ones from your resource pack.
+      # Spigot Sounds: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+      Name: BLOCK_ANVIL_PLACE
+      # Sound volume. From 0.0 to 1.0.
+      Volume: 0.5
+      # Sound speed. From 0.5 to 2.0
+      Pitch: 1.0
+    Items:
+      s1:
+        Chance: 100.0
+        Material: PLAYER_HEAD
+        SkinURL: 27548362a24c0fa8453e4d93e68c5969ddbde57bf6666c0319c1ed1e84d89065
+        Name: <light_red><b>ERR#!R_)</b></light_red>
+  
+  sound_intro:
+    Spin_Times: -1
+    Spin_Interval: 6
+    Spin_Slowdown:
+      Step: 0
+      Amount: 0
+    Spin_Sound:
+      # Sound name. You can use Spigot sound names, or ones from your resource pack.
+      # Spigot Sounds: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+      Name: BLOCK_NOTE_BLOCK_BANJO
+      # Sound volume. From 0.0 to 1.0.
+      Volume: 0.8
+      # Sound speed. From 0.5 to 2.0
+      Pitch: 1.0
+    Items: {}
+  
+  glitch_intro:
+    Spin_Times: -1
+    Spin_Interval: 3
+    Spin_Slowdown:
+      Step: 0
+      Amount: 0
+    Items:
+      s1:
+        Chance: 99.0
+        Material: BLACK_STAINED_GLASS_PANE
+        Name: <green><o>..............................</o></green>
+      s2:
+        Chance: 1.5
+        Material: LIME_STAINED_GLASS_PANE
+        Name: <green><o>..............................</o></green>
+      s3:
+        Chance: 1.5
+        Material: GREEN_STAINED_GLASS_PANE
+        Name: <green><o>..............................</o></green>
+  
+  glitch:
+    Spin_Times: 80
+    Spin_Interval: 1
+    Spin_Slowdown:
+      Step: 35
+      Amount: 1
+    Spin_Sound:
+      # Sound name. You can use Spigot sound names, or ones from your resource pack.
+      # Spigot Sounds: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+      Name: BLOCK_NOTE_BLOCK_BANJO
+      # Sound volume. From 0.0 to 1.0.
+      Volume: 0.8
+      # Sound speed. From 0.5 to 2.0
+      Pitch: 1.0
+    Items:
+      s1:
+        Chance: 80.0
+        Material: BLACK_STAINED_GLASS_PANE
+        Name: <green><o>..............................</o></green>
+      s3:
+        Chance: 15.0
+        Material: LIME_STAINED_GLASS_PANE
+        Name: <green><o>..............................</o></green>
+      s4:
+        Chance: 15.0
+        Material: GREEN_STAINED_GLASS_PANE
+        Name: <green><o>..............................</o></green>

@@ -1,0 +1,648 @@
+# ===================
+# GCore 语言文件 (zh_CN)
+# 本翻译使用 GCore 版本: 8.45.0
+# 作者: GuillaumeVDN
+# 语言: 中文简体
+# 翻译: Kevin
+# Discord: Krick#9685
+# 如在翻译上有任何疑虑欢迎私讯 Krick#9685
+# 在插件上有任何疑虑请至 https://discord.com/invite/wSm9A8Y 寻求帮助
+# ===================
+# GCore language files (zh_CN)
+# This translation uses GCore version: 8.45.0
+# Author: GuillaumeVDN
+# Language: Chinese
+# Translation: Kevin
+# Discord: Krick#9685
+# If you have any doubts about translation, please send a private message Krick#9685
+# If you have any concerns about the plugin, please go to https://discord.com/invite/wSm9A8Y for help
+# ===================
+
+# -------------------- 元素 --------------------
+
+guiSelectTitle: 选择
+guiSearchName: |
+  &d搜索值(在聊天框中输入)
+
+elementTypeMandatory: |
+  &c必填元素{type}
+
+elementTypeOptional: |
+  &a这是个可选的{type}
+
+elementCurrentValueNone: |
+  &9当前值:
+  &7无
+
+elementCurrentValueNoneDefault: |
+  &9当前值(默认):
+  &7无
+
+elementCurrentValueSingle: |
+  &9当前值:
+  &b{value}
+
+elementCurrentValueSingleDefault: |
+  &9当前值(默认):
+  &7{value}
+
+elementCurrentValueList: |
+  &9当前值:
+  {value}
+
+elementCurrentValueListDefault: |
+  &9当前值(默认):
+  {value}
+
+elementCurrentValueListLine: |
+  &9- &b{line}
+
+elementDescription: |
+  &9描述:
+  &7{description}
+
+elementElementCountSingle: |
+  &b1个元素
+
+elementElementCountPlural: |
+  &b{count}个元素
+
+elementListElement: |
+  &b{element}
+
+# -------------------- 控件 --------------------
+
+controlEdit: |
+  &d[左击]编辑
+
+controlClear: |
+  &d[Ctrl+Q]清空值
+
+controlDelete: |
+  &d[Ctrl+Q]删除
+
+controlToggle: |
+  &d[右击]快捷切换
+
+controlSelect: |
+  &d[右击]快捷选择
+
+controlImport: |
+  &d[Shift+右击]快捷导入
+
+controlLinearSelectType: |
+  &d[Shift+左击]快捷选择类型
+
+controlLinearEditParameters: |
+  &d[右击]编辑参数
+
+controlListInsert: |
+  &d[Shift+右击]添加元素
+
+controlListSwap: |
+  &d切换到其它元素的数字键
+
+controlAddElementName: |
+  &6添加元素
+
+controlAddGlobalElementName: |
+  &6添加全局元素
+
+controlAddElementWithQuick: |
+  &d[左击]快捷添加元素
+  &d[右击]添加特定id的元素
+
+controlAddElementWithDefault: |
+  &d[左击]添加特定id的元素
+  &d[右击]添加默认元素
+
+controlTextSetRandom: |
+  &6标记为随机
+
+# -------------------- 物品 --------------------
+
+descriptionItemType: |
+  &7物品类型
+
+descriptionItemTypeHDB: |
+  &7HeadDatabase 识别ID
+
+descriptionItemDurability: |
+  &7物品耐久度
+
+descriptionItemAmount: |
+  &7物品数
+
+descriptionItemUnbreakable: |
+  &7物品无法破坏
+
+descriptionItemCustomModelData: |
+  &7物品自定义模型数据
+
+descriptionItemEnchantments: |
+  &7物品附魔
+
+descriptionItemFlags: |
+  &7物品标志
+
+descriptionItemName: |
+  &7物品名称
+
+descriptionItemLore: |
+  &7物品Lore
+
+descriptionItemNbt: |
+  &7NBT标签
+  &7无法在游戏内编辑，但如果你导入物品则可保存
+
+descriptionItemBannerBaseColor: |
+  &7旗帜基础颜色
+
+descriptionItemBannerPatterns: |
+  &7旗帜图案
+
+descriptionItemBookAuthor: |
+  &7书本作者
+
+descriptionItemBookTitle: |
+  &7书本标题
+
+descriptionItemBookGeneration: |
+  &7书本版本
+
+descriptionItemBookPages: |
+  &7书本内容
+
+descriptionItemCrossbowChargedProjectiles: |
+  &7蓄势待发的弩
+
+descriptionItemStoredEnchantments: |
+  &7该物品的附魔
+
+descriptionItemFireworkEffect: |
+  &7该物品的烟花效果
+
+descriptionItemFireworkEffects: |
+  &7该物品的多个烟花效果
+
+descriptionItemKnowledgeBookRecipes: |
+  &7该知识之书的合成配方
+
+descriptionItemLeatherArmorColor: |
+  &7盔甲颜色
+
+descriptionItemPotionType: |
+  &7药水类型
+
+descriptionItemPotionExtra: |
+  &7拓展或升级该药水
+
+descriptionItemPotionColor: |
+  &7药水颜色
+
+descriptionItemPotionCustomEffects: |
+  &7药水的自定义效果
+
+descriptionItemSkullId: |
+  &7头颅所有者(UUID)
+
+descriptionItemSkullName: |
+  &7头颅所有者(名称)
+
+descriptionItemSkullData: |
+  &7皮肤数据
+
+descriptionItemSkullSignature: |
+  &7皮肤标志
+
+descriptionItemSpawnEggType: |
+  &7生成实体类型
+
+descriptionItemSuspiciousStewCustomEffects: |
+  &7迷之炖菜的自定义效果
+
+descriptionItemTropicalFishBodyColor: |
+  &7鱼的颜色
+
+descriptionItemTropicalFishPatternColor: |
+  &7鱼图案颜色
+
+descriptionItemTropicalFishPattern: |
+  &7鱼的图案
+
+# -------------------- 物品条件 --------------------
+
+descriptionItemMatchItem: |
+  &7所需物品
+
+descriptionItemMatchGoal: |
+  &7所需物品数
+
+descriptionItemMatchCheck: |
+  &7执行的检测
+
+descriptionItemsNeededItems: |
+  &7玩家必须拥有的物品
+
+descriptionItemsNeededInHand: |
+  &7需要玩家手持一种物品
+  &7如果启用该选项，则忽略数量设置
+
+descriptionItemsNeededInHandSlot: |
+  &7需要玩家在特定栏位手持特定物品
+  &7如果启用了&6in_hand&7则忽略该选项
+
+descriptionItemsNeededCount: |
+  &7玩家必须拥有列表内的物品数
+  &7如果该值为0，则玩家不能有列表内的物品
+
+descriptionItemsNeededTake: |
+  &7稍后移除玩家背包内的匹配物品
+  &7如果&6count&7为0则该选项无效
+
+descriptionItemsNeededErrorMessage: |
+  &7玩家没有所需物品时发送的消息
+
+# -------------------- GUI --------------------
+
+descriptionGuiName: |
+  &7GUI名称
+
+descriptionGuiType: |
+  &7GUI类型
+
+descriptionGuiContents: |
+  &7GUI内容
+
+descriptionGuiItemType: |
+  &7物品类型
+
+descriptionGuiItemIcon: |
+  &7显示图标
+
+descriptionGuiItemLocations: |
+  &7物品位置
+  &7元素的格式为&e页数,栏位数&7或&e栏位数
+  &7如果该设置为空，则使用第一个空栏位
+  &7如果该物品是常驻的，则不需要设置页数
+
+descriptionGuiItemPersistent: |
+  &7使该物品常驻(每一页的该栏都显示该物品)
+
+descriptionGuiItemClickSound: |
+  &7当玩家点击该物品时播放音效
+
+descriptionGuiItemOverrideClicks: |
+  &7设定有不同效果的点击类型
+
+descriptionGuiItemDynamicBorderLinearOnCount: |
+  &7需同时激活的物品数。
+
+descriptionGuiItemDynamicBorderLinearIconOn: |
+  &7激活物品的图标。
+
+descriptionGuiItemDynamicBorderLinearIconOff: |
+  &7未激活物品的图标。
+
+descriptionGuiItemDynamicBorderLinearRefreshTicks: |
+  &7更新延迟(以滴答为单位)
+
+# -------------------- 位置 --------------------
+
+descriptionPositionType: |
+  &7位置类型
+
+descriptionPositionTypeClosestEntityTypes: |
+  &7允许的实体类型
+  &留空则允许任意类型
+
+descriptionPositionTypeClosestEntityNames: |
+  &7允许的实体名
+  &留空则允许任意名称(或未命名)
+
+descriptionPositionTypeClosestEntityColors: |
+  &7允许的实体颜色
+  &留空则允许任意颜色
+
+descriptionPositionTypeCitizensNPCRelative: |
+  &7相对的NPC
+
+descriptionPositionTypeCitizensNPCRelativeNames: |
+  &7相对的NPC名称
+  &7如果有多个相同名称的NPC且你只想使用一个匹配的NPC，则请使用该选项。
+
+descriptionPositionTypeClosestMythicMobMobs: |
+  &7允许的MythicMobs生物
+  &留空则允许任意生物
+
+descriptionPositionTypeWorld: |
+  &7世界
+
+descriptionPositionTypeBiomes: |
+  &7接受的群系类型
+
+descriptionPositionTypeSingleLocation: |
+  &7单个位置
+
+descriptionPositionTypeSingleRandomLocations: |
+  &7将选择随机位置的位置列表
+
+descriptionPositionTypeRelativeSingleLocation: |
+  &7相对单个位置
+
+descriptionPositionTypePointTolerance: |
+  &7容差
+
+descriptionPositionTypeBound1: |
+  &7绑定的第一个位置
+
+descriptionPositionTypeBound2: |
+  &7绑定的第二个位置
+
+descriptionPositionTypeRelativeBound1: |
+  &7绑定的第一个相对位置
+
+descriptionPositionTypeRelativeBound2: |
+  &7绑定的第二个相对位置
+
+descriptionPositionTypeWorldguardRegionWorld: |
+  &7包含区域的世界
+
+descriptionPositionTypeWorldguardRegionRegion: |
+  &7WorldGuard区域ID
+
+descriptionPositionTypeSphereCenter: |
+  &7球体中心
+
+descriptionPositionTypeSphereRadius: |
+  &7球体半径
+
+descriptionRelativeLocationBaseRotationAware: |
+  &7如果应考虑基准位置的旋转 (如果可用)
+
+descriptionPositionTypeCylinderCenter: |
+  &7圆柱中心(忽略Y轴)
+
+descriptionPositionTypeCylinderRadius: |
+  &7圆柱半径
+
+descriptionRelativeLocationAddYaw: |
+  &7添加到结果位置偏航的角度
+
+descriptionRelativeLocationAddPitch: |
+  &7添加到结果位置间距的角度
+# -------------------- 相对位置 --------------------
+
+descriptionRelativeLocationHorizontalAngle: |
+  &7水平角
+
+descriptionRelativeLocationVerticalOffset: |
+  &7垂直偏移
+
+descriptionRelativeLocationDistance: |
+  &7离基础位置的距离
+
+# -------------------- 世界限制 --------------------
+
+descriptionWorldRestrictionWhitelist: |
+  &7允许白名单内的世界
+
+descriptionWorldRestrictionBlacklist: |
+  &7禁止黑名单内的世界
+
+# -------------------- 指令限制 --------------------
+
+descriptionCommandRestrictionWhitelist: |
+  &7允许使用的指令
+
+descriptionCommandRestrictionBlacklist: |
+  &7禁止使用的指令
+
+# -------------------- 指令限制 --------------------
+
+descriptionMatRestrictionWhitelist: |
+  &7固定的允许材料清单
+
+descriptionMatRestrictionBlacklist: |
+  &7永远被禁止的材料清单
+
+# -------------------- Dynmap标记 --------------------
+
+descriptionDynmapMarkerLocation: |
+  &7标记位置
+
+descriptionDynmapMarkerText: |
+  &7标记文本
+
+# -------------------- 药水效果 --------------------
+
+descriptionPotionEffectType: |
+  &7药水效果类型
+
+descriptionPotionEffectDuration: |
+  &7药效持续时间
+
+descriptionPotionEffectAmplifier: |
+  &7药效强度
+
+descriptionPotionEffectAmbient: |
+  &7设置药效ambient
+
+descriptionPotionEffectParticles: |
+  &7设置粒子
+
+descriptionPotionEffectIcon: |
+  &7设置图标
+
+# -------------------- 烟花效果 --------------------
+
+descriptionFireworkEffectType: |
+  &7烟花类型
+
+descriptionFireworkEffectColors: |
+  &7烟花颜色(red,green,blue)
+
+descriptionFireworkEffectFadeColors: |
+  &7淡化颜色(red,green,blue)
+
+descriptionFireworkEffectFlicker: |
+  &7让烟花闪烁
+
+descriptionFireworkEffectTrail: |
+  &7让烟花留下轨迹
+
+# -------------------- 时间 --------------------
+
+descriptionElementTimeMonth: |
+  &7月
+
+descriptionElementTimeDayOfMonth: |
+  &7月份中的天数
+
+descriptionElementTimeDayOfWeek: |
+  &7一周中的天数
+
+descriptionElementTimeHour: |
+  &7小时
+
+descriptionElementTimeMinute: |
+  &7分钟
+
+# -------------------- 时间限制 --------------------
+
+descriptionTimeLimitDuration: |
+  &7时间限制
+
+descriptionTimeLimitReminder: |
+  &7发送显示剩余时间的提醒
+
+# -------------------- 持续时间 --------------------
+
+descriptionDurationTime: |
+  &7时间数
+
+descriptionDurationUnit: |
+  &7用于测量数量的时间单位
+
+# -------------------- 比较 --------------------
+
+descriptionComparisonType: |
+  &7比较类型
+
+# -------------------- 提醒 --------------------
+
+descriptionNotifyMessage: |
+  &7发送一条消息
+
+descriptionNotifyActionbar: |
+  &7发送actionbar
+
+descriptionNotifyActionbarDuration: |
+  &7actionbar持续时间
+
+descriptionNotifyBossbar: |
+  &7发送bossbar
+
+descriptionNotifyBossbarColor: |
+  &7bossbar颜色
+
+descriptionNotifyBossbarStyle: |
+  &7bossbar风格
+
+descriptionNotifyBossbarFlags: |
+  &7bossbar标志
+
+descriptionNotifyBossbarDuration: |
+  &7bossbar持续时间
+
+descriptionNotifyTitle: |
+  &7发送标题
+
+descriptionNotifyTitleSubtitle: |
+  &7发送子标题
+
+descriptionNotifyTitleFadeIn: |
+  &7标题淡入时间(单位为刻)
+
+descriptionNotifyTitleDuration: |
+  &7标题显示时间(单位为刻)
+
+descriptionNotifyTitleFadeOut: |
+  &7标题淡出时间(单位为刻)
+
+descriptionNotifySound: |
+  &7播放音效
+
+descriptionNotifySoundVolume: |
+  &7音量
+
+descriptionNotifySoundPitch: |
+  &7音高
+
+# -------------------- 时间范围 --------------------
+
+descriptionTimeFrameType: |
+  &7时间范围类型
+
+descriptionTimeFrameInDayStart: |
+  &7开始天数
+
+descriptionTimeFrameInDayEnd: |
+  &7结束天数(可在开始天数前)
+
+descriptionTimeFrameInWeekStart: |
+  &7开始周数
+
+descriptionTimeFrameInWeekEnd: |
+  &7结束周数(可在开始周数前)
+
+descriptionTimeFrameInMonthStart: |
+  &7开始月份
+
+descriptionTimeFrameInMonthEnd: |
+  &7结束月份(可在开始月份前)
+
+descriptionTimeFrameInYearStart: |
+  &7开始年份
+
+descriptionTimeFrameInYearEnd: |
+  &7结束年份(可在开始年份前)
+
+descriptionTimeFrameLimitedStart: |
+  &7开始时间
+
+descriptionTimeFrameLimitedEnd: |
+  &7结束时间
+
+descriptionTimeFrameRepeatPeriodDuration: |
+  &7期间持续时间
+
+# -------------------- Messages --------------------
+
+messageElementBasicEdit: |
+  &7请在聊天框输入新的值，或输入&c{cancel}&7以取消。
+
+messageElementBasicEditSuggestCurrent: |
+  &7请在聊天框输入新的值，或输入&c{cancel}&7以取消。点击该消息查看当前值。
+
+messageElementBasicEditSearch: |
+  &7请在聊天框输入值的一部分，或输入&c{cancel}&7以取消。如果匹配单个值，则插件会选取该值。
+
+messageElementBasicEditSearchNoMatch: |
+  &7未找到匹配&c{value}&7的值。
+
+messageElementBasicEditSearchTooManyMatches: |
+  &7匹配&c{value}&7的值过多。请尝试输入更精确的值。
+
+messageElementBasicEditSearchMatch: |
+  &7已找到并选取&a{value}&7。
+
+messageElementBasicListLineEdit: |
+  &7请在聊天框输入新的值，或输入&c{cancel}&7以取消。点击该消息查看当前值。
+
+messageElementBasicListSwap: |
+  &7请按其它数字键以切换，按其它键以取消。
+
+messageElementBasicListSwapped: |
+  &7已切换数值。
+
+messageElementBasicImportLocation: |
+  &7潜行以导入新的值，或在聊天框输入&c{cancel}&7以取消。
+
+messageElementBasicImportNPC: |
+  &7与新NPC交互以导入，或在聊天框输入&c{cancel}&7以取消。
+
+messageElementContainerImportItem: |
+  &7丢弃新物品以导入，或在聊天框输入&c{cancel}&7以取消。
+
+messageElementCreateEnterId: |
+  &7请在聊天框输入新的ID，或输入&c{cancel}&7以取消。
+
+messageElementCreateInvalidId: |
+  &7值&c{value}&7无效: 仅允许字母、数字或&c_&7。
+
+messageElementCreateAlreadyExists: |
+  &7元素&c{value}&7已存在。
+
+messageCantImportValue: |
+  &c无法使用该值: {error}

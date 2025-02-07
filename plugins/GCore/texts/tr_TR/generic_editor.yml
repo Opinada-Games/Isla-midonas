@@ -1,0 +1,598 @@
+# -------------------- Element --------------------
+
+guiSelectTitle: Select
+guiSearchName: |
+  &dDeğer ara (sohbette)
+
+elementTypeMandatory: |
+  &cBu gerekli bir {type}
+
+elementTypeOptional: |
+  &aBu isteğe bağlı {type}
+
+elementCurrentValueNone: |
+  &9Mevcut değer :
+  &7none
+
+elementCurrentValueNoneDefault: |
+  &9Mevcut değer (varsayılan) :
+  &7none
+
+elementCurrentValueSingle: |
+  &9Mevcut değer :
+  &b{value}
+
+elementCurrentValueSingleDefault: |
+  &9Mevcut değer (varsayılan) :
+  &7{value}
+
+elementCurrentValueList: |
+  &9Mevcut değer :
+  {value}
+
+elementCurrentValueListDefault: |
+  &9Mevcut değer (varsayılan) :
+  {value}
+
+elementCurrentValueListLine: |
+  &9- &b{line}
+
+elementDescription: |
+  &9Açıklama :
+  &7{description}
+
+elementElementCountSingle: |
+  &b1 element
+
+elementElementCountPlural: |
+  &b{count} elements
+
+elementListElement: |
+  &b{element}
+
+# -------------------- Controls --------------------
+
+controlEdit: |
+  &dDüzenlemek için sol tıklayın
+
+controlClear: |
+  &dDeğeri temizlemek için kontrol + bırak
+
+controlDelete: |
+  &dSikmk için kontrol + bırak
+
+controlToggle: |
+  &dHızlı geçiş yapmak için sağ tıklayın
+
+controlSelect: |
+  &dHızlı bir şekilde seçmek için sağ tıklayın
+
+controlImport: |
+  &dHızlı bir şekilde içe aktarmak için Shift + sağ tıklayın
+
+controlLinearSelectType: |
+  &dTürü hızlı bir şekilde seçmek için Shift + sol tıklama
+
+controlLinearEditParameters: |
+  &dParametreleri düzenlemek için sağ tıklayın
+
+controlListInsert: |
+  &dÖğeyi buraya eklemek için Shift + sağ tıklayın
+
+controlListSwap: |
+  &dBaşka bir öğeyle takas etmek için sayı tuşu
+
+controlAddElementName: |
+  &6Add element
+
+controlAddGlobalElementName: |
+  &6Add global element
+
+controlAddElementWithQuick: |
+  &dBir öğeyi hızlı bir şekilde eklemek için sol tıklayın
+  &dBelirli bir kimliğe sahip bir öğe eklemek için sağ tıklayın
+
+controlAddElementWithDefault: |
+  &dBelirli bir kimliğe sahip bir öğe eklemek için sol tıklayın
+  &dVarsayılan öğeyi eklemek için sağ tıklayın
+
+controlTextSetRandom: |
+  &6Rastgele olarak işaretle
+
+# -------------------- Item --------------------
+
+descriptionItemType: |
+  &7Öğe türü
+
+descriptionItemDurability: |
+  &7Öğenin dayanıklılığı
+
+descriptionItemAmount: |
+  &7Öğe miktarı
+
+descriptionItemUnbreakable: |
+  &7Öğe için kırılmaz etiket
+
+descriptionItemCustomModelData: |
+  &7Öğenin özel model verileri
+
+descriptionItemEnchantments: |
+  &7Öğenin Büyüleri
+
+descriptionItemFlags: |
+  &7Öğe bayrakları
+
+descriptionItemName: |
+  &7Öğenin adı
+
+descriptionItemLore: |
+  &7Öğenin bilgisi
+
+descriptionItemNbt: |
+  &7NBT etiketleri
+  &7Bu, oyun içinde düzenlenemez, ancak bir öğeyi içe aktarırsanız kaydedilir..
+
+descriptionItemBannerBaseColor: |
+  &7Banner'ın temel rengi
+
+descriptionItemBannerPatterns: |
+  &7Banner'ın desenleri
+
+descriptionItemBookAuthor: |
+  &7Kitabın yazarı
+
+descriptionItemBookTitle: |
+  &7Kitabın başlığı
+
+descriptionItemBookGeneration: |
+  &7Kitabın nesli
+
+descriptionItemBookPages: |
+  &7Kitabın içeriği
+descriptionItemCrossbowChargedProjectiles: |
+  &7Arbalette zaten yüklü mermiler
+
+descriptionItemStoredEnchantments: |
+  &7Bu öğede saklanan büyüler
+
+descriptionItemFireworkEffect: |
+  &7Bu öğenin havai fişek etkisi
+
+descriptionItemFireworkEffects: |
+  &7Bu öğenin havai fişek efektleri
+
+descriptionItemKnowledgeBookRecipes: |
+  &7Bu bilgi kitabında saklanan tarifler
+
+descriptionItemLeatherArmorColor: |
+  &7Bu zırhın rengi
+
+descriptionItemPotionType: |
+  &7Bu iksirin türü
+
+descriptionItemPotionExtra: |
+  &7Bu iksiri genişletmek veya yükseltmek için
+
+descriptionItemPotionColor: |
+  &7Bu iksirin rengi
+
+descriptionItemPotionCustomEffects: |
+  &7Bu iksire uygulanan özel efektler
+
+descriptionItemSkullId: |
+  &7Kafatasının sahibi (UUID)
+
+descriptionItemSkullName: |
+  &7Kafatasının sahibi (name)
+
+descriptionItemSkullData: |
+  &7Cilt verileri
+
+descriptionItemSkullSignature: |
+  &7Cilt imzası
+
+descriptionItemSpawnEggType: |
+  &7Ortaya çıkan varlığın türü
+
+descriptionItemSuspiciousStewCustomEffects: |
+  &7Bu şüpheli yahniye uygulanan özel efektler
+
+descriptionItemTropicalFishBodyColor: |
+  &7balık vücut rengi
+
+descriptionItemTropicalFishPatternColor: |
+  &7balık desen rengi
+
+descriptionItemTropicalFishPattern: |
+  &7Bu balığın deseni
+
+# -------------------- Item condition --------------------
+
+descriptionItemMatchItem: |
+  &7Gerekli öğe
+
+descriptionItemMatchGoal: |
+  &7Bu öğenin gerekli olacak miktarı
+
+descriptionItemMatchCheck: |
+  &7Gerçekleştirilecek kontrol
+
+descriptionItemsNeededItems: |
+  &7Oyuncunun sahip olması gereken eşyalar
+
+descriptionItemsNeededInHand: |
+  &7Oyuncunun sahip olduğu eşyalardan birine sahip olmasını gerek.
+  &7Bu etkinleştirilirse, sayım ayarı yok sayılır
+
+descriptionItemsNeededInHandSlot: |
+  &7Oyuncunun elindeki öğelerden birinin belirli bir yuvada olmasını gerek.
+  &7 &6 in_hand & etkin değilse bu göz ardı edilir
+
+descriptionItemsNeededCount: |
+  &7Oyuncunun sahip olması gereken öğe listesindeki öğelerin miktarı
+  &7Bu 0 ise, oyuncunun listelenen öğelerden hiçbirine sahip olmaması gerekir.
+
+descriptionItemsNeededTake: |
+  &7Eşleşen eşyaları daha sonra oyuncunun envanterinden kaldırmak için
+  &7Bunun hiçbir etkisi olmayacak &6count &7is 0
+
+descriptionItemsNeededErrorMessage: |
+  &7Oyuncu gerekli öğelere sahip değilse gönderilen bir mesaj
+
+# -------------------- GUI --------------------
+
+descriptionGuiName: |
+  &7GUI'nin adı
+
+descriptionGuiType: |
+  &7GUI'nin türü
+
+descriptionGuiContents: |
+  &7GUI'nin içeriği
+
+descriptionGuiItemType: |
+  &7Öğe türü
+
+descriptionGuiItemIcon: |
+  &7Görüntülenecek simge (seçilen tür otomatik olarak bir tane oluşturmazsa)
+
+descriptionGuiItemLocations: |
+  &7Bu öğenin konumları
+  &7Her öğe şu şekilde biçimlendirilmelidir: &esayfa,yuva &7ya da sadece &eyuva &7(ilk müsait sayfa alınacaktır)
+  &7Bu ayar boşsa, mevcut ilk sayfa ve yuva alınacaktır
+  &7Bu öğe kalıcıysa, sayfa numaralarına gerek yoktur ve yoksayılır.
+
+descriptionGuiItemPersistent: |
+  &7Bu öğeyi kalıcı hale getirmek için (birden fazla sayfa varsa her sayfa için aynı yuva)
+
+descriptionGuiItemClickSound: |
+  &7Oyuncu bu öğeyi tıkladığında bir ses çalmak için
+
+descriptionGuiItemOverrideClicks: |
+  &7İlk nesnenin türünden farklı etkilere sahip olacak tıklama türlerini belirtmek için
+
+descriptionGuiItemDynamicBorderLinearOnCount: |
+  &7Aynı anda etkin olması gereken öğelerin miktarı.
+
+descriptionGuiItemDynamicBorderLinearIconOn: |
+  &7Etkin öğeler için simge.
+
+descriptionGuiItemDynamicBorderLinearIconOff: |
+  &7Etkin olmayan öğeler için simge.
+
+# -------------------- Position --------------------
+
+descriptionPositionType: |
+  &7konum türü
+
+descriptionPositionTypeClosestEntityTypes: |
+  &7İzin verilen varlık türleri
+  &7Herhangi bir türe izin vermek için boş bırakın
+
+descriptionPositionTypeClosestEntityNames: |
+  &7İzin verilen varlık adları
+  &7Herhangi bir isme (veya hiçbir isme) izin vermek için boş bırakın
+
+descriptionPositionTypeClosestEntityColors: |
+  &7İzin verilen varlık renkleri (renklendirilebilir varlıklar için)
+  &7Herhangi bir renge izin vermek için boş bırakın
+
+descriptionPositionTypeCitizensNPCRelative: |
+  &7İlgili NPC
+
+descriptionPositionTypeCitizensNPCRelativeNames: |
+  &7İsimlerle ilişkilendirilecek NPC
+  &7Bunu yalnızca birden fazla NPC aynı ada sahipse ve en yakın olanı eşleşen bir adla kullanmak istiyorsanız kullanın.
+
+descriptionPositionTypeClosestMythicMobMobs: |
+  &7İzin verilen MythicMobs çeteleri
+  &7Herhangi bir yaratığa izin vermek için boş bırakın
+descriptionPositionTypeWorld: |
+  &7Dünya
+
+descriptionPositionTypeBiomes: |
+  &7Kabul edilen biyomlar
+
+descriptionPositionTypeSingleLocation: |
+  &7tek konum
+
+descriptionPositionTypeRelativeSingleLocation: |
+  &7Göreceli tek konum
+
+descriptionPositionTypePointTolerance: |
+  &7Uygulanacak tolerans
+
+descriptionPositionTypeBound1: |
+  &7İlk konum bağlı
+
+descriptionPositionTypeBound2: |
+  &7İkinci konum bağlı
+
+descriptionPositionTypeRelativeBound1: |
+  &7İlk göreli konum sınırı
+
+descriptionPositionTypeRelativeBound2: |
+  &7İkinci göreli konum sınırı
+
+descriptionPositionTypeWorldguardRegionWorld: |
+  &7Bölgeyi içeren dünya
+
+descriptionPositionTypeWorldguardRegionRegion: |
+  &7WorldGuard bölge kimliği
+
+descriptionPositionTypeSphereCenter: |
+  &7Küre merkezi
+
+descriptionPositionTypeSphereRadius: |
+  &7Küre yarıçapı
+
+descriptionPositionTypeCylinderCenter: |
+  &7Silindir merkezi (Y koordinatını dikkate almaz)
+
+descriptionPositionTypeCylinderRadius: |
+  &7Silindir yarıçapı
+
+# -------------------- Relative location --------------------
+
+descriptionRelativeLocationHorizontalAngle: |
+  &7Yatay açı
+
+descriptionRelativeLocationVerticalOffset: |
+  &7Dikey ofset
+
+descriptionRelativeLocationDistance: |
+  &7Temel konumdan uzaklık
+
+# -------------------- World restriction --------------------
+
+descriptionWorldRestrictionWhitelist: |
+  &7İzin verilen dünyaların sabit bir listesine sahip olmak
+
+descriptionWorldRestrictionBlacklist: |
+  &7Her zaman yasak olacak dünyaların listesi
+
+# -------------------- Command restriction --------------------
+
+descriptionCommandRestrictionWhitelist: |
+  &7İzin verilen komutların sabit bir listesine sahip olmak için
+
+descriptionCommandRestrictionBlacklist: |
+  &7Her zaman yasaklanacak komutların listesi
+
+# -------------------- Dynmap marker --------------------
+
+descriptionDynmapMarkerLocation: |
+  &7İşaretçinin konumu
+
+descriptionDynmapMarkerText: |
+  &7İşaretçinin metni
+
+# -------------------- Potion effect --------------------
+
+descriptionPotionEffectType: |
+  &7Efekt türü
+
+descriptionPotionEffectDuration: |
+  &7Etki süresi
+
+descriptionPotionEffectAmplifier: |
+  &7Efekt yükseltici
+
+descriptionPotionEffectAmbient: |
+  &7Efekt ortamını ayarlamak için
+
+descriptionPotionEffectParticles: |
+  &7Parçacıkları ayarlamak için
+
+descriptionPotionEffectIcon: |
+  &7Simge ayarlamak için
+
+# -------------------- Firework effect --------------------
+
+descriptionFireworkEffectType: |
+  &7Bu efektin türü
+
+descriptionFireworkEffectColors: |
+  &7Bu efektin renkleri (kırmızı, yeşil, mavi)
+
+descriptionFireworkEffectFadeColors: |
+  &7Bu efektin renkleri (kırmızı, yeşil, mavi) soldur
+
+descriptionFireworkEffectFlicker: |
+  &7Bu efekti titretmek için
+
+descriptionFireworkEffectTrail: |
+  &7Bu etkiyi yapmak için geride bir iz bırakın
+
+# -------------------- Time --------------------
+
+descriptionElementTimeMonth: |
+  &7Ay
+
+descriptionElementTimeDayOfMonth: |
+  &7Ayın günü
+
+descriptionElementTimeDayOfWeek: |
+  &7Haftanın günü
+
+descriptionElementTimeHour: |
+  &7Saat
+
+descriptionElementTimeMinute: |
+  &7The minute
+
+# -------------------- Time limit --------------------
+
+descriptionTimeLimitDuration: |
+  &7Zaman sınırı
+descriptionTimeLimitReminder: |
+  &7Kalan zamanla bir hatırlatıcı göndermek için
+
+# -------------------- Duration --------------------
+
+descriptionDurationTime: |
+  &7Zaman miktarı
+descriptionDurationUnit: |
+  &7Miktarı ölçmek için zaman birimi
+
+# -------------------- Comparison --------------------
+
+descriptionComparisonType: |
+  &7karşılaştırma türü
+
+# -------------------- Notify --------------------
+
+descriptionNotifyMessage: |
+  &7Mesaj göndermek için
+
+descriptionNotifyActionbar: |
+  &7Eylem çubuğu göndermek için
+
+descriptionNotifyActionbarDuration: |
+  &7Eylem çubuğu süresi
+
+descriptionNotifyBossbar: |
+  &7Bir bossbar göndermek için
+
+descriptionNotifyBossbarColor: |
+  &7Ana çubuğun rengi (varsa)
+
+descriptionNotifyBossbarStyle: |
+  &7Bossbar stili (varsa)
+
+descriptionNotifyBossbarFlags: |
+  &7Bossbar bayrakları (varsa)
+
+descriptionNotifyBossbarDuration: |
+  &7Bossbar süresi
+
+descriptionNotifyTitle: |
+  &7Başlık göndermek için
+
+descriptionNotifyTitleSubtitle: |
+  &7Altyazı göndermek için
+
+descriptionNotifyTitleFadeIn: |
+  &7Başlığın zaman içinde kaybolması (tik olarak)
+
+descriptionNotifyTitleDuration: |
+  &7Başlığın görüntüleme süresi (tik olarak)
+
+descriptionNotifyTitleFadeOut: |
+  &7Başlığın kaybolma süresi (tik olarak)
+
+descriptionNotifySound: |
+  &7Ses çalmak için
+
+descriptionNotifySoundVolume: |
+  &7Sesin hacmi
+
+descriptionNotifySoundPitch: |
+  &7Sesin perdesi
+
+# -------------------- Time frame --------------------
+
+descriptionTimeFrameType: |
+  &7Zaman çerçevesi türü
+
+descriptionTimeFrameInDayStart: |
+  &7Gün içinde başlangıç ​​zamanı
+
+descriptionTimeFrameInDayEnd: |
+  &7Gün içinde bitiş zamanı (günler arasında geçiş yapmak için başlangıç ​​zamanından önce olabilir)
+
+descriptionTimeFrameInWeekStart: |
+  &7Hafta içinde başlangıç zamanı
+
+descriptionTimeFrameInWeekEnd: |
+  &7Haftadaki bitiş zamanı (haftalar arasında geçiş yapmak için başlangıç ​​zamanından önce olabilir)
+
+descriptionTimeFrameInMonthStart: |
+  &7Ayda başlama zamanı
+
+descriptionTimeFrameInMonthEnd: |
+  &7Ay cinsinden bitiş zamanı (aylar arasında geçiş başlamadan önce olabilir)
+
+descriptionTimeFrameInYearStart: |
+  &7Yıl içinde başlama zamanı
+
+descriptionTimeFrameInYearEnd: |
+  &7Yıl içinde bitiş zamanı (aylar arasında başlamadan önce olabilir)
+
+descriptionTimeFrameLimitedStart: |
+  &7Başlangıç ​​saati
+
+descriptionTimeFrameLimitedEnd: |
+  &7Bitiş zamanı
+
+descriptionTimeFrameRepeatPeriodDuration: |
+  &7Dönem süresi
+
+# -------------------- Messages --------------------
+
+messageElementBasicEdit: |
+  &7Sohbete yeni değeri girin veya iptal etmek için &c{cancel} &7.
+
+messageElementBasicEditSuggestCurrent: |
+  &7Sohbete yeni değeri girin veya iptal etmek için &c{cancel} &7. Mevcut değere ulaşmak için bu mesaja tıklayın.
+
+messageElementBasicEditSearch: |
+  &7Değerin bir kısmını sohbete girin veya &c{cancel} &7iptal edin. Girdiğiniz sohbetle eşleşen tek bir değer seçilir.
+
+messageElementBasicEditSearchNoMatch: |
+  &7 &c{value}&7 için eşleşme bulunamadı.
+
+messageElementBasicEditSearchTooManyMatches: |
+  &7 &c{value}& 7 için çok fazla eşleşme bulundu. Daha kesin bir değer girmeyi deneyin.
+
+messageElementBasicEditSearchMatch: |
+  &7Bulunan ve seçilen değer &a{value}&7.
+
+messageElementBasicListLineEdit: |
+  &7Sohbete yeni değeri girin veya iptal etmek için &c{cancel} &7. Mevcut değere ulaşmak için bu mesaja tıklayın.
+
+messageElementBasicListSwap: |
+  &7Değiştirmek için başka bir değerde bir sayı tuşuna basın veya iptal etmek için başka bir tıklamaya basın.
+messageElementBasicListSwapped: |
+  &7Values have been swapped.
+
+messageElementBasicImportLocation: |
+  &7Yeni değeri içe aktarmak için eğilin veya iptal etmek için sohbette &c{cancel} &7 girin.
+
+messageElementBasicImportNPC: |
+  &7İçe aktarmak için yeni NPC ile etkileşime geçin veya iptal etmek için sohbette &c{cancel} &7 girin.
+
+messageElementContainerImportItem: |
+  &7Yeni öğeyi içe aktarmak için bırakın veya iptal etmek için sohbette &c{cancel} &7 girin.
+
+messageElementCreateEnterId: |
+  &7Sohbete yeni değer kimliğini girin veya iptal etmek için &c{cancel} &7.
+
+messageElementCreateInvalidId: |
+  &7ID &c{value} &7geçerli değil : yalnızca harflere, sayılara veya &c_ &7'ye izin verilir.
+
+messageElementCreateAlreadyExists: |
+  &7Öğe &c{value} &7zaten var.
+
+messageCantImportValue: |
+  &cBu değer kullanılamaz: {error}

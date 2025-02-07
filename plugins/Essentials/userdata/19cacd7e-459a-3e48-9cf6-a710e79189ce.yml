@@ -1,0 +1,51 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1737443959706
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1737446968173
+  login: 1737443206266
+  kits:
+    agricultor: 1736711656159
+    constructor: 1736711714176
+    iniciacion: 1736715300144
+money: '78152.53234375'
+last-account-name: AdrianPirata
+lastlocation:
+  world: 365ca687-c4ed-4138-b4bd-0783e6768f03
+  world-name: world
+  x: 7367.1937498089555
+  y: 71.0
+  z: 5660.30147049732
+  yaw: -67.55108642578125
+  pitch: 7.949983596801758
+logoutlocation:
+  world: 365ca687-c4ed-4138-b4bd-0783e6768f03
+  world-name: world
+  x: 812.157256969319
+  y: 157.0
+  z: 182.6467503575781
+  yaw: -75.5989990234375
+  pitch: 37.1999626159668
+homes:
+  home:
+    world: 365ca687-c4ed-4138-b4bd-0783e6768f03
+    world-name: world
+    x: -1719.8213750270356
+    y: 71.0
+    z: 4291.644622173619
+    yaw: 91.68759155273438
+    pitch: 16.34998321533203

@@ -1,0 +1,286 @@
+Name: '&5Loteria Magica'
+Preview_Config: default
+Permission_Required: false
+Opening:
+  Cooldown: 0
+Key:
+  # Sets whether or not keys are required to open this crate.
+  Required: true
+  Ids:
+  - llave_loteria_magica
+Block:
+  Positions:
+  - 232,224,32,world
+  Pushback:
+    Enabled: true
+  Hologram:
+    Enabled: true
+    Template: default
+    Y_Offset: 0.0
+  Effect:
+    Model: HELIX
+    Particle:
+      Name: ELECTRIC_SPARK
+Milestones:
+  Repeatable: false
+Animation_Config: chests_full
+Rewards:
+  List:
+    '0':
+      Name: '&d✨0'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 180002g019hmurbgdtn6arjkec4005bdd5n6aoric5j78ej3elpn8rrdbtn62rb502a7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh66rrcdtp24eh2dhkmeq3kbto7asjgdhii4b12d5q62r39cch3kpj1dhpmab12dth6ctbjcdgn8pb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49q6au3k48t25oksl0o24b12eln68pbidhkmspb448t6cobcedinqn9c49q6au3k48t248jt001g01b3dtqmst000000220009km800odlkmspb3e9gmct1qc5mmat38f5pn8nrjd1gn4p00
+      Commands:
+      - mysterydust add %player_name% 0
+      Items:
+      - 180002g019hmurbgdtn6arjkec4005bdd5n6aoric5j78ej3elpn8rrdbtn62rb502a7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh66rrcdtp24eh2dhkmeq3kbto7asjgdhii4b12d5q62r39cch3kpj1dhpmab12dth6ctbjcdgn8pb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49q6au3k48t25oksl0o24b12eln68pbidhkmspb448t6cobcedinqn9c49q6au3k48t248jt001g01b3dtqmst000000220009km800odlkmspb3e9gmct1qc5mmat38f5pn8nrjd1gn4p00
+      Ignored_For_Permissions: []
+    '1':
+      Name: '&d✨1'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 180002g019hmurbgdtn6arjkec4005bdd5n6aoric5j78ej3elpn8rrdbtn62rb502a7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh66rrcdtp24eh2dhkmeq3kbto7asjgdhii4b12d5q62r39cch3kpj1dhpmab12dth6ctbjcdgn8pb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49q6au3k48t25oksl0oi4b12eln68pbidhkmspb448t6cobcedinqn9c49q6au3k48t248jt001g01b3dtqmst000000220009km800odlkmspb3e9gmct1qc5mmat38f5pn8nrjd1gn4p00
+      Commands:
+      - mysterydust add %player_name% 1
+      Items:
+      - 180002g019hmurbgdtn6arjkec4005bdd5n6aoric5j78ej3elpn8rrdbtn62rb502a7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh66rrcdtp24eh2dhkmeq3kbto7asjgdhii4b12d5q62r39cch3kpj1dhpmab12dth6ctbjcdgn8pb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49q6au3k48t25oksl0oi4b12eln68pbidhkmspb448t6cobcedinqn9c49q6au3k48t248jt001g01b3dtqmst000000220009km800odlkmspb3e9gmct1qc5mmat38f5pn8nrjd1gn4p00
+      Ignored_For_Permissions: []
+    '2':
+      Name: '&d✨2'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 180002g019hmurbgdtn6arjkec4005bdd5n6aoric5j78ej3elpn8rrdbtn62rb502a7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh66rrcdtp24eh2dhkmeq3kbto7asjgdhii4b12d5q62r39cch3kpj1dhpmab12dth6ctbjcdgn8pb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49q6au3k48t25oksl0p24b12eln68pbidhkmspb448t6cobcedinqn9c49q6au3k48t248jt001g01b3dtqmst000000220009km800odlkmspb3e9gmct1qc5mmat38f5pn8nrjd1gn4p00
+      Commands:
+      - mysterydust add %player_name% 2
+      Items:
+      - 180002g019hmurbgdtn6arjkec4005bdd5n6aoric5j78ej3elpn8rrdbtn62rb502a7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh66rrcdtp24eh2dhkmeq3kbto7asjgdhii4b12d5q62r39cch3kpj1dhpmab12dth6ctbjcdgn8pb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49q6au3k48t25oksl0p24b12eln68pbidhkmspb448t6cobcedinqn9c49q6au3k48t248jt001g01b3dtqmst000000220009km800odlkmspb3e9gmct1qc5mmat38f5pn8nrjd1gn4p00
+      Ignored_For_Permissions: []
+    '3':
+      Name: '&d✨3'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 180002g019hmurbgdtn6arjkec4005bdd5n6aoric5j78ej3elpn8rrdbtn62rb502a7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh66rrcdtp24eh2dhkmeq3kbto7asjgdhii4b12d5q62r39cch3kpj1dhpmab12dth6ctbjcdgn8pb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49q6au3k48t25oksl0pi4b12eln68pbidhkmspb448t6cobcedinqn9c49q6au3k48t248jt001g01b3dtqmst000000220009km800odlkmspb3e9gmct1qc5mmat38f5pn8nrjd1gn4p00
+      Commands:
+      - mysterydust add %player_name% 3
+      Items:
+      - 180002g019hmurbgdtn6arjkec4005bdd5n6aoric5j78ej3elpn8rrdbtn62rb502a7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh66rrcdtp24eh2dhkmeq3kbto7asjgdhii4b12d5q62r39cch3kpj1dhpmab12dth6ctbjcdgn8pb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49q6au3k48t25oksl0pi4b12eln68pbidhkmspb448t6cobcedinqn9c49q6au3k48t248jt001g01b3dtqmst000000220009km800odlkmspb3e9gmct1qc5mmat38f5pn8nrjd1gn4p00
+      Ignored_For_Permissions: []
+    '5':
+      Name: '&d✨5'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 180002g019hmurbgdtn6arjkec4005bdd5n6aoric5j78ej3elpn8rrdbtn62rb502a7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh66rrcdtp24eh2dhkmeq3kbto7asjgdhii4b12d5q62r39cch3kpj1dhpmab12dth6ctbjcdgn8pb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49q6au3k48t25oksl0qi4b12eln68pbidhkmspb448t6cobcedinqn9c49q6au3k48t248jt001g01b3dtqmst000000220009km800odlkmspb3e9gmct1qc5mmat38f5pn8nrjd1gn4p00
+      Commands:
+      - mysterydust add %player_name% 5
+      Items:
+      - 180002g019hmurbgdtn6arjkec4005bdd5n6aoric5j78ej3elpn8rrdbtn62rb502a7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh66rrcdtp24eh2dhkmeq3kbto7asjgdhii4b12d5q62r39cch3kpj1dhpmab12dth6ctbjcdgn8pb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49q6au3k48t25oksl0qi4b12eln68pbidhkmspb448t6cobcedinqn9c49q6au3k48t248jt001g01b3dtqmst000000220009km800odlkmspb3e9gmct1qc5mmat38f5pn8nrjd1gn4p00
+      Ignored_For_Permissions: []
+    '6':
+      Name: '&d✨6'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 180002g019hmurbgdtn6arjkec4005bdd5n6aoric5j78ej3elpn8rrdbtn62rb502a7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh66rrcdtp24eh2dhkmeq3kbto7asjgdhii4b12d5q62r39cch3kpj1dhpmab12dth6ctbjcdgn8pb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49q6au3k48t25oksl0r24b12eln68pbidhkmspb448t6cobcedinqn9c49q6au3k48t248jt001g01b3dtqmst000000220009km800odlkmspb3e9gmct1qc5mmat38f5pn8nrjd1gn4p00
+      Commands:
+      - mysterydust add %player_name% 6
+      Items:
+      - 180002g019hmurbgdtn6arjkec4005bdd5n6aoric5j78ej3elpn8rrdbtn62rb502a7m8j5f1q74o9279dnm8j2dtm688hqcpgmosr55gh66rrcdtp24eh2dhkmeq3kbto7asjgdhii4b12d5q62r39cch3kpj1dhpmab12dth6ctbjcdgn8pb448t6cobcediio8jjehp6iqr5ehk74rrlctk24ej6c5m76p9c49q6au3k48t25oksl0r24b12eln68pbidhkmspb448t6cobcedinqn9c49q6au3k48t248jt001g01b3dtqmst000000220009km800odlkmspb3e9gmct1qc5mmat38f5pn8nrjd1gn4p00
+      Ignored_For_Permissions: []
+    '10':
+      Name: '&d✨10'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: a0000k00acdnmqs3fdpimst3j1001arb9dpim6sj1cpq3korledq6uravdpgmqp80ilti4pboehp628hqbdti4ojfdhi24ej6c5m76p9c49hmur3fe8h3k8jcd5jmgt2ve1qn4s3cckh2o8j9ehgmoqb348t6cobcediio8jfc9j7asr3c5q6ap1279j62r3jckm24srke9kmmpbkd1p6utb7d0h3kpj1dhpmab12ehingt1278he575864o24b12eln68pbidhkmspb448t6cobcedinqn9c49q6au3k48t248jt001g01b3dtqmst000000220009km800odlkmspb3e9gmct1qc5mmat38f5pn8nrjd1gn4p00
+      Commands:
+      - mysterydust add %player_name% 10
+      Items:
+      - a0000k00acdnmqs3fdpimst3j1001arb9dpim6sj1cpq3korledq6uravdpgmqp80ilti4pboehp628hqbdti4ojfdhi24ej6c5m76p9c49hmur3fe8h3k8jcd5jmgt2ve1qn4s3cckh2o8j9ehgmoqb348t6cobcediio8jfc9j7asr3c5q6ap1279j62r3jckm24srke9kmmpbkd1p6utb7d0h3kpj1dhpmab12ehingt1278he575864o24b12eln68pbidhkmspb448t6cobcedinqn9c49q6au3k48t248jt001g01b3dtqmst000000220009km800odlkmspb3e9gmct1qc5mmat38f5pn8nrjd1gn4p00
+      Ignored_For_Permissions: []
+    '12':
+      Name: '&d✨12'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: a0000k00acdnmqs3fdpimst3j1001arb9dpim6sj1cpq3korledq6uravdpgmqp80ilti4pboehp628hqbdti4ojfdhi24ej6c5m76p9c49hmur3fe8h3k8jcd5jmgt2ve1qn4s3cckh2o8j9ehgmoqb348t6cobcediio8jfc9j7asr3c5q6ap1279j62r3jckm24srke9kmmpbkd1p6utb7d0h3kpj1dhpmab12ehingt1278he575864p24b12eln68pbidhkmspb448t6cobcedinqn9c49q6au3k48t248jt001g01b3dtqmst000000220009km800odlkmspb3e9gmct1qc5mmat38f5pn8nrjd1gn4p00
+      Commands:
+      - mysterydust add %player_name% 12
+      Items:
+      - a0000k00acdnmqs3fdpimst3j1001arb9dpim6sj1cpq3korledq6uravdpgmqp80ilti4pboehp628hqbdti4ojfdhi24ej6c5m76p9c49hmur3fe8h3k8jcd5jmgt2ve1qn4s3cckh2o8j9ehgmoqb348t6cobcediio8jfc9j7asr3c5q6ap1279j62r3jckm24srke9kmmpbkd1p6utb7d0h3kpj1dhpmab12ehingt1278he575864p24b12eln68pbidhkmspb448t6cobcedinqn9c49q6au3k48t248jt001g01b3dtqmst000000220009km800odlkmspb3e9gmct1qc5mmat38f5pn8nrjd1gn4p00
+      Ignored_For_Permissions: []
+    '15':
+      Name: '&d✨15'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: a0000k00acdnmqs3fdpimst3j1001arb9dpim6sj1cpq3korledq6uravdpgmqp80ilti4pboehp628hqbdti4ojfdhi24ej6c5m76p9c49hmur3fe8h3k8jcd5jmgt2ve1qn4s3cckh2o8j9ehgmoqb348t6cobcediio8jfc9j7asr3c5q6ap1279j62r3jckm24srke9kmmpbkd1p6utb7d0h3kpj1dhpmab12ehingt1278he575864qi4b12eln68pbidhkmspb448t6cobcedinqn9c49q6au3k48t248jt001g01b3dtqmst000000220009km800odlkmspb3e9gmct1qc5mmat38f5pn8nrjd1gn4p00
+      Commands:
+      - mysterydust add %player_name% 15
+      Items:
+      - a0000k00acdnmqs3fdpimst3j1001arb9dpim6sj1cpq3korledq6uravdpgmqp80ilti4pboehp628hqbdti4ojfdhi24ej6c5m76p9c49hmur3fe8h3k8jcd5jmgt2ve1qn4s3cckh2o8j9ehgmoqb348t6cobcediio8jfc9j7asr3c5q6ap1279j62r3jckm24srke9kmmpbkd1p6utb7d0h3kpj1dhpmab12ehingt1278he575864qi4b12eln68pbidhkmspb448t6cobcedinqn9c49q6au3k48t248jt001g01b3dtqmst000000220009km800odlkmspb3e9gmct1qc5mmat38f5pn8nrjd1gn4p00
+      Ignored_For_Permissions: []
+    '20':
+      Name: '&d✨20'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: a0000k00acdnmqs3fdpimst3j1001arb9dpim6sj1cpq3korledq6uravdpgmqp80ilti4pboehp628hqbdti4ojfdhi24ej6c5m76p9c49hmur3fe8h3k8jcd5jmgt2ve1qn4s3cckh2o8j9ehgmoqb348t6cobcediio8jfc9j7asr3c5q6ap1279j62r3jckm24srke9kmmpbkd1p6utb7d0h3kpj1dhpmab12ehingt1278he575868o24b12eln68pbidhkmspb448t6cobcedinqn9c49q6au3k48t248jt001g01b3dtqmst000000220009km800odlkmspb3e9gmct1qc5mmat38f5pn8nrjd1gn4p00
+      Commands:
+      - mysterydust add %player_name% 20
+      Items:
+      - a0000k00acdnmqs3fdpimst3j1001arb9dpim6sj1cpq3korledq6uravdpgmqp80ilti4pboehp628hqbdti4ojfdhi24ej6c5m76p9c49hmur3fe8h3k8jcd5jmgt2ve1qn4s3cckh2o8j9ehgmoqb348t6cobcediio8jfc9j7asr3c5q6ap1279j62r3jckm24srke9kmmpbkd1p6utb7d0h3kpj1dhpmab12ehingt1278he575868o24b12eln68pbidhkmspb448t6cobcedinqn9c49q6au3k48t248jt001g01b3dtqmst000000220009km800odlkmspb3e9gmct1qc5mmat38f5pn8nrjd1gn4p00
+      Ignored_For_Permissions: []
+    '100':
+      Name: '&d✨100'
+      Weight: 25.0
+      Rarity: common
+      Broadcast: true
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 2g0005002j3dtmn0rrecln78so800amqqbeclhn4ob6egt66tbjehnmqnrec5mma04mfch6au3ke9gi4eirfch64rrccgh3kpj1dhpmab12cdnmorri48t24r39ctk78nrgelp70r3548m24qbkc5m6iop279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh76t3id5lmat38e9nnapr848t6cobcediio8jkcls788hq4bh9pa1h60o24b12eln68pbidhkmspb448t6cobcedinqn9c49q6au3k48t248jt001g01b3dtqmst000000220009km800odlkmspb3e9gmct1qc5mmat38f5pn8nrjd1gn4p00
+      Commands:
+      - mysterydust add %player_name% 100
+      Items:
+      - 2g0005002j3dtmn0rrecln78so800amqqbeclhn4ob6egt66tbjehnmqnrec5mma04mfch6au3ke9gi4eirfch64rrccgh3kpj1dhpmab12cdnmorri48t24r39ctk78nrgelp70r3548m24qbkc5m6iop279j62r3jckm24rr2cpqn6or1ehim88hqcpgmosr55gh76t3id5lmat38e9nnapr848t6cobcediio8jkcls788hq4bh9pa1h60o24b12eln68pbidhkmspb448t6cobcedinqn9c49q6au3k48t248jt001g01b3dtqmst000000220009km800odlkmspb3e9gmct1qc5mmat38f5pn8nrjd1gn4p00
+      Ignored_For_Permissions: []
+Last_Opener: AdrianLegaspi
+Last_Reward: '&d✨15'
+Item:
+  Material: PLAYER_HEAD
+  SkinURL: b53e0b93e2cfd7cec84867421448bf33b02b5f6e22c7c4d39b78055c0e83e180

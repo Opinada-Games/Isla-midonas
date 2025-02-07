@@ -1,0 +1,48 @@
+# Minecraft world data
+world/
+world_nether/
+world_the_end/
+
+# Server properties and configurations (if you want to exclude them)
+banned-players.json
+banned-ips.json
+ops.json
+whitelist.json
+usercache.json
+session.lock
+
+# Plugin data (optional - if you don't want plugin configs tracked)
+plugins/**/data/
+plugins/**/logs/
+
+# Logs and crash reports
+logs/
+debug.log
+crash-reports/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Java-related files (if running a custom Java setup)
+*.class
+*.jar
+*.war
+*.ear
+
+# IDE specific files (in case you're editing with IDEs)
+.vscode/
+.idea/
+*.iml
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.zip
+*.tar.gz
+backups/
+plugins/DiscordSRV/config.yml
+plugins/DiscordSRV/config.yml

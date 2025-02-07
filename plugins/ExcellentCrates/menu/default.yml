@@ -1,0 +1,26 @@
+Settings:
+  # GUI title.
+  Title: <black>Crates</black>
+  # GUI size. Must be multiply of 9.
+  # Useful for 'CHEST' Inventory Type only.
+  Size: 27
+  # GUI type.
+  # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/inventory/InventoryType.html
+  Inventory_Type: CHEST
+  # Sets GUI auto-refresh interval (in seconds). Set this to 0 to disable.
+  Auto_Refresh: 0
+  PlaceholderAPI:
+    # Sets whether PlaceholderAPI placeholders will be applied on all items from the 'Content' section of this GUI.
+    # [*] Disable if you don't use any PlaceholderAPI placeholders on your items to improve GUI performance.
+    Enabled: false
+Crate:
+  Name: '%crate_name%'
+  Lore:
+  - <lgray>You have <lyellow>%keys%</lyellow> keys.</lgray>
+  - ''
+  - <lgray><lyellow>[▶]</lyellow> Left-Click to <lyellow>preview</lyellow>.</lgray>
+  - <lgray><lyellow>[▶]</lyellow> Right-Click to <lyellow>open</lyellow>.</lgray>
+  # Put here crate IDs and slots where they will be displayed.
+  # Crate IDs are equals to their config file names.
+  Slots:
+    your_crate_id: 13

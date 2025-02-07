@@ -1,0 +1,171 @@
+# Main Menu Configuration for zMenu
+size: 54
+name: "&4Menú &cPrincipal"
+
+items:
+  # Comandos Básicos
+  basic_commands_menu:
+    type: INVENTORY
+    slot: 10
+    inventory: "basic_commands_menu"
+    plugin: "zMenu"
+    item:
+      material: BOOK
+      name: "&6Comandos Básicos"
+      lore:
+        - "&7tpr, sethome, warps..."
+        - "&eHaz clic para abrir el menú de"
+        - "&6Comandos Básicos"
+
+  # Trabajos
+  trabajos:
+    type: INVENTORY
+    slot: 12
+    inventory: "jobs_menu"
+    plugin: "zMenu"
+    item:
+      material: IRON_PICKAXE
+      name: "&aTrabajos"
+      lore:
+        - "&7Haz clic para explorar los"
+        - "&atrabajos disponibles"
+
+  # Banco
+  banco:
+    type: INVENTORY
+    slot: 14
+    inventory: "banco_menu"
+    plugin: "zMenu"
+    item:
+      material: GOLD_INGOT
+      name: "&eBanco"
+      lore:
+        - "&7Haz clic para administrar tu"
+        - "&ecuenta bancaria"
+
+  # Comercio
+  comercio:
+    type: INVENTORY
+    slot: 16
+    inventory: "commerce_menu"
+    plugin: "zMenu"
+    item:
+      material: EMERALD
+      name: "&bComercio"
+      lore:
+        - "&7Haz clic para abrir el menú de"
+        - "&bcomercio"
+
+  # Territorios
+  territorios:
+    type: INVENTORY
+    slot: 28
+    inventory: "lands_menu"
+    plugin: "zMenu"
+    item:
+      material: MAP
+      name: "&2Territorios"
+      lore:
+        - "&7Haz clic para gestionar tus"
+        - "&2territorios"
+
+  # Parkour
+  parkour:
+    slot: 30
+    item:
+      material: RED_STAINED_GLASS
+      name: "&cParkour"
+      lore:
+        - "&7Entra al menu del Parkour"
+        - "&eHaz clic para ir"
+        - ""
+    commands:
+      - "parkour"
+    closeInventory: true
+
+  # Menú de Warps
+  warps:
+    slot: 34
+    item:
+      material: ENDER_PEARL
+      name: "&eMenú de Warps"
+      lore:
+        - ""
+        - "&7Haz clic para abrir el menú de warps."
+    commands:
+      - "zm open warps_menu"
+    viewRequirement:
+      requirements:
+        - type: permission
+          permission: "essentials.warp"
+    closeInventory: true
+
+  # Kits
+  kits:
+    type: INVENTORY
+    slot: 32
+    inventory: "kits_menu"
+    plugin: "zMenu"
+    item:
+      material: CHEST
+      name: "&9Kits"
+      lore:
+        - "&7Haz clic para abrir el menú de"
+        - "&9kits disponibles"
+
+  # Recompensas
+  rewards:
+    slot: 46
+    item:
+      material: ENDER_CHEST
+      name: "&dRecompensas"
+      lore:
+        - "&7Haz clic para abrir el menú de"
+        - "&drecompensas disponibles"
+      enchantment-glint: true
+    commands:
+      - "rewards"
+    closeInventory: true
+
+  # Discord
+  discord:
+    type: INVENTORY
+    slot: 48
+    inventory: "discord_inventory"
+    plugin: "zMenu"
+    item:
+      material: BELL
+      name: "&9Discord"
+      lore:
+        - "&7Haz clic para abrir el menú de"
+        - "&9Discord"
+
+  # Cosméticos
+  cosmeticos:
+    slot: 50
+    item:
+      material: SHULKER_BOX
+      name: "&9Cosméticos"
+      lore:
+        - "&7Haz clic para abrir el menú de"
+        - "&9Cosméticos"
+    commands:
+      - gadgetsmenu main
+
+  # Ayuda
+  ayuda:
+    type: INVENTORY
+    slot: 52
+    inventory: "help_menu"
+    plugin: "zMenu"
+    item:
+      material: WRITABLE_BOOK
+      name: "&3Ayuda"
+      lore:
+        - "&7Haz clic para abrir la wiki del server"
+        - "&cayuda y soporte"
+
+# Relleno de espacios vacíos con panel de vidrio teñido
+fillItem:
+  material: GRAY_STAINED_GLASS_PANE
+  name: " "

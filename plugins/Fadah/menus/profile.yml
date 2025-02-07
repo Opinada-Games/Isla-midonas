@@ -1,0 +1,66 @@
+title: "&9&lCasa de Subastas &8> &bTu Perfil" # {0} = "Tu" o el nombre del jugador si está en modo de gestión, {1} = el nombre de usuario del jugador
+
+lang:
+  your-listings:
+    icon: EMERALD
+    model-data: 0
+    name: "&1Tus listados"
+    lore:
+      - "&fHaz clic para ver y gestionar"
+      - "&f¡{0} listados activos!"
+  collection-box:
+    icon: CHEST_MINECART
+    model-data: 0
+    name: "&eCaja de Colección"
+    lore:
+      - "&fHaz clic para ver y reclamar"
+      - "&f¡{0} compras realizadas!"
+  expired-items:
+    icon: ENDER_CHEST
+    model-data: 0
+    name: "&cListados Expirados"
+    lore:
+      - "&fHaz clic para ver y reclamar"
+      - "&f¡listados expirados!"
+  historic-items:
+    icon: WRITABLE_BOOK
+    model-data: 0
+    name: "&cHistorial"
+    lore:
+      - "&fHaz clic para ver"
+      - "&f¡{0} historial!"
+
+size: 6
+
+layout:
+  "0": "FILLER"
+  "1": "FILLER"
+  "2": "FILLER"
+  "3": "FILLER"
+  "4": "FILLER"
+  "5": "FILLER"
+  "6": "FILLER"
+  "7": "FILLER"
+  "8": "FILLER"
+  "9": "FILLER"
+  "17": "FILLER"
+  "18": "FILLER"
+  "20": "PROFILE_SUMMARY"
+  "22": "PROFILE_ACTIVE_LISTINGS"
+  "23": "PROFILE_COLLECTION_BOX"
+  "24": "PROFILE_EXPIRED_LISTINGS"
+  "26": "FILLER"
+  "27": "FILLER"
+  "31": "PROFILE_HISTORY"
+  "35": "FILLER"
+  "36": "FILLER"
+  "44": "FILLER"
+  "45": "BACK"
+  "46": "FILLER"
+  "47": "FILLER"
+  "48": "FILLER"
+  "49": "FILLER"
+  "50": "FILLER"
+  "51": "FILLER"
+  "52": "FILLER"
+  "53": "FILLER"

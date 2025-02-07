@@ -1,0 +1,10 @@
+timeonload: true
+debug: false
+showUpdateMessage: true
+timezoneOverwrite: false
+timezoneOverwriteValue: GMT
+language: en
+disablePapiPlaceholderWarnings: false
+database:
+  enabled: false
+  url: ''

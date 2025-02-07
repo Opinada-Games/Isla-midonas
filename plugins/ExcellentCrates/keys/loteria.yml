@@ -1,0 +1,7 @@
+Name: Llave de loteria
+Virtual: false
+Item:
+  Material: PAPER
+  Name: '&2Billete de Loteria'
+  Lore:
+  - '&7Sería buena idea probar suerte en los cofres'

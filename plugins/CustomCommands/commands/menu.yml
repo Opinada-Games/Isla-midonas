@@ -1,0 +1,17 @@
+# Configuration for the /menu command
+
+# Aliases for the command
+aliases: [menu]
+
+# Patterns for the command
+patterns:
+  - pattern: "" # The command is just /menu
+    description: Opens the main menu
+    actions:
+      - type: EXECUTE_COMMANDS
+        commands: |
+          zmenu open zmenu:main_inventory
+        as_player: true
+      - type: NOTIFY
+        notify:
+          message: "&aMenú principal abierto con éxito"

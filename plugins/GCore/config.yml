@@ -1,0 +1,316 @@
+# ----------------------------------------------------------------------------------------------------
+# Configuration file for GCore
+# More information can be found in the documentation
+# ----------------------------------------------------------------------------------------------------
+
+# --------------------------------------------------
+# Data
+# --------------------------------------------------
+
+# MySQL configuration (if you don't configure any data board to use MySQL, then it's not useful
+
+#mysql:
+#  host: 'database.my_server.com:25565'
+#  name: 'database_name'
+#  user: 'username'
+#  pass: 'pwd'
+#  args: '&useSSL=false'
+#  pre8019: true  # set this to true if you're using MySQL < 8.0.19, or MariaDB
+
+# Data back-end (NONE, JSON, SQLITE or MYSQL ; default is JSON if not specified)
+data_backend:
+  gcore_statistics_v8: SQLITE
+  gcore_users_npcs_v8: JSON
+
+# Log settings (errors will be shown in console no matter what)
+log:
+  # Main logger
+  main:
+    console: true
+    file: true
+  # Data loggers
+  data:
+    gcore_statistics_v8:
+      console: false
+      file: false
+      sql: false
+
+# --------------------------------------------------
+# Commands
+# --------------------------------------------------
+
+# Generic aliases
+generic_commands_aliases:
+  reload: [reload,rl]
+  pluginstate: [pluginstate,plstate]
+  migrate: [migrate]
+
+# Aliases
+commands_aliases:
+  plugins: [plugins,pl]
+  export: [export]
+  itemread: [itemread,ir]
+  itemreadchat: [itemreadchat,irc]
+  itemreadclick: [itemreadclick,irclick]
+
+# --------------------------------------------------
+# Variants
+# --------------------------------------------------
+
+# Materials
+materials:
+  # Should the materials file be regenerated on startup
+  # Set it to false to customize it
+  # [!] It is discouraged to make change to "regular" blocks, such as AIR/WATER/LAVA/DIRT/COBBLESTONE/vanilla tools/...,
+  #     because some plugins will more than likely attempt to use them. For AIR/WATER/LAVA/..., it is VERY discouraged.
+  #     Bugs caused by those changes (such as world block replacement or item loss) will be disregarded.
+  # [!] Beware that materials won't be updated automatically anymore if set to false
+  #     You should know that all the combinations in the materials file obviously haven't all been tested individually
+  #     They be fixed over time when users report bugs, so it is highly recommended to leave this option enabled to get those fixes automatically in future updates.
+  regenerate_file: true
+  # Should any material that's not registered in the materials file be allowed
+  # Set this to true if your server uses non-vanilla materials
+  # [!] Not recommended if it's not the case
+  lenient: false
+
+# Sounds
+sounds:
+  # Should the sounds file be regenerated on startup
+  # Set it to false to customize it
+  # [!] Beware that sounds won't be updated automatically anymore if set to false
+  #     You should know that all the combinations in the sounds file obviously haven't all been tested individually
+  #     They be fixed over time when users report bugs, so it is highly recommended to leave this option enabled to get those fixes automatically in future updates.
+  regenerate_file: true
+
+# Particles
+particles:
+  # Should the particles file be regenerated on startup
+  # Set it to false to customize it
+  # [!] Beware that particles won't be updated automatically anymore if set to false
+  #     You should know that all the combinations in the particles file obviously haven't all been tested individually
+  #     They be fixed over time when users report bugs, so it is highly recommended to leave this option enabled to get those fixes automatically in future updates.
+  regenerate_file: true
+
+# --------------------------------------------------
+# Currencies
+# --------------------------------------------------
+
+currencies:
+  VAULT:
+    name: 'money'
+    format_multiplier: 1.0
+    format_decimal_precision: 2
+    format_single: '{amount}$'
+    format_multiple: '{amount}$'
+    icon:
+      type: PAPER
+      name: '{formatted_amount}'
+      enchantments:
+        DURABILITY: 1
+      flags: [HIDE_ENCHANTS, HIDE_ATTRIBUTES]
+  PLAYER_POINTS:
+    name: 'PlayerPoints points'
+    format_multiplier: 1.0
+    format_decimal_precision: 0
+    format_single: '{amount} point'
+    format_multiple: '{amount} points'
+    icon:
+      type: PAPER
+      name: '{formatted_amount}'
+      enchantments:
+        DURABILITY: 1
+      flags: [HIDE_ENCHANTS, HIDE_ATTRIBUTES]
+  TOKEN_ENCHANT:
+    name: 'TokenEnchant tokens'
+    format_multiplier: 1.0
+    format_decimal_precision: 0
+    format_single: '{amount} token'
+    format_multiple: '{amount} tokens'
+    icon:
+      type: PAPER
+      name: '{formatted_amount}'
+      enchantments:
+        DURABILITY: 1
+      flags: [HIDE_ENCHANTS, HIDE_ATTRIBUTES]
+  XP:
+    name: 'XP'
+    format_multiplier: 1.0
+    format_decimal_precision: 0
+    format_single: '{amount} XP'
+    format_multiple: '{amount} XP'
+    icon:
+      type: PAPER
+      name: '{formatted_amount}'
+      enchantments:
+        DURABILITY: 1
+      flags: [HIDE_ENCHANTS, HIDE_ATTRIBUTES]
+  XP_LEVEL:
+    name: 'XP levels'
+    format_multiplier: 1.0
+    format_decimal_precision: 0
+    format_single: '{amount} level'
+    format_multiple: '{amount} levels'
+    icon:
+      type: PAPER
+      name: '{formatted_amount}'
+      enchantments:
+        DURABILITY: 1
+      flags: [HIDE_ENCHANTS, HIDE_ATTRIBUTES]
+
+# --------------------------------------------------
+# Miscalleneous
+# --------------------------------------------------
+
+# Update notification
+# If you turn this off, please make sure to visit the plugin page on spigot every once in a while ; some updates can be really important.
+update_notification: true
+
+# Lang folder name
+lang: en_US
+
+# Unknown placeholder result
+unknown_placeholder_result: '/'
+
+# Number formatting
+number_formatting_decimals: 2
+number_formatting_separate_thousands: ','
+number_formatting_separate_thousands_start_at: 1000
+number_formatting_big_numbers: true # turns 10,000,000 into "10 million", for instance
+
+# Console log levels colors
+console_log_level_colors:
+  INFO: GREEN
+  WARNING: YELLOW
+  ERROR: RED
+  DEBUG: LIGHT_PURPLE
+
+# Custom time zone
+#custom_time_zone: 'Europe/Brussels'
+
+# Allow hooking into ProtocolLib to create packet-based GUIs
+# Unless you're experiencing unfixable issues with it, I advise you to keep this enabled
+allow_protocol_guis: true
+
+# Use this to delay the processing of protocol GUI clicks if you're experiencing weird issues such as items from a previous menu staying in the newly opened one
+#delay_protocol_gui_clicks_ticks: 1
+
+# Don't log which editor texts are missing on load
+dont_log_missing_editor_texts: true
+
+# Don't log a list of elements that were successfully loaded
+dont_log_loaded_elements_names: false
+
+# Don't consider invalid values as errors and just ignore them. Should be used wisely : errors are meant to be fixed !
+# This is planned for specific uses (for instance, synchronizing elements between bungeecord servers where external data, such as worlds or NPCs, are different)
+# Applies mainly to most basic values (enums, worlds, ...)
+ignore_invalid_element_values: false
+
+# Debug logs for item and NBT creation/matching
+logspam_item_nbt: false
+
+# Set this to ASYNC if you see issues in timings due to tasks in CustomEventsListener
+custom_events_thread: SYNC
+
+# Permission cache retain time
+permission_cache_retain_time: 10 SECOND
+
+# Use this to force the plugin to use a specific version of Spigot
+#force_server_version: MC_1_12_R1
+
+# Use this to disable loading of offline players' cache if it's causing delays on load
+#dont_cache_offline_players_on_load: true
+
+# Use this to disable player's profile fetching (for head items skins, mainly)
+#dont_fetch_player_profiles: true
+
+# --------------------------------------------------
+# GUI
+# --------------------------------------------------
+
+# How often should items with placeholders be updated in an opened GUI (in ticks)
+gui_items_refresh_ticks_placeholder: 20
+
+# How often should dynamic borders in GUIs be updated (in ticks)
+dynamic_border_refresh_ticks: 5
+
+# GUI items
+gui_items:
+  # Back item
+  back:
+    type: ARROW
+    name: '&7Back'
+  # Previous item
+  previous_page:
+    type: ARROW
+    name: '&7Previous page'
+  # Next page
+  next_page:
+    type: ARROW
+    name: '&7Next page'
+
+# GUI type control slots
+gui_type_slots:
+  CHEST_1_ROW:
+    back: 0
+    previous_page: 7
+    next_page: 8
+  CHEST_2_ROW:
+    back: 9
+    previous_page: 16
+    next_page: 17
+  CHEST_3_ROW:
+    back: 18
+    previous_page: 25
+    next_page: 26
+  CHEST_4_ROW:
+    back: 27
+    previous_page: 34
+    next_page: 35
+  CHEST_5_ROW:
+    back: 36
+    previous_page: 43
+    next_page: 44
+  CHEST_6_ROW:
+    back: 45
+    previous_page: 52
+    next_page: 53
+  DISPENSER:
+    back: 6
+    previous_page: 7
+    next_page: 8
+  ANVIL:
+    back: -1
+    previous_page: -1
+    next_page: -1
+  BEACON:
+    back: -1
+    previous_page: -1
+    next_page: -1
+  BLAST_FURNACE:
+    back: -1
+    previous_page: -1
+    next_page: -1
+  BREWING_STAND:
+    back: -1
+    previous_page: -1
+    next_page: -1
+  CRAFTING:
+    back: -1
+    previous_page: -1
+    next_page: -1
+  ENCHANTMENT:
+    back: -1
+    previous_page: -1
+    next_page: -1
+  FURNACE:
+    back: -1
+    previous_page: -1
+    next_page: -1
+  GRINDSTONE:
+    back: -1
+    previous_page: -1
+    next_page: -1
+  HOPPER:
+    back: -1
+    previous_page: -1
+    next_page: -1

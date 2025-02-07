@@ -1,0 +1,125 @@
+#  -------------------------------------------------------------------------------------------------
+#  The main Boss configuration file. Send it to friends or publish online, we'll load it automatically.
+#  We recommend AGAINST editing it here. Use /boss menu instead. MineAcademy.org is not responsible
+#  for data loss, hair loss, your ego or thermonuclear war from mistakes in your edit.
+#  -------------------------------------------------------------------------------------------------
+
+Type: WITHER
+Health: 700.0
+Equipment: {}
+Random_Equipment_On_Empty_Slots: false
+Potion_Effects: {}
+Riding:
+  Vanilla: []
+  Boss: []
+  Remove_On_Death: false
+Commands: []
+Commands_Stop_After_First: false
+Attributes:
+  ARMOR: 6.0
+Lightning:
+  Death: true
+  Spawn: true
+Reinforcements: []
+Custom_Settings: {}
+Skills: {}
+Drops:
+  Vanilla: true
+  General:
+  - Key:
+      ==: "org.bukkit.inventory.ItemStack"
+      v: 4189
+      type: "TRIAL_KEY"
+      meta:
+        ==: "ItemMeta"
+        meta-type: "UNSPECIFIC"
+        display-name: "{\"text\":\"\",\"extra\":[{\"text\":\"Llave de Jefe\",\"strikethrough\":false,\"obfuscated\":false,\"bold\":false,\"italic\":false,\"underlined\":false,\"color\":\"dark_red\"}]}"
+        lore:
+        - '{"text":"","extra":[{"text":"Más allá de solo un trofeo","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gray"}]}'
+        PublicBukkitValues: "{\n    \"excellentcrates:crate_key.id\": \"jefe\"\n}"
+    Value: 1.0
+  - Key:
+      ==: "org.bukkit.inventory.ItemStack"
+      v: 4189
+      type: "NETHER_STAR"
+      amount: 3
+    Value: 1.0
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  Player:
+  - {}
+  Player_Time_Threshold: 15 seconds
+  Player_Commands:
+  - eco give {killer} 5000
+Limit_Reasons: []
+Limit:
+  Nearby_Bosses:
+    Key: 100
+    Value: 20.0
+  Worlds:
+    lobby: 0
+    world: 1
+    world_nether: 0
+    FloatingBoss: 0
+    witp: 0
+Citizens:
+  Enabled: false
+  Speed: 5.0
+  Skin: null
+  Sound_Death: null
+  Sound_Hurt: null
+  Sound_Ambient: null
+  Goal_Target_Enabled: false
+  Goal_Target_Aggressive: false
+  Goal_Target_Radius: 24
+  Goal_Target_Entities: []
+  Goal_Wander_Enabled: false
+  Goal_Wander_Radius: 18
+Keep_In_Spawn_Region: true
+Egg:
+  Lore: []
+Last_Death_From_Spawn_Rule:
+  boss_island: 1737417142602
+Return_Location_On_Escape_Spawn: boss_island_epic_tree
+Dropped_Exp: 500 - 500

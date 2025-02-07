@@ -1,0 +1,140 @@
+Settings:
+  # GUI title.
+  Title: <black>Opening %crate_name%</black>
+  # GUI size. Must be multiply of 9.
+  # Useful for 'CHEST' Inventory Type only.
+  Size: 27
+  # GUI type.
+  # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/event/inventory/InventoryType.html
+  Inventory_Type: CHEST
+  # Sets GUI auto-refresh interval (in seconds). Set this to 0 to disable.
+  Auto_Refresh: 0
+  Mode: NORMAL
+  WinSlots: 13
+  ScriptRunner:
+    OnOpen:
+    - '[run_reward] id:"default" name:"default" delay:"0" slots:"17,16,15,14,13,12,11,10,9" mode:"sequental" chance:"100.0"'
+    - '[run_animation] id:"rainbow" name:"rainbow" delay:"0" slots:"0,1,2,3,5,6,7,8,18,19,20,21,23,24,25,26" mode:"independent" chance:"100.0"'
+    OnStart: []
+  Selection:
+    Amount: 1
+    SelectedIcon:
+      Material: ENDER_CHEST
+    AutoRun: false
+  PlaceholderAPI:
+    # Sets whether PlaceholderAPI placeholders will be applied on all items from the 'Content' section of this GUI.
+    # [*] Disable if you don't use any PlaceholderAPI placeholders on your items to improve GUI performance.
+    Enabled: false
+  # Sets max. amount of the opening ticks while players can skip the opening animation.
+  # Set to -1 to disable (no skip).
+  Max_Ticks_To_Skip: 40
+# ==================== GUI CONTENT ====================
+# You can freely edit items in this section as you wish (add, remove, modify items).
+# The following values are available as button Types:
+# CLOSE
+# SELECT
+# START
+# ==================== ITEM OPTIONS ====================
+# > Item: Item to display. Please check: https://github.com/nulli0n/nightcore-spigot/wiki/ItemStack-Options
+# > Priority: Button priority. Better values will override other item(s) in the same slot(s).
+# > Slots: Button slots. From [0] to [Size - 1]. Split with commas.
+# > Click_Commands: Execute custom commands on click. PlaceholderAPI available here.
+#     Available click types: LEFT, RIGHT, SHIFT_LEFT, SHIFT_RIGHT, DROP_KEY, SWAP_KEY, NUMBER_1, NUMBER_2, NUMBER_3, NUMBER_4, NUMBER_5, NUMBER_6, NUMBER_7, NUMBER_8, NUMBER_9
+#     Use prefix 'player:' to run command by a player.
+#     Click_Commands:
+#       LEFT:
+#       - say Hello
+#       - give %player_name% diamond 1
+#       - player: menu open shops
+# ==================================================
+Content:
+  arrow_up:
+    Slots: 22
+    Item:
+      Material: PLAYER_HEAD
+      Name: <cyan><b>↑ Your Reward ↑</b></cyan>
+      SkinURL: 77334cddfab45d75ad28e1a47bf8cf5017d2f0982f6737da22d4972952510661
+      Display_Name: <cyan><b>↑ Your Reward ↑</b></cyan>
+  
+  arrow_down:
+    Slots: 4
+    Item:
+      Material: PLAYER_HEAD
+      Name: <cyan><b>↓ Your Reward ↓</b></cyan>
+      SkinURL: e7742034f59db890c8004156b727c77ca695c4399d8e0da5ce9227cf836bb8e2
+      Display_Name: <cyan><b>↓ Your Reward ↓</b></cyan>
+
+Rewards:
+  default:
+    Rarities:
+    - '*'
+    Spin_Times: 51
+    Spin_Interval: 1
+    Spin_Slowdown:
+      Step: 5
+      Amount: 1
+    Spin_Sound:
+      # Sound name. You can use Spigot sound names, or ones from your resource pack.
+      # Spigot Sounds: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+      Name: BLOCK_NOTE_BLOCK_BELL
+      # Sound volume. From 0.0 to 1.0.
+      Volume: 0.9
+      # Sound speed. From 0.5 to 2.0
+      Pitch: 1.0
+
+Animations:
+  rainbow:
+    Spin_Times: 71
+    Spin_Interval: 1
+    Spin_Slowdown:
+      Step: 10
+      Amount: 1
+    Items:
+      s1:
+        Chance: 50.0
+        Material: WHITE_STAINED_GLASS_PANE
+      s2:
+        Chance: 50.0
+        Material: LIGHT_GRAY_STAINED_GLASS_PANE
+      s3:
+        Chance: 50.0
+        Material: GRAY_STAINED_GLASS_PANE
+      s4:
+        Chance: 50.0
+        Material: BLACK_STAINED_GLASS_PANE
+      s5:
+        Chance: 50.0
+        Material: BROWN_STAINED_GLASS_PANE
+      s6:
+        Chance: 50.0
+        Material: RED_STAINED_GLASS_PANE
+      s7:
+        Chance: 50.0
+        Material: ORANGE_STAINED_GLASS_PANE
+      s8:
+        Chance: 50.0
+        Material: YELLOW_STAINED_GLASS_PANE
+      s9:
+        Chance: 50.0
+        Material: LIME_STAINED_GLASS_PANE
+      s10:
+        Chance: 50.0
+        Material: GREEN_STAINED_GLASS_PANE
+      s11:
+        Chance: 50.0
+        Material: CYAN_STAINED_GLASS_PANE
+      s12:
+        Chance: 50.0
+        Material: LIGHT_BLUE_STAINED_GLASS_PANE
+      s13:
+        Chance: 50.0
+        Material: BLUE_STAINED_GLASS_PANE
+      s14:
+        Chance: 50.0
+        Material: PURPLE_STAINED_GLASS_PANE
+      s15:
+        Chance: 50.0
+        Material: MAGENTA_STAINED_GLASS_PANE
+      s16:
+        Chance: 50.0
+        Material: PINK_STAINED_GLASS_PANE

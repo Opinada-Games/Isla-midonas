@@ -1,0 +1,187 @@
+DiscordToMinecraftChatMessageFormat: "[<aqua>Discord</aqua> | %toprolecolor%%toprolealias%<reset>] %name%%reply% » %message%"
+DiscordToMinecraftChatMessageFormatNoRole: "[<aqua>Discord</aqua>] %name%%reply% » %message%"
+DiscordToMinecraftAllRolesSeparator: " | "
+DiscordToMinecraftMessageReplyFormat: " (respondiendo a %name%)"
+
+MinecraftChatToDiscordMessageFormat: "**%primarygroup%** %displayname% » %message%"
+MinecraftChatToDiscordMessageFormatNoPrimaryGroup: "%displayname% » %message%"
+
+ChatChannelHookMessageFormat: "%channelcolor%[%channelnickname%]&r %message%"
+
+DynmapNameFormat: "[Discord | %toprolealias%] %username%"
+DynmapChatFormat: "%message%"
+DynmapDiscordFormat: "[Dynmap] %name% » %message%"
+
+DiscordConsoleChannelTimestampFormat: "EEE HH:mm:ss"
+DiscordConsoleChannelPrefix: "[{date} {level}{name}] "
+DiscordConsoleChannelSuffix: ""
+DiscordConsoleChannelPadding: 0
+
+DiscordChatChannelConsoleCommandNotifyErrorsFormat: "**%user%**, intentaste ejecutar un comando. Desafortunadamente ocurrió un error: %error%"
+
+DiscordChatChannelListCommandFormatOnlinePlayers: "**Jugadores en línea (%playercount%):**"
+DiscordChatChannelListCommandFormatNoOnlinePlayers: "**No hay jugadores en línea**"
+DiscordChatChannelListCommandPlayerFormat: "%displayname%"
+DiscordChatChannelListCommandAllPlayersSeparator: ", "
+
+MinecraftPlayerJoinMessage:
+  Enabled: true
+  Webhook:
+    Enable: false
+    AvatarUrl: "%botavatarurl%"
+    Name: "%botname%"
+  Content: ""
+  Embed:
+    Enabled: true
+    Color: "#00ff00"
+    Author:
+      ImageUrl: "%embedavatarurl%"
+      Name: "%username% se unió al servidor"
+      Url: ""
+    ThumbnailUrl: ""
+    Title:
+      Text: ""
+      Url: ""
+    Description: ""
+    Fields: []
+    ImageUrl: ""
+    Footer:
+      Text: ""
+      IconUrl: ""
+    Timestamp: false
+
+MinecraftPlayerFirstJoinMessage:
+  Enabled: true
+  Webhook:
+    Enable: false
+    AvatarUrl: "%botavatarurl%"
+    Name: "%botname%"
+  Content: ""
+  Embed:
+    Enabled: true
+    Color: "#ffd700"
+    Author:
+      ImageUrl: "%embedavatarurl%"
+      Name: "%username% se unió al servidor por primera vez"
+      Url: ""
+    ThumbnailUrl: ""
+    Title:
+      Text: ""
+      Url: ""
+    Description: ""
+    Fields: []
+    ImageUrl: ""
+    Footer:
+      Text: ""
+      IconUrl: ""
+    Timestamp: false
+
+MinecraftPlayerLeaveMessage:
+  Enabled: true
+  Webhook:
+    Enable: false
+    AvatarUrl: "%botavatarurl%"
+    Name: "%botname%"
+  Content: ""
+  Embed:
+    Enabled: true
+    Color: "#ff0000"
+    Author:
+      ImageUrl: "%embedavatarurl%"
+      Name: "%username% salió del servidor"
+      Url: ""
+    ThumbnailUrl: ""
+    Title:
+      Text: ""
+      Url: ""
+    Description: ""
+    Fields: []
+    ImageUrl: ""
+    Footer:
+      Text: ""
+      IconUrl: ""
+    Timestamp: false
+
+MinecraftPlayerDeathMessage:
+  Enabled: true
+  Webhook:
+    Enable: false
+    AvatarUrl: "%botavatarurl%"
+    Name: "%botname%"
+  Content: ""
+  Embed:
+    Enabled: true
+    Color: "#000000"
+    Author:
+      ImageUrl: "%embedavatarurl%"
+      Name: "%deathmessage%"
+      Url: ""
+    ThumbnailUrl: ""
+    Title:
+      Text: ""
+      Url: ""
+    Description: ""
+    Fields: []
+    ImageUrl: ""
+    Footer:
+      Text: ""
+      IconUrl: ""
+    Timestamp: false
+
+MinecraftPlayerAchievementMessage:
+  Enabled: true
+  Webhook:
+    Enable: false
+    AvatarUrl: "%botavatarurl%"
+    Name: "%botname%"
+  Content: ""
+  Embed:
+    Enabled: true
+    Color: "#ffd700"
+    Author:
+      ImageUrl: "%embedavatarurl%"
+      Name: "%username% ha conseguido el avance %achievement%!"
+      Url: ""
+    ThumbnailUrl: ""
+    Title:
+      Text: ""
+      Url: ""
+    Description: ""
+    Fields: []
+    ImageUrl: ""
+    Footer:
+      Text: ""
+      IconUrl: ""
+    Timestamp: false
+
+ChannelTopicUpdaterChatChannelTopicFormat: "%playercount%/%playermax% jugadores en línea | %totalplayers% jugadores únicos han entrado | Servidor en línea por %uptimemins% minutos | Última actualización: %date%"
+ChannelTopicUpdaterConsoleChannelTopicFormat: "TPS: %tps% | Mem: %usedmemorygb%GB usados/%freememorygb%GB libres/%maxmemorygb%GB máx | %serverversion%"
+ChannelTopicUpdaterChatChannelTopicAtServerShutdownFormat: "El servidor está fuera de línea | %totalplayers% jugadores únicos han entrado"
+ChannelTopicUpdaterConsoleChannelTopicAtServerShutdownFormat: "El servidor está fuera de línea | %serverversion%"
+
+DiscordCommandFormat: '&bÚnete a nosotros en Discord en {INVITE}&b. Para obtener ayuda de comandos, usa "/discord ?"'
+
+NoPermissionMessage: "&cNo tienes permiso para ejecutar este comando."
+UnknownCommandMessage: "&b¡Ese comando no existe!"
+
+DiscordChatChannelServerStartupMessage: ":white_check_mark: **El servidor ha iniciado**"
+DiscordChatChannelServerShutdownMessage: ":octagonal_sign: **El servidor se ha detenido**"
+
+ServerWatchdogMessage: "<t:%timestamp%:R> %guildowner%, el servidor no ha hecho tick en %timeout% segundos :fire::bangbang:"
+
+UnknownCode: "No reconozco ese código, inténtalo de nuevo."
+InvalidCode: "¿Estás seguro de que ése es tu código? Los códigos de enlace son de 4 dígitos."
+DiscordAccountLinked: "Tu cuenta de Discord ha sido vinculada a %name% (%uuid%)"
+DiscordAccountAlreadyLinked: "Ya estás vinculado a %username% (%uuid%)"
+DiscordLinkedAccountRequired: "Intentaste enviar el siguiente mensaje al chat del juego, pero este servidor requiere que tengas tu cuenta de Minecraft vinculada a tu cuenta de Discord. Vínculala en el juego escribiendo `/discord link`.\n```%message%```"
+DiscordLinkedAccountCheckFailed: "No se pudo verificar si tu cuenta está vinculada, por favor inténtalo de nuevo más tarde"
+
+CodeGenerated: "Tu código de enlace es %code%. Mándale un mensaje privado al bot de Discord (%botname%) que contenga sólo este código como mensaje para vincular tus cuentas."
+ClickToCopyCode: "Haz clic para copiar"
+MinecraftAccountLinked: "&bTu UUID ha sido vinculada al usuario de Discord %username% (%id%)"
+MinecraftAccountAlreadyLinked: "&bTu cuenta de Minecraft ya está asociada con una cuenta de Discord. Si tienes permiso, puedes desvincular tu cuenta con /discord unlink."
+LinkedCommandSuccess: "&bTu cuenta de Minecraft está asociada con %name%."
+UnlinkCommandSuccess: "&bTu cuenta de Minecraft ya no está asociada con %name%."
+MinecraftNoLinkedAccount: "&cTu cuenta de Minecraft no está asociada con ninguna cuenta de Discord."
+LinkingError: "&cNo es posible vincular las cuentas debido a un error interno. Contacta al equipo administrativo del servidor."
+MinecraftNobodyFound: '&cNo se encontró a nadie con la ID de Discord/nombre de Discord/nombre de Minecraft/UUID de Minecraft que coincida con "%target%".'

@@ -1,0 +1,7 @@
+Name: Llave Maestra
+Virtual: false
+Item:
+  Material: OMINOUS_TRIAL_KEY
+  Name: '&6Llave Maestra'
+  Lore:
+  - '&7Escoge el cofre sabiamente'

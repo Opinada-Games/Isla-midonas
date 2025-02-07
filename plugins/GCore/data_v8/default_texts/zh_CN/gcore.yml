@@ -1,0 +1,67 @@
+# ===================
+# GCore 语言文件 (zh_CN)
+# 本翻译使用 GCore 版本: 8.45.0
+# 作者: GuillaumeVDN
+# 语言: 中文简体
+# 翻译: Kevin
+# Discord: Krick#9685
+# 如在翻译上有任何疑虑欢迎私讯 Krick#9685
+# 在插件上有任何疑虑请至 https://discord.com/invite/wSm9A8Y 寻求帮助
+# ===================
+# GCore language files (zh_CN)
+# This translation uses GCore version: 8.45.0
+# Author: GuillaumeVDN
+# Language: Chinese
+# Translation: Kevin
+# Discord: Krick#9685
+# If you have any doubts about translation, please send a private message Krick#9685
+# If you have any concerns about the plugin, please go to https://discord.com/invite/wSm9A8Y for help
+# ===================
+
+# -------------------- 插件 --------------------
+
+messagePluginUnknown: |
+  &7插件&7{plugin}&7不存在。
+
+messagePluginReloaded: |
+  &7已重载插件&a{plugin}&7。
+
+messagePluginManipulateError: |
+  &7无法执行对&7{plugin}&7的操作。
+
+messagePluginInternalState: |
+  &7&m            &r &7{plugin} &7&m            &r
+  &7版本 : &a{version}
+  &7生命周期 : &a{lifecycle_reference}
+  &7已注册数据板 : &a{data_boards}
+  &7已注册记录器 : &a{loggers}
+  &7已注册的集成 : &a{integrations}
+  &7已注册的Boss栏 : &a{bossbars}
+  &7已注册的GUI介面 : &a{guis}
+  &7已注册的任务 : &a{tasks}
+  &7已注册的事件监听器 : &a{listeners}
+
+messagePluginList: |
+  &7共有&a{count}&7款插件，已启用&a{active}&7个，未启用&7{inactive}&7个: {plugins}
+
+messageGcoreExportFile: |
+  &7&a{plugins}的数据和配置文件&7已导出到&a{file}&7。请将其分享给插件开发者。
+
+messageGcoreExportCouldnt: |
+  &7无法导出&c{file}&7。
+
+# -------------------- 指令 --------------------
+
+commandDescriptionGcore: GCore的主指令
+commandDescriptionGcorePlugins: 列出以GCore为前置的插件
+commandDescriptionGcoreExport: 导出以GCore为前置的插件数据
+commandDescriptionGcoreItemRead: 将物品写入配置中
+commandDescriptionGcoreItemReadChat: 从聊天室中输入以读取项目
+commandDescriptionGcoreItemReadClick: 从背包中点击以读取项目
+commandDescriptionGcoreItemSetNBTString: 为你手中的物品设置一个NBT标签
+
+messageItemReadNull: |
+  &c该物品无法导出到配置中。请手持一件物品。
+
+messageItemReadExported: |
+  &7该物品已导出至&a{file}&7，文件路径: &a{path}&7。

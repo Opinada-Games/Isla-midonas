@@ -1,0 +1,184 @@
+# -------------------- Custom commands --------------------
+
+descriptionCustomCommandAliases: |
+  &7Les noms de cette commande
+
+descriptionCustomCommandPatterns: |
+  &7Les différents patterns possibles pour cette commande
+
+descriptionCustomCommandPatternPattern: |
+  &7Le pattern pour cette commande
+  &7Voir la documentation pour des explications à ce propos
+
+descriptionCustomCommandPatternDescription: |
+  &7La description de ce pattern, une explication de ce qu'il est supposé faire
+
+descriptionCustomCommandPatternPermission: |
+  &7La permission requise pour utiliser ce pattern
+
+descriptionCustomCommandPatternPermissionErrorMessage: |
+  &7Un message d'erreur de permission
+
+descriptionCustomCommandPatternWorlds: |
+  &7La restriction de mondes pour l'utilisation de cette commande
+
+descriptionCustomCommandPatternCooldown: |
+  &7Le temps à attendre avant de réutiliser cette commande à nouveau
+
+descriptionCustomCommandPatternCurrencyCost: |
+  &7Le prix à payer pour utiliser cette commande
+
+descriptionCustomCommandPatternConditions: |
+  &7Les conditions requises pour l'utilisation de cette commande
+
+descriptionCustomCommandPatternToggleMode: |
+  &7Si activé, ceci fera en sorte qu'une exécution sur deux soit considérée comme l'activation et les autres la désactivation
+  &7Les actions avec &6on_toggle_on &7seront exécutées en activant, et les actions sans seront exécutées en désactivant
+
+descriptionCustomCommandPatternActions: |
+  &7Les actions exécutées en utilisant ce pattern
+
+# -------------------- Actions --------------------
+
+descriptionActionOnToggleOn: |
+  &7Si le pattern qui contient cette action est en mode toggle, ceci décide quand exécuter cette action (en activant ou désactivant)
+
+descriptionActionType: |
+  &7Le type d'action à exécuter
+
+descriptionActionTypeTarget: |
+  &7La cible pour laquelle exécuter cette commande
+  &7Vous pouvez utiliser des placeholders ou &eeveryone &7pour viser tous les joueurs connectés
+
+descriptionActionChangeGamemodeGamemode: |
+  &7Le nouveau mode de jeu
+
+descriptionActionExecuteCommmandsCommands: |
+  &7Les commandes à exécuter
+
+descriptionActionExecuteCommmandsAsPlayer: |
+  &7True si les commandes doivent être exécutées à la place du joueur
+
+descriptionActionGiveItemItem: |
+  &7L'item à donner au joueur
+
+descriptionActionNotifyNotify: |
+  &7La notification à envoyer au joueur
+
+descriptionActionTeleportLocation: |
+  &7L'endroit où téléporter le joueur
+
+descriptionActionWaitDuration: |
+  &7Le temps à attendre pour cette action
+
+# -------------------- Conditions --------------------
+
+descriptionConditionsConditions: |
+  &7Liste de conditions à vérifier
+
+descriptionConditionsMatchAmount: |
+  &7Le nombre minimal de conditions qui doivent être respectées
+  &7Si ceci est plus grand que le nombre de conditions disponibles, ce dernier sera utilisé
+
+descriptionConditionsNoMatchAmount: |
+  &7Le nombre minimal de conditions qui ne doivent pas être respectées
+  &7Si ceci est plus grand que le nombre de conditions disponibles, ce dernier sera utilisé
+
+descriptionConditionsErrorMessage: |
+  &7Message d'erreur à afficher lorsqu'aucune combinaison valable n'a été trouvée
+
+# -------------------- Condition : common --------------------
+
+descriptionConditionType: |
+  &7Le type de condition
+  &7Type of condition
+
+descriptionConditionErrorMessage: |
+  &7Le message d'erreur à envoyer lorsque cette condition n'est pas respecté
+
+descriptionConditionGameTimeStartTicks: |
+  &7Les ticks de départ
+
+descriptionConditionGameTimeEndTicks: |
+  &7Les ticks de fin
+
+descriptionConditionInventoryFreeForItemsItems: |
+  &7Les items pour lesquels le joueur doit avoir assez d'espace dans son inventaire
+
+descriptionConditionItemsItems: |
+  &7Une liste d'items
+
+descriptionConditionGenericLogicLogic: |
+  &7La logique à replacer
+  &7Vous pouvez utiliser des types de comparaisons (=, !=, <, >=, etc), par exemple &6{placeholder} * 4 >= 10 * 20 &7ou &6{placeholder} = my_value
+  &7Vous pouvez combiner plusieurs comparaisons, par exemple &610 <= {placeholder} <= 100
+  &7Vous pouvez utiliser l'opérateur 'in' (|in|), par exemple &6{placeholder} |in| value1 | value2 | value3
+  &7Vous pouvez utiliser l'opérateur 'and' (&&), par exemple &6{placeholder} > 50 && {placeholder} < 100
+  &7Vous pouvez utiliser l'opérateur 'or' (||), par exemple &6{placeholder} <= 50 || {placeholder} >= 100
+  &7Vous pouvez joindre des conditions avec [], par exemple &6[{placeholder} >= 10 || {placeholder}] && [{variable:test2} < 10 || {variable:test2} > 50]
+
+descriptionConditionGenericLogicLogicPlaceholder: |
+  &r
+  &7Placeholders spécifiques à cette condition : {placeholders}
+
+descriptionConditionGenericLogicOnlineGoal: |
+  &7Le nombre de joueurs connectés qui doivent respecter cette logique
+
+descriptionConditionLogicMoneyCurrency: |
+  &7La devise à vérifier
+
+descriptionConditionPermissionPermission: |
+  &7La permission
+
+descriptionConditionPermissionOnlineGoal: |
+  &7Le nombre de joueurs connectés qui doivent avoir cette permission
+
+descriptionConditionPositionPosition: |
+  &7La position
+
+descriptionConditionScoreboardTagTagName: |
+  &7Le nom du tag de scoreboard
+
+descriptionConditionScoreboardTagMustHave: |
+  &7Si le joueur doit avoir le tag, ou pas
+
+descriptionConditionLogicScoreboardValueObjectiveName: |
+  &7Le nom d'objectif de scoreboard
+
+descriptionConditionLogicScoreboardValueScoreName: |
+  &7Le nom de score de scoreboard
+
+descriptionConditionScoreboardValueValue: |
+  &7La valeur à comparer
+
+descriptionConditionScoreboardValueComparison: |
+  &7La comparaison à faire
+
+descriptionConditionDayTimeStart: |
+  &7Temps de début dans la journée
+
+descriptionConditionDayTimeEnd: |
+  &7Temps de fin dans la journée (peut être avant le temps de début pour passer d'un jour à l'autre)
+
+descriptionConditionWeekTimeStart: |
+  &7Temps de début dans la semaine
+
+descriptionConditionWeekTimeEnd: |
+  &7Temps de fin dans la semaine (peut être avant le temps de départ pour passer d'une semaine à l'autre)
+
+descriptionConditionMonthTimeStart: |
+  &7Temps de début dans le mois
+
+descriptionConditionMonthTimeEnd: |
+  &7Temps de fin dans le mois (peut être avant le temps de départ pour passer d'un mois à l'autre)
+
+descriptionConditionYearTimeStart: |
+  &7Temps de début dans l'année
+
+descriptionConditionYearTimeEnd: |
+  &7Temps de fin dans l'année (peut être avant le temps de départ pour passer d'une année à l'autre)
+
+# -------------------- Condition --------------------
+
+descriptionConditionMustTake: |
+  &7Pour prendre la condition (si supporté) après coup

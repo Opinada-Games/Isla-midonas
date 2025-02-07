@@ -1,0 +1,43 @@
+Messages:
+- §eThis is default message 1, Please change this in §cconfig.yml
+- §cThis is default message 2, You can change this in §cconfig.yml
+- §fThis is default message 3, You can change this in §cconfig.yml
+- §bThis is default message 4, You can change this in §cconfig.yml
+- §6This is default message 5, You can change this in §cconfig.yml
+- §7This is default message 6, You can change this in §cconfig.yml
+- §8This is default message 7, You can change this in §cconfig.yml
+- §8This is default message 8, You can change this in §cconfig.yml
+- §8This is default message 9, You can change this in §cconfig.yml
+- §8This is default message 10, You can change this in §cconfig.yml
+timer: 1200
+Random: true
+UseTellRawMessages: true
+TellRawMessages:
+- '[{"text":"\n\nEstas jugando en el §d§l¡Isla Midonas! §8[1.21.4] \n§fLa última oportunidad
+  de ser libre\n\n","hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"§9¡Discord:
+  Isla Midonas!"}]}},"clickEvent":{"action":"open_url","value":"https://discord.com/invite/CxRpv7bzvj"}}]'
+- '[{"text":"\n\n§c§lNACIÓN §fSubscribirte para tener el poder de \ncrear tu §c§lNación§7.\n¡Coordina
+  estados, cobra impuestos y \ndeclara §4Guerras §7o §2Alianzas! \n§9§l[Visita la
+  tienda] (§b/buy§9)\n\n","clickEvent":{"action":"open_url","value":"https://isla-midonas.tebex.io"}}]'
+- '[{"text":"\n\n§b§l¡WIKI! §r§fDentro del servidor de §9Discord§f, busca la sección
+  §5Isla Midonas §8> §9#ayuda §fahí encontrarás la referencia a la Wiki oficial del
+  servidor\n\n","hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"§9¡Discord:
+  Isla Midonas!"}]}},"clickEvent":{"action":"open_url","value":"https://discord.com/invite/CxRpv7bzvj"}}]'
+- '{"text":"\n\nÚnete a hasta 3 trabajos con §b/menu §3-> §6Trabajos §f. Si quieres
+  ver más detalles sobre los §6trabajos§f disponibles\n§b§l[Ver trabajos]\n\n","clickEvent":{"action":"run_command","value":"/jobs
+  browse"}}'
+- '{"text":"\nDespués de varios minutos, podrás reclamar §6§lllaves de cofre. Revisa
+  si no tienes una llave pendiente dando \n§5§l[Ver llaves pendientes (§b/menu §3
+  -> §6Recompensas§5)]\n\n§fUsa las llaves en §c§l/warp Cofres\n","clickEvent":{"action":"run_command","value":"/playtime"}}'
+- '[{"text":"\n\n§b§l¡IMPORTANTE! §r§fUtiliza §b/menu §3-> §9Discord §fpara vincular
+  tu cuenta de Discord con §dIsla Midonas§f. Si aún no estás en el server\n\n","clickEvent":{"action":"open_url","value":"https://discord.com/invite/CxRpv7bzvj"}}]'
+- '{"text":"\n\n§a§lTIENDA §fSi te falta algo para terminar tu receta de crafteo,
+  tal vez alguien lo este vendiendo en §a§l/ah§f,\n sino intenta buscarlo en la tienda
+  usando §a§l/shop\n\n","clickEvent":{"action":"run_command","value":"/shop"}}'
+- '[{"text":"\n\n§d§lOpinada:§f Sábado - 7PM §7(Hora México)§f\nEn el canal de §c§lOpinada_podcast§f
+  en §cYouTube\n\n","hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"§c@Opinada_youtube"}]}},"clickEvent":{"action":"open_url","value":"https://www.youtube.com/@Opinada_podcast"}}]'
+- '{"text":"\n\n§b§lMENU §f¡Abre §b/menu §fpara explorar las funciones útiles del
+  servidor!\n\n","clickEvent":{"action":"run_command","value":"/menu"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"Navega
+  por las opciones disponibles"}]}}}'
+- '{"text":"\n\n§9§lJEFES §fTodos los días hay un jefe diferente en una arena diferente.
+  ¿Ya viste cuál es el §9JEFE §fde hoy en la §6Plaza§f?\n\n"}'

@@ -1,0 +1,109 @@
+# -------------------- Miscellaneous --------------------
+
+messageNoPermission: |
+  &7You don't have the permission to do this.
+messageInvalidPlayer: |
+  &7Player &c{value} &7is invalid (must be online).
+messageInvalidOfflinePlayer: |
+  &7Player &c{value} &7is invalid.
+messageInvalidNumber: |
+  &7Number &c{value} &7is invalid.
+messageInvalidNumberRangeMin: |
+  &7Number &c{value} &7should be at least &c{min}&7.
+messageInvalidNumberRangeMax: |
+  &7Number &c{value} &7should be at most &c{max}&7.
+messageInvalidEnum: |
+  &7Value &c{value} &7is invalid, it should be one of &c{values}&7.
+messageInvalidEnumNoList: |
+  &7Value &c{value} &7is invalid.
+
+messageCC: '&d (cc. of {og})'
+messageSilentCC: '&d (cc. of {og}, silent)'
+
+textCancel: cancel
+
+# -------------------- Command --------------------
+
+commandParameterUsageTarget: player
+commandParameterUsageReset: reset
+commandParameterUsageOperation: operation
+commandParameterUsageAmount: amount
+commandParameterUsageSpecificEditor: editor
+commandParameterUsageDate: date
+commandDescriptionGenericReload: reload the plugin
+commandDescriptionGenericPluginState: information about the plugin internal state
+commandDescriptionGenericMigrate: re-run a migration
+messageCommandNotPlayer: |
+  &7You can't execute this command from console.
+
+messageCommandMissingArgument: |
+  &7Missing argument &c{argument}&7. Add &d? &7after a command for help.
+messageCommandMissingArgumentFound: |
+  &7Missing argument &c{argument} &7(found {found}). Add &d? &7after a command for help.
+messageCommandUnnecessaryArguments: |
+  &7Unnecessary arguments : &c{unnecessary}&7. Add &d? &7after a command for help.
+messageCommandIncompatibleArguments: |
+  &c{argument1} &7can't be used with &c{argument2}&7. Add &d? &7after a command for help.
+messageCommandDependentArguments: |
+  &c{argument1} &7can't be used without &c{argument2}&7. Add &d? &7after a command for help.
+messageCommandUnknown: |
+  &7Couldn't find subcommand &c{subcommand}&7. Add &d? &7after a command for help.
+messageCommandHelpElementPrefix: '&6'
+messageCommandHelpElement: '{usage}&6: &f{description}'
+messageCommandHelpColorArgumentOptional: '&e&o'
+messageCommandHelpColorArgumentRequired: '&e'
+messageCommandHelpPageOutsideBounds: |
+  &7This help menu has only {pages} page{plural}.
+messageCommandHelpHeader: '&6&l{prefix} &6help ({page}/{pages})'
+
+# -------------------- Numbers --------------------
+
+numberMillion: million
+numberBillion: billion
+numberTrillion: trillion
+
+durationFormatS: '{seconds}s'
+durationFormatMS: '{minutes}m{seconds}s'
+durationFormatHMS: '{hours}h{minutes}m{seconds}s'
+durationFormatDHMS: '{days}d{hours}h{minutes}m{seconds}s'
+
+# -------------------- Cost --------------------
+
+messageMustHaveCurrency: |
+  &7You need &c{money} &7for this, but you only have &c{balance}&7.
+messageMustHaveMoreItem: |
+  &7You need &c{item} &7for this, but you only have &c{has_amount}&7.
+messageMustHaveItem: |
+  &7You need &c{item} &7for this.
+messageMustHaveItemNoDetail: |
+  &7You're missing the items for this.
+
+# -------------------- Item --------------------
+
+# Placeholders for this : {amount}, {type}, {durability}, {custom_model_data}, {enchantments}, {name}, {lore}
+
+textDescribeItem: |
+  {amount}x {type}
+  {name}
+  {lore}
+  {enchantments}
+
+textDescribeItemNameIfHas: '{name}'
+textDescribeItemLoreIfHas: '- {lore}'
+textDescribeItemEnchantmentsIfHas: '> {enchantments}'
+textDescribeItemEnchantmentsLine: '{enchant} {level}'
+
+textDescribeItemSingleLine: |  # lines will be separated by commas if not empty
+  {amount}x {type}
+  {name}
+  {enchantments}
+textDescribeItemSingleLineNameIfHas: '{name}'
+textDescribeItemSingleLineLoreIfHas: '{lore}'
+textDescribeItemSingleLineEnchantmentsIfHas: '{enchantments}'
+textDescribeItemSingleLineEnchantmentsLine: '{enchant} {level}'
+textDescribeItemSingleLineSeparator: ', '
+
+# -------------------- Format --------------------
+
+# For date format characters, see https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
+dateTimeFormat: "MMM d yyyy 'at' h:mm a"

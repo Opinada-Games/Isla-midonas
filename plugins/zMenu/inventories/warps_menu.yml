@@ -1,0 +1,94 @@
+# Configuración del Menú de Warps para zMenu
+size: 27
+name: "&8> &6&lMenú de Warps"
+
+items:
+  lobby:
+    slot: 11
+    item:
+      material: GRASS_BLOCK
+      name: "&aLobby"
+      lore:
+        - "&7Teletransportarse al lobby del servidor."
+        - "&eHaz clic para ir."
+    commands:
+      - "warp lobby"
+    closeInventory: true
+
+  survival:
+    slot: 12
+    item:
+      material: OAK_LOG
+      name: "&eSurvival 1.21.4"
+      lore:
+        - "&7Accede al mundo de supervivencia &e1.21.4."
+        - "&eHaz clic para ir."
+    commands:
+      - "warp survival-1_21_4"
+    closeInventory: true
+
+  bosses:
+    slot: 13
+    item:
+      material: ENDER_EYE
+      name: "&eIsla Prohibida"
+      lore:
+        - "&7Todos los días, cada 6 minutos"
+        - "&7hay un jefe diferente"
+        - "&6NOTA: No vayas sí no estas preparado"
+        - "&eHaz clic para ir."
+    commands:
+      - "warp isla-prohibida"
+    closeInventory: true
+
+  mercado:
+    slot: 14
+    item:
+      material: EMERALD
+      name: "&2Plaza"
+      lore:
+        - "&7Explora las tablas de clasificación del servidor."
+        - "&eHaz clic para ir."
+    commands:
+      - "warp plaza"
+    closeInventory: true
+
+  nether:
+    slot: 15
+    item:
+      material: NETHERRACK
+      name: "&cNether"
+      lore:
+        - "&7Teletransportarse al Nether."
+        - "&eHaz clic para ir."
+    commands:
+      - "warp nether"
+    closeInventory: true
+
+  recompensas:
+    slot: 16
+    item:
+      material: CHEST
+      name: "&6Cofres"
+      lore:
+        - "&7Accede al área de los cofres con recompensas."
+        - "&eHaz clic para ir."
+    commands:
+      - "warp cofres"
+    closeInventory: true
+
+  volver:
+    slot: 22
+    item:
+      material: ARROW
+      name: "&cVolver al Menú Principal"
+      lore:
+        - "&7Regresa al menú principal."
+        - "&eHaz clic para volver."
+    commands:
+      - "zm open main_inventory"
+    closeInventory: true
+
+fillItem:
+  material: GRAY_STAINED_GLASS_PANE
+  name: " "

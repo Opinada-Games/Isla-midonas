@@ -1,0 +1,91 @@
+pages:
+  page1:
+    items:
+      "2":
+        material: FEATHER
+        displayname: "&f&lFly"
+        buy: 12500
+        sell: -1
+        lore:
+          - "&1&lNOTE: &r&9This command"
+          - "&9can only be run when there is a plugin"
+          - "&9installed that has a &b/fly &9command!"
+          - "&a&lExample plugin: &r&aEssentialsX"
+        buy-commands:
+          - /fly %player% enable
+      # "3":
+      #   material: COAL_BLOCK
+      #   displayname: "&0&lBlack screen?"
+      #   buy: 0.2
+      #   sell: -1
+      #   buy-commands:
+      #     - minecraft:effect give %player% blindness 10
+      #     - /minecraft:playsound minecraft:entity.ender_dragon.ambient ambient %player%
+      # "4":
+      #   material: SKELETON_SPAWN_EGG
+      #   displayname: "&4&l!!&r&2DO NOT BUY&4!!"
+      #   buy: -1
+      #   sell: -1
+      #   lore:
+      #     - "&1&lRequirements for this command:"
+      #     - "&a-------------------------------"
+      #     - "&b1. &9Diamond Sword"
+      #     - "&b2. &9Full Netherite Armor"
+      #     - "&b3. &9A bow with alot of arrows"
+      #     - "&b4. &9Good luck"
+      #     - "&4&lNOTE: &r&cDo not buy this item"
+      #     - "&con a public server or it will destroy it."
+      #   buy-commands:
+      #     - execute at %player% run summon minecraft:skeleton ~ ~1 ~ {Health:50,Attributes:[{Name:"generic.maxHealth",Base:50},{Name:"generic.knockbackResistance",Base:1f},{Name:"generic.movementSpeed",Base:0.9f}],HandItems:[{id:"minecraft:bow",tag:{display:{Name:{"text":"Killer3000"}},Enchantments:[{id:power,lvl:5},{id:punch,lvl:2},{id:flame,lvl:1},{id:infinity,lvl:1},{id:multishot,lvl:1}]},Count:1},{id:"minecraft:diamond_sword",tag:{display:{Name:{"text":"Cat"}},Enchantments:[{id:sharpness,lvl:5},{id:smite,lvl:5},{id:bane_of_arthropods,lvl:5},{id:knockback,lvl:2},{id:fire_aspect,lvl:2},{id:looting,lvl:3},{id:sweeping,lvl:3}]},Count:1}],HandDropChances:[2F,2F],ArmorItems:[{tag:{display:{Name:{"text":"You
+      #       cant kill me!!"}},Enchantments:[{id:protection,lvl:4},{id:fire_protection,lvl:4},{id:feather_falling,lvl:4},{id:blast_protection,lvl:4},{id:projectile_protection,lvl:4},{id:thorns,lvl:3},{id:depth_strider,lvl:3},{id:frost_walker,lvl:2},{id:unbreaking,lvl:3},{id:mending,lvl:1},{id:soul_speed,lvl:3}]},Count:1,id:"minecraft:diamond_boots"},{tag:{display:{Name:{"text":"You
+      #       cant kill me!!"}},Enchantments:[{id:protection,lvl:4},{id:fire_protection,lvl:4},{id:blast_protection,lvl:4},{id:projectile_protection,lvl:4},{id:thorns,lvl:3},{id:unbreaking,lvl:3},{id:mending,lvl:1}]},Count:1,id:"minecraft:diamond_leggings"},{tag:{display:{Name:{"text":"You
+      #       cant kill me!!"}},Enchantments:[{id:protection,lvl:4},{id:fire_protection,lvl:4},{id:blast_protection,lvl:4},{id:projectile_protection,lvl:4},{id:thorns,lvl:3},{id:unbreaking,lvl:3},{id:mending,lvl:1}]},Count:1,id:"minecraft:diamond_chestplate"},{id:"minecraft:diamond_helmet",Count:1,tag:{display:{Name:{"text":"You
+      #       cant kill me!!"}},Enchantments:[{id:protection,lvl:4},{id:fire_protection,lvl:4},{id:blast_protection,lvl:4},{id:projectile_protection,lvl:4},{id:respiration,lvl:3},{id:aqua_affinity,lvl:1},{id:thorns,lvl:3},{id:unbreaking,lvl:3},{id:mending,lvl:1}]}}],ArmorDropChances:[2F,2F,2F,2F],ActiveEffects:[{Id:1,Amplifier:0,Duration:2147483647},{Id:8,Amplifier:0,Duration:2147483647}]}
+      # "5":
+      #   material: CREEPER_SPAWN_EGG
+      #   displayname: "&4&lBoom"
+      #   buy: 75000
+      #   sell: 1000
+      #   lore:
+      #     - "&cGet blown up by a creeper"
+      #     - "&cthat rides a bat."
+      #     - "&aBut if you manage to kill the creeper,"
+      #     - "&aa nice surprise is waiting."
+      #   buy-commands:
+      #     - execute at %player% run summon minecraft:bat ~ ~1 ~ {Passengers:[{id:"minecraft:creeper",powered:1,CanPickUpLoot:0b,ExplosionRadius:6,Fuse:60,HandDropChances:[2F,2F],HandItems:[{id:"minecraft:netherite_axe",tag:{display:{Name:{"text":"Killer4000"}},Enchantments:[{id:sharpness,lvl:5},{id:knockback,lvl:2},{id:fire_aspect,lvl:2},{id:looting,lvl:3}]},Count:1}]}]}
+      "6":
+        material: EXPERIENCE_BOTTLE
+        displayname: "&e&lGet 50 levels in minecraft."
+        buy: 8000
+        sell: -1
+        lore:
+          - "&cDo you want 50 levels?"
+        buy-commands:
+          - minecraft:experience add %player% 50 levels
+      "7":
+        material: FLOW_BANNER_PATTERN
+        displayname: "&bPermiso de construcción"
+        buy: 20000
+        sell: -1
+        lore:
+          - "&7Con este permiso, podrás reclamar hasta 40 chunks"
+          - "&8Usa &b/menu &7-> &2Territorios"
+          - "&8O tambien, usa: &b/lands claim &8sobre el terreno que quieras reclamar"
+          - ""
+        buy-commands:
+          - lp user %player_name% permission set lands.chunks.40 true
+# "8":
+#   material: CARVED_PUMPKIN
+#   displayname: "#C90000&lS#C92800&lp#C93C00&lo#C95000&lo#C95E00&lk#C96B00&ly"
+#   buy: 500
+#   sell: 250
+#   hidePricingLore: true
+#   lore:
+#     - "#008E21Buy this item for %buyPrice% and receive 5 bones."
+#     - "#A11B00This item can be sold but no profit will be made."
+#   buy-commands:
+#     - /minecraft:give %player% bone 5
+#     - /execute at %player% run playsound minecraft:entity.skeleton.converted_to_stray
+#       ambient %player%
+#   sell-commands:
+#     - eco take %player% 250

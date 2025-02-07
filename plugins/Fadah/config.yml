@@ -1,0 +1,110 @@
+# #########################################
+# #                  Fadah                #
+# #    Finally a Decent Auction House     #
+# #########################################
+
+# Toggle with /ah toggle
+enabled: true
+default-max-listings: 3
+log-to-file: true
+verbose: true
+# Enable this if you are having de-sync issues with multi-server.
+strict-checks: false
+max-listing-length:
+  amount: 10
+  unit: DAYS
+listing-price:
+  min: 100.0
+  max: 1.0E9
+formatting:
+  numbers: '#,###.00'
+  date: dd/MM/yyyy HH:mm
+  time:
+    seconds: '%ds'
+    minutes: '%dm, %ds'
+    hours: '%dh, %dm, %ds'
+    days: '%dd, %dh, %dm, %ds'
+    months: '%dm, %dd, %dh, %dm, %ds'
+    years: '%dy, %dm, %dd, %dh, %dm, %ds'
+# What the search function should check.
+search:
+  name: true
+  lore: true
+  type: true
+  # Does not include enchants on items.
+  enchanted-books: true
+listing-adverts:
+  # Whether or not a listing advert should be made by default.
+  enabled-by-default: false
+  # How much it costs to advertise the listing by default.
+  # Overridden by the `fadah.advert-price.<amount>` permission.
+  default-price: 500.0
+blacklists:
+- '%material% == "BEDROCK"'
+- '%material% == "NETHER_STAR" && %name%.includes("Menu")'
+hooks:
+  eco-items: false
+  discord:
+    enabled: false
+    webhook-url: INSERT WEBHOOK URL HERE
+    # If this is true the webhook will only send a message when the listing has been advertised.
+    only-send-on-advert: false
+    # Allowed: EMBED, PLAIN_TEXT
+    message-mode: EMBED
+    embed:
+      # Allowed: SIDE, BOTTOM
+      image-location: SIDE
+      title: Nuevo Listado por %player%!
+      content: '%player% acaba de listar %item% por $%price% en la casa de subastas!'
+      footer: Impulsado por Finalmente una Casa de Subastas Decente
+    plain-text: '%player% acaba de listar %item% por $%price% en la casa de subastas!'
+  influxdb:
+    enabled: false
+    uri: http://localhost:8086
+    token: MyToken
+    org: MyOrg
+    bucket: Fadah
+currency:
+  default-currency: vault
+  vault:
+    name: Money
+  coins-engine:
+    name: Coins Engine
+    # Which currencies to use from coins engine.
+    currencies:
+    - economy: mob_coins
+      display-name: Mob Coins
+    - economy: coins
+      display-name: Coins
+  redis-economy:
+    name: Redis Economy
+    # Which currencies to use from redis economy, if your using the default currency use the vault currency instead.
+    currencies:
+    - economy: dollar
+      display-name: Dollar
+    - economy: euro
+      display-name: Euro
+database:
+  # Allowed: SQLITE, MYSQL, MARIADB, MONGO
+  type: SQLITE
+  uri: jdbc:mysql://127.0.0.1:3306/Fadah
+  username: username
+  password: password
+  database: Fadah
+  use-ssl: false
+  advanced:
+    pool-size: 10
+    min-idle: 10
+    max-lifetime: 1800000
+    keepalive-time: 0
+    connection-timeout: 5000
+# A message broker is only required for x-server environments.
+# This is not compatible with SQLITE database
+broker:
+  enabled: false
+  # Allowed: REDIS
+  type: REDIS
+  host: localhost
+  port: 6379
+  password: myAwesomePassword
+  channel: fadah.cache

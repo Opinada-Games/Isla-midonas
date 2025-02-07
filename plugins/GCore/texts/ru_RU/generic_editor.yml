@@ -1,0 +1,599 @@
+# -------------------- Element --------------------
+
+guiSelectTitle: Select
+guiSearchName: |
+  &dПоиск значения (в чате)
+
+elementTypeMandatory: |
+  &cЭто необходимо {type}
+
+elementTypeOptional: |
+  &aЭто необязательно {type}
+
+elementCurrentValueNone: |
+  &9Текущее значение :
+  &7отсутствует
+
+elementCurrentValueNoneDefault: |
+  &9Текущее значение (стандартное) :
+  &7отсутствует
+
+elementCurrentValueSingle: |
+  &9Текущее значение :
+  &b{value}
+
+elementCurrentValueSingleDefault: |
+  &9Текущее значение (стандартное)  :
+  &7{value}
+
+elementCurrentValueList: |
+  &9Текущее значение :
+  {value}
+
+elementCurrentValueListDefault: |
+  &9Текущее значение (стандартное) :
+  {value}
+
+elementCurrentValueListLine: |
+  &9- &b{line}
+
+elementDescription: |
+  &9Описание :
+  &7{description}
+
+elementElementCountSingle: |
+  &b1 Элемент
+
+elementElementCountPlural: |
+  &b{count} Элементов
+
+elementListElement: |
+  &b{element}
+
+# -------------------- Controls --------------------
+
+controlEdit: |
+  &dЛевый клик, чтобы редактировать
+
+controlClear: |
+  &dКонтрол(ctr) + дроп(q) чтобы очистить значение
+
+controlDelete: |
+  &dКонтрол(ctr) + дроп(q) чтобы удалить
+
+controlToggle: |
+  &dПравый клик чтобы быстро переключить
+
+controlSelect: |
+  &dПравый клик чтобы быстро выбрать
+
+controlImport: |
+  &dШифт + Правый клик чтобы быстро импортировать
+
+controlLinearSelectType: |
+  &dШифт + Левый клик чтобы быстро выбрать
+
+controlLinearEditParameters: |
+  &dПравый клик чтобы редактировать параметры
+
+controlListInsert: |
+  &dШифт + Правый клик чтобы вставить элемент здесь
+
+controlListSwap: |
+  &dНам(Number key) чтобы поменять с другим элементом
+
+controlAddElementName: |
+  &6Добавить элемент
+
+controlAddGlobalElementName: |
+  &6Добавить глобальный элемент
+
+controlAddElementWithQuick: |
+  &dЛевый клик чтобы быстро добавить элемент
+  &dПравый клик чтобы добавить элемент с конкретным айди(id)
+
+controlAddElementWithDefault: |
+  &dЛевый клик чтобы быстро добавить элемент с конкретным айди(id)
+  &dПравый клик чтобы добавить стандартный(дефолтный) элемент
+
+controlTextSetRandom: |
+  &6Пометить как рандомный
+
+# -------------------- Item --------------------
+
+descriptionItemType: |
+  &7Тип предмета
+
+descriptionItemDurability: |
+  &7Долговечность предмета
+
+descriptionItemAmount: |
+  &7Количество предметов
+
+descriptionItemUnbreakable: |
+  &7Тег 'неломаемый' для элемента
+
+descriptionItemCustomModelData: |
+  &7Custom model data для предмета
+
+descriptionItemEnchantments: |
+  &7Зачарования предмета
+
+descriptionItemFlags: |
+  &7Флаги предмета
+
+descriptionItemName: |
+  &7Имя предмета
+
+descriptionItemLore: |
+  &7Описание предмета или лор
+
+descriptionItemNbt: |
+  &7NBT теги
+  &7TОни не могут быть редактированы в игре, но будут сохранены, если ты импортируешь предмет.
+
+descriptionItemBannerBaseColor: |
+  &7Базовый цвет для баннера
+
+descriptionItemBannerPatterns: |
+  &7Паттерны баннера или рисунки
+
+descriptionItemBookAuthor: |
+  &7Автор книги
+
+descriptionItemBookTitle: |
+  &7Заголовок книги
+
+descriptionItemBookGeneration: |
+  &7Генерация книги
+
+descriptionItemBookPages: |
+  &7Контент книги
+
+descriptionItemCrossbowChargedProjectiles: |
+  &7Снаряды уже заряжены в арбалете
+
+descriptionItemStoredEnchantments: |
+  &7Чарования этого предмета
+
+descriptionItemFireworkEffect: |
+  &7Эффект фейерверка этого предмета
+
+descriptionItemFireworkEffects: |
+  &7Эффекты фейерверка этого предмета
+
+descriptionItemKnowledgeBookRecipes: |
+  &7Рецепты, хранящиеся в этой книге знаний
+
+descriptionItemLeatherArmorColor: |
+  &7Цвет этой брони
+
+descriptionItemPotionType: |
+  &7Тип этого зелья
+
+descriptionItemPotionExtra: |
+  &7Чтобы сделать это зелье расширенным или улучшенным
+
+descriptionItemPotionColor: |
+  &7Цвет этого зелья
+
+descriptionItemPotionCustomEffects: |
+  &7Кастомные эффекты, примененные к этому зелью
+
+descriptionItemSkullId: |
+  &7Владелец этой головы (UUID)
+
+descriptionItemSkullName: |
+  &7Владелец этой головы (имя)
+
+descriptionItemSkullData: |
+  &7Дата(data) Скина
+
+descriptionItemSkullSignature: |
+  &7Сигнатура скина
+
+descriptionItemSpawnEggType: |
+  &7Тип созданной сущности
+
+descriptionItemSuspiciousStewCustomEffects: |
+  &7Кастомные эффекты тушеного рагу(предмет майна)
+
+descriptionItemTropicalFishBodyColor: |
+  &7Цвет тела рыбы
+
+descriptionItemTropicalFishPatternColor: |
+  &7Паттерн цвета рыбы
+
+descriptionItemTropicalFishPattern: |
+  &7Паттерн этой рыбы
+
+# -------------------- Item condition --------------------
+
+descriptionItemMatchItem: |
+  &7Необходимый предмет
+
+descriptionItemMatchGoal: |
+  &7Количество этого предмета, которое потребуется
+
+descriptionItemMatchCheck: |
+  &7Проверка для выполнения
+
+descriptionItemsNeededItems: |
+  &7Предметы, которые должен иметь игрок
+
+descriptionItemsNeededInHand: |
+  &7Требовать от игрока иметь в руке один из предметов
+  &7Если этот параметр включен, параметр количества будет проигнорирован.
+
+descriptionItemsNeededInHandSlot: |
+  &7Требовать от игрока иметь в руке один из предметов в определенном слоте.
+  &7Это будет проигнорировано если &6in_hand &7не включен
+
+descriptionItemsNeededCount: |
+  &7Количество предметов из списка предметов, которое должен иметь игрок.
+  &7Если это 0, у игрока не должно быть ни одного из перечисленных предметов
+
+descriptionItemsNeededTake: |
+  &7Чтобы впоследствии удалить подходящие предметы из инвентаря игрока
+  &7Не будет никакого эффекта если &6count &7 = 0
+
+descriptionItemsNeededErrorMessage: |
+  &7Сообщение отправляется, если у игрока нет необходимых предметов
+
+# -------------------- GUI --------------------
+
+descriptionGuiName: |
+  &7Имя GUI
+
+descriptionGuiType: |
+  &7Тип GUI
+
+descriptionGuiContents: |
+  &7Контент GUI
+
+descriptionGuiItemType: |
+  &7Тип предмета
+
+descriptionGuiItemIcon: |
+  &7Значок для отображения (если выбранный тип не генерирует его автоматически)
+
+descriptionGuiItemLocations: |
+  &7Места(Локации) для этого предмета
+  &7Каждый элемент должен быть отформатирован как &eстраница,слот &7или просто &eслот &7(Будет взята первая доступная страница)
+  &7Если этот параметр пуст, будет занята первая доступная страница и слот.
+  &7Если этот элемент является постоянным, номера страниц не нужны и будут проигнорированы.
+
+descriptionGuiItemPersistent: |
+  &7Чтобы сделать этот элемент постоянным (один и тот же слот для каждой страницы, если несколько страниц)
+
+descriptionGuiItemClickSound: |
+  &7Чтобы воспроизвести звук, когда игрок кликает по этому предмету
+
+descriptionGuiItemOverrideClicks: |
+  &7Чтобы указать типы кликов, которые будут иметь отличительные эффекты от исходного типа объекта
+
+descriptionGuiItemDynamicBorderLinearOnCount: |
+  &7Количество предметов, которое должно быть активно в одно и то же время.
+
+descriptionGuiItemDynamicBorderLinearIconOn: |
+  &7Иконка для активных предметов.
+
+descriptionGuiItemDynamicBorderLinearIconOff: |
+  &7Иконка для неактивных предметов.
+
+# -------------------- Position --------------------
+
+descriptionPositionType: |
+  &7Тип позиции(локации)
+
+descriptionPositionTypeClosestEntityTypes: |
+  &7Типы сущностей(entity), которые разрешены
+  &7Оставьте пустым,чтобы разрешить любой тип
+
+descriptionPositionTypeClosestEntityNames: |
+  &7Имена сущностей, которые разрешены
+  &7Оставьте пустым, чтобы разрешить любое имя (или без имени)
+
+descriptionPositionTypeClosestEntityColors: |
+  &7Цвета сущностей, которые разрешены (для цветных сущностей)
+  &7Оставь пустым, чтобы разрешить любой цвет
+
+descriptionPositionTypeCitizensNPCRelative: |
+  &7НПС к которому относится 
+
+descriptionPositionTypeCitizensNPCRelativeNames: |
+  &7НПС к которому относится , по именам
+  &7Используйте это только если несколько NPCs имеют одинаковое имя и вы хотите использовать ближайшего с этим именем
+
+descriptionPositionTypeClosestMythicMobMobs: |
+  &7MythicMobs мобы, которые разрешены
+  &7Оставьте пустым, чтобы разрешить всех мобов
+
+descriptionPositionTypeWorld: |
+  &7Мир
+
+descriptionPositionTypeBiomes: |
+  &7Разрешенные биомы
+
+descriptionPositionTypeSingleLocation: |
+  &7Единственная позиция(локация)
+
+descriptionPositionTypeRelativeSingleLocation: |
+  &7Относительная, единственная позиция
+
+descriptionPositionTypePointTolerance: |
+  &7Допуск для применения
+
+descriptionPositionTypeBound1: |
+  &7Первая граница позиция
+
+descriptionPositionTypeBound2: |
+  &7Вторая граница позиция
+
+descriptionPositionTypeRelativeBound1: |
+  &7Первая относительная граница местоположения
+
+descriptionPositionTypeRelativeBound2: |
+  &7Вторая относительная граница местоположения
+
+descriptionPositionTypeWorldguardRegionWorld: |
+  &7TМир содержит регион
+
+descriptionPositionTypeWorldguardRegionRegion: |
+  &7WorldGuard регион ID
+
+descriptionPositionTypeSphereCenter: |
+  &7Центр сферы
+
+descriptionPositionTypeSphereRadius: |
+  &7Радиус сферы
+
+descriptionPositionTypeCylinderCenter: |
+  &7Центр цилиндра (игнорирую Y-координату)
+
+descriptionPositionTypeCylinderRadius: |
+  &7TРадиус цилиндра
+
+# -------------------- Relative location --------------------
+
+descriptionRelativeLocationHorizontalAngle: |
+  &7Горизонтальный угол
+
+descriptionRelativeLocationVerticalOffset: |
+  &7Вертикальный сдвиг
+
+descriptionRelativeLocationDistance: |
+  &7Расстояние от базовой позиции
+
+# -------------------- World restriction --------------------
+
+descriptionWorldRestrictionWhitelist: |
+  &7Чтобы сделать фиксированный список разрешенных миров
+
+descriptionWorldRestrictionBlacklist: |
+  &7Список миров, которые будут всегда запрещены
+
+# -------------------- Command restriction --------------------
+
+descriptionCommandRestrictionWhitelist: |
+  &7Чтобы сделать фиксированный список разрешенных команд
+
+descriptionCommandRestrictionBlacklist: |
+  &7Список команд, которые будут всегда запрещены
+
+# -------------------- Dynmap marker --------------------
+
+descriptionDynmapMarkerLocation: |
+  &7Позиция маркера
+
+descriptionDynmapMarkerText: |
+  &7Текст маркера
+
+# -------------------- Potion effect --------------------
+
+descriptionPotionEffectType: |
+  &7Тип эффекта
+
+descriptionPotionEffectDuration: |
+  &7Длительность эффекта
+
+descriptionPotionEffectAmplifier: |
+  &7Усилитель эффекта
+
+descriptionPotionEffectAmbient: |
+  &7Установить окружение(ambient) эффекта
+
+descriptionPotionEffectParticles: |
+  &7Установить партиклы
+
+descriptionPotionEffectIcon: |
+  &7Установить иконку
+
+# -------------------- Firework effect --------------------
+
+descriptionFireworkEffectType: |
+  &7Тип этого эффекта
+
+descriptionFireworkEffectColors: |
+  &7Цвета (красный,зеленый,синий) этого эффекта
+
+descriptionFireworkEffectFadeColors: |
+  &7затухающие цвета (красный,зеленый,синий) этого эффекта
+
+descriptionFireworkEffectFlicker: |
+  &7Сделать эффект мерцающим
+
+descriptionFireworkEffectTrail: |
+  &7Чтобы эффект оставлял след позади
+
+# -------------------- Time --------------------
+
+descriptionElementTimeMonth: |
+  &7Месяц
+
+descriptionElementTimeDayOfMonth: |
+  &7День месяца
+
+descriptionElementTimeDayOfWeek: |
+  &7День недели
+
+descriptionElementTimeHour: |
+  &7Час
+
+descriptionElementTimeMinute: |
+  &7Минута
+
+# -------------------- Time limit --------------------
+
+descriptionTimeLimitDuration: |
+  &7Предел времени
+
+descriptionTimeLimitReminder: |
+  &7Чтобы отправить напоминание с оставшимся временем
+
+# -------------------- Duration --------------------
+
+descriptionDurationTime: |
+  &7Количество времени
+
+descriptionDurationUnit: |
+  &7Единица времени для измерения суммы
+
+# -------------------- Comparison --------------------
+
+descriptionComparisonType: |
+  &7Тип сравнения
+
+# -------------------- Notify --------------------
+
+descriptionNotifyMessage: |
+  &7Чтобы отправить сообщение
+descriptionNotifyActionbar: |
+  &7Чтобы отправить в actionbar
+
+descriptionNotifyActionbarDuration: |
+  &7actionbar длительность
+
+descriptionNotifyBossbar: |
+  &7Чтобы отправить в bossbar
+
+descriptionNotifyBossbarColor: |
+  &7Цвет bossbar (если применимо)
+
+descriptionNotifyBossbarStyle: |
+  &7Стиль bossbar (если применимо)
+
+descriptionNotifyBossbarFlags: |
+  &7Флаги bossbar (если применимо)
+
+descriptionNotifyBossbarDuration: |
+  &7Длительность bossbar
+
+descriptionNotifyTitle: |
+  &7Чтобы отправить заголовок
+
+descriptionNotifyTitleSubtitle: |
+  &7Чтобы отправить подзаголовок
+
+descriptionNotifyTitleFadeIn: |
+  &7Время появления заголовка (в тиках)
+
+descriptionNotifyTitleDuration: |
+  &7Время отображения заголовка (в тиках)
+
+descriptionNotifyTitleFadeOut: |
+  &7Время исчезания заголовка (в тиках)
+
+descriptionNotifySound: |
+  &7Чтобы проиграть звук
+
+descriptionNotifySoundVolume: |
+  &7Громкость звука
+
+descriptionNotifySoundPitch: |
+  &7Pitch звука
+
+# -------------------- Time frame --------------------
+
+descriptionTimeFrameType: |
+  &7Тип временного кадра
+
+descriptionTimeFrameInDayStart: |
+  &7Время начала в днях
+
+descriptionTimeFrameInDayEnd: |
+  &7Время конца в днях (Может быть раньше времени старта, чтобы пройтись по дням)
+
+descriptionTimeFrameInWeekStart: |
+  &7Время начала в неделях
+
+descriptionTimeFrameInWeekEnd: |
+  &7Время конца в неделях (Может быть раньше времени старта, чтобы пройтись по неделям)
+
+descriptionTimeFrameInMonthStart: |
+  &7Время начала в месяцах
+
+descriptionTimeFrameInMonthEnd: |
+  &7Время конца в месяцах (Может быть раньше времени старта, чтобы пройтись по месяцам)
+
+descriptionTimeFrameInYearStart: |
+  &7Время начала в годах
+
+descriptionTimeFrameInYearEnd: |
+  &7Время конца в годах Может быть раньше времени старта, чтобы пройтись по годам)
+
+descriptionTimeFrameLimitedStart: |
+  &7Время начала
+
+descriptionTimeFrameLimitedEnd: |
+  &7Время конца
+
+# -------------------- Messages --------------------
+
+messageElementBasicEdit: |
+  &7Напиши новое значение в чат, или &c{cancel} &7чтобы отменить.
+
+messageElementBasicEditSuggestCurrent: |
+  &7Напиши новое значение в чат, или &c{cancel} &7чтобы отменить. Нажми на это сообщение, чтобы взять текущее значение.
+
+messageElementBasicEditSearch: |
+  &7Напиши часть значения в чат, или &c{cancel} &7чтобы отменить. Если одно значение совпадает с введенным вами в чате, оно будет выбрано.
+
+messageElementBasicEditSearchNoMatch: |
+  &7Не найдено совпадения для &c{value}&7.
+
+messageElementBasicEditSearchTooManyMatches: |
+  &7Слишком много совпадений было найдено для &c{value}&7. Попробуйте ввести более точное значение.
+
+messageElementBasicEditSearchMatch: |
+  &7Найдено выбранное значение &a{value}&7.
+
+messageElementBasicListLineEdit: |
+  &7Введите новое значение в чат, или &c{cancel} &7чтобы отменить. Кликните по этому сообщению, чтобы получить текущее значение.
+
+messageElementBasicListSwap: |
+  &7нажмите на number key другое значение, чтобы поменять их, или любой другой клик для отмены.
+
+messageElementBasicListSwapped: |
+  &7Значения поменялись местами.
+
+messageElementBasicImportLocation: |
+  &7Присядь чтобы импортировать новое значение, или введи &c{cancel} &7в чат для отмены.
+
+messageElementBasicImportNPC: |
+  &7Провзаимодействуй с новым NPC чтобы импортировать, или введи &c{cancel} &7в чат для отмены.
+
+messageElementContainerImportItem: |
+  &7Выкинь новый предмет, чтобы импортировать, или введи &c{cancel} &7в чат для отмены.
+
+messageElementCreateEnterId: |
+  &7Введи новое значение ID в чате, или &c{cancel} &7чтобы отменить.
+
+messageElementCreateInvalidId: |
+  &7ID &c{value} &7не верен : только буквы, цифры или &c_ &7разрешены.
+
+messageElementCreateAlreadyExists: |
+  &7Элемент &c{value} &7уже существует.
+
+messageCantImportValue: |
+  &cЭто значение не может быть использовано : {error}

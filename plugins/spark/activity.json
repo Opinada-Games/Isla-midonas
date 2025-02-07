@@ -1,0 +1,15 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "AdrianLegaspi",
+      "uniqueId": "68fb05f0-7f44-3c93-bec8-942fdb5cd748"
+    },
+    "time": 1737405754406,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/ENuIjLaE0q"
+    }
+  }
+]

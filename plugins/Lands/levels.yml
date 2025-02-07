@@ -1,0 +1,468 @@
+# En este archivo puedes editar/agregar niveles predeterminados de terreno y nación.
+# Ten en cuenta que cada sección de configuración (sección de nivel) y nombre de nivel deben ser únicos.
+# Debes insertar un formato YAML válido. Para verificar tu formato, puedes pegar el contenido de este archivo aquí: https://yaml-online-parser.appspot.com
+
+# Niveles de terreno y nación predeterminados. También puedes agregar tus propios niveles.
+# El orden de los niveles es ascendente (nivel más bajo -> nivel más alto).
+# Este archivo no se puede recargar mediante /lands reload.
+
+general:
+  # Si está habilitado, los terrenos y naciones no bajarán de nivel si ya no cumplen con los requisitos de su nivel actual.
+  keep-level: false
+
+land:
+  # ¿Habilitar niveles de terreno?
+  enabled: true
+  # Aquí puedes editar niveles existentes o agregar nuevos.
+  levels:
+    1:
+      # Asigna el nombre del nivel.
+      title: "Asentamiento"
+      # Estos valores solo están activos si el terreno no es miembro de ninguna nación.
+      # Los atributos de un nivel se aplicarán además de cualquier valor actual del terreno o la nación.
+      attributes:
+        # El atributo chunks agregará o quitará (= valor negativo) chunks al terreno. Esto significa que el terreno puede reclamar más (o menos) chunks en /claim.
+        chunks:
+          description: "&7{value} reclamos"
+          value: 0
+        # El atributo upkeep elevará o reducirá (= valor negativo) sus costos de mantenimiento (upkeep) en un valor dado.
+        # Este atributo no está activo si el terreno es parte de una nación.
+        upkeep:
+          description: "&7{value}% costo de mantenimiento"
+          # El aumento o la disminución está en porcentaje. Configurar este valor en 5 incrementará el mantenimiento en un 5% en total (no por chunk).
+          value: 0
+    2:
+      title: "Aldea"
+      requirements:
+        # Miembros requeridos para obtener este nivel.
+        members:
+          required: 2
+          title: "Invita en {req} jugadores"
+          description:
+            - "&7Invita en {req} jugadores en este terreno."
+            - "&7Comando: &e/lands trust"
+        # Chunks requeridos para obtener este nivel.
+        chunks:
+          required: 0
+          title: "Reclama {req} Chunks"
+          description:
+            - "&7Reclama {req} chunks para este terreno."
+            - "&7Comando: &e/claim"
+        # Saldo bancario requerido para obtener este nivel asignado (/lands balance).
+        balance:
+          required: 7500
+          title: "Saldo de ${req}"
+          description:
+            - "&7Ten ${req} depositados en el banco de este terreno."
+            - "&7Comando: &e/lands deposit"
+        # Plugin: https://www.spigotmc.org/resources/67627
+        betterfarming:
+          farms:
+            required: 1
+            title: "{req} Granja Mejorable"
+            description:
+              - "&7Ten {req} granja mejorable en tu terreno."
+              - "&7Comando: &e/farm get"
+        # Plugin: https://www.spigotmc.org/resources/69201
+        upgradeablehoppers:
+          hoppers:
+            required: 5
+            title: "{req} Tolvas Mejorables"
+            description:
+              - "&7Ten {req} tolvas mejorables en tu terreno."
+              - "&7Comando: &e/hopper get"
+        # Plugin: https://www.spigotmc.org/resources/77717
+        upgradeablespawners:
+          spawners:
+            required: 3
+            title: "{req} Spawners Mejorables"
+            description:
+              - "&7Ten {req} spawners mejorables en tu terreno."
+              - "&7Comando: &e/spawner get"
+      attributes:
+        chunks:
+          description: "&7{value} reclamos"
+          value: 1
+        upkeep:
+          description: "&7{value}% costo de mantenimiento"
+          value: 5
+      # Ejecuta comandos de consola si el terreno alcanza este nivel o si baja del siguiente nivel a este.
+      # Marcadores disponibles:
+      # {level}: Nombre del nivel
+      # {land}: Nombre del parámetro del terreno = sin espacios.
+      # {land_name}: Nombre del terreno. Puede contener espacios.
+      # {owner}: Nombre del jugador que es dueño del terreno.
+      # {member}: El nombre de cada jugador miembro del terreno.
+      # Si el comando contiene el marcador {member}, el comando se ejecutará para cada jugador que tenga confianza en el terreno.
+      commands:
+        # Cuando un terreno alcanza este nivel.
+        reached: []
+        # Cuando un terreno baja del siguiente nivel a este.
+        down: []
+    3:
+      title: "Pueblo"
+      requirements:
+        members:
+          required: 5
+          title: "Invita en {req} jugadores"
+          description:
+            - "&7Invita en {req} jugadores en este terreno."
+            - "&7Comando: &e/lands trust"
+        chunks:
+          required: 0
+          title: "Reclama {req} Chunks"
+          description:
+            - "&7Reclama {req} chunks para este terreno."
+            - "&7Comando: &e/claim"
+        balance:
+          required: 17000
+          title: "Saldo de ${req}"
+          description:
+            - "&7Ten ${req} depositados en el banco de este terreno."
+            - "&7Comando: &e/lands deposit"
+        # Plugin: https://www.spigotmc.org/resources/67627
+        betterfarming:
+          farms:
+            required: 3
+            title: "{req} Granjas Mejorables"
+            description:
+              - "&7Ten {req} granjas mejorables en tu terreno."
+              - "&7Comando: &e/farm get"
+        # Plugin: https://www.spigotmc.org/resources/69201
+        upgradeablehoppers:
+          hoppers:
+            required: 8
+            title: "{req} Tolvas Mejorables"
+            description:
+              - "&7Ten {req} tolvas mejorables en tu terreno."
+              - "&7Comando: &e/hopper get"
+        # Plugin: https://www.spigotmc.org/resources/77717
+        upgradeablespawners:
+          spawners:
+            required: 3
+            title: "{req} Spawners Mejorables"
+            description:
+              - "&7Ten {req} spawners mejorables en tu terreno."
+              - "&7Comando: &e/spawner get"
+      attributes:
+        chunks:
+          description: "&7{value} reclamos"
+          value: 2
+        upkeep:
+          description: "&7{value}% costo de mantenimiento"
+          value: 10
+      commands:
+        reached: []
+        down: []
+    4:
+      title: "Provincia"
+      requirements:
+        members:
+          required: 8
+          title: "Invita en {req} jugadores"
+          description:
+            - "&7Invita en {req} jugadores en este terreno."
+            - "&7Comando: &e/lands trust"
+        chunks:
+          required: 0
+          title: "Reclama {req} Chunks"
+          description:
+            - "&7Reclama {req} chunks para este terreno."
+            - "&7Comando: &e/claim"
+        balance:
+          required: 30000
+          title: "Saldo de ${req}"
+          description:
+            - "&7Ten ${req} depositados en el banco de este terreno."
+            - "&7Comando: &e/lands deposit"
+        # Plugin: https://www.spigotmc.org/resources/67627
+        betterfarming:
+          farms:
+            required: 5
+            title: "{req} Granjas Mejorables"
+            description:
+              - "&7Ten {req} granjas mejorables en tu terreno."
+              - "&7Comando: &e/farm get"
+        # Plugin: https://www.spigotmc.org/resources/69201
+        upgradeablehoppers:
+          hoppers:
+            required: 15
+            title: "{req} Tolvas Mejorables"
+            description:
+              - "&7Ten {req} tolvas mejorables en tu terreno."
+              - "&7Comando: &e/hopper get"
+        # Plugin: https://www.spigotmc.org/resources/77717
+        upgradeablespawners:
+          spawners:
+            required: 5
+            title: "{req} Spawners Mejorables"
+            description:
+              - "&7Ten {req} spawners mejorables en tu terreno."
+              - "&7Comando: &e/spawner get"
+      attributes:
+        chunks:
+          description: "&7{value} reclamos"
+          value: 4
+        upkeep:
+          description: "&7{value}% costo de mantenimiento"
+          value: 25
+      commands:
+        reached: []
+        down: []
+    5:
+      title: "Estado"
+      requirements:
+        members:
+          required: 15
+          title: "Invita en {req} jugadores"
+          description:
+            - "&7Invita en {req} jugadores en este terreno."
+            - "&7Comando: &e/lands trust"
+        chunks:
+          required: 0
+          title: "Reclama {req} Chunks"
+          description:
+            - "&7Reclama {req} chunks para este terreno."
+            - "&7Comando: &e/claim"
+        balance:
+          required: 55000
+          title: "Saldo de ${req}"
+          description:
+            - "&7Ten ${req} depositados en el banco de este terreno."
+            - "&7Comando: &e/lands deposit"
+        # Plugin: https://www.spigotmc.org/resources/67627
+        betterfarming:
+          farms:
+            required: 6
+            title: "{req} Granjas Mejorables"
+            description:
+              - "&7Ten {req} granjas mejorables en tu terreno."
+              - "&7Comando: &e/farm get"
+        # Plugin: https://www.spigotmc.org/resources/69201
+        upgradeablehoppers:
+          hoppers:
+            required: 25
+            title: "{req} Tolvas Mejorables"
+            description:
+              - "&7Ten {req} tolvas mejorables en tu terreno."
+              - "&7Comando: &e/hopper get"
+        # Plugin: https://www.spigotmc.org/resources/77717
+        upgradeablespawners:
+          spawners:
+            required: 6
+            title: "{req} Spawners Mejorables"
+            description:
+              - "&7Ten {req} spawners mejorables en tu terreno."
+              - "&7Comando: &e/spawner get"
+      attributes:
+        chunks:
+          description: "&7{value} reclamos"
+          value: 8
+        upkeep:
+          description: "&7{value}% costo de mantenimiento"
+          value: 30
+      commands:
+        reached: []
+        down: []
+
+nation:
+  # ¿Habilitar niveles de nación?
+  enabled: true
+  # Aquí puedes editar niveles existentes o agregar nuevos.
+  levels:
+    1:
+      # Asigna el nombre del nivel.
+      title: "Federación"
+      # Para el nivel de entrada, no se establecen atributos. Pero podrías agregarlos si modificas las opciones de valor.
+      # Los atributos de un nivel se aplican además de cualquier valor actual del terreno o la nación.
+      attributes:
+        chunks:
+          description: "&7{value} reclamos"
+          value: 0
+        upkeep:
+          description: "&7{value}% costo de mantenimiento"
+          value: 0
+        effects:
+          description: "&a+ Desbloquea efectos: {value}"
+          value: []
+        effects_amount:
+          description: "&a+ Tener {value} efectos activos a la vez"
+          value: 0
+    2:
+      title: "Nación"
+      requirements:
+        # Cantidad mínima de terrenos únicos en la nación (no incluye el terreno capital).
+        lands:
+          required: 3
+          title: "{req} Terrenos"
+          description:
+            - "&7Invita {req} terrenos a unirse a tu nación"
+            - "&7y haz que acepten tu invitación."
+            - "&7Comando: &e/nation trust"
+        # Cantidad de miembros (jugadores únicos en total) para obtener este nivel.
+        members:
+          required: 15
+          title: "{req} jugadores únicos"
+          description:
+            - "&7Ten {req} jugadores confiados en total."
+            - "&7Comando: &e/lands trust"
+        # Cantidad total de chunks necesarios para asignar este nivel.
+        chunks:
+          required: 0
+          title: "Reclama {req} Chunks"
+          description:
+            - "&7Ten {req} reclamaciones en total."
+            - "&7Comando: &e/claim"
+        # Cantidad total de saldo (el saldo de todos los terrenos) para obtener este nivel.
+        balance:
+          required: 100000
+          title: "Saldo de ${req}"
+          description:
+            - "&7Ten ${req} depositados entre todos los terrenos."
+            - "&7Comando: &e/lands deposit"
+        # Plugin: https://www.spigotmc.org/resources/67627
+        betterfarming:
+          farms:
+            required: 9
+            title: "{req} Granjas Mejorables"
+            description:
+              - "&7Ten {req} granjas mejorables en tu terreno."
+              - "&7Comando: &e/farm get"
+        # Plugin: https://www.spigotmc.org/resources/69201
+        upgradeablehoppers:
+          hoppers:
+            required: 24
+            title: "{req} Tolvas Mejorables"
+            description:
+              - "&7Ten {req} tolvas mejorables en tu terreno."
+              - "&7Comando: &e/hopper get"
+        # Plugin: https://www.spigotmc.org/resources/77717
+        upgradeablespawners:
+          spawners:
+            required: 9
+            title: "{req} Spawners Mejorables"
+            description:
+              - "&7Ten {req} spawners mejorables en tu terreno."
+              - "&7Comando: &e/spawner get"
+      attributes:
+        # Otorga a cada terreno de la nación x cantidad de chunks adicionales.
+        chunks:
+          description: "&7{value} reclamos"
+          value: 20
+        # Modifica el mantenimiento en x por ciento. Esto también soporta valores negativos.
+        # La nación paga el mantenimiento al servidor.
+        upkeep:
+          description: "&7{value}% costo de mantenimiento"
+          value: 20
+        # Permite a las naciones activar cierta cantidad de efectos en su nación. Los efectos se pueden desbloquear a través de la progresión de nivel.
+        effects:
+          description: "&a+ Desbloquea efectos: {value}"
+          # Configura una lista de efectos desbloqueados para este nivel. Efectos válidos: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html
+          # Formato: EFFECT:AMPLIFIER
+          # El "amplifier" es la fuerza (nivel) del efecto. Ejemplo: JUMP:2 -> Salto II
+          value:
+            - JUMP
+            - SPEED
+            - FAST_DIGGING
+            - DOLPHINS_GRACE
+        # Modifica cuántos efectos pueden estar activos al mismo tiempo.
+        effects_amount:
+          description: "&a+ Tener {value} efectos activos a la vez"
+          value: 1
+      # Ejecuta comandos de consola cuando la nación alcanza este nivel o baja del siguiente nivel a este.
+      # Marcadores disponibles:
+      # {level}: Nombre del nivel
+      # {nation}: Nombre de la nación
+      # {owner}: Nombre del jugador dueño de la nación.
+      # {land}: Nombre del parámetro del terreno que forma parte de la nación (sin espacios).
+      # {land_name}: Nombre del terreno que forma parte de la nación (puede contener espacios).
+      # Si el comando contiene {land}, se ejecutará para cada terreno que sea parte de la nación.
+      commands:
+        # Cuando una nación alcanza este nivel.
+        reached: []
+        # Cuando una nación baja del siguiente nivel a este.
+        down: []
+    3:
+      title: "Imperio"
+      requirements:
+        lands:
+          required: 6
+          title: "{req} Terrenos"
+          description:
+            - "&7Invita {req} terrenos a unirse a tu nación"
+            - "&7y haz que acepten tu invitación."
+            - "&7Comando: &e/nations trust"
+        members:
+          required: 30
+          title: "{req} jugadores únicos"
+          description:
+            - "&7Ten {req} jugadores confiados en total."
+            - "&7Comando: &e/lands trust"
+        chunks:
+          required: 0
+          title: "Reclama {req} Chunks"
+          description:
+            - "&7Ten {req} reclamaciones en total."
+            - "&7Comando: &e/claim"
+        balance:
+          required: 250000
+          title: "Saldo de ${req}"
+          description:
+            - "&7Ten ${req} depositados entre todos los terrenos."
+            - "&7Comando: &e/lands deposit"
+        # Plugin: https://www.spigotmc.org/resources/67627
+        betterfarming:
+          farms:
+            required: 18
+            title: "{req} Granjas Mejorables"
+            description:
+              - "&7Ten {req} granjas mejorables en tu terreno."
+              - "&7Comando: &e/farm get"
+        # Plugin: https://www.spigotmc.org/resources/69201
+        upgradeablehoppers:
+          hoppers:
+            required: 30
+            title: "{req} Tolvas Mejorables"
+            description:
+              - "&7Ten {req} tolvas mejorables en tu terreno."
+              - "&7Comando: &e/hopper get"
+        # Plugin: https://www.spigotmc.org/resources/77717
+        upgradeablespawners:
+          spawners:
+            required: 18
+            title: "{req} Spawners Mejorables"
+            description:
+              - "&7Ten {req} spawners mejorables en tu terreno."
+              - "&7Comando: &e/spawner get"
+      attributes:
+        chunks:
+          description: "&7{value} reclamos"
+          value: 35
+        upkeep:
+          description: "&7{value}% costo de mantenimiento"
+          value: 35
+        effects:
+          description: "&a+ Desbloquea efectos: {value}"
+          value:
+            - JUMP:2
+            - SPEED:2
+            - FAST_DIGGING:2
+            - DOLPHINS_GRACE:2
+            - ABSORPTION
+            - NIGHT_VISION
+            - LUCK
+            - INCREASE_DAMAGE
+            - HEALTH_BOOST
+        effects_amount:
+          description: "&a+ Tener {value} efectos activos a la vez"
+          value: 3
+      commands:
+        reached: []
+        down: []
+
+# Puedes desactivar sonidos poniéndolos en ''.
+sound:
+  # Se reproduce a cada jugador del terreno o nación al subir de nivel.
+  up: "BLOCK_BELL_USE"
+  # Se reproduce a cada jugador del terreno o nación al bajar de nivel.
+  down: "BLOCK_ANVIL_DESTROY"

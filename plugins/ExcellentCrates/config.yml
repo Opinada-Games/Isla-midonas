@@ -1,0 +1,177 @@
+Plugin:
+  # Localized plugin name. It's used in messages and with internal placeholders.
+  Name: Crates
+  # Plugin prefix. Used in messages.
+  Prefix: <lyellow><b>Crates</b></lyellow><dgray> » </dgray><gray>
+  # Command names that will be registered as main plugin commands.
+  # Do not leave this empty. Split multiple names with a comma.
+  Command_Aliases: crates,ecrates,excellentcrates,crate,case,cases
+  # Sets the plugin language.
+  # Basically it tells the plugin to use certain messages config from the '/lang/' sub-folder.
+  # If specified language is not available, default one (English) will be used instead.
+  # [Default is System Locale]
+  Language: es
+Database:
+  # Sets database type.
+  # Available values: MYSQL,SQLITE
+  Type: SQLITE
+  # Sets how often (in minutes) plugin data of online players will be saved to the database.
+  # Set to '-1' to disable.
+  Auto_Save_Interval: 20
+  # Sets how often (in seconds) plugin data will be fetched and loaded from the remote database.
+  # Useless for SQLITE.
+  # Set to '-1' to disable.
+  Sync_Interval: -1
+  # Custom prefix for plugin tables in database.
+  Table_Prefix: excellentcrates
+  MySQL:
+    # Database user name.
+    Username: root
+    # Database password.
+    Password: root
+    # Database host. Example: localhost:3306, 127.0.0.1:3306
+    Host: localhost:3306
+    # Name of the MySQL database where plugin will create tables.
+    Database: minecraft
+    # Connection options. Do not touch unless you know what you're doing.
+    Options: ?allowPublicKeyRetrieval=true&useSSL=false
+  SQLite:
+    # File name for the SQLite database file.
+    # Actually it's a path to the file, so you can use directories here.
+    FileName: data.db
+  Purge:
+    # Enables the purge feature.
+    # Purge will remove all records from the plugin tables that are 'old' enough.
+    Enabled: false
+    # Sets maximal 'age' for the database records before they will be purged.
+    # This option may have different behavior depends on the plugin.
+    # By default it's days of inactivity for the plugin users.
+    For_Period: 60
+  # Sets whether or not reward global limit data should be synchronized.
+  # [*] Useful for MySQL only.
+  Sync_Reward_Data: true
+  # Sets whether or not reward limits data will be automatically purged for invalid rewards and crates.
+  # [*] Use with caution on multiple servers connected to the same database, but with different crates.
+  Purge_Reward_Data: false
+  UserData:
+    # Sets cache lifetime for player's data.
+    # Data loaded for offline players and data of previously online players will be cached in the memory for that time.
+    # When cache is expired, data have to be loaded from the database again.
+    # [*] Set to 0 to disable data cache for offline players.
+    # [*] Set to -1 for permanent data cache for offline players.
+    # [Default is 300 (5 minutes)]
+    Cache_LifeTime: 300
+    # Sets how often (in ticks) plugin will attempt to save data of users marked to be saved.
+    # This will save only users that are 'ready' to save (see 'Scheduled_Save_Delay').
+    # [DO NOT DISABLE UNDER ANY CIRCUMSTANCES!]
+    # [20 ticks = 1 second]
+    # [Default is 20]
+    Scheduled_Save_Interval: 20
+    # Sets scheduled save delay (in seconds) for a user when marked to be saved.
+    # This means that a user will be saved X seconds later after being marked.
+    # Generally, you should keep this value less than 'Scheduled_Save_Interval' for best results,
+    # and not setting it extremely high, otherwise you may result in user data never saved & synchronized.
+    #
+    # IMPORTANT NOTE #1: When a user is marked for saving, this will prevent them from syncing until saving occurs!
+    # IMPORTANT NOTE #2: Every time a user is marked for saving, their save time will be updated with this value!
+    #
+    # Users marked for save when their data has been changed/affected in some way.
+    # However this is higly depends on the plugin.
+    # [Decimals allowed]
+    # [Default is 1]
+    Scheduled_Save_Delay: 1.0
+    # Sets synchronization delay (in seconds) before the plugin can continue syncing data for a user after its scheduled save.
+    # When a user marked for saving has been saved, their synchronization will be unlocked but delayed for this value.
+    # This might be helpful to prevent possible issues when synchronization process access the database before user data was fully saved.
+    # [Default is 3]
+    Scheduled_Save_Sync_Pause: 3
+Milestones:
+  # Sets whether or not Milestones feature is enabled (globally).
+  Enabled: true
+Crate:
+  Effects:
+    # Sets max. distance where players can see crate particles and holograms.
+    Visibility_Distance: 24
+  Holograms:
+    # [1.20.4+ only]
+    # When enabled, uses Display Entities for holograms instead of Armor Stands.
+    DisplayEntities: true
+    # Here you can create your own hologram text templates to use it in your crates.
+    # You can use 'Crate' placeholders: https://nightexpress.gitbook.io/excellentcrates/utility/placeholders
+    # PlaceholderAPI is also supported here (if hologram handler supports it).
+    Templates:
+      default:
+        - <lyellow><b>%crate_name%</b></lyellow>
+        - <lgray>Obten llaves en <lyellow>put_your_site.com</lyellow></lgray>
+        - <lgray>Tienes <lyellow>%excellentcrates_keys_%crate_id%%</lyellow> llaves</lgray>
+    # Sets the gap between hologram lines.
+    LineGap: 0.3
+    # Sets how often (in seconds) crate holograms will update.
+    Update_Interval: 5
+  Cooldown_Formatter:
+    # Sets time formatter for crate opening cooldown.
+    # 'hh' - hours, 'mm' - minutes, 'ss' - seconds.
+    Time: hh:mm:ss
+    # Sets the custom message instead of empty counter when there is no cooldown for a crate.
+    Ready: <lgreen>Ready to Open!</lgreen>
+  # When 'true' replaces PlaceholderAPI placeholders in reward item's name and lore when obtained by players.
+  # NOTE: This setting may 'corrupt' item's lore layout in some cases. Ask PlaceholderAPI devs if you're experiencing issues.
+  PlaceholderAPI_For_Rewards: false
+  # When 'true' and if crate has NO opening animation, holographic reward will appear above crate block for a short amount of time.
+  # This option will have effect only when interacted with crate blocks.
+  Display_Reward_Above_Block: true
+  # Sets whether player must hold key in main hand in order to open crate.
+  # NOTE: This setting will not work if crate has virtual keys assigned.
+  Hold_Key_To_Open: false
+  # Sets how many crates player can open at once when doing mass opening.
+  # Setting this to high values may result in lags, stutters, errors and bugs.
+  # Especially if crate contains rewards with commands of other plugins.
+  Mass_Opening_Limit: 30
+  # Sets cooldown (in milliseconds) for crate preview by clicking crate block(s).
+  # The main purpose of this setting is to prevent exploit using hacked clients by sending a lot of crate interaction packets causing server overload by GUI generation.
+  # Resets on player quit.
+  # [Default is 2500]
+  Preview_Cooldown: 2500
+  # Sets how soon (in ticks) crate opening animation GUI will be closed when completed.
+  # 1 second = 20 ticks. 20 ticks by default.
+  Opening_Close_Time: 20
+  # Sets whether or not players can skip crate opening animations.
+  # When enabled, make sure the check out the 'Max_Ticks_To_Skip' setting in the /openingsv2/ configs.
+  Opening_Allow_Skip: false
+  Block_Pushback:
+    # Sets the Y offset for crate block pushback.
+    Y: -0.4
+    # Vector multiplier for crate block pushback. The higher value - the harder pushback.
+    Multiply: -1.25
+  # Defines the crate behavior on certain clicks.
+  # Allowed click types: LEFT, RIGHT, SHIFT_LEFT, SHIFT_RIGHT
+  # Allowed crate actions: CRATE_OPEN, CRATE_MASS_OPEN, CRATE_PREVIEW
+  Click_Actions:
+    SHIFT_RIGHT: CRATE_MASS_OPEN
+    RIGHT: CRATE_OPEN
+    LEFT: CRATE_PREVIEW
+Logs:
+  DateFormat: dd/MM/yyyy HH:mm:ss
+  Enabled:
+    # Sets whether or not all crate openings & reward wins will be logged to console.
+    Console: false
+    # Sets whether or not all crate openings & reward wins will be logged to a file.
+    File: true
+Rewards:
+  Rarities:
+    common:
+      Name: <white>Common</white>
+      Weight: 10.0
+      Default: true
+    legendary:
+      Name: <lorange>Legendary</lorange>
+      Weight: 1.0
+      Default: false
+    uncommon:
+      Name: <lblue>Uncommon</lblue>
+      Weight: 5.0
+      Default: false
+    rare:
+      Name: <lgreen>Rare</lgreen>
+      Weight: 2.0
+      Default: false

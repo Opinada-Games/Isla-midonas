@@ -1,0 +1,10 @@
+# -------------------------------------------------------------------------------------------
+# This file stores a cuboid region.
+#
+# To create one, get the region tool via '/boss tools' and follow
+# instructions. To remove a region, use the '/boss region' command
+# or stop your server and remove this file.
+# -------------------------------------------------------------------------------------------
+
+Primary: world 6137 72 -639
+Secondary: world 6259 133 -761

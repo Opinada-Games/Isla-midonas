@@ -1,0 +1,48 @@
+# Configuración del Menú de Logros para zMenu
+size: 27
+name: "&8> &6&lMenú de Logros"
+
+items:
+  # Logros Generales
+  general_achievements:
+    slot: 16
+    item:
+      material: BOOK
+      name: "&bLogros Generales"
+      lore:
+        - "&7Consulta tus logros generales."
+        - "&eHaz clic para verlos."
+    commands:
+      - "aach list general"
+    closeInventory: true
+
+  # Logros Especiales
+  special_achievements:
+    slot: 18
+    item:
+      material: ENCHANTED_BOOK
+      name: "&bLogros Especiales"
+      lore:
+        - "&7Consulta logros especiales y exclusivos."
+        - "&eHaz clic para abrir la lista."
+    commands:
+      - "aach list special"
+    closeInventory: true
+
+  # Botón para Volver al Menú Principal
+  volver:
+    slot: 26
+    item:
+      material: ARROW
+      name: "&cVolver al Menú Principal"
+      lore:
+        - "&7Regresa al menú principal."
+        - "&eHaz clic para volver."
+    commands:
+      - "zm open main_menu %player%"
+    closeInventory: true
+
+# Relleno de espacios vacíos con panel de vidrio teñido
+fillItem:
+  material: GRAY_STAINED_GLASS_PANE
+  name: " "

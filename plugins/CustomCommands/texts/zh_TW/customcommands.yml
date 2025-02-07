@@ -1,0 +1,60 @@
+# ===================
+# CustomCommands 語言文件 (zh_TW)
+# 本翻譯使用 CustomCommands 版本: 4.1.0
+# 作者: GuillaumeVDN
+# 語言: 中文繁體
+# 翻譯: Kevin
+# Discord: ༄༊࿆さくらじま まいོྂཾ࿐#0001
+# 如在翻譯上有任何疑慮歡迎私訊༄༊࿆さくらじま まいོྂཾ࿐#0001
+# 在插件上有任何疑慮請至 https://discord.com/invite/wSm9A8Y 尋求幫助
+# ===================
+# CustomCommands language files (zh_TW)
+# This translation uses CustomCommands version: 4.1.0
+# Author: GuillaumeVDN
+# Language: Chinese Traditional
+# Translation: Kevin
+# Discord: ༄༊࿆さくらじま まいོྂཾ࿐#0001
+# If you have any doubts about translation, please send a private message ༄༊࿆さくらじま まいོྂཾ࿐#0001
+# If you have any concerns about the plugin, please go to https://discord.com/invite/wSm9A8Y for help
+# ===================
+
+# -------------------- 指令 --------------------
+
+commandDescriptionCustomcommandsEdit: 在遊戲中編輯指令
+
+# -------------------- 輸入 --------------------
+
+messageInvalidInputInteger: |
+  &7你輸入的號碼無效。
+
+messageInvalidInputDouble: |
+  &7你輸入了無效的十進制數。
+
+messageInvalidInputOfflinePlayer: |
+  &7你輸入了無效的玩家。
+
+messageInvalidInputPlayer: |
+  &7你輸入的玩家無效(他們必須在線)。
+
+messageInvalidInputStringSize: |
+  &7你輸入的字符串大小無效。
+
+messageInvalidInputPhrase: |
+  &7你需要添加至少一個單詞。
+
+# -------------------- 雜項 --------------------
+
+messageNoHelp: |
+  &7這裡沒什麼可看的。
+
+messageCooldown: |
+  &7請等待 &c{time} &7再使用此指令。
+
+messageUnauthorizedWorld: |
+  &7你不能在此處使用此指令。
+
+messageUnknownCommand: |
+  &7未知的指令。
+
+messageUnknownCommandClosest: |
+  &7未知的指令。 也許你的意思是 &c{closest} &7?

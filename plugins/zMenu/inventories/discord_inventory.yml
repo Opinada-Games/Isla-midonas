@@ -1,0 +1,59 @@
+# discordsrv Inventory Configuration for zMenu
+size: 27
+name: "&9Menú de Discord"
+
+items:
+  # Vincular cuenta
+  link_account:
+    slot: 11
+    item:
+      material: NAME_TAG
+      name: "&aVincular cuenta"
+      lore:
+        - "&7Vincula tu cuenta de Minecraft"
+        - "&7con Discord."
+        - "&eHaz clic para ejecutar."
+    commands:
+      - "discordsrv link"
+    closeInventory: true
+
+  # Estado del vinculo
+  check_link_status:
+    slot: 13
+    item:
+      material: PAPER
+      name: "&eEstado de vinculación"
+      lore:
+        - "&7Consulta si tu cuenta ya está vinculada"
+        - "&7o verifica tu estado actual."
+        - "&eHaz clic para ejecutar."
+    commands:
+      - "discordsrv linked"
+    closeInventory: true
+
+  # Desvincular cuenta
+  unlink_account:
+    slot: 15
+    item:
+      material: BARRIER
+      name: "&cDesvincular cuenta"
+      lore:
+        - "&7Desvincula tu cuenta de Discord"
+        - "&7si ya no deseas mantener la conexión."
+        - "&eHaz clic para ejecutar."
+    commands:
+      - "discordsrv unlink"
+    closeInventory: true
+
+  # Botón para Volver al Menú Principal
+  volver:
+    slot: 26
+    item:
+      material: ARROW
+      name: "&cVolver al Menú Principal"
+      lore:
+        - "&7Regresa al menú principal."
+        - "&eHaz clic para volver."
+    commands:
+      - "zm open main_inventory"
+    closeInventory: true

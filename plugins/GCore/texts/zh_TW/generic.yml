@@ -1,0 +1,143 @@
+# ===================
+# GCore 語言文件 (zh_TW)
+# 本翻譯使用 GCore 版本: 8.45.0
+# 作者: GuillaumeVDN
+# 語言: 中文繁體
+# 翻譯: Kevin
+# Discord: Krick#9685
+# 如在翻譯上有任何疑慮歡迎私訊 Krick#9685
+# 在插件上有任何疑慮請至 https://discord.com/invite/wSm9A8Y 尋求幫助
+# ===================
+# GCore language files (zh_TW)
+# This translation uses GCore version: 8.45.0
+# Author: GuillaumeVDN
+# Language: Chinese Traditional
+# Translation: Kevin
+# Discord: Krick#9685
+# If you have any doubts about translation, please send a private message Krick#9685
+# If you have any concerns about the plugin, please go to https://discord.com/invite/wSm9A8Y for help
+# ===================
+
+# -------------------- 雜項 --------------------
+
+messageNoPermission: |
+  &7你沒有權限這麼做。
+
+messageInvalidPlayer: |
+  &7玩家&c{value}&7無效(必須在線)。
+
+messageInvalidOfflinePlayer: |
+  &7玩家&c{value}&7無效。
+
+messageInvalidNumber: |
+  &7號碼 &c{value} &7無效。
+messageInvalidNumberRangeMin: |
+  &7號碼 &c{value} &7至少應為 &c{min}&7。
+messageInvalidNumberRangeMax: |
+  &7號碼 &c{value} &7最多應該是 &c{max}&7。
+messageInvalidEnum: |
+  &7Value &c{value} &7無效，它應該是 &c{values}&7 之一。
+messageInvalidEnumNoList: |
+  &7Value &c{value} &7無效。
+
+messageCC: '&d (cc&7.of {og})'
+messageSilentCC: '&d (cc&7.of {og}, silent)'
+
+textCancel: 取消
+
+# -------------------- 指令 --------------------
+
+commandParameterUsageTarget: player
+commandParameterUsageReset: reset
+commandParameterUsageOperation: operation
+commandParameterUsageAmount: amount
+commandParameterUsageSpecificEditor: editor
+commandParameterUsageDate: date
+commandDescriptionGenericReload: 重新加載插件
+commandDescriptionGenericPluginState: 關於插件內部狀態的信息
+commandDescriptionGenericMigrate: 重新運行遷移
+messageCommandNotPlayer: |
+  &7你不能從控制台執行該指令。
+
+messageCommandMissingArgument: |
+  &7缺失參數&c{argument}&7。在指令後添加&d?&7以獲取幫助。
+
+messageCommandMissingArgumentFound: |
+  &7缺失參數&c{argument} &7(找到{found})。在指令後添加&d?&7以獲取幫助。
+
+messageCommandUnnecessaryArguments: |
+  &7多餘參數: &c{unnecessary}&7。在指令後添加&d?&7以獲取幫助。
+
+messageCommandIncompatibleArguments: |
+  &c{argument1}&7無法和&c{argument2}&7一同使用。在指令後添加&d?&7以獲取幫助。
+
+messageCommandDependentArguments: |
+  &c{argument1}&7必須和&c{argument2}&7一同使用。在指令後添加&d?&7以獲取幫助。
+
+messageCommandUnknown: |
+  &7找不到子指令&c{subcommand}&7。在指令後添加&d?&7以獲取幫助。
+
+messageCommandHelpElementPrefix: '&6'
+messageCommandHelpElement: '{usage}&6: &f{description}'
+messageCommandHelpColorArgumentOptional: '&e&o'
+messageCommandHelpColorArgumentRequired: '&e'
+
+messageCommandHelpPageOutsideBounds: |
+  &7該幫助菜單有{pages}頁。
+
+messageCommandHelpHeader: '&6&l{prefix} &6幫助 ({page}/{pages})'
+
+# -------------------- 數字 --------------------
+
+numberMillion: 百萬
+numberBillion: 十億
+numberTrillion: 萬億
+
+durationFormatS: '{seconds}秒'
+durationFormatMS: '{minutes}分{seconds}秒'
+durationFormatHMS: '{hours}小時{minutes}分鐘{seconds}秒'
+durationFormatDHMS: '{days}天{hours}小時{minutes}分鐘{seconds}秒'
+
+# -------------------- 花費金錢 --------------------
+
+messageMustHaveCurrency: |
+  &7你需要&c{money}&7，但你只有&c{balance}&7。
+
+messageMustHaveMoreItem: |
+  &7你需要&c{item}&7，但你只有&c{has_amount}&7。
+
+messageMustHaveItem: |
+  &7你需要&c{item}&7。
+
+messageMustHaveItemNoDetail: |
+  &7你錯過了這個項目。
+
+# -------------------- 物品 --------------------
+
+# 佔位符：{amount}, {type}, {durability}, {custom_model_data}, {enchantments}, {name}, {lore}
+
+textDescribeItem: |
+  {amount}x {type}
+  {name}
+  {lore}
+  {enchantments}
+
+textDescribeItemNameIfHas: '{name}'
+textDescribeItemLoreIfHas: '- {lore}'
+textDescribeItemEnchantmentsIfHas: '> {enchantments}'
+textDescribeItemEnchantmentsLine: '{enchant} {level}'
+
+textDescribeItemSingleLine: |  # 如果不為空，行將用逗號分隔
+  {amount}x {type}
+  {name}
+  {enchantments}
+textDescribeItemSingleLineNameIfHas: '{name}'
+textDescribeItemSingleLineLoreIfHas: '{lore}'
+textDescribeItemSingleLineEnchantmentsIfHas: '{enchantments}'
+textDescribeItemSingleLineEnchantmentsLine: '{enchant} {level}'
+textDescribeItemSingleLineSeparator: ', '
+
+# -------------------- 格式 --------------------
+
+# 有關日期格式字符，請參閱 https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
+dateTimeFormat: "yyyy.MM.dd HH:mm:ss"

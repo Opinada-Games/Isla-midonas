@@ -1,0 +1,45 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1738828382698
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1738828217641
+  login: 1738828241215
+  kits:
+    lider: 1737681143818
+    herramientas: 1737702283064
+    agricultor: 1737702300748
+  command-cooldowns:
+  - pattern: tpr( .*)?
+    value: 1738833925558
+money: '168603.36'
+last-account-name: Anisan2
+lastlocation:
+  world: 365ca687-c4ed-4138-b4bd-0783e6768f03
+  world-name: world
+  x: 905.5
+  y: 116.0
+  z: 63.5
+  yaw: -87.75677490234375
+  pitch: -1.1999585628509521
+logoutlocation:
+  world: 365ca687-c4ed-4138-b4bd-0783e6768f03
+  world-name: world
+  x: -475.663981250706
+  y: 130.0
+  z: -2176.741897258815
+  yaw: -83.396240234375
+  pitch: 2.400017738342285

@@ -1,0 +1,12 @@
+# ----------------------------------------------------------------------------------------------------
+# Configuration file for GCore
+# More information can be found in the documentation
+# ----------------------------------------------------------------------------------------------------
+
+# Display an 'emerald'
+
+display(VILLAGER_HAPPY, baseX, baseY, baseZ, 1)
+
+# Wait 1.5 second until restarting
+
+wait_ticks(30)

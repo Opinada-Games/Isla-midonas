@@ -1,0 +1,52 @@
+# Configuración del Menú de Campamentos para zMenu
+size: 27
+name: "&8> &6&lMenú de Campamentos"
+
+items:
+  # Crear Campamento
+  create_camp:
+    slot: 11
+    item:
+      material: CAMPFIRE
+      name: "&aCrear un Campamento"
+      lore:
+        - "&7Crea un nuevo campamento dentro de tu territorio."
+        - "&eHaz clic para ejecutar el comando."
+        - "&8Command: &b/lands createcamp <nombre>"
+        - ""
+    commands:
+      - "lands createcamp Campamento"
+    closeInventory: true
+
+  # Eliminar Campamento
+  delete_camp:
+    slot: 15
+    item:
+      material: WATER_BUCKET
+      name: "&cEliminar un Campamento"
+      lore:
+        - "&7Elimina un campamento existente."
+        - "&eHaz clic para ejecutar el comando."
+        - "&8Comando: &c/lands delete <nombre> confirm"
+        - ""
+    commands:
+      - "lands delete Campamento confirm"
+    closeInventory: true
+
+  # Volver al Menú Principal
+  volver:
+    slot: 26
+    item:
+      material: ARROW
+      name: "&cVolver al Menú Principal"
+      lore:
+        - "&7Regresa al menú principal."
+        - "&eHaz clic para volver."
+    commands:
+      - "zm open main_inventory"
+    closeInventory: true
+
+# Relleno de espacios vacíos con panel de vidrio teñido
+fillItem:
+  material: GRAY_STAINED_GLASS_PANE
+  name: " "

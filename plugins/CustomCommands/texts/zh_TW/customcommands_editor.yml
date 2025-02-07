@@ -1,0 +1,86 @@
+# ===================
+# CustomCommands 語言文件 (zh_TW)
+# 本翻譯使用 CustomCommands 版本: 4.1.0
+# 作者: GuillaumeVDN
+# 語言: 中文繁體
+# 翻譯: Kevin
+# Discord: ༄༊࿆さくらじま まいོྂཾ࿐#0001
+# 如在翻譯上有任何疑慮歡迎私訊༄༊࿆さくらじま まいོྂཾ࿐#0001
+# 在插件上有任何疑慮請至 https://discord.com/invite/wSm9A8Y 尋求幫助
+# ===================
+# CustomCommands language files (zh_TW)
+# This translation uses CustomCommands version: 4.1.0
+# Author: GuillaumeVDN
+# Language: Chinese Traditional
+# Translation: Kevin
+# Discord: ༄༊࿆さくらじま まいོྂཾ࿐#0001
+# If you have any doubts about translation, please send a private message ༄༊࿆さくらじま まいོྂཾ࿐#0001
+# If you have any concerns about the plugin, please go to https://discord.com/invite/wSm9A8Y for help
+# ===================
+
+# -------------------- 自定義指令 --------------------
+
+descriptionCustomCommandAliases: |
+  &7此指令的別名
+
+descriptionCustomCommandPatterns: |
+  &7此指令可能不同的模式
+
+descriptionCustomCommandPatternPattern: |
+  &7此指令的模式
+  &7有關此內容的說明，請參閱文檔
+
+descriptionCustomCommandPatternDescription: |
+  &7此模式的描述，解釋它的用途
+
+descriptionCustomCommandPatternPermission: |
+  &7使用此指令模式所需的權限
+
+descriptionCustomCommandPatternPermissionErrorMessage: |
+  &7自定義權限錯誤消息
+
+descriptionCustomCommandPatternWorlds: |
+  &7使用此指令的世界限制
+
+descriptionCustomCommandPatternCooldown: |
+  &7再次執行此指令模式之前的等待時間
+
+descriptionCustomCommandPatternToggleMode: |
+  &7如果啟用，這將使其他所有執行都被視為 '切換 開啟' 或 '切換 關閉' 模式
+  &6 on_toggle_on &7的動作將在切換時執行，而沒有的動作將在切換時執行
+
+descriptionCustomCommandPatternActions: |
+  &7使用此指令模式時執行的操作
+
+# -------------------- 行動 --------------------
+
+descriptionActionOnToggleOn: |
+  &7如果包含此操作的模式處於切換模式，這將決定何時執行操作（切換打開或關閉時）
+
+descriptionActionType: |
+  &7要執行的操作類型
+
+descriptionActionTypeTarget: |
+  &7執行此指令的目標
+  &7您可以使用佔位符或 &eeeveryone&7 來定位所有在線玩家
+
+descriptionActionChangeGamemodeGamemode: |
+  &7全新的遊戲模式
+
+descriptionActionExecuteCommmandsCommands: |
+  &7要執行的指令
+
+descriptionActionExecuteCommmandsAsPlayer: |
+  &7如果指令應該作為播放器執行，則為 true
+
+descriptionActionGiveItemItem: |
+  &7給予玩家的物品
+
+descriptionActionNotifyNotify: |
+  &7發送給玩家的通知
+
+descriptionActionTeleportLocation: |
+  &7將玩家傳送到的位置
+
+descriptionActionWaitDuration: |
+  &7等待此操作的時間

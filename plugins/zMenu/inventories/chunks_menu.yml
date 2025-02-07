@@ -1,0 +1,114 @@
+# Chunks Menu Configuration for zMenu
+size: 27
+name: "&8> &6&lMenú de Tierras"
+
+items:
+  create_territory:
+    slot: 11
+    type: INPUT
+    item:
+      material: NAME_TAG
+      name: "&bInstituir Estado"
+      lore:
+        - "&7Declara un nuevo Estado con un nombre personalizado."
+        - "&7Además, considera que se reclamará como tuyo el Chunk en el"
+        - "&7que estas parado sí aún no es de nadie"
+        - "&eHaz clic y luego escribe el nombre en el chat."
+        - "&eEjemplo: &eMiReino"
+        - ""
+        - "&8Command: &b/lands create &6<nombre de tu estado>"
+    # We'll accept any text (no strict regex).
+    # If you need to restrict it, you can add a 'conditions: { regex: "..."}' block.
+    inputType: TEXT
+
+    # What happens if input is valid:
+    success_actions:
+      - type: player_command
+        commands:
+          - "lands create %input%" # %input% is replaced by whatever the player typed
+
+    # What happens if there's an error in the input
+    # (for instance, if the user presses ESC or enters nothing):
+    error_actions:
+      - type: message
+        messages:
+          - "&cNo se pudo crear el territorio. Asegúrate de escribir un nombre válido."
+
+    # Actions to perform immediately upon clicking the item:
+    actions:
+      - type: message
+        messages:
+          - "&7Por favor, &eingresa en el chat el nombre de tu nuevo territorio&7:"
+      - type: close
+
+  claim_land:
+    slot: 14
+    item:
+      material: GOLD_BLOCK
+      name: "&eReclamar tierra"
+      lore:
+        - "&7Reclama la tierra donde estás parado."
+        - "&7Si no pertenece a nadie, será tuyo."
+        - "&eHaz clic para reclamar el territorio."
+        - "Nota: "
+        - "&8Command: &b/lands claim"
+        - ""
+    commands:
+      - "lands claim"
+    closeInventory: true
+
+  leave_land:
+    slot: 13
+    item:
+      material: RED_BANNER
+      name: "&cAbandonar Todos los Territorios"
+      lore:
+        - "&7Automáticamente abandonas todos los territorios reclamados."
+        - "&eEscribe en el chat: &6/lands unclaim all confirm"
+        - ""
+    commands:
+      - "lands unclaim all confirm"
+    closeInventory: true
+
+  delete_land:
+    slot: 15
+    item:
+      material: TNT
+      name: "&cEliminar un Territorio"
+      lore:
+        - "&7Elimina un territorio de forma permanente."
+        - "&7Escribe en el chat: &6/lands delete &b<nombre_del_territorio> confirm"
+        - "&eHaz clic para preparar el comando."
+        - ""
+    commands:
+      - "lands delete %lands_land_name% confirm"
+    closeInventory: true
+
+  help_item:
+    slot: 25
+    item:
+      material: WRITABLE_BOOK
+      name: "&6Ayuda: Estados vs Tierras"
+      lore:
+        - "&7Un Estado es la identidad de tus tierras."
+        - "&7Una tierra es un chunk físico que forma parte de un Estado."
+        - "&7Incluso si pierdes todas tus tierras, tu Estado seguirá existiendo."
+        - "&e¡Reclama tierras para expandir tu dominio!"
+        - ""
+    closeInventory: false
+
+  volver:
+    slot: 26
+    item:
+      material: ARROW
+      name: "&cVolver al Menú Principal"
+      lore:
+        - "&7Regresa al menú principal."
+        - "&eHaz clic para volver."
+    commands:
+      - "zm open main_inventory"
+    closeInventory: true
+
+fillItem:
+  material: GRAY_STAINED_GLASS_PANE
+  name: " "

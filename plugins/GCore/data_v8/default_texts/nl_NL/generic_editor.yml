@@ -1,0 +1,595 @@
+# -------------------- Element --------------------
+
+guiSelectTitle: Select
+guiSearchName: |
+  &dZoek voor data (in de chat)
+
+elementTypeMandatory: |
+  &cDit moet {type}
+
+elementTypeOptional: |
+  &aDit is een optie {type}
+
+elementCurrentValueNone: |
+  &9Actueele Data :
+  &7Geen
+
+elementCurrentValueNoneDefault: |
+  &9Actueele Data :
+  &7Geen
+
+elementCurrentValueSingle: |
+  &9Actueele Data :
+  &b{value}
+
+elementCurrentValueSingleDefault: |
+  &9Actueele Data :
+  &b{value}
+
+elementCurrentValueList: |
+  &9Actueele Data :
+  &b{value}
+
+elementCurrentValueListDefault: |
+  &9Actueele (default) :
+  {value}
+
+elementCurrentValueListLine: |
+  &9- &b{line}
+
+elementDescription: |
+  &9Beschrijving :
+  &7{description}
+
+elementElementCountSingle: |
+  &b1 element
+
+elementElementCountPlural: |
+  &b{count} elements
+
+elementListElement: |
+  &b{element}
+
+# -------------------- Controls --------------------
+
+controlEdit: |
+  &dLeft-click to edit
+
+controlClear: |
+  &dControl + drop to clear value
+
+controlDelete: |
+  &dControl + drop to delete
+
+controlToggle: |
+  &dRight-click to quickly toggle
+
+controlSelect: |
+  &dRight-click to quickly select
+
+controlImport: |
+  &dShift + right-click to quickly import
+
+controlLinearSelectType: |
+  &dShift + left-click to quickly select type
+
+controlLinearEditParameters: |
+  &dRight-click to edit parameters
+
+controlListInsert: |
+  &dShift + right-click to insert element here
+
+controlListSwap: |
+  &dNumber key to swap with another element
+
+controlAddElementName: |
+  &6Add element
+
+controlAddGlobalElementName: |
+  &6Add global element
+
+controlAddElementWithQuick: |
+  &dLeft-click to quickly add an element
+  &dRight-click to add an element with a specific id
+
+controlAddElementWithDefault: |
+  &dLeft-click to add an element with a specific id
+  &dRight-click to add the default element
+
+controlTextSetRandom: |
+  &6Mark as random
+
+# -------------------- Item --------------------
+
+descriptionItemType: |
+  &7Type van het item
+
+descriptionItemDurability: |
+  &7Durability van het item
+
+descriptionItemAmount: |
+  &7Hoeveelheid van de items
+
+descriptionItemUnbreakable: |
+  &7Unbreakable label voor het item
+
+descriptionItemCustomModelData: |
+  &7Custom model data van het item
+
+descriptionItemEnchantments: |
+  &7Enchantments van het item
+
+descriptionItemFlags: |
+  &7Flags van het item
+
+descriptionItemName: |
+  &7Naam van het item
+
+descriptionItemLore: |
+  &7Beschrijving van het item
+
+descriptionItemNbt: |
+  &7NBT tags
+  &7Het kan niet aangepast worden in-game, maar het word opgeslagen als je een item importeert.
+
+descriptionItemBannerBaseColor: |
+  &7Basis kleur van de banner
+
+descriptionItemBannerPatterns: |
+  &7Patronen van de banner
+
+descriptionItemBookAuthor: |
+  &7Schrijver van het boek
+
+descriptionItemBookTitle: |
+  &7Titel van het boek
+
+descriptionItemBookGeneration: |
+  &7Generatie van het boek
+
+descriptionItemBookPages: |
+  &7Inhoud van het boek
+
+descriptionItemCrossbowChargedProjectiles: |
+  &7Projectielen zitten al in de kruisboog
+
+descriptionItemStoredEnchantments: |
+  &7Enchantments opgeslagen in het item
+
+descriptionItemFireworkEffect: |
+  &7Vuurwerk effect van het item
+
+descriptionItemFireworkEffects: |
+  &7Vuurwerk effecten van het item
+
+descriptionItemKnowledgeBookRecipes: |
+  &7Recipes opgeslagen in dit kennis boek
+
+descriptionItemLeatherArmorColor: |
+  &7De kleur van dit armor
+
+descriptionItemPotionType: |
+  &7het type van deze toverdrank
+
+descriptionItemPotionExtra: |
+  &7Om deze toverdrank uit te breiden of te upgraden
+
+descriptionItemPotionColor: |
+  &7Kleur van dit drankje
+
+descriptionItemPotionCustomEffects: |
+  &7Aangepaste effecten toegepast op dit drankje
+
+descriptionItemSkullId: |
+  &7Owner van het hoofd (UUID)
+
+descriptionItemSkullName: |
+  &7Owner van het hoofd (name)
+
+descriptionItemSkullData: |
+  &7Skin data
+
+descriptionItemSkullSignature: |
+  &7Skin handtekening
+
+descriptionItemSpawnEggType: |
+  &7Het type entiteit dat is voortgebracht
+
+descriptionItemSuspiciousStewCustomEffects: |
+  &7Aangepaste effecten toegepast op deze verdachte stoofpot
+
+descriptionItemTropicalFishBodyColor: |
+  &7De kleur van het lichaam van de vis
+
+descriptionItemTropicalFishPatternColor: |
+  &7De kleur van het vispatroon
+
+descriptionItemTropicalFishPattern: |
+  &7Het patroon van deze vis
+
+# -------------------- Item condition --------------------
+
+descriptionItemMatchItem: |
+  &7Het vereiste item
+
+descriptionItemMatchGoal: |
+  &7Het bedrag van dat item dat nodig is
+
+descriptionItemMatchCheck: |
+  &7De controle om uit te voeren
+
+descriptionItemsNeededItems: |
+  &7De items die de speler moet hebben
+
+descriptionItemsNeededInHand: |
+  &7Om van de speler te eisen dat hij een van de items in zijn hand heeft
+  &7Als dit is ingeschakeld, wordt de telinstelling genegeerd
+
+descriptionItemsNeededInHandSlot: |
+  &7Om van de speler te eisen dat hij een van de items in zijn hand heeft op een specifiek slot
+  &7Dit wordt genegeerd als &6in_hand &7 niet is ingeschakeld 
+
+descriptionItemsNeededCount: |
+  &7Het aantal items van de itemlijst dat de speler moet hebben
+  &7Als dit 0 is, hoeft de speler geen van de vermelde items te hebben
+
+descriptionItemsNeededTake: |
+  &7Om de overeenkomende items achteraf uit de inventaris van de speler te verwijderen
+  &7Dit heeft geen effect is &6count &7is 0
+
+descriptionItemsNeededErrorMessage: |
+  &7Er wordt een bericht verzonden als de speler niet over de vereiste items beschikt
+
+# -------------------- GUI --------------------
+
+descriptionGuiName: |
+  &7De naam van de GUI
+
+descriptionGuiType: |
+  &7Het type GUI
+
+descriptionGuiContents: |
+  &7De inhoud van de GUI
+
+descriptionGuiItemType: |
+  &7Type item
+
+descriptionGuiItemIcon: |
+  &7Het pictogram dat moet worden weergegeven (als het geselecteerde type er niet automatisch een genereert)
+
+descriptionGuiItemLocations: |
+  &7De locaties voor dit item
+  &7Elk element moet worden opgemaakt als & epage, slot & 7 of gewoon & eslot & 7 (de eerste beschikbare pagina wordt gebruikt)
+  &7Als deze instelling leeg is, wordt de eerste beschikbare pagina en plaats bezet
+  &7Als dit item persistent is, zijn paginanummers niet nodig en worden ze genegeerd
+
+descriptionGuiItemPersistent: |
+  &7Om dit item persistent te maken (dezelfde ruimte voor elke pagina, als er meerdere pagina's zijn)
+
+descriptionGuiItemClickSound: |
+  &7Om een ​​geluid af te spelen wanneer de speler op dit item klikt
+
+descriptionGuiItemOverrideClicks: |
+  &7Om kliktypes te specificeren die andere effecten hebben dan het oorspronkelijke objecttype
+
+descriptionGuiItemDynamicBorderLinearOnCount: |
+  &7Het aantal items dat tegelijkertijd actief moet zijn.
+
+descriptionGuiItemDynamicBorderLinearIconOn: |
+  &7Het pictogram voor actieve items.
+
+descriptionGuiItemDynamicBorderLinearIconOff: |
+  &7Het pictogram voor inactieve items.
+
+# -------------------- Position --------------------
+
+descriptionPositionType: |
+  &7Het positietype
+
+descriptionPositionTypeClosestEntityTypes: |
+  &7De entiteitstypen die zijn toegestaan
+  &7Laat het leeg om elk type toe te staan
+
+descriptionPositionTypeClosestEntityNames: |
+  &7De entiteitsnamen die zijn toegestaan
+  &7Laat het leeg om een ​​naam toe te staan (of geen naam)
+
+descriptionPositionTypeClosestEntityColors: |
+  &7De entiteitskleuren die zijn toegestaan ​​(voor kleurbare entiteiten)
+  &7Laat het leeg om elke kleur toe te staan
+
+descriptionPositionTypeCitizensNPCRelative: |
+  &7De NPC om mee te relateren
+
+descriptionPositionTypeClosestMythicMobMobs: |
+  &7De MythicMobs-mobs die zijn toegestaan
+  &7Laat het leeg om elke menigte toe te laten
+
+descriptionPositionTypeWorld: |
+  &7De Wereld
+
+descriptionPositionTypeBiomes: |
+  &7De geaccepteerde biomes
+
+descriptionPositionTypeSingleLocation: |
+  &7De enige locatie
+
+descriptionPositionTypeRelativeSingleLocation: |
+  &7De relatieve enkele locatie
+
+descriptionPositionTypePointTolerance: |
+  &7De tolerantie die moet worden toegepast
+
+descriptionPositionTypeBound1: |
+  &7De eerste locatie gebonden
+
+descriptionPositionTypeBound2: |
+  &7De tweede locatie is gebonden
+
+descriptionPositionTypeRelativeBound1: |
+  &7De eerste relatieve locatie is gebonden
+
+descriptionPositionTypeRelativeBound2: |
+  &7De tweede relatieve locatie is gebonden
+
+descriptionPositionTypeWorldguardRegionWorld: |
+  &7De wereld die de regio bevat
+
+descriptionPositionTypeWorldguardRegionRegion: |
+  &7The WorldGuard region ID
+
+descriptionPositionTypeSphereCenter: |
+  &7Het bolcentrum
+
+descriptionPositionTypeSphereRadius: |
+  &7De bolradius
+
+descriptionPositionTypeCylinderCenter: |
+  &7Het cilindercentrum (Y-coördinaat negerend)
+
+descriptionPositionTypeCylinderRadius: |
+  &7De cilinderradius
+
+# -------------------- Relative location --------------------
+
+descriptionRelativeLocationHorizontalAngle: |
+  &7De horizontale hoek
+
+descriptionRelativeLocationVerticalOffset: |
+  &7De verticale offset
+
+descriptionRelativeLocationDistance: |
+  &7De afstand vanaf de basislocatie
+
+# -------------------- World restriction --------------------
+
+descriptionWorldRestrictionWhitelist: |
+  &7Om een ​​vaste lijst met toegestane werelden te hebben
+
+descriptionWorldRestrictionBlacklist: |
+  &7Een lijst met werelden die altijd verboden zullen zijn
+
+# -------------------- Command restriction --------------------
+
+descriptionCommandRestrictionWhitelist: |
+  &7Om een ​​vaste lijst met toegestane commands te hebben
+
+descriptionCommandRestrictionBlacklist: |
+  &7Een lijst met commands die altijd zullen worden verboden
+
+# -------------------- Dynmap marker --------------------
+
+descriptionDynmapMarkerLocation: |
+  &7Locatie van de markering
+
+descriptionDynmapMarkerText: |
+  &7Tekst van de marker
+
+# -------------------- Potion effect --------------------
+
+descriptionPotionEffectType: |
+  &7Soort effect
+
+descriptionPotionEffectDuration: |
+  &7Duur van het effect
+
+descriptionPotionEffectAmplifier: |
+  &7Versterker van effect
+
+descriptionPotionEffectAmbient: |
+  &7Om het effect ambient in te stellen
+
+descriptionPotionEffectParticles: |
+  &7Om deeltjes in te stellen
+
+descriptionPotionEffectIcon: |
+  &7Pictogram instellen
+
+# -------------------- Firework effect --------------------
+
+descriptionFireworkEffectType: |
+  &7Type van dit effect
+
+descriptionFireworkEffectColors: |
+  &7Kleuren (rood, groen, blauw) van dit effect
+
+descriptionFireworkEffectFadeColors: |
+  &7Vervaag kleuren (rood, groen, blauw) van dit effect
+
+descriptionFireworkEffectFlicker: |
+  &7Om dit effect te laten flikkeren
+
+descriptionFireworkEffectTrail: |
+  &7Laat een spoor achter om dit effect te bereiken
+
+# -------------------- Time --------------------
+
+descriptionElementTimeMonth: |
+  &7De maand
+
+descriptionElementTimeDayOfMonth: |
+  &7De dag van de maand
+
+descriptionElementTimeDayOfWeek: |
+  &7De dag van de week
+
+descriptionElementTimeHour: |
+  &7Het uur
+
+descriptionElementTimeMinute: |
+  &7De minuut
+
+# -------------------- Time limit --------------------
+
+descriptionTimeLimitDuration: |
+  &7De tijdslimiet
+
+descriptionTimeLimitReminder: |
+  &7Om een ​​herinnering te sturen met de resterende tijd
+
+# -------------------- Duration --------------------
+
+descriptionDurationTime: |
+  &7De hoeveelheid tijd
+
+descriptionDurationUnit: |
+  &7De tijdseenheid waarin de hoeveelheid wordt gemeten
+
+# -------------------- Comparison --------------------
+
+descriptionComparisonType: |
+  &7Het vergelijkingstype
+
+# -------------------- Notify --------------------
+
+descriptionNotifyMessage: |
+  &7Om een ​​bericht te sturen
+
+descriptionNotifyActionbar: |
+  &7Om een ​​actionbar te sturen
+
+descriptionNotifyActionbarDuration: |
+  &7De duur van de actiebalk
+
+descriptionNotifyBossbar: |
+  &7Om een ​​bossbar te sturen
+
+descriptionNotifyBossbarColor: |
+  &7Kleur van de bossbar (indien van toepassing)
+
+descriptionNotifyBossbarStyle: |
+  &7Stijl van de bossbar (indien van toepassing)
+
+descriptionNotifyBossbarFlags: |
+  &7Vlaggen van de bossbar (indien van toepassing)
+
+descriptionNotifyBossbarDuration: |
+  &7Duur van de bossbar
+
+descriptionNotifyTitle: |
+  &7Om een ​​titel te sturen
+
+descriptionNotifyTitleSubtitle: |
+  &7Om een ​​ondertitel te verzenden
+
+descriptionNotifyTitleFadeIn: |
+  &7Tijd van de titel vervagen (in tikken)
+
+descriptionNotifyTitleDuration: |
+  &7Weergavetijd van de titel (in tikken)
+
+descriptionNotifyTitleFadeOut: |
+  &7Uitfaden van de titel (in tikken)
+
+descriptionNotifySound: |
+  &7Om een ​​geluid te spelen
+
+descriptionNotifySoundVolume: |
+  &7Volume van het geluid
+
+descriptionNotifySoundPitch: |
+  &7Toonhoogte van het geluid
+
+# -------------------- Time frame --------------------
+
+descriptionTimeFrameType: |
+  &7Type tijdsbestek
+
+descriptionTimeFrameInDayStart: |
+  &7Starttijd overdag
+
+descriptionTimeFrameInDayEnd: |
+  &7Eindtijd in de dag (kan vóór de starttijd zijn om dagen over te gaan)
+
+descriptionTimeFrameInWeekStart: |
+  &7Starttijd in week
+
+descriptionTimeFrameInWeekEnd: |
+  &7Eindtijd in week (kan vóór de starttijd zijn om weken door te lopen)
+
+descriptionTimeFrameInMonthStart: |
+  &7Starttijd in maand
+
+descriptionTimeFrameInMonthEnd: |
+  &7Eindtijd in maand (kan vóór begin maanden zijn)
+
+descriptionTimeFrameInYearStart: |
+  &7Starttijd in jaar
+
+descriptionTimeFrameInYearEnd: |
+  &7Eindtijd in het jaar (kan zijn voordat de maanden beginnen)
+
+descriptionTimeFrameLimitedStart: |
+  &7Start tijd
+
+descriptionTimeFrameLimitedEnd: |
+  &7Eindtijd
+
+# -------------------- Messages --------------------
+
+messageElementBasicEdit: |
+  &7Voer de nieuwe waarde in de chat in, of &c{cancel} &7om te annuleren.
+
+messageElementBasicEditSuggestCurrent: |
+  &7Voer de nieuwe waarde in de chat in, of &c{cancel} &7om te annuleren. Klik op dit bericht om de huidige waarde op te halen.
+
+messageElementBasicEditSearch: |
+  &7Voer een deel van de waarde in de chat in, of &c{annuleren} &7om te annuleren. Als een enkele waarde overeenkomt met de chat die u heeft ingevoerd, wordt deze geselecteerd.
+messageElementBasicEditSearchNoMatch: |
+  &7Er zijn geen overeenkomsten gevonden voor &c{value} &7.
+
+messageElementBasicEditSearchTooManyMatches: |
+  &7Er zijn te veel overeenkomsten gevonden voor &c{value}&7. Probeer een nauwkeuriger waarde in te voeren.
+
+messageElementBasicEditSearchMatch: |
+  &7Gevonden en geselecteerde waarde &a{value}&7.
+
+messageElementBasicListLineEdit: |
+  &7Voer de nieuwe waarde in chat in, of &c{cancel} &7annuleren. Klik op dit bericht om de huidige waarde op te halen.
+
+messageElementBasicListSwap: |
+  &7Druk op een cijfertoets op een andere waarde om deze te verwisselen, of druk op een andere klik om te annuleren.
+
+messageElementBasicListSwapped: |
+  &7Waarden zijn omgewisseld.
+
+messageElementBasicImportLocation: |
+  &7Stiekem om de nieuwe waarde te importeren, of voer &c{cancel} &7in de chat om te annuleren.
+
+messageElementBasicImportNPC: |
+  &7Werk samen met de nieuwe NPC om te importeren of in te voeren &c{cancel} &7in de chat om te annuleren.
+
+messageElementContainerImportItem: |
+  &7Zet het nieuwe item neer om het te importeren of voer het in &c{cancel} &7in de chat om te annuleren.
+
+messageElementCreateEnterId: |
+  &7Voer de nieuwe waarde-ID in chat in, of &c{cancel} &7annuleren.
+
+messageElementCreateInvalidId: |
+  &7ID &c{value} &7is niet geldig : Alleen leters, nummer of &c_ &7zijn toegestaan.
+
+messageElementCreateAlreadyExists: |
+  &7Element &c{value} &7bestaat al.
+
+messageCantImportValue: |
+  &cDeze waarde kan niet worden gebruikt : {error}

@@ -1,0 +1,259 @@
+Builder:
+  fullname: Constructor
+  shortname: C
+  FullDescription:
+    - "Gana dinero construyendo estructuras."
+  ChatColour: WHITE
+  chat-display: full
+  max-level: 200
+  leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
+  income-progression-equation:
+    baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(baseincome*(joblevel-1)*0.01))
+    * ((numjobs-1)*0.05))
+  points-progression-equation:
+    basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(basepoints*(joblevel-1)*0.01))
+    * ((numjobs-1)*0.05))
+  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+  rejoinCooldown: 10
+  maxDailyQuests: 1
+  Quests:
+    "1":
+      Name: Arquitecto
+      Objectives:
+        - Place;spruce_planks;50
+        - Place;birch_planks;50
+        - Place;wool;50
+      RewardCommands:
+        - eco give [playerName] 100
+        - msg [playerName] ¡Misión completada!
+      RewardDesc:
+        - Coloca bloques y gana dinero
+        - ¡Gana 100 por esto!
+  Gui:
+    ItemStack: brick_stairs
+  Place:
+    stone:
+      income: 1.3
+      points: 1.3
+      experience: 2
+    andesite:
+      income: 1.3
+      points: 1.3
+      experience: 2
+    granite:
+      income: 1.3
+      points: 1.3
+      experience: 2
+    diorite:
+      income: 1.3
+      points: 1.3
+      experience: 2
+    cobblestone:
+      income: 0.7
+      points: 0.7
+      experience: 2
+    oak_planks:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    spruce_planks:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    birch_planks:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    jungle_planks:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    acacia_planks:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    dark_oak_planks:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    wool:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    gold_block:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    iron_block:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    oak_slab:
+      income: 0.8
+      points: 0.8
+      experience: 2
+    spruce_slab:
+      income: 0.8
+      points: 0.8
+      experience: 2
+    birch_slab:
+      income: 0.8
+      points: 0.8
+      experience: 2
+    jungle_slab:
+      income: 0.8
+      points: 0.8
+      experience: 2
+    acacia_slab:
+      income: 0.8
+      points: 0.8
+      experience: 2
+    dark_oak_slab:
+      income: 0.8
+      points: 0.8
+      experience: 2
+    stone_slab:
+      income: 0.8
+      points: 0.8
+      experience: 2
+    sandstone_slab:
+      income: 0.8
+      points: 0.8
+      experience: 2
+    petrified_oak_slab:
+      income: 0.8
+      points: 0.8
+      experience: 2
+    cobblestone_slab:
+      income: 0.8
+      points: 0.8
+      experience: 2
+    brick_slab:
+      income: 0.8
+      points: 0.8
+      experience: 2
+    stone_brick_slab:
+      income: 0.8
+      points: 0.8
+      experience: 2
+    nether_brick_slab:
+      income: 0.8
+      points: 0.8
+      experience: 2
+    quartz_slab:
+      income: 0.8
+      points: 0.8
+      experience: 2
+    red_sandstone_slab:
+      income: 0.8
+      points: 0.8
+      experience: 2
+    purpur_slab:
+      income: 0.8
+      points: 0.8
+      experience: 2
+    bricks:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    bookshelf:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    mossy_cobblestone:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    obsidian:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    cobblestone_stairs:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    acacia_stairs:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    birch_stairs:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    brick_stairs:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    dark_oak_stairs:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    dark_prismarine_stairs:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    jungle_stairs:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    oak_stairs:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    prismarine_brick_stairs:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    prismarine_stairs:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    purpur_stairs:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    quartz_stairs:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    red_sandstone_stairs:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    sandstone_stairs:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    spruce_stairs:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    stone_brick_stairs:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    chest:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    diamond_block:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    crafting_table:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    furnace:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    ladder:
+      income: 1.5
+      points: 1.5
+      experience: 2
+  Kill:
+    Player:
+      income: 7.5
+      points: 7.5
+      experience: 7.5

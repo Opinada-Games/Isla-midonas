@@ -1,0 +1,179 @@
+pages:
+  page1:
+    items:
+      "1":
+        material: CALCITE
+        buy: 2
+        sell: 0.5
+      "2":
+        material: DRIPSTONE_BLOCK
+        buy: 1
+        sell: 0.25
+      "3":
+        material: HAY_BLOCK
+        buy: 47.25
+        sell: 11.82
+      "4":
+        material: HONEY_BLOCK
+        buy: 33.34
+        sell: 8.34
+      "5":
+        material: MAGMA_BLOCK
+        buy: 33.63
+        sell: 8.41
+      "6":
+        material: PACKED_ICE
+        buy: 13.5
+        sell: 3.38
+      "7":
+        material: ROOTED_DIRT
+        buy: 1
+        sell: 0.25
+      "9":
+        material: SNOW_BLOCK
+        buy: 12.6
+        sell: 3.15
+      "10":
+        material: SOUL_SAND
+        buy: 10
+        sell: 2.5
+      "12":
+        material: ANDESITE
+        buy: 0.72
+        sell: 0.18
+      "26":
+        material: BLACKSTONE
+        buy: 0.75
+        sell: 0.19
+      "35":
+        material: BOOKSHELF
+        buy: 119.12
+        sell: 29.78
+      "51":
+        material: COBBLESTONE
+        buy: 0.68
+        sell: 0.17
+      "52":
+        material: COBBLESTONE_SLAB
+        buy: 0.36
+        sell: 0.09
+      "53":
+        material: COBBLESTONE_STAIRS
+        buy: 0.72
+        sell: 0.18
+      "54":
+        material: MOSSY_COBBLESTONE
+        buy: 8.07
+        sell: 2.02
+      "57":
+        material: BLACK_CONCRETE
+        buy: 8.41
+        sell: 2.11
+      "60":
+        material: CYAN_CONCRETE
+        buy: 7.81
+        sell: 1.96
+      "70":
+        material: RED_CONCRETE
+        buy: 7.87
+        sell: 1.97
+      "71":
+        material: WHITE_CONCRETE
+        buy: 8.01
+        sell: 2.01
+      "92":
+        material: WAXED_WEATHERED_CUT_COPPER_STAIRS
+        buy: 2.05
+        sell: 0.52
+      "94":
+        material: COBBLED_DEEPSLATE
+        buy: 0.68
+        sell: 0.17
+      "100":
+        material: DEEPSLATE_TILES
+        buy: 0.79
+        sell: 0.2
+      "107":
+        material: CLAY
+        buy: 21
+        sell: 5.25
+      "109":
+        material: DIRT
+        buy: 3
+        sell: 0.75
+      "111":
+        material: GRAVEL
+        buy: 8
+        sell: 2
+      "113":
+        material: PODZOL
+        buy: 8
+        sell: 2
+      "118":
+        material: END_STONE_BRICKS
+        buy: 5.25
+        sell: 1.32
+      "128":
+        material: GLOWSTONE
+        buy: 29.4
+        sell: 7.35
+      "130":
+        material: MUD_BRICK_SLAB
+        buy: 4.74
+        sell: 1.19
+      "134":
+        material: PACKED_MUD
+        buy: 8.6
+        sell: 2.15
+      "138":
+        material: NETHER_BRICKS
+        buy: 0.89
+        sell: 0.23
+      "142":
+        material: CRYING_OBSIDIAN
+        buy: 62.5
+        sell: 15.63
+      "143":
+        material: OBSIDIAN
+        buy: 31.25
+        sell: 7.82
+      "156":
+        material: QUARTZ_BRICKS
+        buy: 36.47
+        sell: 9.12
+      "157":
+        material: QUARTZ_SLAB
+        buy: 18.24
+        sell: 4.56
+      "160":
+        material: SAND
+        buy: 6
+        sell: 1.5
+      "161":
+        material: SANDSTONE
+        buy: 12
+        sell: 3
+      "173":
+        material: STONE
+        buy: 0.72
+        sell: 0.18
+      "182":
+        material: TERRACOTTA
+        buy: 22.05
+        sell: 5.52
+      "193":
+        material: TUFF_STAIRS
+        buy: 2.1
+        sell: 0.53
+      "200":
+        material: GRASS_BLOCK
+        buy: 10
+        sell: 5.5
+      "201":
+        material: CRIMSON_NYLIUM
+        buy: 16
+        sell: 6.4
+      "202":
+        material: WARPED_NYLIUM
+        buy: 16
+        sell: 6.4

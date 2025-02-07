@@ -1,0 +1,110 @@
+# Chunks Menu Configuration for zMenu
+size: 27
+name: "&8> &6&lMenú de Naciones, Estados y Tierras"
+
+items:
+  declare_land:
+    slot: 11
+    item:
+      material: GRASS_BLOCK
+      name: "&aInstituir un Estado"
+      lore:
+        - "&7Declara el nombre de tu Estado/Provincia"
+        - "&7Las tierras que reclames, pertenecerán a tu estado"
+        - "&eEscribe en el chat: &6/lands create &b<nombre>"
+        - ""
+    commands:
+      - tellraw %player_name% {"text":"Da ","color":"white","extra":[{"text":"[Click aquí]","color":"gray","bold":true,"clickEvent":{"action":"suggest_command","value":"/lands create "}},{"text":" para iniciar la creación del territorio.","color":"white"}]}
+    closeInventory: true
+
+  claim_land:
+    slot: 11
+    item:
+      material: GOLD_BLOCK
+      name: "&eReclamar tierra"
+      lore:
+        - "&7Reclama la tierra (Chunk) donde estás parado."
+        - "&7Si no pertenece a nadie, será tuyo."
+        - "&eHaz clic para reclamar el territorio."
+        - "Nota: "
+        - "&8Command: &b/lands claim"
+        - ""
+    commands:
+      - "lands claim"
+    closeInventory: true
+
+  leave_land:
+    slot: 13
+    item:
+      material: RED_BANNER
+      name: "&cAbandonar todas tus tierras"
+      lore:
+        - "&7Automáticamente abandonas todos los territorios (Chunks) reclamados."
+        - "&7Sin embargo, tu estado seguira existiendo a la espera de que"
+        - "&7reclames más tierras (Chunks)"
+        - "&eHaz clic para abandonar tus chunks."
+        - "&eComando: &6/lands unclaim all confirm"
+        - ""
+    commands:
+      - lands unclaim all confirm
+    closeInventory: true
+
+  delete_land:
+    slot: 15
+    item:
+      material: TNT
+      name: "&cEliminar un Territorio"
+      lore:
+        - "&7Elimina un territorio de forma permanente."
+        - "&7Escribe en el chat: &6/lands delete &b<nombre_del_territorio> confirm"
+        - "&eHaz clic para preparar el comando."
+        - ""
+    commands:
+      - "lands delete %lands_land_name% confirm"
+    closeInventory: true
+
+  my_lands:
+    slot: 16
+    item:
+      material: MAP
+      name: "&bMapa de tierras"
+      lore:
+        - "&7Revisa a tu alrededor, que chunks"
+        - "&7Estan ocupados por ti y los demás"
+        - "&b[NOTA] &7También puedes consultar el mapa"
+        - "&7de todo el servidor en tu navegador"
+        - "&eHaz clic para ver el mapa básico."
+        - "&8Command: &b/lands map"
+        - ""
+    commands:
+      - "lands"
+    closeInventory: true
+
+  help_item:
+    slot: 25
+    item:
+      material: WRITABLE_BOOK
+      name: "&6Ayuda: Territorios vs Tierras"
+      lore:
+        - "&7Un territorio es como un estado: tiene nombre e identidad."
+        - "&7Una tierra es un chunk físico que forma parte de un territorio."
+        - "&7Incluso si pierdes todas tus tierras, tu territorio seguirá existiendo."
+        - "&e¡Reclama tierras para expandir tu dominio!"
+        - ""
+    closeInventory: false
+
+  volver:
+    slot: 26
+    item:
+      material: ARROW
+      name: "&cVolver al Menú Principal"
+      lore:
+        - "&7Regresa al menú principal."
+        - "&eHaz clic para volver."
+    commands:
+      - "zm open lands_menu"
+    closeInventory: true
+
+fillItem:
+  material: GRAY_STAINED_GLASS_PANE
+  name: " "

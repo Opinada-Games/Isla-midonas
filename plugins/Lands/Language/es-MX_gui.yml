@@ -1,0 +1,3569 @@
+# Here you can edit all GUI menus.
+#
+# If you encounter any issues or have questions:
+# Discord: https://discord.incredibleplugins.com
+#
+# Wiki: https://wiki.incredibleplugins.com/general/menus/gui-menus
+
+general:
+  all: '&aTodo'
+  previous: '&8anterior'
+  nation:
+    role:
+      capital: '&4&lCapital'
+      land: '&2&lEstado'
+    managed:
+      nation: '&cAdministrado por la Nación'
+      land: '&cAdministrado por Estados'
+  inbox-filter:
+    general: General
+    members: '&eMiembros ☺'
+    war: '&4Guerra ⚔'
+    economy: '&cEconomía $'
+    relations: '&aRelaciones'
+    posts: '&7Publicaciones'
+    storage: '&7Almacén'
+  wYes: '&aSí'
+  war:
+    defenders: '&aDefensores'
+    name:
+      nation: '&9Nación '
+      land: '&2Terreno '
+    attackers: '&cAtacantes'
+  value:
+    none: '&cNinguno'
+    unlimited: '&aIlimitado'
+  enabled: '&aHabilitado'
+  offline: '&cDesconectado'
+  never: Nunca
+  rentables:
+    cost: '&cCosto'
+    price_blocks_ratio: '&aProporción precio-bloques'
+    size: '&eTamaño'
+    buy: '&aComprar'
+    rent: '&eRentar'
+    rental: '&eRenta'
+    sell: '&aVender'
+  top:
+    sorting:
+      balance: Saldo
+      ratio-kd: Asesinatos/Muertes
+      level: Nivel
+      chunks: Chunks
+      members: Miembros
+      ratio-wl: Ganadas/Perdidas
+  now: '&aAhora'
+  wNo: '&cNo'
+  disabled: '&cDeshabilitado'
+  directions:
+    north: Norte
+    east: Este
+    south: Sur
+    west: Oeste
+
+skull:
+  area:
+    sub: OAK_FENCE
+    default: DARK_OAK_FENCE
+physical:
+  selection:
+    lore:
+    - '&7Usa esta herramienta para crear una selección.'
+    - '&7Las selecciones se pueden usar para:'
+    - ' &8• &e/claim'
+    - ' &8• &e/unclaim'
+    - ' &8• &e/assign'
+    name: '&2&lHerramienta de Selección'
+    material: GOLDEN_HOE
+  capture_flag:
+    lore:
+    - '&7Coloca esta bandera en terreno enemigo'
+    - '&7durante la guerra para capturarlo.'
+    name: '&2&lBandera de Captura'
+    material: BEACON
+  currency:
+    name: ''
+    material: GOLD_INGOT
+  claim_block_radius:
+    lore:
+    - '&7Puedes reclamar un radio de'
+    - '&7chunks colocando este bloque'
+    - '&7en zona salvaje.'
+    - ''
+    - ' &8• &7Dueño:&3 {owner}'
+    - ' &8• &7Radio:&3 {radius} &8(&3= {chunks} chunks&8)'
+    name: '&2&lBloque de Reclamo (Radio)'
+    material: GRASS_BLOCK
+  claim_block:
+    lore:
+    - '&7Puedes reclamar un chunk'
+    - '&7colocando este bloque'
+    - '&7en zona salvaje.'
+    - ''
+    - ' &8• &7Dueño:&3 {owner}'
+    name: '&2&lBloque de Reclamo'
+    material: GRASS_BLOCK
+  info:
+    lore:
+    - '&7Usa esta herramienta para obtener'
+    - '&7información sobre el reclamo'
+    - '&7al que estés apuntando.'
+    name: '&2&lHerramienta de Información'
+    material: FEATHER
+  camp:
+    lore:
+    - '&7Coloca este ítem para crear un campamento'
+    - '&7temporal que será eliminado después de'
+    - '&5{time}&7.'
+    - ' &8• &7Radio:&3 {radius}'
+    - ' &8• &7Los campamentos no se pueden expandir.'
+    name: '&2&lCampamento'
+    material: CAMPFIRE
+  main_block:
+    material: BELL
+
+common:
+  items:
+    default:
+      child_failure_message:
+        name: '&4&lError'
+        lore:
+        - '{message}'
+      child_success_message:
+        name: '&a&lÉxito'
+        lore:
+        - '{message}'
+      child_failure_teleport:
+        name: '&4&lEl teletransporte falló'
+        lore:
+        - '&7El teletransporte falló debido a'
+        - '&7la siguiente causa: {result}'
+      child_failure_player_trusted:
+        lore:
+        - '&7Ya eres parte de este terreno.'
+        name: '&4&lYa tienes confianza'
+      child_failure_land_max-members:
+        lore:
+        - '&cNo puedes tener confianza en'
+        - '&cel terreno&4 {object}&c.'
+        - ' &8• &7Alcanzaron el número máximo'
+        - '   &7de miembros.'
+        name: '&4&lMáximo de Miembros alcanzado'
+      child_failure_permission:
+        lore:
+        - '&cNo tienes permiso para hacer esto.'
+        name: '&4&lFalta Permiso'
+      child_failure_teleport_enter:
+        lore:
+        - '&cNo tienes permiso para entrar'
+        - '&cen el área donde está la'
+        - '&cdestino.'
+        - ' &8• &7El dueño del terreno puede dar'
+        - '   &7permiso a tu rol para hacerlo.'
+        name: '&4&lNo Permitido para Entrar'
+      child_failure_player_banned:
+        lore:
+        - '&cNo puedes unirte a este terreno,'
+        - '&cporque estás bloqueado.'
+        name: '&4&lEstás Bloqueado'
+      refresh_page_previous:
+        lore:
+        - '&8✖ &7Actual: {current} / {pages}'
+        name: '&c&lPágina Anterior'
+        material: ARROW
+        slots: 38
+      child_failure_no-item:
+        lore:
+        - '&7Necesitas arrastrar un ítem'
+        - '&7desde tu inventario aquí.'
+        name: '&4&lNo hay Ítem en el Cursor'
+      child_failure_spawn_cooldown:
+        lore:
+        - '&cDebes esperar otros&4 {time}'
+        - '&cantes de poder teletransportarte'
+        - '&ca cualquier spawn de terreno.'
+        name: '&4&lTiempo de Reutilización'
+      child_failure_teleport_unsafe:
+        name: '&4&lNo Seguro'
+        lore:
+        - '&cNo se pudo teletransportar a este destino,'
+        - '&cporque no es seguro.'
+      back:
+        lore:
+        - '&8✖ &7Regresar a'
+        - '   &7{back}.'
+        name: '&c&lRegresar'
+        material: RED_STAINED_GLASS_PANE
+        slots: 37
+      refresh_page_next:
+        lore:
+        - '&8✖ &7Actual: {current} / {pages}'
+        name: '&a&lPágina Siguiente'
+        material: ARROW
+        slots: 44
+      child_failure_cost:
+        lore:
+        - '&7Necesitas&c {cost} &7para hacer esto.'
+        name: '&4&lDinero Insuficiente'
+      child_failure_spawn_cost:
+        lore:
+        - '&7Necesitas&c {cost} &7para pagar'
+        - '&7el teletransporte.'
+        name: '&4&lDinero Insuficiente'
+      child_failure_noaccess_owner:
+        name: '&4&lNo permitido'
+        lore:
+        - '&7Sólo el dueño de {object}&7 puede hacer eso.'
+      child_failure_spawn_teleport:
+        lore:
+        - '&cNo tienes permiso para teletransportarte'
+        - '&ca este spawn de terreno.'
+        - ' &8• &7El dueño del terreno puede dar'
+        - '   &7permiso a tu rol para hacerlo.'
+        name: '&4&lTeletransporte No Permitido'
+      child_failure_spawn_war:
+        lore:
+        - '&cNo puedes teletransportarte a este'
+        - '&cspawn de terreno ahora mismo.'
+        - ' &8• &7Están actualmente en guerra,'
+        - '   &7la cual terminará en&5 {time}&7.'
+        name: '&4&lGuerra Activa'
+      child_failure_player_own-land:
+        lore:
+        - '&cNo puedes unirte a otro terreno, mientras'
+        - '&cseas el dueño de un terreno.'
+        - ' &8• &7Debes eliminarlo primero:'
+        - '   &3/lands delete'
+        name: '&4&lTienes un Terreno'
+      child_failure_current-war:
+        lore:
+        - '&7No puedes hacer esto mientras'
+        - '&7{object}&7 participe'
+        - '&7en una guerra.'
+        name: '&4&lActualmente en Guerra'
+      child_failure_membership-request_not-looking:
+        lore:
+        - '&cEste terreno no está buscando'
+        - '&cnuevos miembros.'
+        name: '&4&lNo busca Miembros'
+      child_failure_page_previous:
+        name: '&4&lNo hay Página Anterior'
+      child_success_player_trusted:
+        lore:
+        - '&7El terreno&2 {land} &7automáticamente'
+        - '&7aceptó tu solicitud.'
+        - ' &8• &7Para salir de un terreno:'
+        - '   &e/lands leave'
+        name: '&aAhora tienes confianza'
+      child_failure_page_next:
+        name: '&4&lNo hay Página Siguiente'
+      child_success_membership-request_revoked:
+        lore:
+        - '&7Revocaste exitosamente tu'
+        - '&7solicitud de membresía.'
+        name: '&cSolicitud de Membresía Revocada'
+      child_failure_noaccess:
+        lore:
+        - '&cNo tienes permiso para hacer esto.'
+        - ' &8• &7El dueño de {object}&7 puede dar'
+        - '   &7permiso a tu rol para hacerlo.'
+        - '   &7Bandera: {flag}'
+        name: '&4&lNo permitido'
+      child_success_membership-request_sent:
+        lore:
+        - '&7Ellos ahora pueden aceptar tu'
+        - '&7solicitud de membresía.'
+        name: '&aSolicitud de Membresía Enviada'
+      child_failure_spawn_none:
+        lore:
+        - '&cEste terreno no tiene un spawn configurado.'
+        - ' &8• &7Configurar spawn:'
+        - '   &e/lands setspawn'
+        name: '&4&lNo hay Punto de Aparición'
+      child_failure_player_max-lands:
+        lore:
+        - '&cNo puedes unirte a más Estados.'
+        - ' &8• &7Alcanzaste la cantidad máxima'
+        - '   &7de estados a los que puedes pertenecer'
+        - '   &7al mismo tiempo.'
+        name: '&4&lMáximo de Estados'
+      category:
+        lore:
+        - '&8✖ &7Cambia la categoría del terreno.'
+        - '  &8• &7Otros pueden filtrar tu terreno en el'
+        - '    &3/lands list &7mediante esta categoría.'
+        name: '&6&lCategoría: {category}'
+        material: BOOKSHELF
+        slots: 40
+      category_members:
+        lore:
+        - '&8✖ &7Cambia la categoría del terreno.'
+        - '  &8• &7Otros pueden filtrar tu terreno en el'
+        - '    &3/lands list &7mediante esta categoría.'
+        - ''
+        - '  &8• &7Otros pueden solicitar membresía a'
+        - '    &7este terreno en el &3/lands list'
+        - '    &7siempre y cuando la categoría de'
+        - '    &7tu terreno sea:'
+        - '    &7{looking}'
+        name: '&6&lCategoría: {category}'
+        material: BOOKSHELF
+        slots: 40
+      child_failure_global-action:
+        name: '&4&lMostrar todas las áreas habilitado'
+        lore:
+        - '&cNo puedes desactivar esto si estás viendo'
+        - '&centradas para todas las áreas. &7Activa "&6&lVer solo área&7"'
+        - '&7para cambiar esto.'
+      war_attackers:
+        lore:
+        - '&8✖ &7Ver todas las tierras atacantes.'
+        - '   &7Jugadores: {players}'
+        - ''
+        - '&6&lProgreso'
+        - ' &8• &7Capturas: {cap}'
+        - ' &8• &7Muertes: {kills}'
+        - '   &3= {points} / {towin} &7puntos para ganar'
+        - '   {bar}'
+        name: '&c&lAtacante {object}'
+      war_defenders:
+        lore:
+        - '&8✖ &7Ver todas las tierras defensoras.'
+        - '   &7Jugadores: {players}'
+        - ''
+        - '&6&lProgreso'
+        - ' &8• &7Capturas: {cap}'
+        - ' &8• &7Muertes: {kills}'
+        - '   &3= {points} / {towin} &7puntos para ganar'
+        - '   {bar}'
+        name: '&a&lDefensor {object}'
+      war_points:
+        lore:
+        - '&7Un equipo necesita&3 {points} &7puntos para ganar.'
+        - ' &8• &7Muerte: &3{p_kill} punto(s)'
+        - ' &8• &7Captura: &3{p_cap} punto(s)'
+        - '    &8• &7Para capturar un área enemiga, coloca'
+        - '      &7una bandera de captura en ella. Puedes'
+        - '      &7ver la receta de crafteo'
+        - '      &7en este menú.'
+        - ''
+        - ' &8• &7Si ningún equipo alcanza {points} puntos,'
+        - '   &7la guerra acabará en&5 {time}&7.'
+        name: '&6&lDistribución de Puntos'
+      placeholder_1:
+        material: GRAY_STAINED_GLASS_PANE
+        slots: 1-45
+  size: 45
+  entries: 10-36
+  auto-correct: true
+
+gui:
+  area_various:
+    title: '&8Varios'
+    items:
+      default:
+        child_no-item:
+          lore:
+          - '&7Necesitas tener un ítem'
+          - '&7en tu mano principal.'
+          name: '&4&lNo hay ítem en Mano'
+        name:
+          lore:
+          - '&8✖ &7Renombra esta área.'
+          - '   &7Actual: {name}'
+          name: '&6&lNombre'
+          material: NAME_TAG
+          slots: 20
+        icon:
+          lore:
+          - '&8✖ &7Arrastra un ítem aquí para cambiar el ícono.'
+          - '    &8• &7Esto te ayuda a reconocer'
+          - '      &7esta área en el menú de áreas.'
+          name: '&6&lÍcono'
+          material: INHERIT
+          slots: 26
+        description:
+          lore:
+          - '&8✖ &7Cambia la descripción de'
+          - '   &7esta área.'
+          - '   &8• &7&lActual:'
+          - '     {description}'
+          name: '&6&lDescripción'
+          material: OAK_SIGN
+          slots: 23
+  role:
+    title: '&8{role}'
+    items:
+      default:
+        taxes_never:
+          lore:
+          - '&7No se puede cambiar para este rol.'
+          name: '&6&lEste rol no paga Impuestos'
+          material: GOLD_INGOT
+          slots: 15
+        settings:
+          lore:
+          - '&8✖ &7Activa o desactiva banderas de acción como romper bloques,'
+          - '   &7abrir contenedores, etc.'
+          name: '&6&lBanderas de Acción'
+          material: IRON_PICKAXE
+          slots: 29
+        apply:
+          lore:
+          - '&8✖ &7¿Se debe añadir este rol,'
+          - '   &7incluyendo sus miembros y banderas,'
+          - '   &7a nuevas creaciones de áreas?'
+          name: '&6&lAgregar a nuevas Áreas: {apply}'
+          material: OAK_FENCE
+          slots: 14
+        members_ally:
+          lore:
+          - '&7Todos los jugadores que no tengan confianza'
+          - '&7y que formen parte de un terreno aliado,'
+          - '&7tienen asignado este rol.'
+          name: '&6&lMiembros del Rol'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 11
+        icon:
+          lore:
+          - '&8✖ &7Arrastra un ítem aquí para cambiar'
+          - '   &7el ícono del rol.'
+          - '&8✖ &3DROP'
+          - '   &7Reiniciar al valor predeterminado.'
+          name: '&6&lÍcono'
+          material: INHERIT
+          slots: 13
+        taxes:
+          lore:
+          - '&8✖ &7¿Deben los miembros de este rol'
+          - '   &7pagar impuestos?'
+          - '   &8• &7El terreno recibe&c {taxes} &7en impuestos'
+          - '     &7de este rol y área dentro de'
+          - '     &5{time}&7.'
+          name: '&6&lPaga Impuestos: {current}'
+          material: GOLD_INGOT
+          slots: 15
+        apply_always:
+          lore:
+          - '&7Este rol, con sus miembros'
+          - '&7y banderas, siempre se añade a'
+          - '&7nuevas creaciones de áreas. No se'
+          - '&7puede desactivar para este rol.'
+          name: '&6&lAñade Rol a nuevas Áreas'
+          material: OAK_FENCE
+          slots: 14
+        members_visitor:
+          lore:
+          - '&7Todos los jugadores que no tengan confianza'
+          - '&7tienen asignado este rol.'
+          name: '&6&lMiembros del Rol'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 11
+        child_failure_priority:
+          lore:
+          - '&cNo tienes permitido editar'
+          - '&cconfiguraciones de este rol.'
+          - ' &8• &7Tiene mayor prioridad que la tuya'
+          - '   &7o eres miembro de este rol.'
+          name: '&4&lPrioridad del Rol'
+        members_nation:
+          lore:
+          - '&7Todos los jugadores que no tengan confianza'
+          - '&7y formen parte de tu nación,'
+          - '&7tienen asignado este rol.'
+          name: '&6&lMiembros del Rol'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 11
+        child_failure_access:
+          lore:
+          - '&cNo tienes permitido editar'
+          - '&clos roles en esta área.'
+          - ' &8• &7El dueño del terreno puede dar'
+          - '   &7permiso a tu rol para hacerlo.'
+          name: '&4&lNo Permitido'
+        management:
+          lore:
+          - '&8✖ &7Activa o desactiva banderas administrativas como'
+          - '   &7confiar en jugadores, reclamar, etc.'
+          name: '&6&lBanderas de Administración'
+          material: GOLD_INGOT
+          slots: 30
+        members:
+          lore:
+          - '&8✖ &7Ver todos los miembros del rol.'
+          name: '&6&lMiembros del Rol'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 11
+        name:
+          lore:
+          - '&8✖ &7Renombra este rol.'
+          - '   &7Actual: {name}'
+          name: '&6&lRenombrar'
+          material: NAME_TAG
+          slots: 12
+        child_failure_nation:
+          lore:
+          - '&cEste rol es parcialmente administrado'
+          - '&cpor tu nación.'
+          - ' &8• &7Sólo la capital de la nación puede cambiar'
+          - '   &7esta configuración: &e/nations menu'
+          name: '&4&lRol administrado por la Nación'
+        child_failure_nation_none:
+          lore:
+          - '&cEste rol será parcialmente administrado'
+          - '&cpor la nación a la que puedas pertenecer en el futuro.'
+          - ' &8• &7Actualmente no formas parte de ninguna nación.'
+          name: '&4&lRol administrado por la Nación'
+  list_nation_effects:
+    title: '&8Efectos'
+    items:
+      default:
+        child_failure_max:
+          lore:
+          - '&cTu nación alcanzó su máximo'
+          - '&ccantidad de&4 {max} &cefectos'
+          - '&cactivos simultáneos.'
+          - ' &8• &7Puedes tener más efectos'
+          - '   &7activos al mismo tiempo,'
+          - '   &7alcanzando un nivel mayor.'
+          name: '&4&lCantidad Máxima'
+        child_failure_locked:
+          lore:
+          - '&7Tu nación necesita alcanzar'
+          - '&7nivel&3 {level} &7antes de'
+          - '&7poder activar este efecto.'
+          name: '&4&lNivel muy bajo'
+        entry_object:
+          lore:
+          - '&8✖ &7¿Debe este efecto estar activo'
+          - '   &7dentro de las tierras de tu nación?'
+          name: '&6&l{effect}: {active}'
+          material: POTION
+        entry_object_locked:
+          lore:
+          - '&7Se desbloquea en el nivel: {level}'
+          name: '&6&l{effect}'
+          material: POTION
+        entry_object_active:
+          lore:
+          - '&8✖ &7¿Debe este efecto estar activo'
+          - '   &7dentro de las tierras de tu nación?'
+          enchanted: true
+          name: '&6&l{effect}: {active}'
+          material: POTION
+  nation:
+    title: '&8{level} {nation}'
+    items:
+      default:
+        role:
+          lore:
+          - '&8✖ &7Configura lo que los miembros'
+          - '   &7de la nación pueden hacer en cada'
+          - '   &7terreno que sea parte de esta nación.'
+          name: '&6&lRol de Nación'
+          material: INHERIT
+          slots: 30
+        level:
+          lore:
+          - '&8✖ &7Ver el progreso de nivel y'
+          - '   &7atributos.'
+          name: '&6&lNivel'
+          material: EXPERIENCE_BOTTLE
+          slots: 15
+        war:
+          lore:
+          - '&8✖ &7Obtén información sobre'
+          - '   &7la guerra actual.'
+          name: '&c&lGuerra Actual'
+          material: IRON_SWORD
+          slots: 12
+        taxes:
+          lore:
+          - '&8✖ &7Aplica impuestos a los estados'
+          - '   &7que forman parte de esta nación'
+          - '   &7según su tamaño.'
+          name: '&6&lImpuestos'
+          material: GOLD_INGOT
+          slots: 29
+        child_failure_spawn_teleport:
+          lore:
+          - '&cNo tienes permitido teletransportarte'
+          - '&cal spawn de la capital.'
+          - ' &8• &7El dueño de la capital puede dar'
+          - '   &7permiso a tu rol para hacerlo.'
+          name: '&4&lNo Permitido para Teletransportar'
+        effects:
+          lore:
+          - '&8✖ &7Activa o desactiva efectos dentro'
+          - '   &7de tu nación. Los efectos se pueden'
+          - '   &7desbloquear al subir de nivel la nación.'
+          name: '&6&lEfectos'
+          material: POTION
+          slots: 31
+        spawn:
+          lore:
+          - '&8✖ &7Teletranspórtate al spawn de la capital.'
+          name: '&6&lSpawn'
+          material: ENDER_PEARL
+          slots: 9
+        stats:
+          lore:
+          - '&7Total de jugadores: {members}'
+          - ''
+          - '&6&lEconomía:'
+          - ' &8• &7Nación'
+          - '   &7Saldo: {balance}'
+          - '   &7La nación paga&c {upkeep} &7de mantenimiento'
+          - '   &7en {upkeep_next}.'
+          - ' &8• &4Tu terreno &8({land}&8)'
+          - '   &7Mantenimiento de&c {upkeep_land} &7a la'
+          - '   &7nación en {upkeep_next_land}.'
+          name: '&6&lEstadísticas'
+          material: skin:d01afe973c5482fdc71e6aa10698833c79c437f21308ea9a1a095746ec274a0f
+          slots: 16
+        lands:
+          lore:
+          - '&8✖ &7Gestiona los estados que forman'
+          - '   &7parte de esta nación.'
+          name: '&6&lEstados'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 11
+        no-war:
+          lore:
+          - '&7Tu nación no está involucrada'
+          - '&7en ninguna guerra. Todo está en paz.'
+          name: '&a&lPacífico'
+          material: WOODEN_SWORD
+          slots: 12
+        relations:
+          lore:
+          - '&8✖ &7Gestiona tus relaciones con'
+          - '   &7otros estados y naciones.'
+          name: '&6&lRelaciones'
+          material: LIME_BANNER
+          slots: 14
+        inbox:
+          lore:
+          - '&8✖ &7Abrir vista avanzada.'
+          - '&7Mensajes recibidos:'
+          - '{inbox}'
+          name: '&6&lBandeja &8(&7{amount}&8)'
+          material: skin:6bf3fcdccffd963e4334818108e1e9ae3a80566d0d3d2d4ab3051a2cd811348c
+          slots: 13
+        child_failure_spawn_none:
+          lore:
+          - '&cLa capital no ha establecido un spawn aún.'
+          - ' &8• &7Establecer spawn:'
+          - '   &e/lands setspawn'
+          name: '&4&lNo hay Punto de Aparición'
+  list_area_invites:
+    title: '&8{area} &7> &8Invitaciones'
+    items:
+      default:
+        entry_object_owner:
+          lore:
+          - '&7Configura a este jugador como el nuevo dueño'
+          - '&7del terreno &2{land}&7.'
+          - ''
+          - '&6&lInformación'
+          - '&8• &7Enviado:&5 {time}'
+          - '&8• &7Remitente: {sender}'
+          - '&8✖ &3DROP'
+          - '   &7Revocar esta invitación.'
+          name: '&e&l{player} &7- &6&lInvitación de Propietario'
+          material: INHERIT
+        entry_object_trust_area:
+          lore:
+          - '&7Otorga confianza a este jugador en el área &6{area}&7.'
+          - ''
+          - '&6&lInformación'
+          - '&8• &7Enviado:&5 {time}'
+          - '&8• &7Remitente: {sender}'
+          - '&8✖ &3DROP'
+          - '   &7Revocar esta invitación.'
+          name: '&e&l{player} &7- &6&lInvitación de Miembro'
+          material: INHERIT
+        child_failure_access:
+          lore:
+          - '&cNo tienes permitido revocar'
+          - '&cinvitaciones en esta área.'
+          - ' &8• &7El dueño del terreno puede dar permiso'
+          - '   &7a tu rol para desconfiar jugadores.'
+          name: '&4&lNo permitido'
+        entry_object_trust_land:
+          lore:
+          - '&7Otorga confianza a este jugador en todo'
+          - '&7el terreno &2{land}&7.'
+          - ''
+          - '&6&lInformación'
+          - '&8• &7Enviado:&5 {time}'
+          - '&8• &7Remitente: {sender}'
+          - '&8✖ &3DROP'
+          - '   &7Revocar esta invitación.'
+          name: '&e&l{player} &7- &6&lInvitación de Miembro'
+          material: INHERIT
+  land_various:
+    title: '&8Varios'
+    items:
+      default:
+        name:
+          lore:
+          - '&8✖ &7Establece un nuevo nombre para tu terreno.'
+          - '   &7&lActual: &7{name}'
+          name: '&6&lNombre del Terreno'
+          material: NAME_TAG
+          slots: 20
+        icon:
+          lore:
+          - '&8✖ &7Arrastra un ítem aquí para cambiar'
+          - '   &7el ícono del terreno.'
+          - '&8✖ &3DROP'
+          - '   &7Reiniciar al valor predeterminado.'
+          name: '&6&lÍcono'
+          material: INHERIT
+          slots: 26
+        title:
+          lore:
+          - '&8✖ &7Cambia el mensaje que aparece'
+          - '   &7a los jugadores que entren al terreno.'
+          - '    &8• &7&lActual:'
+          - '      {title}'
+          - '    &8• &7&lMarcadores disponibles'
+          - '      &8- &3%owner% &8= &7Dueño'
+          - '      &8- &3%level% &8= &7Nivel'
+          - '      &8- &3%nation% &8= &7Nación'
+          - '      &8- &3%player% &8= &7Jugador que entra'
+          - ''
+          - '&8✖ &9CLICK DERECHO'
+          - '   &7Mostrar título: {show}'
+          name: '&6&lMensaje de Entrada'
+          material: OAK_SIGN
+          slots: 22
+      patches:
+        all:
+          category:
+            slots: 24
+          category_members:
+            slots: 24
+  taxes:
+    title: '&8Impuestos'
+    items:
+      default:
+        tax_area:
+          lore:
+          - '&7En&5 {time} &7tu terreno'
+          - '&7recibirá &a{revenue} &7en total como impuestos'
+          - '&7de los miembros de confianza en esta área.'
+          - ' &8• &7Intervalo: {interval}'
+          - ' &8• &7Los jugadores sólo pagan impuestos'
+          - '   &7en las áreas donde tienen confianza.'
+          name: '&7&lImpuesto:&a {tax}'
+          material: GOLD_INGOT
+          slots: 23
+        refresh_minus-1:
+          name: '&c&lRemover {value}'
+          material: REDSTONE
+          slots: 20
+          data:
+            modify: 500
+        refresh_minus-2:
+          name: '&c&lRemover {value}'
+          material: REDSTONE
+          slots: 21
+          data:
+            modify: 50
+        refresh_minus-3:
+          name: '&c&lRemover {value}'
+          material: REDSTONE
+          slots: 22
+          data:
+            modify: 1
+        refresh_plus-3:
+          name: '&a&lAñadir {value}'
+          material: GLOWSTONE_DUST
+          slots: 26
+          data:
+            modify: 500
+        refresh_plus-1:
+          name: '&a&lAñadir {value}'
+          material: GLOWSTONE_DUST
+          slots: 24
+          data:
+            modify: 1
+        refresh_plus-2:
+          name: '&a&lAñadir {value}'
+          material: GLOWSTONE_DUST
+          slots: 25
+          data:
+            modify: 50
+        child_failure_value_max:
+          lore:
+          - '&cNo puedes establecer impuestos'
+          - '&cmás altos que&4 {max}&c.'
+          name: '&4&lValor Máximo alcanzado'
+        tax_nation:
+          lore:
+          - '&7En&5 {time} &7tu nación'
+          - '&7recibirá&a {revenue} &7como impuestos'
+          - '&7de los estados de esta nación.'
+          - ' &8• &7Intervalo: {interval}'
+          - ' &8• &7Este valor establece el impuesto'
+          - '   &7por chunk. Estados grandes'
+          - '   &7pagarán más.'
+          name: '&7&lImpuesto:&c {tax}'
+          material: GOLD_INGOT
+          slots: 23
+        child_failure_value_min:
+          lore:
+          - '&cNo puedes establecer impuestos'
+          - '&cmás bajos que&4 {min}&c.'
+          name: '&4&lValor Mínimo alcanzado'
+        child_failure_cooldown:
+          lore:
+          - '&cNo puedes cambiar el valor'
+          - '&cdel impuesto en este momento.'
+          - ' &8• &7Debes esperar otros'
+          - '   &5{time} &7antes de volver'
+          - '   &7a cambiarlo.'
+          name: '&4&lNecesitas esperar'
+  main:
+    title: '&8Menú Principal'
+    items:
+      default:
+        limitation:
+          lore:
+          - '&8• &7Crear&3 {ownlands} &7estados:'
+          - '  &e/lands create'
+          - '&8• &7Reclamar&3 {chunks} &7chunks por terreno:'
+          - '  &e/lands claim'
+          - '&8• &7Tener&3 {members} &7miembros por terreno:'
+          - '  &e/lands trust'
+          - '&8• &7Unirte a&3 {lands} &7estados'
+          - '  &e/lands accept'
+          - '&8• &7Apoyar a estados donde tienes confianza,'
+          - '  &7con &3{support-chunks} &7reclamos adicionales.'
+          name: '&6&lTus Limitaciones'
+          material: INHERIT
+          slots: 17
+        rentable:
+          lore:
+          - '&8✖ &7Ver áreas configuradas para renta y'
+          - '   &7estados que pueden comprarse.'
+          name: '&6&lRentable'
+          material: OAK_FENCE
+          slots: 31
+        lands:
+          lore:
+          - '&8✖ &7Gestiona los estados de los que formas parte.'
+          - '    &8• &7Propios: {own}'
+          - '    &8• &7Confiado: {trusted}'
+          name: '&2&lTus Estados'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 11
+        flags:
+          lore:
+          - '&8✖ &7Edita configuraciones personales.'
+          name: '&6&lConfiguraciones'
+          material: skin:ec2ff244dfc9dd3a2cef63112e7502dc6367b0d02132950347b2b479a72366dd
+          slots: 32
+        invites:
+          lore:
+          - '&8✖ &7Ver tus invitaciones recibidas.'
+          - '   &8• &7Cantidad: {invites}'
+          name: '&6&lInvitaciones'
+          material: WRITABLE_BOOK
+          slots: 13
+        nations:
+          lore:
+          - '&8✖ &7Ver las naciones de las que formas parte.'
+          - '    &8• &7Propias: {own}'
+          - '    &8• &7Confiado: {trusted}'
+          name: '&9&lTus Naciones'
+          material: skin:45587da7fe7336e8ab9f791ea5e2cfc8a827ca959567eb9d53a647babf948d5
+          slots: 12
+        all-lands:
+          lore:
+          - '&8✖ &7Ver todos los estados de este servidor.'
+          - '    &8• &7Cantidad total: {lands}'
+          name: '&2&lTodos los Estados'
+          material: skin:c9c8881e42915a9d29bb61a16fb26d059913204d265df5b439b3d792acd56
+          slots: 29
+        all-nations:
+          lore:
+          - '&8✖ &7Ver todas las naciones de este servidor.'
+          - '    &8• &7Cantidad total: {nations}'
+          name: '&9&lTodas las Naciones'
+          material: skin:cf40942f364f6cbceffcf1151796410286a48b1aeba77243e218026c09cd1
+          slots: 30
+        map:
+          name: '&6&lMapa'
+          lore:
+          - '&8✖ &7Ver el mapa de reclamaciones.'
+          material: MAP
+          slots: 33
+      patches:
+        basic:
+          lands:
+            slots: 20
+          all-lands:
+            slots: 22
+          flags:
+            slots: 24
+          limitation:
+            slots: 26
+  list_land_claims:
+    title: '&8Reclamaciones'
+    items:
+      default:
+        entry_chunk:
+          lore:
+          - '&8✖ &7Teletransportarte a este chunk.'
+          - '   &8• &7Mundo: {world}'
+          - '   &8• &7X: {x}'
+          - '   &8• &7Z: {z}'
+          - '   &8• &7Reclamado:&5 {date}'
+          name: '&6&l{world}, {x}, {z}'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+        entry_chunk_server:
+          lore:
+          - '&8✖ &7Teletransportarte a este chunk.'
+          - '   &8• &7Servidor: {server}'
+          - '&8• &7Mundo: {world}'
+          - '   &8• &7X: {x}'
+          - '   &8• &7Z: {z}'
+          - '   &8• &7Reclamado:&5 {date}'
+          name: '&e{server} &6&l{world}, {x}, {z}'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+        refresh_toggle:
+          lore:
+          - '&8✖ &7Haz clic aquí para alternar'
+          - '   &7el mundo.'
+          name: '&6&lMundo: {world}'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 41
+        child_failure_cooldown:
+          lore:
+          - '&cDebes esperar otros&4 {time}'
+          - '&cantes de poder hacer esto nuevamente.'
+          name: '&4&lTiempo de Reutilización'
+  
+  list_admin_wilderness_roleflags:
+    title: '&8Flags de Jugador'
+  list_war_lands:
+    title: '&8{team}'
+    items:
+      default:
+        entry_object:
+          lore:
+          - '{title}'
+          - '&8✖ &7Ver información acerca de este terreno.'
+          name: '&2&l{land}'
+          material: INHERIT
+        entry_object_ally:
+          lore:
+          - '{title}'
+          - '&8✖ &7Ver información acerca de este terreno.'
+          name: '&a&lAliado &2&l{land}'
+          material: INHERIT
+  list_level_progress:
+    title: '&8Progreso de Nivel'
+    items:
+      default:
+        next:
+          lore:
+          - '&7{object} &7alcanzará este'
+          - '&7nivel, una vez que se cumplan'
+          - '&7todos los requisitos.'
+          - '&7&lAtributos:'
+          - '{attributes}'
+          name: '&6&lSiguiente:&7 {level}'
+          material: BEACON
+          slots: 42
+        current:
+          lore:
+          - '&7Atributos:'
+          - '{attributes}'
+          name: '&6&lActual:&7 {level}'
+          material: OAK_SIGN
+          slots: 40
+        entry_done:
+          lore:
+          - '{bar} {progress}'
+          - '{description}'
+          name: '&a&l✔ {title}'
+          material: LIME_STAINED_GLASS
+        entry_loading:
+          lore:
+          - '&7El progreso actual se está'
+          - '&7calculando. El ítem se actualizará'
+          - '&7una vez que finalice.'
+          - '{description}'
+          name: '&7&l? {title}'
+          material: GRAY_STAINED_GLASS
+        entry_progress:
+          lore:
+          - '{bar} {progress}'
+          - '{description}'
+          name: '&c&l✘ {title}'
+          material: RED_STAINED_GLASS
+  mainblock:
+    title: '&8{level_prefix}{land}'
+    items:
+      default:
+        land:
+          name: '&6&lTerritorio'
+          lore:
+          - '&8✖ &7Abre el menú del territorio&2 {land}&7.'
+          material: INHERIT
+          slots: 21
+        map:
+          name: '&6&lMapa'
+          lore:
+          - '&8✖ &7Abre el menú del mapa.'
+          material: MAP
+          slots: 25
+        main:
+          name: '&6&lPrincipal'
+          lore:
+          - '&8✖ &7Abre el menú principal.'
+          - '   &7Configura ajustes personales, visualiza'
+          - '   &7todos los Estados del servidor, etc.'
+          material: skin:ad75fed3649f87a48e51169b57dcce6d4a8dc97db418f22d60d96c2a62b3e
+          slots: 23
+        mainblock_reposition:
+          name: '&c&lEditar Mainblock'
+          lore:
+          - '&8✖ &bCLICK IZQUIERDO'
+          - '   &7Remover o reubicar el mainblock.'
+          - '    &8• &7Volver a colocarlo cuesta:&c {cost}'
+          - '&8✖ &9CLICK DERECHO'
+          - '   &7Alternar el holograma: {hologram}'
+          material: BELL
+          slots: 45
+  land:
+    title: '&8{level_prefix}{land}'
+    items:
+      default:
+        mainblock_set:
+          name: '&a&lColocar Mainblock'
+          lore:
+          - '&8✖ &7Coloca el mainblock en tu posición actual.'
+          - '   &7Costo:&c {cost}'
+          material: BELL
+          slots: 45
+        level:
+          lore:
+          - '&8✖ &7Ver el progreso de nivel y'
+          - '   &7atributos.'
+          name: '&6&lNivel'
+          material: EXPERIENCE_BOTTLE
+          slots: 14
+        player-management:
+          lore:
+          - '&8✖ &7Gestiona miembros, jugadores bloqueados,'
+          - '   &7invitaciones y solicitudes de membresía.'
+          name: '&6&lGestión de Jugadores'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 12
+        roles:
+          lore:
+          - '&8✖ &7Ver roles del'
+          - '   &7área&6 {area}&7.'
+          name: '&6&lRoles'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 30
+        taxes:
+          lore:
+          - '&8✖ &7Ver impuestos del'
+          - '   &7área&6 {area}&7.'
+          name: '&6&lImpuestos'
+          material: GOLD_INGOT
+          slots: 31
+        areas:
+          lore:
+          - '&8✖ &7Ver todas las áreas de este terreno.'
+          - '   &7También puedes crear nuevas'
+          - '   &7áreas en este menú.'
+          name: '&6&lÁreas'
+          material: OAK_FENCE
+          slots: 11
+        level_camp:
+          lore:
+          - '&cLos campamentos no tienen niveles.'
+          name: '&6&lNivel'
+          material: EXPERIENCE_BOTTLE
+          slots: 14
+        land-settings:
+          lore:
+          - '&8✖ &7Edita banderas naturales'
+          - '   &7del área&6 {area}&7.'
+          name: '&6&lBanderas Naturales'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 29
+        spawn:
+          lore:
+          - '&8✖ &bCLICK IZQUIERDO'
+          - '   &7Teletransportarse al spawn del terreno.'
+          - '&8✖ &bSHIFT + CLICK IZQUIERDO'
+          - '   &7Establecer el spawn.'
+          - '&8✖ &9SHIFT + CLICK DERECHO'
+          - '   &7Permitir a visitantes teletransportarse: {teleport}'
+          - '   &8• Esto también se puede editar en el menú de roles.'
+          name: '&6&lSpawn'
+          material: ENDER_PEARL
+          slots: 9
+        child_failure_land:
+          name: '&4&lDebe colocarse dentro del Terreno'
+          lore:
+          - '&cNo se puede establecer el spawn en'
+          - '&czona salvaje o en tierras distintas.'
+        stats:
+          lore:
+          - '&7Spawn: {world}, x={x}, z={z}'
+          - '&7Nación: {nation}'
+          - '&7Reclamaciones: {chunks} / {chunks_max}'
+          - '&7Miembros: {members} / {members_max}'
+          - ''
+          - '&6&lEconomía:'
+          - ' &8• &7Terreno'
+          - '   &7Saldo: {balance}'
+          - '   &7Siguiente costo de reclamo: {chunk_cost}'
+          - '   &7Mantenimiento de&c {upkeep} &7en:'
+          - '   &7{upkeep_next}'
+          - ' &8• &4Tú'
+          - '   &7Saldo: {balance_player}'
+          - '   &7Impuestos de&c {taxes} &7en:'
+          - '   &7{taxes_next}'
+          name: '&6&lEstadísticas'
+          material: skin:d01afe973c5482fdc71e6aa10698833c79c437f21308ea9a1a095746ec274a0f
+          slots: 16
+        various:
+          lore:
+          - '&8✖ &7Edita el nombre del terreno y'
+          - '   &7el mensaje de entrada.'
+          name: '&6&lAjustes Varios'
+          material: BEACON
+          slots: 32
+        relations_camp:
+          lore:
+          - '&cLos campamentos no pueden tener relaciones.'
+          name: '&6&lRelaciones'
+          material: LIME_BANNER
+          slots: 13
+        relations:
+          lore:
+          - '&8✖ &7Gestiona tus relaciones con otros'
+          - '   &7Estados y naciones.'
+          name: '&6&lRelaciones'
+          material: LIME_BANNER
+          slots: 13
+        inbox:
+          lore:
+          - '&8✖ &7Abrir vista avanzada.'
+          - '&7Mensajes recibidos:'
+          - '{inbox}'
+          name: '&6&lBandeja &8(&7{amount}&8)'
+          material: skin:6bf3fcdccffd963e4334818108e1e9ae3a80566d0d3d2d4ab3051a2cd811348c
+          slots: 15
+        child_failure_mainblock_claim:
+          name: '&4&lDebe colocarse dentro del Terreno'
+          lore:
+          - '&cEl mainblock debe colocarse dentro del terreno.'
+          - '&7Asegúrate de que estés dentro del terreno&2 {land}&7.'
+        child_failure_mainblock_space:
+          name: '&4&lNo hay suficiente Espacio'
+          lore:
+          - '&cNo hay suficiente espacio para colocarlo en tu posición actual.'
+      
+      patches:
+        basic:
+          stats:
+            name: '&6&lEstadísticas'
+            lore: '&7Spawn: {world}, x={x}, z={z}[newline]&7Reclamaciones: {chunks}
+              / {chunks_max}[newline]&7Miembros: {members} / {members_max}'
+            material: skin:d01afe973c5482fdc71e6aa10698833c79c437f21308ea9a1a095746ec274a0f
+            slots: 17
+          members:
+            lore: '&8✖ &7Gestiona miembros.'
+            name: '&6&lMiembros'
+            material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+            slots: 11
+          roles:
+            slots: 13
+          inbox:
+            slots: 15
+          land-settings:
+            slots: 29
+          various:
+            slots: 31
+  list_area_settings:
+    title: '&8{area} &7> &8Banderas Naturales'
+    items:
+      default:
+        entry_phantom_spawn:
+          lore:
+          - '&8✖ &7Permitir que aparezcan fantasmas por'
+          - '   &7razones naturales.'
+          - '    &8• &7Los spawners no se ven afectados'
+          - '      &7por esta bandera.'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lAparición de Fantasmas: {enabled}'
+          material: PHANTOM_SPAWN_EGG
+        child_failure_permission:
+          lore:
+          - '&cTe falta permiso'
+          - '&cpara editar esta bandera.'
+          name: '&4&lFalta Permiso'
+        entry_monster_spawn:
+          lore:
+          - '&8✖ &7Permitir que aparezcan monstruos por'
+          - '   &7razones naturales.'
+          - '    &8• &7Afecta a spawners: {spawners}'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lAparición de Monstruos: {enabled}'
+          material: SPAWNER
+        entry_entity_griefing:
+          lore:
+          - '&8✖ &7¿Permitir que las entidades destruyan bloques?'
+          - '    &8• &7&lSi se activa:'
+          - '      &7Los creepers podrán destruir tus'
+          - '      &7construcciones, los rayos causarán daño, etc.'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lDestrucción por Entidades: {enabled}'
+          material: CREEPER_HEAD
+        entry_wither_attack_animal:
+          name: '&6&lWither atacando Animales: {enabled}'
+          lore:
+          - '&8✖ &7¿Deben los withers poder dañar animales?'
+          - '    &8• &7Siempre pueden dañar a otros monstruos.'
+          - '   &7Desbloqueado: {unlocked}'
+          material: skin:886dc0cfcaeecfe1ab69146e4d4f1190837076a67dec135fabda6271f375d01f
+        entry_snow_melt:
+          lore:
+          - '&8✖ &7¿La nieve y el hielo deben derretirse?'
+          - '    &8• &7&lSi se desactiva:'
+          - '      &7Las ventiscas y los golems de nieve'
+          - '      &7no cubrirán el suelo con nieve.'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lDerretir Nieve: {enabled}'
+          material: SNOWBALL
+        child_failure_priority:
+          lore:
+          - '&cNo tienes permiso para editar'
+          - '&cconfiguraciones de este rol.'
+          - ' &8• &7Tiene mayor prioridad'
+          - '   &7que la tuya o eres'
+          - '   &7miembro de este rol.'
+          name: '&4&lPrioridad del Rol'
+        entry_block_spreading:
+          name: '&6&lPropagación de Bloques desde Land: {enabled}'
+          lore:
+          - '&8✖ &7Permitir que los bloques se propaguen dentro de esta área'
+          - '   &7desde otras áreas de este terreno?'
+          - '    &8• &7Esto afecta bloques como amethyst blocks.'
+          - '    &8• &7Los bloques de la zona salvaje nunca pueden propagarse'
+          - '      &7a esta área.'
+          material: BUDDING_AMETHYST
+        entry_piston_griefing:
+          lore:
+          - '&8✖ &7¿Permitir que pistones desde la zona salvaje u otros'
+          - '   &7Estados/áreas empujen hacia tu terreno?'
+          - '    &8• &7&lSi se activa:'
+          - '      &7Los jugadores podrán hacer grief en tu terreno'
+          - '      &7usando pistones desde la zona salvaje.'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lPistones desde la Zona Salvaje: {enabled}'
+          material: PISTON
+        child_failure_access:
+          lore:
+          - '&cNo tienes permiso para editar'
+          - '&croles en esta área.'
+          - ' &8• &7El dueño del terreno puede dar permiso'
+          - '   &7a tu rol para hacerlo.'
+          name: '&4&lNo permitido'
+        entry_general_admin:
+          lore:
+          - '&8✖ &7Haz clic para alternar:'
+          - '   &7Desbloqueado: {unlocked}'
+          - '&7Descripción:'
+          - ' &8• {desc}'
+          - ' &8• &7Esta es una bandera de administrador. Solo se aplica'
+          - '   &7a Estados de administrador y &e/lands admin wilderness&7.'
+          name: '&6&l{flag}: {enabled}'
+          material: INHERIT
+        entry_fire_spread:
+          lore:
+          - '&8✖ &7¿Permitir que el fuego se propague dentro'
+          - '   &7de tu terreno?'
+          - '    &8• &7El fuego desde la zona salvaje'
+          - '      &7no puede entrar a tu terreno.'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lPropagación de Fuego: {enabled}'
+          material: FLINT_AND_STEEL
+        entry_animal_spawn:
+          lore:
+          - '&8✖ &7¿Permitir que aparezcan animales?'
+          - '    &8• &7Los spawners no se ven afectados'
+          - '      &7por esta bandera.'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lAparición de Animales: {enabled}'
+          material: skin:bee8514892f3d78a32e8456fcbb8c6081e21b246d82f398bd969fec19d3c27b3
+        entry_plant_growth:
+          lore:
+          - '&8✖ &7¿Deben crecer las plantas?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lCrecimiento de Plantas: {enabled}'
+          material: VINE
+        entry_tnt_griefing:
+          lore:
+          - '&8✖ &7¿Permitir que los bloques de TNT dañen'
+          - '   &7bloques?'
+          - '    &8• &7&lSi se activa:'
+          - '      &7Los jugadores podrán disparar'
+          - '      &7TNT hacia tu terreno para hacer grief.'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lDaño de TNT a Bloques: {enabled}'
+          material: TNT
+        entry_leaf_decay:
+          lore:
+          - '&8✖ &7¿Deben decaer las hojas dentro'
+          - '   &7de tu terreno?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lDecaimiento de Hojas: {enabled}'
+          material: OAK_LEAVES
+        entry_general_player:
+          lore:
+          - '&8✖ &7Haz clic para alternar:'
+          - '   &7Desbloqueado: {unlocked}'
+          - '&7Descripción:'
+          - '{desc}'
+          name: '&6&l{flag}: {enabled}'
+          material: INHERIT
+        entry_waterflow_allow:
+          lore:
+          - '&8✖ &7¿Permitir que el agua o la lava de la zona salvaje'
+          - '   &7u otras reclamaciones fluyan hacia tu'
+          - '   &7terreno?'
+          - '    &8• &7&lSi se activa:'
+          - '      &7Los jugadores podrán hacer grief'
+          - '      &7a tu terreno colocando agua o lava'
+          - '      &7en la zona salvaje.'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lFlujo de Agua y Lava: {enabled}'
+          material: WATER_BUCKET
+  list_role_settings:
+    title: '&8Banderas'
+    items:
+      default:
+        entry_setting_edit_various:
+          lore:
+          - '&8✖ &7¿Permitir que este rol edite ajustes varios'
+          - '   &7como el nombre, etc.?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lEditar Ajustes Varios: {enabled}'
+          material: NAME_TAG
+        entry_plant:
+          lore:
+          - '&8✖ &7¿Permitir que este rol plante'
+          - '   &7cultivos, retoños, bayas,'
+          - '   &7caña de azúcar, etc.?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lPlantar: {enabled}'
+          material: IRON_HOE
+        entry_balance_withdraw:
+          lore:
+          - '&8✖ &7¿Permitir que este rol retire dinero'
+          - '   &7del banco del terreno?'
+          - '    &8• &7Comando: &e/lands withdraw'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lRetirar Dinero: {enabled}'
+          material: GOLD_NUGGET
+        entry_player_untrust:
+          lore:
+          - '&8✖ &7¿Permitir que este rol quite la confianza'
+          - '   &7a jugadores?'
+          - '    &8• &7No podrán quitar la confianza'
+          - '      &7a jugadores que tengan un rol'
+          - '      &7más alto o pertenezcan al'
+          - '      &7mismo rol.'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lDesconfiar Jugadores: {enabled}'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+        entry_land_enter:
+          lore:
+          - '&8✖ &7¿Permitir que este rol entre a esta área?'
+          - '    &8• &7Independientemente de esta bandera,'
+          - '      &7puede ser posible que los jugadores entren'
+          - '      &7a tu reclamación si hay combate activo'
+          - '      &7y estás en una pelea.'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lEntrar a esta Área: {enabled}'
+          material: OAK_FENCE_GATE
+        entry_land_claim:
+          lore:
+          - '&8✖ &7¿Permitir que este rol reclame y también'
+          - '   &7desreclame chunks para este terreno?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lReclamar y Desreclamar: {enabled}'
+          material: IRON_SHOVEL
+        entry_ender_pearl:
+          lore:
+          - '&8✖ &7¿Permitir que este rol se teletransporte'
+          - '   &7al interior de este terreno usando ender pearls'
+          - '   &7y frutos coro?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lUsar Ender Pearls: {enabled}'
+          material: ENDER_PEARL
+        entry_shear:
+          lore:
+          - '&8✖ &7¿Permitir que este rol esquile'
+          - '   &7ovejas, vacas champiñón, etc.?'
+          name: '&6&lEsquilar Entidades: {enabled}'
+          material: SHEARS
+        entry_attack_monster:
+          lore:
+          - '&8✖ &7¿Permitir que este rol ataque monstruos?'
+          - '    &8• &7&lSi se desactiva:'
+          - '      &7los monstruos tampoco podrán atacarlos.'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lAtacar Monstruos: {enabled}'
+          material: ZOMBIE_HEAD
+        entry_harvest:
+          lore:
+          - '&8✖ &7¿Permitir que este rol coseche'
+          - '   &7cultivos, retoños, bayas,'
+          - '   &7caña de azúcar, etc.?'
+          name: '&6&lCosechar: {enabled}'
+          material: WHEAT
+        entry_fly:
+          lore:
+          - '&8✖ &7¿Permitir que este rol use &e/fly'
+          - '   &7en esta área?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lVolar: {enabled}'
+          material: FEATHER
+        entry_general_admin:
+          lore:
+          - '&8✖ &7Haz clic para alternar:'
+          - '   &7Desbloqueado: {unlocked}'
+          - '    &8• &7Descripción:'
+          - '      {desc}'
+          - ' &8• &7Esta es una bandera de administrador. Solo se aplica'
+          - '   &7a Estados de administrador y &e/lands admin wilderness&7.'
+          name: '&6&l{flag}: {enabled}'
+          material: INHERIT
+        entry_player_trust:
+          lore:
+          - '&8✖ &7¿Permitir que este rol otorgue confianza'
+          - '   &7a otros jugadores?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lConfiar Jugadores: {enabled}'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+        entry_block_ignite:
+          lore:
+          - '&8✖ &7¿Permitir que este rol encienda bloques?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lEncender Bloques: {enabled}'
+          material: FLINT_AND_STEEL
+        entry_war_manage:
+          lore:
+          - '&8✖ &7¿Permitir que este rol declare'
+          - '   &7y administre la guerra de tu terreno?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lAdministrar Guerra: {enabled}'
+          material: IRON_SWORD
+        entry_attack_player:
+          lore:
+          - '&8✖ &7¿Permitir que este rol ataque a jugadores?'
+          - '    &8• &7&lCombat tagging:'
+          - '      &7Puede seguir siendo posible luchar'
+          - '      &7en tu terreno si un jugador atacó'
+          - '      &7a otro jugador fuera del terreno.'
+          - '    &8• &7&lBandera mutua:'
+          - '      &7Solo pueden atacar a jugadores'
+          - '      &7que también puedan atacarlos.'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lAtacar Jugadores: {enabled}'
+          material: IRON_SWORD
+        entry_trample_farmland:
+          lore:
+          - '&8✖ &7¿Permitir que este rol pisotee la tierra de cultivo?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lPisotear Cultivos: {enabled}'
+          material: FARMLAND
+        entry_elytra:
+          lore:
+          - '&8✖ &7¿Permitir que este rol use élitros o'
+          - '   &7riptide para volar en esta área?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lUso de Élitros & Riptide: {enabled}'
+          material: ELYTRA
+        entry_interact_villager:
+          lore:
+          - '&8✖ &7¿Permitir que este rol comercie con aldeanos?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lComerciar con Aldeanos: {enabled}'
+          material: EMERALD
+        child_failure_permission:
+          lore:
+          - '&cTe falta permiso para'
+          - '&calternar esta bandera en cualquier terreno.'
+          name: '&4&lFalta Permiso'
+        child_failure_allow-edit:
+          name: '&4&lBandera no Toggleable'
+          lore:
+          - '&cEl servidor configuró esta bandera'
+          - '&cpara no ser modificable para este rol.'
+        entry_player_setrole:
+          lore:
+          - '&8✖ &7¿Permitir que este rol asigne'
+          - '   &7roles a jugadores con confianza?'
+          - '    &8• &7No podrán editar'
+          - '      &7roles que tengan mayor'
+          - '      &7prioridad que el suyo.'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lAsignar Roles: {enabled}'
+          material: skin:1e8ffbfd7890dfba8841166d688c93a88b6e8cac4d0260644cac9f3afd57c63e
+        entry_interact_general:
+          lore:
+          - '&8✖ &7¿Permitir que este rol interactúe con bloques'
+          - '   &7no cubiertos por otras banderas?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lInteracción General: {enabled}'
+          material: STRING
+        child_failure_blacklist:
+          lore:
+          - '&cEsta bandera no es modificable por naciones.'
+          - ' &8• &7Cada terreno de esta nación puede'
+          - '   &7configurarla individualmente.'
+          name: '&4&lBandera controlada por Terreno'
+        child_failure_cancelled:
+          name: '&4&lCancelado por Plugin'
+          lore:
+          - '&cAlternar esta bandera ha sido'
+          - '&ccancelado por un plugin externo.'
+        child_failure_edit_owner:
+          lore:
+          - '&cNo puedes alternar esta bandera para tu'
+          - '&cpropio rol de dueño.'
+          - ' &8• &7Esto evita que accidentalmente'
+          - '   &7te quites tus propios permisos.'
+          name: '&4&lRol de Dueño'
+        entry_interact_mechanism:
+          lore:
+          - '&8✖ &7¿Permitir que este rol use mecanismos'
+          - '   &7de redstone, como palancas, etc.?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lUsar Redstone: {enabled}'
+          material: REDSTONE
+        entry_land_claim_border:
+          lore:
+          - '&8✖ &7¿Permitir que este rol reclame chunks'
+          - '   &7para sus tierras directamente en esta'
+          - '   &7frontera del terreno?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lReclamar Terreno en Frontera: {enabled}'
+          material: IRON_BARS
+        entry_spawn_set:
+          lore:
+          - '&8✖ &7¿Permitir que este rol cambie el spawn?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lEstablecer Spawn: {enabled}'
+          material: ENDER_EYE
+        entry_player_ban:
+          lore:
+          - '&8✖ &7¿Permitir que este rol bloquee o'
+          - '   &7desbloquee jugadores?'
+          - '    &8• &7No podrán bloquear a jugadores'
+          - '      &7que tengan un rol más alto.'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lGestionar Bloqueos: {enabled}'
+          material: BARRIER
+        entry_item_pickup:
+          lore:
+          - '&8✖ &7¿Permitir que este rol recoja'
+          - '   &7objetos del suelo?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lRecoger Ítems: {enabled}'
+          material: HOPPER
+        child_failure_priority:
+          lore:
+          - '&cNo tienes permitido'
+          - '&ceditar configuraciones de este rol.'
+          - ' &8• &7Tiene mayor prioridad'
+          - '   &7que la tuya o eres'
+          - '   &7miembro de este rol.'
+          name: '&4&lPrioridad del Rol'
+        entry_block_place:
+          lore:
+          - '&8✖ &7¿Permitir que este rol coloque bloques?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lColocar Bloques: {enabled}'
+          material: OAK_PLANKS
+        entry_setting_edit_land:
+          lore:
+          - '&8✖ &7¿Permitir que este rol edite banderas naturales?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lEditar Banderas Naturales: {enabled}'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+        entry_interact_container:
+          lore:
+          - '&8✖ &7¿Permitir que este rol abra contenedores?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lAbrir Contenedores: {enabled}'
+          material: CHEST
+        child_failure_access:
+          lore:
+          - '&cNo tienes permitido'
+          - '&ceditar roles en esta área.'
+          - ' &8• &7El dueño del terreno puede dar'
+          - '   &7permiso a tu rol para hacerlo.'
+          name: '&4&lNo permitido'
+        entry_block_break:
+          lore:
+          - '&8✖ &7¿Permitir que este rol rompa bloques?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lRomper Bloques: {enabled}'
+          material: IRON_PICKAXE
+        entry_setting_edit_role:
+          lore:
+          - '&8✖ &7¿Permitir que este rol edite'
+          - '   &7configuraciones de rol y cree nuevos roles?'
+          - '    &8• &7No podrán editar'
+          - '      &7las banderas de su propio rol.'
+          - '    &8• &7Solo deberías dar esta bandera'
+          - '      &7a jugadores muy confiables.'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lEditar Configs de Rol: {enabled}'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+        entry_interact_trapdoor:
+          lore:
+          - '&8✖ &7¿Permitir que este rol abra trampillas?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lAbrir Trampillas: {enabled}'
+          material: OAK_TRAPDOOR
+        entry_setting_edit_taxes:
+          lore:
+          - '&8✖ &7¿Permitir que este rol edite impuestos?'
+          - '    &8• &7Solo deberías dar este permiso'
+          - '      &7a jugadores muy confiables.'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lEditar Impuestos: {enabled}'
+          material: GOLD_INGOT
+        child_failure_nation:
+          lore:
+          - '&cEste rol es parcialmente administrado por la nación&4 {nation}&c.'
+          - ' &8• &7Solo la nación puede cambiar esta bandera:'
+          - '   &e/nations menu'
+          name: '&4&lRol administrado por la Nación'
+        entry_attack_animal:
+          lore:
+          - '&8✖ &7¿Permitir que este rol ataque animales?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lAtacar Animales: {enabled}'
+          material: BOW
+        entry_spawn_teleport:
+          lore:
+          - '&8✖ &7¿Permitir que este rol se teletransporte al'
+          - '   &7spawn?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lTeletransportarse al Spawn: {enabled}'
+          material: ENDER_EYE
+        entry_vehicle_use:
+          lore:
+          - '&8✖ &7¿Permitir que este rol use vehículos?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lUsar Vehículos: {enabled}'
+          material: MINECART
+        entry_area_assign:
+          lore:
+          - '&8✖ &7¿Permitir que este rol cree áreas'
+          - '   &7y cambie el tamaño de áreas?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lAsignar Áreas: {enabled}'
+          material: OAK_FENCE
+        entry_general_player:
+          lore:
+          - '&8✖ &7Haz clic para alternar:'
+          - '   &7Desbloqueado: {unlocked}'
+          - '    &8• &7Descripción:'
+          - '      {desc}'
+          name: '&6&l{flag}: {enabled}'
+          material: INHERIT
+        entry_interact_door:
+          lore:
+          - '&8✖ &7¿Permitir que este rol abra puertas?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lAbrir Puertas: {enabled}'
+          material: IRON_DOOR
+  
+  war-declaration_tribute:
+    title: '&8Tributo'
+    items:
+      default:
+        cancel-declaration:
+          lore:
+          - '&8✖ &7Cancelar esta declaración de guerra.'
+          name: '&c&lCancelar Declaración de Guerra'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 37
+        send-declaration:
+          lore:
+          - '&8✖ &7Enviar esta declaración de guerra'
+          - '   &7al enemigo.'
+          name: '&a&lEnviar Declaración de Guerra'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 45
+        refresh_minus-1:
+          name: '&c&lRemover {value}'
+          material: REDSTONE
+          slots: 20
+          data:
+            modify: 1000
+        refresh_minus-2:
+          name: '&c&lRemover {value}'
+          material: REDSTONE
+          slots: 21
+          data:
+            modify: 100
+        refresh_minus-3:
+          name: '&c&lRemover {value}'
+          material: REDSTONE
+          slots: 22
+          data:
+            modify: 1
+        child_max-tribute:
+          lore:
+          - '&cNo puedes establecer el tributo'
+          - '&cpor encima de&c {max}&c.'
+          - ' &8• &7El tributo máximo depende del'
+          - '   &7saldo del enemigo.'
+          name: '&4&lValor Máximo alcanzado'
+        refresh_plus-3:
+          name: '&a&lAñadir {value}'
+          material: GLOWSTONE_DUST
+          slots: 26
+          data:
+            modify: 1000
+        refresh_plus-1:
+          name: '&a&lAñadir {value}'
+          material: GLOWSTONE_DUST
+          slots: 24
+          data:
+            modify: 1
+        refresh_plus-2:
+          name: '&a&lAñadir {value}'
+          material: GLOWSTONE_DUST
+          slots: 25
+          data:
+            modify: 100
+        tribute:
+          lore:
+          - '&7El enemigo deberá pagar esto'
+          - '&7si desea rendirse.'
+          - ' &8• &7&lTributo máximo:&c {max}'
+          - '   &7Depende del saldo del enemigo.'
+          - ' &8• &7&lSi el tributo está en 0:'
+          - '   &7El enemigo no podrá'
+          - '   &7rendirse.'
+          name: '&7&lTributo:&c {tribute}'
+          material: GOLD_INGOT
+          slots: 23
+  area:
+    title: '&8{area}'
+    items:
+      default:
+        land-settings:
+          lore:
+          - '&8✖ &7Edita las banderas relacionadas con la naturaleza,'
+          - '   &7como aparición de mobs, crecimiento de plantas, etc.'
+          name: '&6&lBanderas Naturales'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 29
+        child_failure_rented:
+          lore:
+          - '&cNo puedes establecer impuestos para esta'
+          - '&cárea mientras esté rentada o vendida.'
+          - ' &8• &7Inquilino actual:&3 {player}'
+          name: '&4Rentada'
+        child_failure_access:
+          lore:
+          - '&7El dueño del área puede dar'
+          - '&7permiso a tu rol para hacer esto.'
+          - ' &8• &7Bandera: {flag}'
+          name: '&4No permitido'
+        player-management:
+          lore:
+          - '&8✖ &7Gestiona miembros, jugadores bloqueados,'
+          - '   &7invitaciones y solicitudes de membresía.'
+          name: '&6&lGestión de Jugadores'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 11
+        various:
+          lore:
+          - '&8✖ &7Edita el nombre y'
+          - '   &7la descripción del área.'
+          name: '&6&lAjustes Varios'
+          material: BEACON
+          slots: 32
+        spawn:
+          lore:
+          - '&8✖ &bCLICK IZQUIERDO'
+          - '   &7Teletransportarte al spawn de esta área.'
+          - '&8✖ &9CLICK DERECHO'
+          - '   &7Establecer el spawn.'
+          name: '&6&lTeletransporte'
+          material: ENDER_PEARL
+          slots: 9
+        roles:
+          lore:
+          - '&8✖ &7Gestiona roles para esta área.'
+          - '   &8• &7Los roles del área predeterminada'
+          - '     &7se añaden automáticamente a'
+          - '     &7esta área.'
+          name: '&6&lRoles'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 30
+        taxes:
+          lore:
+          - '&8✖ &7Gestiona los impuestos de esta área.'
+          - '   &7Los impuestos se cobran por área.'
+          name: '&6&lImpuestos'
+          material: GOLD_INGOT
+          slots: 31
+        rental_setup:
+          name: '&6&lConfigurar Renta'
+          lore:
+          - '&8✖ &7Configura esta área para ser rentada o vendida.'
+          material: INHERIT
+          slots: 34
+        rental_setup_land:
+          name: '&6&lVender Terreno'
+          lore:
+          - '&8✖ &7Configura el terreno completo para venderse.'
+          - '   &8• &7Un terreno completo o su área predeterminada &8(&6{area}&8)'
+          - '     &7solo se puede vender y no configurar para renta.'
+          material: INHERIT
+          slots: 34
+        rental_setup_change_sell:
+          name: '&6&lCambiar Oferta de Compra'
+          lore:
+          - '&8✖ &bCLICK IZQUIERDO'
+          - '   &7Actualizar valores de la oferta de compra.'
+          - '   &7Actual:'
+          - '    &8• &7Costo:&c {cost}'
+          - ''
+          - '&8✖ &3DROP'
+          - '   &7Remover esta oferta.'
+          material: INHERIT
+          slots: 34
+        rental_setup_change_rent:
+          name: '&6&lCambiar Oferta de Renta'
+          lore:
+          - '&8✖ &bCLICK IZQUIERDO'
+          - '   &7Actualizar valores de la oferta de renta.'
+          - '   &7Actual:'
+          - '    &8• &7Intervalo:&5 {interval}'
+          - '    &8• &7Costo por intervalo:&c {cost}'
+          - '    &8• &7Tiempo máx.:&5 {max-time}'
+          - ''
+          - '&8✖ &3DROP'
+          - '   &7Remover esta oferta.'
+          material: INHERIT
+          slots: 34
+        child_failure_spawn_area:
+          name: '&4&lDebe estar en el Área'
+          lore:
+          - '&cEl spawn debe establecerse en el área.'
+          - '&7Actualmente no estás dentro de ella.'
+        child_failure_spawn_none:
+          name: '&4&lNo hay Spawn establecido'
+          lore:
+          - '&cEsta área no tiene un spawn configurado.'
+        child_success_spawn_set:
+          name: '&aSpawn establecido'
+          lore:
+          - '&7Estableciste el spawn en tu posición actual.'
+  list_area_players:
+    title: '&8{area} &7> &8Jugadores Confiados'
+    items:
+      default:
+        trust:
+          lore:
+          - '&8✖ &7Confiar a un jugador en esta área.'
+          - '   &7Disponible:&3 {players} &8/&c {max}'
+          name: '&a&lConfiar Jugador'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 40
+        child_failure_edit_player_land:
+          lore:
+          - '&cNo puedes editar a este jugador.'
+          - ' &8• &7Su rol&6 {role} &7tiene mayor'
+          - '   &7o igual prioridad que el tuyo.'
+          name: '&4&lPrioridad del Rol'
+        entry_area:
+          lore:
+          - '&7Rol: {role}'
+          - ''
+          - '&8✖ &bCLICK IZQUIERDO'
+          - '   &7Más información'
+          - '&8✖ &bSHIFT + CLICK IZQUIERDO'
+          - '   &7▲ Promocionar'
+          - '&8✖ &9SHIFT + CLICK DERECHO'
+          - '   &7▼ Degradar'
+          - '&8✖ &3DROP'
+          - '   &7Quitar confianza'
+          name: '&e&l{player}'
+          material: INHERIT
+        child_failure_edit_player_area:
+          lore:
+          - '&cNo puedes editar a este jugador.'
+          - ' &8• &7Su rol&6 {role} &7tiene mayor'
+          - '   &7o igual prioridad que el tuyo.'
+          name: '&4&lPrioridad del Rol'
+        child_failure_max-players:
+          lore:
+          - '&7Este terreno alcanzó su máximo'
+          - '&7de&3 {max} &7miembros.'
+          name: '&4&lMáximo de Jugadores Confiados'
+        refresh_toggle:
+          lore:
+          - '&8✖ &7Mostrar solo jugadores confiados'
+          - '   &7en esta área &8(&6{area}&8)&7?'
+          - '    &8• &6&lSi se desactiva:'
+          - '      &7Muestra jugadores del terreno completo.'
+          name: '&6&lVer solo Área: {current}'
+          material: HOPPER
+          slots: 41
+        global-action:
+          name: '&6&lEjecutar para todas las Áreas: {current}'
+          lore:
+          - '&8✖ &7Confiar o quitar confianza a jugadores en todo el terreno?'
+          - '   &8• &7Si se desactiva: Solo confía/desconfía'
+          - '     &7jugadores para el área&6 {area}&7.'
+          material: skin:c9c8881e42915a9d29bb61a16fb26d059913204d265df5b439b3d792acd56
+          slots: 44
+        child_failure_priority:
+          lore:
+          - '&cNo tienes permitido'
+          - '&ceditar configuraciones de este rol.'
+          - ' &8• &7Tiene mayor prioridad'
+          - '   &7que la tuya o eres'
+          - '   &7miembro de ese rol.'
+          name: '&4&lPrioridad del Rol'
+        entry_area_all:
+          lore:
+          - '&7Confiado en estas áreas:'
+          - '{areas}'
+          - ''
+          - '&8✖ &bCLICK IZQUIERDO'
+          - '   &7Ver más información.'
+          - '&8✖ &3DROP'
+          - '   &7Quitar confianza'
+          name: '&e&l{player}'
+          material: INHERIT
+        child_failure_access:
+          lore:
+          - '&cNo tienes permiso para quitar'
+          - '&cla confianza a jugadores.'
+          - ' &8• &7El dueño del terreno puede dar'
+          - '   &7permiso a tu rol para hacerlo.'
+          name: '&4&lSin acceso'
+        untrust:
+          lore:
+          - '&8✖ &7Quitar confianza a un jugador en esta área.'
+          name: '&c&lDesconfiar Jugador'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 42
+        child_failure_owner:
+          lore:
+          - '&cNo puedes quitar la confianza al dueño.'
+          - ' &8• &7Un nuevo dueño se puede asignar con'
+          - '   &7el comando &e/{cmd}&7.'
+          name: '&4&lDueño'
+        child_failure_tenant:
+          lore:
+          - '&cNo puedes quitar la confianza a un inquilino.'
+          - '&cy no se puede cambiar su rol.'
+          - ' &8• &7Para remover al inquilino usa'
+          - '   &7el comando &e/{cmd}&7.'
+          name: '&4&lInquilino'
+        child_failure_setrole:
+          lore:
+          - '&cNo tienes permiso para asignar roles.'
+          - '&8• &7El dueño del terreno puede dar'
+          - '  &7permiso a tu rol para hacerlo.'
+          name: '&4&lSin acceso'
+        child_failure_self:
+          lore:
+          - '&7Para salir de un terreno usa &e/lands leave'
+          - '&7en su lugar.'
+          name: '&4&lNo puedes quitarte confianza a ti mismo'
+  list_admin_lands:
+    title: '&8Estados de Administrador'
+    items:
+      default:
+        add:
+          lore:
+          - '&8✖ &7Convierte un terreno normal en'
+          - '   &7un terreno de administrador.'
+          name: '&a&lConvertir en Terreno Admin'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 40
+        entry_object:
+          lore:
+          - '{title}'
+          - '&8✖ &7Abre el menú del territorio.'
+          name: '&2&l{land}'
+          material: INHERIT
+        convert:
+          lore:
+          - '&8✖ &7Convierte un terreno admin de vuelta'
+          - '   &7en un terreno normal.'
+          name: '&e&lVolver a Normal'
+          material: skin:1811917c644f04f56b68c9c71b33ac082c2601c24409be78c2063d4df2a86525
+          slots: 41
+        delete:
+          lore:
+          - '&8✖ &7Elimina completamente un terreno admin.'
+          name: '&c&lEliminar completamente'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 42
+  list_player_nations:
+    title: '&8Tus Naciones'
+    items:
+      default:
+        entry_nation_edit:
+          lore:
+          - '&7Esta nación está configurada como tu nación principal'
+          - '&7mediante &3/lands edit &8<&3capital&8>&7. Los comandos se'
+          - '&7ejecutarán para esta nación.'
+          - '&8✖ &7Abre el menú de la nación.'
+          - '&8✖ &9CLICK DERECHO'
+          - '   &7Ver información general'
+          - '   &7sobre esta nación.'
+          name: '&9&l{nation}'
+          material: skin:eef425b4db7d62b200e89c013e421a9e110bfb27f2d8b9f5884d10104d00f4f4
+        entry_nation_own:
+          lore:
+          - '&7Tú eres dueño de esta nación.'
+          - ' &8• &7Estados: {lands}'
+          - ' &8• &7Chunks: {chunks}'
+          - ' &8• &7Miembros totales: {members}'
+          - '&8✖ &7Abre el menú de la nación.'
+          - '&8✖ &9CLICK DERECHO'
+          - '   &7Ver información general'
+          - '   &7sobre esta nación.'
+          name: '&9&l{nation}'
+          material: INHERIT
+        entry_nation:
+          lore:
+          - '&7Tienes confianza en esta nación.'
+          - ' &8• &7Estados: {lands}'
+          - ' &8• &7Chunks totales: {chunks}'
+          - ' &8• &7Miembros totales: {members}'
+          - '&8✖ &7Abre el menú de la nación.'
+          - '&8✖ &9CLICK DERECHO'
+          - '   &7Ver información general'
+          - '   &7sobre esta nación.'
+          name: '&9&l{nation}'
+          material: INHERIT
+  player-management:
+    title: '&8Gestión de Jugadores'
+    items:
+      default:
+        members:
+          lore:
+          - '&8✖ &7Gestiona miembros.'
+          name: '&6&lMiembros'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 11
+        members_online:
+          name: '&6&lMiembros en Línea'
+          lore:
+          - '&8✖ &7Ver miembros que están en línea.'
+          material: CLOCK
+          slots: 32
+        invites:
+          lore:
+          - '&8✖ &7Gestiona invitaciones salientes.'
+          name: '&6&lInvitaciones'
+          material: WRITABLE_BOOK
+          slots: 15
+        banned:
+          lore:
+          - '&8✖ &7Gestiona jugadores bloqueados.'
+          name: '&6&lBloqueados'
+          material: BARRIER
+          slots: 13
+        membership-requests:
+          lore:
+          - '&8✖ &7Gestiona solicitudes de membresía entrantes.'
+          name: '&6&lSolicitudes de Membresía'
+          material: BOOKSHELF
+          slots: 17
+  war:
+    title: '&8Guerra'
+    items:
+      default:
+        war_points_declaration:
+          lore:
+          - '&7Un equipo necesita&3 {points} &7puntos para ganar.'
+          - ' &8• &7Matar: &3{p_kill} punto(s)'
+          - ' &8• &7Capturar: &3{p_cap} punto(s)'
+          - '    &8• &7Para capturar un área enemiga, coloca'
+          - '      &7una bandera de captura dentro de ella.'
+          - '      &7Puedes ver la receta de crafteo'
+          - '      &7en este menú.'
+          - ''
+          - ' &8• &7La guerra comenzará en:&5 {time}'
+          name: '&6&lDistribución de Puntos'
+          material: IRON_INGOT
+          slots: 13
+        child_failure_permission:
+          lore:
+          - '&cNo tienes permitido hacer'
+          - '&cesto para &8({object}&8)&c.'
+          - ' &8• &7El dueño puede darte'
+          - '   &7permiso para hacerlo.'
+          - '   &7Bandera: {flag}'
+          name: '&4&lNo permitido'
+        child_failure_surrender:
+          lore:
+          - '&cEl enemigo no permite'
+          - '&ctu rendición.'
+          - ' &8• &7Esto es porque no establecieron'
+          - '   &7un tributo. Pueden hacerlo'
+          - '   &7en su menú de guerra: &e/wars menu'
+          name: '&4&lRendición rechazada'
+        tribute_attacker_mutual:
+          lore:
+          - '&8✖ &7Rendirse en esta guerra'
+          - '   &7Necesitarás pagar&c {tribute-att}'
+          - '   &7como tributo a los defensores.'
+          - '    &8• &7Si el tributo es 0:'
+          - '      &7Los defensores no podrán'
+          - '      &7rendirse.'
+          - '    &8• &7&lSi los defensores se rinden:'
+          - '      &7Deberán pagar&c {tribute}'
+          - '      &7a ti.'
+          name: '&6&lTributo:&c {tribute}'
+          material: GOLD_INGOT
+          slots: 29
+        recipe:
+          lore:
+          - '&7Haz clic aquí para ver la receta'
+          - '&7del ítem de bandera de captura.'
+          name: '&6&lReceta de Bandera de Captura'
+          material: BEACON
+          slots: 15
+        tribute_defender:
+          lore:
+          - '&8✖ &7Rendirse en esta guerra'
+          - '    &8• &7Necesitarás pagar&c {tribute}'
+          - '      &7como tributo a los atacantes.'
+          - '    &8• &7Si el tributo es 0:'
+          - '      &7Los atacantes no aceptan'
+          - '      &7una rendición.'
+          name: '&6&lRendirse:&c {tribute}'
+          material: GOLD_INGOT
+          slots: 29
+        child_failure_none:
+          lore:
+          - '&cEl enemigo {enemy} &cno tiene reclamaciones'
+          - '&cpara teletransportarse.'
+          name: '&4&lSin Reclamaciones'
+        child_failure_attacker:
+          lore:
+          - '&7Los atacantes no pueden'
+          - '&7rendirse en una guerra.'
+          name: '&4&lNo puedes rendirte'
+        flags:
+          name: '&6&lBanderas Activas'
+          lore:
+          - '&7Los jugadores involucrados pueden hacer lo siguiente'
+          - '&7en las tierras afectadas:'
+          - '{settings}'
+          material: IRON_PICKAXE
+          slots: 14
+        child_failure_cost:
+          lore:
+          - '&cTú &8({object}&8) &cno tienes suficiente'
+          - '&cdinero para pagar el tributo de&4 {tribute}&c.'
+          name: '&4&lDinero insuficiente'
+        spawn:
+          lore:
+          - '&7Teletranspórtate a la frontera del enemigo.'
+          name: '&6&lSpawn'
+          material: ENDER_PEARL
+          slots: 9
+        declaration_start:
+          lore:
+          - '&7La guerra comenzará en&5 {time}&7.'
+          - '&7Hasta entonces cada equipo tiene tiempo para prepararse.'
+          name: '&6&lComienzo'
+          material: CLOCK
+          slots: 15
+        tribute_attacker:
+          lore:
+          - '&8✖ &bCLICK IZQUIERDO'
+          - '   &7Cambiar el valor del tributo para esta guerra.'
+          - '    &8• &7Si el tributo es 0:'
+          - '      &7Los defensores no podrán'
+          - '      &7rendirse.'
+          - '    &8• &7Si los defensores se rinden:'
+          - '      &7Los defensores deberán pagar&c {tribute}'
+          - '      &7a ti.'
+          - ''
+          - '&8✖ &9CLICK DERECHO'
+          - '   &7Si tú, como atacante, quieres'
+          - '   &7rendirte, tendrás que pagar'
+          - '   &c{tribute-att} &7a los defensores.'
+          name: '&6&lTributo:&c {tribute}'
+          material: GOLD_INGOT
+          slots: 29
+        war_attackers:
+          material: IRON_SWORD
+          slots: 11
+        war_defenders:
+          material: SHIELD
+          slots: 12
+        war_points:
+          material: IRON_INGOT
+          slots: 13
+  list_wars:
+    title: '&8Guerras en Curso'
+    items:
+      default:
+        entry_object:
+          name: '{attacker}&7 vs. {defender}'
+          lore:
+          - ' &8• &7Progreso:&3 {points} / {points_towin} &7puntos'
+          - '   {points_bar}'
+          - ''
+          - ' &8• &7Tiempo límite: &5{timeout}'
+          - ' &8• &7Atacante: {attacker}'
+          - ' &8• &7Defensor: {defender}'
+          material: IRON_SWORD
+  admin_main:
+    title: '&8Menú Principal de Admin'
+    items:
+      default:
+        lands:
+          lore:
+          - '&8✖ &7Ver y gestionar Estados de administrador.'
+          - '    &8• &7Para editar más a fondo los Estados admin, ejecuta'
+          - '      &3/lands edit &8<&3land&8>&7, igual que'
+          - '      &7lo harías con Estados normales.'
+          - '    &8• &7Los Estados admin no pagan mantenimiento'
+          - '      &7y no pueden participar en guerras. Su'
+          - '      &7dueño se establece automáticamente como'
+          - '      &7"Servidor", pero aún puedes cambiarlo con'
+          - '      &7el comando &3/lands setowner&7.'
+          name: '&6&lGestionar Estados Admin'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 25
+        child_failure_world:
+          lore:
+          - '&cEl mundo en el que estás actualmente'
+          - '&cdebe ser un mundo de Lands.'
+          - ' &8• &7Puedes añadir mundos de reclamo en'
+          - '   &7la config editando la'
+          - '   &7opción "claim-worlds_list".'
+          name: '&4&lNo es un mundo de Lands'
+        wilderness:
+          lore:
+          - '&8✖ &7Alternar roles y banderas naturales'
+          - '   &7en la zona salvaje.'
+          name: '&6&lBanderas del area salvaje'
+          material: NAME_TAG
+          slots: 21
+  list_membership-requests:
+    title: '&8Solicitudes de Membresía'
+    items:
+      default:
+        child_failure_player_own-land:
+          lore:
+          - '&cNo puedes confiar en este jugador, porque'
+          - '&ctiene su propio terreno ahora.'
+          - '&7Debe eliminar su terreno primero.'
+          name: '&4&lTiene propio Terreno'
+        child_failure_land_max-members:
+          lore:
+          - '&c{object}&7 alcanzó su máximo'
+          - '&cde miembros.'
+          name: '&4&lNo se puede confiar en más jugadores'
+        child_failure_player_banned:
+          lore:
+          - '&cNo se puede confiar en el jugador&4 {player}&c,'
+          - '&cporque está bloqueado.'
+          - ' &8• &7Desbloquear: &e/lands unban'
+          name: '&4&lBloqueado'
+        entry_object:
+          lore:
+          - '&7Hora: &5{time}&7 atrás'
+          - ''
+          - '&8✖ &bCLICK IZQUIERDO'
+          - '   &7Aceptar solicitud y confiar en ellos.'
+          - '&8✖ &9CLICK DERECHO'
+          - '   &7Más información sobre ellos.'
+          - '&8✖ &3DROP'
+          - '   &7Rechazar solicitud.'
+          name: '&6&l{name}'
+          material: INHERIT
+        membership_accept:
+          lore:
+          - '&8✖ &7¿Se deben aceptar automáticamente'
+          - '   &7las solicitudes de membresía?'
+          - '  &8• &7Esto significa que cualquiera'
+          - '    &7podrá unirse a tu terreno.'
+          - '  &8• &7Los nuevos miembros obtendrán'
+          - '    &7el rol {role}.'
+          name: '&6&lAuto Aceptar: {status}'
+          material: REDSTONE
+          slots: 42
+        child_failure_player_max-lands:
+          lore:
+          - '&cEl jugador alcanzó la cantidad máxima'
+          - '&cde Estados a los que puede pertenecer'
+          - '&cal mismo tiempo.'
+          name: '&4&lNo puede pertenecer a más Estados'
+      
+      patches:
+        all:
+          category:
+            slots: 40
+          category_members:
+            slots: 40
+  list_player_lands:
+    title: '&8Tus Estados'
+    items:
+      default:
+        entry_land_own:
+          lore:
+          - '&7Tú eres dueño de este terreno.'
+          - ' &8• &7Nación:&9 {nation}'
+          - ' &8• &7Chunks:&3 {chunks} &7/&c {max-chunks}'
+          - '&8✖ &bCLICK IZQUIERDO'
+          - '   &7Gestionar este terreno.'
+          - '&8✖ &bSHIFT + CLICK IZQUIERDO'
+          - '   &7Seleccionar como &e/lands edit &7land.'
+          - '   &7Los comandos se ejecutarán para'
+          - '   &7este terreno.'
+          - '&8✖ &9CLICK DERECHO'
+          - '   &7Ver información general'
+          - '   &7sobre este terreno.'
+          name: '&2&l{land}'
+          material: INHERIT
+        entry_camp_edit:
+          lore:
+          - '&7Tienes este campamento configurado como tu'
+          - '&e/lands edit &7land. Los comandos se'
+          - '&7ejecutarán para este terreno.'
+          - '&7Los campamentos son Estados que no pueden'
+          - '&7expandirse y no pagan mantenimiento.'
+          - '&7&lEste campamento expira en:'
+          - '&5~{time}'
+          - '&8✖ &bCLICK IZQUIERDO'
+          - '   &7Gestionar este campamento.'
+          - '&8✖ &bSHIFT + CLICK IZQUIERDO'
+          - '   &7Seleccionar como &e/lands edit &7land.'
+          - '   &7Los comandos se ejecutarán para'
+          - '   &7este terreno.'
+          - '&8✖ &9CLICK DERECHO'
+          - '   &7Ver información general'
+          - '   &7sobre este campamento.'
+          name: '&2&l{land}'
+          material: INHERIT
+        entry_camp_own:
+          lore:
+          - '&7Eres dueño de este campamento. Los campamentos'
+          - '&7son areas que no pueden expandirse y no'
+          - '&7pagan mantenimiento.'
+          - '&7&lEste campamento expira en:'
+          - '&5~{time}'
+          - '&8✖ &bCLICK IZQUIERDO'
+          - '   &7Gestionar este campamento.'
+          - '&8✖ &bSHIFT + CLICK IZQUIERDO'
+          - '   &7Seleccionar como &e/lands edit &7land.'
+          - '   &7Los comandos se ejecutarán para'
+          - '   &7este terreno.'
+          - '&8✖ &9CLICK DERECHO'
+          - '   &7Ver información general'
+          - '   &7sobre este campamento.'
+          name: '&2&l{land}'
+          material: INHERIT
+        entry_camp:
+          lore:
+          - '&7Tienes confianza en este campamento.'
+          - '&7Los campamentos son areas que no pueden'
+          - '&7expandirse y no pagan mantenimiento.'
+          - '&7&lEste campamento expira en:'
+          - '&5~{time}'
+          - '&8✖ &bCLICK IZQUIERDO'
+          - '   &7Gestionar este campamento.'
+          - '&8✖ &bSHIFT + CLICK IZQUIERDO'
+          - '   &7Seleccionar como &e/lands edit &7land.'
+          - '   &7Los comandos se ejecutarán para'
+          - '   &7este terreno.'
+          - '&8✖ &9CLICK DERECHO'
+          - '   &7Ver información general'
+          - '   &7sobre este campamento.'
+          name: '&2&l{land}'
+          material: INHERIT
+        entry_land:
+          lore:
+          - '&7Tienes confianza en este terreno.'
+          - ' &8• &7Nación:&9 {nation}'
+          - ' &8• &7Chunks:&3 {chunks} &7/&c {max-chunks}'
+          - '&8✖ &bCLICK IZQUIERDO'
+          - '   &7Gestionar este terreno.'
+          - '&8✖ &bSHIFT + CLICK IZQUIERDO'
+          - '   &7Seleccionar como &e/lands edit &7land.'
+          - '   &7Los comandos se ejecutarán para'
+          - '   &7este terreno.'
+          - '&8✖ &9CLICK DERECHO'
+          - '   &7Ver información general'
+          - '   &7sobre este terreno.'
+          name: '&2&l{land}'
+          material: INHERIT
+        entry_land_edit:
+          lore:
+          - '&7Tienes este terreno configurado como tu'
+          - '&e/lands edit &7land. Los comandos se'
+          - '&7ejecutarán para este terreno.'
+          - '&8✖ &bCLICK IZQUIERDO'
+          - '   &7Gestionar este terreno.'
+          - '&8✖ &bSHIFT + CLICK IZQUIERDO'
+          - '   &7Seleccionar como &e/lands edit &7land.'
+          - '   &7Los comandos se ejecutarán para'
+          - '   &7este terreno.'
+          - '&8✖ &9CLICK DERECHO'
+          - '   &7Ver información general'
+          - '   &7sobre este terreno.'
+          name: '&2&l{land}'
+          material: skin:eef425b4db7d62b200e89c013e421a9e110bfb27f2d8b9f5884d10104d00f4f4
+  
+  player_invite:
+    title: '&8{land}'
+    items:
+      default:
+        child_failure_banned:
+          lore:
+          - '&cNo puedes unirte al área&4 {area} &cdel'
+          - '&cterreno&4 {land}&c, porque te han'
+          - '&cbloqueado.'
+          name: '&4&lEstás bloqueado'
+        deny:
+          lore:
+          - '&8✖ &7Rechazar esta invitación.'
+          name: '&c&lRechazar'
+          material: RED_STAINED_GLASS_PANE
+          slots: 24-27
+        accept_owner:
+          lore:
+          - '&8✖ &7Aceptar esta invitación.'
+          - '   &7Impuestos:&c {tax}'
+          - '   &7Mantenimiento:&c {upkeep}'
+          name: '&a&lAceptar'
+          material: LIME_STAINED_GLASS_PANE
+          slots: 19-22
+        accept_trust:
+          lore:
+          - '&8✖ &7Aceptar esta invitación.'
+          - '   &7Impuestos:&c {tax}'
+          name: '&a&lAceptar'
+          material: LIME_STAINED_GLASS_PANE
+          slots: 19-22
+        child_failure_inviteOwner:
+          lore:
+          - '&cNo puedes unirte a este terreno.'
+          - ' &8• &7No tienes permitido tener'
+          - '   &7tu propio terreno y estar confiado'
+          - '   &7en otro al mismo tiempo.'
+          name: '&4&lInvitación de Dueño'
+        child_failure_lands:
+          lore:
+          - '&cNo puedes unirte a otro terreno.'
+          - ' &8• &7Alcanzaste tu máximo'
+          - '   &7de&3 {max} &7Estados en los'
+          - '   &7que puedes tener confianza.'
+          name: '&4&lMáximo de Estados'
+        child_failure_members:
+          lore:
+          - '&cNo se pudo otorgarte confianza en el terreno&4 {land}&c.'
+          - ' &8• &7Alcanzaron su máximo'
+          - '   &7de&3 {max} &7miembros.'
+          name: '&4&lMáximo de Miembros'
+        child_failure_war:
+          lore:
+          - '&cActualmente no puedes unirte al terreno'
+          - '&4{land}&c, porque está en'
+          - '&cuna guerra activa o próxima.'
+          name: '&4&lInvolucrado en Guerra'
+        info:
+          lore:
+          - ' &8• &7Área:&6 {area}'
+          - ' &8• &7Terreno:&2 {land}'
+          - ' &8• &7Recibido:&5 {time}'
+          - ' &8• &7Remitente: {sender}'
+          name: '&6&lInformación'
+          material: OAK_SIGN
+          slots: 23
+  list_rentables:
+    title: '&8Rentable'
+    items:
+      default:
+        refresh_type:
+          lore:
+          - '&8✖ &7Mostrar objetos para comprar'
+          - '   &7o para rentar?'
+          name: '&7&lTipo: {type}'
+          material: COMPARATOR
+          slots: 42
+        entry_land_buy:
+          lore:
+          - '&8• &7Costo:&c {costs}'
+          - '&8✖ &7Teletransportarse'
+          name: '&a&lComprar Terreno:&2 {land}'
+          material: INHERIT
+        entry_area_buy:
+          lore:
+          - '&8• &7Tamaño: {size} bloques'
+          - '&8• &7Costo:&c {costs}'
+          - '&8• &7Terreno: {land}'
+          - '&8✖ &7Teletransportarse'
+          name: '&a&lComprar:&6 {area}'
+          material: INHERIT
+        refresh_sort:
+          lore:
+          - '&8✖ &7Haz clic para cambiar el modo de orden.'
+          name: '&7&lOrdenar por: {mode}'
+          material: HOPPER
+          slots: 41
+        entry_area_rent:
+          lore:
+          - '&8• &7Tamaño: {size} bloques'
+          - '&8• &7Costo:&c {costs} &7cada &5{time}'
+          - '&8• &7Tiempo máx.: {max}'
+          - '&8• &7Terreno: {land}'
+          - '&8✖ &7Teletransportarse'
+          name: '&e&lRentar:&6 {area}'
+          material: INHERIT
+        child_failure_cooldown:
+          lore:
+          - '&7Debes esperar otros&5 {time}'
+          - '&7antes de poder teletransportarte a otra oferta.'
+          name: '&4&lTiempo de Reutilización'
+  action-confirm:
+    title: '&8Confirma esta Acción'
+    items:
+      default:
+        confirm:
+          name: '&a&lConfirmar'
+          material: LIME_STAINED_GLASS_PANE
+          slots:
+          - 1-4
+          - 10-13
+          - 19-22
+          - 28-31
+          - 37-40
+          sound_click: ENTITY_PLAYER_LEVELUP
+        cancel:
+          name: '&c&lCancelar'
+          material: RED_STAINED_GLASS_PANE
+          slots:
+          - 6-9
+          - 15-18
+          - 24-27
+          - 33-36
+          - 42-45
+          sound_click: BLOCK_ANVIL_HIT
+        info:
+          lore:
+          - '&7Haz clic en &a&lConfirmar &7para confirmar o'
+          - '&c&lCancelar &7para abortar esta acción.'
+          name: '&6&lConfirma esta Acción'
+          material: OAK_SIGN
+          slots:
+          - 5
+          - 14
+          - 23
+          - 32
+          - 41
+  admin_wilderness:
+    title: '&8Banderas de area salvaje'
+    items:
+      default:
+        management:
+          lore:
+          - '&8✖ &7Edita banderas administrativas de'
+          - '   &7plugins externos, que se pueden'
+          - '   &7alternar en la zona salvaje.'
+          name: '&6&lBanderas de Administración'
+          material: GOLD_INGOT
+          slots: 23
+        action:
+          lore:
+          - '&8✖ &7Edita banderas de acción como'
+          - '   &7romper bloques, etc.'
+          name: '&6&lBanderas de Acción'
+          material: IRON_PICKAXE
+          slots: 20
+        landflags:
+          lore:
+          - '&8✖ &7Alterna banderas naturales, como'
+          - '   &7aparición de mobs, etc.'
+          name: '&6&lBanderas Naturales'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 26
+  object_info:
+    title: '&8{object}'
+    items:
+      default:
+        membership-request_not-looking:
+          lore:
+          - '&cEste terreno no está buscando'
+          - '&cnuevos miembros.'
+          name: '&6&lSolicitar Membresía'
+          material: BOOKSHELF
+          slots: 33
+        level:
+          lore:
+          - '&8✖ &7Haz clic aquí para ver información'
+          - '   &7sobre el nivel actual y el siguiente.'
+          name: '&6&lNivel'
+          material: BEACON
+          slots: 15
+        created:
+          lore:
+          - '&5{date}'
+          name: '&6&lCreado'
+          material: CLOCK
+          slots: 11
+        players:
+          lore:
+          - '&e{players}'
+          name: '&6&lJugadores &8(&7{amount}&8)'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 13
+        lands:
+          lore:
+          - '&e{lands}'
+          name: '&6&lEstados &8(&7{amount}&8)'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 13
+        membership-request:
+          lore:
+          - '&8✖ &bCLICK IZQUIERDO'
+          - '   &7Solicitar membresía.'
+          - '&8✖ &9CLICK DERECHO'
+          - '   &7Revocar solicitud de membresía.'
+          name: '&6&lSolicitar Membresía'
+          material: BOOKSHELF
+          slots: 33
+        war:
+          lore:
+          - ' &8• &7Ganadas: {won}'
+          - ' &8• &7Perdidas: {lost}'
+          - '   &8= &7WLR:&3 {wlr}'
+          - '&6&lÍndice de muertes:'
+          - ' &8• &7Asesinatos: {kills}'
+          - ' &8• &7Muertes: {deaths}'
+          - '   &8= &7KDR:&3 {kdr}'
+          - '&8• &7Capturas: {captures}'
+          name: '&6&lÍndice de Victorias:'
+          material: IRON_SWORD
+          slots: 31
+        level_camp:
+          lore:
+          - '&cLos campamentos no tienen niveles.'
+          name: '&6&lNivel'
+          material: BEACON
+          slots: 15
+        relations:
+          lore:
+          - '&8✖ &7Ver relaciones.'
+          name: '&6&lRelaciones'
+          material: LIME_BANNER
+          slots: 29
+  list_admin_wilderness_landflags:
+    title: '&8Banderas Naturales'
+  list_area_roles:
+    title: '&8{area} &7> &8Roles'
+    items:
+      default:
+        child_failure_max-roles:
+          lore:
+          - '&cEsta área alcanzó la cantidad máxima'
+          - '&cde&4 {max} &croles.'
+          name: '&4&lMáximo de Roles'
+        child_failure_access:
+          lore:
+          - '&cNo tienes permiso para editar roles'
+          - '&cen esta área.'
+          - ' &8• &7El dueño del terreno puede dar'
+          - '   &7permiso a tu rol para hacerlo.'
+          name: '&4&lNo permitido'
+        entry_object_system_priority:
+          lore:
+          - '&8✖ &bCLICK IZQUIERDO'
+          - '   &7Editar este rol.'
+          - '&8✖ &bSHIFT + CLICK IZQUIERDO'
+          - '   &7Mayor prioridad'
+          - '&8✖ &9SHIFT + CLICK DERECHO'
+          - '   &7Menor prioridad'
+          name: '&7&l{role}'
+          material: INHERIT
+        entry_object_normal:
+          lore:
+          - '&8✖ &bCLICK IZQUIERDO'
+          - '   &7Editar este rol.'
+          - '&8✖ &bSHIFT + CLICK IZQUIERDO'
+          - '   &7Mayor prioridad'
+          - '&8✖ &9SHIFT + CLICK DERECHO'
+          - '   &7Menor prioridad'
+          - '&8✖ &3DROP'
+          - '   &7Eliminar este rol.'
+          name: '&7&l{role}'
+          material: INHERIT
+        entry_object_system:
+          lore:
+          - '&8✖ &bCLICK IZQUIERDO'
+          - '   &7Editar este rol.'
+          name: '&7&l{role}'
+          material: INHERIT
+        create:
+          lore:
+          - '&8✖ &7Crear un nuevo rol.'
+          - '   &7Disponible:&3 {roles} &8/&c {max}'
+          name: '&a&lCrear Rol'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 40
+        child_failure_required:
+          lore:
+          - '&cNo puedes eliminar este rol.'
+          - ' &8• &7Es requerido para la gestión'
+          - '   &7de jugadores.'
+          name: '&4&lRol es Requerido'
+        delete:
+          lore:
+          - '&8✖ &7Eliminar un rol'
+          - '   &7de esta área.'
+          name: '&c&lEliminar Rol'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 42
+        child_failure_priority:
+          lore:
+          - '&cNo tienes permitido editar configuraciones'
+          - '&cde este rol.'
+          - ' &8• &7Tiene mayor prioridad que la tuya'
+          - '   &7o eres miembro de ese rol.'
+          name: '&4&lPrioridad del Rol'
+  list_player_map:
+    title: Mapa
+    items:
+      default:
+        entry_chunk_position:
+          name: '&6&lPosición Actual'
+          lore:
+          - '&7Esta es tu posición actual.'
+          material: NETHER_STAR
+        entry_chunk_wilderness:
+          name: '&2Area salvaje'
+          lore:
+          - '&8✖ &7Haz clic para reclamar este chunk.'
+          material: GREEN_STAINED_GLASS_PANE
+        entry_chunk_untrusted:
+          name: '&4{land}'
+          lore:
+          - '&cNo tienes confianza en este chunk.'
+          - '&8✖ &7Ver info sobre este terreno.'
+          material: RED_STAINED_GLASS_PANE
+        entry_chunk_owner:
+          name: '&a{land}'
+          lore:
+          - '&7Eres dueño de este terreno.'
+          - '&8✖ &7Abrir el menú de este terreno.'
+          material: LIME_STAINED_GLASS_PANE
+        entry_chunk_trusted:
+          name: '&e{land}'
+          lore:
+          - '&7Tienes confianza en este chunk.'
+          - '&8✖ &7Abrir el menú de este terreno.'
+          material: YELLOW_STAINED_GLASS_PANE
+        refresh_move_up:
+          name: '&6&lNavegar {direction}'
+          material: skin:45c588b9ec0a08a37e01a809ed0903cc34c3e3f176dc92230417da93b948f148
+          slots: 5
+        refresh_move_down:
+          name: '&6&lNavegar {direction}'
+          material: skin:1cb8be16d40c25ace64e09f6086d408ebc3d545cfb2990c5b6c25dabcedeacc
+          slots: 50
+        refresh_move_left:
+          name: '&6&lNavegar {direction}'
+          material: skin:76ebaa41d1d405eb6b60845bb9ac724af70e85eac8a96a5544b9e23ad6c96c62
+          slots: 19
+        refresh_move_right:
+          name: '&6&lNavegar {direction}'
+          material: skin:8399e5da82ef7765fd5e472f3147ed118d981887730ea7bb80d7a1bed98d5ba
+          slots: 27
+        refresh_reset-pos:
+          name: '&6&lReiniciar Posición'
+          lore:
+          - '&8✖ &7Reiniciar la posición actual.'
+          material: skin:22e4ad83c4938d9e5fc589e60c8010be2480e08d834529cec0da13bdf2538555
+          slots: 54
+        back:
+          slots: 46
+    size: 54
+    entries: 1-54
+  list_player_invites:
+    title: '&8Invitaciones Recibidas'
+    items:
+      default:
+        entry_object_owner:
+          lore:
+          - '&8✖ &7Responder a esta invitación y ver más información.'
+          name: '&2&l{land} &7- &6&lConvertirse en Dueño'
+          material: INHERIT
+        entry_object_trust:
+          lore:
+          - '&8✖ &7Responder a esta invitación y ver más información.'
+          name: '&2&l{land} &7- &6&lInvitación de Miembro'
+          material: INHERIT
+  list_land_areas:
+    title: '&8Áreas'
+    items:
+      default:
+        child_failure_rented:
+          lore:
+          - '&cNo puedes editar esta área mientras'
+          - '&cestá rentada o vendida.'
+          - ' &8• &7Inquilino actual:&3 {player}'
+          name: '&4&lRentada'
+        entry_area_default:
+          lore:
+          - '&7{description}'
+          - '&8✖ &7Abre el menú para'
+          - '   &7esta área.'
+          name: '&6&l{area}'
+          material: INHERIT
+        child_failure_access:
+          lore:
+          - '&cNo tienes permiso para eliminar'
+          - '&cáreas en este terreno.'
+          - ' &8• &7El dueño del terreno puede dar'
+          - '   &7permiso a tu rol para asignar áreas.'
+          name: '&4&lNo permitido'
+        entry_area:
+          lore:
+          - '&7{description}'
+          - ''
+          - '&8✖ &7Gestionar esta área.'
+          - '&8✖ &3DROP'
+          - '   &7Eliminar esta área.'
+          name: '&6&l{area}'
+          material: INHERIT
+        create:
+          lore:
+          - '&8✖ &7Crear una nueva área para este terreno.'
+          - '   &7Disponible:&3 {areas} &8/&c {max}'
+          name: '&a&lCrear Área'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 40
+        entry_area-setup:
+          lore:
+          - '&81. &7Ejecuta &e/lands selection &7y'
+          - '   &7selecciona una esquina inferior y superior.'
+          - '&82. &7Ejecuta &e/{cmd}'
+          - '  &7para asignar la selección a esta área.'
+          - '&8✖ &3DROP'
+          - '   &7Eliminar esta área.'
+          name: '&c&lConfigurar'
+          material: ACACIA_FENCE
+        child_failure_untrusted:
+          lore:
+          - '&cNo tienes permiso para abrir el'
+          - '&cmenú de esta área.'
+          - ' &8• &7Necesitas tener confianza'
+          - '   &7en esta área.'
+          name: '&4&lSin confianza'
+        child_failure_default:
+          lore:
+          - '&cNo puedes eliminar el área predeterminada'
+          - '&cde este terreno.'
+          - ' &8• &7Nuevas reclamaciones pertenecerán a ella.'
+          name: '&4&lÁrea Predeterminada'
+        child_failure_max-areas:
+          lore:
+          - '&cEste terreno alcanzó su máximo'
+          - '&cde&4 {max} &cáreas.'
+          name: '&4&lMáximo de Áreas'
+        delete:
+          lore:
+          - '&8✖ &7Eliminar un área de'
+          - '   &7este terreno.'
+          name: '&c&lEliminar Área'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 42
+  list_area_banned:
+    title: '&8{area} &7> &8Jugadores Bloqueados'
+    items:
+      default:
+        unban:
+          lore:
+          - '&8✖ &7Desbloquear a un jugador de esta área.'
+          name: '&a&lDesbloquear Jugador'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 42
+        entry_area_all:
+          lore:
+          - '&7Bloqueado en estas áreas:'
+          - '{areas}'
+          - ''
+          - '&8✖ &7Ver más información.'
+          - '&8✖ &3DROP'
+          - '   &7Desbloquear'
+          name: '&e&l{player}'
+          material: INHERIT
+        entry_area:
+          lore:
+          - '&7Este jugador está bloqueado en esta área.'
+          - '&8✖ &7Ver más información.'
+          - '&8✖ &3DROP'
+          - '   &7Desbloquear'
+          name: '&e&l{player}'
+          material: INHERIT
+        refresh_toggle:
+          lore:
+          - '&8✖ &7Mostrar solo jugadores que están'
+          - '   &7bloqueados en esta área &8(&6{area}&8)&7?'
+          - '    &8• &6&lSi se desactiva:'
+          - '      &7Muestra bloqueos de todo el terreno.'
+          - '      &7También te permite bloquear o desbloquear'
+          - '      &7jugadores para todo el terreno.'
+          name: '&6&lVer solo Área: {current}'
+          material: HOPPER
+          slots: 41
+        global-action:
+          name: '&6&lEjecutar para todas las Áreas: {current}'
+          lore:
+          - '&8✖ &7Bloquear o desbloquear jugadores en todo el terreno?'
+          - '   &8• &7Si se desactiva: Solo bloquea/desbloquea'
+          - '     &7jugadores para el área&6 {area}&7.'
+          material: skin:c9c8881e42915a9d29bb61a16fb26d059913204d265df5b439b3d792acd56
+          slots: 44
+        ban:
+          lore:
+          - '&8✖ &7Bloquear a un jugador de esta área.'
+          - '    &8• &7Los jugadores bloqueados no podrán'
+          - '      &7entrar ni teletransportarse a ella.'
+          name: '&c&lBloquear Jugador'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 40
+  war_capture_recipe:
+    title: '&8Receta de Bandera de Captura'
+  war_info:
+    title: '&8Información de Guerra'
+    items:
+      default:
+        war_attackers:
+          material: IRON_SWORD
+          slots: 21
+        war_defenders:
+          material: SHIELD
+          slots: 23
+        war_points:
+          material: IRON_INGOT
+          slots: 25
+  list_role_players:
+    title: '&8Jugadores'
+    items:
+      default:
+        entry_object:
+          lore:
+          - '&7Este jugador apoya a tu terreno'
+          - '&7con &3{support} &7reclamos adicionales.'
+          name: '&e&l{player}'
+          material: INHERIT
+          slots: 10-36
+  list_all:
+    title: '&8Todo'
+    items:
+      default:
+        refresh_toggle-allowed:
+          lore:
+          - '&8✖ &7Mostrar solo aquellos a los que tienes'
+          - '   &7permiso para entrar y teletransportarte'
+          - '   &7al spawn?'
+          name: '&6&lSolo público: {only-allowed}'
+          material: OAK_DOOR
+          slots: 42
+        refresh_toggle-category:
+          lore:
+          - '&8✖ &7Mostrar solo Estados que pertenecen'
+          - '   &7a esta categoría?'
+          - '   &8• &7Descripción de la categoría:'
+          - '     {description}'
+          name: '&6&lCategoría: {category}'
+          material: BOOKSHELF
+          slots: 41
+        entry_land_looking:
+          lore:
+          - ' &8• &7{sorting}: {value}'
+          - ' &8• &7Categoría: {category}'
+          - ' &8• &7Título:'
+          - '   &7{title}'
+          - ''
+          - '&8✖ &bCLICK IZQUIERDO'
+          - '   &7Teletransportarte al spawn del'
+          - '   &7terreno.'
+          - '&8✖ &9CLICK DERECHO'
+          - '   &7Ver más información.'
+          - ''
+          - '&6&lSolicitudes de Membresía'
+          - '&8✖ &bSHIFT + CLICK IZQUIERDO'
+          - '   &7Solicitar membresía.'
+          - '&8✖ &9SHIFT + CLICK DERECHO'
+          - '   &7Revocar solicitud de membresía.'
+          name: '&6&l#{pos} &2&l{land}'
+          material: INHERIT
+        entry_nation:
+          lore:
+          - ' &8• &7{sorting}: {value}'
+          - ' &8• &7Estados: {lands}'
+          - ''
+          - '&8✖ &bCLICK IZQUIERDO'
+          - '   &7Teletransportarte al spawn de la capital.'
+          - '&8✖ &9CLICK DERECHO'
+          - '   &7Ver más información.'
+          name: '&6&l#{pos} &2&l{nation}'
+          material: INHERIT
+        refresh_sorting:
+          lore:
+          - '&8✖ &7Cambiar el modo de orden.'
+          name: '&6&lOrden: {current}'
+          material: HOPPER
+          slots: 40
+        refresh_search:
+          lore:
+          - '&8✖ &7Buscar por nombre.'
+          - '   &8• &7Búsqueda actual: {search}'
+          - ''
+          - '&8✖ &3DROP'
+          - '   &7Restablecer búsqueda'
+          name: '&6&lBuscar'
+          material: SPYGLASS
+          slots: 43
+        entry_land:
+          lore:
+          - ' &8• &7{sorting}: {value}'
+          - ' &8• &7Categoría: {category}'
+          - ' &8• &7Título:'
+          - '   &7{title}'
+          - ''
+          - '&8✖ &bCLICK IZQUIERDO'
+          - '   &7Teletransportarte al spawn del'
+          - '   &7terreno.'
+          - '&8✖ &9CLICK DERECHO'
+          - '   &7Ver más información.'
+          name: '&6&l#{pos} &2&l{land}'
+          material: INHERIT
+  list_inbox:
+    title: '&8Bandeja'
+    items:
+      default:
+        refresh_filter:
+          lore:
+          - '&8✖ &7Ciclar a través de los tipos de mensaje.'
+          - '   &7Actual:&3 {type}'
+          name: '&6&lFiltrar por Tipo'
+          material: HOPPER
+          slots: 40
+        entry_object:
+          lore:
+          - '{message}'
+          - ''
+          - '&8✖ &7Haz clic para eliminar.'
+          name: '&6&l#{id}&7 {date}'
+          material: PAPER
+          slots: 10-36
+        refresh_clear:
+          lore:
+          - '&8✖ &7Elimina todos los mensajes de la bandeja.'
+          name: '&6&lLimpiar'
+          material: BARRIER
+          slots: 41
+        child_failure_owner:
+          lore:
+          - '&7Solo el dueño del terreno puede eliminar'
+          - '&7mensajes de la bandeja.'
+          name: '&4&lDueño'
+        refresh_post:
+          name: '&a&lCrear Publicación'
+          lore:
+          - '&8✖ &7Publica información para los miembros de tu terreno.'
+          - '   &7Serán notificados.'
+          material: WRITABLE_BOOK
+          slots: 42
+  list_player_flags:
+    title: '&8Ajustes Personales'
+    items:
+      default:
+        entry_enter_messages:
+          lore:
+          - '&8✖ &7¿Mostrar mensajes de entrar y salir?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lMensajes de Entrada y Salida: {enabled}'
+          material: OAK_SIGN
+        entry_receive_invites:
+          lore:
+          - '&8✖ &7¿Permitir que otros Estados te envíen'
+          - '   &7invitaciones para unirte a ellos?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lRecibir Invitaciones: {enabled}'
+          material: WRITABLE_BOOK
+        entry_show_inbox:
+          lore:
+          - '&8✖ &7¿Recibir notificaciones sobre eventos'
+          - '   &7importantes que ocurran en tus Estados?'
+          - '   &7Desbloqueado: {unlocked}'
+          name: '&6&lMostrar Bandeja: {enabled}'
+          material: skin:6bf3fcdccffd963e4334818108e1e9ae3a80566d0d3d2d4ab3051a2cd811348c
+        entry_general_player:
+          lore:
+          - '&8✖ &7Haz clic para alternar:'
+          - '   &7Desbloqueado: {unlocked}'
+          - '&7Descripción:'
+          - '{desc}'
+          name: '&6&l{flag}: {enabled}'
+          material: INHERIT
+  
+  player_info:
+    title: '&8Jugador {player}'
+    items:
+      default:
+        max-chunks:
+          lore:
+          - '&7Aporta a tu terreno con &3{chunks} &7chunks,'
+          - '&7si forma parte de tu terreno.'
+          name: '&6&lReclamos de Soporte'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 22
+        lands:
+          lore:
+          - '{lands}'
+          name: '&6&lEstados &8(&7{amount}&8)'
+          material: OAK_SIGN
+          slots: 24
+        areas:
+          lore:
+          - '&7Este jugador tiene confianza en estas'
+          - '&7áreas del terreno&2 {land}&7:'
+          - '{areas}'
+          name: '&6&lÁreas Confiadas &8(&7{amount}&8)'
+          material: OAK_FENCE
+          slots: 26
+        time:
+          lore:
+          - '&8• &7Última vez en línea: &5{seen}'
+          - '   &7Desconectado desde: &5{offline}'
+          - '&8• &7Tiempo jugado: &5{playtime}'
+          name: '&6&lÚltima conexión y Tiempo jugado'
+          material: CLOCK
+          slots: 20
+  relations:
+    title: '&8Relaciones'
+    items:
+      default:
+        offer_received:
+          lore:
+          - '&8✖ &7Gestionar ofertas entrantes.'
+          name: '&6&lOfertas Recibidas'
+          material: skin:3b83bbccf4f0c86b12f6f79989d159454bf9281955d7e2411ce98c1b8aa38d8
+          slots: 26
+        offer_sent:
+          lore:
+          - '&8✖ &7Gestionar ofertas salientes.'
+          name: '&6&lOfertas Enviadas'
+          material: skin:3e4f2f9698c3f186fe44cc63d2f3c4f9a241223acf0581775d9cecd7075
+          slots: 24
+        enemies:
+          lore:
+          - '&8✖ &7Gestionar enemigos.'
+          name: '&c&lEnemigos'
+          material: RED_BANNER
+          slots: 22
+        allies:
+          lore:
+          - '&8✖ &7Gestionar aliados.'
+          name: '&a&lAliados'
+          material: LIME_BANNER
+          slots: 20
+  list_relation:
+    title: '&8Relación'
+    items:
+      default:
+        add:
+          lore:
+          - '&7Cantidad máxima: {max}'
+          name: '&8✖ &a&lAgregar'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 40
+        entry_offer_neutral_sender:
+          lore:
+          - '&8• &7Dueño: {owner}'
+          - '&8• &7Nivel: {level}'
+          - ''
+          - '&7Si ellos aceptan esta oferta,'
+          - '&7ya no serán enemigos.'
+          - ''
+          - '&8✖ &bSHIFT + CLICK IZQUIERDO'
+          - '   &7Ver más información.'
+          - '&8✖ &3DROP'
+          - '   &7Revocar esta oferta.'
+          name: '&c&l{object}'
+          material: INHERIT
+        entry_offer_ally_sender:
+          lore:
+          - '&8• &7Dueño: {owner}'
+          - '&8• &7Nivel: {level}'
+          - ''
+          - '&7Si aceptan esta oferta, estarán'
+          - '&7aliados.'
+          - ''
+          - '&8✖ &bSHIFT + CLICK IZQUIERDO'
+          - '   &7Ver más información.'
+          - '&8✖ &3DROP'
+          - '   &7Revocar esta oferta.'
+          name: '&c&l{object}'
+          material: INHERIT
+        remove:
+          name: '&8✖ &c&lEliminar'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 42
+        entry_offer_neutral_receiver:
+          lore:
+          - '&8• &7Dueño: {owner}'
+          - '&8• &7Nivel: {level}'
+          - ''
+          - '&8✖ &bCLICK IZQUIERDO'
+          - '   &7Aceptar esta oferta de paz.'
+          - '   &7Ya no serán enemigos.'
+          - '&8✖ &bSHIFT + CLICK IZQUIERDO'
+          - '   &7Ver más información.'
+          - '&8✖ &3DROP'
+          - '   &7Rechazar esta oferta.'
+          name: '&c&l{object}'
+          material: INHERIT
+        child_failure_war:
+          lore:
+          - '&cNo puedes gestionar esto mientras {object}'
+          - '&cesté en una guerra próxima o'
+          - '&cactiva contra&4 {enemy}&c.'
+          name: '&4&lGuerra activa o próxima'
+        add_nation:
+          lore:
+          - '&cTodas las relaciones son gestionadas por la nación'
+          - '&4{nation}&c, a la que pertenece tu terreno.'
+          name: '&6&lGestionado por la Nación'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 40
+        child_failure_max_allies:
+          lore:
+          - '&4{object} &calcanzó su máximo'
+          - '&cde&4 {max} &caliados.'
+          name: '&4&lMáximo de Aliados alcanzado'
+        entry_offer_ally_receiver:
+          lore:
+          - '&8• &7Dueño: {owner}'
+          - '&8• &7Nivel: {level}'
+          - ''
+          - '&8✖ &bCLICK IZQUIERDO'
+          - '   &7Aceptar esta oferta de alianza.'
+          - '   &7Serán aliados.'
+          - '&8✖ &bSHIFT + CLICK IZQUIERDO'
+          - '   &7Ver más información.'
+          - '&8✖ &3DROP'
+          - '   &7Rechazar esta oferta.'
+          name: '&c&l{object}'
+          material: INHERIT
+        entry_ally:
+          lore:
+          - '&8• &7Dueño: {owner}'
+          - '&8• &7Nivel: {level}'
+          - ''
+          - '&8✖ &bSHIFT + CLICK IZQUIERDO'
+          - '   &7Ver más información.'
+          - '&8✖ &3DROP'
+          - '   &7Eliminar aliado.'
+          name: '&a&lAliado {object}'
+          material: INHERIT
+        remove_nation:
+          lore:
+          - '&cTodas las relaciones son gestionadas por la nación'
+          - '&4{nation}&c, a la que pertenece tu terreno.'
+          name: '&6&lGestionado por la Nación'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 42
+        entry_enemy:
+          lore:
+          - '&8• &7Dueño: {owner}'
+          - '&8• &7Nivel: {level}'
+          - ''
+          - '&8✖ &bSHIFT + CLICK IZQUIERDO'
+          - '   &7Ver más información.'
+          - '&8✖ &3DROP'
+          - '   &7Enviar oferta de neutralización.'
+          name: '&c&lEnemigo {object}'
+          material: INHERIT
+        child_failure_nation:
+          lore:
+          - '&cTodas las relaciones son gestionadas por la nación'
+          - '&4{nation}&c, a la que pertenece tu terreno.'
+          name: '&4&lGestionado por la Nación'
+        child_war:
+          lore:
+          - '&cNo puedes hacer esto mientras {object}'
+          - '&cesté involucrado en una guerra.'
+          name: '&4&lGuerra Actual'
+        child_failure_max_enemies:
+          lore:
+          - '&4{object} &calcanzó su máximo'
+          - '&cde&4 {max} &cenemigos.'
+          name: '&4&lMáximo de Enemigos alcanzado'
+  object_info_relations:
+    title: '&8Relaciones'
+    items:
+      default:
+        enemies:
+          lore:
+          - '&8✖ &7Ver enemigos.'
+          - '   &8• &7Cantidad: {enemies}'
+          name: '&c&lEnemigos'
+          material: RED_BANNER
+          slots: 25
+        allies:
+          lore:
+          - '&8✖ &7Ver aliados.'
+          - '   &8• &7Cantidad: {allies}'
+          name: '&a&lAliados'
+          material: LIME_BANNER
+          slots: 21
+  list_land_storage:
+    title: '&8Almacén de {land}'
+  list_members_online:
+    title: '&8Miembros en Línea'
+    items:
+      default:
+        entry_area:
+          name: '&e&l{player}'
+          lore:
+          - '&7Rol: {role}'
+          material: INHERIT
+        entry_area_all:
+          name: '&e&l{player}'
+          material: INHERIT
+        entry_nation:
+          name: '&e&l{player}'
+          material: INHERIT
+        refresh_toggle:
+          lore:
+          - '&8✖ &7Mostrar solo jugadores que están'
+          - '   &7confiados en esta área &8(&6{area}&8)&7?'
+          - '    &8• &6&lSi se desactiva:'
+          - '      &7Muestra jugadores de todo el terreno.'
+          name: '&6&lVer solo Área: {current}'
+          material: HOPPER
+          slots: 41
+  list_nation_lands:
+    title: '&8Miembros de la Nación'
+    items:
+      default:
+        trust:
+          lore:
+          - '&8✖ &7Invitar un terreno a unirse a tu nación.'
+          - '   &7Disponible:&3 {lands} &8/&c {max}'
+          name: '&a&lInvitar Terreno'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 39
+        members_online:
+          name: '&6&lMiembros en Línea'
+          lore:
+          - '&8✖ &7Ver miembros que están en línea.'
+          material: CLOCK
+          slots: 41
+        entry_object:
+          lore:
+          - '&7Título:'
+          - '&7{title}'
+          - ''
+          - '&8✖ &bCLICK IZQUIERDO'
+          - '   &7Ver información.'
+          - '&8✖ &3DROP'
+          - '   &7Remover terreno de la nación.'
+          name: '&2&l{prefix}{land}'
+          material: INHERIT
+        untrust:
+          lore:
+          - '&8✖ &7Sacar un terreno de tu nación.'
+          name: '&c&lSacar Terreno'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 43
+  rental_setup:
+    title: '{type} Configuración'
+    items:
+      default:
+        type:
+          name: '&6&lTipo: {type}'
+          lore:
+          - '&8✖ &7Cambiar entre renta y venta.'
+          material: OAK_SIGN
+          slots: 32
+        interval:
+          name: '&6&lIntervalo: {interval}'
+          lore:
+          - '&8✖ &7Los inquilinos pagarán&c {cost}&7 cada'
+          - '   &5{interval} &7que extiendan su renta.'
+          material: CLOCK
+          slots: 12
+        max-time:
+          name: '&6&lTiempo Máx. total: {max-time}'
+          lore:
+          - '&8✖ &7Cambia el tiempo máximo total que un jugador'
+          - '   &7puede rentar esta área.'
+          material: CLOCK
+          slots: 16
+        cost_rental:
+          name: '&6&lCosto por Intervalo:&c {cost}'
+          lore:
+          - '&8✖ &7Cambia cuánto paga un inquilino'
+          - '   &7por cada &5{interval}&7.'
+          material: GOLD_INGOT
+          slots: 14
+        cost_sell:
+          name: '&6&lCosto Total:&c {cost}'
+          lore:
+          - '&8✖ &7Cambia cuánto pagará el comprador.'
+          material: GOLD_INGOT
+          slots: 14
+        confirm_rental:
+          name: '&a&lConfirmar'
+          lore:
+          - '&8✖ &7Configurar esta área para renta.'
+          - '   &8• &7Intervalo:&5 {interval}'
+          - '   &8• &7Costo por {interval}:&c {cost}'
+          - '   &8• &7Tiempo máx.:&5 {max-time}'
+          material: LIME_STAINED_GLASS_PANE
+          slots: 45
+        confirm_sell:
+          name: '&a&lConfirmar'
+          lore:
+          - '&8✖ &7Configurar esta área para venta.'
+          - '   &8• &7Costo total:&c {cost}'
+          material: LIME_STAINED_GLASS_PANE
+          slots: 45
+  select_time:
+    title: Tiempo
+    items:
+      default:
+        refresh_d_plus:
+          name: '&a&l+{value} día(s)'
+          material: GLOWSTONE_DUST
+          slots: 24
+          data:
+            modify: 1
+        refresh_d_minus:
+          name: '&c&l-{value} día(s)'
+          material: REDSTONE
+          slots: 22
+          data:
+            modify: -1
+        refresh_h_plus:
+          name: '&a&l+{value} hora(s)'
+          material: GLOWSTONE_DUST
+          slots: 25
+          data:
+            modify: 1
+        current:
+          name: '&6&lActual:&5 {time}'
+          material: CLOCK
+          slots: 23
+        refresh_h_minus:
+          name: '&c&l-{value} hora(s)'
+          material: REDSTONE
+          slots: 21
+          data:
+            modify: -1
+        refresh_m_plus:
+          name: '&a&l+{value} minuto(s)'
+          material: GLOWSTONE_DUST
+          slots: 26
+          data:
+            modify: 5
+        refresh_m_minus:
+          name: '&c&l-{value} minuto(s)'
+          material: REDSTONE
+          slots: 20
+          data:
+            modify: -5
+        confirm:
+          name: '&a&lConfirmar'
+          material: LIME_STAINED_GLASS_PANE
+          slots: 45
+  select_value:
+    title: Valor
+    items:
+      default:
+        refresh_plus-1:
+          name: '&a+{value}'
+          material: GLOWSTONE_DUST
+          slots: 26
+          data:
+            modify: 1
+        refresh_plus-2:
+          name: '&a+{value}'
+          material: GLOWSTONE_DUST
+          slots: 25
+          data:
+            modify: 50
+        refresh_plus-3:
+          name: '&a+{value}'
+          material: GLOWSTONE_DUST
+          slots: 24
+          data:
+            modify: 500
+        current:
+          name: '&6&lActual: {value}'
+          material: GOLD_INGOT
+          slots: 23
+        refresh_minus-3:
+          name: '&c-{value}'
+          material: GLOWSTONE_DUST
+          slots: 22
+          data:
+            modify: -500
+        refresh_minus-2:
+          name: '&c-{value}'
+          material: GLOWSTONE_DUST
+          slots: 21
+          data:
+            modify: -50
+        refresh_minus-1:
+          name: '&c-{value}'
+          material: GLOWSTONE_DUST
+          slots: 20
+          data:
+            modify: -1
+        confirm:
+          name: '&a&lConfirmar'
+          material: LIME_STAINED_GLASS_PANE
+          slots: 45
+common_sounds:
+  # Play a sound when the item is set in the menu.
+  set:
+    # Each item starting with [item_type]_failure_<name> will have this sound set.
+    # You can still override the "sound_set" for any item in their sections.
+    failure: ENTITY_VILLAGER_NO
+    success: ENTITY_PLAYER_LEVELUP

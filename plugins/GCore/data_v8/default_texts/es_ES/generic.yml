@@ -1,0 +1,96 @@
+# -------------------- Miscellaneous --------------------
+
+messageNoPermission: |
+  &7No tienes permiso para hacer esto.
+
+messageInvalidPlayer: |
+  &7El jugador &c{value} &7no es válido (debe estar conectado).
+
+messageInvalidOfflinePlayer: |
+  &7El jugador &c{value} &7no es válido.
+
+messageCC: '&d (cc. de {og})'
+messageSilentCC: '&d (cc. de {og}, silent)'
+
+textCancel: cancel
+
+# -------------------- Command --------------------
+
+commandParameterUsageTarget: jugador
+commandParameterUsageReset: reiniciar
+commandParameterUsageOperation: operación
+commandParameterUsageAmount: cantidad
+commandParameterUsageSpecificEditor: editor
+messageCommandNotPlayer: |
+  &7No puedes ejecutar este comando desde la consola.
+
+messageCommandMissingArgument: |
+  &7Falta el argumento &c{argument}&7. Añade &d? &7después de un comando para ver la ayuda.
+
+messageCommandMissingArgumentFound: |
+  &7Falta el argumento &c{argument} &7(encontrados {found}). Añade &d? &7después de un comando para ver la ayuda.
+
+messageCommandUnnecessaryArguments: |
+  &7Argumentos innecesarios: &c{unnecessary}&7. Añade &d? &7después de un comando para ver la ayuda.
+
+messageCommandIncompatibleArguments: |
+  &c{argument1} &7no puede usarse con &c{argument2}&7. Añade &d? &7después de un comando para ver la ayuda.
+
+messageCommandDependentArguments: |
+  &c{argument1} &7no puede usarse sin &c{argument2}&7. Añade &d? &7después de un comando para ver la ayuda.
+
+messageCommandUnknown: |
+  &7No se ha podido encontrar el subcomando &c{subcommand}&7. Añade &d? &7después de un comando para ver la ayuda.
+
+messageCommandHelpElementPrefix: '&6'
+messageCommandHelpElement: '{usage}&6: &f{description}'
+messageCommandHelpColorArgumentOptional: '&e&o'
+messageCommandHelpColorArgumentRequired: '&e'
+
+messageCommandHelpPageOutsideBounds: |
+  &7Este menú solo tiene {pages} página{plural}.
+
+messageCommandHelpHeader: '&6Ayuda de &6&l{prefix} &6({page}/{pages})'
+
+# -------------------- Numbers --------------------
+
+numberMillion: millón
+numberBillion: billón
+numberTrillion: trillón
+
+durationFormatS: '{seconds}s'
+durationFormatMS: '{minutes}m{seconds}s'
+durationFormatHMS: '{hours}h{minutes}m{seconds}s'
+durationFormatDHMS: '{days}d{hours}h{minutes}m{seconds}s'
+
+# -------------------- Cost --------------------
+
+messageMustHaveCurrency: |
+  &7Necesitas &c{money} &7para esto, pero solo tienes &c{balance}&7.
+
+messageMustHaveMoreItem: |
+  &7Necesitas &c{item} &7para esto, pero solo tienes &c{has_amount}&7.
+
+messageMustHaveItem: |
+  &7Necesitas &c{item} &7para esto.
+
+# -------------------- Item --------------------
+
+# Placeholders for this : {amount}, {type}, {durability}, {custom_model_data}, {enchantments}, {name}, {lore}
+
+textDescribeItem: |
+  {amount}x {type}
+  {name}
+  {lore}
+  {enchantments}
+
+textDescribeItemNameIfHas: '{name}'
+textDescribeItemLoreIfHas: '- {lore}'
+textDescribeItemEnchantmentsIfHas: '> {enchantments}'
+textDescribeItemEnchantmentsLine: '{enchant} {level}'
+textDescribeItemSingleLine: '{amount}x {type} {name}'
+
+# -------------------- Format --------------------
+
+# For date format characters, see https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
+dateTimeFormat: "d MMM yyyy 'a las' h:mm"

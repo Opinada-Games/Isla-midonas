@@ -1,0 +1,34 @@
+prefix: "&7[&cASB&7] "
+nopermission: "%prefix&c¡No tienes el permiso requerido!"
+toggle:
+  "on": "%prefix&a¡Has activado el scoreboard &2encendido&a!"
+  "off": "%prefix&a¡Has desactivado el scoreboard &capagado&a!"
+  on_other_target: "%prefix&a¡Tu scoreboard fue activado &2encendido&a por %sender%!"
+  on_other_sender: "%prefix&a¡Has activado el scoreboard &2encendido&a para %target%!"
+  off_other_target: "%prefix&a¡Tu scoreboard fue desactivado &capagado&a por %sender%!"
+  off_other_sender: "%prefix&a¡Has desactivado el scoreboard &capagado&a para %target%!"
+reload:
+  start: "%prefix&a¡Iniciando la recarga del plugin!"
+  completed: "%prefix&a¡Recarga completada! Finalizado en %MS%ms."
+switch:
+  error: "%prefix&c¡Por favor especifica un scoreboard válido!"
+  success: "%prefix&a¡Cambiado al scoreboard &2%scoreboard%&a!"
+  nopermission: "%prefix&c¡No tienes permiso para cambiar al scoreboard %scoreboard%!"
+  world: "%prefix&c¡No puedes activar este scoreboard en este mundo!"
+  already_activated: "%prefix&c¡Ya tienes este scoreboard activo!"
+  already_active_other: "%prefix&c¡%target% ya tiene el scoreboard %scoreboard% activo!"
+  success_other: "%prefix&a¡Has cambiado el scoreboard de %target% a %scoreboard% con éxito!"
+  success_by_other: "%prefix&a¡Tu scoreboard fue cambiado por %sender%!"
+  world_other: "%prefix&c¡%target% no puede activar %scoreboard% en su mundo!"
+  nopermission_other: "%prefix&c¡%target% no tiene permiso para ver %scoreboard%!"
+trigger:
+  insert: "%prefix&c¡Error al insertar el listener del trigger; los triggers no funcionarán!"
+  register:
+    invalid: "%prefix&c¡Fallo al activar el trigger para la clase: %class_name%, clase inválida!"
+    second: "%prefix&c¡Fallo al activar el trigger para la clase: %class_name%, el trigger ya está activo!"
+    invalid-method: "%prefix&c¡Fallo al activar el trigger para la clase: %class_name%, método inválido!"
+plugin:
+  information: "%prefix&aEste servidor está ejecutando Animated Scoreboard versión &2%version%&a."
+invalid_player: "%prefix&c¡%value% no es un nombre de jugador válido o no está en línea!"
+invalid_command: "%prefix&c'/%command%' no es un comando válido. Prueba '/asb help' para ver los comandos."
+invalid_sender: "%prefix&c¡Este comando solo puede ser ejecutado por un jugador!"

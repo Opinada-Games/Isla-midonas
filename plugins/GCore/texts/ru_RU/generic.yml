@@ -1,0 +1,96 @@
+# -------------------- Miscellaneous --------------------
+
+messageNoPermission: |
+  &7Ты не имеешь право делать это
+
+messageInvalidPlayer: |
+  &7Игрок &c{value} &7неверен (должен быть онлайн).
+
+messageInvalidOfflinePlayer: |
+  &7Игрок &c{value} &7неверен.
+
+messageCC: '&d (cc. of {og})'
+messageSilentCC: '&d (cc. of {og}, silent)'
+
+textCancel: отмена
+
+# -------------------- Command --------------------
+
+commandParameterUsageTarget: игрок
+commandParameterUsageReset: сбросить
+commandParameterUsageOperation: операция
+commandParameterUsageAmount: количество
+commandParameterUsageSpecificEditor: редактор
+messageCommandNotPlayer: |
+  &7Ты не можешь вызвать эту команду из консоли
+
+messageCommandMissingArgument: |
+  &7Пропущен аргумент &c{argument}&7. Добавь &d? &7после команды для подсказки.
+
+messageCommandMissingArgumentFound: |
+  &7Пропущен аргумент &c{argument} &7(found {found}). Добавь &d? &7после команды для подсказки.
+
+messageCommandUnnecessaryArguments: |
+  &7Ненужный аргумент : &c{unnecessary}&7. Добавь &d? &7после команды для подсказки.
+
+messageCommandIncompatibleArguments: |
+  &c{argument1} &7Не может использоваться с &c{argument2}&7. Добавь &d? &7после команды для подсказки.
+
+messageCommandDependentArguments: |
+  &c{argument1} &7не может быть использовано без &c{argument2}Добавь Add &d? &7после команды для подсказки.
+
+messageCommandUnknown: |
+  &7Не получается найти под-команду(subcommand) &c{subcommand}&7. Добавь &d? &7после команды для подсказки.
+
+messageCommandHelpElementPrefix: '&6'
+messageCommandHelpElement: '{usage}&6: &f{description}'
+messageCommandHelpColorArgumentOptional: '&e&o'
+messageCommandHelpColorArgumentRequired: '&e'
+
+messageCommandHelpPageOutsideBounds: |
+  &7Эта инструкция имеет только {pages} страниц{plural}.
+
+messageCommandHelpHeader: '&6&l{prefix} &6help ({page}/{pages})'
+
+# -------------------- Numbers --------------------
+
+numberMillion: миллион
+numberBillion: миллиард
+numberTrillion: триллион
+
+durationFormatS: '{seconds}с'
+durationFormatMS: '{minutes}мин{seconds}с'
+durationFormatHMS: '{hours}часов{minutes}мин{seconds}секунд'
+durationFormatDHMS: '{days}дней{hours}часов{minutes}мин{seconds}с'
+
+# -------------------- Cost --------------------
+
+messageMustHaveCurrency: |
+  &7Тебе нужно &c{money} &7для этого, но у тебя есть только &c{balance}&7.
+
+messageMustHaveMoreItem: |
+  &7Тебе нужно &c{item} &7для этого, но у тебя есть только &c{has_amount}&7.
+
+messageMustHaveItem: |
+  &7Тебе нужно &c{item} &7для этого.
+
+# -------------------- Item --------------------
+
+# Плейсхолдеры для этого : {amount}, {type}, {durability}, {custom_model_data}, {enchantments}, {name}, {lore}
+
+textDescribeItem: |
+  {amount}x {type}
+  {name}
+  {lore}
+  {enchantments}
+
+textDescribeItemNameIfHas: '{name}'
+textDescribeItemLoreIfHas: '- {lore}'
+textDescribeItemEnchantmentsIfHas: '> {enchantments}'
+textDescribeItemEnchantmentsLine: '{enchant} {level}'
+textDescribeItemSingleLine: '{amount}x {type} {name}'
+
+# -------------------- Format --------------------
+
+# For date format characters, see https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
+dateTimeFormat: "MMM d yyyy 'at' h:mm a"

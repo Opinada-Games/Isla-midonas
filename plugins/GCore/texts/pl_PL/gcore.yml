@@ -1,0 +1,27 @@
+# Translation by zemoz
+
+# -------------------- Plugin --------------------
+
+messagePluginUnknown: |
+  &7Plugin &7{plugin} &7nie istnieje.
+
+messagePluginReloaded: |
+  &7Plugin &a{plugin} &7został przeładowany.
+
+messagePluginManipulateError: |
+  &7Akcja na pluginie &7{plugin} &7nie mogła zostać przeprowadzona.
+
+messagePluginList: |
+  &7Jest &a{count} &7pluginów, &a{active} &7są aktywne, &7{inactive} &7są nieaktywne: {plugins}
+
+messageGcoreExportFile: |
+  &7Twoje dane i pliki konfiguracyjne do &a{plugins} &7zostały wyeksportowane do pliku &a{file}&7. Udostępnij je deweloperowi.
+
+messageGcoreExportCouldnt: |
+  &7Plik &c{file} &7nie mógł być wyeksportowany.
+
+# -------------------- Commands --------------------
+
+commandDescriptionGcore: główna komenda GCore
+commandDescriptionGcorePlugins: lista pluginów zależych od GCore
+commandDescriptionGcoreExport: wyeksportuj dane pluginów zależych od GCore

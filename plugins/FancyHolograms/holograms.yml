@@ -1,0 +1,289 @@
+version: 2 # DO NOT CHANGE
+holograms:
+  survival_intro:
+    type: TEXT
+    location:
+      world: world
+      x: 798.6693115234375
+      y: 158.0
+      z: 192.54867553710938
+      yaw: -89.54855
+      pitch: 76.19995
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&l¡Bienvenido al &c&lSurvival 1.21.4&f!'
+    - '&7Revisa &b/menu'
+    - '&7para más opciones'
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    block_brightness: 15
+    sky_brightness: 15
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+  essentials_top:
+    type: TEXT
+    location:
+      world: world
+      x: 296.64532470703125
+      y: 224.0
+      z: 93.5491714477539
+      yaw: -42.897537
+      pitch: 81.14999
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&a&lJUGADORES MÁS RICOS'
+    - '&7#2 &f%essentials_baltop_player_1% &7- &a%essentials_baltop_balance_formatted_1%
+      &a%witp_time_rank_1%'
+    - '&7#1 &f%essentials_baltop_player_2% &7- &a%essentials_baltop_balance_formatted_2%
+      &a%witp_time_rank_2%'
+    - '&7#3 &f%essentials_baltop_player_3% &7- &a%essentials_baltop_balance_formatted_3%
+      &a%witp_time_rank_3%'
+    - '&7#4 &f%essentials_baltop_player_4% &7- &a%essentials_baltop_balance_formatted_4%
+      &a%witp_time_rank_4%'
+    text_shadow: false
+    see_through: false
+    text_alignment: left
+    update_text_interval: -1
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+  parkour_leaderboard:
+    type: TEXT
+    location:
+      world: world
+      x: 300.5230407714844
+      y: 224.0
+      z: 103.49896240234375
+      yaw: -89.69745
+      pitch: 88.5
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&c&lTOP PARKOUR'
+    - '&7#1 &f%witp_player_rank_1% &7- &b%witp_score_rank_1%'
+    - '&7#2 &f%witp_player_rank_2% &7- &b%witp_score_rank_2%'
+    - '&7#3 &f%witp_player_rank_3% &7- &b%witp_score_rank_3%'
+    - '&7#4 &f%witp_player_rank_4% &7- &b%witp_score_rank_4%'
+    text_shadow: false
+    see_through: false
+    text_alignment: left
+    update_text_interval: -1
+    block_brightness: 15
+    sky_brightness: 15
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+  top_kills:
+    type: TEXT
+    location:
+      world: world
+      x: 296.40087890625
+      y: 224.0
+      z: 113.62100219726562
+      yaw: -42.74646
+      pitch: 88.5001
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&b&lMÁS MUERTES A JUGADORES'
+    - '&7#1 &f%playerstats_top:1,player_kills,only:player_name% &7- &b%playerstats_top:1,player_kills,only:number%'
+    - '&7#1 &f%playerstats_top:2,player_kills,only:player_name% &7- &b%playerstats_top:2,player_kills,only:number%'
+    - '&7#1 &f%playerstats_top:3,player_kills,only:player_name% &7- &b%playerstats_top:3,player_kills,only:number%'
+    - '&7#1 &f%playerstats_top:4,player_kills,only:player_name% &7- &b%playerstats_top:4,player_kills,only:number%'
+    text_shadow: false
+    see_through: false
+    text_alignment: left
+    update_text_interval: -1
+  top_playtime:
+    type: TEXT
+    location:
+      world: world
+      x: 286.4698181152344
+      y: 224.0
+      z: 117.49781799316406
+      yaw: 0.15454102
+      pitch: 89.399994
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&6&lMÁS TIEMPO JUGADO'
+    - '&7#1 &f%playerstats_top:1,play_one_minute,only:player_name% &7- &e%playerstats_top:1,play_one_minute,only:number%'
+    - '&7#1 &f%playerstats_top:2,play_one_minute,only:player_name% &7- &e%playerstats_top:2,play_one_minute,only:number%'
+    - '&7#1 &f%playerstats_top:3,play_one_minute,only:player_name% &7- &e%playerstats_top:3,play_one_minute,only:number%'
+    - '&7#1 &f%playerstats_top:4,play_one_minute,only:player_name% &7- &e%playerstats_top:4,play_one_minute,only:number%'
+    text_shadow: false
+    see_through: false
+    text_alignment: left
+    update_text_interval: -1
+  top_since_death:
+    type: TEXT
+    location:
+      world: world
+      x: 276.468994140625
+      y: 224.0
+      z: 113.50874328613281
+      yaw: 2.704834
+      pitch: 90.0
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&3&lMAYOR TIEMPO SIN MORIR'
+    - '&7#1 &f%playerstats_top:1,time_since_death,only:player_name% &7- &e%playerstats_top:1,time_since_death,only:number%'
+    - '&7#1 &f%playerstats_top:2,time_since_death,only:player_name% &7- &e%playerstats_top:2,time_since_death,only:number%'
+    - '&7#1 &f%playerstats_top:3,time_since_death,only:player_name% &7- &e%playerstats_top:3,time_since_death,only:number%'
+    - '&7#1 &f%playerstats_top:4,time_since_death,only:player_name% &7- &e%playerstats_top:4,time_since_death,only:number%'
+    text_shadow: false
+    see_through: false
+    text_alignment: left
+    update_text_interval: -1
+  top_nations:
+    type: TEXT
+    location:
+      world: world
+      x: 273.5010070800781
+      y: 224.0
+      z: 103.50668334960938
+      yaw: 90.75284
+      pitch: 90.0
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&4&lNACIONES MÁS GRANDES'
+    - '&7#1 &f%lands_top_nation_chunks_1_name% &7- &c%lands_top_nation_chunks_1_owner%'
+    - '    &e%lands_top_nation_chunks_1_chunks% chunks &f| &2%lands_top_nation_chunks_1_balance%'
+    - '&7#2 &f%lands_top_nation_chunks_2_name% &7- &c%lands_top_nation_chunks_2_owner%'
+    - '    &e%lands_top_nation_chunks_2_chunks% chunks &f| &2%lands_top_nation_chunks_2_balance%'
+    - '&7#3 &f%lands_top_nation_chunks_3_name% &7- &c%lands_top_nation_chunks_3_owner%'
+    - '    &e%lands_top_nation_chunks_3_chunks% chunks &f| &2%lands_top_nation_chunks_3_balance%'
+    - '&7#4 &f%lands_top_nation_chunks_4_name% &7- &c%lands_top_nation_chunks_4_owner%'
+    - '    &e%lands_top_nation_chunks_4_chunks% chunks &f| &2%lands_top_nation_chunks_4_balance%'
+    text_shadow: false
+    see_through: false
+    text_alignment: left
+    update_text_interval: -1
+  top_states:
+    type: TEXT
+    location:
+      world: world
+      x: 276.5056457519531
+      y: 224.0
+      z: 93.46714782714844
+      yaw: 121.65242
+      pitch: 52.499996
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&2&lESTADOS MÁS GRANDES'
+    - '&7#1 &f%lands_top_land_chunks_1_name% &7- &c%lands_top_land_chunks_1_owner%'
+    - '    &e%lands_top_land_chunks_1_chunks% chunks &f| &2%lands_top_land_chunks_1_balance%'
+    - '&7#2 &f%lands_top_land_chunks_2_name% &7- &c%lands_top_land_chunks_2_owner%'
+    - '    &e%lands_top_land_chunks_2_chunks% chunks &f| &2%lands_top_land_chunks_2_balance%'
+    - '&7#3 &f%lands_top_land_chunks_3_name% &7- &c%lands_top_land_chunks_3_owner%'
+    - '    &e%lands_top_land_chunks_3_chunks% chunks &f| &2%lands_top_land_chunks_3_balance%'
+    - '&7#4 &f%lands_top_land_chunks_4_name% &7- &c%lands_top_land_chunks_4_owner%'
+    - '    &e%lands_top_land_chunks_4_chunks% chunks &f| &2%lands_top_land_chunks_4_balance%'
+    text_shadow: false
+    see_through: false
+    text_alignment: left
+    update_text_interval: -1
+  boss_schedule:
+    type: TEXT
+    location:
+      world: world
+      x: 280.4549865722656
+      y: 223.0
+      z: 50.48970031738281
+      yaw: 44.553024
+      pitch: 90.0
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - '&e&lSEMANARIO DE JEFES'
+    - '&f&lLUNES      &6➡ &bNether'
+    - '&f&lMARTES     &6➡ &bPlanicie'
+    - '&f&lMIERCOLES &6➡ &bPlaya'
+    - '&f&lJUEVES     &6➡ &bDesierto árido'
+    - '&f&lVIERNES    &6➡ &bHongo'
+    - '&f&lSÁBADO     &6➡ &bDesierto'
+    - '&f&lDOMINGO    &6➡ &bHielo'
+    text_shadow: false
+    see_through: false
+    text_alignment: left
+    update_text_interval: -1

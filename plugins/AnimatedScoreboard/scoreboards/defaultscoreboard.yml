@@ -1,0 +1,73 @@
+scores:
+  # Whether scores (red numbers) on server versions 1.20.3 or newer should be hidden
+  hidden: true
+
+#This is where you create the scoreboard, the first section will always be the title.
+#Every section after that will be a line displayed on the scoreboard. You can have a max
+#of 15 lines display due to the limitations of minecraft.
+display:
+  #This is the first section, it will always be the title of the scoreboard.
+  #You can also use placeholders here if you want.
+  title:
+    #This is the text that will be display as the title, it can have as many lines as you want and it will automatically rotate through them or
+    #choose a random one, depending on what you set random to.
+    text:
+      - "&f%player_name%"
+  #This section is the first line, here you set the data of that line. It doesn't matter what the name of the section is, as long
+  # as there is no other section with the exact same name
+  line-1:
+    text:
+      - "%luckperms_prefix% &8%luckperms_suffix%"
+  line-2:
+    #Same as with the title, no limit on text. If you just put " " here it will display a blank line on the scoreboard.
+    text:
+      - "&f&6$%vault_eco_balance_commas%"
+
+  line-3:
+    #Same as with the title, no limit on text. If you just put " " here it will display a blank line on the scoreboard.
+    text:
+      - "&b░&d%gadgetsmenu_mystery_dust%"
+
+  line-4:
+    text:
+      - ""
+
+  line-5:
+    text:
+      - "&6Empleos (%jobsr_user_joinedjobcount%/3)"
+
+  line-6:
+    text:
+      #- "<scroll space=5 width=22 update=10>&7, , </scroll>"
+      - "%jobsr_user_job_1%"
+      - "%jobsr_user_job_2%"
+      - "%jobsr_user_job_3%"
+    interval: 30
+
+  #This animation works together with the line below it. The interval is the same so it displays the data at the same time.
+  line-7:
+    text:
+      - ""
+  line-8:
+    text:
+      - "&fNacion: &3&l%lands_nation_name%&f"
+  line-9:
+    text:
+      - "&fEstado &6#&f %lands_land_chunks%&7/&f%lands_land_chunks_max%"
+  line-10:
+    text:
+      - "  &b%lands_land_name%"
+  line-11:
+    text:
+      - "  Fondos:"
+  line-12:
+    text:
+      - "    &a%lands_land_balance%"
+  #It will display the player's health here with hearts, you can also use score=%placeholder% if you have PlaceholderAPI installed
+  line-13:
+    text:
+      - "  &4$&f&lx&6#&f&r: &c%lands_land_chunk_cost_next%"
+  #Here we will repeat | 10 times, you can also use times=%placeholder% if you have PlaceholderAPI installed
+  line-14:
+    text:
+      - ""

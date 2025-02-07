@@ -1,0 +1,94 @@
+# Configuración del Menú de Territorios para zMenu
+size: 27
+name: "&8> &6&lMenú de Territorios"
+
+items:
+  # Navegar al Menú de Naciones
+  nations_menu:
+    slot: 11
+    item:
+      material: PAPER
+      name: "&eMenú de Naciones"
+      lore:
+        - "&7Accede a las opciones relacionadas con los territorios."
+        - "&eHaz clic para abrir el menú de Naciones."
+        - ""
+    commands:
+      - "zm open nations_menu"
+    closeInventory: true
+
+  campamentos_menu:
+    slot: 13
+    item:
+      material: CAMPFIRE
+      name: "&6Menú de Campamentos"
+      lore:
+        - "&7Gestiona y organiza los campamentos de tu territorio."
+        - "&eHaz clic para abrir."
+        - ""
+    commands:
+      - "zm open camps_menu"
+    closeInventory: true
+
+  # Visualizar delimitaciones del territorio
+  view_territory:
+    slot: 14
+    item:
+      material: COMPASS
+      name: "&bVer Fronteras"
+      lore:
+        - "&7Visualiza los borders de los territorios reclamado."
+        - "&eHaz clic para ejecutar el comando."
+        - "&eComando: &b/lands view"
+        - ""
+    commands:
+      - "lands view"
+    closeInventory: true
+
+  # Navegar al Menú de Tierras
+  chunks_menu:
+    slot: 15
+    item:
+      material: GRASS_BLOCK
+      name: "&aMenú de Estado y Tierras"
+      lore:
+        - "&7Accede a las opciones relacionadas"
+        - "&7con reclamar &atierras (Chunks) &7y la"
+        - "&7institución de &bEstados"
+        - "&eHaz clic para abrir el menú de Tierras."
+        - ""
+    commands:
+      - "zm open chunks_menu"
+    closeInventory: true
+
+  my_lands:
+    slot: 16
+    item:
+      material: MAP
+      name: "&bMenú avanzado"
+      lore:
+        - "&7Consulta detalles y configuraciones de tus"
+        - "&7Naciones, Estados y Tierras"
+        - "&eHaz clic para abrir el menú."
+        - "&8Command: &b/lands menu main"
+        - ""
+    commands:
+      - "lands menu main"
+    closeInventory: true
+
+  volver:
+    slot: 26
+    item:
+      material: ARROW
+      name: "&cVolver al Menú Principal"
+      lore:
+        - "&7Regresa al menú principal."
+        - "&eHaz clic para volver."
+    commands:
+      - "zm open main_inventory"
+    closeInventory: true
+
+# Relleno de espacios vacíos con panel de vidrio teñido
+fillItem:
+  material: GRAY_STAINED_GLASS_PANE
+  name: " "

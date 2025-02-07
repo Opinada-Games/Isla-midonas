@@ -1,0 +1,298 @@
+# ----------------------------------------------------------------------------------------------------
+# Particles configuration file for GCore
+# More information can be found in the documentation
+# ----------------------------------------------------------------------------------------------------
+
+# -------------------- Classic --------------------
+
+EXPLOSION_NORMAL: |
+  >=1.8 EXPLOSION_NORMAL
+  ? explode
+
+EXPLOSION_LARGE: |
+  >=1.8 EXPLOSION_LARGE
+  ? largeexplode
+
+EXPLOSION_HUGE: |
+  >=1.8 EXPLOSION_HUGE
+  ? hugeexplosion
+
+FIREWORKS_SPARK: |
+  >=1.8 FIREWORKS_SPARK
+  ? fireworksSpark
+
+WATER_BUBBLE: |
+  >=1.8 WATER_BUBBLE
+  ? bubble
+
+WATER_SPLASH: |
+  >=1.8 WATER_SPLASH
+  ? splash
+
+WATER_WAKE: |
+  >=1.8 WATER_WAKE
+  ? wake
+
+SUSPENDED: |
+  >=1.8 SUSPENDED
+  ? suspended
+
+SUSPENDED_DEPTH: |
+  <1.8 depthsuspend
+  <=1.11 SUSPENDED_DEPTH
+
+CRIT: |
+  >=1.8 CRIT
+  ? crit
+
+CRIT_MAGIC: |
+  >=1.8 CRIT_MAGIC
+  ? magicCrit
+
+SMOKE_NORMAL: |
+  >=1.8 SMOKE_NORMAL
+  ? smoke
+
+SMOKE_LARGE: |
+  >=1.8 SMOKE_LARGE
+  ? largesmoke
+
+SPELL: |
+  >=1.8 SPELL --COLORABLE
+  ? spell --COLORABLE
+
+SPELL_INSTANT: |
+  >=1.8 SPELL_INSTANT --COLORABLE
+  ? instantSpell --COLORABLE
+
+SPELL_MOB: |
+  >=1.8 SPELL_MOB --COLORABLE
+  ? mobSpell --COLORABLE
+
+SPELL_MOB_AMBIENT: |
+  >=1.8 SPELL_MOB_AMBIENT --COLORABLE
+  ? mobSpellAmbient --COLORABLE
+
+SPELL_WITCH: |
+  >=1.8 SPELL_WITCH
+  ? witchMagic
+
+DRIP_WATER: |
+  >=1.8 DRIP_WATER
+  ? dripWater
+
+DRIP_LAVA: |
+  >=1.8 DRIP_LAVA
+  ? dripLava
+
+VILLAGER_ANGRY: |
+  >=1.8 VILLAGER_ANGRY
+  ? angryVillager
+
+VILLAGER_HAPPY: |
+  >=1.8 VILLAGER_HAPPY
+  ? happyVillager
+
+TOWN_AURA: |
+  >=1.8 TOWN_AURA
+  ? townaura
+
+NOTE: |
+  >=1.8 NOTE --MUSIC_NOTE
+  ? note --MUSIC_NOTE
+
+PORTAL: |
+  >=1.8 PORTAL
+  ? portal
+
+ENCHANTMENT_TABLE: |
+  >=1.8 ENCHANTMENT_TABLE
+  ? enchantmenttable
+
+FLAME: |
+  >=1.8 FLAME
+  ? flame
+
+LAVA: |
+  >=1.8 LAVA
+  ? lava
+
+CLOUD: |
+  >=1.8 CLOUD
+  ? cloud
+
+REDSTONE: |
+  >=1.8 REDSTONE --COLORABLE
+  ? reddust --COLORABLE
+
+SNOWBALL: |
+  >=1.8 SNOWBALL
+  ? snowballpoof
+
+SNOW_SHOVEL: |
+  >=1.13 POOF
+  >=1.8 SNOW_SHOVEL
+  ? snowshovel
+
+SLIME: |
+  >=1.8 SLIME
+  ? slime
+
+HEART: |
+  >=1.8 HEART
+  ? heart
+
+WATER_DROP: |
+  >=1.8 WATER_DROP
+  ? droplet
+
+# -------------------- Uncategorized --------------------
+
+BLOCK_CRACK: |
+  <1.13 BLOCK_CRACK
+
+ITEM_CRACK: |
+  ? ITEM_CRACK
+
+BLOCK_DUST: |
+  <=1.13 BLOCK_DUST
+
+FALLING_LAVA: |
+  ? FALLING_LAVA
+
+FALLING_WATER: |
+  ? FALLING_WATER
+
+FLASH: |
+  ? FLASH
+
+LANDING_LAVA: |
+  ? LANDING_LAVA
+
+# -------------------- 1.8 --------------------
+
+BARRIER: |
+  >=1.8 BARRIER
+
+MOB_APPEARANCE: |
+  >=1.8 MOB_APPEARANCE
+
+# -------------------- 1.9 --------------------
+
+DRAGON_BREATH: |
+  >=1.9 DRAGON_BREATH
+
+END_ROD: |
+  >=1.9 END_ROD
+
+DAMAGE_INDICATOR: |
+  >=1.9 DAMAGE_INDICATOR
+
+SWEEP_ATTACK: |
+  >=1.9 SWEEP_ATTACK
+
+# -------------------- 1.10 --------------------
+
+FALLING_DUST: |
+  >=1.10 FALLING_DUST
+
+# -------------------- 1.11 --------------------
+
+SPIT: |
+  >=1.11 SPIT
+
+TOTEM: |
+  >=1.11 TOTEM
+
+# -------------------- 1.13 --------------------
+
+SQUID_INK: |
+  >=1.13 SQUID_INK
+
+BUBBLE_POP: |
+  >=1.13 BUBBLE_POP
+
+CURRENT_DOWN: |
+  >=1.13 CURRENT_DOWN
+
+BUBBLE_COLUMN_UP: |
+  >=1.13 BUBBLE_COLUMN_UP
+
+NAUTILUS: |
+  >=1.13 NAUTILUS
+
+DOLPHIN: |
+  >=1.13 DOLPHIN
+
+# -------------------- 1.14 --------------------
+
+SNEEZE: |
+  >=1.14 SNEEZE
+
+CAMPFIRE_COSY_SMOKE: |
+  >=1.14 CAMPFIRE_COSY_SMOKE
+
+CAMPFIRE_SIGNAL_SMOKE: |
+  >=1.14 CAMPFIRE_SIGNAL_SMOKE
+
+COMPOSTER: |
+  >=1.14 COMPOSTER
+
+# -------------------- 1.15 --------------------
+
+DRIPPING_HONEY: |
+  >=1.15 DRIPPING_HONEY
+
+FALLING_HONEY: |
+  >=1.15 FALLING_HONEY
+
+FALLING_NECTAR: |
+  >=1.15 FALLING_NECTAR
+
+LANDING_HONEY: |
+  >=1.15 LANDING_HONEY
+
+# -------------------- 1.16 --------------------
+
+ASH: |
+  >=1.16 ASH
+
+WHITE_ASH: |
+  >=1.16 WHITE_ASH
+
+CRIMSON_SPORE: |
+  >=1.16 CRIMSON_SPORE
+
+DRIPPING_OBSIDIAN_TEAR: |
+  >=1.16 DRIPPING_OBSIDIAN_TEAR
+
+LANDING_OBSIDIAN_TEAR: |
+  >=1.16 LANDING_OBSIDIAN_TEAR
+
+SOUL_FIRE_FLAME: |
+  >=1.16 SOUL_FIRE_FLAME
+
+SOUL: |
+  >=1.16 SOUL
+
+FALLING_OBSIDIAN_TEAR: |
+  >=1.16 FALLING_OBSIDIAN_TEAR
+
+WARPED_SPORE: |
+  >=1.16 WARPED_SPORE
+
+# -------------------- 1.18 --------------------
+
+BLOCK_MARKER: |
+  >=1.18 BLOCK_MARKER
+
+# -------------------- 1.19 --------------------
+
+SCULK_CHARGE: |
+  >=1.19 SCULK_CHARGE
+
+SCULK_CHARGE_POP: |
+  >=1.19 SCULK_CHARGE_POP
+
+SCULK_SOUL: |
+  >=1.19 SCULK_SOUL

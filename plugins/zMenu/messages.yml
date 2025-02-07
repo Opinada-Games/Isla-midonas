@@ -1,0 +1,280 @@
+messages:
+  prefix:
+    message: '&8(&6zMenu&8) '
+  and:
+    message: y
+  time:
+    day:
+      message: '%02d %day% %02d %hour% %02d %minute% %02d %second%'
+    hour:
+      message: '%02d %hour% %02d minuto(s) %02d %second%'
+      simple:
+        message: '%02d:%02d:%02d'
+    minute:
+      message: '%02d %minute% %02d %second%'
+    second:
+      message: '%02d %second%'
+  format:
+    second:
+      message: segundo
+    seconds:
+      message: segundos
+    minute:
+      message: minuto
+    minutes:
+      message: minutos
+    hour:
+      message: hora
+    hours:
+      message: horas
+    day:
+      message: día
+    days:
+      message: días
+  command:
+    syntax:
+      error:
+        message: '&cDebes ejecutar el comando de esta manera&7: &a%syntax%'
+      help:
+        message: '&f%syntax% &7» &7%description%'
+    'false':
+      permission:
+        message: '&cNo tienes permiso para ejecutar este comando.'
+      console:
+        message: '&cSolo un jugador puede ejecutar este comando.'
+      arg:
+        message: '&cNo se pudo encontrar el comando con sus argumentos.'
+    'no':
+      permission:
+        message: '&cYou do not have permission to run this command.'
+      console:
+        message: '&cOnly one player can execute this command.'
+      arg:
+        message: '&cImpossible to find the command with its arguments.'
+  documentation:
+    information:
+      message: '&7Documentación&8: &fhttps://docs.zmenu.dev/'
+      link:
+        message: '&7Documentación&8: &f%link%'
+  inventory:
+    not:
+      found:
+        message: '&cNo se pudo encontrar el inventario &f%toName% &cen el inventario
+          &f%name%&c.'
+    open:
+      other:
+        message: '&aAcabas de abrir el inventario &f%name%&a para &3%player%&a.'
+      success:
+        message: '&aAcabas de abrir el inventario &f%name%&a.'
+      error:
+        inventory:
+          message: '&cNo se pudo encontrar el inventario &f%name%&c.'
+        command:
+          message: '&cNo se pudo encontrar el comando &f%name%&c.'
+        player:
+          message: '&cNo se pudo encontrar el jugador, por favor especifica uno.'
+        console:
+          message: '&cSolo un jugador puede abrir un inventario.'
+      item:
+        error:
+          message: '&cEl inventario &f%name%&c no tiene un objeto de apertura.'
+        success:
+          message: '&aAcabas de dar el objeto de apertura al jugador &f%name%&a.'
+    create:
+      error:
+        size:
+          message: '&cEl tamaño del inventario debe estar entre 9 y 54.'
+        already:
+          message: '&cEl archivo &f%name%&c ya existe.'
+        exception:
+          message: '&cHa ocurrido un error&8: &f%error%'
+      success:
+        message: '&aAcabas de crear el inventario &f%name%&a.'
+  description:
+    open:
+      message: Permite abrir un inventario
+      item:
+        message: Dar objeto de apertura
+      main:
+        menu:
+          message: Abrir el menú principal
+    save:
+      message: Permite guardar el objeto en tu mano
+    reload:
+      message: Permite recargar los archivos de configuración
+    version:
+      message: Muestra la versión del plugin
+    list:
+      message: Lista de inventarios
+    test:
+      dupe:
+        message: Probar duplicación
+    download:
+      message: Descargar un inventario desde un enlace (por ejemplo, un enlace de
+        Discord)
+    login:
+      message: Iniciar sesión en el sitio web
+    marketplace:
+      message: Abrir el inventario del marketplace
+    disconnect:
+      message: WIP
+    convert:
+      message: Convertir otras configuraciones a zMenu
+    editor:
+      message: Abrir el editor en línea de zMenu
+    documentation:
+      message: Abrir la documentación
+    players:
+      message: Muestra la lista de comandos para los datos de los jugadores
+      set:
+        message: Establece nuevos datos para un jugador. Debes especificar el tiempo
+          de expiración en segundos. Pon 0 para que no caduque
+      add:
+        message: Agrega un número a un valor, solo funciona para valores numéricos.
+      subtract:
+        message: Resta un número de un valor, solo funciona para valores numéricos.
+      remove:
+        message: Elimina datos de un jugador
+      get:
+        message: Obtiene datos de un jugador
+      keys:
+        message: Devuelve la lista de claves de un jugador
+      clear:
+        all:
+          message: Borra todos los datos de los jugadores
+        player:
+          message: Borra los datos de un jugador
+    create:
+      message: Crea un nuevo archivo de configuración
+    inventories:
+      message: Abrir el constructor de inventarios
+  reload:
+    message: '&aAcabas de recargar los archivos de configuración. &8(&7%inventories%
+      inventarios&8)'
+    inventory:
+      message: '&aAcabas de recargar los archivos de inventarios. &8(&7%inventories%
+        inventarios&8)'
+      file:
+        message: '&aAcabas de recargar el inventario &f%name%&a.'
+    command:
+      message: '&aAcabas de recargar los archivos de comandos.'
+      file:
+        message: '&aAcabas de recargar el comando &f%name%&a.'
+      error:
+        message: '&cNo es posible recargar el comando &f%name%&c.'
+    files:
+      message: '&aAcabas de recargar los archivos config.json y messages.yml.'
+  convert:
+    info:
+      messages:
+      - '&fPuedes convertir el menú de &eDeluxeMenu&f a &azMenu&f.'
+      - '&fDebes instalar el plugin &3zMenuConvert&f.'
+      - '&fEnlace de descarga&8: &7https://groupez.dev/resources/zmenuconvert.266'
+      - '&fLuego debes ejecutar el comando &b/zmenu convert&f.'
+  players:
+    data:
+      clear:
+        all:
+          message: '&aAcabas de eliminar los datos de todos los jugadores.'
+        player:
+          message: '&aAcabas de eliminar los datos del jugador &f%player%&a.'
+      set:
+        message: '&aAcabas de agregar datos para &b%player% &acon la clave &f%key%&a.'
+      add:
+        message: '&aAcabas de agregar datos para &b%player% &acon la clave &f%key%&a.'
+      subtract:
+        message: '&aAcabas de restar datos para &b%player% &acon la clave &f%key%&a.'
+      keys:
+        success:
+          message: '&aClaves del jugador &f%player%&8: &7%keys%'
+        empty:
+          message: '&cEl jugador &f%player% &cno tiene ninguna clave.'
+      get:
+        success:
+          messages:
+          - '&fClave&8: &7%key%'
+          - '&fExpira en (timestamp)&8: &7%expiredAt%'
+          - '&fValor&8: &7%value%'
+        error:
+          message: '&cNo se puede encontrar la clave &f%key%&c.'
+      remove:
+        success:
+          message: '&aAcabas de eliminar la clave &f%key% &fpara el &b%player%&a.'
+        error:
+          message: '&cNo se puede encontrar la clave &f%key%&c.'
+  website:
+    login:
+      error:
+        token:
+          message: '&cTu token parece inválido, por favor inténtalo de nuevo.'
+        already:
+          message: '&cYa estás conectado al sitio.'
+        info:
+          message: '&cOcurrió un error durante la conexión, por favor inténtalo de
+            nuevo.'
+      process:
+        message: '&7Conectando, por favor espera.'
+      success:
+        messages:
+        - '&aTe has conectado exitosamente al sitio.'
+        - '&aAhora puedes acceder a tus recursos adquiridos y al editor de inventarios.'
+    not:
+      connect:
+        message: '&cNecesitas iniciar sesión en el sitio antes de poder hacer eso.'
+    already:
+      inventory:
+        message: '&cYa estás realizando esta acción, por favor espera.'
+    marketplace:
+      wait:
+        message: '&7Descargando recursos, por favor espera antes de abrir el inventario.'
+      error:
+        message: '&cNo se pudieron recuperar los datos del sitio, por favor inténtalo
+          de nuevo.'
+    inventory:
+      wait:
+        message: '&7Descargando el inventario &f%name%&7, por favor espera antes de
+          abrirlo.'
+      exist:
+        message: '&cEl inventario ya existe. No se puede descargar.'
+      success:
+        message: '&aInventario &f%name%&a descargado con éxito. &8(&7usa /zm reload
+          para cargar este inventario&8)'
+      error:
+        message: '&cOcurrió un error al descargar el archivo.'
+    disconnect:
+      success:
+        message: '&cHas eliminado el enlace con el sitio.'
+      error:
+        message: '&cNo estás conectado al sitio.'
+    download:
+      error:
+        type:
+          message: '&cEl enlace no es un archivo yml.'
+        name:
+          message: '&cNo se puede encontrar el nombre del archivo.'
+        console:
+          message: '&cHa ocurrido un error, revisa la consola.'
+      start:
+        message: '&7Iniciando la descarga del inventario, por favor espera.'
+  placeholder:
+    never:
+      message: nunca
+  list:
+    empty:
+      message: '&cNo hay ningún inventario disponible.'
+    info:
+      message: '&fInventarios de &a%plugin% &8(&7%amount%&8): &7%inventories%'
+  save:
+    error:
+      empty:
+        message: '&cDebes tener un objeto en la mano para poder guardarlo.'
+      name:
+        message: '&cEl nombre ya existe para este objeto, por favor selecciona otro.'
+      type:
+        message: '&cNo se puede encontrar el tipo de guardado.'
+    success:
+      message: '&aAcabas de guardar el objeto &f%name%&a.'
+  click:
+    cooldown:
+      type: ACTION
+      message: '&cPor favor espera un poco entre dos clics.'

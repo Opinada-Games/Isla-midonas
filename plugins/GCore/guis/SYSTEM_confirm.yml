@@ -1,0 +1,29 @@
+# ----------------------------------------------------------------------------------------------------
+# Configuration file for GCore
+# More information can be found in the documentation
+# ----------------------------------------------------------------------------------------------------
+
+name: '&dConfirm action'
+type: CHEST_3_ROW
+
+item_confirm:
+  locations: 12
+  persistent: true
+  icon:
+    type: GREEN_WOOL
+    name: '&aConfirm'
+
+item_cancel:
+  locations: 14
+  persistent: true
+  icon:
+    type: RED_WOOL
+    name: '&cCancel'
+
+contents:
+  - type: NONE
+    locations: [0,1,2,3,4,5,6,7,8,9,18,17,18,19,20,21,22,23,24,25,26]
+    persistent: true
+    icon:
+      type: GRAY_STAINED_GLASS_PANE
+      name: '&f'

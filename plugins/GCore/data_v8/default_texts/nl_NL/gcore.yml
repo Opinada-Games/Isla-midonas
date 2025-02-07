@@ -1,0 +1,32 @@
+# -------------------- Plugin --------------------
+
+messagePluginUnknown: |
+  &7Plugin &7{plugin} &7bestaat niet.
+
+messagePluginReloaded: |
+  &7Plugin &a{plugin} &7is gereload.
+
+messagePluginManipulateError: |
+  &7Action op de plugin &7{plugin} &7kan niet geprocessed worden.
+
+messagePluginList: |
+  &7Er zijn &a{count} &7plugins, &a{active} &7zijn actief, &7{inactive} &7zijn inactief : {plugins}
+
+messageGcoreExportFile: |
+  &7Je data en configuratie bestanden voor &a{plugins} &7zijn geexporteerd naar &a{file}&7. Deel het alsjeblieft met de developer.
+
+messageGcoreExportCouldnt: |
+  &7File &c{file} &7kan niet worden geëxporteerd.
+
+# -------------------- Commands --------------------
+
+commandDescriptionGcore: main command for GCore
+commandDescriptionGcorePlugins: list GCore's dependant plugins
+commandDescriptionGcoreExport: export GCore-dependant plugins data
+commandDescriptionGcoreItemRead: read item to configuration
+
+messageItemReadNull: |
+  &cThis item can't be exported to configuration. Please hold an item in your hand.
+
+messageItemReadExported: |
+  &7This item was exported to &a{file} &7at path &a{path}&7.

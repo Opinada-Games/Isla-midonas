@@ -1,0 +1,22 @@
+# ----------------------------------------------------------------------------------------------------
+# Configuration file for GCore
+# More information can be found in the documentation
+# ----------------------------------------------------------------------------------------------------
+
+# Display 'emeralds' around, every tick, while increasing Y coordinate
+
+set(cx, baseX + 0.5)
+set(cz, baseZ + 0.5)
+set(radius, 0.75)
+set(y, baseY)
+
+loop(angle, 0, 720, 15)					 		# make a loop using variable angle from 0 to 720 with steps of 15
+	set(x, cx + radius * cos(angle))			# calculate x
+	set(y, y + 0.015)							# calculate y
+	set(z, cz + radius * sin(angle))			# calculate z
+	display(VILLAGER_HAPPY, x, y, z, 1)			# display
+	wait_ticks(1)								# wait one tick
+
+# Wait 2 seconds until restarting
+
+wait_ticks(40)

@@ -1,0 +1,143 @@
+# ===================
+# GCore 语言文件 (zh_CN)
+# 本翻译使用 GCore 版本: 8.45.0
+# 作者: GuillaumeVDN
+# 语言: 中文简体
+# 翻译: Kevin
+# Discord: Krick#9685
+# 如在翻译上有任何疑虑欢迎私讯 Krick#9685
+# 在插件上有任何疑虑请至 https://discord.com/invite/wSm9A8Y 寻求帮助
+# ===================
+# GCore language files (zh_CN)
+# This translation uses GCore version: 8.45.0
+# Author: GuillaumeVDN
+# Language: Chinese
+# Translation: Kevin
+# Discord: Krick#9685
+# If you have any doubts about translation, please send a private message Krick#9685
+# If you have any concerns about the plugin, please go to https://discord.com/invite/wSm9A8Y for help
+# ===================
+
+# -------------------- 杂项 --------------------
+
+messageNoPermission: |
+  &7你没有权限这么做。
+
+messageInvalidPlayer: |
+  &7玩家&c{value}&7无效(必须在线)。
+
+messageInvalidOfflinePlayer: |
+  &7玩家&c{value}&7无效。
+
+messageInvalidNumber: |
+  &7号码 &c{value} &7无效。
+messageInvalidNumberRangeMin: |
+  &7号码 &c{value} &7至少应为 &c{min}&7。
+messageInvalidNumberRangeMax: |
+  &7号码 &c{value} &7最多应该是 &c{max}&7。
+messageInvalidEnum: |
+  &7Value &c{value} &7无效，它应该是 &c{values}&7 之一。
+messageInvalidEnumNoList: |
+  &7Value &c{value} &7无效。
+
+messageCC: '&d (cc&7.of {og})'
+messageSilentCC: '&d (cc&7.of {og}, silent)'
+
+textCancel: 取消
+
+# -------------------- 指令 --------------------
+
+commandParameterUsageTarget: player
+commandParameterUsageReset: reset
+commandParameterUsageOperation: operation
+commandParameterUsageAmount: amount
+commandParameterUsageSpecificEditor: editor
+commandParameterUsageDate: date
+commandDescriptionGenericReload: 重新加载插件
+commandDescriptionGenericPluginState: 关于插件内部状态的信息
+commandDescriptionGenericMigrate: 重新运行迁移
+messageCommandNotPlayer: |
+  &7你不能从控制台执行该指令。
+
+messageCommandMissingArgument: |
+  &7缺失参数&c{argument}&7。在指令后添加&d?&7以获取帮助。
+
+messageCommandMissingArgumentFound: |
+  &7缺失参数&c{argument} &7(找到{found})。在指令后添加&d?&7以获取帮助。
+
+messageCommandUnnecessaryArguments: |
+  &7多余参数: &c{unnecessary}&7。在指令后添加&d?&7以获取帮助。
+
+messageCommandIncompatibleArguments: |
+  &c{argument1}&7无法和&c{argument2}&7一同使用。在指令后添加&d?&7以获取帮助。
+
+messageCommandDependentArguments: |
+  &c{argument1}&7必须和&c{argument2}&7一同使用。在指令后添加&d?&7以获取帮助。
+
+messageCommandUnknown: |
+  &7找不到子指令&c{subcommand}&7。在指令后添加&d?&7以获取帮助。
+
+messageCommandHelpElementPrefix: '&6'
+messageCommandHelpElement: '{usage}&6: &f{description}'
+messageCommandHelpColorArgumentOptional: '&e&o'
+messageCommandHelpColorArgumentRequired: '&e'
+
+messageCommandHelpPageOutsideBounds: |
+  &7该帮助菜单有{pages}页。
+
+messageCommandHelpHeader: '&6&l{prefix} &6帮助 ({page}/{pages})'
+
+# -------------------- 数字 --------------------
+
+numberMillion: 百万
+numberBillion: 十亿
+numberTrillion: 万亿
+
+durationFormatS: '{seconds}秒'
+durationFormatMS: '{minutes}分{seconds}秒'
+durationFormatHMS: '{hours}小时{minutes}分钟{seconds}秒'
+durationFormatDHMS: '{days}天{hours}小时{minutes}分钟{seconds}秒'
+
+# -------------------- 花费金钱 --------------------
+
+messageMustHaveCurrency: |
+  &7你需要&c{money}&7，但你只有&c{balance}&7。
+
+messageMustHaveMoreItem: |
+  &7你需要&c{item}&7，但你只有&c{has_amount}&7。
+
+messageMustHaveItem: |
+  &7你需要&c{item}&7。
+
+messageMustHaveItemNoDetail: |
+  &7你错过了这个项目。
+
+# -------------------- 物品 --------------------
+
+# 占位符：{amount}, {type}, {durability}, {custom_model_data}, {enchantments}, {name}, {lore}
+
+textDescribeItem: |
+  {amount}x {type}
+  {name}
+  {lore}
+  {enchantments}
+
+textDescribeItemNameIfHas: '{name}'
+textDescribeItemLoreIfHas: '- {lore}'
+textDescribeItemEnchantmentsIfHas: '> {enchantments}'
+textDescribeItemEnchantmentsLine: '{enchant} {level}'
+
+textDescribeItemSingleLine: |  # 如果不为空，行将用逗号分隔
+  {amount}x {type}
+  {name}
+  {enchantments}
+textDescribeItemSingleLineNameIfHas: '{name}'
+textDescribeItemSingleLineLoreIfHas: '{lore}'
+textDescribeItemSingleLineEnchantmentsIfHas: '{enchantments}'
+textDescribeItemSingleLineEnchantmentsLine: '{enchant} {level}'
+textDescribeItemSingleLineSeparator: ', '
+
+# -------------------- 格式 --------------------
+
+# 有关日期格式字符，请参阅 https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
+dateTimeFormat: "yyyy.MM.dd HH:mm:ss"

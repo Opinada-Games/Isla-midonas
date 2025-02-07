@@ -1,0 +1,33 @@
+#----------------------------------------------------------------------------------------------------
+# NPCs configuration file for GCore
+# This still exists only to maintain the currently working systems with GCore NPCs
+# A rework of NPCs is planned. Please prefer using Citizens until that rework.
+#----------------------------------------------------------------------------------------------------
+
+#npcs:
+  # Example NPC
+#  1: # This is the NPC id, must be a valid number and at least 1
+#    # Name of the NPC
+#    name: 'My NPC'
+#    # Skin data of the NPC (can be generated or obtained with https://mineskin.org/)
+#    skin_data: 'eyJ0aW1lc3RhbXAiOjE1NTYwNDc1MTM5NTUsInByb2ZpbGVJZCI6IjNmYzdmZGY5Mzk2MzRjNDE5MTE5OWJhM2Y3Y2MzZmVkIiwicHJvZmlsZU5hbWUiOiJZZWxlaGEiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzUyZTEwNmI3NGQxYTI4OTBmZjcyYzU1Y2I3NjFlYzBjMmIwMjdlYmE2NWY2YTVkYWJkM2FkZjNkMmZiMzUyOWEifX19'
+#    skin_signature: 'otbzMAfHHBYSGtObEvrtSQvrERDPgl88T0Ja47N1zBYD32OyKR3WOLre7osarmS4Eft9lFE56/87aeMvnIkK9Fj7tiBi8dgCjGstj19lVSrFqIrwd9LqKoHugOfzwR7KdSrH0dkTzuZD+m/DxKeS0VsAUmdLtemYwP/Bj8Ff8ZNL7l/ANioSkWdF+b1YOlONXfPoeY2tauCWvcG3ZFlIvc6XG4lTVtp7BrXbYJoKR880MDny/AkOEJaYnmiMcZ7y3xpnTW1uv+OiagtFVyrDCyaKwEVyskp7l5vsya1pZd4Zg6405DhMsEQv+5kGHAWGvfvqUGdoaBoWteN6rfKCx+eLozf0WGYXNlZEkmRPjbo/Ywc9iId1xMkYJo5/LLkMrRIarp6GWHbbXW3V9L/eKw+dfdAZdxX2SXfWt+yv8cQpWU+6IAzRtaOE2EHcIr/hGtRZuXZEWJQvMmEJCNAgj9kf0FbVKs763P1ktWj/9wvDj69SnyzLdDW5+HlfpzGTeQFUeoOu+qmsu2olRCrhH2tKDbievqmO3J8q3AJdQWL0C5AyJUlzZh3JA9Kcfhjq/W6KT3EMmRflNl+3ha4Fwfrzow+RCSaZa7aOgwQlLOBzKVckOsZB5ci2X1gK32rY4plihMfVl3VvydrHjEMfqM0Q1NuaKfdxUKzMCBtT5JU='
+#    # Default location
+#    location: world,0,0,0
+#    # The NPC will look at the player if he's below that distance
+#    target_distance: 5.0
+#    # List of status ; can be ON_FIRE, CROUCHED, SPRINTING, INTERACT, INVISIBLE, GLOWING, ELYTRA
+#    status: []
+#    # Inventory content
+#    held_item: # Held item
+#      type: DIAMOND_SWORD
+#    held_item_off: # Held item in off-hand (1.9+)
+#      type: SHIELD
+#    boots: # Boots
+#      type: DIAMOND_BOOTS
+#    leggings: # Leggings
+#      type: DIAMOND_LEGGINGS
+#    chestplate: # Chestplate
+#      type: DIAMOND_CHESTPLATE
+#    helmet: # Helmet
+#      type: DIAMOND_HELMET

@@ -1,0 +1,43 @@
+#  -------------------------------------------------------------------------------------------------
+#  This is a spawn rule configuration file. We strongly recommend only editing it using our GUI.
+#  MineAcademy.org is not responsible for data loss or thermonuclear war from mistakes in your edit.
+#  -------------------------------------------------------------------------------------------------
+
+Locations:
+- ice_under_tree
+Regions_Enabled: true
+Regions_2:
+  BOSS:
+    boss_island: 1.0
+    arena_hielo: 1.0
+  RESIDENCE: {}
+  FACTIONS: {}
+  TOWNY: {}
+  LANDS: {}
+  WORLDGUARD: {}
+Regions_Whitelist: true
+Type: REGION_ENTER
+Enabled: true
+Bosses:
+- Warden
+Delay: 6 minutes
+Days:
+- SUNDAY
+Months:
+- FEBRUARY
+- JANUARY
+- SEPTEMBER
+- DECEMBER
+- MARCH
+- OCTOBER
+- AUGUST
+- NOVEMBER
+- JUNE
+- APRIL
+- MAY
+- JULY
+Rain: false
+Thunder: false
+Chance: 1.0
+Last_Executed: 1737953116375
+Max_Bosses_In_Region: 1

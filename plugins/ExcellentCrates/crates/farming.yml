@@ -1,0 +1,306 @@
+Name: Cofre de agricultura
+Preview_Config: default
+Permission_Required: false
+Opening:
+  Cooldown: 0
+Key:
+  # Sets whether or not keys are required to open this crate.
+  Required: true
+  Ids:
+  - llave_maestra
+  - llave_agricultura
+  - llave_normal
+Block:
+  Positions:
+  - 230,224,56,world
+  Pushback:
+    Enabled: true
+  Hologram:
+    Enabled: true
+    Template: default
+    Y_Offset: 0.0
+  Effect:
+    Model: HELIX
+    Particle:
+      Name: CLOUD
+Milestones:
+  Repeatable: true
+  List:
+    '0':
+      Reward_Id: loteria_key
+      Openings: 10
+    '1':
+      Reward_Id: llave_avanzada
+      Openings: 15
+Rewards:
+  List:
+    melon_slice:
+      Name: Melon Slice
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 500003002m6rrldpq00000404000j9cg01arb9dpim6sj1cpq3krb5dhnmsnrjdhkm6p80
+      Commands: []
+      Items:
+      - 500003002m6rrldpq00000404000j9cg01arb9dpim6sj1cpq3krb5dhnmsnrjdhkm6p80
+      Ignored_For_Permissions: []
+    glow_berries:
+      Name: Glow Berries
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 180000o00lhmutbeeg00000g10004qb400b6qqbeclhn4ob6egt6er3fetfm4pbie9kmaso0
+      Commands: []
+      Items:
+      - 180000o00lhmutbeeg00000g10004qb400b6qqbeclhn4ob6egt6er3fetfm4pbie9kmaso0
+      Ignored_For_Permissions: []
+    potato:
+      Name: Potato
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 500003002m6rrldpq00000204000j9cg010rb9dpim6sj1cpq3ks3fehgn8ro0
+      Commands: []
+      Items:
+      - 500003002m6rrldpq00000204000j9cg010rb9dpim6sj1cpq3ks3fehgn8ro0
+      Ignored_For_Permissions: []
+    sweet_berries:
+      Name: Sweet Berries
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: a00006005cdnnarjk000008080016ip002tmmirj5cdp62pjk79pnepb5ehfm4pbie9kmaso0
+      Commands: []
+      Items:
+      - a00006005cdnnarjk000008080016ip002tmmirj5cdp62pjk79pnepb5ehfm4pbie9kmaso0
+      Ignored_For_Permissions: []
+    chorus_fruit:
+      Name: Chorus Fruit
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 180000o00lhmutbeeg00000810004qb400b6qqbeclhn4ob6egt66q3fe9qn6nr6e9qmit00
+      Commands: []
+      Items:
+      - 180000o00lhmutbeeg00000810004qb400b6qqbeclhn4ob6egt66q3fe9qn6nr6e9qmit00
+      Ignored_For_Permissions: []
+    carrot:
+      Name: Carrot
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 500003002m6rrldpq00000204000j9cg010rb9dpim6sj1cpq3kor1e9p6ut00
+      Commands: []
+      Items:
+      - 500003002m6rrldpq00000204000j9cg010rb9dpim6sj1cpq3kor1e9p6ut00
+      Ignored_For_Permissions: []
+    beetroot:
+      Name: Beetroot
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: a00006005cdnnarjk000004080016ip0029mmirj5cdp62pjk79h6apbke9nmut00
+      Commands: []
+      Items:
+      - a00006005cdnnarjk000004080016ip0029mmirj5cdp62pjk79h6apbke9nmut00
+      Ignored_For_Permissions: []
+    cocoa_beans:
+      Name: Cocoa Beans
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 500003002m6rrldpq00000404000j9cg01arb9dpim6sj1cpq3korfcdnm2nr2clgmsso0
+      Commands: []
+      Items:
+      - 500003002m6rrldpq00000404000j9cg01arb9dpim6sj1cpq3korfcdnm2nr2clgmsso0
+      Ignored_For_Permissions: []
+    wheat_seeds:
+      Name: Wheat Seeds
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 500003002m6rrldpq00000804000j9cg01arb9dpim6sj1cpq3ktr8clgn8nrjclim8so0
+      Commands: []
+      Items:
+      - 500003002m6rrldpq00000804000j9cg01arb9dpim6sj1cpq3ktr8clgn8nrjclim8so0
+      Ignored_For_Permissions: []
+    pumpkin:
+      Name: Pumpkin
+      Weight: 25.0
+      Rarity: common
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 180000o00lhmutbeeg00000g10004qb4008mqqbeclhn4ob6egt70tbde1lmirg0
+      Commands: []
+      Items:
+      - 180000o00lhmutbeeg00000g10004qb4008mqqbeclhn4ob6egt70tbde1lmirg0
+      Ignored_For_Permissions: []
+    loteria_key:
+      Name: '&fLoteria Key'
+      Weight: 25.0
+      Rarity: rare
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: k0001800korfdlo6urj5dpq762002lmmirj5cdp62pjk79hnasrkdtmlurj1dlig0irr49ingt3ic4h3kmrr49hmur3fe8h3k8jnd1kn8p925gh6it31dhkm68hqcpgmosr55gh78pboegh3k8icdtq6asj9c4g4mpbp49ulqb12ehingt1278h24v8a00amqqbeclhn4ob6egt66tbjehnmqnr4c5q622g02987aojcd5hk4tbbddkn8lj1dhqmaso800e6au33clm6opbeehhn4obkclpjkoric5q6anrbclsisqb4003morrkclp6io8000006005cdnnarjk000000880016ip002tmmirj5cdp62pjk79q74qbgetkn4pavd1nmuqo0
+      Commands: []
+      Items:
+      - k0001800korfdlo6urj5dpq762002lmmirj5cdp62pjk79hnasrkdtmlurj1dlig0irr49ingt3ic4h3kmrr49hmur3fe8h3k8jnd1kn8p925gh6it31dhkm68hqcpgmosr55gh78pboegh3k8icdtq6asj9c4g4mpbp49ulqb12ehingt1278h24v8a00amqqbeclhn4ob6egt66tbjehnmqnr4c5q622g02987aojcd5hk4tbbddkn8lj1dhqmaso800e6au33clm6opbeehhn4obkclpjkoric5q6anrbclsisqb4003morrkclp6io8000006005cdnnarjk000000880016ip002tmmirj5cdp62pjk79q74qbgetkn4pavd1nmuqo0
+      Ignored_For_Permissions: []
+    llave_avanzada:
+      Name: Llave avanzada
+      Weight: 25.0
+      Rarity: rare
+      Broadcast: false
+      Placeholder_Apply: false
+      Win_Limit:
+        Player:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+        Global:
+          Enabled: false
+          Amount: -1
+          Cooldown: 0
+          CooldownStep: 1
+      Preview: 2g0005002j3dtmn0rrecln78soa00b6qqbeclhn4ob6egt6arj3d1gmst3dcln78soa0036opbmclm760o025mmirj5cdp62pjk79m6urrkd5n6e000000g000800amqqbeclhn4ob6egt66tbjehnmqnrec5mma016fch6au3ke9gi4eir4966oobmckg62tj1dpt62p3149eio8jkcls788hq48h7q2g02lmmirj5cdp62pjk79hnasrkdtmlup31ehggk00ia1qm4r39cd17aqrbd5q5cobcelin62003hingor5dhm6arjkcdp62t35ect66sj1ehiluqr5f4n6ip0011gncobef9gm8o8000006005cdnnarjk000000880016ip002tmmirj5cdp62pjk79q74qbgetkn4pavd1nmuqo0
+      Commands: []
+      Items:
+      - 2g0005002j3dtmn0rrecln78soa00b6qqbeclhn4ob6egt6arj3d1gmst3dcln78soa0036opbmclm760o025mmirj5cdp62pjk79m6urrkd5n6e000000g000800amqqbeclhn4ob6egt66tbjehnmqnrec5mma016fch6au3ke9gi4eir4966oobmckg62tj1dpt62p3149eio8jkcls788hq48h7q2g02lmmirj5cdp62pjk79hnasrkdtmlup31ehggk00ia1qm4r39cd17aqrbd5q5cobcelin62003hingor5dhm6arjkcdp62t35ect66sj1ehiluqr5f4n6ip0011gncobef9gm8o8000006005cdnnarjk000000880016ip002tmmirj5cdp62pjk79q74qbgetkn4pavd1nmuqo0
+      Ignored_For_Permissions: []
+Animation_Config: enclosing
+Last_Opener: AdrianLegaspi
+Last_Reward: Wheat Seeds
+Item:
+  Material: PLAYER_HEAD
+  SkinURL: d69ac976ef48447776bffff70df66ceeb4a5dac505b13f172123e14cd3759181

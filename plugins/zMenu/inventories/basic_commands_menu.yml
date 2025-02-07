@@ -1,0 +1,144 @@
+# Configuración del Menú de Comandos Básicos para zMenu
+size: 27
+name: "&8> &6&lComandos básicos"
+
+items:
+  # Teletransportarse al Spawn
+  spawn:
+    slot: 10
+    item:
+      material: COMPASS
+      name: "&bTeletransportarse al Spawn"
+      lore:
+        - ""
+        - "&7Haz clic para teletransportarte al punto de inicio."
+    commands:
+      - "warp survival-1_21_4"
+    viewRequirement:
+      requirements:
+        - type: permission
+          permission: "essentials.spawn"
+    closeInventory: true
+
+  # Establecer Casa
+  sethome:
+    slot: 11
+    item:
+      material: RED_BED
+      name: "&aEstablecer Casa"
+      lore:
+        - ""
+        - "&7Haz clic para establecer tu casa."
+    commands:
+      - "sethome home"
+    viewRequirement:
+      requirements:
+        - type: permission
+          permission: "essentials.sethome"
+    closeInventory: true
+
+  # Ir a Casa
+  home:
+    slot: 12
+    item:
+      material: SPRUCE_DOOR
+      name: "&bIr a Casa"
+      lore:
+        - ""
+        - "&7Haz clic para teletransportarte a tu casa."
+    commands:
+      - "home"
+    viewRequirement:
+      requirements:
+        - type: permission
+          permission: "essentials.home"
+    closeInventory: true
+
+  # Eliminar Casa
+  delhome:
+    slot: 15
+    item:
+      material: BARRIER
+      name: "&cEliminar Casa"
+      lore:
+        - ""
+        - "&7Haz clic para eliminar una casa."
+    commands:
+      - "delhome home"
+    viewRequirement:
+      requirements:
+        - type: permission
+          permission: "essentials.delhome"
+    closeInventory: true
+
+  # Menú de Warps
+  warp:
+    slot: 13
+    item:
+      material: ENDER_PEARL
+      name: "&eMenú de Warps"
+      lore:
+        - ""
+        - "&7Haz clic para abrir el menú de warps."
+    commands:
+      - "zm open warps_menu"
+    viewRequirement:
+      requirements:
+        - type: permission
+          permission: "essentials.warp"
+    closeInventory: true
+
+  # Teletransportación Aleatoria
+  tprandom:
+    slot: 14
+    item:
+      material: END_CRYSTAL
+      name: "&dTeletransportación Aleatoria"
+      lore:
+        - ""
+        - "&7Haz clic para teletransportarte a una ubicación aleatoria en el mundo."
+    commands:
+      - "tprandom"
+    viewRequirement:
+      requirements:
+        - type: permission
+          permission: "essentials.tprandom"
+    closeInventory: true
+
+  # Volver al Menú Principal
+  volver:
+    slot: 26
+    item:
+      material: ARROW
+      name: "&cVolver al Menú Principal"
+      lore:
+        - "&7Regresa al menú principal."
+        - "&eHaz clic para volver."
+    commands:
+      - "zm open main_inventory"
+    closeInventory: true
+
+# Filler Items (Espacios Vacíos)
+fillItem:
+  material: GRAY_STAINED_GLASS_PANE
+  name: " "
+  slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25

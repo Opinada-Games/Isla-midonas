@@ -1,0 +1,137 @@
+Cocinero:
+  fullname: Cocinero
+  shortname: Co
+  displayName: "&6Cocinero"
+  description: Gana dinero cocinando alimentos y creando deliciosas comidas
+  FullDescription:
+    - "&7Gana dinero preparando alimentos y creando platillos"
+    - ""
+    - "&6Obtén dinero por:"
+    - "  &7Cocinar alimentos en la fogata"
+    - "  &7Fabricar pasteles y panes"
+    - "  &7Fanear animales para comer"
+  ChatColour: GOLD
+  BossBarColour: YELLOW
+  chat-display: full
+  max-level: 40
+  vip-max-level: 60
+  leveling-progression-equation: 15*(joblevel)+(joblevel*joblevel*3)
+  income-progression-equation:
+    baseincome+(baseincome*(joblevel-1)*0.02)-((baseincome+(baseincome*(joblevel-1)*0.02))
+    * ((numjobs-1)*0.05))
+  points-progression-equation:
+    basepoints+(basepoints*(joblevel-1)*0.02)-((basepoints+(basepoints*(joblevel-1)*0.02))
+    * ((numjobs-1)*0.05))
+  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1)*0.01))
+  rejoinCooldown: 15
+  Gui:
+    ItemStack: campfire
+    slot: 12
+  maxDailyQuests: 3
+  Quests:
+    "1":
+      Name: Panadero Experto
+      Objectives:
+        - Craft;bread;20
+        - Craft;cake;5
+      RewardCommands:
+        - eco give [playerName] 700
+        - msg [playerName] ¡Completaste la misión y ganaste 700 monedas!
+      RewardDesc:
+        - Prepara panes y pasteles
+        - ¡Gana 700 monedas!
+    "2":
+      Name: Chef Profesional
+      Objectives:
+        - Craft;rabbit_stew;10
+        - Craft;golden_carrot;5
+      RewardCommands:
+        - eco give [playerName] 900
+        - msg [playerName] ¡Completaste la misión y ganaste 900 monedas!
+      RewardDesc:
+        - Prepara guisos y platillos especiales
+        - ¡Gana 900 monedas!
+  Bake:
+    beef:
+      income: 10.0
+      points: 10.0
+      experience: 10.0
+    porkchop:
+      income: 9.0
+      points: 9.0
+      experience: 9.0
+    chicken:
+      income: 8.0
+      points: 8.0
+      experience: 8.0
+    cod:
+      income: 12.0
+      points: 12.0
+      experience: 12.0
+    salmon:
+      income: 12.0
+      points: 12.0
+      experience: 12.0
+    potato:
+      income: 5.0
+      points: 5.0
+      experience: 5.0
+  Milk:
+    Cow:
+      income: 4.0
+      points: 4.0
+      experience: 4.0
+    MushroomCow:
+      income: 6.0
+      points: 6.0
+      experience: 6.0
+  Craft:
+    bread:
+      income: 5.0
+      points: 5.0
+      experience: 5.0
+    cake:
+      income: 15.0
+      points: 15.0
+      experience: 15.0
+    cookie:
+      income: 3.0
+      points: 3.0
+      experience: 3.0
+    rabbit_stew:
+      income: 18.0
+      points: 18.0
+      experience: 18.0
+    mushroom_stew:
+      income: 10.0
+      points: 10.0
+      experience: 10.0
+    golden_carrot:
+      income: 20.0
+      points: 20.0
+      experience: 20.0
+  Kill:
+    Cow:
+      income: 3.0
+      points: 3.0
+      experience: 3.0
+    Pig:
+      income: 3.0
+      points: 3.0
+      experience: 3.0
+    Chicken:
+      income: 2.0
+      points: 2.0
+      experience: 2.0
+    Rabbit:
+      income: 4.0
+      points: 4.0
+      experience: 4.0
+  world-blacklist:
+    - mundo_creativo
+    - mundo_plot
+  ignore-jobs-max: false
+  cmd-on-join:
+    - msg [name] ¡Bienvenido al trabajo de Cocinero! ¡A preparar comida deliciosa!
+  cmd-on-leave:
+    - msg [name] Dejaste el trabajo de Cocinero. ¡Esperamos verte pronto!

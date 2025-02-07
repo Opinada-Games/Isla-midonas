@@ -1,0 +1,17 @@
+enable: true
+slot: 12
+title: ""
+hidden: false
+sub-section: false
+display-item: false
+fill-item:
+  material: AIR
+nav-bar:
+  mode: INHERIT
+item:
+  material: GRINDSTONE
+  lore:
+    - "&8&lDale a tus aldeanos un trabajo,"
+    - "&8&lo usalos para ti mismo."
+  displayname: "&7&lAreas de trabajo"
+  name: "&7&lAreas de trabajo"

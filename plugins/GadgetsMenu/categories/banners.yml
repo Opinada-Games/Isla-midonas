@@ -1,0 +1,191 @@
+Banners:
+  Snow Bunny:
+    Name: '&5Estandarte de Conejo de Nieve'
+    Mystery Dust: 15
+    Rarity: Épico
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Reindeer:
+    Name: '&5Estandarte de Reno'
+    Mystery Dust: 20
+    Rarity: Épico
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Holiday Tree:
+    Name: '&5Estandarte de Árbol Navideño'
+    Mystery Dust: 20
+    Rarity: Épico
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Santa:
+    Name: '&5Estandarte de Santa'
+    Mystery Dust: 25
+    Rarity: Épico
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Holiday Wreath:
+    Name: '&5Estandarte de Guirnalda Navideña'
+    Mystery Dust: 28
+    Rarity: Épico
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Heart:
+    Name: '&5Estandarte de Corazón'
+    Mystery Dust: 30
+    Rarity: Épico
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Guitar:
+    Name: '&5Estandarte de Guitarra'
+    Mystery Dust: 25
+    Rarity: Épico
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Dino:
+    Name: '&5Estandarte de Dino'
+    Mystery Dust: 40
+    Rarity: Épico
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Redpool:
+    Name: '&5Estandarte de Redpool'
+    Mystery Dust: 42
+    Rarity: Épico
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Pengu:
+    Name: '&5Estandarte de Pengu'
+    Mystery Dust: 50
+    Rarity: Épico
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Pug:
+    Name: '&5Estandarte de Pug'
+    Mystery Dust: 48
+    Rarity: Épico
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Tryhard:
+    Name: '&5Estandarte de Tryhard'
+    Mystery Dust: 48
+    Rarity: Épico
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Pumpkin:
+    Name: '&5Estandarte de Calabaza'
+    Mystery Dust: 50
+    Rarity: Épico
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Crown:
+    Name: '&5Estandarte de Corona'
+    Mystery Dust: 48
+    Rarity: Épico
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Fire Creeper:
+    Name: '&5Estandarte de Creeper de Fuego'
+    Mystery Dust: 48
+    Rarity: Épico
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Portal:
+    Name: '&6Estandarte de Portal'
+    Mystery Dust: 60
+    Rarity: Legendario
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Rainbow Wall:
+    Name: '&6Estandarte de Muro Arcoíris'
+    Mystery Dust: 62
+    Rarity: Legendario
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Skull King:
+    Name: '&6Estandarte de Rey Calavera'
+    Mystery Dust: 65
+    Rarity: Legendario
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''
+  Devourer:
+    Name: '&6Estandarte de Devorador'
+    Mystery Dust: 68
+    Rarity: Legendario
+    Enabled: true
+    CanBeFound: true
+    Purchasable: true
+    Lore:
+      Locked: ''
+      Unlocked: ''

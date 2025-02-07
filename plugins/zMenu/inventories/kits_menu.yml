@@ -1,0 +1,205 @@
+# Configuración del Menú de Reclamo de Kits para zMenu
+size: 54
+name: "&6Selecciona tu Kit"
+
+items:
+  # Herramientas Kit
+  herramientas:
+    slot: 10
+    item:
+      material: STONE_PICKAXE
+      name: "&6Kit Herramientas"
+      lore:
+        - "&7Incluye herramientas básicas para empezar."
+        - "&e$450"
+        - "&7Retraso: 10 minutos"
+    commands:
+      - "kit herramientas"
+    closeInventory: true
+
+  # Iniciación Kit
+  iniciacion:
+    slot: 11
+    item:
+      material: WOODEN_SWORD
+      name: "&eKit Iniciación"
+      lore:
+        - "&7Perfecto para los recién llegados."
+        - "&eGratis (Una vez por jugador)"
+        - "&7Retraso: Ninguno"
+    commands:
+      - "kit iniciacion"
+    closeInventory: true
+
+  # Constructor Kit
+  constructor:
+    slot: 12
+    item:
+      material: OAK_LOG
+      name: "&2Kit Constructor"
+      lore:
+        - "&7Materiales esenciales para construir."
+        - "&e$400"
+        - "&7Retraso: 2 horas"
+    commands:
+      - "kit constructor"
+    closeInventory: true
+
+  # Explorador Kit
+  explorador:
+    slot: 13
+    item:
+      material: COMPASS
+      name: "&bKit Explorador"
+      lore:
+        - "&7Útil para aventureros en exploración."
+        - "&e$500"
+        - "&7Retraso: 3 horas"
+    commands:
+      - "kit explorador"
+    closeInventory: true
+
+  # Guerrero Kit
+  guerrero:
+    slot: 14
+    item:
+      material: IRON_SWORD
+      name: "&cKit Guerrero"
+      lore:
+        - "&7Equipamiento para el combate."
+        - "&e$750"
+        - "&7Retraso: 6 horas"
+    commands:
+      - "kit guerrero"
+    closeInventory: true
+
+  # Diplomático Kit
+  diplomatico:
+    slot: 15
+    item:
+      material: BOOK
+      name: "&9Kit Diplomático"
+      lore:
+        - "&7Herramientas para la negociación."
+        - "&e$1000"
+        - "&7Retraso: 12 horas"
+    commands:
+      - "kit diplomatico"
+    closeInventory: true
+
+  # Superviviente Kit
+  superviviente:
+    slot: 16
+    item:
+      material: FISHING_ROD
+      name: "&dKit Superviviente"
+      lore:
+        - "&7Ideal para los sobrevivientes extremos."
+        - "&e$600"
+        - "&7Retraso: 4 horas"
+    commands:
+      - "kit superviviente"
+    closeInventory: true
+
+  # Agricultor Kit
+  agricultor:
+    slot: 19
+    item:
+      material: IRON_HOE
+      name: "&aKit Agricultor"
+      lore:
+        - "&7Todo lo necesario para la agricultura."
+        - "&e$550"
+        - "&7Retraso: 6 horas"
+    commands:
+      - "kit agricultor"
+    closeInventory: true
+
+  # Líder Kit
+  lider:
+    slot: 20
+    item:
+      material: GOLDEN_HELMET
+      name: "&6Kit Líder"
+      lore:
+        - "&7El máximo símbolo del poder."
+        - "&e$2000"
+        - "&7Retraso: 24 horas"
+    commands:
+      - "kit lider"
+    closeInventory: true
+
+  # Artesano Kit
+  artesano:
+    slot: 21
+    item:
+      material: DIAMOND_PICKAXE
+      name: "&bKit Artesano"
+      lore:
+        - "&7Perfecto para creadores experimentados."
+        - "&e$1600"
+        - "&7Retraso: 4 horas"
+    commands:
+      - "kit artesano"
+    closeInventory: true
+
+  # Volver al Menú Principal
+  volver:
+    slot: 49
+    item:
+      material: ARROW
+      name: "&cVolver al Menú Principal"
+      lore:
+        - "&7Regresa al menú principal."
+    commands:
+      - "zm open main_menu"
+    closeInventory: true
+
+# Filler Items (Espacios Vacíos)
+fillItem:
+  material: GRAY_STAINED_GLASS_PANE
+  name: " "
+  slots:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 17
+    - 18
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32
+    - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+    - 45
+    - 46
+    - 47
+    - 48
+    - 50
+    - 51
+    - 52
+    - 53

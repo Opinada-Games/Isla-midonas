@@ -1,0 +1,2079 @@
+# Here you can edit all chat messages.
+#
+# If you encounter any issues or have questions:
+# Discord: https://discord.incredibleplugins.com
+#
+# Wiki: https://wiki.incredibleplugins.com/general/locale-and-config/messages
+
+general:
+  prefix:
+    normal: '&8[&2Lands&8] '
+    help: '&8[&2Lands&8] &7Uso: '
+  wYes: '&aSí'
+  wNo: '&cNo'
+  value:
+    none: '&8Ninguno'
+    unlimited: '&aIlimitado'
+  disabled: '&cDesactivado'
+  wilderness: '&aSalvaje'
+  server: Servidor
+  affiliation:
+    land: '&8[&2{land}&8]'
+    nation: '&8[&9{nation} &8|&2 {land}&8]'
+  relation:
+    ally: '&aAliado'
+    enemy: '&cEnemigo'
+    neutral: '&7Neutral'
+  land:
+    title:
+      land:
+        normal: '&7%level% &7de&3 %owner%&7.'
+        levels-disabled: '&7de&3 %owner%&7.'
+      camp: '&7Campamento de&3 %owner%&7.'
+      admin: '&7Este territorio pertenece al servidor.'
+    default-area: Predeterminada
+  area:
+    description:
+      default: '&7Las nuevas reclamaciones pertenecerán a esta zona.'
+      sub: '&7Esta es una subzona, la cual puede tener banderas y miembros especiales.'
+      rented: '&aEsta zona está rentada por el jugador {player}.'
+      sold: '&aEsta zona fue vendida al jugador {player}.'
+  time:
+    days: día(s)
+    hours: hora(s)
+    minutes: minuto(s)
+    seconds: segundo(s)
+  status:
+    online: '&aen línea'
+    offline: '&cfuera de línea'
+  top:
+    hologram:
+      land:
+        title: '&7&m━━━━━━━━━━━━━━<━&r &2Top 10 Estados &8(&7Total: {total}&8) &7&m━>━━━━━━━━━━━━━━'
+        entry: '&c#{pos} &2{object} &7{sorting}:&3 {value}'
+        footer: '&7&m━━━━━━━━━━━━━━<━&r &2Top 10 Estados &8(&7Total: {total}&8) &7&m━>━━━━━━━━━━━━━━'
+      nation:
+        title: '&7&m━━━━━━━━━━━━━━<━&r &2Top 10 Naciones &8(&7Total: {total}&8) &7&m━>━━━━━━━━━━━━━━'
+        entry: '&c#{pos} &2{object} &7{sorting}:&3 {value}'
+        footer: '&7&m━━━━━━━━━━━━━━<━&r &2Top 10 Naciones &8(&7Total: {total}&8) &7&m━>━━━━━━━━━━━━━━'
+  integration:
+    dynmap:
+      land:
+        description: |
+          '<div class="\&quot;infowindow\&quot;"><span style="font-size: 200%;"><span style="color: {land_color};">{land}</span><br /></span>{title}</div> <ul> <li class="\&quot;infowindow\&quot;">Nivel: {level}</li> <li class="\&quot;infowindow\&quot;">Saldo: {balance}</li> <li class="\&quot;infowindow\&quot;">Chunks: {chunks}</li> <li class="\&quot;infowindow\&quot;">Jugadores ({members_amount}): {members}</li> </ul>'
+        spawn: |
+          '<div class="\&quot;infowindow\&quot;"><span style="font-size: 200%;"><span style="color: {land_color};">Punto de aparición</span></span></div> <div class="\&quot;infowindow\&quot;"><br />Abierto para no confiables: {public}</div> <ul> <li>Si este punto de aparición está abierto para no confiables, cualquiera puede teletransportarse usando /lands spawn {land}.</li> </ul>'
+      nation:
+        description: |
+          '<div class="\&quot;infowindow\&quot;"><span style="font-size: 200%;"><span style="color: {land_color};">{land}</span><br /></span>{title}</div> <ul> <li class="\&quot;infowindow\&quot;">Nivel: {level}</li> <li class="\&quot;infowindow\&quot;">Saldo: {balance}</li> <li class="\&quot;infowindow\&quot;">Chunks: {chunks}</li> <li class="\&quot;infowindow\&quot;">Jugadores ({members_amount}): {members}</li> </ul> <p><strong>Este territorio pertenece a la nación {nation}:</strong></p> <ul> <li>Nivel: {level_nation}</li> <li>Capital: {capital}</li> <li>Estados (jugadores totales: {members_amount_nation}): {lands}</li> </ul>'
+      capital:
+        spawn: |
+          '<div class="\&quot;infowindow\&quot;"><span style="font-size: 200%;"><span style="color: {land_color};">Punto de aparición de la Capital</span><br /></span>Este punto de aparición pertenece a la capital de la nación {nation}.</div><div class="\&quot;infowindow\&quot;"><br />Abierto para no confiables: {public}</div><ul><li>Si este punto de aparición está abierto para no confiables, cualquiera puede teletransportarse usando /lands spawn {land}.</li></ul>'
+    bluemap:
+      land:
+        description: |
+          '<div class="\&quot;infowindow\&quot;"><span style="font-size: 200%;"><span style="color: {land_color};">{land}</span><br /></span>{title}</div> <ul> <li class="\&quot;infowindow\&quot;">Nivel: {level}</li> <li class="\&quot;infowindow\&quot;">Saldo: {balance}</li> <li class="\&quot;infowindow\&quot;">Chunks: {chunks}</li> <li class="\&quot;infowindow\&quot;">Jugadores ({members_amount}): {members}</li> </ul>'
+        spawn: |
+          "Punto de aparición del territorio {land}. Abierto para no confiables: {public}. Si este punto de aparición está abierto para no confiables, cualquiera puede teletransportarse usando /lands spawn {land}."
+      nation:
+        description: |
+          '<div class="\&quot;infowindow\&quot;"><span style="font-size: 200%;"><span style="color: {land_color};">{land}</span><br /></span>{title}</div> <ul> <li class="\&quot;infowindow\&quot;">Nivel: {level}</li> <li class="\&quot;infowindow\&quot;">Saldo: {balance}</li> <li class="\&quot;infowindow\&quot;">Chunks: {chunks}</li> <li class="\&quot;infowindow\&quot;">Jugadores ({members_amount}): {members}</li> </ul> <p><strong>Este territorio pertenece a la nación {nation}:</strong></p> <ul> <li>Nivel: {level_nation}</li> <li>Capital: {capital}</li> <li>Estados (jugadores totales: {members_amount_nation}): {lands}</li> </ul>'
+      capital:
+        spawn: |
+          '<div class="\&quot;infowindow\&quot;"><span style="font-size: 200%;"><span style="color: {land_color};">Punto de aparición de la Capital</span><br /></span>Este punto de aparición pertenece a la capital de la nación {nation}.</div><div class="\&quot;infowindow\&quot;"><br />Abierto para no confiables: {public}</div><ul><li>Si este punto de aparición está abierto para no confiables, cualquiera puede teletransportarse usando /lands spawn {land}.</li></ul>'
+    squaremap:
+      land:
+        description: |
+          '<div class="\&quot;infowindow\&quot;"><span style="font-size: 200%;"><span style="color: {land_color};">{land}</span><br /></span>{title}</div> <ul> <li class="\&quot;infowindow\&quot;">Nivel: {level}</li> <li class="\&quot;infowindow\&quot;">Saldo: {balance}</li> <li class="\&quot;infowindow\&quot;">Chunks: {chunks}</li> <li class="\&quot;infowindow\&quot;">Jugadores ({members_amount}): {members}</li> </ul>'
+        spawn: |
+          '<div class="\&quot;infowindow\&quot;"><span style="font-size: 200%;"><span style="color: {land_color};">Punto de aparición</span></span></div> <div class="\&quot;infowindow\&quot;"><br />Abierto para no confiables: {public}</div> <ul> <li>Si este punto de aparición está abierto para no confiables, cualquiera puede teletransportarse usando /lands spawn {land}.</li> </ul>'
+      nation:
+        description: |
+          '<div class="\&quot;infowindow\&quot;"><span style="font-size: 200%;"><span style="color: {land_color};">{land}</span><br /></span>{title}</div> <ul> <li class="\&quot;infowindow\&quot;">Nivel: {level}</li> <li class="\&quot;infowindow\&quot;">Saldo: {balance}</li> <li class="\&quot;infowindow\&quot;">Chunks: {chunks}</li> <li class="\&quot;infowindow\&quot;">Jugadores ({members_amount}): {members}</li> </ul> <p><strong>Este territorio pertenece a la nación {nation}:</strong></p> <ul> <li>Nivel: {level_nation}</li> <li>Capital: {capital}</li> <li>Estados (jugadores totales: {members_amount_nation}): {lands}</li> </ul>'
+      capital:
+        spawn: |
+          '<div class="\&quot;infowindow\&quot;"><span style="font-size: 200%;"><span style="color: {land_color};">Punto de aparición de la Capital</span><br /></span>Este punto de aparición pertenece a la capital de la nación {nation}.</div><div class="\&quot;infowindow\&quot;"><br />Abierto para no confiables: {public}</div><ul><li>Si este punto de aparición está abierto para no confiables, cualquiera puede teletransportarse usando /lands spawn {land}.</li></ul>'
+    pl3xmap:
+      land:
+        description: |
+          '<div class="\&quot;infowindow\&quot;"><span style="font-size: 200%;"><span style="color: {land_color};">{land}</span><br /></span>{title}</div> <ul> <li class="\&quot;infowindow\&quot;">Nivel: {level}</li> <li class="\&quot;infowindow\&quot;">Saldo: {balance}</li> <li class="\&quot;infowindow\&quot;">Chunks: {chunks}</li> <li class="\&quot;infowindow\&quot;">Jugadores ({members_amount}): {members}</li> </ul>'
+        spawn: |
+          '<div class="\&quot;infowindow\&quot;"><span style="font-size: 200%;"><span style="color: {land_color};">Punto de aparición</span></span></div> <div class="\&quot;infowindow\&quot;"><br />Abierto para no confiables: {public}</div> <ul> <li>Si este punto de aparición está abierto para no confiables, cualquiera puede teletransportarse usando /lands spawn {land}.</li> </ul>'
+      nation:
+        description: |
+          '<div class="\&quot;infowindow\&quot;"><span style="font-size: 200%;"><span style="color: {land_color};">{land}</span><br /></span>{title}</div> <ul> <li class="\&quot;infowindow\&quot;">Nivel: {level}</li> <li class="\&quot;infowindow\&quot;">Saldo: {balance}</li> <li class="\&quot;infowindow\&quot;">Chunks: {chunks}</li> <li class="\&quot;infowindow\&quot;">Jugadores ({members_amount}): {members}</li> </ul> <p><strong>Este territorio pertenece a la nación {nation}:</strong></p> <ul> <li>Nivel: {level_nation}</li> <li>Capital: {capital}</li> <li>Estados (jugadores totales: {members_amount_nation}): {lands}</li> </ul>'
+      capital:
+        spawn: |
+          '<div class="\&quot;infowindow\&quot;"><span style="font-size: 200%;"><span style="color: {land_color};">Punto de aparición de la Capital</span><br /></span>Este punto de aparición pertenece a la capital de la nación {nation}.</div><div class="\&quot;infowindow\&quot;"><br />Abierto para no confiables: {public}</div><ul><li>Si este punto de aparición está abierto para no confiables, cualquiera puede teletransportarse usando /lands spawn {land}.</li></ul>'
+  map:
+    wilderness: '&2▉ '
+    yours: '&a▉ '
+    trusted: '&e▉ '
+    others: '&c▉ '
+    position: '&9▉ '
+    info:
+      wilderness: ' &2▉ &7= Territorio Salvaje'
+      yours: ' &a▉ &7= Tuyo'
+      trusted: ' &e▉ &7= Confiable'
+      others: ' &c▉ &7= Otros'
+      position: ' &9▉ &7= Posición'
+    hover:
+      wilderness: '&7Este chunk es territorio salvaje. Haz clic para reclamarlo.'
+      yours: '&7Este territorio es tuyo. Haz clic para ver información sobre el territorio
+        &3{land}&7.'
+      trusted: '&7Tienes confianza en este territorio. Haz clic para ver información
+        sobre el territorio &3{land}&7.'
+      others: '&7No tienes confianza en este territorio. Haz clic para ver información
+        sobre el territorio &3{land}&7.'
+      position: '&7Esta es tu posición actual.'
+  inbox:
+    general:
+      created: '&7Se ha creado el territorio {0}.'
+      renamed: '&7{0} cambió el nombre de {1} a {2}.'
+      post: '{0}:&7 {1}'
+    member:
+      join: '&7El jugador {0} se unió.'
+      leave: '&7El jugador {0} salió.'
+      ban: '&cEl jugador {0} ha sido bloqueado.'
+      owner: '&7El jugador {0} es ahora el nuevo propietario.'
+    storage:
+      entry: '&r{item}&r x {amount}'
+      message: '&7El jugador {0} modificó el almacén. Objetos tomados: {1}&7 - Objetos
+        añadidos: {2}'
+    economy:
+      upkeep:
+        alert:
+          land:
+            normal: '&cNecesitas pagar&4 {0}&c de mantenimiento en {1}, pero {2} no
+              tiene fondos suficientes.'
+            delete: '&cNecesitas pagar&4 {0}&c de mantenimiento en {1}, pero {2} no
+              tiene fondos suficientes. &7Esto causará que al menos algunas de las
+              reclamaciones más recientes se desreclamen. Asegúrate de depositar dinero
+              para evitarlo.'
+          nation:
+            normal: '&cNecesitas pagar&4 {0}&c de mantenimiento en {1}, pero {2} no
+              tiene fondos suficientes.'
+            delete: '&cNecesitas pagar&4 {0}&c de mantenimiento en {1}, pero {2} no
+              tiene fondos suficientes. &7Esto causará que la nación se elimine. Asegúrate
+              de depositar dinero para evitarlo.'
+        warning: '&cNo fue posible pagar el costo de mantenimiento: {0}'
+        unclaim: '&cNo se pudo pagar el costo completo de mantenimiento de {0}. Se
+          han desreclamado los últimos {1} chunk(s).'
+        paid: '&7Costo de mantenimiento pagado: {0} Nuevo saldo: {1}'
+        nation: '&cLa nación {0}&c no pudo pagar el mantenimiento de {1} desde el
+          balance de su capital y ha sido eliminada.'
+      bank:
+        withdraw: '&cEl jugador {0} retiró {1}. Nuevo saldo: {2}'
+        deposit: '&7El jugador {0} depositó {1}. Nuevo saldo: {2}'
+      taxes:
+        warning: '&cEl jugador {0} no pudo pagar los impuestos.'
+        untrusted: '&cEl jugador {0} no pudo pagar los impuestos. Ahora está sin confianza.'
+        received: '&7Se ha recibido un total de {0} de impuestos de los miembros del
+          territorio. Nuevo saldo: {1}'
+    war:
+      shield: '&7Se recibió tiempo adicional de protección de guerra de {0}&7. Total:
+        {1}'
+      start: '&7La guerra contra {0} &7ha comenzado. Tiempo límite:&5 {1}'
+      declaration:
+        sent: '&7Has declarado la guerra contra {0}&7. La guerra comenzará en&5 {1}&7.'
+        received: '&c{0} &cha declarado la guerra contra nosotros. &7La guerra comenzará
+          en&5 {1}&7.'
+        mutual:
+          sent: '&7Has enviado una solicitud de guerra mutua a {0}&7. Ellos deben
+            aceptarla.'
+          received: '&c{0} &cha enviado una solicitud de guerra mutua. Para aceptar:
+            &e/wars declare {1}'
+          denied: '&7La declaración de guerra mutua fue rechazada por {0}&7.'
+      surrender:
+        sent: '&cTe has rendido en la guerra. Pagaste {0} como tributo al enemigo.'
+        received: '&7El enemigo {0} &7se rindió. Se recibió {1} como tributo.'
+      end:
+        won: '&7Hemos ganado la guerra contra el enemigo {0} &7con&3 {1} &7puntos.
+          &7Ellos solo tenían&3 {2} &7puntos. La guerra duró &5{3}&7.'
+        draw: '&7La guerra contra {0} &7terminó en empate con&3 {1} &7puntos.'
+        lost: '&7Hemos perdido la guerra contra el enemigo {0} &7con&3 {1} &7puntos.
+          &7Ellos tenían&3 {2} &7puntos. La guerra duró &5{3}&7.'
+    nation:
+      general:
+        created: '&7Se ha creado la nación {0}.'
+      member:
+        join: '&7El territorio {0} se unió.'
+        leave: '&7El territorio {0} salió.'
+      economy:
+        upkeep:
+          warning: '&cNo se pudo pagar el costo de mantenimiento de {0}.'
+          paid: '&7Costo de mantenimiento pagado: - {0}'
+        taxes:
+          warning: '&cEl territorio {0} no pudo pagar impuestos.'
+          untrusted: '&cEl territorio {0} no pudo pagar impuestos. Ha sido eliminado
+            de la nación.'
+          received: '&7Se han recibido un total de {0} de impuestos de los territorios.
+            Nuevo saldo: {1}'
+    relation:
+      ally:
+        offer: '&7{0} &7quiere ser aliado con nosotros.'
+        accepted: '&7Ahora somos aliados con {0}&7.'
+        remove: '&7Ya no somos aliados con {0}&7.'
+      enemy:
+        add: '&7Ahora somos enemigos de {0}&7.'
+        offer: '&7{0} &7ya no quiere ser nuestro enemigo.'
+        accepted: '&7Ya no somos enemigos de {0}&7.'
+  wars:
+    object:
+      enemy: '&cEnemigo'
+      ally: '&aAliado'
+    nametag:
+      enemy: '&cENEMIGO &8| '
+      ally: '&aALIADO &8| '
+    state:
+      preparation: '&aPreparación'
+      fight: '&cCombate'
+  command:
+    argument:
+      optional: '&8[&e{arg}&8]'
+      required: '&8<&e{arg}&8>'
+      type:
+        land: territorio
+        land_or_here: territorio | aquí
+        nation: nación
+        cmd: comando
+        area: zona
+        player: jugador
+        name: nombre
+        number: número
+        confirm: confirmar
+        funds: fondos
+        menu: menú
+        world: mundo
+        args: argumentos
+        page: página
+        database: base de datos
+        holder: territorio | nación
+        plugin: plugin
+        role: rol
+        flag: bandera
+        radius: radio
+        context: contexto
+        boolean: true | false
+        flag_or_all: bandera | todo
+        amount: cantidad
+        tribute: tributo
+        y-min: y-mín
+        y-max: y-máx
+        silent: silencioso
+        sorting: orden
+        preparation_time: tiempo de preparación
+        category: categoría
+        ally: aliado
+        enemy: enemigo
+        here: aquí
+
+help:
+  help:
+    root:
+      header: '[NoPrefix][T]&7&l&m━━&e&l<<<<&7&l&m━[H]&7Haz clic aquí para navegar
+        a la página anterior.[/H][C]{cmd} {previous}[/C][/T] &2Comandos de Lands &7Página&3
+        {page} &8/&3 {pages} [T]&7&l&m━&e&l>>>>&7&l&m━━[H]&7Haz clic aquí para ir
+        a la siguiente página.[/H][C]{cmd} {next}[/C][/T]'
+      footer: |
+        [NoPrefix]
+        &7Haz clic en las flechas de abajo para navegar.
+        [T]&7&l&m━━&e&l<<<<&7&l&m━[H]&7Haz clic aquí para navegar a la página anterior.[/H][C]{cmd} {previous}[/C][/T] &2Comandos de Lands &7Página&3 {page} &8/&3 {pages} [T]&7&l&m━&e&l>>>>&7&l&m━━[H]&7Haz clic aquí para ir a la siguiente página.[/H][C]{cmd} {next}[/C][/T]
+    sub:
+      unknown: |
+        &cEl subcomando&4 {command} &cno existe.
+          [T]&7✖ Ver comandos: &e/{cmd} &8[CLICK][H]&7Haz clic aquí para ver la lista de comandos disponibles[/H][C]{cmd}[/C][/T]
+      header: '[NoPrefix][T]&7&l&m━━━━━&e&l<<<<&7&l&m━[H]&7Haz clic aquí para navegar
+        a la página anterior.[/H][C]{cmd} {previous}[/C][/T] &2Subcomandos &7Página&3
+        {page} &8/&3 {pages} [T]&7&l&m━&e&l>>>>&7&l&m━━━━━[H]&7Haz clic aquí para
+        ir a la siguiente página.[/H][C]{cmd} {next}[/C][/T]'
+      footer: |
+        [NoPrefix]
+        &7Haz clic en las flechas de abajo para navegar.
+        [T]&7&l&m━━━━━&e&l<<<<&7&l&m━[H]&7Haz clic aquí para navegar a la página anterior.[/H][C]{cmd} {previous}[/C][/T] &2Subcomandos &7Página&3 {page} &8/&3 {pages} [T]&7&l&m━&e&l>>>>&7&l&m━━━━━[H]&7Haz clic aquí para ir a la siguiente página.[/H][C]{cmd} {next}[/C][/T]
+  command:
+    lands:
+      help: '[T]&e{parent} {subcmd} {args} - &7Obtener ayuda[H]&7Haz clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      edit: '[T]&e{parent} {subcmd} {args} &8- &7Entrar al modo edición de territorio[H]&7El
+        territorio en edición se utiliza para comandos como /lands claim. &7Haz clic
+        para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      confirmtp: '[T]&e{parent} {subcmd} &8- &7Confirmar destino de teletransporte
+        inseguro[H]&7Haz clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      claim:
+        main: '[T]&e{parent} {subcmd} {args} &8- &7Reclamar chunk(s)[H]&7Reclama usando
+          diferentes técnicas &8(&e/selection&7, fill, auto, radius&8)&7. &7Haz clic
+          para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+        auto: '[T]&e{parent} {subcmd} &8- &7Reclamar mientras te mueves[H]&7Esto reclamará
+          todos los chunks en los que entres, mientras te mueves. Haz clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+        fill: '[T]&e{parent} {subcmd} &8- &7Reclamar chunks dentro de una forma[H]&7Reclama
+          todos los chunks dentro de la forma para llenarla. Haz clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+        radius: '[T]&e{parent} {subcmd} {args} &8- &7Reclamar con radio[H]&7Reclama
+          todos los chunks dentro de un radio específico. Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      create: '[T]&e{parent} {subcmd} {args} &8- &7Crear territorio[H]&7Haz clic para
+        copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      createcamp: '[T]&e{parent} {subcmd} {args} &8- &7Crear campamento[H]&7Haz clic
+        para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      merge: '[T]&e{parent} {subcmd} {args} &8- &7Fusionar territorio con tu territorio
+        actual[H]&7Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      storage: '[T]&e{parent} {subcmd} &8- &7Abrir el almacenamiento del territorio[H]&7Haz
+        clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      leave: '[T]&e{parent} {subcmd} {args} &8- &7Salir del territorio o del área[H]&7Si
+        quieres salir del área en tu posición actual, agrega "here" a este comando.
+        Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      unclaim:
+        main: '[T]&e{parent} {subcmd} &8- &7Desreclamar chunk[H]&7Esto también es
+          compatible con &e/lands selection&7. Haz clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+        radius: '[T]&e{parent} {subcmd} {args} &8- &7Desreclamar con radio[H]&7Desreclama
+          todos los chunks dentro de un radio específico. Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+        auto: '[T]&e{parent} {subcmd} &8- &7Desreclamar mientras te mueves[H]&7Esto
+          desreclamará todos los chunks en los que entres, mientras te mueves. Haz
+          clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+        all: '[T]&e{parent} {subcmd} &8- &7Desreclamar todos los chunks[H]&7Haz clic
+          para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      delete: '[T]&e{parent} delete {args} &8- &7Borrar territorio o área[H]&7Haz
+        clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      trust: '[T]&e{parent} {subcmd} {args} &8- &7Confiar en un jugador[H]&7Usa *
+        como nombre de área para confiar al jugador en todo el territorio. &7Haz clic
+        para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      untrust: '[T]&e{parent} {subcmd} {args} &8- &7Desconfiar de un jugador[H]&7Usa
+        * como nombre de área para desconfiar al jugador de todo el territorio. &7Haz
+        clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      setRole: '[T]&e{parent} {subcmd} {args} &8- &7Asignar rol[H]&7Haz clic para
+        copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      accept: '[T]&e{parent} {subcmd} {args} &8- &7Aceptar invitación[H]&7Puedes ver
+        todas las invitaciones recibidas con /lands invites. &7Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      deny: '[T]&e{parent} {subcmd} {args} &8- &7Rechazar invitación[H]&7Haz clic
+        para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      view:
+        main: '[T]&e{parent} {subcmd} {args} &8- &7Información sobre reclamaciones[H]&7Este
+          comando también visualizará reclamaciones cercanas. &7Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+        disable: '[T]&e{parent} {subcmd} &8- &7Desactivar visualización[H]&7Desactiva
+          la visualización actual de &e/lands view&7. Haz clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+        here: '[T]&e{parent} {subcmd} &8- &7Visualizar subárea[H]&7Visualiza la subárea
+          en la que estás parado actualmente. &7Haz clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+        stay: '[T]&e{parent} {subcmd} &8- &7Bloquear posición Y[H]&7La visualización
+          ya no seguirá tu altura. &7Haz clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      menu: '[T]&e{parent} {subcmd} {args} &8- &7Abrir menú[H]&7Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      setSpawn: '[T]&e{parent} {subcmd} &8- &7Establecer punto de aparición del territorio[H]&7Haz
+        clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      spawn: '[T]&e{parent} {subcmd} {args} &8- &7Teletransportarse al territorio[H]&7Haz
+        clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      wild: '[T]&e{parent} {subcmd} {args} &8- &7Teletransportarse a una ubicación
+        aleatoria[H]&7Haz clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      top: '[T]&e{parent} {subcmd} &8- &7Mostrar territorios top[H]&7Haz clic para
+        ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      selection:
+        main: '[T]&e{parent} {subcmd} {args} &8- &7Modo de selección[H]&7Con este
+          comando puedes cambiar el tamaño de una subárea o expandir tu selección
+          a niveles de Y infinitos. &7Haz clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+        assign: '[T]&e{parent} {subcmd} {args} &8- &7Cambiar tamaño de subárea[H]&7Haz
+          clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+        expand: '[T]&e{parent} {subcmd} &8- &7Expandir selección[H]&7Haz clic para
+          ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      chat: '[T]&e{parent} {subcmd} {args} &8- &7Chat del territorio[H]&7Haz clic
+        para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      rename: '[T]&e{parent} {subcmd} {args} &8- &7Renombrar territorio[H]&7Haz clic
+        para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      teleport: '[T]&e{parent} {subcmd} {args} &8- &7Teletransportarse a un chunk[H]&7Haz
+        clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      invites: '[T]&e{parent} {subcmd} &8- &7Mostrar invitaciones recibidas[H]&7Haz
+        clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      info: '[T]&e{parent} {subcmd} {args} &8- &7Ver información del territorio[H]&7Haz
+        clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      player: '[T]&e{parent} {subcmd} {args} &8- &7Ver información del jugador[H]&7Haz
+        clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      map:
+        main: '[T]&e{parent} {subcmd} &8- &7Ver mapa[H]&7Haz clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+        chat: '[T]&e{parent} {subcmd} &8- &7Ver mapa en el chat[H]&7Haz clic para
+          ejecutar.[/H][C]{fullcmd}[/C][/T]'
+        link: '[T]&e{parent} {subcmd} &8- &7Obtener enlace al mapa web[H]&7Haz clic
+          para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      balance: '[T]&e{parent} {subcmd} {args} &8- &7Ver saldo[H]&7Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      deposit: '[T]&e{parent} {subcmd} {args} &8- &7Depositar dinero[H]&7Haz clic
+        para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      withdraw: '[T]&e{parent} {subcmd} {args} &8- &7Retirar dinero[H]&7Haz clic para
+        copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      list: '[T]&e{parent} {subcmd} {args} &8- &7Listar todos los territorios[H]&7Haz
+        clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      assign: '[T]&e{parent} {subcmd} {args} &8- &7Asignar selección a subárea[H]&7Haz
+        clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      setowner: '[T]&e{parent} {subcmd} {args} &8- &7Transferir propiedad[H]&7Haz
+        clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      ban: '[T]&e{parent} {subcmd} {args} &8- &7Banear jugador[H]&7Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      unban: '[T]&e{parent} {subcmd} {args} &8- &7Desbanear jugador[H]&7Haz clic para
+        copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      taxes: '[T]&e{parent} {subcmd} &8- &7Mostrar los próximos impuestos[H]&7Haz
+        clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      upkeep: '[T]&e{parent} {subcmd} &8- &7Mostrar próximos pagos de mantenimiento[H]&7Haz
+        clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      unstuck: '[T]&e{parent} {subcmd} &8- &7Salir de trampas[H]&7En caso de que quedes
+        atascado en un territorio. &7Haz clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      claimlist: '[T]&e{parent} {subcmd} {args} &8- &7Listar reclamaciones de tu territorio[H]&7Este
+        comando te mostrará todas las /lands claim de tu territorio. &7Haz clic para
+        ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      rent:
+        main: '[T]&e{parent} {subcmd} {args} &8- &7Gestionar renta[H]&7Administra
+          la subárea rentada en tu posición actual. &7Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+        cancel: '[T]&e{parent} {subcmd} &8- &7Cancelar renta[H]&7Cancela tu renta
+          de la subárea en tu posición actual. &7Haz clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+        info: '[T]&e{parent} {subcmd} &8- &7Mostrar info[H]&7Muestra información sobre
+          la renta de la subárea en tu posición actual. &7Haz clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+        list: '[T]&e{parent} {subcmd} &8- &7Ver todas las ofertas de renta[H]&7Ver
+          todas las ofertas de renta de todos los territorios. &7Haz clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+        remove:
+          main: '[T]&e{parent} {subcmd} {args} &8- &7Gestionar renta actual[H]&7Administra
+            la subárea rentada en tu posición actual. &7Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+          offer: '[T]&e{parent} {subcmd} &8- &7Eliminar oferta[H]&7Los jugadores ya
+            no podrán extender su renta. &7Haz clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+          tenant: '[T]&e{parent} {subcmd} &8- &7Eliminar inquilino[H]&7Elimina al
+            inquilino actual pagando una compensación. &7Haz clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      level: '[T]&e{parent} {subcmd} &8- &7Ver progreso de nivel[H]&7Observa el progreso
+        para desbloquear el siguiente nivel y los beneficios del nivel actual y el
+        siguiente. &7Haz clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      relations:
+        main: '[T]&e{parent} {subcmd} {args} &8- &7Gestionar relaciones[H]&7Agrega
+          territorios y naciones como aliados o enemigos. Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+        allies:
+          main: '[T]&e{parent} {subcmd} {args} &8- &7Gestionar aliados[H]&7Agrega
+            territorios y naciones como aliados. Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+          add: '[T]&e{parent} {subcmd} {args} &8- &7Agregar aliado[H]&7Agrega un territorio
+            o nación como aliado. Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+          remove: '[T]&e{parent} {subcmd} {args} &8- &7Quitar aliado[H]&7Termina la
+            relación con un aliado. Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+        enemies:
+          main: '[T]&e{parent} {subcmd} {args} &8- &7Gestionar enemigos[H]&7Agrega
+            territorios y naciones como enemigos. Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+          add: '[T]&e{parent} {subcmd} {args} &8- &7Agregar enemigo[H]&7Declara un
+            territorio o nación como enemigo. Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+          remove: '[T]&e{parent} {subcmd} {args} &8- &7Quitar enemigo[H]&7Envía una
+            solicitud de neutralización a un enemigo. Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      
+      admin:
+        main: '[T]&e{parent} {subcmd} {args} &8- &7Comandos de administrador[H]&7Haz
+          clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+        listperms: '[T]&e{parent} {subcmd} {args} &8- &7Listar los permisos que tiene
+          un jugador[H]&7Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+        debug: '[T]&e{parent} {subcmd} &8- &7Muestra estadísticas de datos cargados[H]&7Haz
+          clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+        reload: '[T]&e{parent} {subcmd} &8- &7Recargar config y mensajes[H]&7Haz clic
+          para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+        about: '[T]&e{parent} {subcmd} &8- &7Mostrar información sobre Lands[H]&7Haz
+          clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+        chatspy: '[T]&e{parent} {subcmd} {args} &8- &7Escuchar el chat[H]&7Haz clic
+          para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+        dismiss: '[T]&e{parent} {subcmd} {args} &8- &7Descartar notas[H]&7Haz clic
+          para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+        import: '[T]&e{parent} {subcmd} {args} &8- &7Importar reclamaciones de terceros[H]&7Haz
+          clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+        menu: '[T]&e{parent} {subcmd} {args} &8- &7Abrir menú de administrador[H]&7Haz
+          clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+        deleteinactive: '[T]&e{parent} {subcmd} &8- &7Borrar jugadores/territorios
+          inactivos[H]&7Haz clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+        migratedb: '[T]&e{parent} {subcmd} {args} &8- &7Migrar base de datos[H]&7Haz
+          clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+        player:
+          main: '[T]&e{parent} {subcmd} {args} &8- &7Administración especial de jugadores[H]&7Haz
+            clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+          menu: '[T]&e{parent} {subcmd} &8- &7Abrir menú del jugador[H]&7Haz clic
+            para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+          delete: '[T]&e{parent} {subcmd} &8- &7Borrar jugador y sus territorios[H]&7Haz
+            clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+          give:
+            main: '[T]&e{parent} {subcmd} {args} &8- &7Dar al jugador[H]&7Haz clic
+              para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+            camp: '[T]&e{parent} {subcmd} {args} &8- &7Dar objetos de campamento[H]&7Haz
+              clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+            captureflag: '[T]&e{parent} {subcmd} {args} &8- &7Dar captureblocks[H]&7Haz
+              clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+            claimblock: '[T]&e{parent} {subcmd} {args} &8- &7Dar claimblocks[H]&7Haz
+              clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+            permission:
+              main: '[T]&e{parent} {subcmd} {args} &8- &7Modificar permisos numerados[H]&7Haz
+                clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+              chunks: '[T]&e{parent} {subcmd} {args} &8- &7Modificar máximo de chunks[H]&7Haz
+                clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+              chunks-support: '[T]&e{parent} {subcmd} {args} &8- &7Modificar chunks
+                de soporte[H]&7Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+              lands: '[T]&e{parent} {subcmd} {args} &8- &7Modificar máximo de territorios
+                de miembro[H]&7Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+              members: '[T]&e{parent} {subcmd} {args} &8- &7Modificar máximo de miembros[H]&7Haz
+                clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+              ownlands: '[T]&e{parent} {subcmd} {args} &8- &7Modificar máximo de territorios
+                propios[H]&7Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+        resetworld: '[T]&e{parent} {subcmd} {args} &8- &7Borrar todas las reclamaciones
+          en el mundo[H]&7Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+        hologram:
+          main: '[T]&e{parent} {subcmd} {args} &8- &7Gestionar hologramas de leaderboard[H]&7Haz
+            clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+          create: '[T]&e{parent} {subcmd} {args} &8- &7Crear holograma[H]&7Haz clic
+            para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+          delete: '[T]&e{parent} {subcmd} &8- &7Borrar holograma cercano[H]&7Haz clic
+            para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+          list: '[T]&e{parent} {subcmd} &8- &7Listar hologramas[H]&7Haz clic para
+            ejecutar.[/H][C]{fullcmd}[/C][/T]'
+        land:
+          main: '[T]&e{parent} {subcmd} {args} &8- &7Administración especial de territorios[H]&7Haz
+            clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+          setflag: '[T]&e{parent} {subcmd} {args} &8- &7Establecer estado de bandera[H]&7Haz
+            clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+          resetflag: '[T]&e{parent} {subcmd} {args} &8- &7Reiniciar estado de bandera
+            a roles.yml[H]&7Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+          addrole: '[T]&e{parent} {subcmd} {args} &8- &7Agregar rol personalizado
+            de roles.yml[H]&7Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+          menu: '[T]&e{parent} {subcmd} &8- &7Abrir menú del territorio[H]&7Haz clic
+            para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+          syncpermissions: '[T]&e{parent} {subcmd} &8- &7Sincronizar límites de permiso[H]&7Haz
+            clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+          bank:
+            main: '[T]&e{parent} {subcmd} &8- &7Editar saldo del banco[H]&7Haz clic
+              para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+            modify: '[T]&e{parent} {subcmd} {args} &8- &7Agregar (+) o quitar (-)
+              fondos[H]&7Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+            set: '[T]&e{parent} {subcmd} {args} &8- &7Establecer fondos[H]&7Haz clic
+              para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+          shield:
+            main: '[T]&e{parent} {subcmd} &8- &7Editar tiempo de protección (shield)[H]&7Haz
+              clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+            modify: '[T]&e{parent} {subcmd} {args} &8- &7Agregar (+) o quitar (-)
+              tiempo[H]&7Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+            set: '[T]&e{parent} {subcmd} {args} &8- &7Establecer tiempo[H]&7Haz clic
+              para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+    
+    wars:
+      menu: '[T]&e{parent} {subcmd} {args} &8- &7Abrir menú de guerra[H]&7Haz clic
+        para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      deny: '[T]&e{parent} {subcmd} &8- &7Rechazar declaración de guerra mutua[H]&7Haz
+        clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      spawn: '[T]&e{parent} {subcmd} &8- &7Teletransportarse al enemigo[H]&7Haz clic
+        para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      declare: '[T]&e{parent} {subcmd} {args} - &7Declarar guerra[H]&7Haz clic para
+        copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      list: '[T]&e{parent} {subcmd} - &7Ver guerras activas[H]&7Haz clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      info:
+        main: '[T]&e{parent} {subcmd} {args} &8- &7Información sobre la guerra[H]&7Haz
+          clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+        captureflag: '[T]&e{parent} {subcmd} &8- &7Ver receta de captureflag[H]&7Haz
+          clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      admin:
+        main: '[T]&e{parent} {subcmd} {args} &8- &7Administración especial de guerras[H]&7Haz
+          clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+        start: '[T]&e{parent} {subcmd} {args} &8- &7Iniciar guerra[H]&7Haz clic para
+          copiar.[/H][SC]{fullcmd}[/SC][/T]'
+        end: '[T]&e{parent} {subcmd} {args} &8- &7Terminar guerra[H]&7Haz clic para
+          copiar.[/H][SC]{fullcmd}[/SC][/T]'
+    
+    nations:
+      chat: '[T]&e{parent} {subcmd} {args} &8- &7Chat de la nación[H]&7Haz clic para
+        copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      trust: '[T]&e{parent} {subcmd} {args} &8- &7Invitar territorio[H]&7Haz clic
+        para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      untrust: '[T]&e{parent} {subcmd} {args} &8- &7Remover territorio[H]&7Haz clic
+        para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      accept: '[T]&e{parent} {subcmd} {args} &8- &7Aceptar invitación[H]&7Haz clic
+        para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      deny: '[T]&e{parent} {subcmd} {args} &8- &7Rechazar invitación[H]&7Haz clic
+        para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      menu: '[T]&e{parent} {subcmd} {args} &8- &7Menú[H]&7Haz clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      create: '[T]&e{parent} {subcmd} {args} &8- &7Crear nación[H]&7Haz clic para
+        copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      delete: '[T]&e{parent} {subcmd} &8- &7Borrar nación[H]&7Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      leave: '[T]&e{parent} {subcmd} &8- &7Salir de la nación[H]&7Haz clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      spawn: '[T]&e{parent} {subcmd} &8- &7Punto de aparición de la capital[H]&7Haz
+        clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      rename: '[T]&e{parent} {subcmd} &8- &7Renombrar nación[H]&7Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      setcapital: '[T]&e{parent} {subcmd} {args} &8- &7Establecer capital[H]&7Haz
+        clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+      level: '[T]&e{parent} {subcmd} &8- &7Ver progreso de nivel[H]&7Observa el progreso
+        para desbloquear el siguiente nivel y los beneficios del nivel actual y el
+        siguiente. &7Haz clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      info: '[T]&e{parent} {subcmd} {args} &8- &7Ver información de la nación[H]&7Haz
+        clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      list: '[T]&e{parent} {subcmd} {args} &8- &7Listar todas las naciones[H]&7Haz
+        clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      top: '[T]&e{parent} {subcmd} &8- &7Mostrar naciones top[H]&7Haz clic para ejecutar.[/H][C]{fullcmd}[/C][/T]'
+      relations:
+        main: '[T]&e{parent} {subcmd} {args} &8- &7Gestionar relaciones[H]&7Agrega
+          territorios y naciones como aliados o enemigos. Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+        allies:
+          main: '[T]&e{parent} {subcmd} {args} &8- &7Gestionar aliados[H]&7Agrega
+            territorios y naciones como aliados. Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+          add: '[T]&e{parent} {subcmd} {args} &8- &7Agregar aliado[H]&7Agrega un territorio
+            o nación como aliado. Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+          remove: '[T]&e{parent} {subcmd} {args} &8- &7Quitar aliado[H]&7Termina la
+            relación con un aliado. Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+        enemies:
+          main: '[T]&e{parent} {subcmd} {args} &8- &7Gestionar enemigos[H]&7Agrega
+            territorios y naciones como enemigos. Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+          add: '[T]&e{parent} {subcmd} {args} &8- &7Agregar enemigo[H]&7Declara un
+            territorio o nación como enemigo. Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+          remove: '[T]&e{parent} {subcmd} {args} &8- &7Quitar enemigo[H]&7Envía una
+            solicitud de neutralización a un enemigo. Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+
+lands:
+  message:
+    inbox:
+      new:
+        posts: |
+          &7Hay {amount} mensajes nuevos publicados por miembros de tu territorio&2 {land}&7. Último: {latest}
+            [T]&7✖ Verlos: &e/{cmd} &8[CLICK][H]&7Haz clic para verlos[/H][C]{cmd}[/C][/T]
+        general: |
+          &7Hay {amount} mensajes nuevos en la bandeja de entrada para el territorio&2 {land}&7. Último: {latest}
+            [T]&7✖ Verlos: &e/{cmd} &8[CLICK][H]&7Haz clic para verlos[/H][C]{cmd}[/C][/T]
+    feature-disabled: '&cEsta función fue desactivada por un administrador. &8Necesitan
+      habilitar la opción ''{setting}'' en la configuración para permitirte usar esta
+      función.'
+    war: '&cNo puedes hacer esto ahora. &7{object} &7está actualmente en guerra contra
+      {enemy}&7. &7Intenta nuevamente cuando la guerra haya terminado.'
+    combat:
+      tag: '#b#[config]color:purple,style:solid[/config]&7Etiqueta de combate:&5 {time}'
+    flags:
+      block_place: '&cNo tienes permiso para colocar bloques aquí (&cÁrea:&4 {area}
+        &cTerritorio:&4 {land}&c). &8Bandera: {flag}'
+      block_break: '&cNo tienes permiso para romper bloques aquí (&cÁrea:&4 {area}
+        &cTerritorio:&4 {land}&c). &8Bandera: {flag}'
+      block_ignite: '&cNo tienes permiso para encender fuego aquí (&cÁrea:&4 {area}
+        &cTerritorio:&4 {land}&c). &8Bandera: {flag}'
+      interact_general: '&cNo tienes permiso para interactuar aquí (&cÁrea:&4 {area}
+        &cTerritorio:&4 {land}&c). &8Bandera: {flag}'
+      interact_door: '&cNo tienes permiso para abrir puertas aquí (&cÁrea:&4 {area}
+        &cTerritorio:&4 {land}&c). &8Bandera: {flag}'
+      interact_mechanism: '&cNo tienes permiso para usar mecanismos aquí (&cÁrea:&4
+        {area} &cTerritorio:&4 {land}&c). &8Bandera: {flag}'
+      interact_container: '&cNo tienes permiso para abrir contenedores aquí (&cÁrea:&4
+        {area} &cTerritorio:&4 {land}&c). &8Bandera: {flag}'
+      interact_villager: '&cNo tienes permiso para comerciar con aldeanos aquí (&cÁrea:&4
+        {area} &cTerritorio:&4 {land}&c). &8Bandera: {flag}'
+      fly: '&cNo tienes permiso para volar aquí (&cÁrea:&4 {area} &cTerritorio:&4
+        {land}&c). &8Bandera: {flag}'
+      spawn_teleport: '&cNo tienes permiso para teletransportarte al spawn del territorio&4
+        {land}&c. &7Ellos pueden ajustar la configuración de sus roles para permitirte
+        teletransportarte a su punto de aparición. &8Bandera: {flag}'
+      land_enter: '&cNo tienes permiso para entrar al área&4 {area} &cdel territorio&4
+        {land}&c (&cÁrea:&4 {area} &cTerritorio:&4 {land}&c). &7Fuiste teletransportado
+        a tu ubicación anterior. &8Bandera: {flag}'
+      vehicle_use: '&cNo tienes permiso para usar vehículos aquí (&cÁrea:&4 {area}
+        &cTerritorio:&4 {land}&c). &8Bandera: {flag}'
+      item_pickup: '&cNo puedes soltar y recoger objetos aquí (&cÁrea:&4 {area} &cTerritorio:&4
+        {land}&c). &8Bandera: {flag}'
+      ender_pearl: '&cNo tienes permiso para usar este ítem para teletransportarte
+        al área&6 {area} &cdel territorio&4 {land}&c. &8Bandera: {flag}'
+      attack_animal: '&cNo tienes permiso para atacar animales aquí (&cÁrea:&4 {area}
+        &cTerritorio:&4 {land}&c). &8Bandera: {flag}'
+      attack_monster: '&cNo tienes permiso para atacar monstruos aquí (&cÁrea:&4 {area}
+        &cTerritorio:&4 {land}&c). &7Ellos tampoco podrán atacarte a ti. &8Bandera:
+        {flag}'
+    rented:
+      edit: '&cNo puedes hacer esto mientras el área&4 {area}&c está rentada o vendida.
+        &7Remover inquilino: &e/{cmd}'
+      tenant: '&cNo puedes editar al inquilino&4 {player}&c del área&4 {area}&c. &7Remover
+        inquilino: &e/{cmd}'
+    noaccess:
+      wilderness: '&cNo puedes hacer esto en zona salvaje. &8Bandera: {flag}'
+      area: '&cNo puedes hacer esto en esta área (&cÁrea:&4 {area} &cTerritorio:&4
+        {land}&c). &8Bandera: {flag}'
+      banned: '&cNo tienes permiso para entrar a esta área. &7Fuiste bloqueado en
+        esta área &8(&7Área:&6 {area} &7Territorio:&2 {land}&8)&7.'
+      claimblock: '&cNo eres el dueño de este bloque de reclamo. &7Le pertenece a&3
+        {player}&7.'
+      
+      combat:
+        attacker: '&cNo tienes permiso para atacar a jugadores aquí. &7Esta área pertenece
+          al territorio&2 {land}&7.'
+        target: '&cTu objetivo no puede atacar a jugadores aquí. &7No puedes luchar
+          con él en esta zona. &7Esta área pertenece al territorio&2 {land}&7.'
+        ally: '&cNo puedes atacar a este jugador en zona salvaje, porque él es miembro
+          de uno de tus territorios. &7Las peleas en arena pueden hacerse en tu territorio
+          permitiendo pvp en la configuración de roles.'
+        wilderness: '&cNo puedes atacar a este jugador porque él está en zona salvaje
+          y tú estás en un territorio reclamado.'
+    area:
+      exists: '&cYa existe un área con el nombre&4 {area} &cen el territorio&4 {land}&c.'
+      not-exist: '&cEl área&4 {area} &cno existe en el territorio&4 {land}&c.'
+      default: '&cNo puedes hacer esto con el área predeterminada&4 {area} &cdel territorio&4
+        {land}&c.'
+    introduction:
+      container-placement: |
+        &cColocaste un contenedor en zona salvaje. &7Otros jugadores podrían abrirlo y tomar tus ítems.
+          [T]&7✖ Asegúralo: &e/{cmd} &8[CLICK][H]&7Reclama este territorio para protegerlo.[/H][C]{fullcmd}[/C][/T]
+    event:
+      fly:
+        counter: '#t#&6Desactivando modo volar[newline]&7en &3{sec} &7segundo(s)'
+        disabled: '&cTu modo de vuelo ha sido desactivado. &7No tienes permiso para
+          volar aquí.'
+      elytra:
+        counter: '#t#&6Desactivando Élitros[newline]&7en &3{sec} &7segundo(s)'
+        disabled: '&cTu deslizamiento con élitros ha sido desactivado. &7No tienes
+          permiso para usar élitros aquí.'
+      enter:
+        land: '#t#[config]in:5,stay:40,out:2[/config]&2&l{land}[newline]&3{title}'
+        camp: '#t#[config]in:5,stay:40,out:2[/config]&2&l{land}[newline]&3{title}'
+        admin: '#t#[config]in:5,stay:40,out:2[/config]&2&l{land}[newline]{title}'
+        pvp-warning: '#a#&cEntraste a una zona de pvp.'
+      leave:
+        land: '#t#[config]in:5,stay:30,out:2[/config]&2&lSalvaje[newline]&7Disfruta
+          la naturaleza'
+        camp: '#t#[config]in:5,stay:30,out:2[/config]&2&lSalvaje[newline]&7Disfruta
+          la naturaleza'
+        admin: '#t#[config]in:5,stay:30,out:2[/config]&2&lSalvaje[newline]&7Disfruta
+          la naturaleza'
+      level:
+        up: '#t#&6{object}[newline]&7subió de nivel: {level}'
+        down: '#t#&6{object}[newline]&7bajó de nivel a: {level}'
+      inbox: '&eBandeja &8- {object}&8: {message}'
+    teleportation:
+      already: '&cNo puedes iniciar un segundo teletransporte. Ya tienes un teletransporte
+        en progreso. &7Espera a que finalice.'
+      started: '&7Proceso de teletransporte iniciado. Teletransportando en&5 {sec}
+        segundos&7. Por favor no te muevas.'
+      cmd: '&cNo puedes usar ningún comando mientras estás siendo teletransportado.
+        &7Espera otros&5 {sec} segundos &7hasta que finalice el teletransporte.'
+      combat: '&cNo puedes teletransportarte mientras estés en combate. &7Espera &5
+        {time} &7sin atacar a nadie.'
+      progress: '#b#[config]color:purple,style:solid[/config]&7Espera&5 {time} &7segundo(s)
+        para Teletransportarte.'
+      cancelled: '&cTu teletransporte ha sido cancelado. &7No te muevas mientras esperas&5
+        {sec} &7segundos para teletransportarte.'
+      chunk: '#t#&6Teletransportado[newline]&7X: {x} Z: {z} Costo:&c {cost}'
+      plugin: '&cEl teletransporte ha sido cancelado por un plugin de terceros. &7Revisa
+        tus otros plugins. &7Esto no es un problema de Lands.'
+      unsafe: |
+        &7El teletransporte ha sido cancelado, porque el destino no es seguro.
+          [T]&2✔ Teletransportarse de todos modos: &e/{cmd} &8[CLICK][H]&7Tienes {time}&7 para confirmar este teletransporte. Advertencia: El destino no es seguro y podría ser peligroso para ti.[/H][C]{cmd}[/C][/T]
+      corrected: '&7El destino original de teletransporte no era seguro. &7Se ha corregido
+        a una ubicación segura.'
+    claimblock:
+      dropped: '&cAlgunos bloques de reclamo quedaron en el suelo. &7No había espacio
+        suficiente en tu inventario.'
+      success: '&7Recibiste&3 {blocks} &7bloque(s) de reclamo. &7Colócalos en un chunk
+        para reclamarlo.'
+    capture:
+      dropped: '&cAlgunas banderas de captura quedaron en el suelo. &7No había espacio
+        suficiente en tu inventario.'
+      success: '&7Recibiste&3 {blocks} &7bandera(s) de captura. &7Colócalas en los
+        territorios enemigos durante la guerra para empezar a capturar un área.'
+    camp:
+      dropped: '&cAlgunos ítems de campamento quedaron en el suelo. &7No había espacio
+        suficiente en tu inventario.'
+      success: '&7Recibiste&3 {blocks} &7ítem(s) de campamento. &7Colócalos para crear
+        un campamento en esa posición.'
+    blacklist:
+      untrusted: '&cNo tienes permiso para usar este comando aquí. &7No tienes confianza
+        en el área&6 {area} &7del territorio&2 {land}&7. &8Permiso para omitir: {permission}'
+      general: '&cNo tienes permiso para usar este comando en territorios reclamados.
+        &8Permiso para omitir: {permission}'
+      war: '&cNo tienes permiso para usar este comando mientras estás en guerra. &8Permiso
+        para omitir: {permission}'
+    auto-action:
+      started:
+        claim: '#t#&6Auto Claim[newline]&7Sigue caminando para reclamar chunks'
+        unclaim: '#t#&6Auto Unclaim[newline]&7Sigue caminando para desreclamar chunks'
+      stopped:
+        claim: '#t#&6Auto Claim[newline]&cDetenido'
+        unclaim: '#t#&6Auto Unclaim[newline]&cDetenido'
+    role:
+      exists: '&cYa existe un rol con el nombre&4 {role}&c. &7Por favor elige uno
+        diferente.'
+      not-exist: '&cEl rol&4 {role} &cno existe en el área &4{area} &cdel territorio&4
+        {land}&c. &7¿Error al escribir?'
+      max: '&cNo puedes crear más roles para este territorio. &7Llegaste a tu límite
+        de&3 {max} &7roles.[V] Permiso: lands.roles.<number>[/V]'
+      player:
+        land: '&cNo puedes editar a este jugador en el territorio&4 {land}&c. &7Su
+          rol&6 {role} &7tiene mayor o igual prioridad que el tuyo.'
+        area: '&cNo puedes editar a este jugador en esta área (&cÁrea:&4 {area} &cTerritorio:&4
+          {land}&c). &7Su rol&6 {role} &7tiene mayor o igual prioridad que el tuyo.'
+      weight:
+        land: '&cNo puedes editar el rol&4 {role} &cdel territorio&4 {land}&c. &7La
+          prioridad del rol es mayor o igual que la tuya.'
+        area: '&cNo puedes editar el rol&4 {role} &cen esta área (&cÁrea:&4 {area}
+          &cTerritorio:&4 {land}&c). &7La prioridad del rol es mayor o igual que la
+          tuya.'
+      delete:
+        role: '&cNo puedes eliminar el rol&4 {role}&c. &7Este rol es necesario.'
+        entry: '&cNo puedes eliminar el rol de entrada&4 {role}&c. &7Se requiere para
+          nuevos jugadores.'
+        visitor: '&cNo puedes eliminar el rol de no confiable&4 {role}&c. &7Se requiere
+          para los jugadores que no son de confianza.'
+    menu-reopen: '#a#&6Reabriendo el menú anterior en&5 {time}&6.'
+    chat-input:
+      general: '&7Por favor ingresa tu texto en el chat.'
+      player: '#t#&6Ingresa el Nombre[newline]&7del jugador en el chat[newline]&7Escribe
+        "cancel" para abortar.'
+      object: '#t#&6Ingresa el Nombre[newline]&7de un territorio o nación en el chat[newline]&7Escribe
+        "cancel" para abortar.'
+      land: '#t#&6Ingresa el Nombre[newline]&7del territorio objetivo en el chat[newline]&7Escribe
+        "cancel" para abortar.'
+      title: '#t#&6Ingresa un nuevo Título[newline]&7para este territorio en el chat[newline]&7Escribe
+        "cancel" para abortar.'
+      rename: '#t#&6Ingresa un nuevo Nombre[newline]&7en el chat[newline]&7No se permiten
+        espacios. Escribe "cancel" para abortar.'
+      name: '#t#&6Ingresa el Nombre[newline]&7en el chat[newline]&7Escribe "cancel"
+        para abortar.'
+      text: '#t#&6Ingresa el Texto[newline]&7en el chat[newline]&7Escribe "cancel"
+        para abortar.'
+    block-selection:
+      rental:
+        prompt: '#t#&6Selecciona un Letrero[newline]&7en el área&6 {area}'
+        sign: '&cEl bloque seleccionado debe ser un letrero.'
+        area: '&cEl letrero seleccionado debe estar ubicado en el área&4 {area} &cdel
+          territorio&4 {land}&c.'
+  command:
+    menu:
+      invalid: '&cNo existe un atajo con el nombre&4 {shortcut}&c.'
+    rent:
+      max-amount: '&cNo puedes rentar o comprar otra área en el territorio&4 {land}&c.
+        &7Ya alcanzaste la cantidad máxima de&3 {max} &7áreas rentadas o compradas
+        en este territorio.'
+      own: '&cNo puedes rentar / comprar tus propias ofertas. &7Para remover una oferta
+        destruye el letrero o haz shift + clic en el holograma.'
+      edit: '&cActualmente no puedes editar el área&4 {area} &cdel territorio&4 {land}&7,
+        porque está rentada / vendida al jugador&3 {player}&7.'
+      tenant: '&cNo tienes rentada el área en tu posición actual. &7El área&6 {area}
+        &7del territorio&2 {land} &7no la rentaste tú.'
+      none: '&cEl área&4 {area} &cdel territorio&4 {land} &cen tu posición actual
+        no está rentada ni comprada por nadie.'
+      status: '&cEl área&4 {area} &cdel territorio&4 {land} &cen tu posición actual
+        no está en renta ni a la venta.'
+      sign: |
+        &7Necesitas especificar un tipo de letrero (2ª línea)
+         &81. línea:&7 Lands
+         &82. línea:&3 rent &7o &3sell &8[&7área&8]
+      set:
+        land: '&cNo puedes poner a la renta todo el territorio&4 {land}&c. &7Puedes
+          crear subáreas para rentarlas, o vender el territorio completo (segunda
+          línea: sell).'
+        already: '&cNo puedes poner esta área de nuevo en renta. &7El área&6 {area}
+          &7está siendo rentada actualmente por&3 {player}&7. Expirará en&5 {time}&7.'
+        sold: '&cNo puedes poner en renta un área que ya fue vendida. &7El área&6
+          {area} &7la compró el jugador&3 {player}&7.'
+        interval: '&cEl intervalo de renta debe ser menor que el tiempo total máximo
+          de renta. &7Valores proporcionados - intervalo:&5 {interval}&7, tiempo máximo:&5
+          {max-time}'
+        success: |
+          &7Pusiste el área&6 {area} &7en renta. El inquilino pagará&c {cost} &7cada&5 {time}&7.
+            [T]&8✖ &7Remover oferta: &e/{cmd} &8[CLICK][H]&7Haz clic para eliminar esta oferta de renta.[/H][C]{cmd}[/C][/T]
+        invalid: |
+          &7El formato de tu línea es inválido (línea {line}).
+           &81. línea:&7 Lands
+           &82. línea:&7 rent &8[&7área&8]
+           &83. línea:&7 TIME maxTime (no requerido)
+           &84. línea:&7 cost (ejemplo: 5 = 5)
+        info: |
+          [NoPrefix]
+          &7&m━━━━━━━━━<━&r &5&lÁrea en Renta &7&m━>━━━━━━━━━
+          [T]&8• &7Territorio:&a {land} &8[&8CLICK&8][H]&7Haz clic para visualizar esta área.[/H][C]lands view here[/C][/T]
+           &8• &7Área:&6 {area}
+           &8• &7Costo:&c {cost} &7cada {time}
+           &8• &8Tiempo máx.: {max}
+          &7&m━━━━━━━━━<━&r &5&lÁrea en Renta &7&m━>━━━━━━━━━
+      rent:
+        expire: '&cNo puedes añadir más tiempo a tu renta del área&4 {area}&c. &7El
+          territorio&2 {land} &7eliminó la oferta de renta. Expirará en&5 {time}&7.'
+        time: '&cNo puedes añadir más tiempo a tu renta del área&4 {area}&c. &7El
+          territorio&2 {land} &7configuró un máximo de&5 {max} &7en total.'
+        add: '&7Añadiste&5 {add} &7a tu renta del área&6 {area} &7por&c {cost}&7.
+          Expirará en&5 {time}&7.'
+        success: |
+          &7Rentaste el área&6 {area} &7del territorio&2 {land} &7por&c {cost}&7. Expirará en&5 {time}&7.
+            &8✖ &7Añadir más tiempo: Haz clic en el letrero o holograma
+            [T]&8✖ &7Cancelar renta: &e/{cmd} &8[CLICK][H]&7Haz clic para cancelar tu renta.[/H][C]{cmd}[/C][/T]
+        info: |
+          [NoPrefix]
+          &7&m━━━━━━━━━<━&r &5&lInformación Renta &7&m━>━━━━━━━━━
+          [T]&8• &7Territorio:&a {land} &8[&8CLICK&8][H]&7Haz clic para visualizar esta área.[/H][C]lands view here[/C][/T]
+           &8• &7Área:&6 {area}
+           &8• &7Inquilino: {player}
+           &8• &7Tiempo restante:&5 {left}
+           &8• &8Renta: {cost} cada {time}
+          &7&m━━━━━━━━━<━&r &5&lInformación Renta &7&m━>━━━━━━━━━
+      cancel:
+        success: '&7Cancelaste la renta del área&6 {area}&7. Ya no tienes acceso a
+          esta área.'
+      remove:
+        offer:
+          success:
+            land: '&7El territorio&2 {land} &7ya no se puede comprar.'
+            area: '&7El área&6 {area} &7del territorio&2 {land} &7ya no puede ser
+              rentada o comprada. Los inquilinos actuales conservarán el área hasta
+              que termine su renta.'
+        tenant:
+          confirm: |
+            &cPor favor, confirma que deseas pagar&4 {cost} &ccomo compensación al inquilino&4 {player} &cpara expulsarlo:
+              [T]&2✔ Confirmar: &e/{cmd} &8[CLICK][H]&7Haz clic para confirmar esta acción y el pago.[/H][C]{cmd}[/C][/T]
+          success: '&7Expulsaste al inquilino&3 {player} &7del área&6 {area} &7del
+            territorio&2 {land} &7y pagaste&c {cost} &7como compensación.'
+          target: '&cFuiste expulsado como inquilino del área&4 {area} &4del territorio&4
+            {land}&c. &7Te pagaron&c {compensation} &7como compensación.'
+    sell:
+      sell:
+        rented: '&cNo puedes vender un área que está siendo rentada por un jugador.
+          &7El área&6 {area} &7está siendo rentada por&3 {player}&7. Expirará en&5
+          {time}&7.'
+        success:
+          area: |
+            &7Pusiste el área&6 {area} &7en venta. Costo:&c {cost}
+              [T]&8✖ &7Remover oferta: &e/{cmd}[H]&7Haz clic para eliminar esta oferta.[/H][C]{cmd}[/C][/T]
+          land: |
+            &7Pusiste el territorio&2 {land} &7en venta. Costo:&c {cost}
+              [T]&8✖ &7Remover oferta: &e/{cmd}[H]&7Haz clic para eliminar esta oferta.[/H][C]{cmd}[/C][/T]
+        invalid: |
+          &7El formato de tu línea es inválido (línea {line}).
+           &81. línea:&7 Lands
+           &82. línea:&7 sell &8[&7área&8]
+           &83. línea:&7 costo (ejemplo: 5 = 5)
+      buy:
+        owner-cooldown: '&cEl dueño de un territorio sólo puede cambiar cada&4 {cooldown}&c.
+          &7Debes esperar otros&5 {time} &7antes de que el territorio&2 {land} &7pueda
+          ser comprado.'
+        success:
+          area: '&7Compraste el área&6 {area} &7del territorio&2 {land} &7por&c {cost}&7.'
+          land: '&7Compraste el territorio&2 {land} &7por&c {cost}&7.'
+        info:
+          area: |
+            [NoPrefix]
+            &7&m━━━━━━━━━<━&r &5&lComprar Área &7&m━>━━━━━━━━━
+            [T]&7Territorio:&a {land} &8[&8CLICK&8][H]&7Haz clic para visualizar esta área.[/H][C]lands view here[/C][/T]
+             &7Área:&6 {area}
+             &7Costo:&c {cost}
+            &7&m━━━━━━━━━<━&r &5&lComprar Área &7&m━>━━━━━━━━━
+          land: |
+            [NoPrefix]
+            &7&m━━━━━━━━━<━&r &5&lComprar Territorio &7&m━>━━━━━━━━━
+            [T]&7Territorio:&a {land} &8[&8CLICK&8][H]&7Haz clic para visualizar este territorio.[/H][C]lands view[/C][/T]
+            &7Costo:&c {cost}
+            &7&m━━━━━━━━━<━&r &5&lComprar Territorio &7&m━>━━━━━━━━━
+      sold: |
+        [NoPrefix]
+        &7---------<- &5&lÁrea Vendida &7->---------
+        [T]&7Territorio:&a {land} &8[&8CLICK&8][H]&7Haz clic para visualizar esta área.[/H][C]lands view here[/C][/T]
+         &7Área:&6 {area}
+         &7Vendida a&3 {player} &7por&c {cost}&7.
+        &7---------<- &5&lÁrea Vendida &7->---------
+    general:
+      no-permission: '&cNo tienes permiso para hacer esto. &8Necesitas el permiso
+        {permission}.'
+      not-exist: '&cNo existe un territorio o nación con el nombre&4 {object}&c. &7¿Error
+        al escribir?'
+      land-not-exist: '&cEl territorio&2 {land} &cno existe. &7No hay ningún territorio
+        con ese nombre.'
+      area-not-exist: '&cEl área&4 {area} &cno existe en el territorio&4 {land}&c.
+        &7Puedes crear una nueva área en el menú de tu territorio en la sección de
+        áreas. &7¿Error al escribir?'
+      noaccess:
+        untrusted: '&cNo tienes confianza en el territorio&4 {land}&c. &7Usa &e/lands
+          menu &7para ver en qué territorios eres miembro.'
+        land: '&cNo puedes hacer esto para el territorio&4 {land}&c. &8Bandera: {flag}'
+        owner: '&cNo tienes permiso para hacer esto en el territorio&4 {land}&c. &7Sólo
+          el dueño del territorio puede hacerlo. &7Selecciona tu propio territorio
+          &8(/&elands edit &8<&eland&8>) &7o crea uno &8(/&elands create &8<&ename&8>)&7.'
+        area: '&cNo puedes hacer esto en el área&4 {area} &cdel territorio&4 {land}&c.'
+        position:
+          flag: '&cNo puedes hacer esto para el territorio&4 {land} &cen tu posición
+            actual. &8Bandera: {flag}'
+          untrusted: '&cNo puedes hacer esto para el territorio&4 {land} &cen tu posición
+            actual. &7No tienes confianza en este territorio.'
+      no-edit-land: '&cAún no has seleccionado tu territorio a editar. &7Usa &e/lands
+        edit &8<&eland&8> &7para seleccionarlo.'
+      name-exists: '&cEl nombre&4 {name} &cya está siendo usado por otro territorio
+        o nación. &7Necesitas elegir uno distinto.'
+      swear-word: '&cSe detectó una palabra ofensiva. &7Por favor no uses lenguaje
+        inapropiado. Palabra:&c {word}'
+      action:
+        cooldown: '&cNo puedes hacer esto ahora. &7Debes esperar&5 {time}&7.'
+        spam: '&cActualmente tienes otro comando o acción en proceso. &7Por favor
+          espera a que termine y no hagas spam de comandos. &8Acción: {action}'
+      wilderness: '&cAquí no hay ningún territorio reclamado en tu posición actual.
+        &7Por favor, ve a tu territorio para ejecutar esta acción. &7Puedes usar &e/view
+        &7para visualizar las reclamaciones cercanas.'
+      player-self: '&cNo puedes hacer eso contigo mismo.'
+      banks-disabled: '&7Los bancos fueron desactivados por un administrador. &8Pueden
+        habilitarlos en la configuración.'
+      land-not-trusted: '&cEl jugador&4 {player} &7no es parte del territorio&4 {land}&c.
+        Debes confiar en él primero usando &e/lands trust&7.'
+      area-not-trusted: '&cNo puedes hacer eso aquí. &7No tienes confianza en el área&6
+        {area} &7del territorio&2 {land}&7.'
+      number: '&cEl valor introducido&4 {input} &cno es un número. &7El argumento&3
+        {argument} &7debe ser un número.'
+      none: |
+        &cNo perteneces a ningún territorio.
+          [T]&8✖ &7Crea el tuyo: &e/{cmd} &8[CLICK][H]&7Haz clic para copiar.[/H][SC]{cmd}[/SC][/T]
+             &7Cualquier territorio puede invitarte usando: &e/lands trust
+      name:
+        number: '&cNo tienes permitido usar números en este nombre. &7Por favor usa
+          solo letras. Número encontrado:&3 {invalid}'
+        character: '&cNo puedes usar caracteres no válidos en el nombre. &7Por favor
+          usa solo letras y números. &7Carácter inválido encontrado:&3 {invalid}'
+        color: '&cNo tienes permitido usar códigos de color en este nombre. &7Por
+          favor elimina cualquier código de color de tu entrada.'
+        format: '&cNo tienes permitido usar formatos, como texto en negritas, en este
+          nombre. &7Por favor elimina cualquier formato de tu entrada.'
+        length: '&cEste nombre es muy largo. &7La longitud máxima es&3 {max} &7caracteres
+          &8(&7el tuyo: {input}&8)&7. &8Esto incluye códigos de color. &7Proporciona
+          un nombre más corto.'
+        empty: '&cEste nombre no es válido. &7Debes ingresar al menos un carácter
+          que no sea un código de color.'
+      money:
+        fallback: '&7Aviso:&c {cost} &7se ha tomado de tu cuenta personal, porque
+          el banco de tu territorio&2 {land} &7no tenía suficiente dinero dentro.
+          Deposita: &e/{cmd}[T]&8[CLICK][H]&7Haz clic aquí para depositar dinero en
+          el banco del territorio {land}.[/H][SC]{cmd}[/SC][/T]'
+        failure:
+          bank: '&cNo hay suficiente dinero en el banco del territorio&4 {land}&c.
+            &7Deposita&c {cost} &7en el banco de tu territorio: [T]&e/{cmd} &8[CLICK][H]&7Haz
+            clic aquí para depositar {cost} en tu banco.[/H][C]{cmd}[/C][/T]'
+          personal: '&cNo tienes suficiente para pagar el costo. &7Necesitas&c {cost}&7.
+            Tu saldo: {balance}'
+      input:
+        confirm: |
+          &7Por favor confirma esta acción &8(&e/{input}&8) &7haciendo clic abajo:
+            [T]&2✔ Confirmar: &e/{fullcmd} &8[CLICK][H]&7Haz clic para confirmar esta acción.[/H][C]{fullcmd}[/C][/T]
+        land: '&cEl territorio&4 {input} &cno existe. &7No hay ningún territorio con
+          ese nombre.'
+        nation: '&cLa nación&4 {input} &cno existe. &7No hay ninguna nación con ese
+          nombre.'
+        holder: '&cNo hay un territorio o nación con el nombre&4 {input}&c. &7¿Error
+          al escribir?'
+        number: '&cEl valor&4 {input} &cno es un número. &7Argumento {pos}: {expected}'
+        category: '&cEl valor&4 {input} &cno es una categoría. &7Argumento {pos}:
+          {expected}'
+        funds: '&cEl valor&4 {input} &cno coincide con ninguna moneda. &7Argumento
+          {pos}: {expected}'
+        player: '&cNo hay ningún jugador con el nombre&4 {input}&c. &7¿Error al escribir?'
+        offline: '&cNo hay un jugador con el nombre&4 {input} &conectado actualmente.
+          &7¿Error al escribir?'
+        world: '&cEl mundo&4 {input} &cno existe. &7Argumento {pos}: {expected}'
+        world-disabled:
+          general: '&cEsto está desactivado en este mundo. &8Mundo: {input}'
+          claiming: '&cReclamar está desactivado en el mundo en el que estás. &7Ingresa
+            a un mundo donde esté habilitada la posibilidad de reclamar.[V] &8Mundo
+            actual: {input}[/V]'
+        time: '&cEl valor&4 {input} &cno representa un tiempo. &7Argumento {pos}:
+          {expected}. Ejemplo correcto: 1h'
+    create:
+      land-other: '&cNo puedes tener tu propio territorio y ser miembro de otro territorio.
+        &7Debes salir del territorio&2 {land} &7primero.'
+      max:
+        land: '&cNo puedes crear más territorios. &7Alcanzaste tu máximo de&3 {max}
+          &7territorios propios.'
+        camp: '&cNo puedes crear más campamentos. &7Alcanzaste tu máximo de&3 {max}
+          &7campamentos.'
+      success:
+        land: |
+          &7Se creó exitosamente el territorio&2 {land} &7por&c {cost}&7.
+          Se estableció {land} &7como tu territorio a editar para acciones futuras.
+            [T]&7✖ Cambiar territorio a editar: &e/{cmd_edit} &8[CLICK][SC]{cmd_edit}[/SC][H]&7El territorio {land} se estableció como tu territorio a editar para acciones como confiar en jugadores, etc. Haz clic para copiar.[/H][/T]
+            [T]&7✖ Reclamar chunk: &e/{cmd_claim} &8[CLICK][C]{cmd_claim}[/C][H]&7Haz clic para reclamar el chunk donde estás.[/H][/T]
+            [T]&7✖ Reclamar selección: &e/{cmd_selection} &8[CLICK][C]{cmd_selection}[/C][H]&7Haz clic para reclamar una selección de chunks.[/H][/T]
+            [T]&7✖ Confiar en jugadores: &e/{cmd_trust} &8[CLICK][SC]{cmd_trust}[/SC][H]&7Haz clic para copiar.[/H][/T]
+        camp: '&7Creaste el campamento&2 {land} &7en tu posición actual. &7Pagaste&c
+          {cost}&7. El campamento no se puede expandir y expirará en&5 {time}&7.'
+      broadcast: '&7El territorio&2 {land} &7fue creado por&3 {player}&7.'
+    rename:
+      success: '&7Se estableció exitosamente el nuevo nombre&3 {name} &7para el territorio&2
+        {land}&7. Pagaste&c {cost}&7.'
+    edit:
+      success: '&7Entraste al modo edición para el territorio&2 {land}&7. Las siguientes
+        acciones, como &e/lands claim &7o &e/lands trust&7, se aplicarán a este territorio.'
+    selection:
+      max: '&cTu selección tiene demasiados chunks. &7Tamaño:&3 {current} &7Tu máximo
+        es&3 {max} &7chunks.'
+      too-far: '&cEl bloque que estás mirando está demasiado lejos. &7Por favor acércate
+        más.'
+      world: '&cAmbas posiciones deben estar en el mismo mundo. &7Por favor establece
+        la posición uno y la posición dos en el mismo mundo.'
+      pos:
+        warn: '&cAdvertencia: &7Este chunk pertenece a otro plugin de administración:
+          &3 {plugin}'
+        cancelled: '&cNo puedes establecer una selección aquí. &7Este chunk pertenece
+          a otro plugin de administración: &3 {plugin}'
+      area:
+        conflicts: '&cSe encontraron&4 {conflicts} &cconflictos con chunks ya asignados
+          a otras áreas. &7Usa &e/lands selection assign {area} confirm &7para confirmar
+          la sobrescritura. Los conflictos pertenecen a estas áreas: {areas}'
+      expand:
+        y: '&7Expandiste el punto más bajo de la selección &3 {y-min} &7y el más alto
+          &3 {y-max}&7.'
+        enabled: '&7Expandiste tu selección desde abajo hasta arriba (altura mínima
+          y máxima de reclamo).'
+        disabled: '&7Tu selección ya no se expande desde el fondo hasta la parte superior.'
+      status:
+        complete: '#t#&6Selección Completa[newline]&7Reclamar: &e&l/claim &7Desreclamar:
+          &e&l/unclaim[newline]&6&lAsignar selección a subárea: &e&l/assign'
+        progress: '#t#&6Selección[newline]&7Izquierda: {first} &7Derecha: {second}[newline]&6&lEstablecer
+          esquina: &6clic izquierdo/derecho o soltar ítem &7&lCancelar: &7Cambia la
+          ranura de herramienta'
+        reminder: |
+          &7La selección está completa: Puedes ejecutar las siguientes acciones:
+            [T]&7✖ Reclamar: &e/claim &8[&8CLICK&8][H]&7Haz clic para reclamar esta selección.[/H][C]lands claim[/C][/T]
+            [T]&7✖ Desreclamar: &e/unclaim &8[&8CLICK&8][H]&7Haz clic para desreclamar esta selección.[/H][C]lands unclaim[/C][/T]
+            [T]&7✖ Subárea: &e/assign &8[&8CLICK&8][H]&7Asigna esta selección a una subárea.[/H][SC]lands assign <area>[/SC][/T]
+        not-complete: '&cTu selección no está completa. &7Asegúrate de que ambas posiciones
+          estén establecidas. [T]&7Puedes alternar el modo de selección con &e/lands
+          selection &8[&8CLICK&8][H]&7Haz clic para alternar el modo de selección.[/H][C]lands
+          selection[/C][/T]'
+        disabled: '#t#&6Selección[newline]&cModo desactivado'
+    claim:
+      camp: |
+        &cTu campamento&4 {land} &cno puede ser expandido.
+          [T]&7✖ Cambiar territorio: &e/lands edit &8<&eland&8> &8[&8CLICK&8][SC]lands edit[/SC][H]&7Haz clic para copiar este comando.[/H][/T]
+      create:
+        auto: |
+          &7Se creó automáticamente un nuevo territorio&2 {land}&7, porque no tenías uno asignado para reclamar.
+            [T]&7✖ Renombrar: &e/lands rename &8<&ename&8> &8[&8CLICK&8][SC]lands rename[/SC][H]&7Haz clic para copiar este comando.[/H][/T]
+        force_near: |
+          &7Se creó automáticamente un nuevo territorio&2 {land}&7, porque tu anterior territorio no se conectaría con esta reclamación.
+            [T]&7✖ Renombrar: &e/lands rename &8<&ename&8> &8[&8CLICK&8][SC]lands rename[/SC][H]&7Haz clic para copiar este comando.[/H][/T]
+      region:
+        chunk: '&cNo puedes reclamar aquí. &7Este chunk pertenece a otro plugin de
+          administración: {plugin}'
+        selection: '&cNo puedes reclamar esta selección. &7Contiene partes de una
+          región de otro plugin de administración: {plugin}'
+      war: '&cNo puedes reclamar mientras estés en guerra contra {object}&c.'
+      already: '&cNo puedes reclamar este chunk. &7Ya pertenece al territorio&2 {land}&7.'
+      initial:
+        world: "&cPara el territorio&4 {land} &csólo puedes reclamar en el mundo en\
+          \ el que lo creaste inicialmente &8(&4{world}&8)&c. &7Tal vez quieras crear\
+          \ otro territorio para el mundo donde estás &8(&7{current}&8)&7. \n  [T]&7✖\
+          \ Crear: &e/lands create &8<&ename&8> &8[&8CLICK&8][SC]lands create[/SC][H]&7Haz\
+          \ clic para copiar este comando.[/H][/T]\n"
+        server: "&cPara el territorio&4 {land} &csólo puedes reclamar en el servidor\
+          \ en el que lo creaste inicialmente &8(&4{server}&8)&c. &7Tal vez quieras\
+          \ crear otro territorio para el servidor donde estás &8(&7{current}&8)&7.\
+          \ \n  [T]&7✖ Crear: &e/lands create &8<&ename&8> &8[&8CLICK&8][SC]lands\
+          \ create[/SC][H]&7Haz clic para copiar este comando.[/H][/T]\n"
+      chunk-distance:
+        land: '&cEsto está muy cerca del territorio&4 {land}&c. &7La distancia mínima
+          alrededor de territorios que no son parte de una nación es de&3 {distance}
+          chunk(s)&7.'
+        nation: '&cEsto está muy cerca del territorio&4 {land}&c. &7La distancia mínima
+          es de&3 {distance} chunk(s)&7, porque forman parte de una nación.'
+      force-near:
+        far-land: '&cNo puedes reclamar estos chunk(s). &7Tus reclamaciones deben
+          estar conectadas a tu territorio&2 {land}&7.'
+        parts: '&cNo puedes reclamar estos chunk(s). &7Tus reclamaciones deben estar
+          conectadas a tu territorio&2 {land}&7, porque alcanzó su límite de &c{max}
+          &7partes desconectadas.'
+      success: '&7Reclamaste exitosamente este chunk &8(&7Territorio:&2 {land} &7X:
+        {x} Z: {z}&8) &7por&c {cost}&7. El siguiente reclamo costará&c {next}&7.'
+      already-claimed: '&cEn tu selección hay un chunk que ya está reclamado y no
+        pertenece a tu territorio &8(&7X: {x} Z: {z}&8)&c. &7Pertenece al territorio&2
+        {land}&7.'
+      max-chunk: '&cNo puedes reclamar&4 {chunks} &cchunks más para este territorio.
+        &7El máximo para el territorio&2 {land} &7es&3 {max} &7chunks.[V] &8Permiso:
+        lands.chunks.<number>[/V]'
+      selection:
+        success: '&7Reclamaste exitosamente&3 {chunks} &7chunks para tu territorio&2
+          {land}&7. Pagaste&c {cost}&7.'
+      radius:
+        success: '&7Reclamaste exitosamente&3 {chunks} &7chunks en un radio de&7 {radius}
+          &7alrededor de ti para tu territorio&2 {land}&7. Pagaste&c {cost}&7.'
+      fill:
+        none: '&cNo se encontró una forma cerrada. &7Asegúrate de estar en una región
+          no reclamada que esté rodeada por tu reclamo.'
+        success: '&7Reclamaste exitosamente&3 {chunks} &7chunks para tu territorio&2
+          {land} &7para llenar la forma en la que te encontrabas. Pagaste&c {cost}&7.'
+    merge:
+      confirm: |
+        &7Por favor confirma que deseas fusionar el territorio&2 {merge} &7en&2 {land}&7:
+          [T]&2✔ Confirmar: &e/{fullcmd} &8[CLICK][H]&7Haz clic para confirmar esta acción.[/H][C]{fullcmd}[/C][/T]
+      same: '&cNo puedes fusionar el territorio&4 {merge} &cen sí mismo. &7Por favor
+        especifica uno diferente.'
+      max:
+        chunks: '&cNo puedes fusionar el territorio&4 {merge} &cen&4 {land}&c. &7La
+          cantidad total de&3 {chunks} &7chunks excede el límite de&3 {max} &7chunks
+          para tu territorio&2 {land}&7.'
+      connection: '&cNo puedes fusionar el territorio&4 {merge} &cen&4 {land}&c. &7Sus
+        reclamos no están conectados en el mundo&3 {world}&7.'
+      nation: |
+        &cNo puedes fusionar el territorio&4 {merge} &cen&4 {land}&c. &7El territorio&2 {merge} &7es la capital de la nación&9 {nation}&7.
+          [T]&7✖ Cambiar capital: &e/nations setcapital &8<&eland&8>[H]&7Haz clic para cambiar la capital de la nación. Esto te permitirá fusionar el territorio {merge}. Haz clic para copiar.[/H][SC]nations setcapital[/SC][/T]
+      success: '&7Fusionaste exitosamente el territorio&2 {merge} &7con&2 {land}&7.
+        Pagaste&c {cost}&7.'
+    assign:
+      selection: '&cNecesitas crear una selección primero. &7Usa &e/lands selection
+        &7para crearla y luego inténtalo de nuevo.'
+      default: '&cNo puedes asignar la selección al área predeterminada. &7Puedes
+        eliminar áreas en el menú de áreas del territorio.'
+      confirm: |
+        &cTu selección tiene poca altura. &7Las subáreas, a diferencia de las reclamaciones, tienen una altura definida y no se extienden desde abajo hasta arriba por defecto.
+          [T] &7✖ Continuar: &e/{cmd_confirm} &8[CLICK][H]&7Haz clic para continuar.[/H][C]{cmd_confirm}[/C][/T]
+          [T] &7✖ Expandir completamente: &e/{cmd_expand} &8[CLICK][H]&7Haz clic para expandir la selección desde abajo hasta arriba del reclamo.[/H][C]{cmd_expand}[/C][/T]
+      size: '&cTu selección es demasiado pequeña. &7El tamaño mínimo es&3 {min} &7bloques
+        y el tuyo es&3 {current}&7.'
+      success: '&7Redimensionaste exitosamente el área&6 {area} &7del territorio&2
+        {land}&7. Los cambios se han visualizado.'
+      conflict:
+        land: '&cTu selección entra en conflicto con el territorio&4 {land}&c. &7Por
+          favor ajusta tu selección.'
+        area: '&cTu selección entra en conflicto con el área&4 {area}&c. &7Por favor
+          ajusta tu selección.'
+    leave:
+      owner: |
+        &cNo puedes salir de este territorio. &7Como dueño de un territorio puedes eliminarlo o transferir la propiedad.
+          [T]&c✘ Eliminar &8[&8CLICK&8][C]lands delete[/C][H]&7Haz clic para eliminar el territorio&2 {land}&7.[/H][/T]
+          [T]&2✔ Transferir propiedad &8[&8CLICK&8][SC]lands setowner [/SC][H]&7Haz clic para copiar este comando.[/H][/T]
+      land:
+        untrusted: '&7No tienes confianza en ningún área del territorio&2 {land}&7.'
+        success: '&7Saliste exitosamente de todo el territorio&2 {land}&7.'
+      area:
+        untrusted: '&7No tienes confianza en el área&6 {area} &7del territorio&2 {land}&7.'
+        success: '&7Saliste exitosamente del área&6 {area} &7del territorio&2 {land}&7.'
+      confirm: |
+        &7Por favor confirma que deseas salir de todo el territorio&2 {land} &7haciendo clic abajo:
+          [T]&2✔ Confirmar: &e/{fullcmd} &8[CLICK][H]&7Haz clic para confirmar esta acción.[/H][C]{fullcmd}[/C][/T]
+    unclaim:
+      rental: '&cNo puedes desreclamar este chunk&7, porque contiene el área rentada
+        o vendida&6 {area}&7. Remueve al inquilino&3 {player}&7: &e/{cmd}'
+      split: '&cNo puedes desreclamar este chunk, porque provocaría que tu territorio
+        se dividiera en partes. &7Las partes que se separarían ahora están visualizadas.'
+      success: '&7Desreclamaste exitosamente este chunk &8(&7Territorio:&2 {land}
+        &7X: {x} Z: {z}&8)&7. Recuperaste&c {back}&7.'
+      all:
+        success: '&7Desreclamaste exitosamente todos los chunks del territorio&2 {land}
+          &7y recuperaste&3 {back} &7.'
+        confirm: |
+          &7Por favor confirma que deseas desreclamar todos los chunks del territorio&2 {land}&7:
+            [T]&2✔ Confirmar: &e/{fullcmd} &8[CLICK][H]&7Haz clic para confirmar esta acción.[/H][C]{fullcmd}[/C][/T]
+      selection:
+        empty: '&cNo desreclamaste ningún chunk, porque no están reclamados o no tienes
+          permiso para desreclamar ninguno de ellos.'
+        rental: '&cNo puedes desreclamar esta selección&7, porque contiene el área
+          rentada o vendida&6 {area} &7del territorio&2 {land}&7. Remueve al inquilino&3
+          {player}&7: &e/{cmd}'
+        split: '&7Desreclamaste {success} / {size} chunks de esta selección, &cpero
+          {failed} no pudieron desreclamarse porque tu territorio se dividiría en
+          partes &8(un administrador puede desactivar esto en la config)&7. Las partes
+          que se separarían ahora están visualizadas. Recuperaste&c {back} &7.'
+        partly: '&7Desreclamaste exitosamente {success} / {size} chunks de esta selección.
+          Recuperaste&c {back} &7.'
+        success: '&7Desreclamaste exitosamente todos los chunks de esta selección.
+          Recuperaste&c {back} &7.'
+    delete:
+      area:
+        sub: |
+          &cNo se encontró una subárea en tu posición actual. &7Si quieres eliminar todo el territorio, ejecuta el siguiente comando.
+            [T]&7✖ Eliminar territorio: &e/{cmd} &8[CLICK][H]&7Eliminar el territorio&2 {land}&7.[/H][C]{cmd}[/C][/T]
+        rented: "&cNo puedes eliminar esta área, porque está rentada o comprada por&4\
+          \ {player}&c. \n  [T]&7✖ Remover inquilino: &e/{cmd} &8[CLICK][H]&7Haz clic\
+          \ para remover al inquilino.[/H][C]{cmd}[/C][/T]'\n"
+        success: '&7Eliminaste exitosamente el área&6 {area} &7del territorio&2 {land}&7.'
+      land:
+        confirm: |
+          &7Por favor confirma la eliminación del territorio&2 {land} &7haciendo clic abajo:
+            [T]&2✔ Confirmar: &e/{fullcmd} &8[CLICK][H]&7Haz clic para confirmar esta acción.[/H][C]{fullcmd}[/C][/T]
+        nation: '&cNo puedes eliminar este territorio porque es la capital de la nación&4
+          {nation}&c. &7Primero elimina la nación: &e/nations delete'
+        broadcast: '&7El territorio&2 {land} &7fue eliminado por&3 {player}&7.'
+        rented: "&cNo puedes eliminar este territorio, porque su área&4 {area} &cestá\
+          \ rentada o comprada por&4 {player}&c. \n  [T]&7✖ &7Para remover al inquilino,\
+          \ usa &e/{cmd} &8[CLICK] &7mientras estás en esa área.[H]&7Haz clic para\
+          \ remover al inquilino.[/H][C]{cmd}[/C][/T]'\n"
+        success: '&7Eliminaste exitosamente tu territorio&2 {land}&7. Recuperaste&e
+          {back} &7.'
+    trust:
+      own-land: '&cEl jugador&4 {player} &cno puede ser invitado a unirse a otro territorio.
+        &7No tiene permitido tener su propio territorio y ser miembro de otro territorio
+        al mismo tiempo. Debe eliminar su territorio&2 {land} &7primero.'
+      max-lands: '&7El jugador&3 {player} &7ya alcanzó la cantidad máxima de territorios.[V]
+        &8Permiso: lands.lands.<number>[/V]'
+      max-members: '&cNo se pudo confiar en el jugador&4 {player} &cen el territorio&4
+        {land}&c. &7Tu territorio&2 {land} &7alcanzó su máximo de&3 {members} &7miembros.'
+      max: '&cEl jugador&4 {player} &cno puede unirse a más territorios. &7Alcanzó
+        su máximo de&3 {max} &7territorios.[V] &8Permiso: lands.lands.<number>[/V]'
+      flag: '&cEl jugador&4 {player}&c no desea recibir invitaciones de ningún territorio.
+        &7Puede cambiar esto en su menú con &8/&3{cmd}&7.'
+      server-admin: '&7Confiando directamente en este jugador, a pesar de que las
+        invitaciones estén habilitadas, porque tienes permisos de administrador del
+        servidor. &8Permiso: {permission}'
+      area:
+        invited: '&cEl jugador&4 {player} &cya fue invitado al área&4 {area} &cdel
+          territorio&4 {land}&c. &7La invitación fue enviada hace&5 {time}&7.'
+        trusted: '&7El jugador&3 {player} &7ya tiene confianza en el área&6 {area}
+          &7del territorio&2 {land}&7.'
+        banned: |
+          &cNo puedes confiar en el jugador&4 {player}&c en el área&4 {area}&c del territorio&4 {land}&c. &7Está bloqueado.
+            [T]&2✔ Desbloquear: &e/{cmd} &8[&8CLICK&8][H]&7Haz clic para desbloquear a este jugador.[/H][C]{cmd}[/C][/T]
+        success: '&7Invitaste exitosamente al jugador&3 {player} &7al área&6 {area}
+          &7del territorio&2 {land}&7. Ahora puede aceptar tu invitación.'
+        target: |
+          [T]&7El jugador&3 {player} &7te invitó a unirte al área&6 {area} &7de su territorio&2 {land}&7.[H]&7Haz clic para abrir tu menú de invitaciones.[/H][C]lands invites[/C][/T] &7Impuestos:&c {tax}
+            [T]&2✔ Aceptar: &e/{cmd_accept} &8[&8CLICK&8][H]&7Haz clic para aceptar esta invitación.[/H][C]{cmd_accept}[/C][/T]
+            [T]&c✘ Rechazar: &e/{cmd_deny} &8[&8CLICK&8][H]&7Haz clic para rechazar esta invitación.[/H][C]{cmd_deny}[/C][/T]
+      land:
+        invited: '&cEl jugador&4 {player} &cya fue invitado a todo el territorio&4
+          {land}&c. &7La invitación fue enviada hace&5 {time}&7.'
+        trusted: '&7El jugador&3 {player} &7ya tiene confianza en el territorio&2
+          {land}&7.'
+        banned: |
+          &cNo puedes confiar en el jugador&4 {player}&c en el territorio&4 {land}&c. &7Está bloqueado en todo el territorio.
+            [T]&2✔ Desbloquear: &e/{cmd} &8[&8CLICK&8][H]&7Haz clic para desbloquear a este jugador de todo el territorio.[/H][C]{cmd}[/C][/T]
+        success: '&7Invitaste exitosamente al jugador&3 {player} &7a todo el territorio&2
+          {land}&7. Ahora puede aceptar tu invitación.'
+        target: |
+          [T]&7El jugador&3 {player} &7te invitó a unirte a su territorio&2 {land}&7.[H]&7Haz clic para abrir tu menú de invitaciones.[/H][C]{cmd_invites}[/C][/T] &7Impuestos:&c {tax}
+            [T]&2✔ Aceptar: &e/{cmd_accept} &8[&8CLICK&8][H]&7Haz clic para aceptar esta invitación.[/H][C]{cmd_accept}[/C][/T]
+            [T]&c✘ Rechazar: &e/{cmd_deny} &8[&8CLICK&8][H]&7Haz clic para rechazar esta invitación.[/H][C]{cmd_deny}[/C][/T]
+    untrust:
+      owner: '&cNo puedes quitar la confianza al dueño de un territorio. [T]&7Nuevos
+        dueños pueden establecerse con &e/{cmd}&7. &8[CLICK][H]&7Haz clic para copiar
+        este comando.[/H][SC]{cmd}[/SC][/T]'
+      area:
+        already: '&7El jugador&3 {player} &7no tiene confianza en esta área &8(&7Área:&6
+          {area} &7Territorio:&2 {land}&8) &7y no tenía invitaciones previas.'
+        revoke: '&7Revocaste exitosamente la invitación del jugador&3 {player} &7en
+          esta área &8(&7Área:&6 {area} &7Territorio:&2 {land}&8)&7. El jugador ya
+          no tiene confianza.'
+        success: '&7Removiste exitosamente la confianza del jugador&3 {player} &7en
+          esta área &8(&7Área:&6 {area} &7Territorio:&2 {land}&8)&7.'
+        rental: '&cNo puedes quitarle la confianza al inquilino&4 {player} &cdel área&4
+          {area}&c. &7Para remover el área de renta, usa &e/lands rent remove &7estando
+          sobre el área.'
+      land:
+        already: '&7El jugador&3 {player} &7no tiene confianza en ninguna de las áreas
+          del territorio&2 {land} &7y no tenía invitaciones.'
+        revoke: '&7Revocaste exitosamente la invitación del jugador&3 {player} &7para
+          todo el territorio&2 {land}&7. El jugador ya no tiene confianza en ninguna
+          área.'
+        success: '&7Removiste exitosamente la confianza del jugador&3 {player} &7en
+          todo el territorio&2 {land}&7, excepto en las áreas que haya rentado/comprado.'
+    setrole:
+      cant-set:
+        owner: |
+          &cNo puedes asignar el rol&4 {role}&c. &7Si quieres cambiar el dueño de todo el territorio&2 {land}&7, usa el siguiente comando:
+            [T]&7✖ Cambiar dueño: &e/{cmd} &8[CLICK][H]&7Haz clic para establecer a&3 {player} &7como dueño del territorio&2 {land}&7.[/H][C]{cmd}[/C][/T]
+        ally: '&cNo puedes asignar el rol&4 {role}&c. &7Este rol se asigna automáticamente
+          a los jugadores que forman parte de un territorio o nación aliada.'
+        nation: '&cNo puedes asignar el rol&4 {role}&c. &7Este rol se asigna automáticamente
+          a jugadores que pertenecen a la misma nación que el territorio &2{land}&7.'
+        visitor: |
+          &cNo puedes asignar el rol&4 {role}&c. &7Si deseas quitar la confianza de este jugador, usa el siguiente comando:
+            [T]&7✖ Quitar confianza: &e/{cmd} &8[CLICK][H]&7Haz clic para quitar la confianza al jugador&3 {player}&7.[/H][C]{cmd}[/C][/T]
+        tenant: '&cNo puedes asignar el rol&4 {role}&c. &7Debe obtenerse a través
+          de una renta o un letrero de venta: {wiki}'
+      land:
+        untrusted: '&cEl jugador&4 {player} &cno tiene confianza en el territorio&4
+          {land}&c. &7Primero confía en él.'
+        success: '&7Asignaste exitosamente el rol&3 {role} &7al jugador&3 {player}
+          &7en las áreas del territorio&2 {land}&7, en las que tiene confianza.'
+      area:
+        untrusted: '&cEl jugador&4 {player} &cno tiene confianza en el área&4 {area}
+          &cdel territorio&4 {land}&c. &7Primero confía en él.'
+        success: '&7Asignaste exitosamente el rol&3 {role} &7al jugador&3 {player}
+          &7en el área&6 {area} &7del territorio&2 {land}&7.'
+    accept:
+      max: '&cNo puedes formar parte de más territorios. &7Alcanzaste tu máximo de&3
+        {max} &7territorios.[V] &8Permiso: lands.lands.<number>[/V]'
+      not-exist: '&cNo tienes una invitación del territorio&4 {land} &co expiró. &7Por
+        favor revisa tu entrada.'
+      own-land: '&cNo puedes unirte a otro territorio. &7No tienes permitido tener
+        tu propio territorio y ser miembro de otro. &7Debes eliminar tu territorio&2
+        {land} &7primero.'
+      max-lands: '&cNo puedes unirte a más territorios. &7Solo puedes tener&3 {max}
+        &7territorios.[V] &8Permiso: lands.lands.<number>[/V]'
+      banned: '&cNo puedes unirte al área&4 {area}&7 del territorio&4 {land}&c. &7Te
+        bloquearon en esta área.'
+      max-members: '&cActualmente no puedes unirte al territorio&4 {land}&c. &7Ellos
+        alcanzaron su máximo de&3 {members} &7miembros.'
+      war: '&cNo puedes unirte actualmente al territorio&4 {land}&c porque está en
+        guerra contra {object}&c. &7Intenta de nuevo cuando su guerra termine.'
+      notification: "&7Tienes&3 {invites} &7invitaciones de otros territorios. \n\n\
+        \ [T]&7Ver recibidas: &e/{cmd} &8[CLICK][H]&7Ver todas las invitaciones recibidas\
+        \ de otros territorios.[/H][C]{cmd}[/C][/T]\n"
+      area:
+        success: '&7Aceptaste exitosamente la invitación del territorio&2 {land} &7para
+          el área&6 {area}&7.'
+        broadcast: '&2{land} &8| &7El jugador&3 {player} &7ahora es miembro del área&6
+          {area} &7de nuestro territorio.'
+      land:
+        success: '&7Aceptaste exitosamente la invitación del territorio&2 {land} &7para
+          tener confianza en todo el territorio.'
+        owner: '&7Aceptaste la invitación del territorio&2 {land}&7. Ahora eres el
+          dueño del territorio&2 {land}&7.'
+        broadcast: '&2{land} &8| &7El jugador&3 {player} &7ahora es miembro de nuestro
+          territorio.'
+    setowner:
+      confirm: |
+        &7Por favor confirma que deseas establecer al jugador {player} como el nuevo dueño del territorio&2 {land}&7:
+          [T]&2✔ Confirmar: &e/{fullcmd} &8[CLICK][H]&7Haz clic para confirmar esta acción.[/H][C]{fullcmd}[/C][/T]
+      max:
+        ownlands: '&cEl jugador&4 {player} &cno puede ser dueño de más territorios.
+          &7Ya alcanzó su máximo de&3 {max} &7territorios propios.'
+        chunks: '&cEl jugador&4 {player} &cno puede ser dueño de este territorio.
+          &7Tiene&3 {chunks} &7chunks, lo cual excede su máximo de&4 {max} &7chunks
+          para este territorio.'
+      cooldown: '&cEl dueño sólo se puede cambiar cada&4 {cooldown}&c. &7Debes esperar
+        otros&5 {time}&7.'
+      success:
+        invited: '&7Invitaste exitosamente al jugador&3 {player} &7para convertirse
+          en el nuevo dueño del territorio&2 {land}&7.'
+        set: '&7Estableciste exitosamente al jugador&3 {player} &7como nuevo dueño
+          del territorio&2 {land}&7.'
+        target: |
+          [T]&7El jugador&3 {player} &7te invitó a convertirte en el nuevo dueño del territorio&2 {land}&7.[H]&7Haz clic para abrir tu menú de invitaciones.[/H][C]lands invites[/C][/T] &7Mantenimiento:&c {upkeep}
+            [T]&2✔ Aceptar: &e/{cmd_accept} &8[&8CLICK&8][H]&7Haz clic para aceptar esta invitación.[/H][C]{cmd_accept}[/C][/T]
+            [T]&c✘ Rechazar: &e/{cmd_deny} &8[&8CLICK&8][H]&7Haz clic para rechazar esta invitación.[/H][C]{cmd_deny}[/C][/T]
+    deny:
+      not-exist: '&cNo tienes una invitación del territorio&4 {land} &co expiró. &7¿Error
+        al escribir?'
+      success: '&7Rechazaste exitosamente la invitación del territorio&2 {land}&7.'
+    teleport:
+      chunk-not-claimed: '&cEl chunk de destino no está reclamado &8(&7X: {x} &7Z:
+        {z}&8)&c.'
+      not-trusted: '&cNo puedes teletransportarte a esta ubicación. &7No tienes confianza
+        en el territorio&2 {land}&7.'
+      success: '&7Teletransportado exitosamente a X:&3 {x} &7Z:&3 {z} &7Reclamado:
+        {claimed}'
+    setspawn:
+      wilderness: '&cSolo puedes establecer el spawn del territorio dentro de tu territorio.
+        &7Debes moverte hacia tu territorio&2 {land}&7 o más arriba/abajo hasta él.'
+      success: '#t#&6Punto de aparición establecido[newline]&7Costo:&c {cost}'
+    spawn:
+      not-exist: '&cNo hay un spawn configurado para el territorio&4 {land}&c. &7Alguien
+        debe establecerlo primero con &e/lands setspawn&7.'
+      not-allowed: '&cNo tienes permiso para teletransportarte al spawn del territorio&4
+        {land}&c. &7Deben darte permiso en la configuración de su rol.'
+      war: '&cNo puedes teletransportarte actualmente al spawn del territorio&4 {land}&c.
+        &7Están en guerra, la cual termina en&5 {time}&7.'
+      chunk: '&7El territorio&2 {land} &7no tiene un spawn configurado &8(&e/lands
+        setspawn&8). &7Fuiste teletransportado a la reclamación inicial de este territorio.'
+      success: '&7Teletransportado exitosamente al spawn del territorio&2 {land} &7Costo:&c
+        {cost}'
+      area:
+        cooldown: '&cNo puedes teletransportarte a spawns de áreas en este momento.
+          &7Necesitas esperar &5{time} &7antes de poder teletransportarte a una área
+          nuevamente.'
+        none: '&cEl área&4 {area} &cdel territorio&4 {land} &cno tiene un spawn configurado.'
+        teleport: '&cNo tienes permiso para teletransportarte a esta área. &7El dueño
+          del territorio puede darte permiso.'
+        enter: '&cNo tienes permiso para entrar a esta área. &7El dueño del territorio
+          puede darte permiso.'
+        success: '&7Teletransportado exitosamente al spawn del área&6 {area} &7del
+          territorio&2 {land}&7.'
+    wild:
+      perm: '&cNo tienes permiso para usar el teletransporte aleatorio en el mundo&4
+        {world}&c. &8Te falta el permiso {perm} para este mundo.'
+      no-location: '&cNo se encontró una ubicación segura que coincida con las configuraciones
+        en config. &8Por favor ajusta tus valores de distancia máxima y mínima y establece
+        el spawn del mundo (/setworldspawn).'
+      searching: '#t#&6Buscando[newline]&7Destino...'
+      success: '&7Fuiste teletransportado aleatoriamente &8(&7X: {x} Z: {z}&8)&7.
+        Pagaste&c {cost}&7.'
+    deposit:
+      number: '&7Necesitas especificar una cantidad de dinero. Usa &e/lands deposit
+        &8<&eamount&8> &7o &e/lands deposit &8<&eland&8> <&3cantidad&8>&7.'
+      partly: '&cSolo se depositaron&4 {cost} &cde los&4 {input} &7proporcionados,
+        porque el banco del territorio&2 {land} &7alcanzó su saldo máximo de&3 {max}&7.'
+      success: '&7Depositaste exitosamente&3 {cost} &7en el banco del territorio&2
+        {land}&7. &7Nuevo saldo del banco:&3 {bank}'
+    withdraw:
+      number: '&7Necesitas especificar una cantidad de dinero. Usa &e/lands withdraw
+        &8<&eamount&8> &7o &e/lands withdraw &8<&eland&8> <&3cantidad&8>&7.'
+      balance: '&cNo hay suficiente dinero en el banco del territorio&4 {land}&c.
+        &7Solo hay &3 {bank} &7disponible. Se esperaba:&3 {take}'
+      failed: '&cLa retirada falló. &7Es posible que el servidor limite la cantidad
+        de fondos que puedes retirar.'
+      success: '&7Retiraste exitosamente&3 {cost} &7del banco del territorio&2 {land}&7.
+        &7Nuevo saldo del banco:&3 {bank}'
+    balance: '&7El saldo del territorio&2 {land} &7es&3 {balance}'
+    ban:
+      area:
+        already: '&7El jugador&3 {player} &7ya está bloqueado en el área&6 {area}
+          &7del territorio&2 {land}&7.'
+        success: '&7Bloqueaste exitosamente al jugador&3 {player} &7en el área&6 {area}
+          &7del territorio&2 {land}&7. No podrá entrar ni teletransportarse a este
+          spawn si está ubicado en esta área.'
+        target: '&cEl territorio&4 {land} &cte bloqueó de su área&4 {area} &cen su
+          territorio. &7No podrás entrar ni teletransportarte a este spawn si está
+          ubicado en esta área.'
+      land:
+        already: '&7El jugador&3 {player} &7ya está bloqueado en todo el territorio&2
+          {land}&7.'
+        success: '&7Bloqueaste exitosamente al jugador&3 {player} &7de todo el territorio&2
+          {land}&7. No podrá entrar a ninguna área ni teletransportarse al spawn.'
+        tenant: '&cNo puedes bloquear al jugador&4 {player}&c de todo el territorio&4
+          {land}&c, porque es el inquilino del área&4 {area}&c. &7Remueve al inquilino:
+          &e/{cmd}'
+        target: '&cEl territorio&4 {land} &cte bloqueó completamente.&c. &7No podrás
+          entrar a ninguna de sus áreas ni teletransportarte a su spawn.'
+    unban:
+      area:
+        success: '&7Desbloqueaste exitosamente al jugador&3 {player} &7de esta área
+          &8(&7Área:&6 {area} &7Territorio:&2 {land}&8)&7.'
+      land:
+        success: '&7Desbloqueaste exitosamente al jugador&3 {player} &7del territorio&2
+          {land}&7.'
+    chat:
+      activated: '&7Modo de chat de territorio activado. Envía un mensaje en el chat
+        público para hablar con tu territorio.'
+      deactivated: '&7Desactivaste exitosamente el chat del territorio.'
+      none: "&cNo se encontró un territorio para el chat. \n  [T]&7✖ &7Desactivar\
+        \ modo chat: &e/{cmd} &8[&8CLICK&8][H]&7Haz clic para desactivar el modo chat.[/H][C]{cmd}[/C][/T]\n"
+      format:
+        minecraft: '[NoPrefix]&2{land} &8| {role} &7{player_display} &8»&f {message}'
+        discord: '[NoPrefix]&2{land} &8| &9Discord &7{player_display} &8»&f {message}'
+        spy: '[NoPrefix]&8[&cChatSpy&8] &2{land} &8| {role} &7{player_display} &8»&f
+          {message}'
+    view:
+      disabled: '&7Desactivaste exitosamente la visualización actual.'
+      wilderness: '&7Activaste la visualización de reclamos. &7Tu posición actual
+        es zona salvaje.'
+      tool: '&7La posición que señalas está en zona salvaje. [T]&7Reclámala: &e/{cmd}
+        &8[CLICK][H]&7Haz clic para reclamar el chunk que estás señalando.[/H][C]{fullcmd}[/C][/T]'
+      y-level: '&7La posición actual es zona salvaje, pero el chunk ya está reclamado
+        por el territorio&2 {land} &7en un nivel de altura diferente.'
+      y-lock:
+        enabled: '&cActivaste el modo y-lock: &7Las fronteras del territorio ya no
+          seguirán tu altura hacia arriba o abajo.'
+        disabled: '&aDesactivaste el modo y-lock: &7Las fronteras del territorio seguirán
+          tu altura hacia arriba o abajo.'
+      info: |
+        [NoPrefix]
+        &7&m━━━━━━━━━<━&r &5&lVista de Territorio &7&m━>━━━━━━━━━
+        [T]&8• &7Territorio: &2{land} &8[&8CLICK&8][H]&7Haz clic para obtener más información sobre este territorio.[/H][C]{cmd}[/C][/T]
+        &8• &7Nivel: {level}
+        &8• &7Nación: {nation}
+        &8• &7Chunk &7X: {x}, Z: {z}, reclamado en {date}
+        &7&lÁrea:&6 {area}
+         &8• &7Impuesto:&c {tax}
+         &8• &7Jugadores:&7 {players}
+         &8• &7Descripción:&r {description}
+        &7&m━━━━━━━━━<━&r &5&lVista de Territorio &7&m━>━━━━━━━━━
+      area: |
+        [NoPrefix]
+        &7&m━━━━━━━━━<━&r &5&lVista de Área &7&m━>━━━━━━━━━
+        [T]&8• &7Territorio: &2{land} &8[&8CLICK&8][H]&7Haz clic para obtener más información sobre este territorio.[/H][C]lands info {land}[/C][/T]
+        &8• &7Nivel: {level}
+        [T]&7&lÁrea:&6 {area} &8[&8CLICK&8][H]&7Haz clic para obtener más información sobre esta área.[/H][C]lands menu here[/C][/T]
+         &8• &7Impuesto:&c {tax}
+         &8• &7Jugadores:&7 {players}
+         &8• &7Descripción:&r {description}
+        &7&m━━━━━━━━━<━&r &5&lVista de Área &7&m━>━━━━━━━━━
+    map:
+      header: '&7&m━━━━━━━━━━<━&r &2Mapa de Estados &7&m━>━━━━━━━━━━[newline]'
+      footer: '[newline]&7&m━━━━━━━━━━<━&r &2Mapa de Estados &7&m━>━━━━━━━━━━'
+      link: '[T]&7Enlace a dynmap: &8[CLICK][H]&7Haz clic para abrir dynmap.[/H][URL]{dynmap}[/URL][/T]'
+    unstuck:
+      success: '&7Teletransportado exitosamente a la ubicación libre más cercana.'
+    taxes:
+      none: '&7No tienes pagos de impuestos pendientes.'
+      upcoming:
+        header: '[NoPrefix]&7&m━━━━━━━━━<━&r &cPróximos Impuestos &7&m━>━━━━━━━━━'
+        entry: '[NoPrefix]&8- &7{land}: &c{tax}'
+        footer: |
+          [NoPrefix]&7Necesitas pagar un total de {total} en &5{next}&7.
+          &7Saldo: {balance}
+          &7&m━━━━━━━━━<━&r &cPróximos Impuestos &7&m━>━━━━━━━━━
+      changes:
+        header: |
+          [NoPrefix]
+          &7&m━━━━━━━━━<━&r &4Cambio de Impuestos &7&m━>━━━━━━━━━
+          &cLos impuestos han cambiado en algunos territorios:
+        entry: '[NoPrefix]&8- &7{land}: {color}{tax} &8(antes: {previous})'
+        footer: |
+          [NoPrefix]
+          &7Pago en:&5 {next}
+          &7Saldo: {balance}
+          &8Más info: /lands taxes
+          &7&m━━━━━━━━━<━&r &4Cambio de Impuestos &7&m━>━━━━━━━━━
+    upkeep:
+      broadcast:
+        reminder: '&cEl mantenimiento se cobrará en&4 {time}&c. &7Asegúrate de tener
+          suficiente dinero en el banco de tu territorio o en la capital de tu nación.'
+        collected: "[NoPrefix][I]&7&m━━━━━━━━━<━&r &cMantenimiento Cobrado &7&m━>━\
+          ━━━━━━━━[/I]\n&8• &2Estados:&c {lands_upkeep} &7de&3 {lands} &7territorios\
+          \ \n   &7Se desreclamaron un total de&3 {chunks} &7chunks. [I]&8[INFO&8][H]&7Los\
+          \ chunks se desreclamarán si un territorio no puede pagar el mantenimiento.[/H][/I]\n\
+          &8• &9Naciones:&c {nations_upkeep} &7de&3 {nations} &7naciones\n   &7Se\
+          \ eliminaron&3 {nations_deleted} &7naciones. [I]&8[INFO&8][H]&7Las naciones\
+          \ se eliminarán si no pueden pagar su mantenimiento.[/H][/I]\n[I]&7&m━━━\
+          ━━━━━━<━&r &cMantenimiento Cobrado &7&m━>━━━━━━━━━[/I]\n"
+      none: '&7Actualmente no tienes que pagar mantenimiento por ningún territorio.'
+      header: '[NoPrefix]&7&m━━━━━━━━━<━&r &cPróximo Mantenimiento &7&m━>━━━━━━━━━'
+      entry: '[NoPrefix][T]{covered} {land}: {upkeep_form} &8[CLICK][C]{cmd}[/C][H]&7Haz
+        clic para depositar el dinero requerido.[/H][/T]'
+      footer: |
+        [NoPrefix]&7Tus territorios deben pagar un total de {total} en &5{next} &7para mantener todos los reclamos o la membresía en su nación. &7Haz clic arriba para depositar dinero en los bancos de tus territorios.
+        &7&m━━━━━━━━━<━&r &cPróximo Mantenimiento &7&m━>━━━━━━━━━
+    relations:
+      self: '&cNo puedes añadir&4 {object} &ccomo aliado o enemigo de sí mismo.'
+      nation: '&cTodas las relaciones son administradas por la nación&4 {nation}&c,
+        a la cual pertenece tu territorio.'
+      allies:
+        add:
+          max: '&4{object} &cno puede tener más aliados. &7Alcanzó su máximo de&3
+            {max} &7aliados.'
+          already: '&7{target} &7ya es aliado de {object}&7.'
+          sent: '&7Ya enviaste una oferta de relación a {object}&5 {time}&7 atrás.'
+          nation: |
+            &cNo puedes aliarte con el territorio&4 {land}&c. &7Ese territorio está gobernado por la nación&9 {nation}&7.
+              [T]&7✖ Envía solicitud de alianza a la nación&9 {nation} &7en su lugar: &e/{cmd} &8[CLICK][H]&7Haz clic aquí para enviar una solicitud de alianza a la nación&9 {nation}&7.[/H][C]{cmd}[/C][/T]
+          success: '&7Se envió exitosamente la oferta de alianza a {target}&7. Si
+            ellos aceptan, tú &8(&7{object}&8) &7estarás aliado con ellos.'
+        remove:
+          already: '&7{target} &7no es aliado de {object}&7.'
+          revoked: '&7Tú &8(&7{object}&8) revocaste la oferta de alianza para {target}&7.'
+          broadcast: '&7{object} &7y {target} &7ya no son aliados.'
+          success: '&7Removiste exitosamente a {target}&7 de tus aliados. Tú &8(&7{object}&8)
+            &7ya no estás aliado con ellos.'
+      enemies:
+        add:
+          max: '&4{object} &cno puede tener más enemigos. &7Alcanzó su máximo de&3
+            {max} &7enemigos.'
+          already: '&7{target} &7ya es enemigo de {object}&7.'
+          revoked: '&7Tú &8(&7{object}&8) revocaste la oferta de neutralización para
+            {target}&7.'
+          nation: |
+            &cNo puedes declarar como enemigo al territorio&4 {land}&c. &7El territorio está gobernado por la nación&9 {nation}&7.
+              [T]&7✖ Declara como enemigo a la nación&9 {nation} &7en su lugar: &e/{cmd} &8[CLICK][H]&7Haz clic para declarar enemiga a la nación&9 {nation}&7.[/H][C]{cmd}[/C][/T]
+          success: '&7Tú &8(&7{object}&8) &7y {target} &7ahora son enemigos.'
+          broadcast: '&7{object} &7y {target} &7ahora son enemigos.'
+        remove:
+          already: '&7{target} &7no es enemigo de&7 {object}&7.'
+          sent: '&7Ya enviaste una oferta de neutralización a {object}&5 {time}&7
+            atrás.'
+          success: '&7Se envió exitosamente una oferta de neutralización a {target}&7.
+            Si ellos aceptan, tú &8(&7{object}&8) &7ya no serán enemigos.'
+    confirmtp:
+      none: '&cNo tienes ningún teletransporte activo.'
+    admin:
+      listperms:
+        header: '[NoPrefix][T]&7----------&e&l<<<<&7-[H]&7Haz clic aquí para ir a
+          la página anterior.[/H][C]{cmd} {player} {previous}[/C][/T] &2Permisos List
+          &7Página&3 {page} &8/&3 {pages} [T]&7-&e&l>>>>&7----------[H]&7Haz clic
+          aquí para ir a la siguiente página.[/H][C]{cmd} {player} {next}[/C][/T]'
+        footer: |
+          [NoPrefix]
+          &cEl jugador &4{player} &ctiene estos permisos, porque se establecieron en tu plugin de permisos (perm.*) o individualmente. &7Haz clic en las flechas de abajo para navegar.
+
+           &cRojo = perms comodín (wildcard)
+           &eAmarillo = perms numerados
+          [T]&7----------&e&l<<<<&7-[H]&7Haz clic aquí para ir a la página anterior.[/H][C]{cmd} {player} {previous}[/C][/T] &2Permisos List &7Página&3 {page} &8/&3 {pages} [T]&7-&e&l>>>>&7----------[H]&7Haz clic aquí para ir a la siguiente página.[/H][C]{cmd} {player} {next}[/C][/T]
+      land:
+        addrole:
+          confirm: |
+            &cEjecutar este comando puede llevar a que los territorios tengan el mismo rol varias veces. &7Por ejemplo, territorios recién creados que ya tienen este rol heredado de roles.yml. Además, ejecutar este comando varias veces para el mismo rol causará duplicados de rol en los territorios afectados. &7Por favor confirma esta acción:
+              [T]&2✔ Confirmar: &e/{fullcmd} &8[CLICK][H]&7Haz clic para confirmar esta acción.[/H][C]{fullcmd}[/C][/T]
+wars:
+  message:
+    noaccess:
+      wilderness: '&cNo puedes hacer esto en zona salvaje mientras estés en guerra.
+        &8Bandera: {flag}'
+      general: '&cNo puedes hacer esto en tu guerra actual contra el territorio&4
+        {land}&c. &8Bandera: {flag}'
+      pillage: '&cNo puedes saquear el territorio&4 {land} &csi no hay suficientes
+        defensores en línea. &7Espera hasta que al menos&3 {defenders} &7defensor(es)
+        del territorio&2 {land} &7estén en línea.'
+    start:
+      broadcast: '&7La guerra entre {attacker} &7y {defender} &7ha comenzado. Terminará
+        en&5 {time}&7.'
+    end:
+      broadcast: '&7La guerra entre {attacker} &7y {defender} &7ha terminado. Duró&5
+        {time}&7.'
+      surrender: '{object} &7se rindió. La guerra terminó y pagaron&c {tribute} &7a
+        su enemigo {enemy}&7.'
+      draw: '&7La guerra entre {attacker} &7y {defender} &7terminó en un empate. Duró&5
+        {time}&7.'
+    kill:
+      target:
+        attackers: '&7Nuestro compañero&a {attacker} &7fue asesinado por el defensor&c
+          {defender}&7.'
+        defenders: '&7Nuestro compañero&a {defender} &7fue asesinado por el atacante&c
+          {attacker}&7.'
+      killer:
+        attackers: '&7Nuestro compañero&a {attacker} &7mató al defensor&c {defender}&7:
+          &a+ {points} puntos'
+        defenders: '&7Nuestro compañero&a {defender} &7mató al atacante&c {attacker}&7:
+          &a+ {points} puntos'
+    capture:
+      place:
+        wilderness: '&cNo puedes colocar una bandera de captura en zona salvaje. &7Debes
+          colocarla dentro de un territorio enemigo.'
+        overlap: '&cLos bloques de captura deben colocarse de tal manera que la baliza
+          no se superponga con la zona salvaje.'
+        region: '&cNo se puede colocar la bandera de captura aquí. &7Se superpone
+          con la región de captura de otra bandera.'
+        outskirts: '&cNo se puede colocar la bandera de captura aquí. &7Debes colocarla
+          en las afueras del territorio.'
+        state: '&cActualmente no estás en guerra contra el territorio&4 {land} &co
+          la guerra no ha comenzado aún.'
+        y: '&cNo puedes colocar la bandera de captura aquí. &7Debe colocarse entre&3
+          {min} &7y&3 {max} &7bloques de altura.'
+        already: '&cNo puedes colocar la bandera de captura aquí. &7Ya hay una bandera
+          de captura en este chunk.'
+        space: '&cNo se puede colocar la bandera de captura aquí. &7No hay suficiente
+          espacio en esta posición.'
+        cooldown: '&cDebes esperar&4 {time} &cantes de que tu equipo pueda colocar
+          otra bandera de captura.'
+        max: '&cTu equipo ya colocó la cantidad máxima de&4 {max} &cbanderas de captura
+          simultáneas.'
+        invader: '#t#&aPunto de Captura[newline]&acolocado en el territorio enemigo:
+          {land}, {x}, {y}, {z}[newline]&aÚnete ahí para capturar el área.'
+        defender: '#t#&cPunto de Captura[newline]&ccolocado en nuestro territorio:
+          {land}, {x}, {y}, {z}[newline]&cVe ahí para unirte a los defensores.'
+      destroy:
+        presense: '&cActualmente no puedes romper esta bandera de captura. &7Todavía
+          hay&3 {players} &7jugadores enemigos en esta área.'
+        invader: '#t#&cPunto de Captura[newline]&cen territorio enemigo {land} ha
+          sido destruido'
+        defender: '#t#&aPunto de Captura[newline]&aeliminado de nuestro territorio
+          {land}[newline]&2&l+ {points} puntos'
+      none: '#b#[config]color:yellow,style:solid[/config]&7La captura se reanudará
+        una vez que haya más invasores que defensores.'
+      progress:
+        invaders:
+          broadcast: '#b#[config]color:red,style:solid[/config]&cEl enemigo está capturando
+            parte de {land} - {progress}%, {invaders} invasor(es), x: {x}, y: {y},
+            z: {z}'
+          invaders: '#b#[config]style:solid[/config]&cEstamos capturando - {progress}%,
+            {defenders} defensor(es)'
+          defenders: '#b#[config]style:solid[/config]&cEl enemigo está capturando
+            - {progress}%, {invaders} invasor(es)'
+        defenders:
+          broadcast: '#b#[config]color:red,style:solid[/config]&aEstamos recuperando
+            parte de {land} - {progress}%, {invaders} invasor(es), x: {x}, y: {y},
+            z: {z}'
+          invaders: '#b#[config]style:solid[/config]&cLos defensores están recuperando
+            - {progress}%, {defenders} defensor(es)'
+          defenders: '#b#[config]style:solid[/config]&aEstamos recuperando - {progress}%,
+            {invaders} invasor(es)'
+      online: '#a#&cNo se puede capturar: Se necesita un mínimo de {min} jugador(es)
+        del territorio {land} en línea.'
+      success:
+        invader: '#t#&aPunto de Captura[newline]&acapturamos {chunks} chunk(s) de
+          {land}[newline]&2&l+ {points} puntos'
+        defender: '#t#&cPunto de Captura[newline]&cenemigo capturó {chunks} chunk(s)
+          de {land}'
+  command:
+    general:
+      no-war: '&cNo hay guerras futuras ni activas para {object}&c. &7Todo está en
+        paz.'
+    declare:
+      confirm: |
+        &7Por favor confirma que &8(&7{attacker}&8) &7deseas declarar la guerra contra {defender}&7:
+          [T]&2✔ Confirmar: &e/{fullcmd} &8[CLICK][H]&7Haz clic para confirmar esta acción.[/H][C]{fullcmd}[/C][/T]
+      not-allowed: '&cNo tienes permiso para iniciar la guerra por {object}&c. &7El
+        líder de {object} &7necesita hacerlo.'
+      member: '&cNo puedes declarar la guerra contra {object}&c. &7Tú o el líder enemigo
+        tienen confianza en territorios comunes y/o en una misma nación.'
+      hour-of-day: '&cSolo puedes declarar guerra entre&4 {from} &cy hasta&4 {to}&c.
+        &7Hora actual:&5 {current}&8 (&7zona horaria: {timezone}&8)'
+      enemies: |
+        &cDebes añadir a&4 {object} &ccomo enemigo primero.
+          [T]&7✖ Agregar como Enemigo: &e/{cmd} &8[CLICK][H]&7Haz clic para agregar a {object} &7como enemigo para declararle la guerra.[/H][C]{cmd}[/C][/T]
+      ally: |
+        &cNo puedes declarar guerra contra tu aliado {object}&c.
+          [T]&7✖ Administrar Relaciones: &e/{cmd} &8[CLICK][H]&7Haz clic para gestionar tus relaciones.[/H][C]{cmd}[/C][/T]
+      war-shield: '&cNo puedes declarar la guerra contra {object}&c en este momento.
+        &7Tienen un escudo de guerra por los siguientes&5 {time}&7.'
+      no-nation: '&cNo puedes atacar el territorio&4 {land}&c. &7Deben formar parte
+        de una nación para involucrarse en una guerra.'
+      admin: '&cNo puedes declarar la guerra contra territorios administrados por
+        el servidor.'
+      nation: '&cNo puedes declarar la guerra contra {object}&c. &7Pertenecen a la
+        misma nación&9 {nation}&7.'
+      min-balance:
+        attacker: '&cNo se puede enviar esta declaración. &7Los atacantes {object}
+          &7necesitan un saldo mínimo de&c {min} &7para iniciar una guerra. Deposita
+          dinero en tu banco del territorio: [T]&e/{cmd} &8[CLICK][H]&7Haz clic para
+          depositar {min} en tu banco del territorio.[/H][C]{cmd}[/C][/T]'
+        defender: '&cEl saldo de los defensores {object} &ces demasiado bajo. &7Solo
+          puedes atacar a quienes tengan al menos&c {min}&7.'
+      min-chunks:
+        attacker: '&cNo se puede enviar esta declaración. &7Los atacantes {object}
+          &7necesitan al menos&c {min} &7chunks reclamados para iniciar una guerra.
+          Reclama: [T]{cmd} &8[CLICK][H]&7Haz clic para reclamar.[/H][C]{cmd}[/C][/T]'
+        defender: '&cEl número de chunks reclamados por los defensores {object} &ces
+          demasiado bajo. &7Solo puedes atacar a quienes tengan al menos&c {min} &7chunks.'
+      min-age:
+        attacker: '&cNo se puede enviar esta declaración. &7Los atacantes {object}
+          &7necesitan tener al menos&5 {min} &7de antigüedad para iniciar una guerra.'
+        defender: '&cLa antigüedad de los defensores {object} &ces demasiado baja.
+          &7Solo puedes atacar a quienes tengan al menos&5 {min} &7de antigüedad.'
+      online: '&cNo se puede enviar esta declaración. &7Al menos un jugador de {object}
+        &7debe estar en línea.'
+      broadcast: '&7{attacker} &7declaró la guerra contra {defender}&7. Su guerra
+        comenzará en&5 {time}&7.'
+      success:
+        normal: '&7Tú &8({object}&8) &7declaraste la guerra exitosamente contra {enemy}&7.
+          La guerra comenzará en&5 {time}&7.'
+        mutual:
+          accepted: '&7Tú &8({object}&8) &7aceptaste la guerra contra {enemy}&7. La
+            guerra comenzará en&5 {time}&7.'
+          sent: '&7Tú &8({object}&8) &7enviaste una solicitud de guerra a {enemy}&7.
+            Ellos necesitan aceptarla antes de que la guerra pueda iniciar.'
+      target: '&7El enemigo {attacker} &7declaró la guerra contra {defender} &8(&7TÚ&8)&7.
+        La guerra comenzará en&5 {time}&7.'
+      mutual:
+        success: '&7Tú &8({attacker}&8) &7enviaste exitosamente una declaración de
+          guerra a {defender}&7. &7Ellos ahora deben aceptar o rechazar antes de que
+          la guerra empiece. &7Si los defensores se rinden durante la guerra, deberán
+          pagar&c {tribute} &7a los atacantes.'
+        target: |
+          &7El enemigo {attacker} &7envió una declaración de guerra contra {defender} &8(&7TÚ&8)&7. &7Si los defensores se rinden durante la guerra, deberán pagar&c {tribute} &7a los atacantes.
+           [T]&2✔ Aceptar &8[&8CLICK&8][H]&7Haz clic para aceptar la declaración de guerra.[/H][C]wars declare {input}[/C][/T]
+           [T]&c✘ Rechazar &8[&8CLICK&8][H]&7Haz clic para rechazar la declaración de guerra.[/H][C]wars deny[/C][/T]
+      already:
+        attacker: '&cNo puedes unirte a otra guerra. &7La guerra actual de {object}
+          &7debe terminar primero.'
+        defender: '&cNo puedes declarar guerra contra ellos en este momento. &7El
+          objetivo {object} &7ya está en guerra.'
+      min-players:
+        attacker: '&cNo puedes entrar en guerra, porque {object} &cnecesita más jugadores
+          de confianza. &7La cantidad mínima para los atacantes es de&3 {min} &7jugadores.'
+        defender: '&cNo puedes declarar guerra contra {object}&c, porque necesitan
+          más jugadores de confianza. &7La cantidad mínima para los defensores es
+          de&3 {min} &7jugadores.'
+    deny:
+      attacker: '&cLos atacantes no pueden rechazar su propia declaración de guerra.
+        &7Solo el defensor puede hacer eso.'
+      ongoing: '&cNo puedes rechazar la guerra en curso contra {enemy}&c. &7Solo puedes
+        rechazar declaraciones de guerra para {object}&7.'
+      success: '&7Rechazaste exitosamente la declaración de guerra para {object} &7contra
+        el enemigo {enemy}&7.'
+    menu:
+      mutual: '&cNo puedes abrir el menú de guerra ahora. &7La declaración de guerra
+        a {object} &7no ha sido aceptada todavía.'
+    spawn:
+      none: '&cEl enemigo {enemy} &cno tiene reclamaciones a las que teletransportarse.'
+      success: '&7Te teletransportaste cerca de la frontera del enemigo {enemy}&7.'
+    info:
+      war: |
+        &4Guerra Actual:
+        &8- &7Atacante {attacker}&7:
+             &8• &7Capturas: {att_cap}
+             &8• &7Muertes: {att_kills}
+               &3= {att_points} / {towin} &7puntos para ganar
+               {att_bar}
+        &8- &7Defensor {defender}&7:
+             &8• &7Capturas: {def_cap}
+             &8• &7Muertes: {def_kills}
+               &3= {def_points} / {towin} &7puntos para ganar
+               {def_bar}
+
+        &7Tiempo límite:&5 ~{time}
+        [T]&7Más info: &e/{cmd} &8[CLICK][H]&7Haz clic aquí para abrir el menú de guerra.[/H][C]{cmd}[/C][/T]
+      declaration:
+        normal: |
+          &4Declaración de Guerra:
+            &8• &7Atacante: {attacker}
+            &8• &7Defensor: {defender}
+            &8• &7Inicia en:
+              &5~{time}
+
+          [T]&7Más info: &e/{cmd} &8[CLICK][H]&7Haz clic aquí para abrir el menú de guerra.[/H][C]{cmd}[/C][/T]
+        mutual:
+          defender: |
+            &4Declaración de Guerra:
+              &8• &7Atacante: {attacker}
+              &8• &7Defensor: {defender}
+              &8• &7Si te rindes durante la guerra:
+                &7Tributo:&c {tribute}
+
+            [T]&2✔ Aceptar: &e/{cmd_accept} &8[&8CLICK&8][H]&7Haz clic para aceptar la declaración de guerra.[/H][C]{cmd_accept}[/C][/T]
+            [T]&c✘ Rechazar: &e/{cmd_deny} &8[&8CLICK&8][H]&7Haz clic para rechazar la declaración de guerra.[/H][C]{cmd_deny}[/C][/T]
+          attacker: |
+            &4Declaración de Guerra:
+              &8• &7Atacante: {attacker}
+              &8• &7Defensor: {defender}f
+              &8• &7Si los defensores se rinden:
+                &7Tributo:&c {tribute}
+
+            &cEl defensor aún no ha aceptado
+            &cla declaración.
+nations:
+  message:
+    current-war: '&cNo puedes hacer esto ahora. &7Tu nación&9 {nation} &7está actualmente
+      en guerra. &7Intenta de nuevo cuando la guerra haya terminado.'
+    untrusted: '&cNo eres miembro de la nación&4 {nation}&c.'
+  command:
+    chat:
+      activated: '&7Chat de la nación activado. Envía un mensaje en el chat público
+        para hablar con tu nación.'
+      deactivated: '&7Desactivaste correctamente el chat de la nación.'
+      none: "&cNo se encontró una nación para el chat de nación. \n  [T]&7✖ &7Desactivar\
+        \ modo de chat: &e/{cmd} &8[&8CLICK&8][H]&7Haz clic para desactivar el modo\
+        \ de chat.[/H][C]{cmd}[/C][/T]\n"
+      format:
+        minecraft: '[NoPrefix]&9Nación {nation} &8| &7{player} &8»&f {message}'
+        discord: '[NoPrefix]&9Nación {nation} &8| &9Discord &7{player} &8»&f {message}'
+        spy: '[NoPrefix]&8[&cChatSpy&8] &9Nación {nation} &8| &7{player} &8»&f {message}'
+    general:
+      not-exist: '&cLa nación&9 {nation} &cno existe. &7No hay una nación con ese
+        nombre.'
+      no-member: '&cNo eres miembro de esta nación&c. &7Ninguno de tus territorios
+        pertenece a la nación&9 {nation}&7.'
+      none: |
+        &cTu territorio&4 {land} &cno forma parte de ninguna nación.
+
+          &7Cualquier nación puede invitar a tu territorio: &e/nations trust
+          [T]&7Crea tu propia nación: &e/{cmd} &8[CLICK][H]&7Haz clic para copiar.[/H][SC]{cmd}[/SC][/T]
+      noaccess: '&cNo tienes permiso para hacer esto en la nación&4 {nation}&c. &8Bandera:
+        {flag}'
+      not-trusted: '&cEl territorio&4 {land} &cno es miembro de tu nación&4 {nation}&c.'
+    create:
+      camp: |
+        &cNo puedes crear una nación con un campamento &8(&4{land}&8) &ccomo la capital.
+          [T]&7✖ Crear territorio: &e/{cmd_create} &8[CLICK][SC]{cmd_create}[/SC][H]&7Crea un territorio. Haz clic para copiar.[/H][/T]
+          [T]&7✖ Cambiar territorio a editar: &e/{cmd_edit} &8[CLICK][SC]{cmd_edit}[/SC][H]&7Usa este comando para cambiar el territorio a editar, el cual quieres que sea la capital de tu nación. Haz clic para copiar.[/H][/T]
+      already: '&cTu territorio&4 {land} &cya forma parte de la nación&4 {nation}&c.
+        &7Tu territorio debe salir primero ejecutando &e/nations leave&7.'
+      war: '&cNo puedes crear una nación con el territorio&4 {land} &ccomo capital
+        mientras esté en guerra contra&4 {object}&c. &7Intenta de nuevo cuando la
+        guerra haya terminado.'
+      level: '&cNo puedes crear una nación por ahora. &7Tu territorio&2 {land} &7necesita
+        al menos el nivel&3 {level} &8(&7actual: {current}&8)&7.'
+      success: '&7Creaste exitosamente la nación&9 {nation} &7con el territorio&2
+        {land} &7como la capital. [T]&7Haz clic aquí para abrir el menú.[H]&7Abrir
+        el menú.[/H][C]nations menu[/C][/T]'
+    trust:
+      camp: '&cLos campamentos no pueden formar parte de naciones. &7El territorio&2
+        {land} &7es un campamento.'
+      max-distance: '&cEl territorio&4 {land} &cestá demasiado lejos de la capital
+        de la nación&4 {nation}&c. &7Máximo:&3 {max} bloque(s)&7, distancia actual:&3
+        {distance} bloque(s)&7'
+      already: '&cEl territorio&4 {land} &cya es parte de la nación&4 {nation}&c.
+        &7Necesitan salir primero usando &e/nations leave&7.'
+      added: '&7Añadiste exitosamente tu territorio&2 {land} &7como miembro de tu
+        nación&9 {nation}&7.'
+      success: '&7Invitaste exitosamente al territorio&2 {land} &7a unirse a tu nación&9
+        {nation}&7.'
+      target: |
+        &7La nación&9 {nation} &7invitó a tu territorio&2 {land} &7a unirse.
+          [T]&2✔ Aceptar: &e/{cmd_accept} &8[&8CLICK&8][H]&7Haz clic para aceptar esta invitación.[/H][C]{cmd_accept}[/C][/T]
+          [T]&c✘ Rechazar: &e/{cmd_deny} &8[&8CLICK&8][H]&7Haz clic para rechazar esta invitación.[/H][C]{cmd_deny}[/C][/T]
+    accept:
+      war: '&cNo puedes unirte a esta nación en este momento. &7La nación&9 {nation}
+        &7está en guerra contra {object}&7. Intenta de nuevo cuando su guerra termine.'
+      none: '&cTu territorio&4 {land} &cno recibió ninguna invitación de la nación&9
+        {nation}&c. &7Ellos pueden invitar a tu territorio usando &e/nations trust&7.'
+      already: '&cTu territorio&4 {land} &cya forma parte de la nación&4 {nation}&c.
+        &7Primero necesitas salir ejecutando &e/nations leave&7.'
+      success: '&7Tu territorio&2 {land} &7ahora forma parte de la nación&9 {nation}&7.'
+    deny:
+      success: '&7Rechazaste exitosamente la invitación de la nación&9 {nation}&7.'
+    untrust:
+      capital: '&cNo puedes remover este territorio. &7El territorio&2 {land} &7es
+        la capital de la nación&9 {nation}&7.'
+      already: '&cEl territorio&4 {land} &cno tiene confianza en la nación&4 {nation}&c.'
+      success: '&7Removiste exitosamente el territorio&2 {land} &7de la nación&9 {nation}&7.'
+    delete:
+      confirm: |
+        &7Por favor confirma la eliminación de la nación&9 {nation} &7haciendo clic abajo:
+          [T]&2✔ Confirmar: &e/{fullcmd} &8[CLICK][H]&7Haz clic para confirmar esta acción.[/H][C]{fullcmd}[/C][/T]
+      war: '&cNo puedes eliminar tu nación actualmente. &7La nación&9 {nation} &7está
+        en guerra contra {object}&7. Intenta de nuevo cuando la guerra haya terminado.'
+      success: '&7Eliminaste exitosamente esta nación &8(&7Nación:&2 {nation}&8)&7.'
+    leave:
+      confirm: |
+        &7Por favor confirma que quieres sacar el territorio&2 {land} &7de la nación&9 {nation}&7:
+          [T]&2✔ Confirmar: &e/{fullcmd} &8[CLICK][H]&7Haz clic para confirmar esta acción.[/H][C]{fullcmd}[/C][/T]
+      capital: '&cTu territorio&4 {land} &cno puede salir de la nación&4 {nation}&c,
+        porque es la capital de dicha nación. &7Para eliminar tu nación, ejecuta &e/nations
+        delete&7.'
+      war: '&cNo puedes salir de esta nación en este momento. &7La nación&9 {nation}
+        &7está en guerra contra {object}&7. Su guerra terminará en&5 {time}&7.'
+      success: '&7Sacaste exitosamente el territorio&2 {land} &7de la nación&9 {nation}&7.'
+    rename:
+      success: '&7Se estableció exitosamente el nuevo nombre&3 {name} &7para esta
+        nación &8(&7Nación:&9 {nation}&8)&7. Pagaste&c {cost}&7.'
+    setcapital:
+      confirm: |
+        &7Por favor confirma que deseas establecer el territorio&2 {land} &7como la nueva capital de la nación&9 {nation}&7:
+          [T]&2✔ Confirmar: &e/{fullcmd} &8[CLICK][H]&7Haz clic para confirmar esta acción.[/H][C]{fullcmd}[/C][/T]
+      level: '&cNo puedes establecer el territorio&4 {land} &ccomo la nueva capital
+        de la nación&4 {nation}&c. &7Necesita al menos el nivel&3 {level} &8(&7actual:
+        {current}&8)&7.'
+      success: '&7Estableciste exitosamente el territorio&2 {land} &7como la nueva
+        capital de la nación&9 {nation}&7.'
+
+list:
+  swear-words: []
+  hologram:
+    landblock:
+      main:
+      - '&7Territorio&2 {land}'
+      - '&7Bandeja:&r {inbox}'
+      - '&7Chunks: {chunks} / {chunks_max}'
+      - '&7Miembros: {members} / {members_max}'
+      - '&7Saldo: {balance}'
+      - '&7Mantenimiento e impuestos en: {upkeep_next}'
+      main_camp:
+      - '&7Territorio&2 {land}'
+      - '&7Bandeja:&r {inbox}'
+      - '&7Miembros: {members} / {members_max}'
+      - '&7Expira en:&5 {expiration}'
+    rent:
+    - '&6Rentar {area}'
+    - '&c{cost} &7cada &5{time}'
+    - '&7Tiempo máx.: {max}'
+    - '&8Haz clic para rentar.'
+    sell:
+      area:
+      - '&aComprar'
+      - '&7Área: &6{area}'
+      - '&c{cost} &7en total'
+      - '&8Haz clic para comprar.'
+      land:
+      - '&aComprar'
+      - '&7Territorio: &2{land}'
+      - '&c{cost} &7en total'
+      - '&8Haz clic para comprar.'
+    rented:
+    - '&7Área&6 {area}'
+    - '&7Inquilino: {player}'
+    - '&5{time} &7restante'
+    - '&c{cost} &7cada &5{time}'
+    - '&8Shift + clic: Cancelar'
+    - '&8Haz clic: Añadir más tiempo'
+    sold:
+      area:
+      - '&aVendido'
+      - '&7Área: &6{area}'
+      - '&7A: {player}'
+      - '&8Shift + clic: Cancelar'
+      land:
+      - '&aVendido'
+      - '&7Territorio: &2{land}'
+      - '&7A: {player}'
+  sign:
+    top:
+      entry:
+      - '&6&l#{pos} {object}'
+      - '&7de {owner}'
+      - '&7{sorting}:'
+      - '&3{value}'
+      none:
+      - ''
+      - '&cNinguno'
+      - ''
+      - ''
+    rent:
+    - '&6&lRentar {area}'
+    - '&c{cost} &7/'
+    - '&5{time}'
+    - '&8Máx.: {max}'
+    sell:
+      area:
+      - '&a&lComprar {area}'
+      - '&7Bloques: {blocks}'
+      - '&7Costo: &c{cost}'
+      - '&8Haz clic para comprar.'
+      land:
+      - '&a&lComprar territorio'
+      - '&2&l{land}'
+      - '&7Costo: &c{cost}'
+      - '&8Haz clic para comprar.'
+    rented:
+    - '&6&lRentado'
+    - '&7Área: &6{area}'
+    - '&7A: {player}'
+    - '&5{time} &7restante'
+    sold:
+      area:
+      - '&7&lVendido'
+      - '&7Área: &6{area}'
+      - '&7A: {player}'
+      land:
+      - '&7&lVendido'
+      - '&7Territorio: &2{land}'
+      - '&7A: {player}'

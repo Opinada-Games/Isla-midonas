@@ -1,0 +1,7 @@
+Name: Llave de Agricultura
+Virtual: false
+Item:
+  Material: NETHERITE_HOE
+  Name: '&aLlave de agricultura'
+  Lore:
+  - '&7La comida es la base de la civilización'

@@ -1,0 +1,32 @@
+# -------------------- Plugin --------------------
+
+messagePluginUnknown: |
+  &7Плагин &7{plugin} &7не существует.
+
+messagePluginReloaded: |
+  &7Плагин &a{plugin} &7перезагружен.
+
+messagePluginManipulateError: |
+  &7Действие над плагином &7{plugin} &7не может быть выполнено.
+
+messagePluginList: |
+  &7Есть &a{count} &7плагинов, &a{active} &7активно, &7{inactive} &7неактивно : {plugins}
+
+messageGcoreExportFile: |
+  &7Твоя информация и конфигурационные файлы  &a{plugins} &7были экспортированы в  &a{file}&7. Пожайлуста, сообщи об этом разработчику.
+
+messageGcoreExportCouldnt: |
+  &7Файл &c{file} &7не может быть экспортирован.
+
+# -------------------- Commands --------------------
+
+commandDescriptionGcore: Основная команда для GCore
+commandDescriptionGcorePlugins: список GCore-овских зависимых плагинов
+commandDescriptionGcoreExport: экспортировать информацию GCore-зависимых плагинов
+commandDescriptionGcoreItemRead: прочитать предмет в конфигурации
+
+messageItemReadNull: |
+  &cЭтот предмет  нельзя экспортировать в конфигурацию. Пожалуйста, держите предмет в руке.
+
+messageItemReadExported: |
+  &7Этот предмет экспортирован в &a{file} &7по пути &a{path}&7.

@@ -1,0 +1,9 @@
+# -------------------------------------------------------------------------------------------
+# This file stores a single location you can use in spawn rules.
+#
+# To create a location, right click a block holding Location Tool
+# obtainable from /boss tools. To remove a location, right click
+# the block again or stop your server and remove this file.
+# -------------------------------------------------------------------------------------------
+
+Position: world 6205 83 -696

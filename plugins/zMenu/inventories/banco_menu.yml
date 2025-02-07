@@ -1,0 +1,45 @@
+# Banco Menu Configuration for zMenu
+size: 27
+name: "&2Banco"
+
+items:
+  # Player Balance Tooltip
+  saldo_jugador:
+    type: NONE
+    slot: 12
+    item:
+      material: GOLD_INGOT
+      name: "&6Tu Saldo"
+      lore:
+        - "&eSaldo actual: $%vault_eco_balance_commas%"
+        - "&8Command: &b/balance"
+
+  # Pagar Dinero
+  pagar_dinero:
+    type: NONE
+    slot: 14
+    item:
+      material: EMERALD
+      name: "&aPagar Dinero"
+      lore:
+        - "&7Puedes hacer pagos a otros jugadores, bajo tu propio riesgo"
+        - "&7Escribe en el chat: &2/pay &b<jugador> &a<cantidad>"
+      actions:
+        - "message:&eUsa el comando /pay <jugador> <cantidad> para realizar un pago."
+
+  # Volver al Menú Principal
+  volver:
+    slot: 26
+    item:
+      material: ARROW
+      name: "&cVolver al Menú Principal"
+      lore:
+        - "&7Regresa al menú principal."
+    commands:
+      - "zm open main_inventory"
+    closeInventory: true
+
+# Relleno de espacios vacíos con panel de vidrio teñido
+fillItem:
+  material: GRAY_STAINED_GLASS_PANE
+  name: " "

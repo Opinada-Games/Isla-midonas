@@ -1,0 +1,96 @@
+# -------------------- Miscellaneous --------------------
+
+messageNoPermission: |
+  &7Je hebt hier geen toestemming voor.
+
+messageInvalidPlayer: |
+  &7Speler &c{value} &7is ongeldig (moet online zijn).
+
+messageInvalidOfflinePlayer: |
+  &7Speler &c{value} &7is ongeldig.
+
+messageCC: '&d (cc. of {og})'
+messageSilentCC: '&d (cc. of {og}, silent)'
+
+textCancel: cancel
+
+# -------------------- Command --------------------
+
+commandParameterUsageTarget: player
+commandParameterUsageReset: reset
+commandParameterUsageOperation: operation
+commandParameterUsageAmount: amount
+commandParameterUsageSpecificEditor: editor
+messageCommandNotPlayer: |
+  &7You can't execute this command from console.
+
+messageCommandMissingArgument: |
+  &7Ontbrekend argument &c{argument}&7. Voeg &d toe? &7na een commando voor hulp.
+
+messageCommandMissingArgumentFound: |
+  &7Ontbrekend argument &c{argument} &7(found {found}). Voeg &d toe? &7na een commando voor hulp.
+
+messageCommandUnnecessaryArguments: |
+  &7Onnodige argumenten : &c{unnecessary}&7. Voeg &d toe? &7na een commando voor hulp.
+
+messageCommandIncompatibleArguments: |
+  &c{argument1} &7kan niet worden gebruikt met &c{argument2}&7. Voeg &d toe? &7na een commando voor hulp.
+
+messageCommandDependentArguments: |
+  &c{argument1} &7kan niet worden gebruikt zonder &c{argument2}&7. Voeg &d toe? &7na een commando voor hulp.
+
+messageCommandUnknown: |
+  &7Kon geen subcommando vinden &c{subcommand}&7. Voeg &d toe? &7na een commando voor hulp.
+
+messageCommandHelpElementPrefix: '&6'
+messageCommandHelpElement: '{usage}&6: &f{description}'
+messageCommandHelpColorArgumentOptional: '&e&o'
+messageCommandHelpColorArgumentRequired: '&e'
+
+messageCommandHelpPageOutsideBounds: |
+  &7Dit helpmenu heeft alleen {pages} pagina{plural}.
+
+messageCommandHelpHeader: '&6&l{prefix} &6help ({page}/{pages})'
+
+# -------------------- Numbers --------------------
+
+numberMillion: million
+numberBillion: billion
+numberTrillion: trillion
+
+durationFormatS: '{seconds}s'
+durationFormatMS: '{minutes}m{seconds}s'
+durationFormatHMS: '{hours}h{minutes}m{seconds}s'
+durationFormatDHMS: '{days}d{hours}h{minutes}m{seconds}s'
+
+# -------------------- Cost --------------------
+
+messageMustHaveCurrency: |
+  &7U moet &c{money} &7voor dit, maar je hebt alleen &c{balance}&7.
+
+messageMustHaveMoreItem: |
+  &7U moet &c{item} &7voor dit, maar je hebt alleen &c{has_amount}&7.
+
+messageMustHaveItem: |
+  &7U moet &c{item} &7voor dit.
+
+# -------------------- Item --------------------
+
+# Placeholders for this : {amount}, {type}, {durability}, {custom_model_data}, {enchantments}, {name}, {lore}
+
+textDescribeItem: |
+  {amount}x {type}
+  {name}
+  {lore}
+  {enchantments}
+
+textDescribeItemNameIfHas: '{name}'
+textDescribeItemLoreIfHas: '- {lore}'
+textDescribeItemEnchantmentsIfHas: '> {enchantments}'
+textDescribeItemEnchantmentsLine: '{enchant} {level}'
+textDescribeItemSingleLine: '{amount}x {type} {name}'
+
+# -------------------- Format --------------------
+
+# For date format characters, see https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
+dateTimeFormat: "MMM d yyyy 'at' h:mm a"

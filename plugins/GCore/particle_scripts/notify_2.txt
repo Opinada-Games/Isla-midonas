@@ -1,0 +1,21 @@
+# ----------------------------------------------------------------------------------------------------
+# Configuration file for GCore
+# More information can be found in the documentation
+# ----------------------------------------------------------------------------------------------------
+
+# Display a few 'emeralds' above
+
+loop(delta, 0, 10, 1)						# make a loop using variable delta from 0 to 10 with steps of 1
+	set(x, baseX - 1 + rand(2))				# calculate random x
+	set(y, baseY - 1 + rand(2))				# calculate random y
+	set(z, baseZ - 1 + rand(2))				# calculate random z
+	display(VILLAGER_HAPPY, x, y, z, 1)		# display
+	wait_ticks(1)							# wait one tick
+
+# Display a heart at the end
+
+display(HEART, baseX, baseY, baseZ, 1)
+
+# Wait 1.5 second until restarting
+
+wait_ticks(30)

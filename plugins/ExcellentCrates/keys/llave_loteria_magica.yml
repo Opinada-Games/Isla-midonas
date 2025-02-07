@@ -1,0 +1,7 @@
+Name: Llave de Lotería mágica
+Virtual: false
+Item:
+  Material: AMETHYST_SHARD
+  Name: '&5Llave de lotería mágica'
+  Lore:
+  - '&7Prueba tu suerte en la lotería de polvo mágico'

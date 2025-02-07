@@ -1,0 +1,30 @@
+# ----------------------------------------------------------------------------------------------------
+# Configuration file for GCore
+# More information can be found in the documentation
+# ----------------------------------------------------------------------------------------------------
+
+# Display a heart at the beginning
+
+display(HEART, baseX, baseY + 2.0, baseZ, 1)
+
+# Display hearts around, every tick, while increasing Y coordinate
+
+set(cx, baseX)
+set(cz, baseZ)
+set(radius, 0.5)
+set(y, baseY)
+
+loop(angle, 0, 360, 20)               			# make a loop using variable angle from 0 to 360 with steps of 20
+	set(x, cx + radius * cos(angle))  	 		# calculate x
+	set(y, y + 0.07)                   			# calculate y
+	set(z, cz + radius * sin(angle))   			# calculate z
+	wait_ticks(1)				      			# wait one tick
+	display(HEART, x, y, z, 1)            		# display
+
+# Display a heart at the end
+
+display(HEART, baseX, baseY + 2.0, baseZ, 1)
+
+# Wait 2 seconds until restarting
+
+wait_ticks(40)

@@ -1,0 +1,41 @@
+# ----------------------------------------------------------------------------------------------------
+# Configuration file for CustomCommands
+# More information can be found in the documentation
+# ----------------------------------------------------------------------------------------------------
+
+# --------------------------------------------------
+# Data
+# --------------------------------------------------
+
+# Data back-end (NONE, JSON or MYSQL ; default is JSON if not specified)
+# The MySQL identifiers are located in GCore's config
+data_backend:
+  customcommands_users_v4: JSON
+
+# Log settings (errors will be shown in console no matter what)
+log:
+  # Main logger
+  main:
+    console: true
+    file: true
+  # Data loggers
+  data:
+    customcommands_users_v4:
+      console: false
+      file: false
+
+# --------------------------------------------------
+# Commands
+# --------------------------------------------------
+
+# Aliases
+commands_aliases:
+  edit: [edit]
+
+# --------------------------------------------------
+# Miscalleneous
+# --------------------------------------------------
+
+# Update notification
+# If you turn this off, please make sure to visit the plugin page on spigot every once in a while ; some updates can be really important.
+update_notification: true

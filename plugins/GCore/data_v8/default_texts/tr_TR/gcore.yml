@@ -1,0 +1,32 @@
+# -------------------- Plugin --------------------
+
+messagePluginUnknown: |
+  &7Eklenti &7{plugin} &7 mevcut değil.
+
+messagePluginReloaded: |
+  &7Eklenti &a{plugin} &7 yeniden yüklendi.
+
+messagePluginManipulateError: |
+  &7Eklenti &7{plugin} &7 ile ilgili işlem gerçekleştirilemedi.
+
+messagePluginList: |
+  &7&a{count} &7eklenti var, &a{active} &7etkin, &7{inactive} &7etkin değil : {plugins}
+
+messageGcoreExportFile: |
+  &7 &a{plugins} &7 için verileriniz ve yapılandırma dosyalarınız &a{file}&7'ye aktarıldı. Lütfen geliştiriciyle paylaşın.
+messageGcoreExportCouldnt: |
+  &7 &c{file} &7 dosyası dışa aktarılamadı.
+
+# -------------------- Commands --------------------
+
+commandDescriptionGcore: GCore için ana komut
+commandDescriptionGcorePlugins: GCore'un bağımlı eklentilerini listele
+commandDescriptionGcoreReload: GCore'u yeniden yükle
+commandDescriptionGcoreExport: GCore'a bağlı eklenti verilerini dışa aktar
+commandDescriptionGcoreItemRead: öğeyi yapılandırmaya oku
+
+messageItemReadNull: |
+  &cBu öğe yapılandırmaya aktarılamaz. Lütfen elinizde bir eşya tutun.
+
+messageItemReadExported: |
+  &7Bu öğe &a{file} &7at path &a{path}&7'ye aktarıldı.

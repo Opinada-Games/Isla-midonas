@@ -1,0 +1,33 @@
+# ----------------------------------------------------------------------------------------------------
+# Configuration file for CustomCommands
+# More information can be found in the documentation
+# ----------------------------------------------------------------------------------------------------
+
+# Aliases for the command
+# Our command can be used with /helpserver
+aliases: [helpserver]
+
+# Patterns for the command
+patterns:
+
+  - pattern: 'pvp|combat|fight'  # the full command to type is /helpserver pvp or /helpserver combat or /helpserver fight
+    description: get information about the pvp
+    actions:
+      - type: NOTIFY
+        notify:
+          message: |
+            &aThe PVP is active on our server in the dedicated PVP arena.
+            &aYou can join the battle with /pvp !
+          actionbar: '&7Thanks for using the /helpserver command.'
+          actionbar_duration: 3 SECOND
+
+  - pattern: 'shop|store'  # the full command to type is /helpserver shop or /helpserver store
+    description: get information about the shop
+    actions:
+      - type: NOTIFY
+        notify:
+          message: |
+            &aWe have a shop available to sell ranks and cosmetic advantages, so you can support the server and help us grow.
+            &aVisit it at www.our-website.com/shop !
+          actionbar: '&7Thanks for using the /helpserver command.'
+          actionbar_duration: 3 SECOND

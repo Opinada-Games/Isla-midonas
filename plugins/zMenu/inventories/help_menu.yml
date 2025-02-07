@@ -1,0 +1,48 @@
+# Configuración del Menú de Trabajos para zMenu
+size: 27
+name: "&8> &6&lAyuda"
+
+items:
+  # Botón para Estadísticas de Trabajos
+  jobs_stats:
+    slot: 11
+    item:
+      material: PAPER
+      name: "&bEstadísticas de Trabajos"
+      lore:
+        - "&7Consulta tus estadísticas actuales de trabajos."
+        - "&eHaz clic para verlas."
+    commands:
+      - "jobs stats"
+    closeInventory: true
+
+  # Botón para Explorar Trabajos
+  jobs_browse:
+    slot: 15
+    item:
+      material: BOOK
+      name: "&aExplorar Trabajos"
+      lore:
+        - "&7Únete o renuncia de algún trabajo"
+        - "&eHaz clic para abrir la lista."
+    commands:
+      - "jobs browse"
+    closeInventory: true
+
+  # Botón para Volver al Menú Principal
+  volver:
+    slot: 26
+    item:
+      material: ARROW
+      name: "&cVolver al Menú Principal"
+      lore:
+        - "&7Regresa al menú principal."
+        - "&eHaz clic para volver."
+    commands:
+      - "zm open main_inventory %player%"
+    closeInventory: true
+
+# Relleno de espacios vacíos con panel de vidrio teñido
+fillItem:
+  material: GRAY_STAINED_GLASS_PANE
+  name: " "
