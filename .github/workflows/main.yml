@@ -1,28 +1,27 @@
-name: Deploy Minecraft Server
+name: FTP Deploy
 
 on:
   push:
     branches:
-      - main
+      - main  # Change if you want to deploy from a different branch
 
 jobs:
-  deploy:
+  ftp-deploy:
+    name: Deploy via FTP
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Deploy to VPS via SSH
-        uses: appleboy/ssh-action@v0.1.6
+      - name: Deploy to FTP Server
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          host: 82.180.136.100
-          username: minecraft
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          passphrase: ${{ secrets.SSH_PASSPHRASE }}
-          debug: true
-          script: |
-            cd /home/minecraft/minecraft-server
-            git pull origin main
-            screen -S minecraft -X quit
-            screen -dmS minecraft java -Xmx14G -Xms14G -jar purpur.jar nogui
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ secrets.FTP_PORT }}
+          protocol: ftp
+          local-dir: ./  # Specify the directory to upload (e.g., ./ for entire repo or ./dist for build files)
+          server-dir: /  # Adjust the target directory on your FTP server
+          dangerous-clean-slate: false  # Set to true if you want to wipe the server before upload
