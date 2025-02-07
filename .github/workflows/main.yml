@@ -24,4 +24,4 @@ jobs:
             git pull origin main
             # Restart the Minecraft server
             screen -S minecraft -X quit
-            screen -dmS minecraft java -Xmx1024M -Xms1024M -jar server.jar nogui
+            screen -dmS minecraft java -Xmx14G -Xms14G -jar purpur.jar nogui
