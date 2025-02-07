@@ -20,6 +20,7 @@ jobs:
           username: minecraft
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
+          debug: true
           script: |
             cd /home/minecraft/minecraft-server
             git pull origin main
