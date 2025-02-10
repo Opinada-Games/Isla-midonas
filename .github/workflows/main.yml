@@ -1,4 +1,4 @@
-name: Deploy Minecraft Server without Docker
+name: Deploy Minecraft Server with rsync
 
 on:
   push:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check Out Code
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
       - name: Set Up SSH
@@ -20,55 +20,70 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H 193.203.167.72 >> ~/.ssh/known_hosts
 
-      - name: Ensure Remote Directories
+      - name: Ensure Remote Directory Exists
         run: |
-          ssh root@193.203.167.72 "
-            mkdir -p /home/minecraft/minecraft_server
-            chown -R minecraft:minecraft /home/minecraft
-          "
+          ssh root@193.203.167.72 "mkdir -p /home/minecraft/minecraft_server && chown -R minecraft:minecraft /home/minecraft"
 
-      - name: Deploy Files Using rsync
+      - name: Deploy Files Using rsync (Upload Only, No Deletes)
         run: |
-          # Exclude any dynamic/persistent data you don't want overwritten
-          rsync -avz --delete \
+          # Use --update (-u) so rsync won't overwrite newer files on the server.
+          # Remove --delete so we don't remove any existing files.
+          rsync -avzu \
             --exclude='bluemap' \
-            --exclude='world' \
-            --exclude='world_nether' \
             --exclude='lobby' \
             --exclude='db/' \
             --exclude='data/' \
             --exclude='plugins/**/data/' \
+            --exclude='plugins/**/logs/' \
+            --exclude='minecraft_data/worlds.zip' \
             -e "ssh -i ~/.ssh/id_rsa" ./ root@193.203.167.72:/home/minecraft/minecraft_server/
 
-      - name: Run Minecraft Server with screen
+      - name: Install Java and Run Minecraft Server with Screen
         run: |
           ssh -T root@193.203.167.72 << 'EOF'
-            # 1. Install Java 21 and screen if not installed
+            # Install Java JDK 21 if not already installed
             if ! java -version 2>&1 | grep -q 'openjdk 21'; then
-              echo "Installing Java 21..."
+              echo "Java 21 not found. Installing..."
               apt update && apt install -y openjdk-21-jdk
             else
               echo "Java 21 is already installed."
             fi
 
+            # Install screen if not already installed
             if ! command -v screen &> /dev/null; then
-              echo "Installing screen..."
+              echo "screen not found. Installing..."
               apt install -y screen
             else
               echo "screen is already installed."
             fi
 
-            # 2. Stop any existing server session
-            echo "Attempting to stop existing Minecraft server..."
-            # Send 'stop' command to the screen session (if it exists)
-            screen -S minecraft_server -X stuff "stop^M" || true
-            # Give it a few seconds to stop gracefully
-            sleep 5
-            # Force quit the screen session if still active
-            screen -S minecraft_server -X quit || true
+            # Create necessary directories and user if not already present
+            useradd -m -s /bin/bash minecraft || true
+            mkdir -p /home/minecraft/minecraft_server
+            chown -R minecraft:minecraft /home/minecraft
 
-            # 3. Start the server in a new screen session
+            # If worlds.zip is missing but worlds_static.zip exists, copy worlds_static.zip to worlds.zip
+            if [ ! -f /home/root/minecraft_data/worlds.zip ] && [ -f /home/root/minecraft_data/worlds_static.zip ]; then
+              cp /home/root/minecraft_data/worlds_static.zip /home/root/minecraft_data/worlds.zip
+              echo "No worlds.zip found. Copied worlds_static.zip to worlds.zip"
+            fi
+
+            # Unzip worlds.zip from root path if the world directory does not exist
+            if [ ! -d /home/minecraft/minecraft_server/world ]; then
+              if [ -f /home/root/minecraft_data/worlds.zip ]; then
+                echo "Found worlds.zip in /home/root/minecraft_data, proceeding to unzip..."
+                unzip -n /home/root/minecraft_data/worlds.zip -d /home/minecraft/minecraft_server/
+                chown -R minecraft:minecraft /home/minecraft/minecraft_server/
+              else
+                echo "worlds.zip not found in /home/root/minecraft_data!"
+              fi
+            else
+              echo "World directory already exists. Skipping unzip."
+            fi
+
+            # Run the Minecraft server using screen
             cd /home/minecraft/minecraft_server
-            echo "Starting new Minecraft server screen session..."
-            screen -dmS minecraft_server java -Xmx12G -Xms4G -jar purpur.jar nogui
+            screen -dmS minecraft_server bash -c 'java -Xmx12G -Xms4G -jar purpur.jar nogui'
+
+            echo "Minecraft server started in a screen session named 'minecraft_server'."
           EOF

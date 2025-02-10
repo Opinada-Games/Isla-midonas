@@ -64,3 +64,6 @@ plugins/CMILib/Translations/Locale_EN.yml
 plugins/GadgetsMenu/database.db
 plugins/AnimatedScoreboard/playerdata-sqlite.db
 lobby/death-chests.yml
+plugins/ProtocolLib/lastupdate
+plugins/Multiverse-Core/worlds.yml
+plugins/LuckPerms/translations/repository/status.json
