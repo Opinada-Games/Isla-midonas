@@ -27,9 +27,6 @@ jobs:
       - name: Deploy Files Using rsync
         run: |
           rsync -avz --delete \
-            --exclude='world' \
-            --exclude='world_nether' \
-            --exclude='lobby' \
             --exclude='bluemap' \
             -e "ssh -i ~/.ssh/id_rsa" ./ root@193.203.167.72:/home/minecraft/minecraft_server/
 
@@ -40,6 +37,13 @@ jobs:
             useradd -m -s /bin/bash minecraft || true
             mkdir -p /home/minecraft/minecraft_server
             chown -R minecraft:minecraft /home/minecraft
+
+            # Unzip worlds.zip if world data does not exist
+            if [ ! -d /home/minecraft/minecraft_server/world ]; then
+              unzip /home/minecraft/minecraft_server/worlds.zip -d /home/minecraft/minecraft_server/
+              chown -R minecraft:minecraft /home/minecraft/minecraft_server/
+              rm /home/minecraft/minecraft_server/worlds.zip
+            fi
 
             # Build and run the Docker container
             cd /home/minecraft/minecraft_server
@@ -54,10 +58,10 @@ jobs:
               -p 25565:25565 \
               -p 8100:8100 \
               -p 19132:19132/udp \
-              -v /home/root/minecraft/world:/home/minecraft/minecraft_server/world \
-              -v /home/root/minecraft/world_nether:/home/minecraft/minecraft_server/world_nether \
-              -v /home/root/minecraft/lobby:/home/minecraft/minecraft_server/lobby \
-              -v /home/root/minecraft/bluemap:/home/minecraft/minecraft_server/plugins/BlueMap \
+              -v /home/minecraft/minecraft_server/world:/home/minecraft/minecraft_server/world \
+              -v /home/minecraft/minecraft_server/world_nether:/home/minecraft/minecraft_server/world_nether \
+              -v /home/minecraft/minecraft_server/lobby:/home/minecraft/minecraft_server/lobby \
+              -v /home/minecraft/minecraft_server/plugins/BlueMap:/home/minecraft/minecraft_server/plugins/BlueMap \
               --user minecraft \
               --name minecraft_server \
               minecraft-server
