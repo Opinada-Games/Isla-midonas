@@ -24,17 +24,17 @@ Delay: 10 minutes
 Days:
 - SATURDAY
 Months:
-- JUNE
 - JANUARY
-- DECEMBER
-- AUGUST
-- OCTOBER
-- MAY
 - JULY
+- OCTOBER
 - FEBRUARY
-- MARCH
+- AUGUST
 - SEPTEMBER
 - NOVEMBER
+- MAY
+- JUNE
+- MARCH
+- DECEMBER
 - APRIL
 Rain: false
 Thunder: false

@@ -3,6 +3,7 @@ world/
 world_nether/
 witp/
 libraries/
+libs/
 cache/
 logs/
 versions/
@@ -49,7 +50,6 @@ Thumbs.db
 *.zip
 *.tar.gz
 backups/
-plugins/DiscordSRV/config.yml
 plugins/DiscordSRV/config.yml
 purpur-1.21.4-2388.jar
 plugins/SkinsRestorer/recommendations.json
