@@ -22,7 +22,11 @@ jobs:
 
       - name: Deploy Files Using rsync
         run: |
-          rsync -avz --delete --exclude='world' --exclude='world_nether' --exclude='lobby' \
+          rsync -avz --delete \
+            --exclude='world' \
+            --exclude='world_nether' \
+            --exclude='lobby' \
+            --exclude='bluemap' \
             -e "ssh -i ~/.ssh/id_rsa" ./ root@193.203.167.72:/home/minecraft/minecraft_server/
 
       - name: Build and Run Docker on VPS
@@ -41,7 +45,7 @@ jobs:
             docker stop minecraft_server || true
             docker rm minecraft_server || true
 
-            # Run the Docker container with world data mounted to persist player progress
+            # Run the Docker container with world and BlueMap data mounted
             docker run -d \
               -p 25565:25565 \
               -p 8100:8100 \
@@ -49,6 +53,7 @@ jobs:
               -v /home/root/minecraft/world:/home/minecraft/minecraft_server/world \
               -v /home/root/minecraft/world_nether:/home/minecraft/minecraft_server/world_nether \
               -v /home/root/minecraft/lobby:/home/minecraft/minecraft_server/lobby \
+              -v /home/root/minecraft/bluemap:/home/minecraft/minecraft_server/plugins/BlueMap \
               --user minecraft \
               --name minecraft_server \
               minecraft-server
