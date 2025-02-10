@@ -24,4 +24,4 @@ EXPOSE 25565 8100 19132/udp
 RUN echo "eula=true" > eula.txt
 
 # Run the Minecraft server with optimized memory usage (up to 12G)
-CMD ["java", "-Xmx12G", "-Xms4G", "-jar", "server.jar", "nogui"]
+CMD ["java", "-Xmx12G", "-Xms4G", "-jar", "purpur.jar", "nogui"]
