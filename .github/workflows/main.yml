@@ -1,27 +1,60 @@
-name: FTP Deploy
+name: Deploy Minecraft Server
 
 on:
   push:
     branches:
-      - main  # Change if you want to deploy from a different branch
+      - main
 
 jobs:
-  ftp-deploy:
-    name: Deploy via FTP
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Deploy to FTP Server
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      - name: Set Up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H 193.203.167.72 >> ~/.ssh/known_hosts
+
+      - name: Upload Files via SFTP
+        uses: atmoz/sftp@v1
         with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          port: ${{ secrets.FTP_PORT }}
-          protocol: ftp
-          local-dir: ./  # Specify the directory to upload (e.g., ./ for entire repo or ./dist for build files)
-          server-dir: /  # Adjust the target directory on your FTP server
-          dangerous-clean-slate: false  # Set to true if you want to wipe the server before upload
+          host: 193.203.167.72
+          username: root
+          key: ${{ secrets.DEPLOY_KEY }}
+          local_path: "."
+          remote_path: "/home/minecraft/minecraft_server"
+          options: '-r'  # Recursive upload for directories
+
+      - name: Deploy Docker Container on VPS
+        run: |
+          ssh root@193.203.167.72 << 'EOF'
+            # Create necessary directories and user if not already present
+            useradd -m -s /bin/bash minecraft || true
+            mkdir -p /home/minecraft/minecraft_server
+            chown -R minecraft:minecraft /home/minecraft
+
+            # Build and run the Docker container
+            cd /home/minecraft/minecraft_server
+            docker build -t minecraft-server .
+
+            # Stop and remove the existing container if it exists
+            docker stop minecraft_server || true
+            docker rm minecraft_server || true
+
+            # Run the Docker container with world data mounted
+            docker run -d \
+              -p 25565:25565 \
+              -p 8100:8100 \
+              -p 19132:19132/udp \
+              -v /home/root/minecraft/world:/home/minecraft/minecraft_server/world \
+              -v /home/root/minecraft/world_nether:/home/minecraft/minecraft_server/world_nether \
+              -v /home/root/minecraft/lobby:/home/minecraft/minecraft_server/lobby \
+              --user minecraft \
+              --name minecraft_server \
+              minecraft-server
+          EOF
