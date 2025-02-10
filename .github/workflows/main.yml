@@ -64,10 +64,10 @@ jobs:
 
             # Build and run the Docker container
             cd /home/minecraft/minecraft_server
-            if [ -f Dockerfile ]; then
-              docker build -t minecraft-server .
+            if [ -f Minecraft.dockerfile ]; then
+              docker build -t minecraft-server -f Minecraft.dockerfile .
             else
-              echo "No Dockerfile found in /home/minecraft/minecraft_server. Aborting."
+              echo "No Minecraft.dockerfile found in /home/minecraft/minecraft_server. Aborting."
               exit 1
             fi
 
