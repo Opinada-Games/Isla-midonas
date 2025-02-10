@@ -13,7 +13,7 @@ RUN mkdir -p $MINECRAFT_HOME \
 WORKDIR $MINECRAFT_HOME
 
 # Copy server files into the container
-COPY ./server.jar $MINECRAFT_HOME
+COPY ./purpur.jar $MINECRAFT_HOME
 COPY ./plugins $MINECRAFT_HOME/plugins
 COPY ./config $MINECRAFT_HOME/config
 
