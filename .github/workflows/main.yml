@@ -32,19 +32,17 @@ jobs:
 
       - name: Build and Run Docker on VPS
         run: |
-          ssh -T root@193.203.167.72 << 'EOF'
+          ssh root@193.203.167.72 << 'EOF'
             # Create necessary directories and user if not already present
             useradd -m -s /bin/bash minecraft || true
             mkdir -p /home/minecraft/minecraft_server
             chown -R minecraft:minecraft /home/minecraft
 
-            # Move and unzip worlds.zip only if the world directory does not exist
+            # Unzip worlds.zip from root path if the world directory does not exist
             if [ ! -d /home/minecraft/minecraft_server/world ]; then
               if [ -f /home/root/minecraft_data/worlds.zip ]; then
-                mv /home/root/minecraft_data/worlds.zip /home/minecraft/minecraft_server/
-                unzip /home/minecraft/minecraft_server/worlds.zip -d /home/minecraft/minecraft_server/
+                unzip /home/root/minecraft_data/worlds.zip -d /home/minecraft/minecraft_server/
                 chown -R minecraft:minecraft /home/minecraft/minecraft_server/
-                rm /home/minecraft/minecraft_server/worlds.zip
               else
                 echo "worlds.zip not found in /home/root/minecraft_data!"
               fi
