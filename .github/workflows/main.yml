@@ -24,22 +24,32 @@ jobs:
         run: |
           ssh root@193.203.167.72 "mkdir -p /home/minecraft/minecraft_server && chown -R minecraft:minecraft /home/minecraft"
 
-      - name: Deploy Files Using rsync
+      - name: Deploy Files Using rsync (Avoid Deleting Worlds)
         run: |
+          # Exclude persistent directories and the worlds.zip from deletion.
           rsync -avz --delete \
             --exclude='bluemap' \
-            --exclude='minecraft_data/worlds.zip' \
+            --exclude='world' \
+            --exclude='world_nether' \
+            --exclude='lobby' \
+            --exclude='home/root/minecraft_data/worlds.zip' \
             -e "ssh -i ~/.ssh/id_rsa" ./ root@193.203.167.72:/home/minecraft/minecraft_server/
 
       - name: Build and Run Docker on VPS
         run: |
-          ssh root@193.203.167.72 << 'EOF'
+          ssh -T root@193.203.167.72 << 'EOF'
             # Create necessary directories and user if not already present
             useradd -m -s /bin/bash minecraft || true
             mkdir -p /home/minecraft/minecraft_server
             chown -R minecraft:minecraft /home/minecraft
 
-            # Safeguard: Ensure worlds.zip isn't moved or deleted
+            # If worlds.zip is missing but worlds_static.zip exists, copy worlds_static.zip to worlds.zip
+            if [ ! -f /home/root/minecraft_data/worlds.zip ] && [ -f /home/root/minecraft_data/worlds_static.zip ]; then
+              cp /home/root/minecraft_data/worlds_static.zip /home/root/minecraft_data/worlds.zip
+              echo "No worlds.zip found. Copied worlds_static.zip to worlds.zip"
+            fi
+
+            # Unzip worlds.zip from root path if the world directory does not exist
             if [ ! -d /home/minecraft/minecraft_server/world ]; then
               if [ -f /home/root/minecraft_data/worlds.zip ]; then
                 echo "Found worlds.zip in /home/root/minecraft_data, proceeding to unzip..."
@@ -52,16 +62,14 @@ jobs:
               echo "World directory already exists. Skipping unzip."
             fi
 
-            # Verify that worlds.zip is still in place after unzipping
-            if [ -f /home/root/minecraft_data/worlds.zip ]; then
-              echo "worlds.zip is still present in /home/root/minecraft_data after unzipping."
-            else
-              echo "worlds.zip is missing from /home/root/minecraft_data after unzipping!"
-            fi
-
             # Build and run the Docker container
             cd /home/minecraft/minecraft_server
-            docker build -t minecraft-server .
+            if [ -f Dockerfile ]; then
+              docker build -t minecraft-server .
+            else
+              echo "No Dockerfile found in /home/minecraft/minecraft_server. Aborting."
+              exit 1
+            fi
 
             # Stop and remove the existing container if it exists
             docker stop minecraft_server || true
