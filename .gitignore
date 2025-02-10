@@ -16,10 +16,6 @@ db/
 data/
 userdata/
 
-
-plugins/**/data/
-plugins/**/logs/
-
 # Server properties and configurations (if you want to exclude them)
 banned-players.json
 banned-ips.json
@@ -31,7 +27,6 @@ session.lock
 # Plugin data (optional - if you don't want plugin configs tracked)
 plugins/**/data/
 plugins/**/logs/
-**/*.db
 *.playerskin
 
 # Logs and crash reports
