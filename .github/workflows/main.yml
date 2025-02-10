@@ -38,11 +38,18 @@ jobs:
             mkdir -p /home/minecraft/minecraft_server
             chown -R minecraft:minecraft /home/minecraft
 
-            # Unzip worlds.zip if world data does not exist
+            # Move and unzip worlds.zip only if the world directory does not exist
             if [ ! -d /home/minecraft/minecraft_server/world ]; then
-              unzip /home/minecraft/minecraft_server/worlds.zip -d /home/minecraft/minecraft_server/
-              chown -R minecraft:minecraft /home/minecraft/minecraft_server/
-              rm /home/minecraft/minecraft_server/worlds.zip
+              if [ -f /home/root/minecraft_data/worlds.zip ]; then
+                mv /home/root/minecraft_data/worlds.zip /home/minecraft/minecraft_server/
+                unzip /home/minecraft/minecraft_server/worlds.zip -d /home/minecraft/minecraft_server/
+                chown -R minecraft:minecraft /home/minecraft/minecraft_server/
+                rm /home/minecraft/minecraft_server/worlds.zip
+              else
+                echo "worlds.zip not found in /home/root/minecraft_data!"
+              fi
+            else
+              echo "World directory already exists. Skipping unzip."
             fi
 
             # Build and run the Docker container
