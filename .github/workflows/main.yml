@@ -32,7 +32,7 @@ jobs:
 
       - name: Build and Run Docker on VPS
         run: |
-          ssh root@193.203.167.72 << 'EOF'
+          ssh -T root@193.203.167.72 << 'EOF'
             # Create necessary directories and user if not already present
             useradd -m -s /bin/bash minecraft || true
             mkdir -p /home/minecraft/minecraft_server
