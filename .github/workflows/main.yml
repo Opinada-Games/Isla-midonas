@@ -28,6 +28,7 @@ jobs:
         run: |
           rsync -avz --delete \
             --exclude='bluemap' \
+            --exclude='minecraft_data/worlds.zip' \
             -e "ssh -i ~/.ssh/id_rsa" ./ root@193.203.167.72:/home/minecraft/minecraft_server/
 
       - name: Build and Run Docker on VPS
@@ -38,16 +39,24 @@ jobs:
             mkdir -p /home/minecraft/minecraft_server
             chown -R minecraft:minecraft /home/minecraft
 
-            # Unzip worlds.zip from root path if the world directory does not exist
+            # Safeguard: Ensure worlds.zip isn't moved or deleted
             if [ ! -d /home/minecraft/minecraft_server/world ]; then
               if [ -f /home/root/minecraft_data/worlds.zip ]; then
-                unzip /home/root/minecraft_data/worlds.zip -d /home/minecraft/minecraft_server/
+                echo "Found worlds.zip in /home/root/minecraft_data, proceeding to unzip..."
+                unzip -n /home/root/minecraft_data/worlds.zip -d /home/minecraft/minecraft_server/
                 chown -R minecraft:minecraft /home/minecraft/minecraft_server/
               else
                 echo "worlds.zip not found in /home/root/minecraft_data!"
               fi
             else
               echo "World directory already exists. Skipping unzip."
+            fi
+
+            # Verify that worlds.zip is still in place after unzipping
+            if [ -f /home/root/minecraft_data/worlds.zip ]; then
+              echo "worlds.zip is still present in /home/root/minecraft_data after unzipping."
+            else
+              echo "worlds.zip is missing from /home/root/minecraft_data after unzipping!"
             fi
 
             # Build and run the Docker container
