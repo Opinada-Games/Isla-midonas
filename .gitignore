@@ -1,5 +1,6 @@
 # Minecraft world data
 world/
+world/stats/
 world_nether/
 witp/
 libraries/
@@ -8,7 +9,16 @@ cache/
 logs/
 versions/
 plugins/.paper-remapped
+
+# data
 **/cache/
+db/
+data/
+userdata/
+
+
+plugins/**/data/
+plugins/**/logs/
 
 # Server properties and configurations (if you want to exclude them)
 banned-players.json
@@ -21,6 +31,8 @@ session.lock
 # Plugin data (optional - if you don't want plugin configs tracked)
 plugins/**/data/
 plugins/**/logs/
+**/*.db
+*.playerskin
 
 # Logs and crash reports
 logs/
@@ -56,3 +68,4 @@ plugins/SkinsRestorer/recommendations.json
 plugins/CMILib/Translations/Locale_EN.yml
 plugins/GadgetsMenu/database.db
 plugins/AnimatedScoreboard/playerdata-sqlite.db
+lobby/death-chests.yml

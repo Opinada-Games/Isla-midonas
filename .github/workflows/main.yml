@@ -1,4 +1,4 @@
-name: Deploy Minecraft Server with rsync
+name: Deploy Minecraft Server without Docker
 
 on:
   push:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: Check Out Code
         uses: actions/checkout@v3
 
       - name: Set Up SSH
@@ -20,71 +20,55 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H 193.203.167.72 >> ~/.ssh/known_hosts
 
-      - name: Ensure Remote Directory Exists
+      - name: Ensure Remote Directories
         run: |
-          ssh root@193.203.167.72 "mkdir -p /home/minecraft/minecraft_server && chown -R minecraft:minecraft /home/minecraft"
+          ssh root@193.203.167.72 "
+            mkdir -p /home/minecraft/minecraft_server
+            chown -R minecraft:minecraft /home/minecraft
+          "
 
-      - name: Deploy Files Using rsync (Avoid Deleting Worlds)
+      - name: Deploy Files Using rsync
         run: |
-          # Exclude persistent directories and the worlds.zip from deletion.
+          # Exclude any dynamic/persistent data you don't want overwritten
           rsync -avz --delete \
             --exclude='bluemap' \
             --exclude='world' \
             --exclude='world_nether' \
             --exclude='lobby' \
-            --exclude='home/root/minecraft_data/worlds.zip' \
+            --exclude='db/' \
+            --exclude='data/' \
+            --exclude='plugins/**/data/' \
             -e "ssh -i ~/.ssh/id_rsa" ./ root@193.203.167.72:/home/minecraft/minecraft_server/
 
-      - name: Build and Run Docker on VPS
+      - name: Run Minecraft Server with screen
         run: |
           ssh -T root@193.203.167.72 << 'EOF'
-            # Create necessary directories and user if not already present
-            useradd -m -s /bin/bash minecraft || true
-            mkdir -p /home/minecraft/minecraft_server
-            chown -R minecraft:minecraft /home/minecraft
-
-            # If worlds.zip is missing but worlds_static.zip exists, copy worlds_static.zip to worlds.zip
-            if [ ! -f /home/root/minecraft_data/worlds.zip ] && [ -f /home/root/minecraft_data/worlds_static.zip ]; then
-              cp /home/root/minecraft_data/worlds_static.zip /home/root/minecraft_data/worlds.zip
-              echo "No worlds.zip found. Copied worlds_static.zip to worlds.zip"
-            fi
-
-            # Unzip worlds.zip from root path if the world directory does not exist
-            if [ ! -d /home/minecraft/minecraft_server/world ]; then
-              if [ -f /home/root/minecraft_data/worlds.zip ]; then
-                echo "Found worlds.zip in /home/root/minecraft_data, proceeding to unzip..."
-                unzip -n /home/root/minecraft_data/worlds.zip -d /home/minecraft/minecraft_server/
-                chown -R minecraft:minecraft /home/minecraft/minecraft_server/
-              else
-                echo "worlds.zip not found in /home/root/minecraft_data!"
-              fi
+            # 1. Install Java 21 and screen if not installed
+            if ! java -version 2>&1 | grep -q 'openjdk 21'; then
+              echo "Installing Java 21..."
+              apt update && apt install -y openjdk-21-jdk
             else
-              echo "World directory already exists. Skipping unzip."
+              echo "Java 21 is already installed."
             fi
 
-            # Build and run the Docker container
+            if ! command -v screen &> /dev/null; then
+              echo "Installing screen..."
+              apt install -y screen
+            else
+              echo "screen is already installed."
+            fi
+
+            # 2. Stop any existing server session
+            echo "Attempting to stop existing Minecraft server..."
+            # Send 'stop' command to the screen session (if it exists)
+            screen -S minecraft_server -X stuff "stop^M" || true
+            # Give it a few seconds to stop gracefully
+            sleep 5
+            # Force quit the screen session if still active
+            screen -S minecraft_server -X quit || true
+
+            # 3. Start the server in a new screen session
             cd /home/minecraft/minecraft_server
-            if [ -f Minecraft.dockerfile ]; then
-              docker build -t minecraft-server -f Minecraft.dockerfile .
-            else
-              echo "No Minecraft.dockerfile found in /home/minecraft/minecraft_server. Aborting."
-              exit 1
-            fi
-
-            # Stop and remove the existing container if it exists
-            docker stop minecraft_server || true
-            docker rm minecraft_server || true
-
-            # Run the Docker container with world and BlueMap data mounted
-            docker run -d \
-              -p 25565:25565 \
-              -p 8100:8100 \
-              -p 19132:19132/udp \
-              -v /home/minecraft/minecraft_server/world:/home/minecraft/minecraft_server/world \
-              -v /home/minecraft/minecraft_server/world_nether:/home/minecraft/minecraft_server/world_nether \
-              -v /home/minecraft/minecraft_server/lobby:/home/minecraft/minecraft_server/lobby \
-              -v /home/minecraft/minecraft_server/plugins/BlueMap:/home/minecraft/minecraft_server/plugins/BlueMap \
-              --user minecraft \
-              --name minecraft_server \
-              minecraft-server
+            echo "Starting new Minecraft server screen session..."
+            screen -dmS minecraft_server java -Xmx12G -Xms4G -jar purpur.jar nogui
           EOF
