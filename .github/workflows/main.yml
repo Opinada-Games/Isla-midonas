@@ -30,6 +30,8 @@ jobs:
           # Remove --delete so we don't remove any existing files.
           rsync -avzu \
             --exclude='bluemap' \
+            --exclude='world' \
+            --exclude='world_nether' \
             --exclude='lobby' \
             --exclude='db/' \
             --exclude='data/' \
@@ -81,9 +83,18 @@ jobs:
               echo "World directory already exists. Skipping unzip."
             fi
 
-            # Run the Minecraft server using screen
+            # Stop any existing screen session
+            echo "Attempting to stop existing Minecraft server..."
+            # Send 'stop' to the server console (if it exists)
+            screen -S minecraft_server -X stuff "stop^M" || true
+            # Give it a few seconds to stop gracefully
+            sleep 5
+            # Force quit the screen session if still active
+            screen -S minecraft_server -X quit || true
+
+            # Start the Minecraft server using screen
             cd /home/minecraft/minecraft_server
             screen -dmS minecraft_server bash -c 'java -Xmx12G -Xms4G -jar purpur.jar nogui'
 
-            echo "Minecraft server started in a screen session named 'minecraft_server'."
+            echo "Minecraft server restarted in a screen session named 'minecraft_server'."
           EOF
