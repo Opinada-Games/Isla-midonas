@@ -73,3 +73,6 @@ plugins/ProtocolLib/lastupdate
 plugins/Multiverse-Core/worlds.yml
 plugins/LuckPerms/translations/repository/status.json
 plugins/Jobs/jobs.sqlite.db
+
+# Re-include the "regions" folder
+!plugins/**/world/**
