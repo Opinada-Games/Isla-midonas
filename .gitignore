@@ -75,4 +75,4 @@ plugins/LuckPerms/translations/repository/status.json
 plugins/Jobs/jobs.sqlite.db
 
 # Re-include the "regions" folder
-!plugins/**/world/**
+!plugins/**/worlds/**
