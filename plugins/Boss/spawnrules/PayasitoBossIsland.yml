@@ -26,17 +26,17 @@ Delay: 6 minutes
 Days:
 - THURSDAY
 Months:
-- SEPTEMBER
 - AUGUST
 - NOVEMBER
-- FEBRUARY
-- JUNE
-- JANUARY
-- OCTOBER
-- MARCH
-- MAY
-- DECEMBER
 - APRIL
+- JANUARY
+- DECEMBER
+- MAY
+- SEPTEMBER
+- JUNE
+- OCTOBER
+- FEBRUARY
+- MARCH
 - JULY
 Rain: false
 Thunder: false

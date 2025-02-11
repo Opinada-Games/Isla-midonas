@@ -9,6 +9,11 @@ cache/
 logs/
 versions/
 plugins/.paper-remapped
+playerdata/
+backups/
+backup/
+stats/
+leaderboards/
 
 # data
 **/cache/
@@ -67,3 +72,4 @@ lobby/death-chests.yml
 plugins/ProtocolLib/lastupdate
 plugins/Multiverse-Core/worlds.yml
 plugins/LuckPerms/translations/repository/status.json
+plugins/Jobs/jobs.sqlite.db
