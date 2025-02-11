@@ -41,8 +41,10 @@ jobs:
             -e "ssh -i ~/.ssh/id_rsa" ./ root@193.203.167.72:/home/minecraft/minecraft_server/
 
       - name: Install Java and Run Minecraft Server with Screen
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
         run: |
-          ssh -T root@193.203.167.72 << 'EOF'
+          ssh -T root@193.203.167.72 << EOF
             # Install Java JDK 21 if not already installed
             if ! java -version 2>&1 | grep -q 'openjdk 21'; then
               echo "Java 21 not found. Installing..."
@@ -83,13 +85,14 @@ jobs:
               echo "World directory already exists. Skipping unzip."
             fi
 
+            # Overwrite the DiscordSRV BotToken in plugins/DiscordSRV/config.yml using the environment variable
+            echo "Setting DiscordSRV BotToken from GitHub secret..."
+            sed -i "s@^BotToken:.*@BotToken: \"${DISCORD_BOT_TOKEN}\"@" /home/minecraft/minecraft_server/plugins/DiscordSRV/config.yml || true
+
             # Stop any existing screen session
             echo "Attempting to stop existing Minecraft server..."
-            # Send 'stop' to the server console (if it exists)
             screen -S minecraft_server -X stuff "stop^M" || true
-            # Give it a few seconds to stop gracefully
             sleep 5
-            # Force quit the screen session if still active
             screen -S minecraft_server -X quit || true
 
             # Start the Minecraft server using screen
