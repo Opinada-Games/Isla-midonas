@@ -35,8 +35,6 @@ jobs:
             --exclude='lobby' \
             --exclude='db/' \
             --exclude='data/' \
-            --exclude='plugins/**/data/' \
-            --exclude='plugins/**/logs/' \
             --exclude='minecraft_data/worlds.zip' \
             -e "ssh -i ~/.ssh/id_rsa" ./ root@193.203.167.72:/home/minecraft/minecraft_server/
 
