@@ -64,7 +64,7 @@ Thumbs.db
 *.zip
 *.tar.gz
 backups/
-plugins/DiscordSRV/config.yml
+plugins/DiscordSRV/**
 purpur-1.21.4-2388.jar
 plugins/SkinsRestorer/recommendations.json
 plugins/CMILib/Translations/Locale_EN.yml
@@ -78,3 +78,4 @@ plugins/Jobs/jobs.sqlite.db
 
 # Re-include the "regions" folder
 !plugins/**/worlds/**/**
+!plugins/DiscordSRV/synchronization.yml
