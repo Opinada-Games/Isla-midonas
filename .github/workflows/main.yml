@@ -29,10 +29,10 @@ jobs:
           # Use --update (-u) so rsync won't overwrite newer files on the server.
           # Remove --delete so we don't remove any existing files.
           rsync -avzu \
-            --exclude='bluemap' \
-            --exclude='world' \
-            --exclude='world_nether' \
-            --exclude='lobby' \
+            --exclude='/bluemap' \
+            --exclude='/world' \
+            --exclude='/world_nether' \
+            --exclude='/lobby' \
             --exclude='db/' \
             --exclude='data/' \
             --exclude='minecraft_data/worlds.zip' \

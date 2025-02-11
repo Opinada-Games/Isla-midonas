@@ -1,8 +1,9 @@
 # Minecraft world data
-world/
+/world
 world/stats/
-world_nether/
-witp/
+/bluemap/web/maps
+/world_nether
+/witp
 libraries/
 libs/
 cache/
@@ -20,6 +21,7 @@ leaderboards/
 db/
 data/
 userdata/
+plugins/FastAsyncWorldEdit/history/
 
 # Server properties and configurations (if you want to exclude them)
 banned-players.json
