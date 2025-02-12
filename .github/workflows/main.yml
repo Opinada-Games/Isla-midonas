@@ -83,9 +83,13 @@ jobs:
               echo "World directory already exists. Skipping unzip."
             fi
 
-            # Overwrite the DiscordSRV BotToken in plugins/DiscordSRV/config.yml using the environment variable
+            # Overwrite the DiscordSRV BotToken in plugins/DiscordSRV/config.yml
             echo "Setting DiscordSRV BotToken from GitHub secret..."
             sed -i "s@^BotToken:.*@BotToken: \"${DISCORD_BOT_TOKEN}\"@" /home/minecraft/minecraft_server/plugins/DiscordSRV/config.yml || true
+
+            # Overwrite the 'Channels: { "global": ... }' line with the production channel ID
+            echo "Setting Channels property to production..."
+            sed -i 's@Channels: { "global": ".*" }@Channels: { "global": "1077792065955577886" }@' /home/minecraft/minecraft_server/plugins/DiscordSRV/config.yml || true
 
             # Stop any existing screen session
             echo "Attempting to stop existing Minecraft server..."
