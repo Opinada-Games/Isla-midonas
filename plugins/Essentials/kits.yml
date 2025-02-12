@@ -1,112 +1,112 @@
 kits:
   herramientas:
-    delay: 3600 # 10 minutes
-    cost: 700
+    delay: 3600
+    cost: 600
     items:
-      - stone_sword 1 name:&6Cuchillo_de_Cocina lore:Pa'_defenderte_de_las_ratas
-      - stone_shovel 1 name:&6Pala_de_Líder lore:Por_sí_ocupas_tunelarte_pa'_salir
-      - stone_pickaxe 1 name:&6Pico_de_Aventuras lore:Solo_es_un_pico,_no_esperes_milagros
-      - bread 3 name:&6Bolillo lore:Pa'_el_susto
-      - enchanted_book 1 enchant:efficiency:1 name:&6Libro_de_Eficiencia lore:Pa'_que_no_tardes_en_hacer_hoyos
+      - stone_sword 1
+      - stone_shovel 1
+      - stone_pickaxe 1
+      - bread 12
+      - enchanted_book 1 enchant:efficiency:1
 
   iniciacion:
-    delay: -1 # Once only
+    delay: -1
     cost: 0
     items:
-      - wooden_sword 1 name:&eCuchara_de_Plástico lore:La_herramienta_oficial_del_sótano
-      - bread 8 name:&6Sobras_de_Pan lore:Con_agua_lo_reparas
-      - leather_chestplate 1 color:139,69,19 name:&6Chamarra_de_cuero lore:Con_olor_a_humedad
-      - torch 16 name:&6Antorcha_Básica lore:Para_quitar_el_miedo_a_Armando_en_la_oscuridad
-      - enchanted_golden_apple 8 name:&6Manzanas_de_Armando lore:Cuando_le_sobran_a_Adrian
-      - enchanted_book 1 enchant:protection:2 name:&6Libro_de_Protección_2 lore:No_es_mucho,_pero_sirve
+      - wooden_sword 1
+      - bread 8
+      - leather_chestplate 1
+      - torch 16
+      - enchanted_golden_apple 8
+      - enchanted_book 1 enchant:protection:2
       - /eco give {player} 1000
 
   constructor:
-    delay: 10800 # 2 hours
+    delay: 10800
     cost: 600
     items:
-      - dirt 32 name:&2Tierra_Mundial lore:¡Construye_el_futuro!_(o_entierra_a_un_cadaver)
-      - cobblestone 32 name:&7Piedra_Básica lore:No_pidas_bloques_fancy,_esto_hay
-      - oak_log 16 name:&6Madera_de_Acopio lore:Mejor_para_construir_que_una_lamina
-      - glass 8 name:&fVidrio_Original lore:Solamente_vidrio
-      - torch 8 name:&eLuz_de_Esperanza lore:La_oscuridad_no_es_divertida_con_la_pulga_cerca
-      - enchanted_book 1 enchant:unbreaking:1 name:&6Libro_de_Inquebrantabilidad lore:Aplica_a_herramientas,_no_a_tus_esperanzas
+      - dirt 32
+      - cobblestone 32
+      - oak_log 16
+      - glass 8
+      - torch 8
+      - enchanted_book 1 enchant:unbreaking:1
 
   explorador:
-    delay: 10800 # 3 hours
+    delay: 10800
     cost: 500
     items:
-      - boat 1 name:&3Lancha_Presidencial lore:Para_ayudar_a_Mai_a_tirar_un_cadaver_al_mar
-      - compass 1 name:&6Brújula_del_Basurero lore:Al_menos_todavía_sirve
-      - map 1 name:&fMapa_del_Mundo lore:Aún_no_se_encuentra_el_mamitas
-      - cooked_beef 6 name:&6Carne_de_Rata lore:¡La_energía_del_hambriento!
-      - leather_boots 1 color:139,69,19 name:&6Botas_de_cuero lore:Seminuevas
-      - enchanted_book 1 enchant:feather_falling:1 name:&6Libro_de_Caídas_Suaves lore:Al_menos,_no_del_todo
+      - boat 1
+      - compass 1
+      - map 1
+      - cooked_beef 6
+      - leather_boots 1
+      - enchanted_book 1 enchant:feather_falling:1
 
   guerrero:
-    delay: 21600 # 6 hours
+    delay: 21600
     cost: 1150
     items:
-      - iron_sword 1 name:&cEspada_de_hierro lore:Solo_murieron_2_personas_para_hacerla
-      - iron_helmet 1 name:&6Casco_de_hierro lore:Protección_de_chompa
-      - iron_chestplate 1 name:&6Armadura_de_Hierro lore:Pesada,_pero_funciona
-      - shield 1 name:&6Escudo_de_Líder lore:¡Nunca_se_rompe,_a_veces!
-      - enchanted_golden_apple 1 name:&6Manzana_de_Armando lore:Para_momentos_de_crisis_existencial
-      - enchanted_book 1 enchant:sharpness:1 name:&6Libro_de_Corte_Afilado lore:Haz_un_arma_útil
+      - iron_sword 1
+      - iron_helmet 1
+      - iron_chestplate 1
+      - shield 1
+      - enchanted_golden_apple 1
+      - enchanted_book 1 enchant:sharpness:1
 
   diplomático:
-    delay: 43200 # 12 hours
+    delay: 43200
     cost: 1000
     items:
-      - book 1 name:&9Tratado_de_Paz lore:Firma_con_tus_vecinos_(o_tus_víctimas)
-      - lectern 1 name:&7Podio_para_Discursos lore:Habla_mucho,_haz_poco
-      - emerald 5 name:&2Soborno_Deluxe lore:Pa'_convencer_a_cualquiera,_incluyendo_a_Mai
-      - paper 3 name:&7Permiso_de_Residencia lore:Evita_la_deportación
-      - yellow_banner 1 name:&4Bandera_del_Sótano lore:Representa_el_poder_del_abajo
-      - enchanted_book 1 enchant:loyalty:1 name:&6Libro_de_Lealtad lore:Si_no_es_Armando,_no_sirve
+      - book 1
+      - lectern 1
+      - emerald 5
+      - paper 3
+      - yellow_banner 1
+      - enchanted_book 1 enchant:loyalty:1
 
   superviviente:
-    delay: 14400 # 4 hours
+    delay: 14400
     cost: 600
     items:
-      - fishing_rod 1 name:&bCaña_de_Pescador lore:Para_no_morir,_de_hambre_al_menos
-      - bow 1 name:&cArco_de_Caza lore:Útil_contra_ratas_y_otros_seres
-      - arrow 16 name:&6Flechas_Milagrosas lore:¡Solo_útiles_si_sabes_apuntar!
-      - bread 8 name:&6Pan_de_Subsistencia lore:Seco,_pero_funciona
-      - chainmail_helmet 1 name:&7Casco_Reciclado lore:Lo_quitaron_de_un_basurero,_y_se_nota
-      - enchanted_book 1 enchant:flame:1 name:&6Libro_de_Llamas lore:Más_fuego,_menos_compasión
+      - fishing_rod 1
+      - bow 1
+      - arrow 16
+      - bread 8
+      - chainmail_helmet 1
+      - enchanted_book 1 enchant:flame:1
 
   agricultor:
-    delay: 43200 # 12 hours
+    delay: 43200
     cost: 850
     items:
-      - iron_hoe 1 name:&bAzada_del_Líder lore:Porque_la_comida_no_se_cultiva_sola
-      - wheat_seeds 8 name:&fSemillas_Esperanza lore:Plántalas_con_cuidado,_y_reza
-      - bone_meal 5 name:&7Fertilizante_Orgánico lore:Por_sí_no_crecen_tus_sueños
-      - water_bucket 1 name:&9Cubeta_de_Agua lore:¡Úsala_para_todo!_(menos_hidratarte)
-      - bread 3 name:&6Bolillo_de_Muestra lore:Seco,_como_tus_esperanzas
-      - enchanted_book 1 enchant:fortune:1 name:&6Libro_de_Fortuna lore:No_aplica_a_tu_vida_real
+      - iron_hoe 1
+      - wheat_seeds 8
+      - bone_meal 5
+      - water_bucket 1
+      - bread 3
+      - enchanted_book 1 enchant:fortune:1
 
   lider:
     delay: 86400
     cost: 2000
     items:
-      - golden_helmet 1 name:&6Corona_del_Líder lore:&ePara_recordar_tu_dominio_simbólico
-      - gold_nugget 5 name:&6Tributo_de_tus_súbditos lore:Solo_oro,_no_sueñes_con_diamantes
-      - torch 16 name:&6Antorchas_de_Gloria lore:Para_no_perderte_en_la_obscuridad
-      - map 1 name:&fMapa_de_Territorios lore:Planea_conquistas,_o_huye_mejor
-      - cooked_beef 10 name:&6Raciones_de_Líder lore:Porque_hasta_el_líder_come
-      - stone_axe 1 name:&6Hacha_del_Orden lore:Para_cortar_la_desesperación
-      - lectern 1 name:&6Atril_Presidencial lore:Inspira_a_los_que_te_odian
-      - enchanted_golden_apple 2 name:&6Manzanas_de_Adrian lore:La_misma_desesperación,_más_dorada
-      - enchanted_book 1 enchant:fire_aspect:1 name:&6Libro_de_Aspecto_Igneo lore:Hazlo_arder,_como_el_sótano
+      - golden_helmet 1
+      - gold_nugget 5
+      - torch 16
+      - map 1
+      - cooked_beef 10
+      - stone_axe 1
+      - lectern 1
+      - enchanted_golden_apple 2
+      - enchanted_book 1 enchant:fire_aspect:1
 
   artesano:
-    delay: 86400 #
+    delay: 86400
     cost: 2600
     items:
-      - diamond_pickaxe 1 name:&bHerramienta_del_Creador lore:Pa'_cambiar_el_mundo_(o_tu_casa)
-      - crafting_table 1 name:&6Mesa_de_Creación lore:El_santo_grial_de_todo_artesano
-      - oak_log 16 name:&6Madera_de_Acopio lore:Directo_del_sótano,_con_aroma_a_humedad
-      - iron_ingot 8 name:&7Lingotes_de_Hierro lore:Para_crear_tus_sueños_(y_mantenerte_vivo)
-      - enchanted_book 1 enchant:mending:1 name:&6Libro_de_Reparación lore:Excepto_tu_relación_con_Adrian
+      - diamond_pickaxe 1
+      - crafting_table 1
+      - oak_log 16
+      - iron_ingot 8
+      - enchanted_book 1 enchant:mending:1
