@@ -32,6 +32,11 @@ ops.json
 whitelist.json
 usercache.json
 session.lock
+lobby/level.dat
+lobby/level.dat_old
+lobby/uid.dat
+lobby/datapacks/bukkit/pack.mcmeta
+lobby/mcmmo_regions/mcmmo_0_0_.mcm
 
 # Plugin data (optional - if you don't want plugin configs tracked)
 plugins/**/data/
@@ -90,3 +95,4 @@ plugins/ExcellentCrates/data.db
 !plugins/DiscordSRV/synchronization.yml
 plugins/JobsReborn-PatchPlaceBreak/sqlite-data.db
 plugins/mcMMO/flatfile/mcmmo.users
+
