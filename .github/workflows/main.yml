@@ -24,19 +24,13 @@ jobs:
         run: |
           ssh root@193.203.167.72 "mkdir -p /home/minecraft/minecraft_server && chown -R minecraft:minecraft /home/minecraft"
 
+      - name: Convert .gitignore to rsync exclude file
+        run: |
+          grep -v '^#' .gitignore | grep -v '^$' | sed 's:^/:**/:' > .rsync-exclude
+
       - name: Deploy Files Using rsync (Upload Only, No Deletes)
         run: |
-          # Use --update (-u) so rsync won't overwrite newer files on the server.
-          # Remove --delete so we don't remove any existing files.
-          rsync -avzu \
-            --exclude='/bluemap' \
-            --exclude='/world' \
-            --exclude='/world_nether' \
-            --exclude='/lobby' \
-            --exclude='db/' \
-            --exclude='data/' \
-            --exclude='minecraft_data/worlds.zip' \
-            -e "ssh -i ~/.ssh/id_rsa" ./ root@193.203.167.72:/home/minecraft/minecraft_server/
+          rsync -avzu --exclude-from=.rsync-exclude -e "ssh -i ~/.ssh/id_rsa" ./ root@193.203.167.72:/home/minecraft/minecraft_server/
 
       - name: Install Java and Run Minecraft Server with Screen
         env:

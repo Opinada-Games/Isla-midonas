@@ -21,6 +21,7 @@ leaderboards/
 **/cache/
 db/
 data/
+Data/
 userdata/
 plugins/FastAsyncWorldEdit/history/
 
@@ -80,6 +81,8 @@ plugins/LuckPerms/translations/repository/status.json
 plugins/Jobs/jobs.sqlite.db
 plugins/IP/players/
 plugins/IP/leaderboards/
+plugins/DeathChest/audits/
+plugins/Boss/spawnrules/
 
 # Re-include the "regions" folder
 !plugins/**/worlds/**/**
