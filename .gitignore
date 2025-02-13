@@ -37,6 +37,7 @@ lobby/level.dat_old
 lobby/uid.dat
 lobby/datapacks/bukkit/pack.mcmeta
 lobby/mcmmo_regions/mcmmo_0_0_.mcm
+transactions.db
 
 # Plugin data (optional - if you don't want plugin configs tracked)
 plugins/**/data/

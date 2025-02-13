@@ -13,6 +13,8 @@ pages:
           - "&a&lExample plugin: &r&aEssentialsX"
         buy-commands:
           - /fly %player% enable
+          - /lp user %player% permission set essentials.fly true
+
       # "3":
       #   material: COAL_BLOCK
       #   displayname: "&0&lBlack screen?"
