@@ -32,6 +32,19 @@ jobs:
         run: |
           rsync -avzu --exclude-from=.rsync-exclude -e "ssh -i ~/.ssh/id_rsa" ./ root@193.203.167.72:/home/minecraft/minecraft_server/
 
+      - name: Update Geyser Plugin on remote server
+        run: |
+          ssh -T root@193.203.167.72 << EOF
+            # Download the latest Geyser plugin
+            curl -L -o /home/minecraft/minecraft_server/plugins/Geyser-Spigot.jar \
+              "https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot"
+
+            # Fix permissions so minecraft user owns the jar
+            chown minecraft:minecraft /home/minecraft/minecraft_server/plugins/Geyser-Spigot.jar
+
+            echo "Geyser plugin has been updated."
+          EOF
+
       - name: Install Java and Run Minecraft Server with Screen
         env:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
@@ -53,18 +66,18 @@ jobs:
               echo "screen is already installed."
             fi
 
-            # Create necessary directories and user if not already present
+            # Create user and directories if not present
             useradd -m -s /bin/bash minecraft || true
             mkdir -p /home/minecraft/minecraft_server
             chown -R minecraft:minecraft /home/minecraft
 
-            # If worlds.zip is missing but worlds_static.zip exists, copy worlds_static.zip to worlds.zip
+            # If worlds.zip is missing but worlds_static.zip exists, copy it over
             if [ ! -f /home/root/minecraft_data/worlds.zip ] && [ -f /home/root/minecraft_data/worlds_static.zip ]; then
               cp /home/root/minecraft_data/worlds_static.zip /home/root/minecraft_data/worlds.zip
               echo "No worlds.zip found. Copied worlds_static.zip to worlds.zip"
             fi
 
-            # Unzip worlds.zip from root path if the world directory does not exist
+            # Unzip worlds.zip if the world directory does not exist
             if [ ! -d /home/minecraft/minecraft_server/world ]; then
               if [ -f /home/root/minecraft_data/worlds.zip ]; then
                 echo "Found worlds.zip in /home/root/minecraft_data, proceeding to unzip..."

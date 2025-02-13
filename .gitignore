@@ -83,6 +83,7 @@ plugins/IP/players/
 plugins/IP/leaderboards/
 plugins/DeathChest/audits/
 plugins/Boss/spawnrules/
+plugins/ExcellentCrates/data.db
 
 # Re-include the "regions" folder
 !plugins/**/worlds/**/**
