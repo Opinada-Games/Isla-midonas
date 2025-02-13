@@ -64,6 +64,8 @@ Thumbs.db
 *.zip
 *.tar.gz
 backups/
+
+# Plugins
 plugins/DiscordSRV/**
 purpur-1.21.4-2388.jar
 plugins/SkinsRestorer/recommendations.json
@@ -75,6 +77,8 @@ plugins/ProtocolLib/lastupdate
 plugins/Multiverse-Core/worlds.yml
 plugins/LuckPerms/translations/repository/status.json
 plugins/Jobs/jobs.sqlite.db
+plugins/IP/players/
+plugins/IP/leaderboards/
 
 # Re-include the "regions" folder
 !plugins/**/worlds/**/**

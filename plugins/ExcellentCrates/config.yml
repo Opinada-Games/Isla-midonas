@@ -102,7 +102,7 @@ Crate:
     Templates:
       default:
         - <lyellow><b>%crate_name%</b></lyellow>
-        - <lgray>Obten llaves en <lyellow>put_your_site.com</lyellow></lgray>
+        - <lgray>Obten llaves en Jugando</lgray>
         - <lgray>Tienes <lyellow>%excellentcrates_keys_%crate_id%%</lyellow> llaves</lgray>
     # Sets the gap between hologram lines.
     LineGap: 0.3
@@ -113,7 +113,7 @@ Crate:
     # 'hh' - hours, 'mm' - minutes, 'ss' - seconds.
     Time: hh:mm:ss
     # Sets the custom message instead of empty counter when there is no cooldown for a crate.
-    Ready: <lgreen>Ready to Open!</lgreen>
+    Ready: <lgreen>Lista para abrir</lgreen>
   # When 'true' replaces PlaceholderAPI placeholders in reward item's name and lore when obtained by players.
   # NOTE: This setting may 'corrupt' item's lore layout in some cases. Ask PlaceholderAPI devs if you're experiencing issues.
   PlaceholderAPI_For_Rewards: false
@@ -160,18 +160,18 @@ Logs:
 Rewards:
   Rarities:
     common:
-      Name: <white>Common</white>
+      Name: <white>Comun</white>
       Weight: 10.0
       Default: true
     legendary:
-      Name: <lorange>Legendary</lorange>
+      Name: <lorange>Legendaria</lorange>
       Weight: 1.0
       Default: false
     uncommon:
-      Name: <lblue>Uncommon</lblue>
+      Name: <lblue>Poco comun</lblue>
       Weight: 5.0
       Default: false
     rare:
-      Name: <lgreen>Rare</lgreen>
+      Name: <lgreen>Rara</lgreen>
       Weight: 2.0
       Default: false
