@@ -15,6 +15,7 @@ backups/
 backup/
 stats/
 leaderboards/
+**/advancements/
 
 # data
 **/cache/
@@ -83,3 +84,5 @@ plugins/IP/leaderboards/
 # Re-include the "regions" folder
 !plugins/**/worlds/**/**
 !plugins/DiscordSRV/synchronization.yml
+plugins/JobsReborn-PatchPlaceBreak/sqlite-data.db
+plugins/mcMMO/flatfile/mcmmo.users
