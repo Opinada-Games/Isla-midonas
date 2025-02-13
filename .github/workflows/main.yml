@@ -39,7 +39,7 @@ jobs:
             curl -L -o /home/minecraft/minecraft_server/plugins/Geyser-Spigot.jar \
               "https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot"
 
-            # Fix permissions so minecraft user owns the jar
+            # Fix permissions so the minecraft user owns it
             chown minecraft:minecraft /home/minecraft/minecraft_server/plugins/Geyser-Spigot.jar
 
             echo "Geyser plugin has been updated."
@@ -90,7 +90,7 @@ jobs:
               echo "World directory already exists. Skipping unzip."
             fi
 
-            # Overwrite the DiscordSRV BotToken in plugins/DiscordSRV/config.yml
+            # Overwrite the DiscordSRV BotToken
             echo "Setting DiscordSRV BotToken from GitHub secret..."
             sed -i "s@^BotToken:.*@BotToken: \"${DISCORD_BOT_TOKEN}\"@" /home/minecraft/minecraft_server/plugins/DiscordSRV/config.yml || true
 
@@ -104,9 +104,17 @@ jobs:
             sleep 5
             screen -S minecraft_server -X quit || true
 
-            # Start the Minecraft server using screen
+            # Start the Minecraft server in a screen session
             cd /home/minecraft/minecraft_server
             screen -dmS minecraft_server bash -c 'java -Xmx12G -Xms4G -jar purpur.jar nogui'
 
-            echo "Minecraft server restarted in a screen session named 'minecraft_server'."
+            echo "Minecraft server started in a screen session named 'minecraft_server'."
+          EOF
+
+      - name: Wait for server to finish loading
+        run: |
+          ssh -T root@193.203.167.72 << EOF
+            echo "Waiting for 'Done' message in the log..."
+            tail -n 0 -F /home/minecraft/minecraft_server/logs/latest.log | grep -m1 "Done"
+            echo "Minecraft server startup complete!"
           EOF
