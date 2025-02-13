@@ -4,7 +4,7 @@ pages:
       "2":
         material: FEATHER
         displayname: "&f&lFly"
-        buy: 12500
+        buy: 20000
         sell: -1
         lore:
           - "&1&lNOTE: &r&9This command"
