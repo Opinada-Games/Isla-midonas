@@ -1,0 +1,54 @@
+name: Check Geyser Updates
+
+on:
+  schedule:
+    # Run once a day at 00:00 UTC
+    - cron: "0 0 * * *"
+
+jobs:
+  check-geyser:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v3
+
+      - name: Get current Geyser version
+        id: current_geyser
+        run: |
+          # Suppose we store our Geyser version in a file "GEYSER_VERSION" in the repo
+          if [ -f "GEYSER_VERSION" ]; then
+            CURRENT_VERSION=$(cat GEYSER_VERSION)
+          else
+            CURRENT_VERSION="none"
+          fi
+          echo "current_version=$CURRENT_VERSION" >> $GITHUB_OUTPUT
+
+      - name: Fetch latest Geyser version from API
+        id: fetch_latest
+        run: |
+          # Grab the JSON from Geyser's download endpoint
+          LATEST_JSON=$(curl -s "https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest")
+          # Parse out the "build" number or "version" field
+          # (jq can parse JSON easily)
+          LATEST_BUILD=$(echo "$LATEST_JSON" | jq -r .build)
+          echo "latest_build=$LATEST_BUILD" >> $GITHUB_OUTPUT
+
+      - name: Compare versions and create GitHub Issue if new
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          CURRENT=${{ steps.current_geyser.outputs.current_version }}
+          LATEST=${{ steps.fetch_latest.outputs.latest_build }}
+
+          echo "Current build: $CURRENT"
+          echo "Latest build:  $LATEST"
+
+          if [ "$CURRENT" = "$LATEST" ]; then
+            echo "Already up to date."
+          else
+            echo "New Geyser build found ($LATEST), creating an issue..."
+            # Use GitHub CLI to create an issue (or do a GH REST call)
+            gh api repos/{owner}/{repo}/issues \
+              -f title="New Geyser version: build $LATEST" \
+              -f body="We have Geyser build $CURRENT, latest is $LATEST. Please update."
+          fi
