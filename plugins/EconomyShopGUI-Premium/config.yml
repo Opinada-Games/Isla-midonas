@@ -146,7 +146,7 @@ use-nms: true
 #---------------------------------------------Transactions----------------------------------------------
 
 # Whether transactions should be logged to a text file
-transaction-log: true
+transaction-log: false
 # Tip: Since EconomyShopGUI Premium v5.5.0 the transaction history is logged inside a database by default with more details for transactions
 # So the transactions text file feature became redundant and may be disabled to save disk space
 
