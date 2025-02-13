@@ -24,19 +24,26 @@ jobs:
         run: |
           ssh root@193.203.167.72 "mkdir -p /home/minecraft/minecraft_server && chown -R minecraft:minecraft /home/minecraft"
 
+      - name: Convert .gitignore to rsync exclude file
+        run: |
+          grep -v '^#' .gitignore | grep -v '^$' | sed 's:^/:**/:' > .rsync-exclude
+
       - name: Deploy Files Using rsync (Upload Only, No Deletes)
         run: |
-          # Use --update (-u) so rsync won't overwrite newer files on the server.
-          # Remove --delete so we don't remove any existing files.
-          rsync -avzu \
-            --exclude='/bluemap' \
-            --exclude='/world' \
-            --exclude='/world_nether' \
-            --exclude='/lobby' \
-            --exclude='db/' \
-            --exclude='data/' \
-            --exclude='minecraft_data/worlds.zip' \
-            -e "ssh -i ~/.ssh/id_rsa" ./ root@193.203.167.72:/home/minecraft/minecraft_server/
+          rsync -avzu --exclude-from=.rsync-exclude -e "ssh -i ~/.ssh/id_rsa" ./ root@193.203.167.72:/home/minecraft/minecraft_server/
+
+      - name: Update Geyser Plugin on remote server
+        run: |
+          ssh -T root@193.203.167.72 << EOF
+            # Download the latest Geyser plugin
+            curl -L -o /home/minecraft/minecraft_server/plugins/Geyser-Spigot.jar \
+              "https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot"
+
+            # Fix permissions so the minecraft user owns it
+            chown minecraft:minecraft /home/minecraft/minecraft_server/plugins/Geyser-Spigot.jar
+
+            echo "Geyser plugin has been updated."
+          EOF
 
       - name: Install Java and Run Minecraft Server with Screen
         env:
@@ -59,18 +66,18 @@ jobs:
               echo "screen is already installed."
             fi
 
-            # Create necessary directories and user if not already present
+            # Create user and directories if not present
             useradd -m -s /bin/bash minecraft || true
             mkdir -p /home/minecraft/minecraft_server
             chown -R minecraft:minecraft /home/minecraft
 
-            # If worlds.zip is missing but worlds_static.zip exists, copy worlds_static.zip to worlds.zip
+            # If worlds.zip is missing but worlds_static.zip exists, copy it over
             if [ ! -f /home/root/minecraft_data/worlds.zip ] && [ -f /home/root/minecraft_data/worlds_static.zip ]; then
               cp /home/root/minecraft_data/worlds_static.zip /home/root/minecraft_data/worlds.zip
               echo "No worlds.zip found. Copied worlds_static.zip to worlds.zip"
             fi
 
-            # Unzip worlds.zip from root path if the world directory does not exist
+            # Unzip worlds.zip if the world directory does not exist
             if [ ! -d /home/minecraft/minecraft_server/world ]; then
               if [ -f /home/root/minecraft_data/worlds.zip ]; then
                 echo "Found worlds.zip in /home/root/minecraft_data, proceeding to unzip..."
@@ -83,7 +90,7 @@ jobs:
               echo "World directory already exists. Skipping unzip."
             fi
 
-            # Overwrite the DiscordSRV BotToken in plugins/DiscordSRV/config.yml
+            # Overwrite the DiscordSRV BotToken
             echo "Setting DiscordSRV BotToken from GitHub secret..."
             sed -i "s@^BotToken:.*@BotToken: \"${DISCORD_BOT_TOKEN}\"@" /home/minecraft/minecraft_server/plugins/DiscordSRV/config.yml || true
 
@@ -97,9 +104,17 @@ jobs:
             sleep 5
             screen -S minecraft_server -X quit || true
 
-            # Start the Minecraft server using screen
+            # Start the Minecraft server in a screen session
             cd /home/minecraft/minecraft_server
             screen -dmS minecraft_server bash -c 'java -Xmx12G -Xms4G -jar purpur.jar nogui'
 
-            echo "Minecraft server restarted in a screen session named 'minecraft_server'."
+            echo "Minecraft server started in a screen session named 'minecraft_server'."
+          EOF
+
+      - name: Wait for server to finish loading
+        run: |
+          ssh -T root@193.203.167.72 << EOF
+            echo "Waiting for 'Done' message in the log..."
+            tail -n 0 -F /home/minecraft/minecraft_server/logs/latest.log | grep -m1 "Done"
+            echo "Minecraft server startup complete!"
           EOF

@@ -15,11 +15,13 @@ backups/
 backup/
 stats/
 leaderboards/
+**/advancements/
 
 # data
 **/cache/
 db/
 data/
+Data/
 userdata/
 plugins/FastAsyncWorldEdit/history/
 
@@ -30,6 +32,12 @@ ops.json
 whitelist.json
 usercache.json
 session.lock
+lobby/level.dat
+lobby/level.dat_old
+lobby/uid.dat
+lobby/datapacks/bukkit/pack.mcmeta
+lobby/mcmmo_regions/mcmmo_0_0_.mcm
+transactions.db
 
 # Plugin data (optional - if you don't want plugin configs tracked)
 plugins/**/data/
@@ -79,7 +87,13 @@ plugins/LuckPerms/translations/repository/status.json
 plugins/Jobs/jobs.sqlite.db
 plugins/IP/players/
 plugins/IP/leaderboards/
+plugins/DeathChest/audits/
+plugins/Boss/spawnrules/
+plugins/ExcellentCrates/data.db
 
 # Re-include the "regions" folder
 !plugins/**/worlds/**/**
 !plugins/DiscordSRV/synchronization.yml
+plugins/JobsReborn-PatchPlaceBreak/sqlite-data.db
+plugins/mcMMO/flatfile/mcmmo.users
+
