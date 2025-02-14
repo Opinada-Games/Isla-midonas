@@ -97,3 +97,7 @@ plugins/ExcellentCrates/data.db
 plugins/JobsReborn-PatchPlaceBreak/sqlite-data.db
 plugins/mcMMO/flatfile/mcmmo.users
 
+plugins/EconomyShopGUI-Premium/transactions/transactions.db
+plugins/LuckPerms/luckperms-h2-v2.mv.db
+plugins/Fadah/FadahData.db
+plugins/EconomyShopGUI-Premium/database.db

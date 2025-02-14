@@ -32,6 +32,12 @@ jobs:
         run: |
           rsync -avzu --exclude-from=.rsync-exclude -e "ssh -i ~/.ssh/id_rsa" ./ root@193.203.167.72:/home/minecraft/minecraft_server/
 
+      - name: Set execute permissions on scripts
+        run: |
+          ssh -T root@193.203.167.72 << 'EOF'
+            chmod +x /home/minecraft/minecraft_server/scripts/*
+          EOF
+
       - name: Update Geyser Plugin on remote server
         run: |
           ssh -T root@193.203.167.72 << EOF
