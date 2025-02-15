@@ -30,12 +30,13 @@ jobs:
 
       - name: Deploy Files Using rsync (Upload Only, No Deletes)
         run: |
-          rsync -avzu --exclude-from=.rsync-exclude -e "ssh -i ~/.ssh/id_rsa" ./ root@193.203.167.72:/home/minecraft/minecraft_server/
+          rsync -avzu --chown=root:root --exclude-from=.rsync-exclude -e "ssh -i ~/.ssh/id_rsa" ./ root@193.203.167.72:/home/minecraft/minecraft_server/
 
       - name: Set execute permissions on scripts
         run: |
           ssh -T root@193.203.167.72 << 'EOF'
-            chmod +x /home/minecraft/minecraft_server/scripts/*
+            chown root:root /home/minecraft/minecraft_server/scripts/*.sh
+            chmod +x /home/minecraft/minecraft_server/scripts/*.sh
           EOF
 
       - name: Update Geyser Plugin on remote server
