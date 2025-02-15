@@ -28,9 +28,22 @@ jobs:
         run: |
           # Grab the JSON from Geyser's download endpoint
           LATEST_JSON=$(curl -s "https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest")
-          # Parse out the "build" number or "version" field
-          # (jq can parse JSON easily)
-          LATEST_BUILD=$(echo "$LATEST_JSON" | jq -r .build)
+          echo "Raw JSON Response: $LATEST_JSON"  # Debugging
+          
+          # Check if jq is installed
+          if ! command -v jq &> /dev/null; then
+            echo "jq command not found. Installing..."
+            sudo apt update && sudo apt install -y jq
+          fi
+
+          # Extract the latest build number
+          LATEST_BUILD=$(echo "$LATEST_JSON" | jq -r '.build // empty')
+          
+          if [ -z "$LATEST_BUILD" ]; then
+            echo "Error: Failed to extract the latest build number!"
+            exit 1
+          fi
+
           echo "latest_build=$LATEST_BUILD" >> $GITHUB_OUTPUT
 
       - name: Compare versions and create GitHub Issue if new
