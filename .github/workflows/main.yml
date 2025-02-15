@@ -24,6 +24,13 @@ jobs:
         run: |
           ssh root@193.203.167.72 "mkdir -p /home/minecraft/minecraft_server && chown -R minecraft:minecraft /home/minecraft"
 
+      - name: Clean up old .jar files in plugins directory
+        run: |
+          ssh -T root@193.203.167.72 << 'EOF'
+            rm -f /home/minecraft/minecraft_server/plugins/*.jar
+            echo "Deleted all .jar files from plugins directory."
+          EOF
+
       - name: Convert .gitignore to rsync exclude file
         run: |
           grep -v '^#' .gitignore | grep -v '^$' | sed 's:^/:**/:' > .rsync-exclude
