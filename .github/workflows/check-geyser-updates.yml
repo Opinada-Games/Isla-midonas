@@ -30,7 +30,7 @@ jobs:
       - name: Fetch latest Geyser version from API
         id: fetch_latest
         run: |
-          LATEST_JSON=$(curl -s "https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest")
+          LATEST_JSON=$(curl -s -H "Accept: application/json" "https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest")
           echo "Raw JSON Response: $LATEST_JSON"
           
           if ! command -v jq &> /dev/null; then
