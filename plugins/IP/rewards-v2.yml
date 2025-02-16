@@ -32,9 +32,9 @@ score-rewards:
 # An interval of 10 means a player will get a reward at 10, 20, 30, etc.
 interval-rewards:
   10:
-    - "send:¡Perfecto! <green>+$40</green>"
+    - "send:¡Perfecto! <green>+$30</green>"
     - "send:<gray>Hiciste 10 saltos en el parkour seguidos"
-    - "vault:40"
+    - "vault:30"
   100:
     - "send:¡100 al hilo! <green>+$200</green>"
     - "send:<gray>Hiciste 100 saltos en el parkour seguidos"

@@ -34,7 +34,7 @@ item:
   name: "&d&lTienda mágica"
 shop-type: ROTATING
 rotating-shop-settings:
-  interval: 1h
+  interval: 4h
   can-repeat: false
   broadcast: true
   pages:
