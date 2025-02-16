@@ -3,6 +3,7 @@ name: Check Geyser Updates
 on:
   schedule:
     - cron: "0 0 * * *"
+  workflow_dispatch:  # add this to test manually
 
 permissions:
   contents: read
@@ -28,9 +29,8 @@ jobs:
       - name: Fetch latest Geyser version from API
         id: fetch_latest
         run: |
-          # Fetch the latest version JSON
           LATEST_JSON=$(curl -s "https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest")
-          echo "Raw JSON Response: $LATEST_JSON"  # Debugging output
+          echo "Raw JSON Response: $LATEST_JSON"
           
           # Ensure jq is installed
           if ! command -v jq &> /dev/null; then
@@ -38,14 +38,11 @@ jobs:
             sudo apt update && sudo apt install -y jq
           fi
 
-          # Extract the latest build number
           LATEST_BUILD=$(echo "$LATEST_JSON" | jq -r '.build // empty')
-
           if [ -z "$LATEST_BUILD" ]; then
             echo "Error: Failed to extract the latest build number!"
             exit 1
           fi
-
           echo "latest_build=$LATEST_BUILD" >> $GITHUB_OUTPUT
 
       - name: Compare versions and create GitHub Issue if new
@@ -54,7 +51,6 @@ jobs:
         run: |
           CURRENT=${{ steps.current_geyser.outputs.current_version }}
           LATEST=${{ steps.fetch_latest.outputs.latest_build }}
-
           echo "Current build: $CURRENT"
           echo "Latest build:  $LATEST"
 
@@ -62,12 +58,8 @@ jobs:
             echo "Already up to date."
           else
             echo "New Geyser build found ($LATEST), creating an issue..."
-
-            # Extract repository owner and name
             REPO_OWNER=$(echo $GITHUB_REPOSITORY | cut -d'/' -f1)
             REPO_NAME=$(echo $GITHUB_REPOSITORY | cut -d'/' -f2)
-
-            # Create a GitHub issue
             gh api repos/$REPO_OWNER/$REPO_NAME/issues \
               -f title="New Geyser version: build $LATEST" \
               -f body="We have Geyser build $CURRENT, latest is $LATEST. Please update." \
