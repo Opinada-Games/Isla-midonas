@@ -3,45 +3,45 @@ pages:
     items:
       "2":
         material: AMETHYST_SHARD
-        buy: 1.32
-        sell: 0.33
+        buy: 3.96 # 1.32 * 3
+        sell: 0.99 # 0.33 * 3
       "4":
         material: COAL
-        buy: 5.25
-        sell: 1.32
+        buy: 15.75 # 5.25 * 3
+        sell: 3.96 # 1.32 * 3
       "7":
         material: COPPER_INGOT
-        buy: 0.92
-        sell: 0.23
+        buy: 2.76 # 0.92 * 3
+        sell: 0.69 # 0.23 * 3
       "9":
         material: DIAMOND
-        buy: 52.5
-        sell: 13.13
+        buy: 157.5 # 52.5 * 3
+        sell: 39.39 # 13.13 * 3
       "11":
         material: EMERALD
-        buy: 39.38
-        sell: 9.85
+        buy: 118.14 # 39.38 * 3
+        sell: 29.55 # 9.85 * 3
       "14":
         material: GOLD_INGOT
-        buy: 8.27
-        sell: 2.07
+        buy: 24.81 # 8.27 * 3
+        sell: 6.21 # 2.07 * 3
       "16":
         material: IRON_INGOT
-        buy: 5.52
-        sell: 1.38
+        buy: 16.56 # 5.52 * 3
+        sell: 4.14 # 1.38 * 3
       "18":
         material: LAPIS_LAZULI
-        buy: 7.22
-        sell: 1.81
+        buy: 21.66 # 7.22 * 3
+        sell: 5.43 # 1.81 * 3
       "19":
         material: NETHERITE_BLOCK
-        buy: 21174
-        sell: 5593.5
+        buy: 21174 # unchanged
+        sell: 5593.5 # unchanged
       "21":
         material: QUARTZ
-        buy: 8.27
-        sell: 2.07
+        buy: 24.81 # 8.27 * 3
+        sell: 6.21 # 2.07 * 3
       "23":
         material: REDSTONE
-        buy: 3.5
-        sell: 0.88
+        buy: 10.5 # 3.5 * 3
+        sell: 2.64 # 0.88 * 3

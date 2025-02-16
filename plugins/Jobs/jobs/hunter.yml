@@ -6,14 +6,12 @@ Hunter:
   ChatColour: RED
   chat-display: full
   max-level: 200
-  leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-  income-progression-equation:
-    baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(baseincome*(joblevel-1)*0.01))
-    * ((numjobs-1)*0.05))
-  points-progression-equation:
-    basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(basepoints*(joblevel-1)*0.01))
-    * ((numjobs-1)*0.05))
-  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+  # Doubling XP requirements to slow leveling.
+  leveling-progression-equation: 20*(joblevel)+(joblevel*joblevel*8)
+  # Reduced bonus per level from 1% to 0.5%.
+  income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.005)-((baseincome+(baseincome*(joblevel-1)*0.005)) * ((numjobs-1)*0.05))
+  points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.005)-((basepoints+(basepoints*(joblevel-1)*0.005)) * ((numjobs-1)*0.05))
+  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1)*0.01))
   rejoinCooldown: 10
   maxDailyQuests: 1
   Quests:
@@ -24,136 +22,136 @@ Hunter:
         - Kill;Creeper;3
         - Kill;Skeleton;10
       RewardCommands:
-        - eco give [playerName] 100
+        - eco give [playerName] 50
         - msg [playerName] ¡Misión completada!
       RewardDesc:
         - Mata todo lo que se mueva y gana dinero
-        - ¡Recibe 100 por esto!
+        - ¡Recibe 50 por esto!
   Gui:
     ItemStack: bow
   Tame:
     Wolf:
-      income: 20.0
-      points: 20
-      experience: 15.0
+      income: 10.0
+      points: 10.0
+      experience: 7.5
     Ocelot:
-      income: 20.0
-      points: 20
-      experience: 15.0
+      income: 10.0
+      points: 10.0
+      experience: 7.5
     Horse:
-      income: 20.0
-      points: 20
-      experience: 15.0
+      income: 10.0
+      points: 10.0
+      experience: 7.5
   Kill:
     Chicken:
-      income: 5.0
-      points: 5
-      experience: 5.0
+      income: 2.5
+      points: 2.5
+      experience: 2.5
     Cow:
-      income: 6.0
-      points: 5
-      experience: 5.0
-    Pig:
-      income: 5.0
-      points: 5
-      experience: 5.0
-    Sheep:
-      income: 5.0
-      points: 5
-      experience: 5.0
-    Wolf:
-      income: 10.0
-      points: 10
-      experience: 5.0
-    Creeper:
-      income: 15.0
-      points: 15
-      experience: 15.0
-    Skeleton:
-      income: 10.0
-      points: 10
-      experience: 15.0
-    Spider:
-      income: 10.0
-      points: 10
-      experience: 15.0
-    Zombie:
-      income: 10.0
-      points: 10
-      experience: 15.0
-    BLAZE:
-      income: 20.0
-      points: 20
-      experience: 15.0
-    CAVE_SPIDER:
-      income: 20.0
-      points: 20
-      experience: 15.0
-    ENDERMAN:
-      income: 2.0
-      points: 2
-      experience: 2.0
-    GHAST:
-      income: 30.0
-      points: 30
-      experience: 30.0
-    GIANT:
-      income: 250.0
-      points: 250
-      experience: 100.0
-    IRON_GOLEM:
-      income: 30.0
-      points: 30
-      experience: 30.0
-    mushroom_cow:
-      income: 5.0
-      points: 5
-      experience: 5.0
-    SILVERFISH:
       income: 3.0
-      points: 3
-      experience: 5.0
-    SNOWMAN:
-      income: 2.0
-      points: 2
-      experience: 4.0
-    SQUID:
-      income: 2.0
-      points: 2
-      experience: 2.0
-    RABBIT:
-      income: 2.0
-      points: 2
-      experience: 2.0
-    GUARDIAN:
-      income: 2.0
-      points: 2
-      experience: 2.0
-    SHULKER:
+      points: 2.5
+      experience: 2.5
+    Pig:
+      income: 2.5
+      points: 2.5
+      experience: 2.5
+    Sheep:
+      income: 2.5
+      points: 2.5
+      experience: 2.5
+    Wolf:
       income: 5.0
-      points: 5
-      experience: 5.0
-    PHANTOM:
-      income: 5.0
-      points: 5
-      experience: 5.0
-    DROWNED:
-      income: 5.0
-      points: 5
-      experience: 5.0
-    HUSK:
-      income: 5.0
-      points: 5
-      experience: 5.0
-    WITHER:
-      income: 50.0
-      points: 50
-      experience: 120.0
-    ENDER_DRAGON:
-      income: 2000.0
-      points: 2000
-      experience: 2000.0
-    Player:
-      income: 9.0
-      points: 9
+      points: 5.0
+      experience: 2.5
+    Creeper:
+      income: 7.5
+      points: 7.5
       experience: 7.5
+    Skeleton:
+      income: 5.0
+      points: 5.0
+      experience: 7.5
+    Spider:
+      income: 5.0
+      points: 5.0
+      experience: 7.5
+    Zombie:
+      income: 5.0
+      points: 5.0
+      experience: 7.5
+    BLAZE:
+      income: 10.0
+      points: 10.0
+      experience: 7.5
+    CAVE_SPIDER:
+      income: 10.0
+      points: 10.0
+      experience: 7.5
+    ENDERMAN:
+      income: 1.0
+      points: 1.0
+      experience: 1.0
+    GHAST:
+      income: 15.0
+      points: 15.0
+      experience: 15.0
+    GIANT:
+      income: 125.0
+      points: 125.0
+      experience: 50.0
+    IRON_GOLEM:
+      income: 15.0
+      points: 15.0
+      experience: 15.0
+    mushroom_cow:
+      income: 2.5
+      points: 2.5
+      experience: 2.5
+    SILVERFISH:
+      income: 1.5
+      points: 1.5
+      experience: 2.5
+    SNOWMAN:
+      income: 1.0
+      points: 1.0
+      experience: 2.0
+    SQUID:
+      income: 1.0
+      points: 1.0
+      experience: 1.0
+    RABBIT:
+      income: 1.0
+      points: 1.0
+      experience: 1.0
+    GUARDIAN:
+      income: 1.0
+      points: 1.0
+      experience: 1.0
+    SHULKER:
+      income: 2.5
+      points: 2.5
+      experience: 2.5
+    PHANTOM:
+      income: 2.5
+      points: 2.5
+      experience: 2.5
+    DROWNED:
+      income: 2.5
+      points: 2.5
+      experience: 2.5
+    HUSK:
+      income: 2.5
+      points: 2.5
+      experience: 2.5
+    WITHER:
+      income: 25.0
+      points: 25.0
+      experience: 60.0
+    ENDER_DRAGON:
+      income: 1000.0
+      points: 1000.0
+      experience: 1000.0
+    Player:
+      income: 4.5
+      points: 4.5
+      experience: 3.75
