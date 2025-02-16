@@ -30,12 +30,12 @@ items:
     material: SPAWNER
     spawnertype: COW
     name: "&c[&bCow Spawner&c]"
-    buy: 75000
+    buy: 275000
   SPAWNER_2:
     material: SPAWNER
     spawnertype: ZOMBIE
     name: "&c[&bZombie Spawner&c]"
-    buy: 108000
+    buy: 358000
   SPAWNER_3:
     material: SPAWNER
     spawnertype: IRON_GOLEM

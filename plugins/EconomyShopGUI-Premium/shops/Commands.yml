@@ -4,11 +4,10 @@ pages:
       "2":
         material: FEATHER
         displayname: "&f&lFly"
-        buy: 20000
+        buy: 100000
         sell: -1
         lore:
           - "&1&lNOTE: &r&9This command"
-          - "&9can only be run when there is a plugin"
           - "&9installed that has a &b/fly &9command!"
           - "&a&lExample plugin: &r&aEssentialsX"
         buy-commands:
@@ -58,7 +57,7 @@ pages:
       "6":
         material: EXPERIENCE_BOTTLE
         displayname: "&e&lGet 50 levels in minecraft."
-        buy: 8000
+        buy: 20000
         sell: -1
         lore:
           - "&cDo you want 50 levels?"
@@ -67,7 +66,7 @@ pages:
       "7":
         material: FLOW_BANNER_PATTERN
         displayname: "&bPermiso de construcción"
-        buy: 20000
+        buy: 100000
         sell: -1
         lore:
           - "&7Con este permiso, podrás reclamar hasta 40 chunks"

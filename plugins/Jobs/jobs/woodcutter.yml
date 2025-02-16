@@ -6,14 +6,12 @@ Woodcutter:
   ChatColour: GREEN
   chat-display: full
   max-level: 200
-  leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*4)
-  income-progression-equation:
-    baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(baseincome*(joblevel-1)*0.01))
-    * ((numjobs-1)*0.05))
-  points-progression-equation:
-    basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(basepoints*(joblevel-1)*0.01))
-    * ((numjobs-1)*0.05))
-  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+  # Doubling XP requirements to slow leveling.
+  leveling-progression-equation: 20*(joblevel)+(joblevel*joblevel*8)
+  # Reduced bonus per level from 1% to 0.5%.
+  income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.005)-((baseincome+(baseincome*(joblevel-1)*0.005)) * ((numjobs-1)*0.05))
+  points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.005)-((basepoints+(basepoints*(joblevel-1)*0.005)) * ((numjobs-1)*0.05))
+  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1)*0.01))
   rejoinCooldown: 10
   maxDailyQuests: 1
   Quests:
@@ -24,34 +22,34 @@ Woodcutter:
         - Break;birch_log;50
         - Break;jungle_log;50
       RewardCommands:
-        - eco give [playerName] 100
+        - eco give [playerName] 50
         - msg [playerName] ¡Misión completada!
       RewardDesc:
         - Rompe troncos y gana dinero
-        - ¡Recibe 100 por esto!
+        - ¡Recibe 50 por esto!
   Gui:
     ItemStack: birch_log
   Break:
     materials:
-      - oak_log;1.0;1.0;1.0
-      - spruce_log;1.0;1.0;1.0
-      - birch_log;1.0;1.0;1.0
-      - jungle_log;1.0;1.0;1.0
-      - acacia_log;1.0;1.0;1.0
-      - dark_oak_log;1.0;1.0;1.0
-      - stripped_oak_log;0.75;0.75;0.25
-      - stripped_spruce_log;0.75;0.75;0.25
-      - stripped_birch_log;0.75;0.75;0.25
-      - stripped_jungle_log;0.75;0.75;0.25
-      - stripped_acacia_log;0.75;0.75;0.25
-      - stripped_dark_oak_log;0.75;0.75;0.25
+      - oak_log;0.5;0.5;0.5
+      - spruce_log;0.5;0.5;0.5
+      - birch_log;0.5;0.5;0.5
+      - jungle_log;0.5;0.5;0.5
+      - acacia_log;0.5;0.5;0.5
+      - dark_oak_log;0.5;0.5;0.5
+      - stripped_oak_log;0.375;0.375;0.125
+      - stripped_spruce_log;0.375;0.375;0.125
+      - stripped_birch_log;0.375;0.375;0.125
+      - stripped_jungle_log;0.375;0.375;0.125
+      - stripped_acacia_log;0.375;0.375;0.125
+      - stripped_dark_oak_log;0.375;0.375;0.125
   Kill:
     Player:
-      income: 7.5
-      points: 7.5
-      experience: 7.5
+      income: 3.75
+      points: 3.75
+      experience: 3.75
   custom-kill:
     Woodcutter:
-      income: 10.0
-      points: 10.0
-      experience: 10.0
+      income: 5.0
+      points: 5.0
+      experience: 5.0

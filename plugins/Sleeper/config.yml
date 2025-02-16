@@ -1,0 +1,38 @@
+#Default config for Sleeper
+
+#Main settings
+UseAnimation: true
+SkipPercentage: 25
+SkipSpeed: 100
+
+#Other settings
+BroadcastSleepInfo: false
+
+#Voting system, a night is skipped based on yes votes minus no votes
+VoteSkip: false
+YesMultiplier: 1
+NoMultiplier: 1
+SkipVotePercent: 50
+BlockBedsAfterVoting: false
+BossbarVoteCount: true
+SendVotesOnStart: true
+StartWithoutSleep: false
+
+#Messages
+SleepInfo: "&aSleep > &7%percent% (%count%) de un mínimo de 50% durmiendo."
+NightSkip:
+  - "&aSleep > &7Al menos el 50% de los usuarios en línea están durmiendo (%count%), saltando la noche."
+Ignored: "&cSleep > &7¡Todavía se te está ignorando para los cálculos de sueño!"
+VoteTitle: "&aSleep > &7Vota abajo para saltarte la noche:"
+VoteYes: "&a&lSí"
+VoteNo: "&c&lNo"
+VotedYes: "&aVotaste por saltarte la noche."
+VotedNo: "&aVotaste para no saltarte la noche."
+NoVote: "&cTu mundo no está votando para saltar la noche."
+AlreadyYes: "&cYa has votado que sí."
+AlreadyNo: "&cYa has votado que no."
+VoteNotEnabled: "&cLa votación no está habilitada."
+SleepHelpList: "&cComando inválido, los subcomandos válidos son: "
+NoPermission: "&cNo tienes permiso para eso."
+ListVotes: "&7Votos: &aSí: &7%yes% &cNo: &7%no%"
+SkipByVote: "&aSleep > &7¡La votación ha decidido saltar la noche!"
