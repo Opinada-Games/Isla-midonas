@@ -350,7 +350,7 @@ Rewards:
       Ignored_For_Permissions: []
     '10000':
       Name: $10000
-      Weight: 25.0
+      Weight: 10.0
       Rarity: rare
       Broadcast: true
       Placeholder_Apply: true
@@ -373,8 +373,8 @@ Rewards:
       Ignored_For_Permissions: []
     '100000':
       Name: $100000
-      Weight: 25.0
-      Rarity: legendary
+      Weight: 0.5
+      Rarity: uncommon
       Broadcast: true
       Placeholder_Apply: true
       Win_Limit:
