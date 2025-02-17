@@ -1,0 +1,43 @@
+name: Notify Discord on PR Merge
+
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  notify-discord:
+    if: github.event.pull_request.merged == true && github.base_ref == 'main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if PR has the "release-notes" label
+        id: check_labels
+        run: |
+          labels=$(echo '${{ toJson(github.event.pull_request.labels) }}' | jq -r '.[].name')
+          if echo "$labels" | grep -q "release-notes"; then
+            echo "HAS_LABEL=true" >> $GITHUB_ENV
+          else
+            echo "HAS_LABEL=false" >> $GITHUB_ENV
+          fi
+
+      - name: Send PR body to Discord
+        if: env.HAS_LABEL == 'true'
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          PR_BODY: ${{ github.event.pull_request.body }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+        run: |
+          curl -H "Content-Type: application/json" \
+          -X POST \
+          -d '{
+            "username": "Release Bot",
+            "avatar_url": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+            "embeds": [{
+              "title": "🚀 New Update: '"$PR_TITLE"'",
+              "description": "'"$PR_BODY"'",
+              "url": "'"$PR_URL"'",
+              "color": 3447003
+            }]
+          }' \
+          "$DISCORD_WEBHOOK"
