@@ -53,7 +53,7 @@ Commands: []
 Commands_Stop_After_First: false
 Attributes:
   SCALE: 1.6
-  ATTACK_DAMAGE: 10.0
+  ATTACK_DAMAGE: 50.0
   MOVEMENT_SPEED: 0.5
 Lightning:
   Death: false

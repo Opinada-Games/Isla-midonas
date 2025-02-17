@@ -38,7 +38,7 @@ Commands: []
 Commands_Stop_After_First: false
 Attributes:
   SCALE: 6.0
-  ATTACK_DAMAGE: 80.0
+  ATTACK_DAMAGE: 150.0
   ATTACK_KNOCKBACK: 20.0
   MOVEMENT_SPEED: 0.3
   FOLLOW_RANGE: 80.0

@@ -17,6 +17,7 @@ Commands: []
 Commands_Stop_After_First: false
 Attributes:
   ARMOR: 6.0
+  ATTACK_DAMAGE: 50.0
 Lightning:
   Death: true
   Spawn: true

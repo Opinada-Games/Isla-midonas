@@ -15,7 +15,8 @@ Riding:
   Remove_On_Death: false
 Commands: []
 Commands_Stop_After_First: false
-Attributes: {}
+Attributes:
+  ATTACK_DAMAGE: 150.0
 Lightning:
   Death: false
   Spawn: false
