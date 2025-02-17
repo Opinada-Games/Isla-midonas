@@ -28,7 +28,7 @@ Riding:
 Commands: []
 Commands_Stop_After_First: false
 Attributes:
-  ATTACK_DAMAGE: 20.0
+  ATTACK_DAMAGE: 200.0
   SCALE: 2.0
   FOLLOW_RANGE: 35.0
   JUMP_STRENGTH: 1.0
