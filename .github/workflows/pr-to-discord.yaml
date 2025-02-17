@@ -7,13 +7,14 @@ on:
 
 jobs:
   notify-discord:
-    if: github.event.pull_request.merged == true && github.base_ref == 'main'
+    # Use the pull_request context for checking if it's merged and if base is main
+    if: ${{ github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main' }}
     runs-on: ubuntu-latest
     steps:
       - name: Check if PR has the "release-notes" label
         id: check_labels
         run: |
-          labels=$(echo '${{ toJson(github.event.pull_request.labels) }}' | jq -r '.[].name')
+          labels=$(echo "${{ toJson(github.event.pull_request.labels) }}" | jq -r '.[].name')
           if echo "$labels" | grep -q "release-notes"; then
             echo "HAS_LABEL=true" >> $GITHUB_ENV
           else
@@ -21,7 +22,7 @@ jobs:
           fi
 
       - name: Send PR body to Discord
-        if: env.HAS_LABEL == 'true'
+        if: ${{ env.HAS_LABEL == 'true' }}
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           PR_TITLE: ${{ github.event.pull_request.title }}
@@ -29,15 +30,15 @@ jobs:
           PR_URL: ${{ github.event.pull_request.html_url }}
         run: |
           curl -H "Content-Type: application/json" \
-          -X POST \
-          -d '{
-            "username": "Release Bot",
-            "avatar_url": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-            "embeds": [{
-              "title": "🚀 New Update: '"$PR_TITLE"'",
-              "description": "'"$PR_BODY"'",
-              "url": "'"$PR_URL"'",
-              "color": 3447003
-            }]
-          }' \
-          "$DISCORD_WEBHOOK"
+               -X POST \
+               -d '{
+                 "username": "Release Bot",
+                 "avatar_url": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+                 "embeds": [{
+                   "title": "🚀 New Update: '"$PR_TITLE"'",
+                   "description": "'"$PR_BODY"'",
+                   "url": "'"$PR_URL"'",
+                   "color": 3447003
+                 }]
+               }' \
+               "$DISCORD_WEBHOOK"
