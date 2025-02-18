@@ -38,12 +38,15 @@ Commands: []
 Commands_Stop_After_First: false
 Attributes:
   SCALE: 6.0
-  ATTACK_DAMAGE: 150.0
+  ATTACK_DAMAGE: 180.0
   ATTACK_KNOCKBACK: 20.0
-  MOVEMENT_SPEED: 0.3
-  FOLLOW_RANGE: 80.0
+  MOVEMENT_SPEED: 0.5
+  FOLLOW_RANGE: 100.0
   STEP_HEIGHT: 10.0
   SAFE_FALL_DISTANCE: 10.0
+  ARMOR: 4.0
+  ZOMBIE_SPAWN_REINFORCEMENTS: 10.0
+  JUMP_STRENGTH: 0.5
 Lightning:
   Death: true
   Spawn: true
@@ -62,6 +65,16 @@ Skills:
       Potions:
       - HUNGER 300 3
       - SLOW 300 4
+  StealLife:
+    Delay: "2 minute - 4 minutes"
+    Commands: []
+    Messages:
+    - ¡El Jefe te ha <red>robado <gray>tu salud!
+    - Tus vidas han sido <red>reducidas <gray>por {boss}!
+    - ¡El {boss} ha <red>drenado <gray>tu salud!
+    Stop_More_Skills: true
+    Settings:
+      Percent: 0.4
 Drops:
   Vanilla: true
   General:

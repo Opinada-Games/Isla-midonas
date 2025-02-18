@@ -95,13 +95,13 @@ Riding:
 Commands: []
 Commands_Stop_After_First: false
 Attributes:
-  ATTACK_DAMAGE: 180.0
+  ATTACK_DAMAGE: 185.0
   SCALE: 1.2
   STEP_HEIGHT: 20.0
   FOLLOW_RANGE: 100.0
   ZOMBIE_SPAWN_REINFORCEMENTS: 10.0
   WATER_MOVEMENT_EFFICIENCY: 0.4
-  MOVEMENT_SPEED: 0.4
+  MOVEMENT_SPEED: 0.5
   SAFE_FALL_DISTANCE: 20.0
   ARMOR: 6.0
 Lightning:
@@ -130,6 +130,16 @@ Skills:
     Settings:
       Duration: "2 seconds"
       Cobweb: false
+  Enderman:
+    Delay: "30 seconds - 1 minutes"
+    Commands: []
+    Messages:
+    - Estaba solo lejos de ti y quería saludarte
+    - ¡Hola! {boss} se ha <red>teletransportado a tu lado <gray>!
+    - ¡Pensé que éramos amigos, así que aquí voy!
+    Stop_More_Skills: true
+    Settings:
+      Radius: 5
 Drops:
   Vanilla: true
   General:

@@ -6,21 +6,27 @@ items:
     sell: 50
     enchantments:
       - SILK_TOUCH:1
+  MENDING:
+    material: ENCHANTED_BOOK
+    buy: 4000
+    sell: 50
+    enchantments:
+      - MENDING
   SHARPNESS:
     material: ENCHANTED_BOOK
-    buy: 972.41
+    buy: 1672.41
     sell: 243.11
     enchantments:
       - DAMAGE_ALL:5
   EFFICIENCY:
     material: ENCHANTED_BOOK
-    buy: 972.41
+    buy: 1672.41
     sell: 243.11
     enchantments:
       - DIG_SPEED:5
   UNBREAKING:
     material: ENCHANTED_BOOK
-    buy: 441
+    buy: 841
     sell: 110.25
     enchantments:
       - DURABILITY:3
@@ -40,7 +46,7 @@ items:
     material: SPAWNER
     spawnertype: IRON_GOLEM
     name: "&c[&bIron Golem Spawner&c]"
-    buy: 875000
+    buy: 575000
 
   # Logs (Stacks of Each Type)
   OAK_LOGS:
@@ -108,7 +114,7 @@ items:
   # Netherite Ingot (Stack of 16)
   NETHERITE_INGOTS:
     material: NETHERITE_INGOT
-    buy: 18400
+    buy: 16400
     sell: -1
     stack-size: 18
     displayname: "&6Pila de Lingotes de Netherite"
@@ -127,11 +133,11 @@ items:
       - "&7en poderosas herramientas de Netherite."
   "22":
     material: SHULKER_BOX
-    buy: 1200.0
+    buy: 4200.0
     sell: -1.0
   "3":
     material: ENCHANTED_BOOK
-    buy: 1300.0
+    buy: 3300.0
     sell: -1.0
     enchantments:
       - excellentenchants:tunnel:3

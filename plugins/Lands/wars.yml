@@ -46,7 +46,7 @@ declaration:
     attacker_2: 5000
     # Set the minimum balance for defenders to have war declared against them directly.
     # They can still be engaged in war, if they're part of a nation that has a balance higher than this.
-    defender_2: 1000
+    defender_2: 0 # Removed the requirement for the defender to have a minimum balance
   min-age:
     # Set the minimum age of a attacker.
     attacker_time: 0d
@@ -146,7 +146,7 @@ surrender:
       # Use % to set a specific percentage of the defenders land balance.
       # Use normal numbers to set a total amount of money.
       # If you have banks disabled, the money will be taken from the land owner.
-      defender: 75%
+      defender: 20000 # Set max tribute to 20,000
       # In the case that the attackers voluntarily surrender in a war, regardless
       # of the tribute size, the attackers will pay in favor of the
       # defenders, the amount of money set in this variable.
