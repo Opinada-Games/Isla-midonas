@@ -119,6 +119,16 @@ Skills:
     - ¡Fuiste teletransportado a un mundo maravilloso! Es broma.
     Stop_More_Skills: true
     Settings: {}
+  Enderman:
+    Delay: "30 seconds - 1 minutes"
+    Commands: []
+    Messages:
+    - Estaba solo lejos de ti y quería saludarte
+    - ¡Hola! {boss} se ha <red>teletransportado a tu lado <gray>!
+    - ¡Pensé que éramos amigos, así que aquí voy!
+    Stop_More_Skills: true
+    Settings:
+      Radius: 5
   Freeze:
     Delay: "20 seconds"
     Commands: []
@@ -130,16 +140,6 @@ Skills:
     Settings:
       Duration: "2 seconds"
       Cobweb: false
-  Enderman:
-    Delay: "30 seconds - 1 minutes"
-    Commands: []
-    Messages:
-    - Estaba solo lejos de ti y quería saludarte
-    - ¡Hola! {boss} se ha <red>teletransportado a tu lado <gray>!
-    - ¡Pensé que éramos amigos, así que aquí voy!
-    Stop_More_Skills: true
-    Settings:
-      Radius: 5
 Drops:
   Vanilla: true
   General:
