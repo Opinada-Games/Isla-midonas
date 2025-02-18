@@ -5,7 +5,7 @@
 #  -------------------------------------------------------------------------------------------------
 
 Type: WARDEN
-Health: 800.0
+Health: 1200.0
 Equipment: {}
 Random_Equipment_On_Empty_Slots: false
 Potion_Effects: {}
@@ -16,7 +16,8 @@ Riding:
 Commands: []
 Commands_Stop_After_First: false
 Attributes:
-  ATTACK_DAMAGE: 150.0
+  ATTACK_DAMAGE: 180.0
+  ARMOR: 5.0
 Lightning:
   Death: false
   Spawn: false

@@ -32,9 +32,9 @@ Riding:
 Commands: []
 Commands_Stop_After_First: false
 Attributes:
-  ATTACK_DAMAGE: 30.0
+  ATTACK_DAMAGE: 40.0
   FOLLOW_RANGE: 40.0
-  ARMOR: 6.0
+  ARMOR: 8.0
   MOVEMENT_SPEED: 0.4
   STEP_HEIGHT: 5.0
   JUMP_STRENGTH: 0.5

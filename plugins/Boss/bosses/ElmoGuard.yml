@@ -103,7 +103,7 @@ Attributes:
   MOVEMENT_SPEED: 0.4
   ARMOR: 10.0
   JUMP_STRENGTH: 1.0
-  ATTACK_DAMAGE: 120.0
+  ATTACK_DAMAGE: 150.0
 Lightning:
   Death: true
   Spawn: true

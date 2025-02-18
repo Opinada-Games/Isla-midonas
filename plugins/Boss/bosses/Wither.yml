@@ -17,7 +17,9 @@ Commands: []
 Commands_Stop_After_First: false
 Attributes:
   ARMOR: 6.0
-  ATTACK_DAMAGE: 50.0
+  ATTACK_DAMAGE: 60.0
+  FOLLOW_RANGE: 60.0
+  FLYING_SPEED: 0.8
 Lightning:
   Death: true
   Spawn: true
