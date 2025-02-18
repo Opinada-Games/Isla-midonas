@@ -1,49 +1,134 @@
-name: Notify Discord on PR Merge
+name: Deploy Minecraft Server with rsync
 
 on:
-  pull_request:
-    types: [closed]
+  push:
+    branches:
+      - main
 
 jobs:
-  notify-discord:
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Debug event
-        run: echo "Triggered for PR #${{ github.event.pull_request.number }}"
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
-      - name: Check if merged into main
-        if: ${{ github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main' }}
-        run: echo "Yes, it was merged into main."
-
-      - name: Check if PR has the 'release-notes' label
-        id: check_labels
-        if: ${{ github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main' }}
+      - name: Set Up SSH
         run: |
-          labels=$(echo "${{ toJson(github.event.pull_request.labels) }}" | jq -r '.[].name')
-          if echo "$labels" | grep -q "release-notes"; then
-            echo "HAS_LABEL=true" >> $GITHUB_ENV
-          else
-            echo "HAS_LABEL=false" >> $GITHUB_ENV
-          fi
+          mkdir -p ~/.ssh
+          echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H 193.203.167.72 >> ~/.ssh/known_hosts
 
-      - name: Send PR body to Discord
-        if: ${{ env.HAS_LABEL == 'true' }}
+      - name: Ensure Remote Directory Exists
+        run: |
+          ssh root@193.203.167.72 "mkdir -p /home/minecraft/minecraft_server && chown -R minecraft:minecraft /home/minecraft"
+
+      - name: Clean up old .jar files in plugins directory
+        run: |
+          ssh -T root@193.203.167.72 << 'EOF'
+            rm -f /home/minecraft/minecraft_server/plugins/*.jar
+            echo "Deleted all .jar files from plugins directory."
+          EOF
+
+      - name: Convert .gitignore to rsync exclude file
+        run: |
+          grep -v '^#' .gitignore | grep -v '^$' | sed 's:^/:**/:' > .rsync-exclude
+
+      - name: Deploy Files Using rsync (Upload Only, No Deletes)
+        run: |
+          rsync -avzu --chown=root:root --exclude-from=.rsync-exclude -e "ssh -i ~/.ssh/id_rsa" ./ root@193.203.167.72:/home/minecraft/minecraft_server/
+
+      - name: Set execute permissions on scripts
+        run: |
+          ssh -T root@193.203.167.72 << 'EOF'
+            chown root:root /home/minecraft/minecraft_server/scripts/*.sh
+            chmod +x /home/minecraft/minecraft_server/scripts/*.sh
+          EOF
+
+      - name: Update Geyser Plugin on remote server
+        run: |
+          ssh -T root@193.203.167.72 << EOF
+            # Download the latest Geyser plugin
+            curl -L -o /home/minecraft/minecraft_server/plugins/Geyser-Spigot.jar \
+              "https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot"
+
+            # Fix permissions so the minecraft user owns it
+            chown minecraft:minecraft /home/minecraft/minecraft_server/plugins/Geyser-Spigot.jar
+
+            echo "Geyser plugin has been updated."
+          EOF
+
+      - name: Install Java and Run Minecraft Server with Screen
         env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-          PR_TITLE: ${{ github.event.pull_request.title }}
-          PR_BODY: ${{ github.event.pull_request.body }}
-          PR_URL: ${{ github.event.pull_request.html_url }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
         run: |
-          curl -H "Content-Type: application/json" \
-               -X POST \
-               -d '{
-                 "username": "Release Bot",
-                 "avatar_url": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-                 "embeds": [{
-                   "title": "🚀 New Update: '"$PR_TITLE"'",
-                   "description": "'"$PR_BODY"'",
-                   "url": "'"$PR_URL"'",
-                   "color": 3447003
-                 }]
-               }' \
-               "$DISCORD_WEBHOOK"
+          ssh -T root@193.203.167.72 << EOF
+            # Install Java JDK 21 if not already installed
+            if ! java -version 2>&1 | grep -q 'openjdk 21'; then
+              echo "Java 21 not found. Installing..."
+              apt update && apt install -y openjdk-21-jdk
+            else
+              echo "Java 21 is already installed."
+            fi
+
+            # Install screen if not already installed
+            if ! command -v screen &> /dev/null; then
+              echo "screen not found. Installing..."
+              apt install -y screen
+            else
+              echo "screen is already installed."
+            fi
+
+            # Create user and directories if not present
+            useradd -m -s /bin/bash minecraft || true
+            mkdir -p /home/minecraft/minecraft_server
+            chown -R minecraft:minecraft /home/minecraft
+
+            # If worlds.zip is missing but worlds_static.zip exists, copy it over
+            if [ ! -f /home/root/minecraft_data/worlds.zip ] && [ -f /home/root/minecraft_data/worlds_static.zip ]; then
+              cp /home/root/minecraft_data/worlds_static.zip /home/root/minecraft_data/worlds.zip
+              echo "No worlds.zip found. Copied worlds_static.zip to worlds.zip"
+            fi
+
+            # Unzip worlds.zip if the world directory does not exist
+            if [ ! -d /home/minecraft/minecraft_server/world ]; then
+              if [ -f /home/root/minecraft_data/worlds.zip ]; then
+                echo "Found worlds.zip in /home/root/minecraft_data, proceeding to unzip..."
+                unzip -n /home/root/minecraft_data/worlds.zip -d /home/minecraft/minecraft_server/
+                chown -R minecraft:minecraft /home/minecraft/minecraft_server/
+              else
+                echo "worlds.zip not found in /home/root/minecraft_data!"
+              fi
+            else
+              echo "World directory already exists. Skipping unzip."
+            fi
+
+            # Overwrite the DiscordSRV BotToken
+            echo "Setting DiscordSRV BotToken from GitHub secret..."
+            sed -i "s@^BotToken:.*@BotToken: \"${DISCORD_BOT_TOKEN}\"@" /home/minecraft/minecraft_server/plugins/DiscordSRV/config.yml || true
+
+            # Overwrite the 'Channels: { "global": ... }' line with the production channel ID
+            echo "Setting Channels property to production..."
+            sed -i 's@Channels: { "global": ".*" }@Channels: { "global": "1077792065955577886" }@' /home/minecraft/minecraft_server/plugins/DiscordSRV/config.yml || true
+
+            # Stop any existing screen session
+            echo "Attempting to stop existing Minecraft server..."
+            screen -S minecraft_server -X stuff "stop^M" || true
+            sleep 5
+            screen -S minecraft_server -X quit || true
+
+            # Start the Minecraft server in a screen session
+            cd /home/minecraft/minecraft_server
+            screen -dmS minecraft_server bash -c 'java -Xmx12G -Xms4G -jar purpur.jar nogui'
+
+            echo "Minecraft server started in a screen session named 'minecraft_server'."
+          EOF
+
+      - name: Wait for server to finish loading
+        run: |
+          ssh -T root@193.203.167.72 << EOF
+            echo "Waiting for 'Done' message in the log..."
+            tail -n 0 -F /home/minecraft/minecraft_server/logs/latest.log | grep -m1 "Done"
+            echo "Minecraft server startup complete!"
+          EOF
