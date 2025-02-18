@@ -151,8 +151,8 @@ Experience_Formula:
     
     # Experience gained in every skill will get multiplied by this value. 1.0 by default, 2.0 means two times as much
     Multiplier:
-        Global: 0.4
-        PVP: 0.4
+        Global: 0.1
+        PVP: 0.1
     
     # Experience gained from mobs not naturally spawned will get multiplied by this value. 0 by default.
     Eggs:
