@@ -1,7 +1,7 @@
-## 🚀 Release Notes
+## 🚀 Notas de parche
 
 <!-- Write a user-friendly explanation of the changes for end users -->
 
-## Summary
+## Notas técnicas
 
 <!-- Provide a high-level summary -->
