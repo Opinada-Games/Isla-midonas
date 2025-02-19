@@ -53,6 +53,16 @@ Lightning:
 Reinforcements: []
 Custom_Settings: {}
 Skills:
+  StealLife:
+    Delay: "2 minute - 4 minutes"
+    Commands: []
+    Messages:
+    - ¡El Jefe te ha <red>robado <gray>tu salud!
+    - Tus vidas han sido <red>reducidas <gray>por {boss}!
+    - ¡El {boss} ha <red>drenado <gray>tu salud!
+    Stop_More_Skills: true
+    Settings:
+      Percent: 0.4
   Potions:
     Delay: "0"
     Commands: []
@@ -65,16 +75,6 @@ Skills:
       Potions:
       - HUNGER 300 3
       - SLOW 300 4
-  StealLife:
-    Delay: "2 minute - 4 minutes"
-    Commands: []
-    Messages:
-    - ¡El Jefe te ha <red>robado <gray>tu salud!
-    - Tus vidas han sido <red>reducidas <gray>por {boss}!
-    - ¡El {boss} ha <red>drenado <gray>tu salud!
-    Stop_More_Skills: true
-    Settings:
-      Percent: 0.4
 Drops:
   Vanilla: true
   General:

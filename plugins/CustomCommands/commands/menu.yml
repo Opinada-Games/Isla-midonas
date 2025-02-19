@@ -1,7 +1,7 @@
 # Configuration for the /menu command
 
 # Aliases for the command
-aliases: [menu]
+aliases: [menu, main]
 
 # Patterns for the command
 patterns:

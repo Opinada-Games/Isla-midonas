@@ -1,0 +1,17 @@
+# Configuration for the /menu command
+
+# Aliases for the command
+aliases: [shop, tienda, shop:internacional, tienda:internacional]
+
+# Patterns for the command
+patterns:
+  - pattern: "" # The command is just /menu
+    description: Abre la tienda internacional
+    actions:
+      - type: EXECUTE_COMMANDS
+        commands: |
+          pshops
+        as_player: true
+      - type: NOTIFY
+        notify:
+          message: "&aTienda internacional de jugadores"

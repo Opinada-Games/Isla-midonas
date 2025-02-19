@@ -54,10 +54,10 @@ hooks:
     embed:
       # Allowed: SIDE, BOTTOM
       image-location: SIDE
-      title: Nuevo Listado por %player%!
-      content: '%player% acaba de listar %item% por $%price% en la casa de subastas!'
-      footer: Impulsado por Finalmente una Casa de Subastas Decente
-    plain-text: '%player% acaba de listar %item% por $%price% en la casa de subastas!'
+      title: New Listing by %player%!
+      content: '%player% just listed %item% for $%price% on the auction house!'
+      footer: Powered by Finally a Decent Auction House
+    plain-text: '%player% just listed %item% for $%price% on the auction house!'
   influxdb:
     enabled: false
     uri: http://localhost:8086

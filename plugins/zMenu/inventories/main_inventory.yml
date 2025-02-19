@@ -53,7 +53,7 @@ items:
       material: EMERALD
       name: "&bComercio"
       lore:
-        - "&7Haz clic para abrir el menú de"
+        - "&7Vende, compra y subasta con otros jugadores"
         - "&bcomercio"
 
   # Territorios

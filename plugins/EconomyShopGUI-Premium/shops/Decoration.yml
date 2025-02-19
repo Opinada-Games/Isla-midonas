@@ -3,8 +3,8 @@ pages:
     items:
       "1":
         material: CHAIN
-        buy: 7.02
-        sell: 1.76
+        buy: 17.02
+        sell: 6.76
       "2":
         material: FLOWER_POT
         buy: 69.46
@@ -19,8 +19,8 @@ pages:
         sell: 1.72
       "5":
         material: POINTED_DRIPSTONE
-        buy: 1
-        sell: 0.25
+        buy: 42
+        sell: 6 .25
       "6":
         material: SPORE_BLOSSOM
         buy: 3.5

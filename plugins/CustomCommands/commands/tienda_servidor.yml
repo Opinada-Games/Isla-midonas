@@ -1,0 +1,17 @@
+# Configuration for the /menu command
+
+# Aliases for the command
+aliases: [tienda:servidor, shop:servidor, central]
+
+# Patterns for the command
+patterns:
+  - pattern: "" # The command is just /menu
+    description: Abre la tienda del servidor para comprar materiales de inversion
+    actions:
+      - type: EXECUTE_COMMANDS
+        commands: |
+          economyshopgui-premium:shop
+        as_player: true
+      - type: NOTIFY
+        notify:
+          message: "&aTienda del servidor para comprar materiales de inversion"

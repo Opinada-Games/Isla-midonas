@@ -69,12 +69,26 @@ pages:
         buy: 100000
         sell: -1
         lore:
-          - "&7Con este permiso, podrás reclamar hasta 40 chunks"
+          - "&7Con este permiso, podrás reclamar hasta 50 chunks"
           - "&8Usa &b/menu &7-> &2Territorios"
           - "&8O tambien, usa: &b/lands claim &8sobre el terreno que quieras reclamar"
           - ""
         buy-commands:
-          - lp user %player_name% permission set lands.chunks.40 true
+          - lp user %player_name% permission set lands.chunks.50 true
+      "8":
+        material: ANVIL
+        displayname: "&bPermiso de reparacion"
+        buy: 300000
+        sell: -1
+        lore:
+          - "&7Con este permiso, reparar el objeto que este en tu mano"
+          - "&8Usa &b/fix"
+          - ""
+        buy-commands:
+          - lp user %player_name% permission set isla-midonas.repair true
+          - lp user %player_name% permission set essentials.repair true
+          - lp user %player_name% permission set essentials.repair.enchanted  true
+          - execute at %player_name% run playsound minecraft:block.anvil.use master
 # "8":
 #   material: CARVED_PUMPKIN
 #   displayname: "#C90000&lS#C92800&lp#C93C00&lo#C95000&lo#C95E00&lk#C96B00&ly"
@@ -87,6 +101,7 @@ pages:
 #   buy-commands:
 #     - /minecraft:give %player% bone 5
 #     - /execute at %player% run playsound minecraft:entity.skeleton.converted_to_stray
+# /
 #       ambient %player%
 #   sell-commands:
 #     - eco take %player% 250

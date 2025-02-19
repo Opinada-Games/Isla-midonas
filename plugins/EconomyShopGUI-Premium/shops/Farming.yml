@@ -117,39 +117,3 @@ pages:
         material: WHEAT_SEEDS
         buy: 4.5
         sell: 1.13
-      "30":
-        material: OAK_SAPLING
-        buy: 122.5
-        sell: 10.25
-      "31":
-        material: SPRUCE_SAPLING
-        buy: 122.5
-        sell: 10.25
-      "32":
-        material: BIRCH_SAPLING
-        buy: 122.5
-        sell: 10.25
-      "33":
-        material: JUNGLE_SAPLING
-        buy: 122.5
-        sell: 10.25
-      "34":
-        material: ACACIA_SAPLING
-        buy: 122.5
-        sell: 10.25
-      "35":
-        material: DARK_OAK_SAPLING
-        buy: 122.5
-        sell: 10.25
-      "36":
-        material: MANGROVE_PROPAGULE
-        buy: 84
-        sell: 10.25
-      "37":
-        material: CRIMSON_FUNGUS
-        buy: 120
-        sell: 10.25
-      "38":
-        material: WARPED_FUNGUS
-        buy: 120
-        sell: 10.25

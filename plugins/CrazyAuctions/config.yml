@@ -1,0 +1,305 @@
+Settings:
+  Prefix: "&7[&4Subastas&7]: " #Prefijo para los mensajes de Crazy Auctions.
+  GUIName: "&4Subastas&8" #Nombre de la interfaz principal.
+  Players-Current-Items: "&8Tus publicaciones actuales" #El nombre de la GUI de tus artículos listados.
+  Cancelled/Expired-Items: "&8Publicaciones canceladas/expiradas" #Nombre de la GUI de cancelados/expirados.
+  Buying-Item: "&8Comprar artículo: ¿Estás seguro?" #Nombre de la GUI de compra.
+  Bidding-On-Item: "&8Estás pujando por este artículo." #Nombre de la GUI de pujas.
+  Categories: "&8Categorías" #Nombre de la GUI de categorías.
+  Sell-Time: 2d #El tiempo que cada artículo estará a la venta.
+  Bid-Time: 2m 30s #Tiempo para pujar por cada artículo.
+  Full-Expire-Time: 10d #El tiempo total que el artículo permanece en Crazy Auctions.
+  Bid-Winner-Time: 20d #El tiempo que tiene el ganador de una puja para reclamar su premio.
+  Minimum-Sell-Price: 10 #Cantidad mínima para vender un artículo.
+  Max-Beginning-Sell-Price: 1000000 #Cantidad máxima para vender un artículo.
+  Minimum-Bid-Price: 100 #Puja inicial mínima.
+  Max-Beginning-Bid-Price: 1000000 #Puja inicial máxima.
+  Allow-Damaged-Items: false #Permitir artículos dañados.
+  Category-Page-Opens-First: false #Si se establece en true, la página de categorías se abrirá al usar /CA.
+  Feature-Toggle: #Activar o desactivar funciones.
+    Selling: true #Permite usar la sección de venta de la casa de subastas.
+    Bidding: true #Permite usar la sección de pujas de la casa de subastas.
+  Patches:
+    Macro-Dupe: true #Cámbialo a false si tienes algún problema, pero debería corregir el error.
+  Sounds:
+    Toggle: false #Deshabilitar el sonido al hacer clic.
+    Sound: "UI_BUTTON_CLICK" #Asegúrate de usar el sonido de 1.8 o inferior si corresponde y el de 1.9 en adelante. El sonido predeterminado es el de 1.8.
+  Sold-Item-Sound:
+    "UI_BUTTON_CLICK"
+    #Los sonidos se encuentran aquí: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+  GUISettings: #Configuraciones para la interfaz gráfica.
+    SellingItemLore: #La descripción de los artículos en venta.
+      - "&7-------------------------"
+      - "&aHaz clic aquí para comprar."
+      - ""
+      - "&9Precio: &e$%price%"
+      - "&9Vendedor: &e%seller%"
+      - "&7-------------------------"
+    CurrentLore: #Descripción en la GUI de tus artículos listados.
+      - "&7-------------------------"
+      - "&aHaz clic aquí para cancelar."
+      - ""
+      - "&9Precio: &e$%price%"
+      - "&9Expira: &e%time%"
+      - "&7-------------------------"
+    Cancelled/ExpiredLore: #Descripción en la GUI de artículos cancelados/expirados.
+      - "&7-------------------------"
+      - "&aHaz clic aquí para que te sea devuelto."
+      - ""
+      - "&9Expiración completa: &e%time%"
+      - "&7-------------------------"
+    Bidding: #Descripción para artículos en puja.
+      - "&7-------------------------"
+      - "&aHaz clic aquí para pujar."
+      - ""
+      - "&9Vendedor: &e%seller%"
+      - "&9Puja actual: &e$%topbid%"
+      - "&9Mejor postor: &e%topbidder%"
+      - "&9Tiempo restante: &e%time%"
+      - "&7-------------------------"
+    Category-Settings:
+      Armor:
+        Item: "GOLDEN_CHESTPLATE"
+        Toggle: true
+        Slot: 11
+        Name: "&6&lArmadura"
+        Lore:
+          - "&7Esta categoría contiene toda"
+          - "&7la armadura que se está vendiendo."
+      Weapons:
+        Item: "GOLDEN_SWORD"
+        Toggle: true
+        Slot: 12
+        Name: "&6&lArmas"
+        Lore:
+          - "&7Esta categoría contiene todas"
+          - "&7las armas que se están vendiendo."
+      Tools:
+        Item: "GOLDEN_PICKAXE"
+        Toggle: true
+        Slot: 13
+        Name: "&6&lHerramientas"
+        Lore:
+          - "&7Esta categoría contiene todas"
+          - "&7las herramientas que se están vendiendo."
+      Food:
+        Item: "GOLDEN_APPLE"
+        Toggle: true
+        Slot: 14
+        Name: "&6&lComida"
+        Lore:
+          - "&7Esta categoría contiene todos los"
+          - "&7alimentos que se están vendiendo."
+      Potions:
+        Item: "POTION"
+        Toggle: true
+        Slot: 15
+        Name: "&6&lPociones"
+        Lore:
+          - "&7Esta categoría contiene todas las"
+          - "&7pociones que se están vendiendo."
+      Blocks:
+        Item: "GRASS_BLOCK"
+        Toggle: true
+        Slot: 16
+        Name: "&6&lBloques"
+        Lore:
+          - "&7Esta categoría contiene todos los"
+          - "&7bloques que se están vendiendo."
+      Other:
+        Item: "GOLD_NUGGET"
+        Toggle: true
+        Slot: 17
+        Name: "&6&lOtros"
+        Lore:
+          - "&7Esta categoría contiene todos los"
+          - "&7otros artículos que se están vendiendo."
+      None:
+        Item: "BARRIER"
+        Toggle: true
+        Slot: 23
+        Name: "&6&lNinguno"
+        Lore:
+          - "&7Esta categoría contiene todos los"
+          - "&7artículos que se están vendiendo."
+    OtherSettings: #Otras configuraciones para las GUIs.
+      SellingItems: #El botón para tus artículos en venta.
+        Item: "DIAMOND"
+        Toggle: true
+        Slot: 46
+        Name: "&6Artículos que estás vendiendo"
+        Lore:
+          - "&aHaz clic aquí para ver todos los artículos que"
+          - "&aaún estás vendiendo en la subasta."
+      Cancelled/ExpiredItems: #El botón para artículos cancelados/expirados.
+        Item: "POISONOUS_POTATO"
+        Toggle: true
+        Slot: 47
+        Name: "&6Recoger artículos expirados/cancelados"
+        Lore:
+          - "&aHaz clic aquí para ver y recoger todos los"
+          - "&aartículos que has cancelado o que han expirado."
+      PreviousPage: #Botón para la página anterior.
+        Item: "PAPER"
+        Toggle: true
+        Slot: 49
+        Name: "&6Página Anterior"
+        Lore: {}
+      Refesh: #Botón para actualizar la página.
+        Item: "SUNFLOWER"
+        Toggle: true
+        Slot: 50
+        Name: "&6Actualizar Página"
+        Lore: {}
+      NextPage: #Botón para la siguiente página.
+        Item: "PAPER"
+        Toggle: true
+        Slot: 51
+        Name: "&6Página Siguiente"
+        Lore: {}
+      Category1: #Botón para ver categorías.
+        Item: "CHEST"
+        Toggle: true
+        Slot: 52
+        Name: "&6Categorías"
+        Lore:
+          - "&bCategoría actual: &6%category%"
+          - "&a¿Quieres ver artículos en categorías específicas?"
+          - "&aHaz clic aquí para ver todas las categorías de artículos."
+      Category2:
+        Item: "CHEST"
+        Toggle: true
+        Slot: 48
+        Name: "&6Categorías"
+        Lore:
+          - "&bCategoría actual: &6%category%"
+          - "&a¿Quieres ver artículos en categorías específicas?"
+          - "&aHaz clic aquí para ver todas las categorías de artículos."
+      Bidding/Selling: #Cambiar entre pujas y ventas.
+        Selling:
+          Item: "SLIME_BALL"
+          Toggle: true
+          Slot: 53
+          Name: "&6Actualmente viendo artículos en venta."
+          Lore:
+            - "&7&l(&6&l!&7&l) &7Haz clic aquí para ver artículos"
+            - "&7en los que puedes pujar."
+        Bidding:
+          Item: "MAGMA_CREAM"
+          Toggle: true
+          Slot: 53
+          Name: "&6Actualmente viendo artículos en puja."
+          Lore:
+            - "&7&l(&6&l!&7&l) &7Haz clic aquí para ver artículos"
+            - "&7que puedes comprar a un precio."
+      WhatIsThis: #Información de los botones de libro.
+        SellingShop: #El libro en la interfaz principal de ventas.
+          Item: "BOOK"
+          Toggle: true
+          Slot: 54
+          Name: "&6¿Qué es esta página?"
+          Lore:
+            - "&aEsta es la casa de subastas crazy, aquí puedes"
+            - "&aponer artículos a la venta y comprar artículos"
+            - "&aquellos que otros han puesto a la venta."
+            - ""
+            - "&aLa subasta también es un gran lugar para ganar"
+            - "&adinero vendiendo artículos que otros"
+            - "&apuedan estar interesados en comprar."
+        BiddingShop: #El libro en la interfaz principal de pujas.
+          Item: "BOOK"
+          Toggle: true
+          Slot: 54
+          Name: "&6¿Qué es esta página?"
+          Lore:
+            - "&aEsta es la casa de subastas crazy, aquí puedes"
+            - "&aponer artículos a la venta y pujar por ellos"
+            - "&aquellos que otros han puesto a la venta."
+            - ""
+            - "&aLa subasta de pujas también es un gran lugar para"
+            - "&aganar dinero pujando por artículos que otros"
+            - "&apuedan estar interesados en pujar."
+        CurrentItems: #El libro en la GUI de artículos actuales.
+          Item: "BOOK"
+          Toggle: true
+          Slot: 54
+          Name: "&6¿Qué es esta página?"
+          Lore:
+            - "&aEstos son tus anuncios actuales, todos los"
+            - "&aartículos que actualmente tienes listados en"
+            - "&acrazy auctions se muestran aquí."
+            - ""
+            - "&aPuedes cancelar y ver el tiempo de expiración"
+            - "&ade tus anuncios aquí."
+        Cancelled/ExpiredItems: #El libro en la GUI de artículos cancelados/expirados.
+          Item: "BOOK"
+          Toggle: true
+          Slot: 54
+          Name: "&6¿Qué es esta página?"
+          Lore:
+            - "&aEsta página contiene todos tus artículos cancelados y"
+            - "&aexpirados. Cuando un anuncio se cancela"
+            - "&ao expira, podrás recuperar ese artículo desde este menú."
+            - ""
+            - "&aSolo haz clic en el artículo y, si tienes suficiente"
+            - "&ade espacio en el inventario, lo recibirás."
+        Viewing: #El libro en la GUI de visualización de artículos.
+          Item: "BOOK"
+          Toggle: true
+          Slot: 50
+          Name: "&6¿Qué es esta página?"
+          Lore:
+            - "&aEsta página muestra todos los artículos que"
+            - "&aun jugador tiene actualmente en la puja"
+            - "&yay en el mercado de venta. Puedes ver rápidamente"
+            - "&aqué está vendiendo un jugador en específico."
+        Categories: #El libro en la GUI de categorías.
+          Item: "BOOK"
+          Toggle: true
+          Slot: 54
+          Name: "&6¿Qué es esta página?"
+          Lore:
+            - "&aEsta página muestra todas las categorías"
+            - "&ade las que puedes elegir. Al hacer clic en una categoría"
+            - "&ase abrirá la interfaz solo con los artículos que pertenecen a esa categoría."
+      Back: #Botón de retroceso.
+        Item: "PAPER"
+        Slot: 46
+        Name: "&6Atrás"
+      Return: #Botón para devolver.
+        Item: "FLOWER_POT"
+        Slot: 50
+        Name: "&6Regresar Todo"
+        Lore:
+          - "&aHaz clic aquí para recuperar todos los artículos"
+          - "&acancelados y expirados a tu inventario."
+      Confirm: #Botón de confirmar.
+        Item: "LIME_STAINED_GLASS_PANE"
+        Name: "&aConfirmar"
+      Cancel: #Botón de cancelar.
+        Item: "RED_STAINED_GLASS_PANE"
+        Name: "&cCancelar"
+      Your-Item: #El objeto que se muestra cuando intentas comprar/pujar tu propio artículo.
+        Item: "BARRIER"
+        Name: "&cNo puedes comprar tu propio artículo."
+      Cant-Afford: #El objeto que se muestra cuando no puedes costear un artículo.
+        Item: "BARRIER"
+        Name: "&cNo puedes costear este artículo."
+      Top-Bidder: #El objeto que se muestra cuando ya eres el mejor postor.
+        Item: "BARRIER"
+        Name: "&cYa eres el mejor postor."
+      Bidding: #El objeto central cuando se puja por un artículo.
+        Item: "BLACK_STAINED_GLASS_PANE"
+        Name: "&7Pujas"
+        Lore:
+          - "&7<--&aAgregar &cQuitar&7-->"
+          - "&9Tu puja actual: &e$%Bid%"
+          - "&9La puja más alta: &e$%topbid%"
+      Bid: #Botón para confirmar tu puja.
+        Item: "LIGHT_BLUE_STAINED_GLASS_PANE"
+        Name: "&bPuja ahora"
+        Lore:
+          - "&7Haz clic aquí para pujar ahora."
+  BlackList:
+    - "BEDROCK"
+    - "END_PORTAL_FRAME"

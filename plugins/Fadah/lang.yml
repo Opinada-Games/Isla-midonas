@@ -4,163 +4,162 @@
 # #########################################
 
 prefix: '&#9555FF&lFadah &r'
-category-selected: '&e&lSELECCIONADO'
+category-selected: '&e&lSELECTED'
 notifications:
   advert:
   - '&f--------------------------------------------------'
-  - '&f%player% &eacaba de publicar un nuevo anuncio en la casa de subastas!'
-  - '&fArtículo: &e%item%'
-  - '&fPrecio: &a$%price%'
-  - '&7(¡Haz clic en este mensaje para ver el anuncio!)'
+  - '&f%player% &ehas just made a new listing on the auction house!'
+  - '&fItem: &e%item%'
+  - '&fPrice: &a$%price%'
+  - '&7(Click this message to view the listing!)'
   - '&f--------------------------------------------------'
   new-listing:
   - '&f------------------------------------------------'
-  - '&e¡Has listado un artículo para la venta exitosamente!'
-  - '&fArtículo: &e%item%'
-  - '&fPrecio: &a$%price%'
-  - '&fExpira en: &6%time%'
-  - '&fAnuncios Activos: &d%current_listings%&f/&5%max_listings%'
-  - '&fSe te ha cobrado un impuesto: &9%tax%% &7(&a$%price_after_tax%&7)'
+  - '&eYou have a successfully listed an item for sale!'
+  - '&fItem: &e%item%'
+  - '&fPrice: &a$%price%'
+  - '&fExpires in: &6%time%'
+  - '&fActive Listings: &d%current_listings%&f/&5%max_listings%'
+  - '&fYou have been taxed: &9%tax%% &7(&a$%price_after_tax%&7)'
   - '&f------------------------------------------------'
   new-item:
   - '&f------------------------------------------'
-  - '&e¡Tienes un nuevo artículo en tu caja de colección!'
+  - '&eYou have a new item in your collection box!'
   - '&f             /ah redeem!'
   - '&f------------------------------------------'
   sale:
   - '&f----------------------------------------------'
-  - '&e¡Has vendido un artículo en la Casa de Subastas!'
-  - '&fArtículo: &e%item%'
-  - '&fGanancia: &a$%price%'
+  - '&eYou have sold an item on the Auction House!'
+  - '&fItem: &e%item%'
+  - '&fMoney Made: &a$%price%'
   - '&f----------------------------------------------'
   watched:
   - '&f-------------------------------------------------------'
-  - '&e¡Un anuncio que cumple con tus criterios ha salido al mercado!'
-  - '&fArtículo: &e%item%'
-  - '&fPrecio: &a$%price%'
-  - '&7(¡Haz clic en este mensaje para ver el anuncio!)'
+  - '&eA listing meeting your criteria has come on the market!'
+  - '&fItem: &e%item%'
+  - '&fPrice: &a$%price%'
+  - '&7(Click this message to view the listing!)'
   - '&f-------------------------------------------------------'
-  cancelled: '&c¡Anuncio Cancelado!'
+  cancelled: '&cListing Cancelled!'
 commands:
   main:
     aliases:
-    - casa-subastas
-    - subastas
+    - auctionhouse
     - ah
-    - subasta
+    - auctions
+    - auction
   sell:
-    description: Crear un nuevo anuncio en la casa de subastas
-    usage: ah sell <precio>
+    description: Create a new listing on the auction house
+    usage: ah sell <price>
     aliases:
-    - nuevo-anuncio
-    - crear-anuncio
-    must-hold-item: '&c¡Debes tener un artículo en la mano para vender!'
-    must-be-number: '&c¡El precio debe ser un número!'
-    max-listings: '&c¡Has alcanzado el límite máximo de anuncios! (%current%/%max%)'
+    - new-listing
+    - create-listing
+    must-hold-item: '&cYou must have an item in your hand to sell!'
+    must-be-number: '&cThe price must be a number!'
+    max-listings: '&cYou have reached your max listings! (%current%/%max%)'
     listing-price:
-      max: '&fEl precio debe ser menor a &a$%price%'
-      min: '&fEl precio debe ser al menos &a$%price%'
+      max: '&fPrice must be less than &a$%price%'
+      min: '&fPrice must be at least &a$%price%'
   view:
-    description: Ver los anuncios activos de otro jugador
-    usage: ah view <jugador>
+    description: View another players active listings
+    usage: ah view <player>
     aliases:
-    - visitar
+    - visit
   watch:
-    description: Vigilar anuncios y recibir notificaciones cuando se publique uno
+    description: Watch for listings and get notified when one gets listed
     aliases:
-    - escuchar
+    - listen
   profile:
-    description: Ver tu perfil de subastas
+    description: View your auction profile
     aliases: []
   active-listings:
-    description: Ver tus anuncios activos
+    description: View your active listings
     aliases:
-    - activos
+    - active
   expired-items:
-    description: Ver tus artículos expirados
+    description: View your expired items
     aliases:
-    - expirados
+    - expired
   collection-box:
-    description: Ver tu caja de colección
+    description: View your collection box
     aliases:
-    - redimir
+    - redeem
   history:
-    description: Ver tu historial de anuncios
+    description: View your listing history
     aliases:
-    - historial
+    - hist
   help:
-    description: ¡Este comando!
+    description: This command!
     aliases: []
-    header: '&#9555FF&lCasa de Subastas &eAyuda'
+    header: '&#9555FF&lAuctionHouse &eHelp'
     format: '&b/ah %command% &8&l| &f%description%'
   reload:
-    description: Recargar Fadah
+    description: Reload fadah
     aliases:
     - rl
-    success: '&a¡Todos los archivos de configuración se recargaron exitosamente!'
-    fail: '&c¡Algunos archivos de configuración no se pudieron recargar! &7(Revisa
-      la consola)'
-    remote: '&a¡Se recibió una recarga global de configuración!'
+    success: '&aAll configuration files reloaded successfully!'
+    fail: '&cSome configuration files failed to reload! &7(Check console)'
+    remote: '&aA global configuration reload has been received!'
   toggle:
-    description: Alternar si las personas pueden usar la casa de subastas
+    description: Toggle whether people can use the auction house
     aliases: []
-    message: '&fFadah ha sido %status%&r&f!'
-    remote: '&fLa Casa de Subastas ha sido %status%&r&f desde un servidor remoto!'
-    enabled: '&a&lHABILITADO'
-    disabled: '&c&lDESHABILITADO'
+    message: '&fFadah has been %status%&r&f!'
+    remote: '&fAuction House has been %status%&r&f from a remote server!'
+    enabled: '&a&lENABLED'
+    disabled: '&c&lDISABLED'
   about:
-    description: Obtener información sobre Fadah
+    description: Get information about fadah
     aliases: []
   view-listing:
-    description: Ver un anuncio específico
+    description: View a specific listing
     usage: ah view-listing <uuid>
     aliases: []
 advert-actions:
-  post: Publicar Anuncio
-  silent: Sin Anuncio
+  post: Post Advert
+  silent: No Advert
 log-actions:
-  listing-started: Anuncio Iniciado
-  listing-purchased: Anuncio Comprado
-  listing-sold: Anuncio Vendido
-  listing-cancelled: Anuncio Cancelado
-  listing-expired: Anuncio Expirado
-  expired-item-claimed: Artículo Expirado Reclamado
-  collection-box-claimed: Artículo de la Caja de Colección Reclamado
-  listing-cancelled-admin: Anuncio Cancelado por Administradores
-  expired-item-claimed-admin: Artículo Expirado Reclamado por Administradores
-  collection-box-claimed-admin: Artículo de la Caja de Colección Reclamado por Administradores
+  listing-started: Listing Started
+  listing-purchased: Listing Purchased
+  listing-sold: Listing Sold
+  listing-cancelled: Listing Cancelled
+  listing-expired: Listing Expired
+  expired-item-claimed: Expired Listing Claimed
+  collection-box-claimed: Collection Box Item Claimed
+  listing-cancelled-admin: Listing Cancelled by Admins
+  expired-item-claimed-admin: Expired Listing Claimed by Admins
+  collection-box-claimed-admin: Collection Box Item Claimed by Admins
 sort:
   age:
-    name: Ordenar por Edad del Anuncio
-    descending: Más Antiguos Primero
-    ascending: Más Recientes Primero
+    name: Sort By Listing Age
+    descending: Oldest First
+    ascending: Newest First
   name:
-    name: Ordenar Alfabéticamente por Nombre
-    descending: Descendente (Z-A)
-    ascending: Ascendente (A-Z)
+    name: Sort Alphabetically By Name
+    descending: Descending (Z-A)
+    ascending: Ascending (A-Z)
   price:
-    name: Ordenar por Precio del Anuncio
-    descending: Más Baratos Primero (Menor a Mayor)
-    ascending: Más Caros Primero (Mayor a Menor)
+    name: Sort By Listing Price
+    descending: Cheapest First (Low to High)
+    ascending: Most Expensive First (High to Low)
 errors:
-  disabled: '&c¡La Casa de Subastas está deshabilitada!'
-  command-not-found: '&c¡Este comando no existe!'
-  must-be-player: '&c¡Solo los jugadores pueden ejecutar este comando!'
-  restricted: '&c¡No puedes vender este artículo!'
-  no-permission: '&c¡No tienes permiso para ejecutar este comando!'
-  player-not-found: '&c¡%player% no fue encontrado!'
-  invalid-usage: '&cUso: /%command%'
-  does-not-exist: '&c¡Este anuncio no existe!'
-  own-listings: '&c¡No puedes comprar tu propio anuncio!'
-  too-expensive: '&c¡No tienes suficiente dinero para este artículo!'
-  inventory-full: '&c¡No tienes espacio en tu inventario!'
-  advert-expense: '&c¡Tu anuncio no se publicó porque no tenías suficiente dinero!'
-  database-loading: '&c¡Base de datos no conectada! Por favor espera'
-  cooldown: '&c¡Por favor espera &f%time%&c!'
+  disabled: '&cThe Auction House is currently disabled!'
+  command-not-found: '&cThis command does not exist!'
+  must-be-player: '&cOnly players can run this command!'
+  restricted: '&cYou cannot sell this item!'
+  no-permission: '&cYou do not have permission to execute this command!'
+  player-not-found: '&c%player% was not found!'
+  invalid-usage: '&cUsage: /%command%'
+  does-not-exist: '&cThis listing does not exist!'
+  own-listings: '&cYou cannot buy your own listing!'
+  too-expensive: '&cYou cannot afford this item!'
+  inventory-full: '&cYou don''t have any free room in your inventory!'
+  advert-expense: '&cYour advert failed to post because you did not have enough money!'
+  database-loading: '&cDatabase not connected! Please Wait'
+  cooldown: '&cPlease wait &f%time%&c!'
 words:
-  your: tu
-  you: tú
-  none: Ninguno
+  your: your
+  you: you
+  none: None
   modes:
     buy-it-now: BIN
-    bidding: Subasta
+    bidding: Bidding

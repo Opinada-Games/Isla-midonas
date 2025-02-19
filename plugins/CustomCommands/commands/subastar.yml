@@ -1,0 +1,13 @@
+aliases: [subastar]
+
+patterns:
+  - pattern: "[integer]%precio"
+    description: Lista el objeto o stack en mano para subasta global
+    actions:
+      - type: EXECUTE_COMMANDS
+        commands: |
+          ah sell {args:1}
+        as_player: true
+      - type: NOTIFY
+        notify:
+          message: "&aObjeto listado para subasta correctamente"

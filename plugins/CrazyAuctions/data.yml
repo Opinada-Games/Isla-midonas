@@ -1,0 +1,24 @@
+Items:
+  '1':
+    Price: 1000
+    Seller: 2ea91414-7272-4830-9a89-56a30751a51b
+    SellerName: AdrianLegaspi
+    Time-Till-Expire: 1740120429773
+    Full-Time: 1740811629773
+    StoreID: 198210
+    Biddable: false
+    TopBidder: None
+    TopBidderName: None
+    Item: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDJzcxLTS5KTCuxSs/PSYnPzEvPL2FmYE3OL80rYWBgUGAAANMu2/A9AAAA
+  '2':
+    Price: 100
+    Seller: 2ea91414-7272-4830-9a89-56a30751a51b
+    SellerName: AdrianLegaspi
+    Time-Till-Expire: 1740123603824
+    Full-Time: 1740814803824
+    StoreID: 490974
+    Biddable: false
+    TopBidder: None
+    TopBidderName: None
+    Item: H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDJzcxLTS5KTCuxKi4oKk1Ojc/JT2dmYE3OL80rYWBgUGQAAM6So7c9AAAA
+OutOfTime/Cancelled: {}

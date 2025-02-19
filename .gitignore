@@ -101,3 +101,4 @@ plugins/EconomyShopGUI-Premium/transactions/transactions.db
 plugins/LuckPerms/luckperms-h2-v2.mv.db
 plugins/Fadah/FadahData.db
 plugins/EconomyShopGUI-Premium/database.db
+plugins/PlayerShopGUIPlus/database.db
