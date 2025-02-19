@@ -1,0 +1,17 @@
+# Configuration for the /menu command
+
+# Aliases for the command
+aliases: [subastas]
+
+# Patterns for the command
+patterns:
+  - pattern: "" # The command is just /menu
+    description: Abre las subastas
+    actions:
+      - type: EXECUTE_COMMANDS
+        commands: |
+          ah
+        as_player: true
+      - type: NOTIFY
+        notify:
+          message: "&aCasa de subastas"

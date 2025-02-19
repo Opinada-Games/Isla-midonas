@@ -1,0 +1,207 @@
+#
+# See our Wiki for PlayerShopGUI+ at the link below:
+# https://docs.brcdev.net/ -> Both 'General' & 'PlayerShopGUI+' Sections are for PlayerShopGUI+
+#
+database:
+  #Database backend type, can be set to mysql or sqlite
+  type: sqlite
+  #MySQL database host
+  mySQLHost: localhost
+  #MySQL connection port number
+  mySQLPort: 3306
+  #MySQL database name
+  mySQLDatabase: db
+  #MySQL database user
+  mySQLUser: root
+  #MySQL user's password
+  mySQLPassword: ""
+  #MySQL table names
+  tableNames:
+    players: players
+    shops: shops
+
+#Logging settings
+log:
+  #Define whether transactions will be logged to the console/main server log
+  toConsole: true
+  #Define whether transactions will be logged to a separate log
+  toFile: false
+  #Date format of transactions (http://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html)
+  formatDate: "yyyy/MM/dd HH:mm:ss"
+  #Log message formats
+  messageFormats:
+    sell: "%owner% put up %quantity% x %item% for sale! Price: %price%, duration: %duration%"
+    bought: "%buyer% bought %quantity% x %item% from %owner% for %price%."
+    expired: "%owner%'s %quantity% x %item% expired."
+    cancelled: "%player% cancelled %owner%'s %quantity% x %item% for %price% sell lot."
+
+#Default settings for sold items when not specified
+defaultSettings:
+  quantity: 1
+  price: 100.0
+
+#Minimum settings values for sold items (set to -1 for no limit)
+minSettings:
+  quantity: -1
+  price: -1
+
+#Maximum settings values for sold items (set to -1 for no limit), 64 is the maximal supported quantity
+maxSettings:
+  quantity: 64
+  price: -1
+
+#Choose how many items player will be able to sell at the same time, permission format
+# is playershopguiplus.limit.NAME, eg. playershopguiplus.limit.default
+limits:
+  #"default" is required
+  default: 30
+  donator: 50
+
+#Choose how many items player will be able to have unclaimed at the same time, permission format is
+# playershopguiplus.unclaimedlimit.NAME, eg. playershopguiplus.unclaimedlimit.default
+unclaimedLimits:
+  #"default" is required
+  default: 20
+  donator: 40
+
+#Tax settings.
+tax:
+  #Should the player have a proportion of their sale price taken away as a cost of selling an item?
+  tax: false
+  #Choose how much should be taken away from the player as a proportion of the sale value. 0.2 = 20%
+  taxAmount: 0.2
+  #Should the player be refunded the tax when the item expires?
+  refund:
+    # Refund the tax amount when the sellers item is purchased.
+    purchase: false
+    # Refund the tax amount when the item expires.
+    expired: true
+    # Refund the tax amount when the item is forcefully cancelled by the seller or an admin with the needed permissions.
+    cancelled: false
+  #Choose how much should be given back to the player as a proportion of the tax value. 1 = 100%
+  refundAmount: 1
+
+#List of items players won't be to put up for sale. Explained in FAQ #1 here:
+bannedItems:
+  1:
+    material: BEACON
+    compareQuantity: false
+    compareItemMeta: false
+
+#Date format; more info: https://docs.oracle.com/javase/tutorial/i18n/format/simpleDateFormat.html
+dateFormat: "dd.MM.yyyy, HH:mm"
+
+#Choose what gamemodes will prevent players from accessing player shops. Valid values: ADVENTURE, CREATIVE, SPECTATOR, SURVIVAL
+disableInGamemodes:
+  - ADVENTURE
+  - CREATIVE
+  - SPECTATOR
+
+#Choose in which worlds player shops will be completely disabled
+disableInWorlds: []
+
+#Players won't be able to use shop names containing following words/phrases
+bannedShopNames:
+  - fuck
+  - ass
+
+economy:
+  # Economy which will be used for all shops.
+  # Supported economies:
+  #  - EXP (default Minecraft experience points)
+  #  - VAULT (requires http://dev.bukkit.org/bukkit-plugins/vault/)
+  #  - GEMS_ECONOMY (requires https://www.spigotmc.org/resources/gemseconomy.19655/)
+  #  - GRINGOTTS (requires https://www.spigotmc.org/resources/gringotts.42071/)
+  #  - PLAYER_POINTS (requires https://dev.bukkit.org/projects/playerpoints)
+  #  - TOKEN_ENCHANT (requires https://www.spigotmc.org/resources/tokenenchant.2287/)
+  type: VAULT
+  # Prefixes & suffixes used for price formatting. The format is ECONOMYTYPE: "value"
+  prefixes:
+    VAULT: "$"
+  suffixes:
+    VAULT: ""
+
+#Choose for how long items will be buyable before they expire (in minutes, set to -1 to disable)
+shopItemDuration: 4320
+#Choose if shop view will be refresh automatically every X ticks (set below in autoRefreshInterval)
+autoRefresh: false
+#Interval (in ticks, 20 ticks = 1 second) between refreshing shops view
+#Warning: This can cause log when set to low interval with many players online/shops
+autoRefreshInterval: 30
+#Choose if empty shops (with no item lots) shall be displayed in the "All shops" menu
+displayEmptyShops: false
+#Default player shop name
+defaultShopName: "Tienda de %player%"
+#Choose if GUI notifications will be displayed (or message ones instead)
+enableGuiNotifications: true
+#Choose if short dates formats will be used, eg. h instead of hours, m instead of minutes etc.
+useShortDateFormats: true
+#Choose if chests should be displayed instead of player heads in shops GUI.
+#This is useful for bigger server where fetching skins can cause lags.
+useChestShopPlaceholders: false
+#Settings of /playershop sell command
+commandSell:
+  #Require choose whether it should require the player to specify the quantity instead of setting
+  #the default one instead - takes effect only when enableGui is set to false
+  requireQuantity: false
+  #Require choose whether it should require the player to specify the price instead of setting
+  #the default one instead - takes effect only when enableGui is set to false
+  requirePrice: false
+  #Choose whether a message will be broadcast after players puts up an item for sale
+  broadcast: true
+  #Set minimal item price the broadcast should be sent for
+  broadcastMinPrice: 0.0
+
+# Choose sounds for certain GUI actions. Full list is available at https://docs.brcdev.net/#/sounds
+sounds:
+  MAIN_MENU_OPEN: UI_BUTTON_CLICK
+  SHOPS_MENU_OPEN: UI_BUTTON_CLICK
+  SHOP_MENU_OPEN: UI_BUTTON_CLICK
+  ITEMS_MENU_OPEN: UI_BUTTON_CLICK
+  CATEGORIES_MENU_OPEN: UI_BUTTON_CLICK
+  CATEGORY_MENU_OPEN: UI_BUTTON_CLICK
+  SEARCH_SHOPS_OPEN: UI_BUTTON_CLICK
+  SEARCH_ITEMS_OPEN: UI_BUTTON_CLICK
+  SHOP_OWN_MENU_OPEN: UI_BUTTON_CLICK
+  UNCLAIMED_MENU_OPEN: UI_BUTTON_CLICK
+  SELL_ITEM: ENTITY_EXPERIENCE_ORB_PICKUP
+  BUY_ITEM: ENTITY_EXPERIENCE_ORB_PICKUP
+  CANCEL_ITEM: ENTITY_EXPERIENCE_ORB_PICKUP
+  NOTIFICATION_ERROR_OPEN: UI_BUTTON_CLICK
+  NOTIFICATION_WARNING_OPEN: UI_BUTTON_CLICK
+  NOTIFICATION_SUCCESS_OPEN: ENTITY_EXPERIENCE_ORB_PICKUP
+
+# Choose actions for mouse clicks inside shops
+# Supported click types: all from ClickType enum (https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/ClickType.html)
+# Supported actions: BUY, CANCEL, CANCEL_OTHERS, NONE
+clickActions:
+  LEFT: BUY
+  RIGHT: CANCEL
+  SHIFT_RIGHT: CANCEL_OTHERS
+  MIDDLE: CANCEL_OTHERS
+
+# Format numbers within your messages using these options.
+numberFormat:
+  # Change the character used for separating decimals in figures which may not be whole numbers.
+  decimalSeparator: "."
+  # Change the character using for separating commas in figures which are larger numbers.
+  groupingSeparator: ","
+  # Specify the minimum number of digits shown for integer numbers.
+  minimumIntegerDigits: 1
+  # Specify the maximum number of digits shown for integer numbers. This can help with displaying larger numbers.
+  maximumIntegerDigits: 32
+  # Specify the minimum number of decimal places shown for fractional numbers.
+  minimumFractionDigits: 0
+  # Specify the maximum number of decimal places shown for fractional numbers.
+  maximumFractionDigits: 8
+  # Specify whether you would like the ending decimal digits to be removed when not applicable. This will change $100.00 to $100
+  hideFraction: true
+  shortScale:
+    # Specify whether you would like the number shown in messages to be converted in short-scale above a certain number. This will convert "1,000,000" to "1 million".
+    enableShortScaleNumbering: false
+    # Specify the limit at which short-scale number formatting will start from. Any number above this limit will be converted to short-scale number formatting.
+    shortScaleLimit: 1000000
+    # Specify the maximum number of decimal place figures shown when showing the decimal part of the large, short-hand number. (Will truncate the figure to 2 d.p by default).
+    shortHandDecimalLimit: 2
+    # Specify the maximum number of digits shown in larger short-hand numbers. (Will truncate the figure to 32 digits by default).
+    shortHandNumberLimit: 32

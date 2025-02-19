@@ -125,7 +125,7 @@ items:
   # Netherite Upgrade Template
   NETHERITE_UPGRADE_TEMPLATE:
     material: NETHERITE_UPGRADE_SMITHING_TEMPLATE
-    buy: 5000
+    buy: 4000
     sell: -1
     displayname: "&6Plantilla de Mejora de Netherite"
     display-lore:
@@ -133,7 +133,7 @@ items:
       - "&7en poderosas herramientas de Netherite."
   "22":
     material: SHULKER_BOX
-    buy: 4200.0
+    buy: 5200.0
     sell: -1.0
   "3":
     material: ENCHANTED_BOOK
@@ -141,8 +141,56 @@ items:
     sell: -1.0
     enchantments:
       - excellentenchants:tunnel:3
+  "4":
+    material: ENCHANTED_BOOK
+    buy: 16900.0
+    sell: -1.0
+    enchantments:
+      - excellentenchants:smite:12
   "23":
     material: ENCHANTED_GOLDEN_APPLE
     buy: 12000.0
     sell: 12000
     stack-size: 32
+  "30":
+    material: OAK_SAPLING
+    buy: 200
+    sell: 20
+  "31":
+    material: SPRUCE_SAPLING
+    buy: 200
+    sell: 20
+  "32":
+    material: BIRCH_SAPLING
+    buy: 200
+    sell: 20
+  "33":
+    material: JUNGLE_SAPLING
+    buy: 200
+    sell: 20
+  "34":
+    material: ACACIA_SAPLING
+    buy: 200
+    sell: 20
+  "35":
+    material: DARK_OAK_SAPLING
+    buy: 200
+    sell: 20
+  "36":
+    material: MANGROVE_PROPAGULE
+    buy: 150
+    sell: 15
+  "37":
+    material: CRIMSON_FUNGUS
+    buy: 200
+    sell: 20
+  "38":
+    material: WARPED_FUNGUS
+    buy: 200
+    sell: 20
+  "39":
+    material: ENCHANTED_BOOK
+    buy: 9052
+    sell: -1
+    enchantments:
+      - DAMAGE_ALL:12

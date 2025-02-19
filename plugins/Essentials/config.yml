@@ -284,6 +284,7 @@ player-commands:
   - nick
   - near
   - pay
+  - repair
   - ping
   - protect
   - r
@@ -684,6 +685,8 @@ command-cooldowns:
   #  '*': 5 # 5 Second cooldown on all commands
   tpr: 10
   tprandom: 10
+  fix: 14400
+  repair: 14400
 
 # Whether command cooldowns should be persistent past server shutdowns
 command-cooldown-persistence: true
@@ -822,7 +825,11 @@ starting-balance: 0
 # Some commands like /repair have sub-costs, check the wiki for more information.
 command-costs:
   # /example costs $1000 PER USE
-  repair: 1000
+  fly-on: 1500
+  arreglar: 2500
+  reparar: 2500
+  fix: 3500
+  repair: 3500
   # /kit tools costs $1500 PER USE
   #kit-tools: 1500
 

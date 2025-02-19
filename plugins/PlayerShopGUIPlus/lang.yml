@@ -1,0 +1,190 @@
+PREFIX: '&6Tienda de Jugador > &f'
+LANG:
+  CONSOLE: Consola
+MSG:
+  ERROR: Se produjo un error, por favor contacta al dueño del servidor.
+  INGAMEONLY: Este comando solo se puede usar dentro del juego.
+  NOACCESS: No tienes acceso para hacer esto.
+  SHOPSNOTLOADED: Las tiendas aún no se han cargado, por favor inténtalo más tarde.
+  NOTLOADED: Tus datos aún no se han cargado, por favor inténtalo más tarde.
+  WORLDBANNED: Las tiendas de jugador han sido desactivadas en este mundo.
+  GAMEMODEBANNED: No puedes acceder a las tiendas de jugador cuando estás en el modo
+    de juego %gamemode%.
+  USAGE:
+    PLAYERSHOP: 'Uso de comando inválido. Uso correcto: /playershop [reload]'
+    SUBCOMMAND: 'Uso de comando inválido. Uso correcto: %usage%'
+  PLAYERSHOP:
+    RELOAD:
+      RELOADED: ¡Configuración recargada!
+    SELL:
+      QUANTITY: cantidad
+      PRICE: precio
+      VALUEINVALID: Se ha especificado un %setting% inválido.
+      VALUETOOLOW: Se ha especificado un %setting% demasiado pequeño. Debes especificar
+        al menos %value%.
+      VALUETOOHIGH: Se ha especificado un %setting% demasiado grande. No puedes especificar
+        más de %value%.
+      TOOFEWITEM: Necesitas al menos %quantity% x %item%&f para venderlo.
+      NOITEM: Debes sostener un objeto en tu mano para venderlo.
+      BANNEDITEM: No puedes poner este objeto a la venta.
+      LIMIT: No puedes vender más de %limit% objetos al mismo tiempo.
+      UNCLAIMEDLIMIT: Por favor, reclama primero tus objetos expirados/no reclamados.
+      CREATED: Has puesto a la venta %quantity% x %item%&f por %price%.
+      BROADCAST: '%player% ha puesto a la venta %quantity% x %item%&f por %price%!'
+    SHOP:
+      NOSHOP: No se encontró ninguna tienda con ese nombre de jugador.
+  BUY:
+    BOUGHTBY: '%player% compró %quantity% x %item%&f de ti por %price%.'
+  SHOPITEM:
+    EXPIRED: Tu oferta de venta (%quantity% x %item%) ha expirado.
+  SEARCHSHOPS:
+    ENTER: Ingresa el nombre de la tienda a buscar. Escribe "%cancel%" para cancelar.
+    CANCELLED: Has cancelado la búsqueda de tiendas.
+  SEARCHITEMS:
+    ENTER: Ingresa el nombre del objeto a buscar. Escribe "%cancel%" para cancelar.
+    CANCELLED: Has cancelado la búsqueda de objetos.
+  EDITSHOPNAME:
+    ENTER: Ingresa el nuevo nombre de la tienda. Escribe "%cancel%" para cancelar.
+    CANCELLED: Has cancelado la edición del nombre de la tienda.
+  ITEMLOT:
+    CANCELLED: Tu lote de venta de %quantity% x %item% fue cancelado por %player%.
+  NUMBERFORMAT:
+    SHORTSCALE:
+      THOUSAND: ' Mil'
+      MILLION: ' Millón'
+      BILLION: ' Billón'
+      TRILLION: ' Trillón'
+      QUADRILLION: ' Cuatrillón'
+      QUINTILLION: ' Quintillón'
+      SEXTILLION: ' Sextillón'
+      SEPTILLION: ' Septillón'
+      OCTILLION: ' Octillón'
+      NONILLION: ' Nonillón'
+      DECILLION: ' Decillón'
+SHOPITEM:
+  SELLER:
+    NONE: ninguno
+  LISTORDER:
+    OLDESTTONEWEST: Más antiguo -> Más reciente
+    NEWESTTOOLDEST: Más reciente -> Más antiguo
+NOTIFICATION:
+  CONFIRM: '&a&lOK'
+  BUY:
+    CANNOTBUYOWN:
+      TITLE: No se pudo comprar el objeto
+      MESSAGE: '&c&lNo puedes comprar tu propio objeto'
+      DESC: '&7No puedes comprar tu propio objeto.'
+    CANNOTAFFORD:
+      TITLE: No se pudo comprar el objeto
+      MESSAGE: '&c&lNo tienes suficiente dinero para comprar el objeto.'
+      DESC: '&7Necesitas %price% para comprar %quantity% x %item%&7.'
+    FULLINVENTORY:
+      TITLE: No se pudo comprar el objeto
+      MESSAGE: '&c&lTu inventario está lleno'
+      DESC: '&7No tienes suficiente espacio libre en tu inventario.'
+    BOUGHT:
+      TITLE: Objeto comprado
+      MESSAGE: '&a&lObjeto comprado con éxito.'
+      DESC: |-
+        &7Has comprado %quantity%
+        &7x %item%&7 a %owner%
+        &7por %price%.
+  CANCEL:
+    CANCELLED:
+      TITLE: Lote de objeto cancelado
+      MESSAGE: '&a&lLote de objeto cancelado con éxito.'
+      DESC: |-
+        &7Has cancelado el lote
+        &7de %owner% de
+        &7%quantity% x %item%.
+  CLAIM:
+    FULLINVENTORY:
+      TITLE: No se pudo reclamar el objeto
+      MESSAGE: '&c&lTu inventario está lleno'
+      DESC: '&7No tienes suficiente espacio libre en tu inventario.'
+    CLAIMED:
+      TITLE: Objeto reclamado
+      MESSAGE: '&a&lObjeto reclamado con éxito.'
+      DESC: |-
+        &7Has reclamado %quantity%
+        &7x %item%&7.
+  SEARCHSHOPS:
+    NOTFOUND:
+      TITLE: No se encontraron tiendas
+      MESSAGE: '&c&lNo se encontraron tiendas'
+      DESC: |-
+        &7No se encontraron tiendas
+        &7con el nombre o propietario especificado.
+  SEARCHITEMS:
+    NOTFOUND:
+      TITLE: No se encontraron objetos
+      MESSAGE: '&c&lNo se encontraron objetos'
+      DESC: |-
+        &7No se encontraron objetos
+        &7con el nombre o propietario especificado.
+  EDITSHOPNAME:
+    BANNEDNAME:
+      TITLE: No se pudo renombrar la tienda
+      MESSAGE: '&c&lNo se pudo renombrar la tienda'
+      DESC: |-
+        &7No puedes usar este
+        &7nombre de tienda.
+    EDITED:
+      TITLE: Nombre de la tienda cambiado
+      MESSAGE: '&a&lEl nombre de la tienda ha cambiado'
+      DESC: |-
+        &7El nombre de la tienda
+        &7se cambió exitosamente a
+        &7%name%.
+  EXPIRED:
+    TITLE: Objeto expirado
+    MESSAGE: '&c&lEl objeto ha expirado'
+    DESC: |-
+      &7Este objeto ya no
+      &7está disponible.
+  NOACCESS:
+    TITLE: Sin acceso
+    MESSAGE: '&a&lNo tienes acceso'
+    DESC: |-
+      &7No tienes acceso
+      &7para hacer esto.
+TIME:
+  NOW: ahora
+  LESSTHAN: menos de %time%
+  YEARS:
+    SINGULAR: año
+    PLURAL: años
+    SHORT: a
+  MONTHS:
+    SINGULAR: mes
+    PLURAL: meses
+    SHORT: mo
+  WEEKS:
+    SINGULAR: semana
+    PLURAL: semanas
+    SHORT: w
+  DAYS:
+    SINGULAR: día
+    PLURAL: días
+    SHORT: d
+  HOURS:
+    SINGULAR: hora
+    PLURAL: horas
+    SHORT: h
+  MINUTES:
+    SINGULAR: minuto
+    PLURAL: minutos
+    SHORT: m
+  SECONDS:
+    SINGULAR: segundo
+    PLURAL: segundos
+    SHORT: s
+TAX:
+  TAKEN: Se te ha cobrado %tax% como resultado de vender tu objeto.
+  EXPIRED:
+    REFUNDED: Se te ha reembolsado %tax% como resultado de que tu objeto expiró.
+  INSUFFICIENT:
+    FUNDS: ¡No tienes suficiente dinero para poder publicar tu objeto! Necesitas %amount%
+      más para pagar el impuesto.
+  SELLER:
+    REFUNDED: Se te ha reembolsado %tax% como resultado de la venta exitosa.

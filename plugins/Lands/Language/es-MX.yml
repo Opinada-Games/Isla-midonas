@@ -538,6 +538,8 @@ help:
               tiempo[H]&7Haz clic para copiar.[/H][SC]{fullcmd}[/SC][/T]'
             set: '[T]&e{parent} {subcmd} {args} &8- &7Establecer tiempo[H]&7Haz clic
               para copiar.[/H][SC]{fullcmd}[/SC][/T]'
+          removespawn: '[T]&e{parent} {subcmd} {args} &8- &7Remove spawn of a land[H]&7Click
+            to copy.[/H][SC]{fullcmd}[/SC][/T]'
     
     wars:
       menu: '[T]&e{parent} {subcmd} {args} &8- &7Abrir menú de guerra[H]&7Haz clic

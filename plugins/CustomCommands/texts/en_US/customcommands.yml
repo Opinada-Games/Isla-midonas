@@ -1,40 +1,41 @@
 # -------------------- Commands --------------------
 
-commandDescriptionCustomcommandsEdit: edit commands in-game
+commandDescriptionCustomcommandsEdit: |
+  &7Editar comandos dentro del juego
 
 # -------------------- Inputs --------------------
 
 messageInvalidInputInteger: |
-  &7You entered an invalid number.
+  &7Ingresaste un número inválido.
 
 messageInvalidInputDouble: |
-  &7You entered an invalid decimal number.
+  &7Ingresaste un número decimal inválido.
 
 messageInvalidInputOfflinePlayer: |
-  &7You entered an invalid player.
+  &7Ingresaste un jugador inválido.
 
 messageInvalidInputPlayer: |
-  &7You entered an invalid player (they must be online).
+  &7Ingresaste un jugador inválido (debe estar en línea).
 
 messageInvalidInputStringSize: |
-  &7You entered a string of invalid size.
+  &7Ingresaste una cadena de longitud inválida.
 
 messageInvalidInputPhrase: |
-  &7You need to add at least one word.
+  &7Necesitas agregar al menos una palabra.
 
 # -------------------- Misc --------------------
 
 messageNoHelp: |
-  &7There's nothing to see here.
+  &7No hay nada que ver aquí.
 
 messageCooldown: |
-  &7Please wait &c{time} &7before using this command again.
+  &7Por favor, espera &c{time} &7antes de usar este comando nuevamente.
 
 messageUnauthorizedWorld: |
-  &7You can't use this command here.
+  &7No puedes usar este comando aquí.
 
 messageUnknownCommand: |
-  &7Unknown command.
+  &7Comando desconocido.
 
 messageUnknownCommandClosest: |
-  &7Unknown command. Maybe you meant &c{closest} &7?
+  &7Comando desconocido. ¿Quizás quisiste decir &c{closest}&7?

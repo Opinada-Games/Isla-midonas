@@ -1,0 +1,13 @@
+aliases: [sell, vender]
+
+patterns:
+  - pattern: "[integer]%cantidad [integer]%precio"
+    description: Lista objetos en tu mano para su venta en tu tienda internacional
+    actions:
+      - type: EXECUTE_COMMANDS
+        commands: |
+          pshop sell {args:1} {args:2}
+        as_player: true
+      - type: NOTIFY
+        notify:
+          message: "&aObjeto listado para su venta correctamente"

@@ -1,184 +1,183 @@
 # -------------------- Custom commands --------------------
 
 descriptionCustomCommandAliases: |
-  &7The aliases for this command
+  &7Los alias para este comando
 
 descriptionCustomCommandPatterns: |
-  &7The different patterns possible for this command
+  &7Los diferentes patrones posibles para este comando
 
 descriptionCustomCommandPatternPattern: |
-  &7The pattern for this command
-  &7See documentation for explanations about this
+  &7El patrón para este comando
+  &7Consulta la documentación para más explicaciones al respecto
 
 descriptionCustomCommandPatternDescription: |
-  &7The description of this pattern, an explanation of what it is meant to do
+  &7La descripción de este patrón, una explicación de su finalidad
 
 descriptionCustomCommandPatternPermission: |
-  &7The permission required to use this command pattern
+  &7El permiso requerido para usar este patrón de comando
 
 descriptionCustomCommandPatternPermissionErrorMessage: |
-  &7A custom permission error message
+  &7Un mensaje de error de permiso personalizado
 
 descriptionCustomCommandPatternWorlds: |
-  &7The world restriction for usage of this command
+  &7La restricción de mundo para usar este comando
 
 descriptionCustomCommandPatternCooldown: |
-  &7The time to wait before performing this command pattern again
+  &7El tiempo de espera antes de volver a ejecutar este patrón de comando
 
 descriptionCustomCommandPatternCurrencyCost: |
-  &7The currencies cost required to perform this command pattern
+  &7El costo en monedas requerido para ejecutar este patrón de comando
 
 descriptionCustomCommandPatternConditions: |
-  &7The conditions required to perform this command pattern
+  &7Las condiciones requeridas para ejecutar este patrón de comando
 
 descriptionCustomCommandPatternToggleMode: |
-  &7If enabled, this will make it so every other execution will be considered as 'toggling on' or 'toggling off' the pattern
-  &7Actions with &6on_toggle_on &7will be performed when toggling on, and actions without will be performed when toggling off
+  &7Si está habilitado, cada ejecución alterna se considerará como 'activar' o 'desactivar' el patrón
+  &7Las acciones con &6on_toggle_on &7se realizarán al activar, y las acciones sin esta etiqueta se realizarán al desactivar
 
 descriptionCustomCommandPatternActions: |
-  &7The actions executed when using this command pattern
+  &7Las acciones que se ejecutan al usar este patrón de comando
 
 # -------------------- Actions --------------------
 
 descriptionActionOnToggleOn: |
-  &7If the pattern containing this action is on toggle mode, this decides when to perform the action (when toggling on or off)
+  &7Si el patrón que contiene esta acción está en modo alternar, esto decide cuándo se realiza la acción (al activar o desactivar)
 
 descriptionActionType: |
-  &7The type of action to execute
+  &7El tipo de acción a ejecutar
 
 descriptionActionTypeTarget: |
-  &7The target to execute this command for
-  &7You can use placeholders or &eeveryone &7to target all online players
+  &7El objetivo al que se dirige este comando
+  &7Puedes usar marcadores de posición o &eeveryone &7para dirigirte a todos los jugadores en línea
 
 descriptionActionChangeGamemodeGamemode: |
-  &7The new game mode
+  &7El nuevo modo de juego
 
 descriptionActionExecuteCommmandsCommands: |
-  &7The commands to be executed
+  &7Los comandos que se ejecutarán
 
 descriptionActionExecuteCommmandsAsPlayer: |
-  &7True if the commands should be executed as the player
+  &7Verdadero si los comandos deben ejecutarse como el jugador
 
 descriptionActionGiveItemItem: |
-  &7The item to be given to the player
+  &7El ítem que se le dará al jugador
 
 descriptionActionNotifyNotify: |
-  &7The notification to send to the player
+  &7La notificación que se enviará al jugador
 
 descriptionActionTeleportLocation: |
-  &7The location to teleport the player to
+  &7La ubicación a la cual teletransportar al jugador
 
 descriptionActionWaitDuration: |
-  &7The amount of time to wait for this action
-
+  &7La cantidad de tiempo a esperar para esta acción
 
 # -------------------- Conditions --------------------
 
 descriptionConditionsConditions: |
-  &7List of conditions to check
+  &7Lista de condiciones a verificar
 
 descriptionConditionsMatchAmount: |
-  &7The minimum amount of conditions that must match
-  &7If this is greater than the amount of available conditions, this one will be used
+  &7La cantidad mínima de condiciones que deben coincidir
+  &7Si esto es mayor que la cantidad de condiciones disponibles, se usará este valor
 
 descriptionConditionsNoMatchAmount: |
-  &7The minimum amount of conditions that mustn't match
-  &7If this is greater than the amount of available conditions, this one will be used
+  &7La cantidad mínima de condiciones que NO deben coincidir
+  &7Si esto es mayor que la cantidad de condiciones disponibles, se usará este valor
 
 descriptionConditionsErrorMessage: |
-  &7Error message to display when no working match was found
+  &7Mensaje de error que se muestra cuando no se encuentra ninguna coincidencia válida
 
 # -------------------- Condition : common --------------------
 
 descriptionConditionType: |
-  &7Type of condition
+  &7Tipo de condición
 
 descriptionConditionErrorMessage: |
-  &7Error message to send when the condition isn't respected
+  &7Mensaje de error a enviar cuando la condición no se cumpla
 
 descriptionConditionGameTimeStartTicks: |
-  &7The starting ticks
+  &7Los ticks de inicio
 
 descriptionConditionGameTimeEndTicks: |
-  &7The ending ticks
+  &7Los ticks de fin
 
 descriptionConditionInventoryFreeForItemsItems: |
-  &7The items that the player must have enough free space for in their inventory
+  &7Los ítems para los cuales el jugador debe tener espacio suficiente en su inventario
 
 descriptionConditionItemsItems: |
-  &7A list of items
+  &7Una lista de ítems
 
 descriptionConditionGenericLogicLogic: |
-  &7The logic string to parse
-  &7You can use comparison types (=, !=, <, <=, >, >=), for example &6{placeholder} * 4 >= 10 * 20 &7or &6{placeholder} = my_value
-  &7You can combine multiple comparison types, for example &610 <= {placeholder} <= 100
-  &7You can use the 'in' operator (|in|), for example &6{placeholder} |in| value1 | value2 | value3
-  &7You can use the 'and' operator (&&), for example &6{placeholder} > 50 && {placeholder} < 100
-  &7You can use the 'or' operator (||), for example &6{placeholder} <= 50 || {placeholder} >= 100
-  &7You can merge conditions with [], for example &6[{placeholder} >= 10 || {placeholder}] && [{variable:test2} < 10 || {variable:test2} > 50]
+  &7La cadena de lógica a analizar
+  &7Puedes usar tipos de comparación (=, !=, <, <=, >, >=), por ejemplo &6{placeholder} * 4 >= 10 * 20 &7o &6{placeholder} = my_value
+  &7Puedes combinar múltiples tipos de comparación, por ejemplo &610 <= {placeholder} <= 100
+  &7Puedes usar el operador 'in' (|in|), por ejemplo &6{placeholder} |in| value1 | value2 | value3
+  &7Puedes usar el operador 'and' (&&), por ejemplo &6{placeholder} > 50 && {placeholder} < 100
+  &7Puedes usar el operador 'or' (||), por ejemplo &6{placeholder} <= 50 || {placeholder} >= 100
+  &7Puedes fusionar condiciones con [], por ejemplo &6[{placeholder} >= 10 || {placeholder}] && [{variable:test2} < 10 || {variable:test2} > 50]
 
 descriptionConditionGenericLogicLogicPlaceholder: |
   &r
-  &7Placeholders specific to this condition : {placeholders}
+  &7Marcadores de posición específicos para esta condición: {placeholders}
 
 descriptionConditionGenericLogicOnlineGoal: |
-  &7The number of online players required to match the logic string
+  &7La cantidad de jugadores en línea requerida para cumplir con la cadena de lógica
 
 descriptionConditionLogicMoneyCurrency: |
-  &7The currency to check
+  &7La moneda a verificar
 
 descriptionConditionPermissionPermission: |
-  &7The permission
+  &7El permiso
 
 descriptionConditionPermissionOnlineGoal: |
-  &7The number of online players required to have this permission
+  &7La cantidad de jugadores en línea que deben tener este permiso
 
 descriptionConditionPositionPosition: |
-  &7The position
+  &7La posición
 
 descriptionConditionScoreboardTagTagName: |
-  &7The scoreboard tag name
+  &7El nombre de la etiqueta del scoreboard
 
 descriptionConditionScoreboardTagMustHave: |
-  &7If the player must have the tag, or not
+  &7Si el jugador debe tener la etiqueta o no
 
 descriptionConditionLogicScoreboardValueObjectiveName: |
-  &7The scoreboard objective name
+  &7El nombre del objetivo del scoreboard
 
 descriptionConditionLogicScoreboardValueScoreName: |
-  &7The scoreboard score name
+  &7El nombre de la puntuación del scoreboard
 
 descriptionConditionScoreboardValueValue: |
-  &7The value to compare to
+  &7El valor con el cual comparar
 
 descriptionConditionScoreboardValueComparison: |
-  &7The comparison to make
+  &7La comparación a realizar
 
 descriptionConditionDayTimeStart: |
-  &7The start time in day
+  &7La hora de inicio en el día
 
 descriptionConditionDayTimeEnd: |
-  &7The end time in day (can be after start to go across days)
+  &7La hora de fin en el día (puede ser posterior a la de inicio para abarcar varios días)
 
 descriptionConditionWeekTimeStart: |
-  &7The start time in week
+  &7La hora de inicio en la semana
 
 descriptionConditionWeekTimeEnd: |
-  &7The end time in week (can be after start to go across weeks)
+  &7La hora de fin en la semana (puede ser posterior a la de inicio para abarcar varias semanas)
 
 descriptionConditionMonthTimeStart: |
-  &7The start time in month
+  &7La hora de inicio en el mes
 
 descriptionConditionMonthTimeEnd: |
-  &7The end time in month (can be after start to go across months)
+  &7La hora de fin en el mes (puede ser posterior a la de inicio para abarcar varios meses)
 
 descriptionConditionYearTimeStart: |
-  &7The start time in year
+  &7La hora de inicio en el año
 
 descriptionConditionYearTimeEnd: |
-  &7The end time in year (can be after start to go across years)
+  &7La hora de fin en el año (puede ser posterior a la de inicio para abarcar varios años)
 
 # -------------------- Condition --------------------
 
 descriptionConditionMustTake: |
-  &7To take the condition (if supported) after checks
+  &7Para tomar la condición (si está soportado) después de las verificaciones
