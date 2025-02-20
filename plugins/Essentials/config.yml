@@ -323,6 +323,8 @@ player-commands:
   - tpaccept
   - tpahere
   - tpdeny
+  - tprandom
+  - tpr
   - warp
   - warp.list
   - world
