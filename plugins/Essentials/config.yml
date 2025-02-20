@@ -323,8 +323,6 @@ player-commands:
   - tpaccept
   - tpahere
   - tpdeny
-  - tprandom
-  - tpr
   - warp
   - warp.list
   - world
@@ -685,8 +683,6 @@ world-time-permissions: false
 command-cooldowns:
   #  feed: 100 # 100 second cooldown on /feed command
   #  '*': 5 # 5 Second cooldown on all commands
-  tpr: 10
-  tprandom: 10
   fix: 14400
   repair: 14400
 
