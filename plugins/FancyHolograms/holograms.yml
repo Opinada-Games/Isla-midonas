@@ -291,9 +291,9 @@ holograms:
     type: TEXT
     location:
       world: lobby
-      x: 34.08416504392321
+      x: 34.084163665771484
       y: -34.0
-      z: 37.63702833644602
+      z: 37.637027740478516
       yaw: -1.1991577
       pitch: 1.1997497
     visibility_distance: -1
