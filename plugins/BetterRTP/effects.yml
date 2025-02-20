@@ -8,28 +8,28 @@ Titles:
   Enabled: true # Habilitar la función de efectos de títulos
   # # Todos admiten los marcadores de posición %player% %x% %y% y %z%
   NoDelay: # Solo se activa cuando no hay retraso
-    Title: "&6Teleportando..."
-    Subtitle: "&8por favor espera"
+    Title: '&6Teleportando...'
+    Subtitle: '&8por favor espera'
     SendMessage: true
   Teleport:
-    Title: "&6¡Teletransportado!"
-    Subtitle: "&fx=%x% y=%y% z=%z%"
+    Title: '&6¡Teletransportado!'
+    Subtitle: '&fx=%x% y=%y% z=%z%'
     SendMessage: true # Permitir el mensaje de éxito de teletransporte en el chat
   Delay:
-    Title: ""
-    Subtitle: "&fTeleportando en %time% segundos..."
+    Title: ''
+    Subtitle: '&fTeleportando en %time% segundos...'
     SendMessage: true # Permitir el mensaje de retraso en el chat
   Cancelled:
-    Title: "&eTe moviste..."
-    Subtitle: "&c¡El RTP fue cancelado!"
+    Title: '&eTe moviste...'
+    Subtitle: '&c¡El RTP fue cancelado!'
     SendMessage: true # Permitir también el mensaje cancelado en el chat
   Loading:
-    Title: ""
-    Subtitle: "&7Cargando chunks... por favor espera"
+    Title: ''
+    Subtitle: '&7Cargando chunks... por favor espera'
     SendMessage: true # Permitir el mensaje de carga en el chat
   Failed:
-    Title: ""
-    Subtitle: "&c¡Falló! No se encontraron lugares seguros"
+    Title: ''
+    Subtitle: '&c¡Falló! No se encontraron lugares seguros'
     SendMessage: true
 Particles: # Usa `rtp info particles` para ver una lista de partículas
   Enabled: true

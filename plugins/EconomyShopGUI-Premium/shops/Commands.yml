@@ -11,8 +11,10 @@ pages:
           - "&9installed that has a &b/fly &9command!"
           - "&a&lExample plugin: &r&aEssentialsX"
         buy-commands:
-          - /fly %player% enable
-          - /lp user %player% permission set essentials.fly true
+          - fly %player% enable
+          - lp user %player% permission set fly true
+          - lp user %player% permission set essentials.fly true
+          - lp user %player% permission set lands.bypass.wilderness.fly true
 
       # "3":
       #   material: COAL_BLOCK

@@ -54,6 +54,7 @@ crash-reports/
 *.tmp
 *.bak
 *.swp
+*.log
 
 # Java-related files (if running a custom Java setup)
 *.class
