@@ -24,6 +24,7 @@ data/
 Data/
 userdata/
 plugins/FastAsyncWorldEdit/history/
+plugins/CustomCommands/data_v4/users/
 
 # Server properties and configurations (if you want to exclude them)
 banned-players.json

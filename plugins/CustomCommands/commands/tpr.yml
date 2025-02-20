@@ -1,0 +1,14 @@
+# Configuration for the /menu command
+
+# Aliases for the command
+aliases: [tpr, tprandom]
+
+# Patterns for the command
+patterns:
+  - pattern: ""
+    description: Transportate a cualquier parte del mundo al azar
+    actions:
+      - type: EXECUTE_COMMANDS
+        commands: |
+          rtp
+        as_player: true
