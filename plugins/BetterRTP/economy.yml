@@ -13,5 +13,5 @@ CustomWorlds:
   # # Enable custom world charging
   Enabled: true
   Prices:
-    - world: 50
-    - world_end: 0
+  - world: 100
+  - world_end: 300
