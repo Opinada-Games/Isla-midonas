@@ -9,7 +9,6 @@
 # If you're looking for a plugin to regenerate chunks at unclaim or wilderness, it's recommended
 # to use the WildRegeneration plugin: https://polymart.org/resource/wildregeneration.2096
 
-
 ########################################
 # BASIC MODE
 ########################################
@@ -21,7 +20,6 @@
 # can't be turned back on as long as basic-mode is enabled.
 # NOTE: This setting requires server reload / restart.
 basic-mode: false
-
 
 ########################################
 # MAJOR FEATURES
@@ -38,7 +36,6 @@ features:
   # If you disable this option, all existing relations will be deleted.
   # This is useful in combination with wars. However, you can also use it with wars disabled.
   relations: true
-
 
 # General options
 general:
@@ -188,7 +185,6 @@ general:
   # Provide bedrock forms for bedrock players, instead of the normal GUI?
   bedrock-forms: true
 
-
 # General options for economic tasks, that apply to taxes, upkeep and nation upkeep.
 # Each task has it's own section, in this file and nations.yml, with specified options.
 # These options require server reload / restart.
@@ -211,7 +207,6 @@ economic:
   # Example: 12h = alert lands and nations at earliest 12 hours before the upkeep collecting, if their funds are insufficient.
   insufficient-altert_time: 2d
 
-
 # Upkeep can be toggled in the "features" section.
 # Upkeep = Lands pay a defined amount of money to the server in order to keep their claimed land.
 # Taxes = Trusted players pay a defined amount of tax per defined interval.
@@ -232,7 +227,6 @@ upkeep:
   # This will send a reminder ever configured period while in "insufficient-altert_time" from above.
   upkeep-reminder_time: 1h
 
-
 # Taxes can be toggled in the "features" section.
 # Taxes = Trusted players pay a defined amount of tax per defined interval.
 # Rent = The players can rent a area of their choice without needing to get trusted. They can decide how long they want to rent it.
@@ -249,7 +243,6 @@ taxes:
   # Disable: 0
   taxes-announcement_time: 2h
 
-
 # General teleportation options.
 # Command specific teleportation options can be found in their sections.
 teleport:
@@ -261,7 +254,6 @@ teleport:
   # Waittime
   # Timeunit: seconds
   wait: 5
-
 
 # A land consists of a collection of chunks which are claimed via the /claim command or with the claim tool.
 # This section and the "chunk" section contain claiming options.
@@ -332,7 +324,7 @@ land:
     # Size of buffer zone around a land that is part of a nation.
     # This value only applies to surrounding lands. That means that if a nation tries to expand and the
     # neighbouring claim isn't part of a nation, the "land_2" value from above will be used instead.
-    nation: 3
+    nation: 0
 
   # Force lands to claim near their claims.
   force-near:
@@ -461,7 +453,6 @@ land:
     # at their current location. This permission just adds another requirement, besides the fly role flag.
     reactivate-perm: ""
 
-
   # /lands setowner Settings
   setowner:
     # Disabling this option will remove the /lands accept and /lands deny command, IF invites are also disabled.
@@ -572,7 +563,6 @@ land:
     # If disabled and they don't have enough money in the land bank during upkeep collection, they won't be able to pay the upkeep.
     fallback-personal: true
 
-
 # Each chunk represents an 16x16 blocks area.
 chunk:
   # Cost to claim chunks. In some cases the claim might be free:
@@ -657,14 +647,12 @@ chunk:
       # This option requires server reload / restart.
       remove_3: false
 
-
 # Players can create block-sized (not chunks) sub-areas inside their lands.
 sub-area:
   # Make it possible to create sub areas, using /lands selection, inside lands?
   enabled_22: true
   # Cooldown for the teleportation to an area inside your land.
   teleport-cooldown_time: 0s
-
 
 # Camps are temporary lands that will get deleted after a defined period.
 # Camp items can be given at first join or by executing /lands player <player> give
@@ -684,12 +672,10 @@ camp:
   # land creation section in this file.
   default-name: "{player}'s Camp"
 
-
 # Options for /lands relations and /nations relations
 relations:
   # Broadcast new relations to all players on the server?
   broadcast: true
-
 
 # Players can toggle personal flags to customize their experience.
 player:
@@ -706,7 +692,6 @@ player:
     display_2_list:
       - "all"
 
-
 # This is the configuration of the /lands unstuck command.
 # Purpose of this command is to let players be able to teleported out of locations in lands where they got trapped.
 # For example a player finds a way walking into a land, but can't find a way out.
@@ -714,7 +699,6 @@ player:
 unstuck:
   # Set the cooldown for this command.
   unstuck-cooldown_time: 1h
-
 
 # Random teleportation (/lands wild)
 # When using this make sure to set the spawn of each world using /setworldspawn.
@@ -745,7 +729,6 @@ random-teleport:
   # before the teleportation counter starts.
   extensive-check: false
 
-
 # Introduce new players to claiming.
 introduction:
   # Notify these players until they reached this playtime.
@@ -756,7 +739,6 @@ introduction:
     # Send a warning that the placed container isn't protected when placing it in wilderness.
     # Will only be sent if the player isn't part of any land already.
     container-placement: true
-
 
 # Sound configuration
 # Format: SOUND:VOLUME:PITCH
@@ -785,7 +767,6 @@ sounds:
   # You can disable this, by setting it to ''
   fly-re-enable_sound: "ITEM_ARMOR_EQUIP_ELYTRA"
 
-
 # Top lands and nations leaderboard options
 # Includes /lands top, /nations top, leaderboard signs and holograms
 top-lands:
@@ -810,7 +791,6 @@ top-lands:
   # NOTE: Changes to this option might take a few minutes to take effect.
   exclude-uids_list:
     - "8667ba71-b85a-4004-af54-457a9734eed7"
-
 
 # Visualization options for /lands view etc.
 visualization:
@@ -920,7 +900,6 @@ visualization:
     # Y Heigth (up)
     height_2: 10
 
-
 # Command options
 command:
   # This is needed for time rewards and the "/lands player <player> give permission chunk" command
@@ -961,7 +940,6 @@ command:
     # This affects all players, which are standing in a land.
     general_list: []
 
-
 # Lands menu options (/lands menu)
 gui:
   # Should Lands automatically adjust the length of item lore lines?
@@ -971,7 +949,6 @@ gui:
   # Should the /lands list menu show only lands where to player can teleport to?
   # Players can still toggle it afterwards. This is just a default setting.
   list-only-public: false
-
 
 # Database options
 database:
@@ -1028,12 +1005,10 @@ database:
     # It is highly recommended to set a unique table prefix if the plugin shares a database with other plugins or Lands instances.
     table-prefix: "lands_"
 
-
   # If Lands can't connect to your MySQL database, because for example the credentials are invalid or outdated.
   # Should Lands disallow players to join the server, if it couldn't connect to the database?
   # This can happen if you change the database credentials, but forget to update it in this config.
   error-disallow-join: true
-
 
 # 3rd party plugin options
 integration:
@@ -1088,7 +1063,6 @@ integration:
       # Not just items of the same type or items with the same model-data.
       strict: false
 
-
 # You most likely don't need to edit this section.
 entities:
   # You can specify here which entities should be considered an animal or monster.
@@ -1098,7 +1072,6 @@ entities:
     - "default"
   monsters_list:
     - "default"
-
 
 # Configure logging
 logging:

@@ -1,96 +1,95 @@
 kits:
   herramientas:
     delay: 3600
-    cost: 600
     items:
+      - "/eco take {USERNAME} 1600"
       - "minecraft:stone_sword 1"
       - "minecraft:stone_shovel 1"
       - "minecraft:stone_pickaxe 1"
       - "minecraft:bread 12"
-      - 'minecraft:enchanted_book{Enchantments:[{id:"minecraft:efficiency",lvl:1}],display:{Lore:[''{"text":"Libro Encantado: Eficiencia I","color":"gray"}'']}} 1'
+      - "enchanted_book 1 name:&7Libro_Encantado_-_Eficiencia_I lore:&8Solo_para_herramientas storedenchants:efficiency:1"
 
   iniciacion:
     delay: -1
-    cost: 0
     items:
       - "minecraft:wooden_sword 1"
       - "minecraft:bread 8"
       - "minecraft:leather_chestplate 1"
       - "minecraft:torch 16"
       - "minecraft:enchanted_golden_apple 8"
-      - 'minecraft:enchanted_book{Enchantments:[{id:"minecraft:protection",lvl:2}],display:{Lore:[''{"text":"Libro Encantado: Protección II","color":"gray"}'']}} 1'
-      - "/eco give {player} 1000"
+      - "enchanted_book 1 name:&7Libro_Encantado_-_Proteccion_II lore:&8Solo_para_armaduras storedenchants:protection:2"
+      - "/eco give {USERNAME} 1000"
 
   constructor:
     delay: 10800
-    cost: 600
     items:
+      - "/eco take {USERNAME} 1600"
       - "minecraft:dirt 32"
       - "minecraft:cobblestone 32"
       - "minecraft:oak_log 16"
       - "minecraft:glass 8"
       - "minecraft:torch 8"
-      - 'minecraft:enchanted_book{Enchantments:[{id:"minecraft:unbreaking",lvl:1}],display:{Lore:[''{"text":"Libro Encantado: Irrompibilidad I","color":"gray"}'']}} 1'
+      - "enchanted_book 1 name:&7Libro_Encantado_-_Irrompibilidad_I lore:&8Resistencia storedenchants:unbreaking:1"
 
   explorador:
     delay: 10800
-    cost: 500
     items:
+      - "/eco take {USERNAME} 1500"
       - "minecraft:boat 1"
       - "minecraft:compass 1"
       - "minecraft:map 1"
       - "minecraft:cooked_beef 6"
       - "minecraft:leather_boots 1"
-      - 'minecraft:enchanted_book{Enchantments:[{id:"minecraft:feather_falling",lvl:1}],display:{Lore:[''{"text":"Libro Encantado: Caída de Plumas I","color":"gray"}'']}} 1'
+      - "enchanted_book 1 name:&7Libro_Encantado_-_Caida_de_Plumas_I lore:&8Botas storedenchants:feather_falling:1"
 
   guerrero:
     delay: 21600
-    cost: 1150
     items:
+      - "/eco take {USERNAME} 2150"
       - "minecraft:iron_sword 1"
       - "minecraft:iron_helmet 1"
       - "minecraft:iron_chestplate 1"
       - "minecraft:shield 1"
       - "minecraft:enchanted_golden_apple 1"
-      - 'minecraft:enchanted_book{Enchantments:[{id:"minecraft:sharpness",lvl:1}],display:{Lore:[''{"text":"Libro Encantado: Filo I","color":"gray"}'']}} 1'
+      - "enchanted_book 1 name:&7Libro_Encantado_-_Filo_I lore:&8Arma storedenchants:sharpness:1"
 
   diplomático:
     delay: 43200
-    cost: 1000
     items:
+      - "/eco take {USERNAME} 2000"
       - "minecraft:book 1"
       - "minecraft:lectern 1"
       - "minecraft:emerald 5"
       - "minecraft:paper 3"
       - "minecraft:yellow_banner 1"
-      - 'minecraft:enchanted_book{Enchantments:[{id:"minecraft:loyalty",lvl:1}],display:{Lore:[''{"text":"Libro Encantado: Lealtad I","color":"gray"}'']}} 1'
+      - "enchanted_book 1 name:&7Libro_Encantado_-_Lealtad_I lore:&8Tridente storedenchants:loyalty:1"
 
   superviviente:
     delay: 14400
-    cost: 600
     items:
+      - "/eco take {USERNAME} 1600"
       - "minecraft:fishing_rod 1"
       - "minecraft:bow 1"
       - "minecraft:arrow 16"
       - "minecraft:bread 8"
       - "minecraft:chainmail_helmet 1"
-      - 'minecraft:enchanted_book{Enchantments:[{id:"minecraft:flame",lvl:1}],display:{Lore:[''{"text":"Libro Encantado: Llama I","color":"gray"}'']}} 1'
+      - "enchanted_book 1 name:&7Libro_Encantado_-_Llama_I lore:&8Arco storedenchants:flame:1"
 
   agricultor:
     delay: 43200
-    cost: 850
     items:
+      - "/eco take {USERNAME} 1850"
       - "minecraft:iron_hoe 1"
       - "minecraft:wheat_seeds 8"
       - "minecraft:bone_meal 5"
       - "minecraft:water_bucket 1"
       - "minecraft:bread 3"
-      - 'minecraft:enchanted_book{Enchantments:[{id:"minecraft:fortune",lvl:1}],display:{Lore:[''{"text":"Libro Encantado: Fortuna I","color":"gray"}'']}} 1'
+      - "enchanted_book 1 name:&7Libro_Encantado_-_Fortuna_I lore:&8Cosecha storedenchants:fortune:1"
 
   lider:
     delay: 86400
-    cost: 2000
     items:
+      - "/eco take {USERNAME} 3000"
       - "minecraft:golden_helmet 1"
       - "minecraft:gold_nugget 5"
       - "minecraft:torch 16"
@@ -99,14 +98,14 @@ kits:
       - "minecraft:stone_axe 1"
       - "minecraft:lectern 1"
       - "minecraft:enchanted_golden_apple 2"
-      - 'minecraft:enchanted_book{Enchantments:[{id:"minecraft:fire_aspect",lvl:1}],display:{Lore:[''{"text":"Libro Encantado: Aspecto Ígneo I","color":"gray"}'']}} 1'
+      - "enchanted_book 1 name:&7Libro_Encantado_-_Aspecto_Ígneo_I lore:&8Arma storedenchants:fire_aspect:1"
 
   artesano:
     delay: 86400
-    cost: 2600
     items:
+      - "/eco take {USERNAME} 5600"
       - "minecraft:diamond_pickaxe 1"
       - "minecraft:crafting_table 1"
       - "minecraft:oak_log 16"
       - "minecraft:iron_ingot 8"
-      - 'minecraft:enchanted_book{Enchantments:[{id:"minecraft:mending",lvl:1}],display:{Lore:[''{"text":"Libro Encantado: Reparación I","color":"gray"}'']}} 1'
+      - "enchanted_book 1 name:&7Libro_Encantado_-_Reparacion_I lore:&8Herramientas storedenchants:mending:1"
