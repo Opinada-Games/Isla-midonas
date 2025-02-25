@@ -19,6 +19,7 @@ Attributes:
   SCALE: 1.6
   ATTACK_DAMAGE: 100.0
   MOVEMENT_SPEED: 0.35
+  WATER_MOVEMENT_EFFICIENCY: 2.0
 Lightning:
   Death: false
   Spawn: false

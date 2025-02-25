@@ -95,7 +95,7 @@ Riding:
 Commands: []
 Commands_Stop_After_First: false
 Attributes:
-  ATTACK_DAMAGE: 185.0
+  ATTACK_DAMAGE: 200.0
   SCALE: 1.2
   STEP_HEIGHT: 20.0
   FOLLOW_RANGE: 100.0
@@ -111,7 +111,7 @@ Reinforcements: []
 Custom_Settings: {}
 Skills:
   Confuse:
-    Delay: "10 seconds"
+    Delay: "5 seconds"
     Commands: []
     Messages:
     - ¡Has sido <red>confundido <gray>por el jefe!
@@ -130,7 +130,7 @@ Skills:
     Settings:
       Radius: 5
   Freeze:
-    Delay: "20 seconds"
+    Delay: "15 seconds"
     Commands: []
     Messages:
     - El Jefe te ha puesto en un estado meditativo. No te muevas.
@@ -140,6 +140,17 @@ Skills:
     Settings:
       Duration: "2 seconds"
       Cobweb: false
+  Potions:
+    Delay: "30 seconds - 1 minute"
+    Commands: []
+    Messages:
+    - ¡Cuidado! El {boss} te ha <red>otorgado un efecto de poción especial<gray>!
+    - ¡El {boss} te ha <red>envenenado<gray>!
+    - ¡Ahora tienes efectos de pociones especiales!
+    Stop_More_Skills: true
+    Settings:
+      Potions:
+      - HARM 200 3
 Drops:
   Vanilla: true
   General:

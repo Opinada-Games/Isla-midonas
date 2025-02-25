@@ -16,8 +16,8 @@ Riding:
 Commands: []
 Commands_Stop_After_First: false
 Attributes:
-  ATTACK_DAMAGE: 180.0
-  ARMOR: 5.0
+  ATTACK_DAMAGE: 200.0
+  ARMOR: 8.0
 Lightning:
   Death: false
   Spawn: false

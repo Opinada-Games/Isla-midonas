@@ -28,13 +28,13 @@ Riding:
 Commands: []
 Commands_Stop_After_First: false
 Attributes:
-  ATTACK_DAMAGE: 200.0
+  ATTACK_DAMAGE: 250.0
   SCALE: 2.0
   FOLLOW_RANGE: 35.0
   JUMP_STRENGTH: 1.0
   STEP_HEIGHT: 10.0
   ARMOR: 11.0
-  MOVEMENT_SPEED: 0.3
+  MOVEMENT_SPEED: 0.5
   WATER_MOVEMENT_EFFICIENCY: 10.0
 Lightning:
   Death: true
@@ -43,7 +43,7 @@ Reinforcements: []
 Custom_Settings: {}
 Skills:
   Disarm:
-    Delay: "30 seconds"
+    Delay: "20 seconds"
     Commands: []
     Messages:
     - ¡Eres <red>demasiado débil <gray>para sostener este objeto!
@@ -60,6 +60,16 @@ Skills:
     - ¡Fuiste teletransportado a un mundo maravilloso! Es broma.
     Stop_More_Skills: true
     Settings: {}
+  StealLife:
+    Delay: "1 minute - 2 minutes"
+    Commands: []
+    Messages:
+    - ¡El Jefe te ha <red>robado <gray>tu salud!
+    - Tus vidas han sido <red>reducidas <gray>por {boss}!
+    - ¡El {boss} ha <red>drenado <gray>tu salud!
+    Stop_More_Skills: true
+    Settings:
+      Percent: 0.2
 Drops:
   Vanilla: true
   General:
