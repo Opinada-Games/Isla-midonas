@@ -53,8 +53,13 @@ Commands: []
 Commands_Stop_After_First: false
 Attributes:
   SCALE: 1.6
-  ATTACK_DAMAGE: 50.0
+  ATTACK_DAMAGE: 60.0
   MOVEMENT_SPEED: 0.5
+  WATER_MOVEMENT_EFFICIENCY: 0.5
+  KNOCKBACK_RESISTANCE: 1.0
+  JUMP_STRENGTH: 0.45
+  ARMOR: 3.0
+  OXYGEN_BONUS: 100.0
 Lightning:
   Death: false
   Spawn: false

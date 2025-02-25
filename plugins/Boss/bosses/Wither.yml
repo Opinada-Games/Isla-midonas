@@ -16,16 +16,28 @@ Riding:
 Commands: []
 Commands_Stop_After_First: false
 Attributes:
-  ARMOR: 6.0
-  ATTACK_DAMAGE: 60.0
+  ARMOR: 8.0
+  ATTACK_DAMAGE: 80.0
   FOLLOW_RANGE: 60.0
-  FLYING_SPEED: 0.8
+  FLYING_SPEED: 0.9
+  WATER_MOVEMENT_EFFICIENCY: 1.0
+  BURNING_TIME: 1.0
 Lightning:
   Death: true
   Spawn: true
 Reinforcements: []
 Custom_Settings: {}
-Skills: {}
+Skills:
+  Ignite:
+    Delay: "15 seconds - 30 seconds"
+    Commands: []
+    Messages:
+    - ¡Has sido <red>incendiado <gray>por el jefe!
+    - ¡El {boss} te ha <red>prendido fuego<gray>!
+    - Se está poniendo cada vez más caliente. ¿Te preguntas por qué?
+    Stop_More_Skills: true
+    Settings:
+      Duration: "5 seconds"
 Drops:
   Vanilla: true
   General:

@@ -141,12 +141,6 @@ items:
     sell: -1.0
     enchantments:
       - excellentenchants:tunnel:3
-  "4":
-    material: ENCHANTED_BOOK
-    buy: 16900.0
-    sell: -1.0
-    enchantments:
-      - excellentenchants:smite:12
   "23":
     material: ENCHANTED_GOLDEN_APPLE
     buy: 12000.0
@@ -188,9 +182,3 @@ items:
     material: WARPED_FUNGUS
     buy: 200
     sell: 20
-  "39":
-    material: ENCHANTED_BOOK
-    buy: 9052
-    sell: -1
-    enchantments:
-      - DAMAGE_ALL:12

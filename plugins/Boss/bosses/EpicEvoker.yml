@@ -5,7 +5,7 @@
 #  -------------------------------------------------------------------------------------------------
 
 Type: EVOKER
-Health: 800.0
+Health: 900.0
 Equipment: {}
 Random_Equipment_On_Empty_Slots: false
 Potion_Effects: {}
@@ -19,10 +19,11 @@ Attributes:
   SCALE: 2.0
   BURNING_TIME: 0.0
   ATTACK_KNOCKBACK: 5.0
-  ATTACK_DAMAGE: 150.0
+  ATTACK_DAMAGE: 160.0
   STEP_HEIGHT: 10.0
-  ARMOR: 8.0
+  ARMOR: 20.0
   FOLLOW_RANGE: 35.0
+  MAX_ABSORPTION: 5.0
 Lightning:
   Death: false
   Spawn: true

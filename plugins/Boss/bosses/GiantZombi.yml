@@ -38,15 +38,17 @@ Commands: []
 Commands_Stop_After_First: false
 Attributes:
   SCALE: 6.0
-  ATTACK_DAMAGE: 180.0
+  ATTACK_DAMAGE: 200.0
   ATTACK_KNOCKBACK: 20.0
   MOVEMENT_SPEED: 0.5
   FOLLOW_RANGE: 100.0
   STEP_HEIGHT: 10.0
   SAFE_FALL_DISTANCE: 10.0
-  ARMOR: 4.0
-  ZOMBIE_SPAWN_REINFORCEMENTS: 10.0
+  ARMOR: 10.0
+  ZOMBIE_SPAWN_REINFORCEMENTS: 11.0
   JUMP_STRENGTH: 0.5
+  WATER_MOVEMENT_EFFICIENCY: 1.0
+  KNOCKBACK_RESISTANCE: 10.0
 Lightning:
   Death: true
   Spawn: true
@@ -75,6 +77,17 @@ Skills:
       Potions:
       - HUNGER 300 3
       - SLOW 300 4
+  Freeze:
+    Delay: "10 seconds - 30 seconds"
+    Commands: []
+    Messages:
+    - El Jefe te ha puesto en un estado meditativo. No te muevas.
+    - ¡Ahora estás inmovilizado! ¡El {boss} se acerca a ti!
+    - ¡Estás jugando muy rápido! ¡Baja la velocidad por favor!
+    Stop_More_Skills: true
+    Settings:
+      Duration: "3 seconds"
+      Cobweb: true
 Drops:
   Vanilla: true
   General:
