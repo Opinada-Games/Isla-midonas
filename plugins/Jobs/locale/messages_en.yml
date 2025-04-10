@@ -201,6 +201,7 @@ command:
         to: ' &eto: &f'
         objectives: Objectives
         rewards: Reward commands
+        rewardAmount: ' &eAmount: &f'
         description: '&eDescription'
         areas: '&eRestricted areas'
   blockinfo:

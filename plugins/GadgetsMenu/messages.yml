@@ -323,6 +323,24 @@ GUI-Menus:
         Lore:
         - '&7Abre hasta 250 cajas a la'
         - '&7vez.'
+      Open-20-Boxes:
+        Name: '&aOpen 20 Boxes'
+        Material: NETHER_STAR
+        Lore:
+        - '&7Open up to 20 boxes at the'
+        - '&7same time.'
+      Open-50-Boxes:
+        Name: '&aOpen 50 Boxes'
+        Material: NETHER_STAR
+        Lore:
+        - '&7Open up to 50 boxes at the'
+        - '&7same time.'
+      Open-250-Boxes:
+        Name: '&aOpen 250 Boxes'
+        Material: NETHER_STAR
+        Lore:
+        - '&7Open up to 250 boxes at the'
+        - '&7same time.'
   Confirm-Open-Multiple-Boxes-Menu:
     GUI-Name: Confirmar Apertura de Múltiples Cajas
     Items:
@@ -1018,3 +1036,11 @@ Invalid: Inválido
 Loading: '&cCargando...'
 Sent-MysteryDust: '{PREFIX}&eYou''ve sent &b{MYSTERY_DUST} &emystery dust to &b{PLAYER}&e.'
 Only-Have-MysteryDust: '{PREFIX}&b{PLAYER} &chas only &b{MYSTERY_DUST} &cmystery dust!'
+Scanning-Player-Data-Files: '{PREFIX}&eScanning player data files...'
+Deleted-Player-Data-Files: '{PREFIX}&c{DELETED_FILES} &efile(s) hav been deleted and
+  &a{NON_DELETED_FILES} &efile(s) left.'
+Folder-Is-Empty: '{PREFIX}&cDoesn''t find any player data files.'
+Cosmetic-Usage-Is-Disabled: '{PREFIX}&cYou''re not allowed to equip cosmetics at the
+  moment.'
+Does-Not-Support-Special-Characters: '{PREFIX}&cYou can''t use special characters
+  for the name.'

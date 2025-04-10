@@ -1,6 +1,6 @@
 enable: true
-slot: 23
-title: ""
+slot: 24
+title: ''
 hidden: false
 sub-section: false
 display-item: false
@@ -10,5 +10,5 @@ nav-bar:
   mode: INHERIT
 item:
   material: CYAN_DYE
-  displayname: "&2&lTintes"
-  name: "&2&lTintes"
+  displayname: '&2&lTintes'
+  name: '&2&lTintes'

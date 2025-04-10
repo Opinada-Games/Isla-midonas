@@ -238,6 +238,7 @@ adding-new-shop-shops,yml: Agregar una nueva tienda llamada %shopsection% a shop
 adding-new-shop-sections,yml: Agregar una nueva tienda llamada %shopsection% a sections.yml.
 disabled-due-no-vault: Deshabilitado debido a que no se encontró dependencia de Vault.
 disabled-due-no-economy: Desactivado debido a que no se encontró ningún complemento económico, instale un complemento  como  EssentialsX.
+database-connected: Conectado exitosamente a la base de datos %database-type%...
 update-available: Hay una actualización disponible para EconomyShopGUI, estás corriendo la versión %plugin_version% pero se encontró la versión %latest_version%.
 done: Iniciado - Tomó %millis%ms para completar
 updating-sections-config: Actualizando la configuración de sections...

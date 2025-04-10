@@ -1,6 +1,6 @@
 enable: true
-slot: 13
-title: ""
+slot: 14
+title: ''
 hidden: false
 sub-section: false
 display-item: false
@@ -10,5 +10,5 @@ nav-bar:
   mode: INHERIT
 item:
   material: PAPER
-  displayname: "&e&lComandos y permisos"
-  name: "&e&lComandos y permisos"
+  displayname: '&e&lComandos y permisos'
+  name: '&e&lComandos y permisos'
