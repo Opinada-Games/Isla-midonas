@@ -1,37 +1,37 @@
 # <--- https://wiki.gpplugins.com/economyshopgui/file-configuration/sections.yml#rotating-shops --->
 enable: true
-slot: 31
-title: "&d&lTienda mágica &8%page%/%pages%"
+slot: 32
+title: '&d&lTienda mágica &8%page%/%pages%'
 fill-item:
   material: GRAY_STAINED_GLASS_PANE
-  name: " "
+  name: ' '
 nav-bar:
   mode: SELF
   fill-item:
-    material: "GRAY_STAINED_GLASS_PANE"
-    name: " "
+    material: GRAY_STAINED_GLASS_PANE
+    name: ' '
   items:
     GoBack:
       material: NETHER_STAR
-      name: "%translations-back%"
+      name: '%translations-back%'
       action: BACK
       slot: 5
     NextPage:
       material: ARROW
-      name: "%translations-next-page%"
+      name: '%translations-next-page%'
       action: PAGE_NEXT
       slot: 9
     PrevPage:
       material: ARROW
-      name: "%translations-previous-page%"
+      name: '%translations-previous-page%'
       action: PAGE_BACK
       slot: 1
 item:
   material: CLOCK
   lore:
-    - "&6Nuevos articulos en &f%nextRotation%&6"
-  displayname: "&d&lTienda mágica"
-  name: "&d&lTienda mágica"
+  - '&6Nuevos articulos en &f%nextRotation%&6'
+  displayname: '&d&lTienda mágica'
+  name: '&d&lTienda mágica'
 shop-type: ROTATING
 rotating-shop-settings:
   interval: 4h
@@ -41,18 +41,18 @@ rotating-shop-settings:
     page1:
       gui-rows: 3
       display-slots:
-        - 11
-        - 13
-        - 15
+      - 11
+      - 13
+      - 15
     page2:
       gui-rows: 3
       display-slots:
-        - 11
-        - 13
-        - 15
+      - 11
+      - 13
+      - 15
     page3:
       gui-rows: 3
       display-slots:
-        - 11
-        - 13
-        - 15
+      - 11
+      - 13
+      - 15

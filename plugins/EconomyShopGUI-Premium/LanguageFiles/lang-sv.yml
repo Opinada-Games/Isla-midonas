@@ -1,0 +1,755 @@
+# Help translate this file over on our Crowdin: https://crowdin.com/project/economyshopgui
+
+#StartUp/Reload
+creating-latest-shops: Skapar standardbutiker för den senaste versionen eftersom det inte fanns någon befintlig
+  layout som matchar serverversionen %version%. Vänligen använd en stödd serverversion.
+default-shops-created: Standardbutikslayout kompatibel med %version% skapad på %path%
+loaded-shop-configurations: Slutförde inläsning av %total% butikskonfigurationer från /shops/
+default-sections-created: Standardsektioner skapade på %path%
+loaded-section-configurations: Slutförde inläsning av %total% sektionskonfigurationer från /sections/
+updating-shop-settings: Uppdaterar butikens inställningar...
+creating-new-shop-config: Skapar en ny butikskonfiguration för '%section%' eftersom ingen butikskonfiguration
+  hittades trots att det finns en sektionskonfiguration. Har den inte tagits bort
+  korrekt?
+creating-new-section-config: Skapar en ny sektionskonfiguration för '%section%' eftersom ingen sektionskonfiguration
+  hittades trots att det finns en butikskonfiguration. Har den inte tagits bort korrekt?
+adding-new-shop-shops,yml: Lägger till en ny butik med namnet %shopsection% i shops.yml.
+adding-new-shop-sections,yml: Lägger till en ny butik med namnet %shopsection% i sections.yml.
+disabled-due-no-vault: Inaktiverad eftersom Vault inte hittades. Installera Vault.
+disabled-due-no-economy: Inaktiverad eftersom inget ekonomiplugin hittades. Installera ett, t.ex. EssentialsX.
+database-connected: Framgångsrikt ansluten till %database-type% databas...
+update-available: Det finns en tillgänglig uppdatering för EconomyShopGUI. Du använder version v%plugin_version%
+  men v%latest_version% hittades.
+done: Initialiserad - Tog %millis%ms att genomföra.
+completed-delayed: Slutförd fördröjd inläsning
+updating-sections-config: Uppdaterar sektionskonfiguration...
+debug-mode-enabled: Felsökningsläge är aktiverat.
+economy-provider-null: EconomyProvider är null.
+successfully-hooked-into-vault: Ansluten till Vault.
+language-file-using: Du använder %languagefile% som språkfil.
+cannot-find-language-file: Kunde inte hitta språkfil!
+minecraft-version-using: Du använder Minecraft-versionen %version%...
+checking-each-item: Kontrollerar varje objekt för fel/uteblivna värden...
+loading-items: Laddar alla objekt...
+could-not-find-valid-version: Kunde inte hitta en giltig implementation för denna serverversion. Detta gör att pluginet
+  inte har en version att använda och resulterar i att många objekt/metoder inte fungerar.
+  Vänligen använd en stödd Minecraft-version.
+updating-configs: Uppdaterar konfigurationerna eftersom en nyare version har hittats...
+creating-backup: Skapar en backup av gamla %fileName%, filen finns i backup-mappen i EconomyShopGUI:s
+  mapp.
+discounts-feature-unavailable: Rabattfunktionen kan inte aktiveras eftersom inget behörighetsplugin har hittats.
+cannot-hook-permissions: Kunde inte hitta ett stödt behörighetsplugin.
+enabled-papi-hook: Aktiverade PlaceholderAPI-hook...
+failed-papi-integration: Misslyckades med att ansluta till PlaceholderAPI, pluginet är inaktiverat...
+enabled-plugin-hook: Aktiverade %plugin% hook...
+failed-plugin-integration: Misslyckades med att ansluta till %plugin%, pluginet är inaktiverat eller hittades
+  inte...
+loading-season-modifiers: Laddar säsongsmodifikationer från konfigurationen...
+loaded-season-modifiers: Slutförde inläsning av %total% modifikator(er) för säsong '%season%' i världen '%world%'
+no-season-modifiers-found: Inga säsongsmodifikationer hittades för säsong %season% i konfigurationen.
+season-change: Upptäckte säsongsändring i världen '%world%', laddar modifikationer för säsong %season%...
+economy-providers-loaded: Slutförde inläsning av %total% ekonomileverantör(er) för alla %shops% butikssektioner.
+section-economy-provider-loaded: Använder '%economy%' som standardekonomi för butik '%shop%'
+providers-not-enabled-yet: Leverantörer har ännu inte aktiverats, väntar...
+loaded-shop-stand-module: Slutförde inläsning av %count% butikstånd från stands.json
+saving-shop-stands: Sparar %count% butikstånd till 'stands.json'...
+
+#Main Shop Inventory
+inventory-main-shop-title: '&8&lServerbutik'
+profile: '&aProfil'
+name: '&6Namn'
+money: '&6Saldo'
+level: '&6Nivå'
+
+# SellGUI inventory
+inventory-sellgui-title: '&8&lSäljGUI'
+
+#Buystacks Inventory title
+inventory-buystacks-title: '&8Köper staplar &a&l> &r&8%item%'
+
+# Shop search bar
+shopsearch-title: '&8&lSök efter ett föremål'
+shopsearch-pre-entered-value: Ange föremålets namn
+shopsearch-result-title: '&8&lSökresultat'
+shopsearch-change-search-method: '&6&lKlicka för att söka med: &c%search-method%'
+
+# Transaction screen
+inventory-howmuchsell-title: '&8Säljer &c&l> &r&8%item%'
+inventory-howmuchbuy-title: '&8Köper &a&l> &r&8%item%'
+plus-one: '&b+1'
+min-one: '&5-1'
+plus-sixteen: '&b+16'
+min-sixteen: '&5-16'
+plus-thirty-two: '&b+32'
+min-thirty-two: '&5-32'
+sell: '&aKlicka för att sälja'
+sell-all: '&cKlicka för att sälja allt'
+buy: '&aKlicka för att köpa'
+buy-stacks: '&cKlicka för att köpa staplar'
+right-click-change-currency: '&6Högerklick: Byt valuta till &f%currency%'
+transaction-screen-total-price: '&3%price%'
+transaction-screen-total-amount: '&5x %amount%'
+current-sell-limit: '&8Säljgräns: %limit%'
+reached-sell-limit: '&8Du kan inte sälja detta föremål längre'
+restocking-sell-limit: '&8Du får inte sälja denna vara förrän'
+item-stock: '&8Lager: %stock%'
+restocking-item-stock: '&8Föremålet fylls på om %time%'
+out-of-stock: '&8Lager: 0'
+max-amount-reached: '&cMaximal mängd uppnådd'
+min-amount-reached: '&cMinimal mängd uppnådd'
+
+#Shop prefix
+shop-prefix: '&9&lButik &8&l>> '
+
+#Main item editor screen
+item-editor-title: '&8&lFöremålsredigerare'
+create-new-item-in-shop: '&a&lSkapa nytt föremål i denna sektion.'
+edit-item: '&9&lRedigera föremål'
+delete-item-in-shop: '&4&lTa bort föremål'
+
+#Item editor selected item
+buy-price: '&aKöpspris: &c%amounttopay%'
+sell-price: '&6Säljspris: &c%amounttopay%'
+
+#All changeable options on items
+option-material: material
+option-displayname: visningsnamn
+option-name: namn
+option-buy-price: köpspris
+option-sell-price: säljspris
+option-lore: lore
+option-displaylore: visningslore
+option-pricing-lore: prislore
+option-enchantment: förtrollningar
+option-enchantment-glint: förtrollningsglimt
+option-strength: styrka
+option-spawner-type: spawner-typ
+option-potiontypes: dryckstyper
+option-skullowner: skallägare
+option-recipe: recept
+option-armorcolor: rustningsfärg
+option-buy-commands: köpkommandon
+option-sell-commands: säljkommandon
+option-nbtdata: NBTData
+option-components: komponenter
+option-global-stock: globalt lager
+option-global-stock-limit: global lagerspärr
+option-global-stock-restock-time: global påfyllningstid
+option-global-stock-restock-frequency: global påfyllningsfrekvens
+option-player-stock: spelarens lager
+option-player-stock-limit: spelarens lagerspärr
+option-player-stock-restock-time: spelarens påfyllningstid
+option-player-stock-restock-frequency: spelarens påfyllningsfrekvens
+option-level-requirement: nivåkrav
+option-skull-texture: skalltextur
+option-firework-duration: varaktighet
+option-firework-colors: färger
+option-firework-fade-colors: toningsfärger
+option-firework-flicker: gnista
+option-firework-trail: spår
+option-firework-shape: form
+option-dynamic-pricing: dynamisk prissättning
+option-subsection: undersektion
+
+#ItemEditor choose index screen
+item-editor-choose-index-title: '&8&lVälj ett värde att redigera:'
+
+#Item editor available options screen
+item-editor-available-options-title: '&8&lVälj ett alternativ:'
+edit-option-of-item: '&6Redigera %option%'
+toggle-option-of-item: '&6Växla %option%'
+disabled-potiontypes-option: "&6Alternativet potiontypes är inaktiverat: \n&cFöremålets material är inte en dryck, \n&csplash potion, lingering potion eller spetsad pil."
+disabled-spawner-type-option: "&6Alternativet spawnertype är inaktiverat: \n&cFöremålets material är inte en spawner."
+disabled-recipe-option: "&6Alternativet recipe är inaktiverat: \n&cFöremålets material är inte en kunskapsbok."
+disabled-skullowner-option: "&6Alternativet skullowner är inaktiverat: \n&cFöremålets material är inte ett spelarhuvud."
+disabled-armorcolor-option: "&6Alternativet armorcolor är inaktiverat: \n&cFöremålets material är inte läderrustning."
+disabled-dynamic-pricing-option: '&cAlternativet dynamisk prissättning måste vara aktiverat i config.yml för att ändra
+  inställningar per föremål.'
+disabled-option-conflict: "&6%option% kan inte redigeras: \n&cKan inte redigera %option% eftersom \n&c%option2% redan är aktiverat."
+current-value: '&9Nuvarande %option%: '
+firework-options: fyrverkerialternativ
+dynamic-pricing-options: dynamiska prissättningsalternativ
+global-stock-options: globala lagerval
+player-stock-options: spelarens lagerval
+
+# Item editor edit firework option screen
+item-editor-firework-title: '&8&lRedigera fyrverkerialternativ'
+
+# Limited stock options screen
+item-editor-global-stock-title: '&8&lRedigera globala lagerval'
+item-editor-player-stock-title: '&8&lRedigera spelarens lagerval'
+
+# Item editor edit dynamic pricing option screen
+item-editor-dynamic-pricing-title: '&8&lRedigera dynamiska prissättningsalternativ'
+
+#Item editor available values screen
+item-editor-choose-value-title: '&8&lVälj ett värde:'
+
+#AnvilGUI enter value screen
+anvilgui-enter-value: '&8&lAnge %option%'
+
+#Item editor conclusion screen
+item-editor-conclusion-title: '&8&lRedigering slutförd'
+status: 'Status:'
+item-created: "&a&lFöremålet har \n&a&llagts till i butiken."
+item-edited: '&a&lFöremålet har redigerats.'
+item-deleted-from-shop: "&a&lFöremålet har \n&a&llagts bort från butiken."
+
+#ItemEditor delete item confirmation screen
+item-editor-delete-item-confirmation-title: '&8&lÄr du säker?'
+confirm-delete-item: '&4&lJa, ta bort föremålet.'
+cancel-delete-item: '&a&lNej, ta inte bort detta föremål.'
+
+#ItemEditor available edit actions
+item-editor-available-actions-title: '&8&lVälj en åtgärd:'
+remove-action: '&a&lTa bort %key%.'
+edit-action: '&a&lRedigera den befintliga %key%.'
+add-action: '&a&lLägg till %key%.'
+disabled-action: '&c&lDenna åtgärd kan inte utföras.'
+
+#Chat conversations
+name-prompt-text: "&aAnge ett namn för föremålet, du kan använda färgkoder med '&'. \nSkriv 'exit' för att avsluta."
+lore-prompt-text: "&aAnge lore, du kan använda färgkoder med '&'. \nSkriv 'exit' för att avsluta."
+command-prompt-text: "&aAnge kommandot, du kan använda %player% för att få spelarnamnet som köpte kommandot. \nSkriv 'exit' för att avsluta."
+nbtdata-prompt-text: "&aAnge NBTData. \nSkriv 'exit' för att avsluta."
+exited-conversation: '&aAvslutade konversationen.'
+confirm-update-prompt-text: "&aDu är på väg att ladda ner version &c%version% &amed uppdateringsdata: \n&6Titel: &e %title% \n&6Utgivningsdatum: &e%timestamp% \n&6Ändringslogg: \n&e%changelog%"
+restock-frequency-prompt-text: "&aAnge ett cron-uttryck för när detta föremål ska fyllas på.\nSkriv 'exit' för att avsluta."
+
+# Update command
+update-details: "&aDu är på väg att ladda ner version &c%version% &amed uppdateringsdata: \n&6Titel: &e %title% \n&6Utgivningsdatum: &e%timestamp% \n&6Ändringslogg: \n&e%changelog%"
+discord-validation-required: '&cValidering krävs för att fortsätta, klicka här för att validera via Discord och
+  starta nedladdningen.'
+no-new-version-found: '&aInga nya versioner hittades, du är redan uppdaterad!'
+unable-to-check-for-updates: '&cDet går inte att kontrollera uppdateringar just nu.'
+validation-successful: '&aValidering lyckades, laddar ner uppdatering...'
+validation-expired: '&cValideringsprocessen för nedladdning av uppdatering har gått ut.'
+failed-to-delete-old-version: '&cMisslyckades med att ta bort version %version%, du måste ta bort filen manuellt
+  från din plugins-mapp.'
+update-download-success-restart: '&aUppdateringen laddades ner framgångsrikt, starta om din server för att det ska
+  träda i kraft.'
+update-download-success-reloading: '&aUppdateringen laddades ner framgångsrikt, laddar om pluginet...'
+update-download-failed: '&cNedladdning av uppdatering misslyckades, se konsolloggar för detaljer.'
+
+# ShopStands transactions
+shopstand-buy-screen-title: '&8Köper &a&l> &r&8%item%'
+shopstand-sell-screen-title: '&8Säljer &c&l> &r&8%item%'
+shopstand-click-to-buy: '&aKlicka för att köpa %amount%'
+shopstand-click-to-sell: '&aKlicka för att sälja %amount%'
+shopstand-total-price: '&cTotalpris: &7%price%'
+
+# Shop stands module
+default-shop-stand-item-name: '&eButiksstånd'
+default-shop-stand-item-lore: '&fPlacera detta föremål för att skapa &fen ny &6Butiksstång &fpå den placerade platsen
+  &fför butikens föremål &c%item%'
+shop-stands-management-inventory-title: '&8&lHantera stånd'
+shop-stand-info-item-name: '&6&lButiksstånd info:'
+shop-stand-info-item-lore: "&aStånd-ID: &f%id%\n&aPlats: &f%location%\n&aButikens föremål: &f%item%\n&aStåndtyp: &f%type%\n&aLaddad: &f%loaded%"
+force-reload-stand-item-name: '&e&lTvinga omladdning av stånd'
+force-reload-stand-item-lore: '&fKlicka här för att ladda om butiksståndet &fsom kommer att återskapa visningsföremålet
+  och ståndet'
+destroy-stand-item-name: '&4&lFörstör butiksstånd'
+destroy-stand-item-lore: '&eKlicka för att förstöra detta butiksstånd'
+reload-shop-stand: '&aTvingade omladdning av butiksstånd med ID %id%'
+shop-stand-browse-inventory-title: '&8&lLista över stånd'
+shop-stand-location-format: Värld '%world%', x%pos_x%, y%pos_y%, z%pos_z%
+created-new-shop-stand: '&aSkapade framgångsrikt nytt butiksstånd för &f%item%'
+error-creating-new-shop-stand: '&cMisslyckades med att skapa ett nytt butiksstånd: %reason%'
+
+# RotatingShop
+enabled-rotating-shop: Rotationsbutiken %shop% har aktiverats med ett rotationsintervall på %interval%.
+enabled-rotating-shop-frequency: Rotationsbutiken %shop% har aktiverats med en rotationsfrekvens på %frequency%, nästa
+  rotation kommer att ske vid %nextRotation%.
+loading-next-rotation: Laddar nästa rotationsföremål för butik %shop%.
+new-items-global-message: '&aNya föremål har just lagts till i %shopName%&r&a, kolla in &c/shop %shop%&a. Nästa
+  föremål om &f%interval%.'
+failed-loading-next-rotation: Ett fel inträffade vid inläsning av nästa rotation för butik %shop%.
+invalid-rotation-interval: 'Ogiltigt intervall för rotationsbutik %shop% med format: %interval%.'
+invalid-display-chances: Ogiltiga chanser för föremål i butik %shop%, summan får vara högst 100 men är %sum%.
+
+# DynamicPricing
+loading-dynamic-pricing: Laddar DynamicPricing-leverantör...
+saving-dynamic-pricing: Sparar DynamicPricing till databasen...
+saved-dynamic-pricing: Tog %millis%ms att spara DynamicPricing till databasen.
+reloading-dynamic-pricing: Laddar om DynamicPricing från databasen...
+dynamic-pricing-price-change: Upptäckt prisändring för föremål '%path%' från butik %shop%, återställer DynamicPricing
+  för detta föremål...
+dynamic-pricing-max-stock-change: Upptäckt förändring av maxlagret för DynamicPricing, återställer DynamicPricing för
+  föremål '%path%' från butik %shop%.
+
+# Item stock
+loading-item-stock: Laddar leverantör för föremålslager...
+reloading-item-stock: Laddar om leverantör för föremålslager...
+restocked-global-item-stock: Föremålet '%path%' har framgångsrikt fyllts på för globalt lager.
+restocking-global-item-stock: Startar den globala påfyllningstimern för föremål '%path%'.
+restocked-player-item-stock: Föremålet '%path%' har framgångsrikt fyllts på för spelaren '%playerUUID%'.
+restocking-player-item-stock: Startar påfyllningstimern för föremål '%path%' för spelaren '%playerUUID%'.
+player-item-stock-change: Upptäckt förändring i spelarens lager för föremål '%path%', uppdaterar föremålslager
+  för alla spelare...
+global-item-stock-change: Upptäckt förändring i det globala lagret för föremål '%path%', uppdaterar föremålslager...
+
+# Sell limits
+loading-limited-sell: Laddar leverantör för begränsad försäljning...
+reloading-limited-sell: Laddar om leverantör för begränsad försäljning...
+restocked-global-sell-limit: Föremålet '%path%' har framgångsrikt fyllts på för globala försäljningsgränser.
+restocking-global-sell-limit: Startar påfyllningstimern för globala försäljningsgränser för föremål '%path%'.
+restocked-player-sell-limit: Föremålet '%path%' har framgångsrikt fyllts på för spelarens försäljningsgräns för
+  spelaren '%playerUUID%'.
+restocking-player-sell-limit: Startar påfyllningstimern för spelarens försäljningsgräns för föremål '%path%' för
+  spelaren '%playerUUID%'.
+player-sell-limit-change: Upptäckt förändring i spelarens försäljningsgräns för föremål '%path%', uppdaterar
+  föremålsgräns för alla spelare...
+global-sell-limit-change: Upptäckt förändring i globala försäljningsgränser för föremål '%path%', uppdaterar
+  föremålsgräns...
+
+#All Inventory's
+back: '&4Tillbaka'
+cancel: '&4Avbryt'
+
+#Previous/Next/Current page
+previous-page: '&dFöregående sida'
+next-page: '&bNästa sida'
+current-page: '&7Sida:'
+
+# ShopItem lore
+left-click-buy: "\n &a&lKöpspris\n &a■ &f%buyPrice%"
+dynamic-buy-price: "\n &a&lKöpspris\n &a■ &f&m%buyPrice%&r %dpp%&f%dynamicBuyPrice%"
+seasonal-buy-price: "\n &a&lKöpspris\n &a■ &f&m%buyPrice%&r %dpp%&f%seasonalBuyPrice%"
+discounted-buy-price: "\n &a&lKöpspris\n &a■ &f&m%buyPrice%&r %dpp%&f%discountedPrice%"
+right-click-sell: "\n &c&lSäljpris\n &c■ &f%sellPrice%"
+dynamic-sell-price: "\n &c&lSäljspris\n &c■ &f&m%sellPrice%&r %dpp%&f%dynamicSellPrice%"
+seasonal-sell-price: "\n &c&lSäljspris\n &c■ &f&m%sellPrice%&r %dpp%&f%seasonalSellPrice%"
+multiplied-sell-price: "\n &c&lSäljspris\n &c■ &f&m%sellPrice%&r %dpp%&f%multipliedPrice%"
+middle-click-sell-all: '&bMittenklick: Sälj allt'
+shift-right-click-sell-all: '&bSkift + Högerklick: Sälj allt'
+missing-required-item-permissions-rank: '&c&lDetta föremål kräver rangen &8&l%rank_name%'
+missing-required-item-permissions: '&c&lDu har inte de nödvändiga behörigheterna för detta föremål.'
+rising-dynamic-price-prefix: '&a⏶%percent%% '
+dropping-dynamic-price-prefix: '&c⏷%percent%% '
+current-item-stock: '&fNuvarande lager: &a%itemStock%'
+restocking-item: '&fFöremålet kommer att fyllas på om: &a%time%'
+item-out-of-stock: '&cFöremålet är slut i lager.'
+sell-limit: '&cFörsäljningsgräns: &6%limit%'
+sell-limit-reached: '&cDu kan inte sälja detta föremål längre.'
+sell-limit-restocking: '&cDu får inte sälja detta föremål förrän om &6%time%'
+shift-click-item-editor: '&eShift-klick: Redigera föremål'
+item-location-in-shop: '&8Sektion: %shopsection%, Index: %itemLoc%'
+item-cannot-be-bought: "\n &a&lKöpspris\n &a■ &fKan inte köpas"
+item-cannot-be-sold: "\n &c&lSäljpris\n &c■ &fKan inte säljas"
+item-seasonal-price: '&e&lSäsongspris %season-icon%'
+decoration-lore: "\n &e&lAnvändning:"
+decoration-lore-buy: '&e ╚&e&l» &fVänsterklicka för att köpa'
+decoration-lore-sell-all: '&e ╚&e&l» &fSkift + Högerklick för att sälja allt'
+decoration-lore-sell: '&e ╚&e&l» &fHögerklick för att sälja'
+level-requirement-lore: '&c&lKräver minst nivå %requirement%.'
+playtime-requirement-lore: '&c&lKräver minst en speltid på %requirement%.'
+placeholder-equals-requirement-lore: '&c&lKräver %requirement%'
+placeholder-differs-requirement-lore: '&c&lOlika %requirement% krävs'
+placeholder-larger-requirement-lore: '&c&lKräver minst %requirement%'
+placeholder-smaller-requirement-lore: '&c&lKräver mindre än %requirement%'
+time-requirement-lore: "&c&lKan endast köpas mellan\n&c%minTime% &loch &c%maxTime% &ltid i spelet."
+quest-requirement-lore: '&c&lKrävs för att slutföra uppdraget &b&l%questName%'
+permission-requirement-lore: '&c&lKräver behörigheten &f%requirement%'
+
+#Buy/Sell Messages
+discord-srv-player-transaction: '%player_name% %bought/sold% %amount% x %items% för %price%'
+pay-confirmation: '&aDu har framgångsrikt köpt &1%amount% x &b%material% &aför &c%amounttopay%'
+pay-confirmation-command: '&aDu har framgångsrikt köpt ett &6kommando &aför &c%amounttopay% &aoch det körs nu.'
+sell-confirmation-command: '&aDu har framgångsrikt sålt ett &6kommando &aför &c%amounttopay% &aoch det körs nu.'
+sell-confirmation: '&aDu har framgångsrikt sålt &1%amount% x &b%material% &aför &c%amounttopay%'
+sell-confirmation-multiple-items: '&aDu har framgångsrikt sålt &1%amount% &aföremål för &c%amounttopay%'
+no-item-to-be-sold: '&cDu har inte detta föremål i ditt inventarium.'
+already-purchased-item: '&cDu har redan köpt detta, det går inte att köpa det igen.'
+limited-item-sell-amount: '&cDu kan inte sälja detta föremål just nu.'
+level-requirement-not-met: '&cDetta föremål kräver nivå %requirement%, &cdu är för närvarande på nivå %progress%.'
+playtime-requirement-not-met: '&cDetta föremål kräver en speltid på %requirement%, &cdu har för närvarande en speltid
+  på %progress%.'
+placeholder-equals-requirement-not-met: '&cDetta föremål kräver %requirement%, &cdu har för närvarande %progress%.'
+placeholder-differs-requirement-not-met: '&cDetta föremål kräver en annan %requirement%, &cdu har för närvarande %progress%.'
+placeholder-larger-requirement-not-met: '&cDetta föremål kräver minst %requirement%, &cdu har för närvarande %progress%.'
+placeholder-smaller-requirement-not-met: '&cDetta föremål kräver mindre %requirement%, &cdu har för närvarande %progress%.'
+time-requirement-not-met: '&cDetta föremål kan endast köpas/säljas mellan &f%minTime% &coch &f%maxTime%&c speltid.
+  Nuvarande tid är &f%progress%&c. Kom tillbaka snart!'
+quest-requirement-not-met: '&cDenna artikel kan bara köpas/säljas när du har slutfört uppdraget &b&l%questName%&c.
+  Kom tillbaka när du har slutfört det.'
+permission-requirement-not-met: '&cDenna artikel kräver behörigheten %requirement%'
+cannot-purchase-item: '&cDetta föremål kan inte köpas.'
+cannot-sell-item: '&cDetta föremål kan inte säljas.'
+player-made-transaction: '%playername% %bought/sold% %amount% x %material% för %amountofmoney% med %buy/sell-method%.'
+player-made-transaction-multiple-items: '%playername% %bought/sold% %items% för %amountofmoney% med %buy/sell-method%.'
+on-screen-title-sold: '&a+%price%'
+on-screen-title-bought: '&c-%price%'
+buy-screen: köpskärm
+sell-screen: säljskärm
+buystacks-screen: köper staplar skärm
+sellall-screen: säljer allt skärm
+sellall-command: sälj allt kommando
+sellgui-screen: sälj gui
+quick-buy: snabbköpskärm
+quick-sell: snabbsäljskärm
+shopstand-buy-screen: butiksstånd köpskärm
+shopstand-sell-screen: butiksstånd säljskärm
+auto-sell-chest: Säljkista
+bought: köpt
+sold: sålt
+
+#CurrencySymbol
+currencysymbol: $%price%
+symbol-pricing-format: '%symbol%%price%'
+named-pricing-format: '%price% &l%currency-format%'
+and-price-separator-long: ' och '
+and-price-separator-short: ', '
+or-price-separator-long: ' eller '
+or-price-separator-short: ', '
+
+# XP Currency name format
+xp-currency-name-singular: XP-poäng
+xp-currency-name-plural: XP-poäng
+levels-currency-name-singular: nivå
+levels-currency-name-plural: nivåer
+
+# Time formats
+time-format-days: d
+time-format-hours: h
+time-format-minutes: m
+time-format-seconds: s
+
+#All commands
+command-disabled-in-world: '&cDetta kommando är inaktiverat i denna värld.'
+
+#Edit-shop subcommand descriptions
+editshop-add-item-subcommand-desc: '&aLägg till ett föremål i butiken.'
+editshop-edit-item-subcommand-desc: '&aRedigera ett befintligt föremål i butiken.'
+editshop-remove-item-subcommand-desc: '&aTa bort ett föremål från butiken.'
+editshop-import-subcommand-desc: '&aImportera filer/inställningar från en annan plats eller plugin.'
+editshop-add-hand-item-subcommand-desc: '&aLägg till ett föremål från din hand i butiken.'
+editshop-add-section-subcommand-desc: '&aLägg till en butiksektion i butiken.'
+editshop-edit-section-subcommand-desc: '&aRedigera en befintlig butiksektion.'
+editshop-remove-section-subcommand-desc: '&aTa bort en befintlig butiksektion från butiken.'
+editshop-set-globalstock-command-desc: '&aSätter den globala lagergränsen för en butiksvara'
+editshop-reset-globalstock-command-desc: '&aÅterställer lagergränsen för specifik(a) butiksvara(or)/sektion(er)'
+editshop-add-globalstock-command-desc: '&aLägger till globalt lager för butiksartikeln'
+editshop-set-playerstock-command-desc: '&aStäller in lagermodifieraren för en specifik spelare för en butiksartikel'
+editshop-reset-playerstock-command-desc: '&aÅterställer lagergränsen för specifik(a) spelare för butiksvara(or)/sektion(er)'
+editshop-add-playerstock-command-desc: '&aLägger till lager för den angivna spelaren för en butiksartikel'
+editshop-set-globalsell-command-desc: '&aStäller in försäljningsgränsen för en specifik butiksartikel'
+editshop-reset-globalsell-command-desc: '&aÅterställer försäljningsgränsen för specifik(a) butiksvara(or)/sektion(er)'
+editshop-set-playersell-command-desc: '&aStäller in försäljningsgränsen för en specifik spelare för en butiksartikel'
+editshop-reset-playersell-command-desc: '&aÅterställer försäljningsgränsen för specifik(a) spelare för butiksvara(or)/sektion(er)'
+editshop-update-subcommand-desc: '&aSöker efter nya uppdateringar för pluginet'
+editshop-reset-dynamicpricing-subcommand-desc: '&aÅterställer DynamicPricing för en specifik artikel eller alla artiklar samtidigt'
+editshop-shopstands-subcommand-desc: '&aHantera befintliga eller skapa nya butiksstånd.'
+editshop-shopstands-give-subcommand-desc: '&aGer ett nytt butiksståndsobjekt att placera ut.'
+editshop-shopstands-destroy-subcommand-desc: '&aFörstör ett butiksstånd på sin nuvarande plats med sitt ID.'
+editshop-shopstands-browse-subcommand-desc: '&aÖppnar ett GUI med alla befintliga butiksstånd.'
+
+#Edit-shop subcommand syntaxes
+editshop-add-item-subcommand-syntax: '&a/editshop additem <section> <material> <köpvärde> <säljavärde> [visningsnamn]'
+editshop-edit-item-subcommand-syntax: '&a/editshop edititem <section> <föremål> <åtgärd> <nyckel> <värde>'
+editshop-remove-item-subcommand-syntax: '&a/editshop deleteitem <section> <föremål>'
+editshop-import-subcommand-syntax: '&a/editshop import <plugin> <fil>'
+editshop-add-hand-item-subcommand-syntax: '&a/editshop addhanditem <section> <köpvärde> <säljavärde>'
+editshop-add-section-subcommand-syntax: '&a/editshop addsection <section> <material> <visningsnamn> <slot>'
+editshop-edit-section-subcommand-syntax: '&a/editshop editsection <section> <åtgärd> <nyckel> <värde>'
+editshop-remove-section-subcommand-syntax: '&a/editshop deletesection <section>'
+editshop-set-globalstock-command-syntax: '&a/editshop globalstock set <sektion> <index> <antal>'
+editshop-reset-globalstock-command-syntax: '&a/editshop globalstock reset <section> <index>'
+editshop-add-globalstock-command-syntax: '&a/editshop globalstock add <sektion> <index> <antal>'
+editshop-set-playerstock-command-syntax: '&a/editshop playerstock set <spelare> <sektion> <index> <antal>'
+editshop-reset-playerstock-command-syntax: '&a/editshop playerstock reset <player> <section> <index>'
+editshop-set-globalsell-command-syntax: '&a/editshop globalsell set <sektion> <index> <antal>'
+editshop-reset-globalsell-command-syntax: '&a/editshop globalsell reset <section> <index>'
+editshop-set-playersell-command-syntax: '&a/editshop playersell set <spelare> <sektion> <index> <antal>'
+editshop-reset-playersell-command-syntax: '&a/editshop playersell reset <player> <section> <index>'
+editshop-add-playerstock-command-syntax: '&a/editshop playerstock add <spelare> <sektion> <index> <antal>'
+editshop-update-subcommand-syntax: '&a/editshop update'
+editshop-reset-dynamicpricing-subcommand-syntax: '&a/editshop dynamicpricing reset <all/sektion> [index]'
+editshop-shopstands-subcommand-syntax: '&a/editshop shopstands <give/destroy> ...'
+editshop-shopstands-give-subcommand-syntax: '&a/editshop shopstands give <standType> <section> <index>'
+editshop-shopstands-destroy-subcommand-syntax: '&a/eshop shopstands destroy <standID>'
+editshop-shopstands-browse-subcommand-syntax: '&a/eshop shopstands browse'
+
+#Edit-shop command messages
+editshop-adding-item: '&aLägger till nytt föremål i butik %shop%...'
+editshop-add-item-successful: '&aFramgångsrikt lade till föremålet i butik %shop% under %itemPath%.'
+editshop-adding-section: '&aLägger till ny sektionskonfiguration för butik %section%...'
+editshop-add-section-successful: '&aNy sektionskonfiguration skapad på %path%.'
+editshop-editing-item: '&aUppdaterar föremålet...'
+editshop-edit-item-successful: '&aUppdaterade ''%itemPath%''.'
+editshop-editing-section: '&aUppdaterar sektion...'
+editshop-removing-item: '&aTar bort föremålet från butiken...'
+editshop-remove-item-successful: '&aTog bort ''%itemPath%'' från butiken.'
+editshop-removing-section: '&aTar bort sektionen från butiken...'
+editshop-removed-section: '&aTog bort ''%itemPath%'' från butiken.'
+editshop-reload-shop-to-see-changes: '&aAnvänd kommandot /sreload för att uppdatera dina ändringar i butiken.'
+file-replaced: '&aDen gamla %fileName% har ersatts med den nya filen, den gamla filen finns i backup-mappen
+  om något gick fel.'
+globalstock-set-successful: '&aLyckades uppdatera den globala lagermodifieraren för artikel ''%itemPath%'''
+stock-limit-reset-successful: '&aFramgångsrikt återställt lagergränsen, tog %time%ms att slutföra'
+playerstock-set-successful: '&aLyckades uppdatera spelarlagermodifieraren för spelare ''%player%'' för artikel
+  ''%itemPath%'''
+playerstock-set-all-players: '&aLyckades uppdatera spelarlagergränsen för alla spelare för artikel ''%itemPath%'''
+globalsell-set-successful: '&aLyckades uppdatera den globala försäljningsgränsen för artikel ''%itemPath%'''
+playersell-set-successful: '&aLyckades uppdatera spelarförsäljningsgränsen för spelare ''%player%'' för artikel
+  ''%itemPath%'''
+playersell-set-all-players: '&aLyckades uppdatera spelarförsäljningsgränsen för alla spelare för artikel ''%itemPath%'''
+resetting-dynamicpricing: '&aÅterställer DynamicPricing för alla artiklar...'
+dynamicpricing-reset-specific-item: '&aLyckades återställa DynamicPricing för artikel ''%itemPath%'''
+dynamicpricing-reset: '&aLyckades återställa DynamicPricing för alla artiklar'
+shop-stand-item-received: '&aDu fick &c%amount%x &aButiksstånd för butikens föremål &f%item%'
+
+#Edit-shop command errors
+section-does-not-contain-item: '&cSektionen ''%shopsection%'' innehåller inte föremålet ''%itemLoc%''.'
+no-valid-action: "&cÅtgärden '%action%' är ogiltig. \nTillgängliga åtgärder: %actions%."
+no-valid-key: "&cOgiltig nyckel '%key%'. \nTillgängliga nycklar: %keys%."
+action-not-valid-on-key: '&cKan inte %action% nyckeln ''%key%''.'
+edit-item-material-invalid: '&cMaterialet för föremålet du försöker redigera är ogiltigt. ''%material%'''
+key-already-defined: '&cNyckeln ''%key%'' är redan definierad för detta föremål. Du kan inte lägga till
+  den två gånger.'
+key-is-not-found: '&cNyckeln ''%key%'' kan inte tas bort från detta föremål eftersom den inte hittades.'
+plugin-not-found: '&cKan inte hitta något plugin med det namnet. Kontrollera om detta plugin stöds.'
+file-not-found: '&cKan inte hitta en fil med namnet %fileName% i plugin-mappen för %pluginName%.'
+no-valid-slot-for-item: '&cFöremålet kunde inte placeras i slot ''%slot%''. Slotten måste vara 1 - %maxShopSize%.'
+slot-already-in-use: "&cSlotten för denna sektion är redan upptagen.\nAlla tillgängliga slotar: %available-slots%"
+slot-needs-to-be-number: '&cSlotten för föremålet i huvudmenyn måste vara ett nummer.'
+invalid-shop-stand-type: '&cOgiltig typ av butiksstånd, giltiga värden: %values%'
+unknown-shop-stand-id: '&cInget butiksstånd hittades med ID &f%id%'
+stand-type-not-supported: '&cButiksståndstypen &f%type% &cstöds inte i denna Minecraft-version'
+
+#Reload Command
+configs-reloaded: '&aAlla konfigurationer omladdade.'
+
+# Sellall command usages
+sellall-command-usages: '&aKommandon att använda:'
+sellall-inventory-command-usage: '&7/sellall inventory &f- &7Säljer alla föremål i ditt lager'
+sellall-hand-command-usage: '&7/sellall hand &8[antal] &f- &7Säljer alla föremål i din hand'
+sellall-item-command-usage: '&7/sellall <föremål> &8[antal] &f- &7Säljer alla föremål i ditt lager som matchar
+  det angivna föremålets namn'
+
+# ShopGive command
+shop-item-given: '&aDu fick &c%amount% &ax &6%material%.'
+shop-item-received: '&aDu fick &c%amount% &ax butiksföremål från sektion &6%section% &aoch föremålsindex
+  &6%itemIndex%'
+
+#Balance Command
+check-balance: '&bDu har för närvarande &c%amountofmoney%&b.'
+check-balance-other-player: '&b%playername% &ahar för närvarande &c%amountofmoney%&a.'
+
+#Givemoney Command
+givemoneycommand-example: '&9/givemoney <spelare> <belopp> - Ge pengar till en spelare'
+givemoney-complete: '&aGivemoney slutförd.'
+
+#Pay Command
+minimum-amount: '&cMinsta belopp att betala en spelare är %minimumamount%.'
+payment-complete: '&aBetalning slutförd.'
+player-received-money: '&aDu fick &c%amounttogive% &afrån &2%playername%&a!'
+need-player-and-amount: '&9Du måste ange en spelare och ett belopp att betala.'
+need-amount: '&9Du måste ange ett belopp att betala.'
+paycommand-example: '&9/pay <spelare> <belopp>'
+
+#Player breaks spawner
+default-spawner-name: '&9&l%spawner-type% &rSpawner'
+spawner-broke-and-applied-to-inventory: '&aDu lyckades bryta en &9%spawner-type%&a, föremålet är tillagt i ditt inventarium.'
+need-silk-touch: '&cDu måste använda en Silk Touch-hacka för att bryta detta!'
+
+#JoinMessage
+join-message: '&2Välkommen! Ditt saldo är &c%balance%!'
+
+#Level event
+level-event-message: '&2[Nivåer] &5Här har du, &c%amount% &5har lagts till i ditt saldo!'
+
+#Item error's
+displayname-null: Kunde inte hämta visningsnamnet.
+item-name-null: Kunde inte hämta föremålets namn.
+need-item-material: Kan inte skapa föremål utan ett material.
+item-material-null: Misslyckades med att ladda föremålsmaterial '%material%', det kanske inte existerar
+  eller är felstavat.
+item-enchantment-null: Kunde inte hämta föremålets förtrollning.
+need-item-enchantment: Kan inte skapa förtrollning utan ett värde.
+item-enchantment-not-supported: Denna förtrollning stöds inte i denna Minecraft-version.
+enchantment-cannot-apply-to-item: För att tillämpa en förtrollning på föremålet måste materialet vara en förtrollad
+  bok eller ett verktyg som kan användas med förtrollningen.
+item-spawnertype-null: Kunde inte hämta föremålets spawner-typ.
+need-item-spawnertype: Kan inte skapa en spawner utan en spawner-typ.
+material-needs-to-be-spawner: För att tillämpa en Spawner-Type (Entity-Type) på föremålet måste materialet vara
+  en spawner.
+item-potiontype-null: Kunde inte hämta föremålets dryckstyp.
+need-item-potiontype: Kan inte skapa en dryckstyp utan ett värde.
+potiontype-not-supported: Denna dryckstyp stöds inte i denna Minecraft-version.
+material-needs-to-be-potion: För att tillämpa en dryckseffekt måste materialet vara en dryck eller en spetsad pil.
+cant-bind-multiple-applyments: Kan inte skapa ett föremål med flera tillämpningar som förtrollningar/spawner-typer
+  eller dryckseffekter.
+item-error: '&cFöremålsfel, se konsolen.'
+material-not-supported: Detta föremålsmaterial stöds inte i denna Minecraft-version.
+item-needs-buy-and-sell-value: Varje föremål i butiken måste ha både ett köp- och säljavärde.
+sell-value-wrong: Säljavärdet måste vara ett decimalnummer eller ett heltal.
+buy-value-wrong: Köpvärdet måste vara ett decimalnummer eller ett heltal.
+invalid-buy-price: Ogiltigt decimalformat för '%price%' hittades för artikelns inköpspris.
+invalid-sell-price: Ogiltigt decimalformat för '%price%' hittades för artikelns försäljningspris.
+option-type-changed: Vänligen ändra alternativet 'type' till 'spawnertype' för att skapa en spawner i butiken.
+  Namnet på alternativet ändrades i version 2.2 för tydlighet.
+option-meta-changed: Vänligen ändra alternativet 'meta' till 'displayname' för att skapa ett föremål med
+  ett visningsnamn i butiken. Namnet på alternativet ändrades i version 2.2 för tydlighet.
+cannot-display-shopsection: Kan inte skapa butiksektionen '%shopsection%' eftersom föremålets slot måste vara
+  mellan 0 och %maxInvSize%.
+need-recipe-material: Kan inte skapa receptmaterial utan ett materialvärde.
+cannot-get-recipe-material: Kan inte skapa receptmaterial, kontrollera materialnamnet för eventuella stavfel och
+  om det existerar.
+recipe-material-not-supported: Det angivna receptmaterialet stöds inte i denna Minecraft-version.
+material-needs-to-be-book: För att tillämpa ett recept på föremålet måste materialet vara en kunskapsbok.
+need-skullowner: Kan inte skapa PlayerHead utan en specificerad spelare (Skull Owner).
+material-needs-to-be-skull: För att tillämpa en skalltextur (Skull Owner) på föremålet måste materialet vara ett
+  spelarhuvud.
+material-needs-to-be-leather-armor: För att tillämpa en färg på rustningen måste materialet vara läderrustning.
+command-null: Kunde inte hämta den angivna kommandot.
+nbtdata-needs-curly-brackets: Den angivna NBT-datan måste börja och sluta med en klammerparentes.
+nbtdata-null: Kunde inte hämta NBT-datan.
+cannot-get-nbtdata: Kunde inte lägga till NBT-datan till artikeln, antingen är NBT-datan felstavad eller
+  existerar inte.
+invalid-itemsadder-item: Kunde inte hitta artikel med ID '%id%' i ItemsAdder
+invalid-headdatabase-skull: Ogiltigt huvud med ID '%id%' i HeadDatabase
+unknown-third-party-item: Kunde inte hitta artikel med ID '%id%' i %plugin%
+unknown-third-party-enchantment: Kunde inte hitta förtrollning med ID '%id%' i %plugin%
+error-creating-third-party-item: Misslyckades med att skapa artikel med ID '%id%' från %plugin%
+invalid-item-requirement-type: Ogiltig föremålskravstyp för '%type%'
+invalid-item-requirement: Ogiltigt föremålskrav för %requirement%
+invalid-spawn-potential-weight: Ogiltig vikt för spawn potential, det ska vara ett nummer.
+invalid-spawn-potential: Ogiltig post för spawn potential '%spawn_potential%', ska vara i formatet '<entityType>:<weight>'
+invalid-material-for-item-option: Materialet för föremålet ska vara %material% för att ställa in %item-option%
+invalid-ominous-bottle-strength: Ogiltig styrka för ominous bottle, bör vara mellan 1 och 5, men fick %strength%
+error-setting-item-option: 'Misslyckades med att ställa in %item-option% för föremålet med fel:'
+
+#Item path
+items-path-in-shops-config: 'Föremålsökväg i shops.yml: %location%'
+items-path-in-sections-config: 'Föremålsökväg i sections.yml: %location%'
+items-path-in-config: 'Föremålsökväg i config.yml: %location%'
+
+#Compatibility
+mineablespawners-compatibility-enabled: Spawner inställd på MineableSpawners i konfigurationen.
+mineablespawners-found: MineableSpawners har hittats och integreras...
+mineablespawners-not-found: MineableSpawners kunde inte hittas.
+could-not-intergrate-with-mineablespawners: Integrationen med MineableSpawners misslyckades
+using-mineablespawners-spawners: Använder MineableSpawners som spawner...
+rosestacker-compatibility-enabled: Spawner inställd på RoseStacker i konfigurationen.
+rosestacker-not-found: RoseStacker kunde inte hittas.
+could-not-integrate-with-rosestacker: Det gick inte att integrera med RoseStacker.
+rosestacker-found: RoseStacker har hittats och integreras...
+using-rosestacker-spawners: Använder RoseStacker som spawner...
+epicspawners-compatibility-enabled: Spawnerleverantör satt till EpicSpawners i konfigurationen
+epicspawners-not-found: EpicSpawners hittades inte
+could-not-integrate-with-epicspawners: Kunde inte integrera med EpicSpawners
+epicspawners-found: EpicSpawners hittades, integrerar...
+using-epicspawners-spawners: Använder EpicSpawners som spawnerleverantör...
+ultimatestacker-compatibility-enabled: Spawner inställd på UltimateStacker i konfigurationen.
+ultimatestacker-not-found: UltimateStacker kunde inte hittas.
+could-not-integrate-with-ultimatestacker: Det gick inte att integrera med UltimateStacker.
+ultimatestacker-found: UltimateStacker har hittats och integreras...
+using-ultimatestacker-spawners: Använder UltimateStacker som spawner...
+wildstacker-compatibility-enabled: Spawner inställd på WildStacker i konfigurationen.
+wildstacker-not-found: WildStacker kunde inte hittas.
+wildstacker-found: WildStacker har hittats och integreras...
+could-not-integrate-with-wildstacker: Det gick inte att integrera med WildStacker.
+using-wildstacker-spawners: Använder WildStacker som spawner...
+spawner-compatibility-enabled: Spawner inställd på %provider% i konfigurationen.
+spawner-provider-not-found: '%provider% kunde inte hittas.'
+spawner-provider-found: '%provider% har hittats och integreras...'
+failed-spawner-provider-integration: Det gick inte att integrera med %provider%.
+using-external-spawners: Använder %provider% som spawner...
+
+silkspawners-compatibility-enabled: SilkSpawners-kompatibilitet har aktiverats i konfigurationen.
+silkspawners-not-found: SilkSpawners kunde inte hittas.
+silkspawners-found: SilkSpawners har hittats och integreras...
+could-not-integrate-with-silkspawners: Det gick inte att integrera med SilkSpawners.
+using-silkspawners-spawners: Använder SilkSpawners som spawners...
+using-default-spawners: Använder pluginets standardspawners...
+
+#Error's
+cannot-find-discounted-section: Det går inte att lägga till rabatter för sektionen '%section%', antingen är butikssektionen
+  inaktiverad eller kunde inte hittas.
+cannot-find-discounted-group: Det går inte att lägga till rabatter för behörighetsgruppen '%permsGroup%', kontrollera
+  stavningen och om den finns i ditt behörighetsplugin.
+disabling-plugin: Inaktiverar pluginet...
+not-spawn-able: 'Denna typ av enhet kan inte skapas: ''%spawnertype%'''
+real-player: Du måste vara en riktig spelare för att använda kommandot.
+player-not-online: '&cDen spelaren finns inte eller är inte online.'
+cannot-sell-air: '&cDet går inte att sälja luft...'
+no-permissions: '&cDu har inte behörighet för detta.'
+no-permissions-to-open-shop: '&cDu har inte behörighet att öppna denna butiksektion.'
+cannot-do-that: '&4Du kan inte göra det!!'
+more-space-needed: '&cGör mer plats i ditt inventarium och försök igen.'
+could-not-store-all-items: '&c%amount% föremål kunde inte läggas till i ditt inventarium eftersom det är fullt.'
+not-enough-space-inside-inventory: '&4Du har inte tillräckligt med plats i ditt inventarium, resterande föremål släpps
+  på marken.'
+insufficient-money: '&cDu har inte tillräckligt med %currency%.'
+canceling-transaction-no-space: "&4Du har inte tillräckligt med plats i ditt inventarium, avbryter transaktionen. \nGör mer plats och försök igen."
+no-items-in-section: Kan inte öppna butiksektionen %shopsection% eftersom det inte finns några föremål!
+no-item-found: '&cInga föremål hittades som kan säljas.'
+not-enough-items-to-sell: '&cDet krävs att sälja minst %min-sell%, du har bara %quantity%.'
+item-null: '&cFöremålet finns inte.'
+item-cannot-be-sold-to-server: '&cFöremålet (%material%) kan inte säljas till servern eftersom det finns ett fel
+  i butiken. Vänligen rapportera detta problem till serveradministratörer eller ägaren.'
+could-not-save-config: Det gick inte att spara %fileName% konfigurationen.
+rgb-color-formatted-wrong: 'RGB-färger måste vara formaterade exakt som: ''0x000000'', ''#000000'' eller ''000000''
+  i %path%.'
+no-shop-found: '&cKan inte hitta en butiksektion med det namnet.'
+no-valid-amount: '&cOgiltigt belopp'
+restart-plugin: Kan inte öppna butiksektionen, försök starta om pluginet eller gå med i discord-servern
+  för support.
+could-not-check-for-updates: '&cKunde inte kontrollera efter uppdateringar.'
+cannot-update-config: '&cKan inte uppdatera konfigurationen i config.yml.'
+cannot-read-config: Kan inte läsa %fileName% konfigurationen eftersom den är felkonfigurerad. Använd en
+  online YAML-parser med felet nedan för att identifiera problemet och åtgärda det.
+  Om du inte kan hitta orsaken själv, gå med i vår discord-supportserver som finns
+  på pluginets sida för EconomyShopGUI.
+error-occured-while-reloading: '&4Ett fel uppstod när pluginet laddades om, titta i konsolen för eventuella felmeddelanden.'
+could-not-get-the-limitedstock-mode: 'Kunde inte hämta limitedstock-läget: %limitedStockMode%'
+error-occurred-while-connecting-to-database: Ett fel uppstod vid anslutning till databasen.
+invalid-item-type: '&cOgiltig föremålstyp för %type%'
+cannot-enter-shop-banned-gamemode: '&cDu kan inte köpa/sälja föremål medan du är i %gamemode%.'
+cannot-use-command-banned-gamemode: '&cDu kan inte använda detta kommando medan du är i %gamemode%.'
+could-not-enable-limitedstock: Kunde inte aktivera den begränsade lagerleverantören
+could-not-enable-limitedsellstock: Kunde inte aktivera den begränsade försäljningslagerleverantören
+could-not-enable-dynamicpricing: Kunde inte aktivera den dynamiska prissättningsleverantören
+not-enough-stock-available: '&cKan inte köpa artikeln/erna eftersom det inte finns tillräckligt med lager tillgängligt.'
+invalid-storage-type: Ogiltig lagringstyp för '%type%'. Använder SQLite som standard...
+cannot-store-payment: '&cKunde inte slutföra transaktionen, kan inte lagra alla betalningsobjekt i ditt
+  inventarium. Skapa mer ledigt utrymme och försök igen.'
+invalid-buy-price-scaling: Inköpsprisets skalning för DynamicPricing måste vara mellan 0-100%, fick %scale%.
+  Använder standardvärde på %default%%...
+invalid-sell-price-scaling: Försäljningsprisets skalning för DynamicPricing måste vara mellan 0-100%, fick %scale%.
+  Använder standardvärde på %default%%...
+headdatabase-api-not-ready-yet: Misslyckades med att hämta HeadDatabase-artikel, HeadDatabase API är inte redo än
+cannot-create-item-from-plugin: Kunde inte skapa artikel från %plugin%, pluginet hittades inte
+exception-loading-fill-item: 'Ett undantag inträffade vid inläsning av butikens Fill-Item för sektion ''%section%'':'
+cannot-load-season-modifier: Misslyckades med att ladda säsongsmodifieraren för '%path%' eftersom ingen sektion/föremål
+  var laddad.
+invalid-season-modifier: Ogiltig modifierare vid '%path%', den måste vara en giltig procent mellan -100 och
+  100, exempelvis '-75%' eller '+25%'. Fick %current%
+cannot-load-economy-provider: Kunde inte ladda ekonomileverantör för butik '%shop%' på grund av '%reason%', använder
+  standard...
+cannot-find-economy-provider: Kunde inte hitta ekonomileverantör för butik '%shop%' som '%type%', använder standard...
+cannot-find-default-economy-provider: Kunde inte hitta ekonomitypen som anges i config.yml som '%economy%', försöker automatiskt
+  hitta en stödd ekonomityp...
+cannot-load-default-economy-provider: Misslyckades med att ladda standard ekonomileverantör på grund av '%reason%', försöker
+  automatiskt hitta en stödd ekonomileverantör.
+transaction-placeholder-default: Inga data än för denna tidsram
+removed-shop-stand: "&cButikshyllan togs bort från platsen %location%\n"
+shop-stand-load-failed: 'Misslyckades med att ladda butiksstånd med ID ''%id%'': %reason%'
+shop-stand-unload-failed: 'Misslyckades med att avladda butiksstånd med ID ''%id%'': %reason%'
+shop-stand-inside-unloaded-chunk: Butiksståndet finns i en oladdad chunk.
+item-from-shop-stand-not-found: Kan inte hitta butiksföremålet från butiksstånd '%item%'
+block-from-shop-stand-not-found: Blocktypen från ståndet vid platsen %location% matchar inte den cachade blocktypen
+  '%type%'
+invalid-shop-stand-world: 'Ogiltig värld för butiksstånd: ''%world%'', finns inte för butiksstånd ID %id%'
+invalid-shop-stand-format: Ogiltig ståndplats med x%pos_x%, y%pos_y%, z%pos_z% för butiksstånd ID %id%
+error-saving-shop-stands: Misslyckades med att spara butiksstånd till 'stands.json'
+error-loading-shop-stands: Misslyckades med att ladda butiksstånd från 'stands.json'
+error-loading-shop-stand: 'Misslyckades med att ladda butiksstånd(''%stand%'') från ''stands.json'' på grund
+  av: %reason%'
+error-creating-stands-storage: Misslyckades med att skapa lagringsfilen 'stands.json'
+invalid-stand-type: Ogiltig butiksståndstyp för %type%
+shop-stands-module-not-enabled: Butiksståndsmodulen är inte aktiverad
+cannot-open-shop-stand: 'Misslyckades med att öppna butiksstånd för spelare %player%: Butiksföremålet (%item%)
+  finns inte!'
+invalid-click-type: Ogiltig klicktyp för %click-type% med post %click-mapping%, använder standard...
+invalid-click-action: Ogiltig klickåtgärd för %click-action% med post %click-mapping%, använder standard...

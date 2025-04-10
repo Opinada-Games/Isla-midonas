@@ -1,6 +1,6 @@
 enable: false
-slot: 4
-title: ""
+slot: 5
+title: ''
 hidden: false
 sub-section: false
 display-item: false
@@ -10,5 +10,5 @@ nav-bar:
   mode: INHERIT
 item:
   material: BEDROCK
-  displayname: "&5&lArtículo NBT"
-  name: "&5&lArtículos NBT"
+  displayname: '&5&lArtículo NBT'
+  name: '&5&lArtículos NBT'

@@ -1,6 +1,6 @@
 enable: falset
-slot: 30
-title: ""
+slot: 31
+title: ''
 hidden: false
 sub-section: false
 display-item: false
@@ -10,5 +10,5 @@ nav-bar:
   mode: INHERIT
 item:
   material: TUBE_CORAL
-  displayname: "&9&lDecoración"
-  name: "&9&lDecoración"
+  displayname: '&9&lDecoración'
+  name: '&9&lDecoración'

@@ -20,6 +20,7 @@ Morphs:
       - '&7transformed, you can squeal'
       - '&7by right-clicking the Slimeball'
       - '&7item in your hotbar.'
+    Enabled-Ability: true
   Cow:
     Name: '&9Cow Morph'
     Material: COOKED_BEEF
@@ -41,6 +42,7 @@ Morphs:
       - '&7transformed, you can moo'
       - '&7by right-clicking the Slimeball'
       - '&7item in your hotbar.'
+    Enabled-Ability: true
   Enderman:
     Name: '&5Enderman Morph'
     Material: ENDER_PEARL
@@ -62,6 +64,7 @@ Morphs:
       - '&7transformed, you can teleport'
       - '&7randomly by right-clicking the'
       - '&7Slimeball item in your hotbar.'
+    Enabled-Ability: true
   Chicken:
     Name: '&5Chicken Morph'
     Material: EGG
@@ -83,6 +86,7 @@ Morphs:
       - '&7transformed, you can lay eggs'
       - '&7by right-clicking the Slimeball'
       - '&7item in your hotbar.'
+    Enabled-Ability: true
   Spider:
     Name: '&5Spider Morph'
     Material: COBWEB
@@ -106,6 +110,7 @@ Morphs:
       - '&7all around you by right-clicking'
       - '&7the Slimeball item in your'
       - '&7hotbar.'
+    Enabled-Ability: true
   Sheep:
     Name: '&5Sheep Morph'
     Material: WHITE_WOOL
@@ -129,6 +134,7 @@ Morphs:
       - '&7Rainbow Sheep Mode by'
       - '&7right-clicking the Slimeball item'
       - '&7in your hotbar.'
+    Enabled-Ability: true
   Skeleton:
     Name: '&5Skeleton Morph'
     Material: BOW
@@ -150,6 +156,7 @@ Morphs:
       - '&7transformed, you can shoot arrows'
       - '&7by right-clicking the Slimeball'
       - '&7item in your hotbar.'
+    Enabled-Ability: true
   Creeper:
     Name: '&6Creeper Morph'
     Material: TNT
@@ -174,6 +181,7 @@ Morphs:
       - '&7knock nearby players aways by'
       - '&7right-clicking the Slimeball'
       - '&7item in your hotbar.'
+    Enabled-Ability: true
   Blaze:
     Name: '&6Blaze Morph'
     Material: BLAZE_POWDER
@@ -195,6 +203,7 @@ Morphs:
       - '&7transformed, you can shoot'
       - '&7fireballs by right-clicking the'
       - '&7Slimeball item in your hotbar.'
+    Enabled-Ability: true
   Zombie:
     Name: '&6Zombie Morph'
     Material: ROTTEN_FLESH
@@ -218,6 +227,7 @@ Morphs:
       - '&7players and turn them into a'
       - '&7zombie by right-clicking with'
       - '&7the Slimeball item in your hotbar.'
+    Enabled-Ability: true
   Iron Golem:
     Name: '&6Iron Golem Morph'
     Material: IRON_BLOCK
@@ -241,6 +251,7 @@ Morphs:
       - '&7hit the ground by'
       - '&7right-clicking with the Slimeball'
       - '&7item in your hotbar.'
+    Enabled-Ability: true
   Witch:
     Name: '&6Witch Morph'
     Material: POTION:8196
@@ -262,6 +273,7 @@ Morphs:
       - '&7transformed, you can throw special'
       - '&7potions by right-clicking with the'
       - '&7Slimeball item in your hotbar.'
+    Enabled-Ability: true
   Snowman:
     Name: '&6Snowman Morph'
     Material: SNOWBALL
@@ -285,6 +297,7 @@ Morphs:
       - '&7snowballs by right-clicking with'
       - '&7the Slimeball item in your'
       - '&7hotbar.'
+    Enabled-Ability: true
   Guardian:
     Name: '&6Guardian Morph'
     Material: PRISMARINE_SHARD
@@ -308,6 +321,7 @@ Morphs:
       - '&7lasers by right-clicking with'
       - '&7the Slimeball item in your'
       - '&7hotbar.'
+    Enabled-Ability: true
   Cave Spider:
     Name: '&9Cave Spider Morph'
     Material: SPIDER_EYE

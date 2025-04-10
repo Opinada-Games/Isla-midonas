@@ -52,7 +52,7 @@
 #                                                                                                   #
 #####################################################################################################
 #
-config-version: 2.0.3.2
+config-version: 2.0.3.5
 # WARNING: The config version helps update your configs from previous versions of the plugin,
 # changing this manually will end up in your configs being reset to default, shop items being mis-formatted or various unintended bugs in the plugin!!
 # DO NOT CHANGE THIS MANUALLY!!
@@ -103,8 +103,8 @@ update-checking: true
 # Select the storage type which should be used
 # Valid options are 'MySQL' and 'SQLite'
 storage-type: SQLite
-# Tip: SQLite is recommended for performance reasons since it uses a temporary cache to save data, whereas MySQL needs to update the database instantly
-# We recommend to use MySQL only when needed for your server setup since SQLite has better performance
+# Tip: Unless you plan on using the database to sync shop data between multiple servers,
+# SQLite is highly recommended for performance reasons over MySQL and you should not have to change these settings
 
 # Configure this to use MySQL
 mysql:
@@ -119,6 +119,10 @@ mysql:
   # The password
   password: password
   # The prefix for all tables created by this instance of the plugin
+  #
+  # Keep in mind that using MySQL to sync item stock/dynamic pricing data across multiple servers
+  # requires all instances of the plugin which are connected to the same database to use the same table prefix and the same(or similar) shop layout or this won't work
+  # With that said, you should change the table prefix if you want to use different shop layouts in different servers connected to the same MySQL database
   table-prefix: ESGUIP_
   # Configure the pool settings if needed, if you don't know what this is then just leave it to the default settings
   pool:
@@ -126,9 +130,9 @@ mysql:
     idle-timeout: 600000
     maximum-pool-size: 10
     minimum-idle: 10
-# Keep in mind that if you want to use MySQL for itemStock/sellLimits/dynamicPricing(Databases are currently only used to store this data),
-# all instances of the plugin connected to the same database WITH THE SAME TABLE PREFIX, will need to have a similar shop layout(or at least the items with DynamicPricing/limited stock), or you will encounter issues.
-# With that said, you should change the table prefix if you want to use completely different shop layouts in different servers across your network(which also removes the need for MySQL).
+  # Display cache for dynamic pricing/limited stock data for MySQL databases
+  # Set this setting to AUTO(default) to automatically determine the best interval time for your server
+  display-cache: AUTO
 
 
 #----------------------------------------------DebugMode------------------------------------------------
@@ -260,6 +264,7 @@ disabled-worlds-per-command:
 # TNE = Economy provider(known as TheNewEconomy) which supports multiple currencies using 'TNE:<currency>'
 # VOTING_PLUGIN = Points economy from VotingPlugin
 # ECOBITS = A lightweight economy provider which supports multiple currencies using 'ECOBITS:<currency>'
+# ZESSENTIALS = Alternative essentials plugin supporting multiple currencies using 'ZESSENTIALS:<currency>'
 # ITEM:material:<item> = Item currency which supports custom item meta, see our wiki here on how to use it: https://wiki.gpplugins.com/economyshopgui/basics/how-to#how-to-create-custom-item-economys
 economy-provider: VAULT
 
@@ -426,10 +431,11 @@ resize-gui-for-bedrock: true
 
 # Enabling this option will enable support for bedrock players to see textured player heads by loading a custom resource pack
 pre-register-skulls: false
-# This requires Geyser, and the setting inside the config of Geyser 'add-non-bedrock-items' to be enabled for this to work
-# Note: This feature only loads textured player heads for shop items, navigation bars and transaction items,
+# NOTE: This requires Geyser, and the setting inside the config of Geyser 'add-non-bedrock-items' to be enabled for this to work
+# NOTE: This feature only loads textured player heads for shop items, navigation bars and transaction items,
 # meaning that the bedrock player's head won't be loaded when using 'skullowner: %player_name%'
-# Double note: Adding a new textured player head to shop when the server is running won't work, this requires a full server restart
+# NOTE: Since newer versions of Geyser disable itself when it runs on both backend and proxy servers, this feature can no longer be used for servers running behind a proxy!
+# NOTE: Adding a new textured player head to shop when the server is running won't work, this requires a full server restart
 
 # This option enables a custom player profile item for bedrock players instead of the 'skullowner: %player_name%' texture
 custom-bedrock-player-profile:
@@ -461,9 +467,20 @@ main-menu:
     name: ' '
     enable: true
 
-# Allows to change the default search method used by /shop search
-# Possible values are 'BY_NAME', 'BY_TYPE'
-default-search-mode: BY_NAME
+shop-search:
+  # Enabled/disables the command /shop search
+  enabled: true
+  # Allows to change the default search method used by /shop search
+  # Possible values are 'BY_NAME', 'BY_TYPE'
+  default-mode: BY_NAME
+  # Whether to include items from hidden shop sections in the search menu
+  hidden-shops: false
+  # Whether to include items from sub shop sections in the search menu
+  sub-shops: true
+  # The shop category's which its items shouldn't be listed in the /shop search menu
+  excluded-shops:
+  - 'Example_Shop'
+  - 'AdminShop'
 
 # Assign custom click actions when clicking a shop item
 # Possible actions: BUY, SELL, SELL_ALL, GUI_EDITOR
@@ -729,6 +746,10 @@ allow-renamed-items: true
 # Allows items with different lore to be sold to the shop
 allow-lore-items: true
 
+# When disabled, all sold items will be sold regardless of their item meta(name, lore, enchantments, armor color, potion types, spawner types, recipes, etc...)
+# and will only be matched according the item type
+match-item-meta: true
+
 # Shop item lore is separated into 9 different 'parts' which can be changed in order.
 # The default order of lore is as follows:
 # 1. special-lore
@@ -784,6 +805,10 @@ display-lore-layout:
     - '%translations-placeholder-smaller-requirement-lore%'
     time-requirement-not-met:
     - '%translations-time-requirement-lore%'
+    quest-requirement-not-met:
+    - '%translations-quest-requirement-lore%'
+    permission-requirement-not-met:
+    - '%translations-permission-requirement-lore%'
   # One of the following lore is displayed on shop items with buy prices based on the items state
   buy-prices:
     normal:
@@ -1430,6 +1455,9 @@ disable-back:
   direct-shop-command-console: false
   # When enabled, the back button won't be usable for any subsections located inside any shops with a disabled back button
   sub-sections: false
+  # If true, the back button is disabled when purchasing a item found within the /shop search screen,
+  # false to leave it enabled and allow players to go back to the main shop menu
+  shop-search: true
 
 
 #----------------------------------------------JoinMessage----------------------------------------------

@@ -117,3 +117,4 @@ Custom-Items:
     Commands:
     - CONSOLE:say {PLAYER} clicked Custom Item 2.
     - PLAYER:say I clicked Custom Item 2.
+Slot-Layout: 10, 12, 14, 16, 28, 30, 32, 34

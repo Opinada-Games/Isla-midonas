@@ -89,6 +89,8 @@ Settings:
   Equip-Cosmetic-Item-To-Slot: WARN
   # Sync player's selected cosmetics when they join the server.
   Sync-Cosmetics-On-Join: true
+  # The default pet's name.
+  Default-Pet-Name: '&b{PLAYER}''s pet'
 
 # The menu selector settings.
 Menu-Item:

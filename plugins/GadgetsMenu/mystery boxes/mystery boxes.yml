@@ -53,6 +53,7 @@ Mystery-Boxes:
         Max: 30
       Play-Sound:
         Sound: ENTITY_CHICKEN_EGG
+        Enabled: true
       Send-Message:
         Enabled: true
         Message:
@@ -258,47 +259,88 @@ Mystery-Boxes:
         - '&bCaja Misteriosa'
         - '&7Rareza: &e✰&7✰✰✰✰'
         - '&7Puedes encontrar &bCaja Misteriosa &7jugando en el servidor.'
+        Name: '&bMystery Box'
+        Lore:
+        - '&7Rarity: &e✰&7✰✰✰✰'
+        - '&7You can find &bMystery Box &7by'
+        - '&7playing on the server.'
       Two-Star:
         Message:
         - '&bCaja Misteriosa'
         - '&7Rareza: &e✰✰&7✰✰✰'
         - '&7Puedes encontrar &bCaja Misteriosa &7jugando en el servidor.'
+        Name: '&bMystery Box'
+        Lore:
+        - '&7Rarity: &e✰✰&7✰✰✰'
+        - '&7You can find &bMystery Box &7by'
+        - '&7playing on the server.'
       Three-Star:
         Message:
         - '&bCaja Misteriosa'
         - '&7Rareza: &e✰✰✰&7✰✰'
         - '&7Puedes encontrar &bCaja Misteriosa &7jugando en el servidor.'
+        Name: '&bMystery Box'
+        Lore:
+        - '&7Rarity: &e✰✰✰&7✰✰'
+        - '&7You can find &bMystery Box &7by'
+        - '&7playing on the server.'
       Four-Star:
         Message:
         - '&bCaja Misteriosa'
         - '&7Rareza: &e✰✰✰✰&7✰'
         - '&7Puedes encontrar &bCaja Misteriosa &7jugando en el servidor.'
+        Name: '&bMystery Box'
+        Lore:
+        - '&7Rarity: &e✰✰✰✰&7✰'
+        - '&7You can find &bMystery Box &7by'
+        - '&7playing on the server.'
       Five-Star:
         Message:
         - '&bCaja Misteriosa'
         - '&7Rareza: &e✰✰✰✰✰'
         - '&7Puedes encontrar &bCaja Misteriosa &7jugando en el servidor.'
+        Name: '&bMystery Box'
+        Lore:
+        - '&7Rarity: &e✰✰✰✰✰'
+        - '&7You can find &bMystery Box &7by'
+        - '&7playing on the server.'
     Found-Loot:
       Common:
         Message:
         - '&aComún {LOOT}'
         - '&7Tipo: {CATEGORY}'
         - '&7Rareza: &aComún'
+        Name: '&aCommon {LOOT}'
+        Lore:
+        - '&7Type: {CATEGORY}'
+        - '&7Rarity: &aCommon'
       Rare:
         Message:
         - '&9Raro {LOOT}'
         - '&7Tipo: {CATEGORY}'
         - '&7Rareza: &9Raro'
+        Name: '&9Rare {LOOT}'
+        Lore:
+        - '&7Type: {CATEGORY}'
+        - '&7Rarity: &9Rare'
       Epic:
         Message:
         - '&5Épico {LOOT}'
         - '&7Tipo: {CATEGORY}'
         - '&7Rareza: &5Épico'
+        Name: '&5Epic {LOOT}'
+        Lore:
+        - '&7Type: {CATEGORY}'
+        - '&7Rarity: &5Epic'
       Legendary:
         Message:
         - '&6Legendario {LOOT}'
         - '&7Tipo: {CATEGORY}'
         - '&7Rareza: &6Legendario'
+        Name: '&6Legendary {LOOT}'
+        Lore:
+        - '&7Type: {CATEGORY}'
+        - '&7Rarity: &6Legendary'
     Mystery-Dust:
       Message:
       - '&bPolvo Misterioso'

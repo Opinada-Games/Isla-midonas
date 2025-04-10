@@ -126,6 +126,8 @@ exampleJob:
       RewardCommands:
       - eco give [playerName] 500
       - msg [playerName] Completed quest!
+      # Reward amount to be given to player after quest is finished
+      RewardAmount: 0
       # Quest description to be used to explain quest requirements or rewards for player
       RewardDesc:
       - Break 300 Oak wood

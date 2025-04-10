@@ -1,6 +1,6 @@
 enable: true
-slot: 14
-title: ""
+slot: 15
+title: ''
 hidden: false
 sub-section: false
 display-item: false
@@ -10,5 +10,5 @@ nav-bar:
   mode: INHERIT
 item:
   material: MUSIC_DISC_STRAD
-  displayname: "&6&lMúsica"
-  name: "&6&lMúsica"
+  displayname: '&6&lMúsica'
+  name: '&6&lMúsica'
