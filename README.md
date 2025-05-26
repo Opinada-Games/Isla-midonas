@@ -1,6 +1,6 @@
 # Isla Midonas Minecraft Server
 
-Welcome to **Isla Midonas**, a custom Minecraft server project! 🌍 This repository contains all the necessary files, configurations, and plugins to run the server. The server is automatically deployed and managed using **GitHub Actions**, ensuring smooth updates and continuous integration.
+Welcome to **Isla Midonas**, a custom Minecraft server project! This repository contains all the necessary files, configurations, and plugins to run the server. The server is automatically deployed and managed using **GitHub Actions**, ensuring smooth updates and continuous integration.
 
 ---
 
