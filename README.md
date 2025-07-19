@@ -35,3 +35,4 @@ Welcome to **Isla Midonas**, a custom Minecraft server project! This repository 
    ```bash
    git checkout -b feature/new-feature
    ```
+
