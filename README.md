@@ -26,13 +26,4 @@ Welcome to **Isla Midonas**, a custom Minecraft server project! This repository 
 - **GitHub Actions**: Automates the deployment process.
 - **FTP**: Used to transfer files to the server.
 
----
-
-## 🛠️ How to Contribute
-
-1. **Fork the Repository**.
-2. **Create a Branch**:
-   ```bash
-   git checkout -b feature/new-feature
-   ```
 
